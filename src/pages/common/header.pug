@@ -22,9 +22,15 @@ nav
   .second-menu
     .nav-menu
       ul
-        li.active-link: a(href="/" class="active-link") Home
+        li: a(href="/" class="active-link") Home
         each val, index in [ 'Solution', 'Products', 'Use cases']
           li: a(href="/"+val.toLowerCase())=val
+        li.dropup
+          button.dropbtn Dropup
+          .dropup-content
+            a(href="") link 1
+            a(href="") link 2
+            a(href="") link 3
     .shop-menu
       .build-your-solution
         p Build your solution

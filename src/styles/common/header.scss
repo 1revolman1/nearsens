@@ -1,9 +1,5 @@
 @import "../mixins/media";
 
-// header {
-//   width: 100%;
-//   background: #005B9D 0% 0% no-repeat padding-box;
-
 header {
   background: #005B9D 0% 0% no-repeat padding-box;
   width: 100%;
@@ -13,7 +9,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     max-width: 1440px;
     margin: 0 auto;
 
@@ -40,7 +35,6 @@ header {
           flex-direction: column;
 
           .phone-content {
-
             a {
               font: normal normal bold 14px/18px Muli;
               letter-spacing: 0px;
@@ -105,15 +99,15 @@ header {
         justify-content: flex-end;
 
         input {
+          opacity: 0;
+          visibility: hidden;
           transition: all ease 0.5s;
           outline: none;
           border: 1px solid #FFFFFF;
           border-radius: 40px;
-          opacity: 0.5;
           font: italic normal normal 14px/18px Muli;
           letter-spacing: 0px;
           color: #FFFFFF;
-          opacity: 1;
           background: transparent;
           padding: 11px 50px 11px 20px;
           width: 100%;
@@ -121,26 +115,24 @@ header {
           &::placeholder {
             color: white;
           }
-
-
         }
 
         .checker-label {
           transition: all ease 0.5s;
-          transform: translate(-50px, 0);
-          margin-left: 10px;
+          transform: translate(0%, 0%);
         }
 
         #btnControl {
           display: none;
 
           &:checked~label {
-            transform: translate(0%, 0%);
+            transform: translate(-50px, 0);
+            margin-left: 10px;
           }
 
           &:checked~input {
-            opacity: 0;
-            visibility: hidden;
+            opacity: 1;
+            visibility: visible;
           }
         }
 
@@ -173,7 +165,6 @@ header {
         }
       }
     }
-
   }
 }
 
@@ -185,6 +176,7 @@ nav {
   width: 100%;
 
   .second-menu {
+    padding: 45px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -212,6 +204,53 @@ nav {
             margin-right: 0px;
           }
 
+          &.dropup {
+            position: relative;
+            display: inline-block;
+
+            &:hover {
+              .dropup-content {
+                display: block;
+              }
+
+              .dropbtn {
+                background-color: #2980B9;
+
+              }
+            }
+
+            .dropbtn {
+              background-color: #3498DB;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+            }
+
+            .dropup-content {
+              display: none;
+              position: absolute;
+              overflow: auto;
+              max-height: 150px;
+              //   bottom: 50px;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+              z-index: 1;
+
+              a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+
+                &:hover {
+                  background-color: #ddd
+                }
+              }
+            }
+          }
+
           a {
             text-align: left;
             font: normal normal bold 16px/20px Muli;
@@ -221,7 +260,6 @@ nav {
 
             &.active-link {
               color: #2EC9AD;
-
             }
           }
         }
@@ -230,8 +268,13 @@ nav {
 
     .shop-menu {
       flex: 1;
+      display: flex;
+      flex-direction: row;
+
+      .shop-cart {
+        display: flex;
+      }
+
     }
   }
 }
-
-// }
