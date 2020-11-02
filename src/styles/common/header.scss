@@ -1,17 +1,20 @@
 @import "../mixins/media";
 
 header.header {
-  background: #005B9D 0% 0% no-repeat padding-box;
+  background: #004C83 0% 0% no-repeat padding-box;
+  //   background: #005B9D 0% 0% no-repeat padding-box;
   width: 100%;
 
   @include media-tablet {
     position: fixed;
     top: 0;
+    // background: #004C83 0% 0% no-repeat padding-box;
   }
 
   .first-menu {
-    border-bottom: 1px solid #FFFFFF;
-    padding: 33px 0;
+    border-bottom: 1px solid #33709C;
+    // border-bottom: 1px solid #FFFFFF;
+    padding: 27px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,6 +31,18 @@ header.header {
       flex-direction: row;
       justify-content: flex-start;
 
+      >a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-width: 160px;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+
       img {
         max-width: 160px;
         height: auto;
@@ -36,6 +51,7 @@ header.header {
 
       .phone-information {
         margin-left: 58px;
+        margin-bottom: -8px;
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -166,6 +182,10 @@ header.header {
         align-items: center;
         justify-content: center;
 
+        @include media-tablet {
+          display: none;
+        }
+
         a {
           font: normal normal bold 16px/20px Muli;
           letter-spacing: 0px;
@@ -190,15 +210,17 @@ header.header {
 nav.nav {
   position: sticky;
   top: 0;
-  background: #005B9D 0% 0% no-repeat padding-box;
+  background: #004C83 0% 0% no-repeat padding-box;
+  //   background: #005B9D 0% 0% no-repeat padding-box;
   width: 100%;
 
   @include media-tablet {
     position: fixed;
-    top: 68px;
-    min-height: calc(100vh - 69px);
-    max-height: calc(100vh - 69px);
+    top: 57px;
+    min-height: calc(100vh - 57px);
+    max-height: calc(100vh - 57px);
     overflow: auto;
+    // background: #004C83 0% 0% no-repeat padding-box;
   }
 
   .second-menu {
@@ -238,7 +260,7 @@ nav.nav {
 
           @include media-tablet {
             padding: 16px 0;
-            border-bottom: 2px solid #FFFFFF;
+            border-bottom: 2px solid #33709C;
 
           }
 
@@ -267,8 +289,12 @@ nav.nav {
               .dropbtn {
                 color: #2ec9ad;
 
-                svg {
+                >svg {
                   transform: rotate(180deg);
+
+                  @include media-tablet {
+                    transform: none;
+                  }
 
                   text {
                     fill: #2ec9ad;
@@ -293,7 +319,17 @@ nav.nav {
               border: none;
               outline: none;
 
+              &.unshow {
+                >svg {
+                  @include media-tablet {
+                    transform: rotate(180deg);
+                  }
+                }
+
+              }
+
               @include media-tablet {
+                padding: 0px 0;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -302,14 +338,14 @@ nav.nav {
               &.active-link {
                 color: #2EC9AD;
 
-                svg {
+                >svg {
                   text {
                     fill: #2EC9AD;
                   }
                 }
               }
 
-              svg {
+              >svg {
                 transition: all ease 0.5s;
                 height: 15px;
               }
@@ -318,7 +354,7 @@ nav.nav {
             .droupup-block {
               width: 100%;
               height: 100%;
-
+              overflow: hidden;
             }
 
             .dropup-content {
@@ -328,17 +364,30 @@ nav.nav {
               top: calc(100% + 16px);
               padding: 17px 20px;
               min-width: 250px;
+              max-height: 300px;
               background: #FFFFFF 0% 0% no-repeat padding-box;
               box-shadow: 0px 0px 10px #00000033;
               border-radius: 10px;
               opacity: 1;
               z-index: 1;
+              transition: all ease 0.5s;
+
+              &.unshow {
+                @include media-tablet {
+                  max-height: 0;
+                  padding: 0;
+                }
+              }
 
               @include media-tablet {
+                padding: 0;
                 display: block;
                 position: initial;
                 right: initial;
                 top: initial;
+                background: transparent;
+                box-shadow: 0 0 black;
+                padding: 10px 0;
               }
 
               &:after {
@@ -371,6 +420,10 @@ nav.nav {
                 opacity: 1;
                 text-decoration: none;
 
+                @include media-tablet {
+                  color: white;
+                }
+
                 &.active-link {
                   color: #2EC9AD;
                 }
@@ -379,12 +432,19 @@ nav.nav {
                   transform: translate(10px, 0%);
                 }
 
-                img {
+                img,
+                svg {
                   height: 21px;
                   display: flex;
                   align-items: center;
                   justify-content: center;
                   margin-right: 9px;
+
+                  @include media-tablet {
+                    text {
+                      fill: #33709C;
+                    }
+                  }
                 }
 
               }
@@ -445,7 +505,7 @@ nav.nav {
             bottom: -25px;
             width: 60px;
             height: 2px;
-            background: #FFFFFF;
+            background: #33709C;
 
           }
         }
