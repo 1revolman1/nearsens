@@ -15,7 +15,6 @@ header.header
         input(type="checkbox" id="btnControl")
         input(type="text" class="text-input" placeholder="What are you looking for ?" )
         label(class="checker-label" for="btnControl"): img(src="img/button-header.svg", alt="btn" id="btnLeft")
-      
       //- Это блок для авторизации
       .sign-in-link
         a(href="/login") Sign In
@@ -28,11 +27,11 @@ nav.nav
         each val, index in [ 'Solution', 'Products', 'Use cases']
           li: a(href="/"+val.toLowerCase())=val
         li.dropup
-          button.dropbtn About
+          button.dropbtn.active-link About
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#fff" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
           .droupup-block
             .dropup-content
-              a(href="")
+              a(href="" class="active-link")
                 img(src="img/button-header-blue.svg", alt="btn" id="btnLeft") 
                 span How shipping works
               a(href="")
@@ -68,12 +67,15 @@ nav.nav
       .build-your-solution
         p 
            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#fff" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg> Build your solution
-      .shop-cart
-        .shop-cart-logo.dropup
+      .phone-number
+        a(href="tel:+33930088008") +339 3008 8008
+        .text-content
+          p Monday to Friday - 9 am to 7 pm    
+      .shop-cart.dropup
+        .shop-cart-logo
           img(src="img/noun_bag_95443.svg", alt="Shoping cart")
-          div.counter 3
-          //- .shop-cart-text
-          //-   span 3 items
+          div.counter 3 
+          span.ammount-items 3 items
           .droupup-block
             .dropup-content
               h3 LAST PRODUCTS ADDED
@@ -98,5 +100,3 @@ nav.nav
                 p In stock. Can be shipped tomorrow.
                 button GO TO CART 
                   img(src="img/button-header.svg", alt="btn" id="btnLeft")
-        .shop-cart-text
-          span 3 items
