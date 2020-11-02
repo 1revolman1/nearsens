@@ -1,0 +1,33 @@
+{
+  "env": {
+    "jquery": true
+  },
+  "overrides": [
+    {
+      "files": [ "src/**/*.js" ],
+      "extends": [
+        "standard",
+        "htmlacademy/es6", 
+        "plugin:prettier/recommended"
+      ],
+      "plugins": [
+        "prettier"
+      ],
+      "rules": {
+        "indent": [
+          2
+        ],
+        "semi": [
+          1,
+          "always"
+        ],
+        "quotes": [
+          "error",
+          "backtick"
+        ]
+      }
+    }
+  ]
+
+  
+}

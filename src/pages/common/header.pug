@@ -1,0 +1,35 @@
+header
+  section.first-menu
+    .first-block-in-menu 
+      a(href="/"): img(class="logo-img" src="img/Logotype.png", alt="logo")
+      .phone-information
+        .logo-phone
+        .text-content
+          .phone-content
+            a(href="tel:+33930088008") +339 3008 8008
+          .text-content
+            p.second Click to call
+            p.first Monday to Friday - 9 am to 7 pm         
+    .second-block-in-menu 
+      .looking-input
+        input(type="checkbox" id="btnControl")
+        input(type="text" class="text-input" placeholder="What are you looking for ?" )
+        label(class="checker-label" for="btnControl"): img(src="img/button-header.svg", alt="btn" id="btnLeft")
+      .sign-in-link
+        a(href="/login") Sign In
+
+nav
+  .second-menu
+    .nav-menu
+      ul
+        li.active-link: a(href="/" class="active-link") Home
+        each val, index in [ 'Solution', 'Products', 'Use cases']
+          li: a(href="/"+val.toLowerCase())=val
+    .shop-menu
+      .build-your-solution
+        p Build your solution
+      .shop-cart
+        .shop-cart-logo
+          img(src="img/noun_bag_95443.svg", alt="Shoping cart")
+        .shop-cart-text
+          span 3 items
