@@ -15,9 +15,9 @@
     display: flex;
   }
 
-  & > span,
-  & > span::before,
-  & > span::after {
+  &>span,
+  &>span::before,
+  &>span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -26,32 +26,32 @@
     transition: all ease 0.5s;
   }
 
-  & > span::before {
+  &>span::before {
     content: '';
     top: -8px;
   }
 
-  & > span::after {
+  &>span::after {
     content: '';
     top: 8px;
   }
 }
 
-#menu__toggle__header:checked ~ .menu__btn__header > span {
+#menu__toggle__header:checked~.menu__btn__header>span {
   transform: rotate(45deg);
 }
 
-#menu__toggle__header:checked ~ .menu__btn__header > span::before {
+#menu__toggle__header:checked~.menu__btn__header>span::before {
   top: 0;
   transform: rotate(0);
 }
 
-#menu__toggle__header:checked ~ .menu__btn__header > span::after {
+#menu__toggle__header:checked~.menu__btn__header>span::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-#menu__toggle__header:checked ~ .nav {
+#menu__toggle__header:checked~.nav {
   transform: translate(0, 0%);
 }
 
@@ -83,7 +83,6 @@ header.header {
 
     @include media-tablet {
       padding: 13px 0;
-      margin-left: 50px;
     }
 
     .first-block-in-menu {
@@ -92,7 +91,11 @@ header.header {
       flex-direction: row;
       justify-content: flex-start;
 
-      > a {
+      @include media-tablet {
+        margin-left: 45px;
+      }
+
+      >a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -116,6 +119,16 @@ header.header {
         display: flex;
         align-items: center;
         flex-direction: row;
+
+        .logo-phone {
+          margin-top: -6px;
+          margin-right: 10px;
+
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
 
         .text-content {
           display: flex;
@@ -180,6 +193,7 @@ header.header {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
+
       @include media-tablet {
         padding-right: 40px;
       }
@@ -191,6 +205,7 @@ header.header {
         align-items: center;
         justify-content: flex-end;
         margin-right: 40px;
+
         @include media-tablet {
           display: none;
         }
@@ -222,31 +237,37 @@ header.header {
         #btnControl {
           display: none;
 
-          &:checked ~ label {
+          &:checked~label {
             transform: translate(-50px, 0);
             margin-left: 10px;
           }
 
-          &:checked ~ input {
+          &:checked~input {
             opacity: 1;
             visibility: visible;
           }
         }
 
         img {
+          height: 24px;
+          width: 24px;
           cursor: pointer;
         }
       }
+
       .cart-block {
         display: none;
         position: relative;
+
         @include media-tablet {
           display: block;
         }
+
         img {
           height: 24px;
           width: 24px;
         }
+
         .counter {
           position: absolute;
           top: -6px;
@@ -264,26 +285,32 @@ header.header {
           opacity: 1;
         }
       }
-      > .shoping-cart-header {
-      }
-      > .sign-in-user-profile {
+
+      >.shoping-cart-header {}
+
+      >.sign-in-user-profile {
         display: flex;
         align-items: center;
         flex-direction: row;
+
         .user-profile-avatar {
           margin-right: 10px;
+
           img {
             width: 24px;
             height: 24px;
             object-fit: cover;
           }
         }
+
         .user-profile-data {
           display: flex;
           flex-direction: column;
+
           @include media-tablet {
             display: none;
           }
+
           p {
             text-align: left;
             font: italic normal 300 10px/13px Muli;
@@ -291,6 +318,7 @@ header.header {
             color: #ffffff;
             opacity: 1;
           }
+
           h3 {
             text-align: left;
             font: normal normal bold 14px/18px Muli;
@@ -300,7 +328,8 @@ header.header {
           }
         }
       }
-      > .sign-in-link {
+
+      >.sign-in-link {
         flex: 1;
         display: flex;
         align-items: center;
@@ -362,7 +391,50 @@ nav.nav {
     @include media-tablet {
       flex-direction: column;
       padding: 0;
-      min-height: calc(100vh - 69px);
+      min-height: calc(100vh - 57px);
+    }
+
+    .search-menu {
+      width: 100%;
+      padding: 0 25px;
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+
+      @include media-tablet {
+        display: flex;
+        margin-top: 20px;
+      }
+
+      input {
+        transition: all ease 0.5s;
+        outline: none;
+        border: 1px solid #ffffff;
+        border-radius: 40px;
+        font: italic normal normal 14px/18px Muli;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 0.7;
+        background: transparent;
+        padding: 9px 50px 9px 20px;
+        width: 100%;
+
+        &::placeholder {
+          color: white;
+        }
+      }
+
+      .checker-label {
+        position: absolute;
+        right: 40px;
+      }
+
+      img {
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+      }
     }
 
     .nav-menu {
@@ -381,11 +453,13 @@ nav.nav {
         }
 
         li {
-          margin: 0 25px;
+          margin: 0 2.5%;
+          // margin: 0 25px;
           list-style-type: none;
 
           @include media-tablet {
             padding: 16px 0;
+            margin: 0 25px;
             border-bottom: 2px solid #33709c;
           }
 
@@ -412,17 +486,11 @@ nav.nav {
 
             &:hover {
               .dropbtn {
-                color: #2ec9ad;
-
-                > svg {
+                >svg {
                   transform: rotate(180deg);
 
                   @include media-tablet {
                     transform: none;
-                  }
-
-                  text {
-                    fill: #2ec9ad;
                   }
                 }
               }
@@ -443,9 +511,10 @@ nav.nav {
               background: transparent;
               border: none;
               outline: none;
+              cursor: pointer;
 
               &.unshow {
-                > svg {
+                >svg {
                   @include media-tablet {
                     transform: rotate(180deg);
                   }
@@ -462,16 +531,19 @@ nav.nav {
               &.active-link {
                 color: #2ec9ad;
 
-                > svg {
-                  text {
+                >svg {
+                  path {
                     fill: #2ec9ad;
                   }
                 }
               }
 
-              > svg {
+
+              >svg {
+                margin: 0 7px;
                 transition: all ease 0.5s;
                 height: 15px;
+                width: 12px;
               }
             }
 
@@ -556,16 +628,18 @@ nav.nav {
                   transform: translate(10px, 0%);
                 }
 
-                img,
                 svg {
-                  height: 21px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
+                  height: 14px;
+                  width: 9px;
                   margin-right: 9px;
+                  transform: rotate(-90deg);
+
+                  path {
+                    fill: #005B9D;
+                  }
 
                   @include media-tablet {
-                    text {
+                    path {
                       fill: #33709c;
                     }
                   }
@@ -597,6 +671,7 @@ nav.nav {
     .shop-menu {
       flex: 1;
       display: flex;
+      align-items: center;
       flex-direction: row;
 
       @include media-tablet {
@@ -632,15 +707,19 @@ nav.nav {
           }
         }
 
-        p {
-          text-align: left;
-          font: normal normal bold 16px/20px Muli;
-          letter-spacing: 0px;
-          color: #ffffff;
-          opacity: 1;
+        a {
+          span {
+            text-align: left;
+            font: normal normal bold 16px/20px Muli;
+            letter-spacing: 0px;
+            color: #ffffff;
+            opacity: 1;
+          }
 
-          svg {
+          img {
+            width: 15px;
             height: 15px;
+            margin-right: 15px;
           }
         }
       }
@@ -650,6 +729,7 @@ nav.nav {
 
         @include media-tablet {
           display: flex;
+          width: 100%;
           flex-direction: column;
         }
 
@@ -664,13 +744,18 @@ nav.nav {
           border: 1px solid #2ec9ad;
           border-radius: 40px;
           opacity: 1;
-          text-align: center;
-          font: normal normal bold 18px/23px Muli;
-          letter-spacing: 0px;
-          color: #ffffff;
-          opacity: 1;
 
-          svg {
+          span {
+            text-align: center;
+            font: normal normal bold 18px/23px Muli;
+            letter-spacing: 0px;
+            color: #ffffff;
+            opacity: 1;
+          }
+
+          img {
+            width: 24px;
+            height: 24px;
             margin-right: 10px;
           }
         }
@@ -720,14 +805,17 @@ nav.nav {
 
           .droupup-block {
             width: 100%;
-            height: 100%;
+            height: 20px;
+            // width: 100%;
+            // height: 100%;
           }
 
           .dropup-content {
             display: none;
             position: absolute;
             right: 0px;
-            top: calc(100% + 16px);
+            top: 100%;
+            // top: calc(100% + 16px);
             padding: 17px 20px;
             min-width: 325px;
             background: #ffffff 0% 0% no-repeat padding-box;
@@ -751,7 +839,7 @@ nav.nav {
               margin-left: -16px;
             }
 
-            > h3 {
+            >h3 {
               text-align: left;
               font: normal normal bold 16px/20px Muli;
               letter-spacing: 0px;
@@ -761,7 +849,7 @@ nav.nav {
               padding-bottom: 12px;
             }
 
-            > .shop-content {
+            >.shop-content {
               .shop-content-item {
                 display: flex;
                 align-items: center;
@@ -802,7 +890,7 @@ nav.nav {
               }
             }
 
-            > .shop-content-summarise {
+            >.shop-content-summarise {
               display: flex;
               flex-direction: column;
               align-items: center;
@@ -860,6 +948,7 @@ nav.nav {
 
         .shop-cart-logo {
           position: relative;
+          margin-bottom: -20px;
 
           .ammount-items {
             margin-left: 30px;

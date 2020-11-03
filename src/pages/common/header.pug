@@ -8,6 +8,7 @@ header.header
       a(href="/"): img(class="logo-img" src="img/Logotype.png", alt="logo")
       .phone-information
         .logo-phone
+          img(class="logo-phone" src="img/call-white.svg", alt="logo")
         .text-content
           .phone-content
             a(href="tel:+33930088008") +339 3008 8008
@@ -18,7 +19,7 @@ header.header
       .looking-input
         input(type="checkbox" id="btnControl")
         input(type="text" class="text-input" placeholder="What are you looking for ?" )
-        label(class="checker-label" for="btnControl"): img(src="img/button-header.svg", alt="btn" id="btnLeft")
+        label(class="checker-label" for="btnControl"): img(src="img/magnifying-glass.svg", alt="btn" id="btnLeft")
       a(href="").sign-in-user-profile
         .user-profile-avatar
           img(src="img/user_logo.svg", alt="user logo")
@@ -34,6 +35,9 @@ header.header
 
 nav.nav
   .second-menu
+    .search-menu
+      input(type="text" class="text-input" placeholder="What are you looking for ?" )
+      label(class="checker-label" for="btnControlInNav"): img(src="img/magnifying-glass.svg", alt="btn" id="btnLeft")
     .nav-menu
       ul
         li: a(href="/" class="active-link") Home
@@ -41,48 +45,50 @@ nav.nav
           li: a(href="/"+val.toLowerCase())=val
         li.dropup
           button.dropbtn.active-link About
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#fff" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
+            include header/svg-down
           .droupup-block
             .dropup-content.unshow
               a(href="" class="active-link")
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#005b9d" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
+                include header/svg-down
                 span How shipping works
               a(href="")
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#005b9d" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
-               span Inside Nearsens
+                include header/svg-down
+                span Inside Nearsens
               a(href="") 
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#005b9d" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
+                include header/svg-down
                 span Our values
               a(href="") 
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#005b9d" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
+                include header/svg-down
                 span The Nearsens APP
               a(href="")
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#005b9d" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
+                include header/svg-down
                 span Installation guide
               a(href="") 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#005b9d" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
+                include header/svg-down
                 span About Nearsens
         li.dropup
           button.dropbtn Support 
-             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#fff" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
+            include header/svg-down
           .droupup-block
             .dropup-content.unshow
               a(href="") 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#005b9d" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
+                include header/svg-down
                 span FAQ
               a(href="") 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#005b9d" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
+                include header/svg-down
                 span Contact us
               a(href="") 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#005b9d" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg>
+                include header/svg-down
                 span Support request
     .shop-menu
       .build-your-solution
-        p 
-           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#fff" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg> Build your solution
+        a(href="") 
+          img(src="img/wrench.svg", alt="Shoping cart")
+          span Build your solution
       .phone-number
         a(href="tel:+33930088008") 
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"><text transform="translate(0 26)" fill="#fff" font-size="24" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0"></tspan></text></svg> +339 3008 8008
+          img(class="logo-phone" src="img/call-white-all.svg", alt="logo") 
+          span +339 3008 8008
         .text-content
           p (Monday to Friday - 9 am to 7 pm)   
       .shop-cart.dropup
@@ -97,20 +103,24 @@ nav.nav
                 .shop-content-item
                   img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
                   p Keypad - white
-                  span 112€
+                  span 112
+                    sup.small €90
               .shop-content
                 .shop-content-item
                   img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
                   p Keypad - white
-                  span 112€
+                  span 112
+                    sup.small €90
               .shop-content
                 .shop-content-item
                   img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
                   p Keypad - white
-                  span 112€
+                  span 112
+                    sup.small €90
               .shop-content-summarise
                 h3 Total :
-                  span 68€
+                  span 68
+                    sup.small €90
                 p In stock. Can be shipped tomorrow.
                 button GO TO CART 
                   img(src="img/button-header.svg", alt="btn" id="btnLeft")
