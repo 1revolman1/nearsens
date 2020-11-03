@@ -1,3 +1,7 @@
+input.oppen_nav#menu__toggle__header(type="checkbox", name="")
+
+label.menu__btn__header(for="menu__toggle__header")
+  span
 header.header
   section.first-menu
     .first-block-in-menu 
@@ -15,9 +19,18 @@ header.header
         input(type="checkbox" id="btnControl")
         input(type="text" class="text-input" placeholder="What are you looking for ?" )
         label(class="checker-label" for="btnControl"): img(src="img/button-header.svg", alt="btn" id="btnLeft")
+      a(href="").sign-in-user-profile
+        .user-profile-avatar
+          img(src="img/user_logo.svg", alt="user logo")
+        .user-profile-data
+          p Bonjour Mathiew
+          h3 My account
+      a(href="").cart-block.dropup
+        img(src="img/noun_bag_95443.svg", alt="Shoping cart")
+        div.counter 3
       //- Это блок для авторизации
-      .sign-in-link
-        a(href="/login") Sign In
+      //- .sign-in-link
+      //-   a(href="/login") Sign In
 
 nav.nav
   .second-menu
