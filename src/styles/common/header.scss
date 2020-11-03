@@ -1,4 +1,5 @@
 @import '../mixins/media';
+@import "../utils/variables.scss";
 
 .menu__btn__header {
   display: none;
@@ -9,7 +10,7 @@
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 3;
 
   @include media-tablet {
     display: flex;
@@ -63,7 +64,7 @@ header.header {
   background: #004c83 0% 0% no-repeat padding-box;
   //   background: #005B9D 0% 0% no-repeat padding-box;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 
   @include media-tablet {
     position: fixed;
@@ -78,7 +79,8 @@ header.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1440px;
+    max-width: $mediaMAXWIDTH;
+
     margin: 0 auto;
 
     @include media-tablet {
@@ -363,6 +365,7 @@ header.header {
 nav.nav {
   position: sticky;
   top: 0;
+  z-index: 1;
   background: #004c83 0% 0% no-repeat padding-box;
   //   background: #005B9D 0% 0% no-repeat padding-box;
   width: 100%;
@@ -384,7 +387,7 @@ nav.nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 1440px;
+    max-width: $mediaMAXWIDTH;
     width: 100%;
     margin: 0 auto;
 

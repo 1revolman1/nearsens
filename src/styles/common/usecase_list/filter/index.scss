@@ -1,0 +1,96 @@
+.use_case__filter {
+  margin-bottom: 100px;
+
+  >h3 {
+    text-align: left;
+    font: normal normal normal 26px/33px Muli;
+    letter-spacing: 0px;
+    color: #28373B;
+    opacity: 1;
+    margin: 10px;
+
+  }
+
+  >.use_case__filter-list {
+    display: flex;
+    flex-flow: row wrap;
+
+    >.use_case__filter-list__filter {
+      flex: 0 1 calc(13% + 20px);
+      margin: 10px;
+      position: relative;
+      padding: 14px 30px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #AAAAAA;
+      border-radius: 10px;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .checker {
+        display: none;
+      }
+
+      &.checked-filter {
+        background: #005B9D 0% 0% no-repeat padding-box;
+        border: 1px solid #005B9D;
+
+        >.checker {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          background: #2EC9AD 0% 0% no-repeat padding-box;
+          border-radius: 10px 0px;
+          opacity: 1;
+          padding: 6px;
+
+          i {
+            font-size: 12px;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+          }
+        }
+
+        >span {
+          color: #FFFFFF;
+        }
+      }
+
+      &:not(.checked-filter):hover {
+        border: 1px solid #005B9D;
+
+        >span {
+          color: #005B9D;
+
+        }
+      }
+
+      >span {
+        text-align: left;
+        font: normal normal 600 18px/23px Muli;
+        letter-spacing: 0px;
+        color: #28373B;
+        opacity: 1;
+      }
+    }
+  }
+
+  >.use_case__filter-remove {
+
+    button {
+      margin: 20px 10px;
+      background: white;
+      border: 1px solid #AAAAAA;
+      border-radius: 40px;
+      opacity: 1;
+      padding: 8px 20px;
+      font: normal normal bold 18px/23px Muli;
+      letter-spacing: 0px;
+      color: #AAAAAA;
+      opacity: 1;
+    }
+  }
+
+}
