@@ -30,9 +30,9 @@ section.use_case__usecases {
       transition: all ease .5s;
 
       @include media-tablet {
-        display: flex;
+        // display: flex;
         flex: none;
-        width: 95%;
+        width: 90%;
         margin: 25px auto;
         max-width: inherit;
       }
@@ -50,7 +50,7 @@ section.use_case__usecases {
 
         @include media-tablet {
           flex: none;
-          width: 95%;
+          width: 90%;
           margin: 25px auto !important;
         }
 
