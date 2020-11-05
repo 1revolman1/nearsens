@@ -4,11 +4,15 @@ export const useProductList=function main(){
         changes.forEach(change => {
         if (change.intersectionRatio===0) {
             scrollable.classList.add("out-viewport")
-            scrollable.style.display="flex";
+            scrollable.style.opacity="1";
+            scrollable.style.visibility="visible";
+
             console.log('Header is outside viewport');
             }else{
             scrollable.classList.remove("out-viewport")
-            scrollable.style.display="none";
+            // scrollable.style.display="none";
+            scrollable.style.opacity="0";
+            scrollable.style.visibility="hidden";
             console.log('Header is IN THE viewport');
             }
             

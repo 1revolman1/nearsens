@@ -2,33 +2,16 @@
 
 
 section.use_case__pageheader{
-    position: sticky;
-    top:114px;
     z-index: 1;
     width: 100%;
     background: #005B9D 0% 0% no-repeat padding-box;
     padding: 85px 0;
     transition: padding ease .5s;
     -webkit-backface-visibility: hidden;
+    margin-bottom: 81px;
     @include media-tablet {
-        position: inherit;
-        top: 58px;
         padding: 35px 0;
         margin: 58px auto 0;
-    }
-    &.sticky-at-header{
-        padding: 55px 0;
-        .use-case__pageheader-content{
-            p{
-                display: none;
-            }
-        } 
-        @include media-tablet {
-            position: fixed;
-            top: 58px;
-            padding: 35px 0;
-            margin: 0 auto;
-        }
     }
     .use-case__pageheader-content{
         max-width: 1300px;

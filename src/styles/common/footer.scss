@@ -2,27 +2,22 @@
 @import "../mixins/media";
 
 footer.globalfooter{
-  padding: 50px 0 150px;
+  padding: 50px 0 86px;
   background: #003F6D 0% 0% no-repeat padding-box;
   .globalfooter__wrapper{
     max-width: $mediaMAXWIDTH;
     margin: 0 auto;
     width: 100%; 
     .globalfooter__wrapper__logo{
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
     .globalfooter__wrapper__content{
       margin-bottom: 60px;
       display: flex;
+      flex-flow: row wrap;
       ul{
-        flex: 0 1 calc(30% + 30px);
-        margin:0 80px;
-        &:first-of-type{
-          margin-left: 0;
-        }
-        &:last-of-type{
-          margin-right: 0;
-        }
+        margin:20px 0;
+        flex: 1 1 calc(17% + 30px);
         li{
           cursor: pointer;
           list-style: none;
@@ -30,6 +25,16 @@ footer.globalfooter{
           font: normal normal normal 16px/30px Muli;
           letter-spacing: 0px;
           color: #FFFFFF;
+          transition: all ease .5s;
+          &:hover:not(.header):not(.images){
+            transform: translate(10px,0);
+          }
+          a{ 
+            font: normal normal normal 16px/30px Muli;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-decoration: none;
+          }
           &.header{
             text-align: left;
             font: normal normal bold 16px/30px Muli;
@@ -70,10 +75,16 @@ footer.globalfooter{
         }
       }
       .globalfooter__wrapper__additional__logos{
-        i{
-          font-size: 25px;
-          color: white;
-          margin:0 10px;
+        a{
+          i{
+            transition: all ease 0.5s;
+            font-size: 25px;
+            color: white;
+            margin:0 10px;
+            &:hover{
+              transform: translate(0,-5px);
+            }
+          }
         }
       }
       @include media-tablet {

@@ -82,14 +82,24 @@
     button {
       margin: 20px 10px;
       background: white;
-      border: 1px solid #AAAAAA;
+      border: 1px solid #E61414;
       border-radius: 40px;
       opacity: 1;
       padding: 8px 20px;
       font: normal normal bold 18px/23px Muli;
       letter-spacing: 0px;
-      color: #AAAAAA;
+      color: #E61414;
       opacity: 1;
+      &:hover{
+        background:#E61414;
+        color:  white;
+
+      }
+      &:disabled{
+        background: white;
+        color: #AAAAAA;
+        border: 1px solid #AAAAAA;
+      }
     }
   }
 
