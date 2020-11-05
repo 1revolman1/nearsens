@@ -1,11 +1,10 @@
 extends common/layout
 
 block content
+  include includes/usecase_list/pageheader/index
   main.main
-    include includes/usecase_list/pageheader/index
     include includes/usecase_list/filter_by_category/index
     include includes/usecase_list/usecases/index
     include includes/usecase_list/lastusecases/index
     include includes/usecase_list/subscribe_to_new_cases/index
-    hr
     include includes/usecase_list/additional_tips/index

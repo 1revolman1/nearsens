@@ -1,5 +1,7 @@
 @import "../../local_modules/normalize.css/normalize";
 @import "../../local_modules/font-awesome/all.min";
+@import "../mixins/media";
+@import "../utils/variables.scss";
 
 *,
 *::before,
@@ -23,4 +25,13 @@ img {
 
 a {
   text-decoration: none;
+}
+
+main.main{
+  max-width: $mediaMAXWIDTH;
+  margin: 0 auto;
+  width: 100%;
+  @include media-tablet {
+    margin: 58px auto 0 ;
+}
 }

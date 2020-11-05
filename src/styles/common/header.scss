@@ -10,7 +10,7 @@
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 3;
+  z-index: 10;
 
   @include media-tablet {
     display: flex;
@@ -59,13 +59,17 @@
 .oppen_nav {
   display: none;
 }
+header.unshow{
+  opacity: 0;
+  visibility: hidden;
+}
 
 header.header {
   background: #004c83 0% 0% no-repeat padding-box;
   //   background: #005B9D 0% 0% no-repeat padding-box;
   width: 100%;
-  z-index: 2;
-
+  z-index: 9;
+  box-shadow: inset -15px 91px 305px -177px rgba(0,0,0,0.75);
   @include media-tablet {
     position: fixed;
     top: 0;
@@ -376,8 +380,9 @@ header.header {
 nav.nav {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 8;
   background: #004c83 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 5px 305px -177px rgba(0,0,0,0.75);
   //   background: #005B9D 0% 0% no-repeat padding-box;
   width: 100%;
 
@@ -504,11 +509,11 @@ nav.nav {
 
             &:hover {
               .dropbtn {
-                >svg {
-                  transform: rotate(180deg);
+               i {
+                  transform: rotate(-90deg);
 
                   @include media-tablet {
-                    transform: none;
+                    transform: rotate(90deg);
                   }
                 }
               }
@@ -532,7 +537,7 @@ nav.nav {
               cursor: pointer;
 
               &.unshow {
-                >svg {
+                >svg,>i {
                   @include media-tablet {
                     transform: rotate(180deg);
                   }
@@ -557,7 +562,8 @@ nav.nav {
               }
 
 
-              >svg {
+              >svg,>i {
+                transform: rotate(90deg);
                 margin: 0 7px;
                 transition: all ease 0.5s;
                 height: 15px;
@@ -645,23 +651,32 @@ nav.nav {
                 &:hover {
                   transform: translate(10px, 0%);
                 }
-
-                svg {
-                  height: 14px;
-                  width: 9px;
+                i{
                   margin-right: 9px;
-                  transform: rotate(-90deg);
-
-                  path {
-                    fill: #005B9D;
-                  }
-
+                  color:#005B9D;
                   @include media-tablet {
-                    path {
-                      fill: #33709c;
-                    }
+                 
+                      color: #33709c;
+                    
                   }
                 }
+
+                // svg {
+                //   height: 14px;
+                //   width: 9px;
+                //   margin-right: 9px;
+                //   transform: rotate(-90deg);
+
+                //   path {
+                //     fill: #005B9D;
+                //   }
+
+                //   @include media-tablet {
+                //     path {
+                //       fill: #33709c;
+                //     }
+                //   }
+                // }
               }
             }
           }
@@ -717,6 +732,7 @@ nav.nav {
         a{
           width:100%;
           display: flex;
+          justify-content: center;
         }
         &:after {
           content: '';
@@ -952,22 +968,37 @@ nav.nav {
         .shop-cart-logo{
           display: flex;
         }
-        .shop-cart-logo:hover ~ .droupup-block .dropdown,
-        .shop-cart-logo:focus-within ~ .droupup-block .dropdown,
-        .droupup-block:hover .dropdown,
+        .shop-cart-logo:hover ~.droupup-block .dropdown,
         .droupup-block:focus .dropdown,
+        .droupup-block:hover .dropdown,
         .dropdown:hover,
-        .dropdown:focus {
-            visibility: visible;
-            opacity: 1;
-            display: flex;
-            flex-direction: column;
-            @include media-tablet {
-              visibility: hidden;
-              opacity: 0;
-              display: none;
-            }
+        .dropdown:focus{
+          visibility: visible;
+          opacity: 1;
+          display: flex;
+          flex-direction: column;
+          @include media-tablet {
+            visibility: hidden;
+            opacity: 0;
+            display: none;
+          }
         }
+        // .shop-cart-logo:hover ~ .droupup-block .dropdown,
+        // .shop-cart-logo:focus-within ~ .droupup-block .dropdown,
+        // .droupup-block:hover .dropdown,
+        // .droupup-block:focus .dropdown,
+        // .dropdown:hover,
+        // .dropdown:focus {
+        //     visibility: visible;
+        //     opacity: 1;
+        //     display: flex;
+        //     flex-direction: column;
+        //     @include media-tablet {
+        //       visibility: hidden;
+        //       opacity: 0;
+        //       display: none;
+        //     }
+        // }
         img{
           width: 24px;
           height: 24px;
