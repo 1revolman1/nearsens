@@ -23,7 +23,7 @@ export const useCasesList=function main(){
     }
     const options = {
         root: null, //root
-        rootMargin: '0px',
+        rootMargin: '-100px',
         threshold: 0,
     };
     

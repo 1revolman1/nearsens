@@ -1,6 +1,7 @@
 // import $ from '../local_modules/jquery/dist/jquery.min';
 import {useCasesList} from "./usecases_list";
 import {useProductList} from "./product_list";
+import {useProductPage} from "./product_page";
 
 $(document).ready(() => {
   const _url = window.location.pathname;
@@ -13,6 +14,9 @@ $(document).ready(() => {
       break;
     case /product_list/.test(_url):
       useProductList()
+      break;
+    case /product_page/.test(_url):
+      useProductPage()
       break;
     case /\//.test(_url):
       console.log(`HOME PAGE`);

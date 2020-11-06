@@ -1,0 +1,50 @@
+section.productpage__reviewsavaliable{
+    margin-bottom:80px;
+    h3{
+        font: normal normal normal 32px/40px Muli;
+        letter-spacing: 0px;
+        color: #28373B;
+        opacity: 1;
+        margin-bottom:20px;
+    }
+    > p{
+        font: normal normal 300 18px/23px Muli;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+        margin-bottom:62px;
+    }
+    .productpage__reviewsavaliable-content{
+        .productpage__reviewsavaliable-content__element{
+            display:flex;
+            margin:30px 0;
+            flex-flow:row wrap;
+            img{
+                width:100px;
+                height:100px;
+                border-radius:50%;
+                margin-right:30px; 
+                object-fit:cover;
+            }
+            .productpage__reviewsavaliable-content__element-text{
+                display: flex;
+                flex-flow:row wrap;
+                flex: 1;
+                h3{
+                    font: normal normal bold 22px/28px Muli;
+                    letter-spacing: 0px;
+                    color: #28373B;
+                    opacity: 1;
+                    margin-bottom:2px;
+                }
+                p{
+                    font: normal normal 300 16px/20px Muli;
+                    letter-spacing: 0px;
+                    color: #28373B;
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+}

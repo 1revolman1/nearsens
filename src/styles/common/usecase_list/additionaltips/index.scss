@@ -23,6 +23,10 @@ section.use_case__additionaltips{
             object-fit: cover;
             border-radius: 50%;
             margin-bottom: 33px;
+            @include media-tablet {
+                margin-bottom: 10px;
+
+            }
         }
         .use_case__additionaltips-list-element-text{
             h3{                

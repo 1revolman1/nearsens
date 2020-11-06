@@ -942,7 +942,8 @@ nav.nav {
                 margin-bottom: 10px;
               }
 
-              button {
+              a {
+                list-style: none;
                 background: #2ec9ad 0% 0% no-repeat padding-box;
                 border: 1px solid #2ec9ad;
                 border-radius: 40px;
@@ -965,7 +966,8 @@ nav.nav {
             }
           }
         }
-        .shop-cart-logo{
+        .shop-cart-logo{         
+           cursor: pointer;
           display: flex;
         }
         .shop-cart-logo:hover ~.droupup-block .dropdown,

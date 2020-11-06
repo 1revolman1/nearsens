@@ -1,0 +1,30 @@
+section.productpage__textblockimgheader{
+    display:flex;
+    flex-flow:row wrap;
+    padding-bottom:80px;
+    .productpage__textblockimgheader-img{
+        flex:0 1 45%;
+        img{
+            position: sticky;
+            top: 120px;
+            object-fit:cover;
+        }
+    }
+    .productpage__textblockimgheader-text{
+        flex:0 1 50%;
+        padding:40px;
+        h3{
+            font: normal normal normal 26px/33px Muli;
+            letter-spacing: 0px;
+            color: #28373B;
+            opacity: 1;
+        }
+        p{
+            font: normal normal 300 18px/23px Muli;
+            letter-spacing: 0px;
+            color: #333333;
+            opacity: 1;
+            margin-bottom:35px;
+        }
+    }
+}

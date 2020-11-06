@@ -1,0 +1,61 @@
+section.productpage__productslinked{
+    background: #005B9D 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 60px 0;
+    .productlist__products__wrap{
+        h3{
+            color:white;
+            margin-bottom:0;
+        }
+        .productlist__products-container{
+            margin:0;
+            justify-content:space-between;
+            .productlist__products-container-element{
+                box-shadow:none;
+                background:transparent;
+                margin:0;
+                .productlist__products-container-element-text{
+                    h4{
+                        color: #FFFFFF;
+                    }
+                    p{
+                        color: #FFFFFF;
+                    }
+                }
+                .productlist__products-container-element-controllers{
+                     .productlist__products-container-element-controllers-price{
+                         span{
+                             color:white;
+                             sup{
+                                 color:white;
+                             }
+                         }
+                     }
+                     .productlist__products-container-element-controllers-counter{
+                         span{
+                            margin:0 15px;
+                            color: #FFFFFF;
+                         }
+                         button{
+                             max-width:64px;
+                             opacity:1;
+                             counter:pointer;
+                             background:transparent;
+                             border: 1px solid #FFFFFF;
+                             color: #FFFFFF;
+                             i{
+                                 counter:pointer;
+                             }
+                             &:disabled{
+                                 opacity:0.4;
+                             }
+                         }
+                     }
+                     .productlist__products-container-element-controllers-shop{
+
+                     }
+                }
+            }
+        }
+    }
+}
