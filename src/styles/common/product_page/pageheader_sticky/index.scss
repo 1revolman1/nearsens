@@ -16,70 +16,109 @@ section.productpage__pageheader_sticky {
         opacity: 1;
     }
     @include media-tablet {
-        top: 58px;
+		top: 58px;
+		padding:13px 0 15px;
     }
 	.productpage__pageheader_sticky-wrap {
 		display: flex;
 		justify-content: space-between;
 		position: relative;
-		.productpage__pageheader_sticky-wrap-headblock {
-			display: flex;
-			align-items: center;
-			img {
-				width: 40px;
-				height: 40px;
-				object-fit: cover;
-			}
-			h3 {
-				margin: 0 28px;
-				font: normal normal normal 28px/35px Muli;
-				letter-spacing: 0px;
-				color: #28373b;
-				opacity: 1;
-			}
-			.productpage__pageheader_sticky-headblock-disqount {
-				padding: 5px 11px;
-				background: #ffa10a 0% 0% no-repeat padding-box;
-				border-radius: 10px;
-				opacity: 1;
-				font: normal normal 600 24px/30px Muli;
-				letter-spacing: 0px;
-				color: #ffffff;
-				opacity: 1;
-			}
+		@include media-tablet {
+			margin:0;
 		}
-		.productpage__pageheader_sticky-wrap-manipulator {
+		.productpage__pageheader_sticky-wrap-containter{
 			display: flex;
-			align-items: center;
-			.counter-price {
-				margin:0 10px;
+			flex: 1;
+			flex-direction: row;
+			@include media-tablet {
+				flex:2;
+				flex-direction: column;
+			}
+			.productpage__pageheader_sticky-wrap-headblock {
 				display: flex;
-				position: relative;
-				font: normal normal 300 48px/60px Muli;
-				letter-spacing: 0px;
-				color: #28373b;
-				opacity: 1;
-				sup {
-					font: normal normal 300 28px/60px Muli;
-				}
-				&.old {
-					font: normal normal 300 31px/60px Muli;
-					opacity: 0.5;
-					sup {
-						font: normal normal 300 19px/60px Muli;
+				align-items: center;
+				img {
+					width: 40px;
+					height: 40px;
+					object-fit: cover;
+					@include media-tablet {
+						display: none;
 					}
-					&:after {
-						content: "";
-						display: block;
-						position: absolute;
-						left: 0;
-						top: 50%;
-						color: #28373b;
-						width: 100%;
-						height: 0;
-						border-bottom: 2px solid #28373b;
-						-webkit-transform: rotate(-30deg);
-						transform: rotate(-30deg);
+				}
+				h3 {
+					margin: 0 28px;
+					font: normal normal normal 28px/35px Muli;
+					letter-spacing: 0px;
+					color: #28373b;
+					opacity: 1;
+					@include media-tablet {
+						margin: 0;
+						font: normal normal normal 18px/23px Muli;
+					}
+				}
+				.productpage__pageheader_sticky-headblock-disqount {
+					padding: 5px 11px;
+					background: #ffa10a 0% 0% no-repeat padding-box;
+					border-radius: 10px;
+					opacity: 1;
+					font: normal normal 600 24px/30px Muli;
+					letter-spacing: 0px;
+					color: #ffffff;
+					opacity: 1;
+					@include media-tablet {
+						display: none;
+					}
+				}
+			}
+			.productpage__pageheader_sticky-wrap-manipulator {
+				display: flex;
+				align-items: center;
+				margin:0 auto;
+				@include media-tablet {
+					margin:0;
+				}
+				.counter-price {
+					margin:0 10px;
+					display: flex;
+					position: relative;
+					font: normal normal 300 48px/60px Muli;
+					letter-spacing: 0px;
+					color: #28373b;
+					opacity: 1;
+					@include media-tablet {
+						font: normal normal 300 14px/18px Muli;
+					}
+					sup {
+						font: normal normal 300 28px/60px Muli;
+						@include media-tablet {
+							font: normal normal 300  7px/18px Muli;
+						}
+					}
+					&.old {
+						font: normal normal 300 31px/60px Muli;
+						opacity: 0.5;
+						@include media-tablet {
+							font: normal normal 300 10px/18px Muli;
+						}
+						sup {
+							font: normal normal 300 19px/60px Muli;
+							@include media-tablet {
+								font: normal normal 300  6px/18px Muli;
+							}
+						}
+						&:after {
+							content: "";
+							display: block;
+							position: absolute;
+							left: 0;
+							top: 50%;
+							color: #28373b;
+							width: 100%;
+							height: 0;
+							border-bottom: 2px solid #28373b;
+							-webkit-transform: rotate(-30deg);
+							transform: rotate(-30deg);
+						}
 					}
 				}
 			}
@@ -93,9 +132,16 @@ section.productpage__pageheader_sticky {
 			justify-content: space-between;
             align-items: center;
 			width: 100%;
+			@include media-tablet {
+				flex:1;
+				justify-content: flex-end;
+			}
 			.productpage__pageheader_sticky-wrap-manipulator-data {
 				display: flex;
 				padding: 9px 20px;
+				@include media-tablet {
+					display: none;
+				}
 				button {
 					cursor: pointer;
 					padding: 8.5px;
@@ -133,8 +179,20 @@ section.productpage__pageheader_sticky {
 					letter-spacing: 0px;
 					color: #ffffff;
 					opacity: 1;
+					@include media-tablet {
+						padding: 3px 17px;
+					}
+					span{
+						font: normal normal bold 18px/23px Muli;
+						@include media-tablet {
+							display: none;
+						}
+					}
 					i {
 						margin-right: 10px;
+						@include media-tablet {
+							margin:0;
+						}
 					}
 				}
 			}
