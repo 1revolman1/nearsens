@@ -5,6 +5,7 @@ section.productpage__textblockheader{
     display:flex;
     flex-flow:row wrap;
     margin-bottom:70px;
+    justify-content: center;
     @include media-tablet {
         justify-content: center;
     }
@@ -14,7 +15,8 @@ section.productpage__textblockheader{
         flex-direction:column;
         align-items:center;
         justify-content:center;
-        flex:0 1 calc(28% + 30px);
+        // flex:0 1 calc(28% + 30px);
+        flex:1 1 calc(28% + 30px);
         @include media-tablet {
             flex:0 1 calc(31% + 30px);
         }

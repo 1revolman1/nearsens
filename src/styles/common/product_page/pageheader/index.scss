@@ -32,12 +32,19 @@ section.productpage__pageheader {
 				margin-top: 0;
 				padding-top:325px;
 			}
+			@media screen and (max-width:328px){
+				background-size: 100% 42%!important;
+			}
 			.productpage__pageheader-wrap-container {
 				flex: 0 0 60%;
+				@media screen and (max-width:900px) {
+					flex: 0 0 90%;
+					margin: 0 auto;
+				}
 				@include media-tablet {
 					width:100%;
 					flex:none;
-					padding:0 30px;
+					padding:0 30px 30px;
 				}
 				.productpage__pageheader-wrap-headblock {
 					margin-bottom: 23px;
@@ -61,7 +68,7 @@ section.productpage__pageheader {
 					.productpage__pageheader-wrap-headblock-disqount {
 						padding: 5px 10px;
 						border-radius: 10px;
-						font: normal normal 600 24px/30px Muli;
+						font: normal normal 300 24px/30px Muli;
 						letter-spacing: 0px;
 						color: #ffffff;
 						opacity: 1;
@@ -142,7 +149,10 @@ section.productpage__pageheader {
 								font: normal normal 300 30px/45px Muli;
 							}
                             sup {
-								font: normal normal 300 19px/60px Muli;
+								font: normal normal 300 19px/55px Muli;
+								@include media-tablet {
+									font: normal normal 300 19px/45px Muli;
+								}
                             }
                              &:after{
                                 content:"";
@@ -174,17 +184,19 @@ section.productpage__pageheader {
 					}
 					
 					.productpage__pageheader-wrap-manipulator-container{
-                        max-width:369px;
+						max-width:369px;
+						align-items: center;
                         overflow:auto;
                         display: flex;
                         margin-left: auto;
                         background: #FFFFFF 0% 0% no-repeat padding-box;
                         border-radius: 100px;
                         justify-content:space-between;
-                        align-items:flex-start;
+                        // align-items:flex-start;
                         width:100%;
 						@include media-tablet {
 							align-items: center;
+							background:transparent;
 						}
                         .productpage__pageheader-wrap-manipulator-data{
                             display:flex;

@@ -29,6 +29,10 @@ section.productpage__inourapp{
         }
         .productpage__inourapp-content{
             display:flex;
+            @media screen and (max-width:1150px){
+                width: 90%;
+                margin: 0 auto;
+            }
             @include media-tablet {
                 width: 90%;
                 flex-direction: column-reverse;
@@ -36,11 +40,18 @@ section.productpage__inourapp{
             }
             .productpage__inourapp-content__img{
                 margin-right:58px;
+                width: 100%;
                 display:flex;
                 img{
+                    width: 100%;
                     object-fit:cover;
                 }
+                @media screen and (max-width:1150px){
+                    flex:1;
+                    margin-right:20px;
+                }
                 @include media-tablet {
+                    flex:none;
                     margin: 0;
                 }
             }
@@ -49,17 +60,26 @@ section.productpage__inourapp{
                 flex-flow:row wrap;
                 padding-top:70px;
                 padding-bottom:60px;
+                @media screen and (max-width:1150px){
+                    flex:1;
+                }
                 @include media-tablet {
+                    flex:none;
                     margin-bottom: 30px;
-                   padding: 0;
-                   justify-content: space-between;
+                    padding: 0;
+                    justify-content: space-between;
                 }
                 .productpage__inourapp-content__blocks-element{
                     flex:0 1 calc(32% + 10px);
                     display:flex;
                     flex-direction:column;
                     margin:15px 58px;
+                    @media screen and (max-width:1150px){
+                        margin: 15px;
+                        flex:1 1 calc(32% + 10px);
+                    }
                     @include media-tablet {
+                        flex:0 1 calc(32% + 10px);
                         margin: 15px 0;
                     }
                     img{

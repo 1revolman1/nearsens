@@ -16,7 +16,8 @@ section.productpage__specificationblock{
         margin: 0 auto;
         @include media-tablet {
             margin:0 auto;
-            padding:0 10px;
+            padding:30px 0;
+            width: 90%;
         }
         h3{
             text-align: center;
@@ -25,9 +26,13 @@ section.productpage__specificationblock{
             color: #FFFFFF;
             opacity: 1;
             margin-bottom:25px;
+            @include media-tablet {
+                font: normal normal normal 22px/28px Muli;
+            }
         }
         .productpage__specificationblock-wrap__container{
             display:flex;
+            justify-content: space-between;
             flex-flow:row wrap;
             margin-bottom:60px;
             @include media-tablet {
@@ -35,10 +40,12 @@ section.productpage__specificationblock{
             }
             .productpage__specificationblock-wrap__container-block{
                 width: 100%;
-                flex:0 1 calc(24% + 40px);
+                flex:0 1 calc(20% + 40px);
+                // flex:0 1 calc(24% + 40px);
                 @include media-tablet {
                     display: flex;
                     flex-flow:row wrap;
+                    justify-content: space-between;
                     flex:none;
                 }
                  .productpage__specificationblock-wrap__container-block__element{
@@ -184,6 +191,11 @@ section.productpage__specificationblock{
                     li{
                         list-style:none;
                         margin-bottom:32px;
+                        &:last-of-type{
+                            @include media-tablet {
+                                margin-bottom:0;
+                            }
+                        }
                     }
                     &:nth-child(odd){
                         margin-right:50px;
