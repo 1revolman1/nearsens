@@ -1,11 +1,27 @@
+@import '../../../mixins/media';
+@import "../../../utils/variables.scss";
+
 section.productpage__productslinked{
     background: #005B9D 0% 0% no-repeat padding-box;
     opacity: 1;
     padding: 60px 0;
+    @include media-tablet {
+        padding: 40px 0;
+    }
     .productlist__products__wrap{
+        @include media-tablet {
+            width:90%;
+            margin:0 auto;
+        }
         h3{
             color:white;
             margin-bottom:0;
+            @include media-tablet {
+                font: normal normal normal 22px/28px Muli;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                opacity: 1;
+            }
         }
         .productlist__products-container{
             margin:0;
@@ -14,46 +30,92 @@ section.productpage__productslinked{
                 box-shadow:none;
                 background:transparent;
                 margin:0;
-                .productlist__products-container-element-text{
-                    h4{
-                        color: #FFFFFF;
-                    }
-                    p{
-                        color: #FFFFFF;
+                @include media-tablet {
+                    flex-direction: row;
+                    flex:none;
+                    width:100%;
+                    margin:10px 0;
+                    background: white;
+                }
+                img{
+                    @include media-tablet {
+                    //   max-width: 137px;
+                    width: 137px;
+                    height: 137px;
+                      margin:0;
+                        align-self: center;
                     }
                 }
-                .productlist__products-container-element-controllers{
-                     .productlist__products-container-element-controllers-price{
-                         span{
-                             color:white;
-                             sup{
-                                 color:white;
-                             }
-                         }
-                     }
-                     .productlist__products-container-element-controllers-counter{
-                         span{
-                            margin:0 15px;
+                .productlist__products-container-element-controller{
+                    @include media-tablet {
+                        margin-left: 10px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .productlist__products-container-element-text{
+                        h4{
                             color: #FFFFFF;
-                         }
-                         button{
-                             max-width:64px;
-                             opacity:1;
-                             counter:pointer;
-                             background:transparent;
-                             border: 1px solid #FFFFFF;
-                             color: #FFFFFF;
-                             i{
-                                 counter:pointer;
-                             }
-                             &:disabled{
-                                 opacity:0.4;
-                             }
-                         }
-                     }
-                     .productlist__products-container-element-controllers-shop{
+                            @include media-tablet {
+                                font: normal normal normal 14px/18px Muli;
+                                letter-spacing: 0px;
+                                color: #28373B;
+                                opacity: 1;
+                            }
+                        }
+                        p{
+                            color: #FFFFFF;
+                            @include media-tablet {
+                                font: italic normal normal 12px/15px Muli;
+                                letter-spacing: 0px;
+                                color: #6D7476;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .productlist__products-container-element-controllers{
+                         .productlist__products-container-element-controllers-price{
+                             span{
+                                 color:white;
+                                 @include media-tablet {
+                                    color: #005B9D;
+                                    font: normal normal 300 26px/33px Muli;
+                                }
+                                 sup{
+                                     color:white;
+                                     @include media-tablet {
+                                        color: #005B9D;
+                                        font: normal normal 300 15px/33px Muli;
 
-                     }
+                                    }
+                                 }
+                             }
+                         }
+                         .productlist__products-container-element-controllers-counter{
+                             span{
+                                margin:0 15px;
+                                color: #FFFFFF;
+                             }
+                             button{
+                                 max-width:64px;
+                                 opacity:1;
+                                 counter:pointer;
+                                 background:transparent;
+                                 border: 1px solid #FFFFFF;
+                                 color: #FFFFFF;
+                                 i{
+                                     counter:pointer;
+                                 }
+                                 &:disabled{
+                                     opacity:0.4;
+                                 }
+                             }
+                         }
+                         .productlist__products-container-element-controllers-shop{
+                            @include media-tablet {
+                               margin-top: auto;
+                            }
+                         }
+                    }
                 }
             }
         }

@@ -1,9 +1,23 @@
+@import '../../../mixins/media';
+@import "../../../utils/variables.scss";
+
 section.productpage__textblockimgheader{
     display:flex;
     flex-flow:row wrap;
     padding-bottom:80px;
+    @include media-tablet {
+        width: 90%;
+        padding-bottom:50px;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+    }
     .productpage__textblockimgheader-img{
         flex:0 1 45%;
+        width:100%;
+        @include media-tablet {
+            flex:none;        
+            width:100%;
+        }
         img{
             position: sticky;
             top: 260px;
@@ -13,11 +27,21 @@ section.productpage__textblockimgheader{
     .productpage__textblockimgheader-text{
         flex:0 1 50%;
         padding:40px;
+        @include media-tablet {
+            padding:0;
+            flex:none;        
+            width:100%;
+
+        }
         h3{
             font: normal normal normal 26px/33px Muli;
             letter-spacing: 0px;
             color: #28373B;
             opacity: 1;
+            @include media-tablet {
+                margin-bottom: 20px;
+                font: normal normal normal 20px/25px Muli;
+            }
         }
         p{
             font: normal normal 300 18px/23px Muli;
@@ -25,6 +49,9 @@ section.productpage__textblockimgheader{
             color: #333333;
             opacity: 1;
             margin-bottom:35px;
+            @include media-tablet {
+                font: normal normal 300 14px/18px Muli;
+            }
         }
     }
 }
