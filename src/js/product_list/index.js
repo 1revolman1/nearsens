@@ -1,3 +1,54 @@
+function cartAnim() {
+  const isMobile=window.innerWidth<=768;
+  const cart=isMobile? $('.second-block-in-menu .cart-block'): $('.shop-cart');
+  const imgtodrag = $(this).parents('.productlist__products-container-element').find("img").eq(0);
+  const infoSuccessHeader=cart.find(".droupup-block-info");
+
+  //SHOW SUCCESS BUYING ICON
+  $(this).parents(".productlist__products-container-element-controllers-manipulator").addClass("show-success")
+  infoSuccessHeader.removeClass("unshow");
+
+  if (imgtodrag) {
+      const imgclone = imgtodrag.clone()
+          .offset({
+          top: imgtodrag.offset().top,
+          left: imgtodrag.offset().left
+      })
+          .css({
+          'opacity': '0.5',
+              'position': 'absolute',
+              'height': '150px',
+              'width': '150px',
+              "border-radius":"10px",
+              'z-index': '100'
+      })
+          .appendTo($('body'))
+          .animate({
+          'top': cart.offset().top + 10,
+              'left': cart.offset().left + 10,
+              'width': 30,
+              'height': 30
+      }, 1000, 'easeInOutExpo');   
+      //SHAKE ANIM
+
+      setTimeout(()=>{
+        // console.log(  $(this))
+        $(this).prop("disabled",true).children("i").addClass("fa-check").removeClass("fa-shopping-basket");
+        $(this).parents(".productlist__products-container-element-controllers-manipulator").removeClass("show-success");
+        infoSuccessHeader.addClass("unshow");
+      },2000)
+
+      imgclone.animate({
+          'width': 0,
+              'height': 0
+      }, function () {
+          $(this).detach()
+      });
+  }
+}
+
+
+
 export const useProductList=function main(){
     console.log(`PRODUCT LIST PAGE`);
     function onScrollChange(changes, observer) {
@@ -23,6 +74,8 @@ export const useProductList=function main(){
         rootMargin: '-100px',
         threshold: 0,
       };
+
+    $('.productlist__products-container-element-controllers-shop button').on('click', cartAnim);
 
     $(".productlist__pageheader-wrapper__slider-container__slider").slick({
         infinite: true,

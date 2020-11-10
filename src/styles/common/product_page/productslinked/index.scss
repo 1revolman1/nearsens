@@ -30,7 +30,8 @@ section.productpage__productslinked{
                 position: relative;
                 box-shadow:none;
                 background:white;
-                margin:20px 0;
+                flex: 0 1 calc(24% + 60px);
+                margin:20px 2%;
                 @include media-tablet {
                     flex-direction: row;
                     flex:none;
@@ -107,59 +108,59 @@ section.productpage__productslinked{
                         display: flex;
                         margin-top: auto;
                         align-items: flex-end;
-                         .productlist__products-container-element-controllers-price{
-                             display: flex;
-                             flex-direction: column;
-                             .price{
+                        .productlist__products-container-element-controllers-price{
+                            display: flex;
+                            flex-direction: column;
+                            .price{
+                            color: #005B9D;
+                                @include media-tablet {
                                 color: #005B9D;
-                                 @include media-tablet {
-                                    color: #005B9D;
-                                    font: normal normal 300 26px/33px Muli;
+                                font: normal normal 300 26px/33px Muli;
+                            }
+                            &.price-disqount {
+                                @include media-tablet {
+                                    display: none;
                                 }
-                                &.price-disqount {
-                                    @include media-tablet {
-                                        display: none;
-                                    }
-                                    position: relative;
-                                    width: fit-content;
+                                position: relative;
+                                width: fit-content;
+                                color: #28373b;
+                                font: normal normal 300 23px/33px Muli;
+                                opacity: .5;
+                                sup{
+                                    font: normal normal 300 18px/0px Muli;
                                     color: #28373b;
-                                    font: normal normal 300 23px/33px Muli;
-                                    opacity: .5;
-                                    sup{
-                                        font: normal normal 300 18px/0px Muli;
-                                        color: #28373b;
-                                    }
-                                    &:after{
-                                        content: "";
-                                        display: block;
-                                        position: absolute;
-                                        left: 0;
-                                        top: 50%;
-                                        color: #28373b;
-                                        width: 100%;
-                                        height: 0;
-                                        border-bottom: 1px solid #28373b;
-                                        transform: rotate(-30deg);
-                                    }
                                 }
-                                 sup{
+                                &:after{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 50%;
+                                    color: #28373b;
+                                    width: 100%;
+                                    height: 0;
+                                    border-bottom: 1px solid #28373b;
+                                    transform: rotate(-30deg);
+                                }
+                            }
+                                sup{
+                                color: #005B9D;
+                                    @include media-tablet {
                                     color: #005B9D;
-                                     @include media-tablet {
-                                        color: #005B9D;
-                                        font: normal normal 300 15px/33px Muli;
+                                    font: normal normal 300 15px/33px Muli;
 
-                                    }
-                                 }
-                             }
-                         }
-                         .productlist__products-container-element-controllers-manipulator{
+                                }
+                                }
+                            }
+                        }
+                        .productlist__products-container-element-controllers-manipulator{
                              display: flex;
                              position: relative;
-                             &.show-success{
+                            &.show-success{
                                 .productlist__products-container-element-controllers-successbuying{
                                     opacity: 1;
                                     visibility: visible;
-                                    width: 100%;
+                                    // width: 100%;
                                 }
                             }
                             .productlist__products-container-element-controllers-counter{
@@ -175,8 +176,15 @@ section.productpage__productslinked{
                                     background:transparent;
                                     border: 1px solid black;
                                     color: black;
+                                    outline: none;
+
                                     i{
                                         cursor:pointer;
+                                    }
+                                    &:hover{
+                                        border:1px solid #2EC9AD;
+                                        background: #2EC9AD;
+                                        color: white;
                                     }
                                     &:disabled{
                                         opacity:0.4;
@@ -197,7 +205,8 @@ section.productpage__productslinked{
                                 align-items: center;
                                 visibility: hidden;
                                 opacity: 0;
-                                width:60%;
+                                width:max-content;
+                                // width:60%;
                                 transition: visibility  0.5s linear, opacity 0.5s linear, width 0.5s linear;
                                 height: 100%;
                                 position: absolute;
@@ -206,7 +215,8 @@ section.productpage__productslinked{
                                 background: #2EC9AD 0% 0% no-repeat padding-box;
                                 border: 1px solid #2EC9AD;
                                 border-radius: 40px;
-                                padding: 7px 20px;
+                                // padding: 7px 20px;
+                                padding:7px 13px;
                                 @include media-tablet {
                                     padding: 5px;
                                 }

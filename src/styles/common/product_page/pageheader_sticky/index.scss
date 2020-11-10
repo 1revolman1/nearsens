@@ -8,7 +8,7 @@ section.productpage__pageheader_sticky {
 	width:100%;
 	padding: 28px 0 32px;
 	background: #f2f2f2 0% 0% no-repeat padding-box;
-    transition: visibility 0s, opacity 0.5s linear, top ease 0.5s;
+    transition: visibility 0.2s, opacity 0.5s linear, top ease 0.5s;
     visibility: hidden;
     opacity: 0;
     &.out-viewport{

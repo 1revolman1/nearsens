@@ -55,42 +55,6 @@ function cartAnim() {
         });
     }
 }
-
-function cartAnimInStickyHeader(){
-    const isMobile=window.innerWidth<=768;
-    const cart=isMobile? $('.second-block-in-menu .cart-block'): $('.shop-cart');
-    // const imgDrag=$(".productpage__pageheader-wrap-headblock img");
-    const imgtodrag=$(".productpage__pageheader_sticky-wrap-headblock > img");
-    // const imgtodrag = $(this).parents('.productlist__products-container-element').find("img").eq(0);
-    if (imgtodrag) {
-        const imgclone = imgtodrag.clone()
-            .offset({
-            top: imgtodrag.offset().top,
-            left: imgtodrag.offset().left
-        })
-            .css({
-            'opacity': '0.5',
-                'position': 'absolute',
-                'height': '70px',
-                'width': '70px',
-                "border-radius":"10px",
-                'z-index': '100'
-        })
-            .appendTo($('body'))
-            .animate({
-            'top': cart.offset().top + 10,
-                'left': cart.offset().left + 10,
-                'width': 30,
-                'height': 30
-        }, 1000, 'easeInOutExpo');   
-        imgclone.animate({
-            'width': 0,
-                'height': 0
-        }, function () {
-            $(this).detach()
-        });
-    }
-}
 const options = {
     root: null, //root
     rootMargin: '-100px',

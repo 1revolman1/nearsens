@@ -27,6 +27,16 @@ section.productlist__posibilities{
             letter-spacing: 0px;
             color: #2EC9AD;
             opacity: 1;
+            cursor: pointer;
+            outline: none;
+            &.red{
+                color:white;
+                background: red;
+            }
+            &:hover{
+                color:white;
+                background: #2EC9AD;
+            }
             @include media-tablet {
                 display: none;
             }
@@ -53,6 +63,9 @@ section.productlist__posibilities{
             }
             &:hover{
                 transform: translate(0,-5px);
+                @include media-tablet {
+                    transform: none;
+                }
             }
             
             .productlist__posibilities-prodcontainer__element-img{
@@ -117,7 +130,7 @@ section.productlist__posibilities{
     .productlist__posibilities-button{
         display: none;
         justify-content: flex-end;
-        margin: 10px 0;
+        margin: 20px 0;
         button.discover{
             display: none;
             background: white;
@@ -130,6 +143,12 @@ section.productlist__posibilities{
             letter-spacing: 0px;
             color: #2EC9AD;
             opacity: 1;
+            outline: none;
+            &.red{
+                border:none;
+                color:white;
+                background: red;
+            }
             @include media-tablet {
                 display: flex;
             }
