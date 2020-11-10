@@ -1,10 +1,17 @@
 import {useBuyingAnimationHeader} from "./animationOfBuyingHeader";
+import {useBuyingAnimationStickyHeader} from "./animationOfBuyingStickyHeader";
 
 
 function cartAnim() {
     const isMobile=window.innerWidth<=768;
     const cart=isMobile? $('.second-block-in-menu .cart-block'): $('.shop-cart');
     const imgtodrag = $(this).parents('.productlist__products-container-element').find("img").eq(0);
+    const infoSuccessHeader=cart.find(".droupup-block-info");
+
+    //SHOW SUCCESS BUYING ICON
+    $(this).parents(".productlist__products-container-element-controllers-manipulator").addClass("show-success")
+    infoSuccessHeader.removeClass("unshow");
+
     if (imgtodrag) {
         const imgclone = imgtodrag.clone()
             .offset({
@@ -27,6 +34,11 @@ function cartAnim() {
                 'height': 30
         }, 1000, 'easeInOutExpo');   
         //SHAKE ANIM
+
+        setTimeout(()=>{
+            $(this).parents(".productlist__products-container-element-controllers-manipulator").removeClass("show-success");
+            infoSuccessHeader.addClass("unshow");
+        },2000)
 
         // if(!isMobile) 
         //     setTimeout(function () {
@@ -79,17 +91,29 @@ function cartAnimInStickyHeader(){
         });
     }
 }
+const options = {
+    root: null, //root
+    rootMargin: '-100px',
+    threshold: 0,
+};
+
 export const useProductPage=function main() {
 console.log("product_page")
+
 const isMobile=window.innerWidth<=768;
+//Sticky Pop Up
+const popUp=document.querySelector(".productpage__pageheader_sticky-wrap-manipulator-container.overlay");
+const buttonToOpenBuy=document.querySelector(".productpage__pageheader_sticky-wrap-manipulator-container.main-btn");
+const scrollable=document.querySelector("section.productpage__pageheader_sticky")
 
 //Activate functionality of buying animation in header
 useBuyingAnimationHeader();
 
+//Activate functionality of buying animation in sticky header
+useBuyingAnimationStickyHeader(popUp)
+
 $('.productlist__products-container-element-controllers-shop button').on('click', cartAnim);
-const popUp=document.querySelector(".productpage__pageheader_sticky-wrap-manipulator-container.overlay");
-const buttonToOpenBuy=document.querySelector(".productpage__pageheader_sticky-wrap-manipulator-container.main-btn");
-const scrollable=document.querySelector("section.productpage__pageheader_sticky")
+
 function onScrollChange(changes, observer) {
     changes.forEach(change => {
     if (change.intersectionRatio===0) {
@@ -107,11 +131,7 @@ function onScrollChange(changes, observer) {
         
     });
 }
-const options = {
-    root: null, //root
-    rootMargin: '-100px',
-    threshold: 0,
-};
+
 let event=null;
 if(isMobile){
     window.addEventListener("scroll", function(e) {
@@ -132,7 +152,7 @@ if(isMobile){
         popUp.classList.add("isOpen")
     })
 } 
-popUp.querySelector(".productpage__pageheader_sticky-wrap-manipulator-withprice").addEventListener("click",cartAnimInStickyHeader)
+// popUp.querySelector(".productpage__pageheader_sticky-wrap-manipulator-withprice").addEventListener("click",cartAnimInStickyHeader)
 const observer = new IntersectionObserver(onScrollChange, options);
 const target = document.querySelector('section.productpage__pageheader');
 if(target) observer.observe(target);

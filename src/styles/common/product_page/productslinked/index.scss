@@ -29,8 +29,8 @@ section.productpage__productslinked{
             .productlist__products-container-element{
                 position: relative;
                 box-shadow:none;
-                background:transparent;
-                margin:0;
+                background:white;
+                margin:20px 0;
                 @include media-tablet {
                     flex-direction: row;
                     flex:none;
@@ -56,14 +56,14 @@ section.productpage__productslinked{
                         right: 22px;
                         z-index: 0;
                         padding: 5px 10px;
-                        font: normal normal 600 24px/30px Muli;
+                        font: normal normal 300 24px/30px Muli;
                         letter-spacing: 0px;
                         color: #FFFFFF;
                         opacity: 1;
                         background: #FFA10A 0% 0% no-repeat padding-box;
                         border-radius: 10px;
                         @include media-tablet {
-                            font: normal normal 600 16px/20px Muli;
+                            font: normal normal 300 16px/20px Muli;
                             left: 5px;
                             top: 5px;
                             right: inherit;
@@ -75,6 +75,9 @@ section.productpage__productslinked{
                 }
                 
                 .productlist__products-container-element-controller{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
                     @include media-tablet {
                         width: 100%;
                         margin-left: 10px;
@@ -83,16 +86,15 @@ section.productpage__productslinked{
                     }
                     .productlist__products-container-element-text{
                         h4{
-                            color: #FFFFFF;
+                            color: #28373B;
                             @include media-tablet {
                                 font: normal normal normal 14px/18px Muli;
                                 letter-spacing: 0px;
-                                color: #28373B;
                                 opacity: 1;
                             }
                         }
                         p{
-                            color: #FFFFFF;
+                            color: #6D7476;
                             @include media-tablet {
                                 font: italic normal normal 12px/15px Muli;
                                 letter-spacing: 0px;
@@ -102,15 +104,46 @@ section.productpage__productslinked{
                         }
                     }
                     .productlist__products-container-element-controllers{
+                        display: flex;
+                        margin-top: auto;
+                        align-items: flex-end;
                          .productlist__products-container-element-controllers-price{
-                             span{
-                                 color:white;
+                             display: flex;
+                             flex-direction: column;
+                             .price{
+                                color: #005B9D;
                                  @include media-tablet {
                                     color: #005B9D;
                                     font: normal normal 300 26px/33px Muli;
                                 }
+                                &.price-disqount {
+                                    @include media-tablet {
+                                        display: none;
+                                    }
+                                    position: relative;
+                                    width: fit-content;
+                                    color: #28373b;
+                                    font: normal normal 300 23px/33px Muli;
+                                    opacity: .5;
+                                    sup{
+                                        font: normal normal 300 18px/0px Muli;
+                                        color: #28373b;
+                                    }
+                                    &:after{
+                                        content: "";
+                                        display: block;
+                                        position: absolute;
+                                        left: 0;
+                                        top: 50%;
+                                        color: #28373b;
+                                        width: 100%;
+                                        height: 0;
+                                        border-bottom: 1px solid #28373b;
+                                        transform: rotate(-30deg);
+                                    }
+                                }
                                  sup{
-                                     color:white;
+                                    color: #005B9D;
                                      @include media-tablet {
                                         color: #005B9D;
                                         font: normal normal 300 15px/33px Muli;
@@ -119,31 +152,92 @@ section.productpage__productslinked{
                                  }
                              }
                          }
-                         .productlist__products-container-element-controllers-counter{
-                             span{
-                                margin:0 15px;
-                                color: #FFFFFF;
-                             }
-                             button{
-                                 max-width:64px;
-                                 opacity:1;
-                                 counter:pointer;
-                                 background:transparent;
-                                 border: 1px solid #FFFFFF;
-                                 color: #FFFFFF;
-                                 i{
-                                     counter:pointer;
-                                 }
-                                 &:disabled{
-                                     opacity:0.4;
-                                 }
-                             }
-                         }
-                         .productlist__products-container-element-controllers-shop{
-                            @include media-tablet {
-                               margin-top: auto;
+                         .productlist__products-container-element-controllers-manipulator{
+                             display: flex;
+                             position: relative;
+                             &.show-success{
+                                .productlist__products-container-element-controllers-successbuying{
+                                    opacity: 1;
+                                    visibility: visible;
+                                    width: 100%;
+                                }
                             }
-                         }
+                            .productlist__products-container-element-controllers-counter{
+                                margin-bottom: 2px;
+                                span{
+                                    margin:0 15px;
+                                    color: #28373B;
+                                }
+                                 button{
+                                     max-width:64px;
+                                    opacity:1;
+                                    cursor: pointer;
+                                    background:transparent;
+                                    border: 1px solid black;
+                                    color: black;
+                                    i{
+                                        cursor:pointer;
+                                    }
+                                    &:disabled{
+                                        opacity:0.4;
+                                    }
+                                }
+                            } 
+                            .productlist__products-container-element-controllers-shop{
+                                button{
+                                    outline: none;
+                                    cursor: pointer;
+                                }
+                                @include media-tablet {
+                                   margin-top: auto;
+                                }
+                            }
+                            .productlist__products-container-element-controllers-successbuying{
+                                display: flex;
+                                align-items: center;
+                                visibility: hidden;
+                                opacity: 0;
+                                width:60%;
+                                transition: visibility  0.5s linear, opacity 0.5s linear, width 0.5s linear;
+                                height: 100%;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                background: #2EC9AD 0% 0% no-repeat padding-box;
+                                border: 1px solid #2EC9AD;
+                                border-radius: 40px;
+                                padding: 7px 20px;
+                                @include media-tablet {
+                                    padding: 5px;
+                                }
+                                .mobile{
+                                    display: none;
+                                    @include media-tablet {
+                                        display: inline;
+                                    }
+                                }
+                                .desktop{
+                                    display: inline;
+                                    @include media-tablet {
+                                        display: none;
+                                    }
+                                }
+                                i{
+                                    @include media-tablet {
+                                        margin-left: 5px;
+                                    }
+                                }
+                                p,span{
+                                    font: italic normal normal 16px/18px Muli;
+                                    letter-spacing: 0px;
+                                    color: #FFFFFF;
+                                    opacity: 1;
+                                    @include media-tablet {
+                                        font: italic normal normal 14px/18px Muli;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
