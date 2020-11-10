@@ -216,7 +216,7 @@ header.header {
         align-items: center;
         justify-content: flex-end;
         // margin-right: 40px;
-        margin-right: 6%;
+        // margin-right: 6%;
 
         @include media-tablet {
           display: none;
@@ -308,7 +308,9 @@ header.header {
             border: none;
             outline: none;
             cursor: pointer;
-
+            .fas.globe{
+              margin-right: 10px;
+            }
             &.unshow {
               >svg,>i:not(.globe) {
                 @include media-tablet {
@@ -354,9 +356,7 @@ header.header {
             position: absolute;
             right: -20px;
             top:20px;
-            // top: calc(100% + 16px);
             padding: 17px 20px;
-            // min-width: 250px;
             max-height: 300px;
             background: #ffffff 0% 0% no-repeat padding-box;
             box-shadow: 0px 0px 10px #00000033;
@@ -422,7 +422,7 @@ header.header {
               }
 
               &:hover {
-                transform: translate(10px, 0%);
+                transform: translate(5px, 0%);
               }
               i{
                 margin-right: 9px;
@@ -999,17 +999,43 @@ nav.nav {
           @include media-tablet {
             display: none;
           }
-          .droupup-block{
+          .droupup-block,
+          .droupup-block-info{
+            visibility: visible;
+							opacity: 1;
+            transition: visibility  0.5s linear, opacity 0.5s linear;
             position: absolute;
             top: 100%;    
             width: 100%;
             height: 20px;
           }
+          .droupup-block-info{
+            &.unshow{
+              visibility: hidden;
+							opacity: 0;
+            }
+            .show-info{
+              min-width: 260px;
+              background: #2EC9AD 0% 0% no-repeat padding-box;
+              box-shadow: 0px 0px 10px #00000033;
+              border-radius: 10px;
+              &:after {
+                border-bottom-color: #2EC9AD;
+              }
+              h3{
+                color: #FFFFFF;
+                opacity: 1;
+                font: italic normal normal 16px/20px Muli;
+                letter-spacing: 0px;
+                border: none;
+                padding:0;
+              }
+            }
+          }
           .dropdown{
             visibility: hidden;
             opacity: 0;
             min-width: 325px;
-            // min-width: 5rem;
             position: absolute;
             transition: all 0.5s ease;
             margin-top: 1rem;
@@ -1020,6 +1046,17 @@ nav.nav {
             box-shadow: 0px 0px 10px #00000033;
             border-radius: 10px;
             padding: 17px 20px;
+            &.show-info{
+              visibility: visible;
+              opacity: 1;
+              display: flex;
+              flex-direction: column;
+              @include media-tablet {
+                visibility: hidden;
+                opacity: 0;
+                display: none;
+              }
+            }
             &:after {
               bottom: 100%;
               right: 25px;
@@ -1030,21 +1067,17 @@ nav.nav {
               position: absolute;
               pointer-events: none;
               border-color: rgba(136, 183, 213, 0);
-              border-bottom-color: #ffffff;
+              border-bottom-color: white;
               border-width: 16px;
               margin-left: -16px;
-              &:hover{
-                background: red;
-              }
             }
             >h3 {
-              text-align: left;
+              padding-bottom: 11.5px;
               font: normal normal bold 16px/20px Muli;
               letter-spacing: 0px;
               color: #384549;
               opacity: 0.5;
               border-bottom: 1px solid #707070;
-              padding-bottom: 12px;
             }
             .shop-content{
               .shop-content-item{
@@ -1151,9 +1184,20 @@ nav.nav {
           }
         }
         .shop-cart-logo{         
-           cursor: pointer;
-          display: flex;
+            cursor: pointer;
+            display: flex;
         }
+
+        .shop-cart-logo:hover ~.dropdown.show-info,
+        .droupup-block:focus .dropdown.show-info,
+        .droupup-block:hover .dropdown.show-info,
+        .dropdown.show-info:hover,
+        .dropdown.show-info:focus{
+          visibility: hidden;
+          opacity: 0;
+          display: none;
+        }
+
         .shop-cart-logo:hover ~.droupup-block .dropdown,
         .droupup-block:focus .dropdown,
         .droupup-block:hover .dropdown,
