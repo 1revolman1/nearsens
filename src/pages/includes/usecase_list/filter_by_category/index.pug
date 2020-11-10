@@ -1,15 +1,52 @@
 section.use_case__filter
     h3 Filter by category
-    .use_case__filter-list
-        .use_case__filter-list__filter.checked-filter
-            span Filter by 1
-            .checker 
-                i.fas.fa-check
-        each val, index in [1,2,3,4,5,6,7,8,9,10,11,12]
-            .use_case__filter-list__filter
-                span Filter by 1
-                .checker 
-                    i.fas.fa-check
-    .use_case__filter-remove
-        button(disabled) Remove filters
-        button Remove filters
+    <div class="custom-select-wrapper">
+        <div class="custom-select">
+            <div class="custom-select__trigger"><span>Tesla</span>
+                <div class="arrow"></div>
+            </div>
+            <div class="custom-options">
+                <span class="custom-option selected" data-value="tesla">Tesla</span>
+                <span class="custom-option" data-value="volvo">Volvo</span>
+                <span class="custom-option" data-value="mercedes">Mercedes</span>
+            </div>
+        </div>
+    </div>
+    <div class="custom-select-wrapper">
+        <div class="custom-select">
+            <div class="custom-select__trigger"><span>Tesla</span>
+                <div class="arrow"></div>
+            </div>
+            <div class="custom-options">
+                <span class="custom-option selected" data-value="tesla">Tesla</span>
+                <span class="custom-option" data-value="volvo">Volvo</span>
+                <span class="custom-option" data-value="mercedes">Mercedes</span>
+            </div>
+        </div>
+    </div>
+    <div class="custom-select-wrapper">
+        <div class="custom-select">
+            <div class="custom-select__trigger"><span>Tesla</span>
+                <div class="arrow"></div>
+            </div>
+            <div class="custom-options">
+                <span class="custom-option selected" data-value="tesla">Tesla</span>
+                <span class="custom-option" data-value="volvo">Volvo</span>
+                <span class="custom-option" data-value="mercedes">Mercedes</span>
+            </div>
+        </div>
+    </div>
+
+    //- .use_case__filter-list
+    //-     .use_case__filter-list__filter.checked-filter
+    //-         span Filter by 1
+    //-         .checker 
+    //-             i.fas.fa-check
+    //-     each val, index in [1,2,3,4,5,6,7,8,9,10,11,12]
+    //-         .use_case__filter-list__filter
+    //-             span Filter by 1
+    //-             .checker 
+    //-                 i.fas.fa-check
+    //- .use_case__filter-remove
+    //-     button(disabled) Remove filters
+    //-     button Remove filters

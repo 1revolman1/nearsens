@@ -1,7 +1,35 @@
-
+function selectorFunc(){
+    document.querySelectorAll('.custom-select-wrapper').forEach(function(e){
+        const openner=e.querySelector(".custom-select");
+        e.addEventListener('click', (elm)=>{
+            const listOfAll=document.querySelectorAll(".open");
+            //Close if open more than one
+            if(listOfAll.length>0 && !openner.classList.contains("open")){
+                listOfAll.forEach((opened)=>opened.classList.toggle("open"))
+            }
+            openner?.classList?.toggle('open');
+        })
+    })
+    window.addEventListener('click', function(e) {
+        const select = document.querySelector('.custom-select')
+        if (!select.contains(e.target)) {
+            select?.classList?.remove('open') ;
+        }
+    });
+    for (const option of document.querySelectorAll(".custom-option")) {
+        option.addEventListener('click', function() {
+            if (!this.classList.contains('selected')) {
+                this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
+                this.classList.add('selected');
+                this.closest('.custom-select').querySelector('.custom-select__trigger span').textContent = this.textContent;
+            }
+        })
+    }
+}
 
 export const useCasesList=function main(){
     console.log(`USECASES LIST PAGE`);
+    selectorFunc();
     const scrollable=document.querySelector("section.use_case__scrollheader")
     function onScrollChange(changes, observer) {
         changes.forEach(change => {

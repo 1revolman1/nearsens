@@ -2,22 +2,28 @@
 
 section.use_case__usecases {
   margin-bottom: 100px;
-
-  >h3 {
+  @include media-tablet {
+    padding: 0 10px;
+    margin-bottom: 40px;
+  } 
+  h3 {
     font: normal normal normal 32px/40px Muli;
     letter-spacing: 0px;
     color: #28373B;
     opacity: 1;
     margin: 15px;
+    @include media-tablet {
+      font: normal normal normal 26px/33px Muli;
+    } 
   }
 
-  >.use_case__usecases-list {
+  .use_case__usecases-list {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     justify-content: space-between;
 
-    >.use_case__usecases-list__element {
+    .use_case__usecases-list__element {
       cursor: pointer;
       box-shadow: 0px 0px 10px #00000066;
       border-radius: 10px;
@@ -32,81 +38,97 @@ section.use_case__usecases {
       @include media-tablet {
         // display: flex;
         flex: none;
+        padding: 10px;
         width: 90%;
-        margin: 25px auto;
+        margin: 10px auto;
         max-width: inherit;
+        display: flex;
+        flex-direction: row;
       }
 
       &:hover {
         transform: translate(0, -10px);
+        @include media-tablet {
+          transform: translate(0, -5px);
+        }
 
       }
 
-      &:nth-child(1),
-      &:nth-child(2) {
+      &.big-element{
         max-width: initial;
         flex: 1 1 39%;
         margin: 2%;
+        background: #005B9D 0% 0% no-repeat padding-box;
 
         @include media-tablet {
+          flex-direction: column;
+          padding: 0;
           flex: none;
           width: 90%;
           margin: 25px auto !important;
         }
 
-        >.use_case__usecases-list__element-text {
-          background: #005B9D 0% 0% no-repeat padding-box;
-
-          h3,
+        .use_case__usecases-list__element-text {
+          h4,
           p {
             color: white;
           }
         }
 
-        >.use_case__usecases-list__element-img {
+        .use_case__usecases-list__element-img {
           background: #005B9D 0% 0% no-repeat padding-box;
 
+          @include media-tablet {
+            margin: 0;
+          }    
           img {
             max-width: initial;
+            // @include media-tablet {
+            //   flex-direction: column;
+            //   padding: 0;
+            //   flex: none;
+            //   width: 90%;
+            //   margin: 25px auto !important;
+            //   background: #005B9D 0% 0% no-repeat padding-box;
+            // }    
           }
+        }
+        .use_case__usecases-list__element-text{
+          @include media-tablet {
+            padding: 20px;
+          }  
         }
       }
 
-      &:nth-child(1) {
-        margin-left: 15px;
-      }
 
-      &:nth-child(2) {
-        margin-right: 15px;
-      }
-
-      >.use_case__usecases-list__element-img {
+      .use_case__usecases-list__element-img {
         overflow: hidden;
-
-        >img {
-          transform: all ease .5s;
+        @include media-tablet {
+          // width: 50px;
+          flex: 0 1 33%;
+          margin-right: 16px;
+        }
+        img {
+          transition: all ease .5s;
           object-fit: cover;
           max-width: 393px;
           max-height: 250px;
           width: 100%;
+          height: 100%;
 
           @include media-tablet {
-            max-width: inherit;
-            max-height: inherit;
-            width: 100%;
-            height: 100%;
+            border-radius: 10px;
           }
-        }
-
-        @include media-tablet {
-          flex: 1;
         }
       }
 
-      >.use_case__usecases-list__element-text {
+      .use_case__usecases-list__element-text {
         padding: 30px;
-
-        >h3 {
+        @include media-tablet {
+          padding: 0;
+          flex: 1 1;
+        }
+        h4 {
           margin-bottom: 5px;
           font: italic normal normal 16px/20px Muli;
           letter-spacing: 0px;
@@ -131,9 +153,9 @@ section.use_case__usecases {
           }
         }
 
-        @include media-tablet {
-          flex: 2;
-        }
+        // @include media-tablet {
+        //   flex: 2;
+        // }
       }
     }
   }
