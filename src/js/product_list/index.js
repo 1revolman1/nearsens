@@ -57,7 +57,6 @@ export const useProductList=function main(){
             scrollable.classList.add("out-viewport")
             scrollable.style.opacity="1";
             scrollable.style.visibility="visible";
-
             console.log('Header is outside viewport');
             }else{
             scrollable.classList.remove("out-viewport")

@@ -1,0 +1,15 @@
+extends common/layout
+
+block content
+    script
+        |var typePage = "usecase_details";
+    include includes/usecase_details/pageheader/index
+    include includes/usecase_details/header_afterscroll/index
+    main
+        section.main
+            include includes/usecase_details/blockperline/index
+            include includes/usecase_details/textblocks/index
+        include includes/usecase_details/blockwithbuyabbility/index
+        section.main
+            include includes/usecase_details/discovernew/index
+        include includes/usecase_details/additional_tips/index

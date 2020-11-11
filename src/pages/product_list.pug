@@ -1,9 +1,12 @@
 extends common/layout
 
 block content
+    script
+        |var typePage = "product_list_page";
     include includes/product_list/pageheader/index
     include includes/product_list/header_afterscroll/index
-    main.main
-        include includes/product_list/products/index
-        include includes/product_list/posibilities/index
-    include includes/product_list/tips/index
+    main
+        section.main
+            include includes/product_list/products/index
+            include includes/product_list/posibilities/index
+        include includes/product_list/tips/index

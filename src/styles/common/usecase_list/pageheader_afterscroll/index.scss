@@ -1,7 +1,9 @@
 @import '../../../mixins/media';
 @import "../../../utils/variables.scss";
 
+
 section.use_case__scrollheader{
+    display: flex;
     position: fixed;
     top: 114px;
     width: 100%;
@@ -20,6 +22,7 @@ section.use_case__scrollheader{
         opacity: 1;
     }
     .use_case__scrollheader-content{
+        flex: 1;
         max-width: 1300px;
         margin: 0 auto;
         width: 100%;
@@ -31,6 +34,28 @@ section.use_case__scrollheader{
             @include media-tablet {
                 font: normal normal normal 18px/23px Muli;
             }
+        }
+    }
+    .use_case__scrollheader-content-container__picker{
+        display: none;
+
+        @include media-tablet {
+            display: flex;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+        h3{
+            font: italic normal normal 14px/18px Muli;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+        i{
+            margin-left: 8px;
+            font-size: 21px;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
         }
     }
 }
