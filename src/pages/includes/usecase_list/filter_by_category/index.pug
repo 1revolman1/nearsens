@@ -1,42 +1,38 @@
 section.use_case__filter
-    h3 Filter by category
-    <div class="custom-select-wrapper">
-        <div class="custom-select">
-            <div class="custom-select__trigger"><span>Tesla</span>
-                <div class="arrow"></div>
-            </div>
-            <div class="custom-options">
-                <span class="custom-option selected" data-value="tesla">Tesla</span>
-                <span class="custom-option" data-value="volvo">Volvo</span>
-                <span class="custom-option" data-value="mercedes">Mercedes</span>
-            </div>
-        </div>
-    </div>
-    <div class="custom-select-wrapper">
-        <div class="custom-select">
-            <div class="custom-select__trigger"><span>Tesla</span>
-                <div class="arrow"></div>
-            </div>
-            <div class="custom-options">
-                <span class="custom-option selected" data-value="tesla">Tesla</span>
-                <span class="custom-option" data-value="volvo">Volvo</span>
-                <span class="custom-option" data-value="mercedes">Mercedes</span>
-            </div>
-        </div>
-    </div>
-    <div class="custom-select-wrapper">
-        <div class="custom-select">
-            <div class="custom-select__trigger"><span>Tesla</span>
-                <div class="arrow"></div>
-            </div>
-            <div class="custom-options">
-                <span class="custom-option selected" data-value="tesla">Tesla</span>
-                <span class="custom-option" data-value="volvo">Volvo</span>
-                <span class="custom-option" data-value="mercedes">Mercedes</span>
-            </div>
-        </div>
-    </div>
-
+    .use_case__filter__container
+        .use_case__filter__container__text
+            h3  
+                i(class="fas fa-sliders-h") 
+                |Filter by
+        .use_case__filter__container__manipulator
+            each val in [1,2]
+                .custom-select-wrapper
+                    .custom-select
+                        .custom-select__trigger
+                            span CATEGORY
+                            span.arrow 
+                                i.fas.fa-angle-up
+                            //- .arrow
+                        .custom-options
+                            span.custom-option.selected(data-value="tesla") 
+                                |Tesla
+                                i.fas.fa-times
+                            span.custom-option(data-value="volvo") 
+                                |Volvo
+                                i.fas.fa-times
+                            span.custom-option(data-value="nisan") 
+                                |Nisan
+                                i.fas.fa-times
+                            span.custom-option(data-value="mitsubisi")
+                                |Mitsubisi
+                                i.fas.fa-times
+                            span.custom-option(data-value="opel")
+                                |Opel
+                                i.fas.fa-times
+                            span.custom-option(data-value="mercedes benz l class") 
+                                |Mercedes Benz L Class
+                                i.fas.fa-times
+    .use_case__filter__selectedoptions
     //- .use_case__filter-list
     //-     .use_case__filter-list__filter.checked-filter
     //-         span Filter by 1
