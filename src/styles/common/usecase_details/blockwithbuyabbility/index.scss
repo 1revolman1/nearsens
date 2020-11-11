@@ -1,0 +1,52 @@
+@import '../../../mixins/media';
+@import "../../../utils/variables.scss";
+
+section.usecase_details__blockwithbuyabbility{
+    background: #005B9D 0% 0% no-repeat padding-box;
+    
+    // @include media-tablet {
+    //     width: 90%;
+    //     margin: 0 auto 50px;
+    // }
+    .usecase_details__blockwithbuyabbility-wrap{
+        .usecase_details__blockwithbuyabbility-wrap__head{
+
+        }
+        .usecase_details__blockwithbuyabbility-wrap__content{
+            .usecase_details__blockwithbuyabbility-wrap__element{
+                .usecase_details__blockwithbuyabbility-wrap__element-logo{
+                    img{
+                        
+                    }
+                }
+                .usecase_details__blockwithbuyabbility-wrap__element-content{
+                    .usecase_details__blockwithbuyabbility-wrap__element-content-text{
+                        h4{
+
+                        }
+                        p{
+
+                        }
+                    }
+                    .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator{
+                        .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price{
+                            .current{
+                                &.current-low{
+
+                                }
+                            }
+                        }
+                        .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons{
+                            .button{
+
+                            }
+                            .counter{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
