@@ -85,7 +85,6 @@ export const useProductList=function main(){
         autoplay: true,
         autoplaySpeed: 500,
         arrows:false,
-        cssEase:"ease",
         swipeToSlide:true,
         responsive: [
             {

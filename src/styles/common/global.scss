@@ -36,5 +36,6 @@ main.main,
   width: 100%;
   @include media-tablet {
     margin: 58px auto 0 ;
+    overflow: hidden;
 }
 }
