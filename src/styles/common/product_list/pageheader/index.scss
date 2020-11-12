@@ -119,6 +119,9 @@ section.productlist__pageheader{
                     text-transform: uppercase;
                     margin:10px;
                     outline: none;
+                    &:hover{
+                        font: normal normal 800 16px/20px Muli;
+                    }
                     &.active{
                         color: #005B9D;
                         background: #FFFFFF 0% 0% no-repeat padding-box;
