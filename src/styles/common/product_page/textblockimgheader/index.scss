@@ -12,7 +12,8 @@ section.productpage__textblockimgheader{
         flex-direction: column-reverse;
     }
     .productpage__textblockimgheader-img{
-        flex:0 1 45%;
+        // flex:0 1 45%;
+        flex: 0 1 50%;
         width:100%;
         @include media-tablet {
             flex:none;        

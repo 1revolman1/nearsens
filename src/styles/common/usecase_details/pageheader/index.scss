@@ -141,7 +141,8 @@ section.usecase_details__pageheader{
             }
         }
         .usecase_details__pageheader__img{
-            flex:1;
+            flex:0 1 46%;
+            // flex:1;
             img{
                 display: flex;
                 position: sticky;
