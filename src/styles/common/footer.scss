@@ -18,6 +18,11 @@ footer.globalfooter{
       ul{
         margin:20px 0;
         flex: 1 1 calc(17% + 30px);
+        &.open{
+         li{
+          display: block;
+         }
+        }
         li{
           width: fit-content;
           cursor: pointer;

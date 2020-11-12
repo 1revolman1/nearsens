@@ -74,17 +74,14 @@ $(document).ready(() => {
   // }
   // document.querySelector("html").scrollTop
   function footerJS() {
-    document.querySelectorAll("footer.globalfooter .globalfooter__wrapper__content ul .header").forEach((button) => {
-      button.addEventListener("click", function () {
-        console.log("CLICK ON FOOTER");
-        const menues=button?.parentNode?.querySelectorAll("li:not(.header)")
-        if(menues.length>0){
-          menues.forEach((menu)=>menu.style.display="flex")
-        }
-        // button?.parentElement?.childNodes[1].firstChild.classList.toggle("unshow")
-        // button?.parentElement?.childNodes[0].classList.toggle("unshow")
+    if(window.innerWidth<=768){
+      document.querySelectorAll("footer.globalfooter .globalfooter__wrapper__content ul .header").forEach((button) => {
+        button.addEventListener("click", function () {
+          const menues=button.parentNode;
+          menues.classList.toggle("open");
+        })
       })
-    })
+    }
   }
   function headerJS() {
     document.querySelectorAll("ul li.dropup .dropbtn").forEach((button) => {
