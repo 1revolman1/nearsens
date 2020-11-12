@@ -15,6 +15,9 @@ section.productpage__pageheader {
 		}
 	}
 	margin-bottom:81px;
+	@include media-tablet {
+		margin-top: 58px;
+	}
 	.productpage__pageheader-wrapimgoverlay {
 		position: relative;
 		background: transparent linear-gradient(90deg, #f2f2f2 0%, #f0f0f000 100%) 0%

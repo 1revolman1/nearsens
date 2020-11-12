@@ -2,6 +2,8 @@
 import {useCasesList} from "./usecases_list";
 import {useProductList} from "./product_list";
 import {useProductPage} from "./product_page";
+import {useCasesDetails} from "./usecases_details";
+
 
 $(document).ready(() => {
   
@@ -10,19 +12,19 @@ $(document).ready(() => {
       console.log(`ABOUT PAGE`);
       break;
     case typePage==="usecase_list":
-      useCasesList()
+      useCasesList();
       break;
     case typePage==="product_list_page":
-      useProductList()
+      useProductList();
       break;
     case typePage==="product_page":
-      useProductPage()
+      useProductPage();
       break;
     case typePage==="home_page":
       console.log(`HOME PAGE`);
       break;
     case typePage==="usecase_details":
-      console.log(`USE CASE DETAILS`);
+      useCasesDetails();
       break;
     default:
       console.log(`ELSE PAGE`);
@@ -71,6 +73,19 @@ $(document).ready(() => {
   //     break;
   // }
   // document.querySelector("html").scrollTop
+  function footerJS() {
+    document.querySelectorAll("footer.globalfooter .globalfooter__wrapper__content ul .header").forEach((button) => {
+      button.addEventListener("click", function () {
+        console.log("CLICK ON FOOTER");
+        const menues=button?.parentNode?.querySelectorAll("li:not(.header)")
+        if(menues.length>0){
+          menues.forEach((menu)=>menu.style.display="flex")
+        }
+        // button?.parentElement?.childNodes[1].firstChild.classList.toggle("unshow")
+        // button?.parentElement?.childNodes[0].classList.toggle("unshow")
+      })
+    })
+  }
   function headerJS() {
     document.querySelectorAll("ul li.dropup .dropbtn").forEach((button) => {
       button.addEventListener("click", function () {
@@ -82,4 +97,5 @@ $(document).ready(() => {
     })
   }
   headerJS();
+  footerJS();
 });
