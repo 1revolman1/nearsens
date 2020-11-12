@@ -73,10 +73,11 @@ $(document).ready(() => {
   // document.querySelector("html").scrollTop
   function headerJS() {
     document.querySelectorAll("ul li.dropup .dropbtn").forEach((button) => {
-      button.addEventListener("click", function (event) {
-        console.log("CLICKED", button?.parentElement?.childNodes[0])
-        button?.parentElement?.childNodes[1].firstChild.classList.toggle("unshow")
-        button?.parentElement?.childNodes[0].classList.toggle("unshow")
+      button.addEventListener("click", function () {
+        button.parentNode?.querySelector(".dropbtn").classList?.toggle("unshow");
+        button.parentNode?.querySelector(".dropup-content").classList?.toggle("unshow");
+        // button?.parentElement?.childNodes[1].firstChild.classList.toggle("unshow")
+        // button?.parentElement?.childNodes[0].classList.toggle("unshow")
       })
     })
   }

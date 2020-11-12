@@ -2,26 +2,31 @@ section.usecase_details__blockwithbuyabbility
     .usecase_details__blockwithbuyabbility-wrap.main
         .usecase_details__blockwithbuyabbility-wrap__head
             h3 Title (different for each use cases)
-            img(src="", alt="")
+            img(src="img/usecase_details_gadget.png", alt="")
         ul.usecase_details__blockwithbuyabbility-wrap__content
-            li.usecase_details__blockwithbuyabbility-wrap__element
-                .usecase_details__blockwithbuyabbility-wrap__element-logo
-                    img(src="", alt="")
-                .usecase_details__blockwithbuyabbility-wrap__element-content
-                    .usecase_details__blockwithbuyabbility-wrap__element-content-text
-                        h4 Product name lorem ipsum
-                        p Short description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices.
-                    .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator
-                        .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price
-                            span.current.current-low 49
-                                sup €99
-                            span.current 24
-                                sup €99
-                        .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons
-                            button.minus.button
-                                i.fas.fa-minus
-                            span.counter 5
-                            button.plus.button
-                                i.fas.fa-plus
-                        
-                            
+            each val in [1,2,3,4,5]
+                li.usecase_details__blockwithbuyabbility-wrap__element
+                    .usecase_details__blockwithbuyabbility-wrap__element-logo
+                        img(src="img/detector_white.png", alt="")
+                    .usecase_details__blockwithbuyabbility-wrap__element-content
+                        .usecase_details__blockwithbuyabbility-wrap__element-content-text
+                            h4 Product name lorem ipsum
+                            p Short description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices.
+                        .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator
+                            .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price
+                                span.current.current-low 49
+                                    sup €99
+                                span.current 24
+                                    sup €99
+                            .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons
+                                button.minus.button
+                                    i.fas.fa-minus
+                                span.counter 5
+                                button.plus.button
+                                    i.fas.fa-plus
+        .usecase_details__blockwithbuyabbility-wrap__manipulator
+            .usecase_details__blockwithbuyabbility-wrap__manipulator__block
+                p 12 items
+                button.shop-cart 
+                    i.fas.fa-shopping-basket
+                    |ADD TO CART
