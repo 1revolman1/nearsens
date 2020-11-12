@@ -25,6 +25,7 @@ footer.globalfooter{
         }
         li{
           width: fit-content;
+          width: intrinsic;
           cursor: pointer;
           list-style: none;
           text-align: left;

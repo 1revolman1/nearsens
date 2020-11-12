@@ -20,7 +20,7 @@ module.exports = function styles() {
     }))
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(autoprefixer('last 2 versions'))
+    .pipe(autoprefixer({grid: "autoplace"}))
     .pipe(shorthand())
     .pipe(cleanCSS({
       debug: true,

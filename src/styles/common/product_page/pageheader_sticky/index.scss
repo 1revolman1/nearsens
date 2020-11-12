@@ -30,6 +30,7 @@ section.productpage__pageheader_sticky {
 		position: relative;
 		@include media-tablet {
 			margin:0 auto;
+			overflow: visible;
 		}
 		.productpage__pageheader_sticky-wrap-containter{
 			display: flex;
@@ -187,6 +188,7 @@ section.productpage__pageheader_sticky {
 					left: 50%;
 					transform: translate(-50%,0%);
 					&.isOpen{
+						width:calc(100% + 20px);
 						visibility: visible;
 						opacity: 1;
 					}

@@ -7,6 +7,7 @@ function cartAnim() {
     const cart=isMobile? $('.second-block-in-menu .cart-block'): $('.shop-cart');
     const imgtodrag = $(this).parents('.productlist__products-container-element').find("img").eq(0);
     const infoSuccessHeader=cart.find(".droupup-block-info");
+    console.log(isMobile,cart)
 
     //SHOW SUCCESS BUYING ICON
     $(this).parents(".productlist__products-container-element-controllers-manipulator").addClass("show-success")

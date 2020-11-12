@@ -125,6 +125,7 @@ section.productlist__products{
                 .productlist__products-container-element-disqount{
                     display: block;
                     width: fit-content;
+                    width: intrinsic;
                     position: absolute;
                     top: 22px;
                     left:22px;
@@ -227,6 +228,7 @@ section.productlist__products{
                                }
                                position: relative;
                                width: fit-content;
+                               width: intrinsic;
                                color: #28373b;
                                font: normal normal 300 23px/33px Muli;
                                opacity: .5;
@@ -287,6 +289,8 @@ section.productlist__products{
                                 visibility: visible;
                                 // width: 100%;
                                 width: max-content;
+                                // width:fit-content;
+                                width:intrinsic;
                             }
                         }
                         .productlist__products-container-element-controllers-counter{
@@ -363,6 +367,8 @@ section.productlist__products{
                             align-items: center;
                             visibility: hidden;
                             opacity: 0;
+                            // width:fit-content;
+                            width:intrinsic;
                             width: max-content;
                             // width:60%;
                             transition: visibility  0.5s linear, opacity 0.5s linear, width 0.5s linear;
