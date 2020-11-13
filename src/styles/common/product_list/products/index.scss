@@ -310,9 +310,16 @@ section.productlist__products{
                                 background: white;
                                 outline: none;
                                 &:disabled{
+                                    cursor: not-allowed;
                                     color: #A9AFB0;
                                     border: 1px solid #A9AFB0;
                                     // opacity: 0.4;
+                                    &:hover{
+                                        background: white;
+                                        cursor: not-allowed;
+                                        color: #A9AFB0;
+                                        border: 1px solid #A9AFB0;
+                                    }
                                 }
                                 &:hover{
                                     border:1px solid #2EC9AD;

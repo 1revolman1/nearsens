@@ -102,4 +102,41 @@ function cartAnimInStickyHeader(){
 
 export const useBuyingAnimationStickyHeader=function main(element){
     element.querySelector(".productpage__pageheader_sticky-wrap-manipulator-withprice").addEventListener("click",cartAnimInStickyHeader)
+    document.querySelectorAll('.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container.overlay').forEach(function(elm){
+        const value=elm.querySelector("span").textContent;
+        if(+value>1){
+          elm.querySelectorAll("button").forEach((e)=>{
+            e.removeAttribute("disabled");
+          })
+        }else{
+          elm.querySelectorAll(".minus").forEach((e)=>{
+            e.setAttribute("disabled","disabled");
+          })
+        }
+      })
+    $('.productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-data .minus').on('click', function(){
+        const container= $(this).parents(".productpage__pageheader_sticky-wrap-manipulator-data");
+        const counter=container.find("span");
+        let value=Number(counter.text());
+        value-=1;
+        if(value<=1){
+          $(this).attr("disabled",true);
+        }
+        const finalAdd=container.parents(".productpage__pageheader_sticky-wrap-manipulator-container").find(".productpage__pageheader_sticky-wrap-manipulator-successbuying p span");
+        finalAdd.text(`${value} new added to cart`)
+        counter.text(value)
+        
+      });
+      $('.productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-data .plus').on('click', function(){
+        const container= $(this).parents(".productpage__pageheader_sticky-wrap-manipulator-data");
+        const counter=container.find("span");
+        let value=Number(counter.text());
+        value+=1;
+        if(value>1){
+            container.find(".minus").attr("disabled",false);
+        }
+        const finalAdd=container.parents(".productpage__pageheader_sticky-wrap-manipulator-container").find(".productpage__pageheader_sticky-wrap-manipulator-successbuying p span");
+        finalAdd.text(`${value} new added to cart`)
+        counter.text(value)
+      });
 }

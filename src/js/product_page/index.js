@@ -77,7 +77,48 @@ useBuyingAnimationHeader();
 //Activate functionality of buying animation in sticky header
 useBuyingAnimationStickyHeader(popUp)
 
+document.querySelectorAll('.productlist__products-container-element-controllers-manipulator').forEach(function(elm){
+    const value=elm.querySelector(".productlist__products-container-element-controllers-counter span").textContent;
+    if(+value>1){
+      elm.querySelectorAll("button").forEach((e)=>{
+        e.removeAttribute("disabled");
+      })
+    }else{
+      elm.querySelectorAll(".minus").forEach((e)=>{
+        e.setAttribute("disabled","disabled");
+      })
+    }
+  })
+
+
 $('.productlist__products-container-element-controllers-shop button').on('click', cartAnim);
+
+$('.productlist__products-container-element-controllers-counter .minus').on('click', function(){
+    const container= $(this).parents(".productlist__products-container-element-controllers-counter");
+    const counter=container.find("span");
+    let value=Number(counter.text());
+    value-=1;
+    if(value<=1){
+        $(this).attr("disabled",true);
+    }
+    const finalAdd=container.parents(".productlist__products-container-element-controllers-manipulator").find(".desktop");
+    finalAdd.text(`${value} new added to cart`)
+    counter.text(value)
+    
+  });
+  $('.productlist__products-container-element-controllers-counter .plus').on('click', function(){
+    const container= $(this).parents(".productlist__products-container-element-controllers-counter");
+    const counter=container.find("span");
+    let value=Number(counter.text());
+    value+=1;
+    if(value>1){
+        container.find(".minus").attr("disabled",false);
+    }
+    const finalAdd=container.parents(".productlist__products-container-element-controllers-manipulator").find(".desktop");
+    finalAdd.text(`${value} new added to cart`)
+    counter.text(value)
+  });
+
 
 function onScrollChange(changes, observer) {
     changes.forEach(change => {

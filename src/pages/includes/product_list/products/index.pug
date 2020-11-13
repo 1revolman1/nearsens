@@ -17,8 +17,8 @@ section.productlist__products
                             sup €99
                     .productlist__products-container-element-controllers-manipulator
                         .productlist__products-container-element-controllers-counter
-                            button.button.minus: i(class="fas fa-minus")
-                            span 5
+                            button.button.minus(disabled): i(class="fas fa-minus")
+                            span 2
                             button.button.plus: i(class="fas fa-plus")
                         .productlist__products-container-element-controllers-shop
                             button 
@@ -27,7 +27,7 @@ section.productlist__products
                             p 
                                 span.mobile +1
                                 i(class="fas fa-check")
-                                span.desktop 1 new added to cart
+                                span.desktop 2 new added to cart
         each val,index in [1,2,3,4,5]
             .productlist__products-container-element.with-disqount
                 .productlist__products-container-element-imgcontainer
@@ -46,7 +46,7 @@ section.productlist__products
                         .productlist__products-container-element-controllers-manipulator
                             .productlist__products-container-element-controllers-counter
                                 button.minus: i(class="fas fa-minus")
-                                span 5
+                                span 1
                                 button.plus: i(class="fas fa-plus")
                             .productlist__products-container-element-controllers-shop
                                 button 

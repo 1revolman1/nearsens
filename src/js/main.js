@@ -72,20 +72,36 @@ $(document).ready(() => {
   //     console.log(`ELSE PAGE`);
   //     break;
   // }
-  // document.querySelector("html").scrollTop
   function footerJS() {
     if(window.innerWidth<=768){
-      document.querySelectorAll("footer.globalfooter .globalfooter__wrapper__content ul .header").forEach((button) => {
+      document.querySelectorAll("footer.globalfooter .globalfooter__wrapper__content ul .header").forEach((button,index,buttons) => {
         button.addEventListener("click", function () {
-          const menues=button.parentNode;
-          menues.classList.toggle("open");
+          buttons.forEach(function(btn){
+            const menues=btn.parentNode.classList;
+            if(btn.isEqualNode(button)){
+              menues.toggle("open");
+              return null;
+            }
+            if(menues.contains("open"))
+              menues.remove("open");
+          })
         })
       })
     }
   }
   function headerJS() {
-    document.querySelectorAll("ul li.dropup .dropbtn").forEach((button) => {
-      button.addEventListener("click", function () {
+    document.querySelectorAll("ul li.dropup .dropbtn").forEach((button,index,buttons) => {
+      button.addEventListener("click", () =>{
+        buttons.forEach((btn)=>{
+          if(btn.isEqualNode(button))
+            return null;
+          const classListBTN=btn.parentNode?.querySelector(".dropbtn").classList;
+          const classListCONTENT=btn.parentNode?.querySelector(".dropup-content").classList;
+          if(!classListCONTENT.contains("unshow")){
+            classListCONTENT.toggle("unshow");
+            classListBTN.toggle("unshow");
+          }
+        })
         button.parentNode?.querySelector(".dropbtn").classList?.toggle("unshow");
         button.parentNode?.querySelector(".dropup-content").classList?.toggle("unshow");
         // button?.parentElement?.childNodes[1].firstChild.classList.toggle("unshow")

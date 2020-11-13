@@ -5,7 +5,7 @@ footer.globalfooter
         .globalfooter__wrapper__content
             each val in [1,2,3,4]
                 ul
-                    li.header Lorem Ipsum
+                    li.header= val+"Lorem Ipsum"
                     each val in [1,2,3,4]
                         li 
                            a(href="") Lorem ipsum
@@ -16,11 +16,17 @@ footer.globalfooter
                 li 
                     a(href="") Support
                 li.images
-                    img(src="img/France.png", alt="language picker")
-                    img(src="img/England.png", alt="language picker")
+                    a(href="")
+                        img(src="img/France.png", alt="language picker")
+                    a(href="")
+                        img(src="img/England.png", alt="language picker")
         .globalfooter__wrapper__additional
             .globalfooter__wrapper__additional__text
-                h4 Copyright © 2020 Nearsens - Privacy policy - About
+                h4 
+                    |Copyright © 2020 Nearsens - 
+                    a(href="") Privacy policy 
+                    |- 
+                    a(href="") About
             .globalfooter__wrapper__additional__logos
                 a(href="")
                     i(class="fab fa-linkedin-in")
@@ -35,8 +41,10 @@ footer.globalfooter
                 a(href="")
                     i(class="fab fa-twitter")
         .globalfooter__wrapper__download
-            img(src="img/GooglePlay.png", alt="")
-            img(src="img/AppleStore.png", alt="")
+            a(href="")
+                img(src="img/GooglePlay.png", alt="")
+            a(href="")
+                img(src="img/AppleStore.png", alt="")
 
                 
 

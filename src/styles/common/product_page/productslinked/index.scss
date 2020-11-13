@@ -179,17 +179,22 @@ section.productpage__productslinked{
                                     border: 1px solid black;
                                     color: black;
                                     outline: none;
-
-                                    i{
-                                        cursor:pointer;
-                                    }
                                     &:hover{
                                         border:1px solid #2EC9AD;
                                         background: #2EC9AD;
                                         color: white;
+                                        &:disabled{
+                                            background: white;
+                                            cursor: not-allowed;
+                                            color: #A9AFB0;
+                                            border: 1px solid #A9AFB0;
+                                        }
                                     }
                                     &:disabled{
-                                        opacity:0.4;
+                                        background: white;
+                                        cursor: not-allowed;
+                                        color: #A9AFB0;
+                                        border: 1px solid #A9AFB0;
                                     }
                                 }
                             } 

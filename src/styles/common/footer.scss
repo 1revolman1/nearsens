@@ -33,6 +33,12 @@ footer.globalfooter{
           letter-spacing: 0px;
           color: #FFFFFF;
           transition: all ease .5s;
+          &.images{
+            img{
+              margin-top: 15px;
+              margin-right:10px;
+            }
+          }
           &:hover:not(.header):not(.images){
             transform: translate(10px,0);
           }
@@ -50,10 +56,6 @@ footer.globalfooter{
             @include media-tablet {
               display: flex;
             }
-          }
-          >img{
-            margin-top: 15px;
-            margin-right:10px;
           }
           @include media-tablet {
             display: none;
@@ -74,7 +76,8 @@ footer.globalfooter{
       border-top:1px solid #33709c;
       margin-bottom: 30px;
       .globalfooter__wrapper__additional__text{
-        h4{
+        h4,a{
+          text-decoration: none;
           font: normal normal normal 16px/20px Muli;
           letter-spacing: 0px;
           color: #FFFFFF;
@@ -101,6 +104,9 @@ footer.globalfooter{
     .globalfooter__wrapper__download{
       display: flex;
       justify-content: flex-end;
+      a{
+        display: flex;
+      }
       img{
         margin-left:26px;
       } 

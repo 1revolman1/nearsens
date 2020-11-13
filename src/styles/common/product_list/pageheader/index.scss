@@ -23,11 +23,25 @@ section.productlist__pageheader{
         left: 0;
     }
     .productlist__pageheader-wrapper__slider-container{
+        .slick-track{
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            // align-items: flex-end;
+        }
         .productlist__pageheader-wrapper__slider-container__slider{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .productlist__pageheader-wrapper__slider-container__slider-element{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin: 0 10px;
+                @include media-tablet {
+                    margin: 0 7px;
+            
+                }
                 &.non-filter{
                     opacity: 0.4;
                 }
