@@ -7,8 +7,9 @@ function cartAnim() {
     const cart=isMobile? $('.second-block-in-menu .cart-block'): $('.shop-cart');
     const imgtodrag = $(this).parents('.productlist__products-container-element').find("img").eq(0);
     const infoSuccessHeader=cart.find(".droupup-block-info");
-    console.log(isMobile,cart)
-
+    const container= $(this).parents(".productlist__products-container-element-controllers-manipulator");
+    if(Number(container.find(".productlist__products-container-element-controllers-counter span").text())===0)
+        return null;
     //SHOW SUCCESS BUYING ICON
     $(this).parents(".productlist__products-container-element-controllers-manipulator").addClass("show-success")
     infoSuccessHeader.removeClass("unshow");
@@ -83,10 +84,12 @@ document.querySelectorAll('.productlist__products-container-element-controllers-
       elm.querySelectorAll("button").forEach((e)=>{
         e.removeAttribute("disabled");
       })
+      elm.querySelector(".productlist__products-container-element-controllers-shop button").removeAttribute("disabled");
     }else{
       elm.querySelectorAll(".minus").forEach((e)=>{
         e.setAttribute("disabled","disabled");
       })
+      elm.querySelector(".productlist__products-container-element-controllers-shop button").setAttribute("disabled","disabled");
     }
   })
 
@@ -98,8 +101,9 @@ $('.productlist__products-container-element-controllers-counter .minus').on('cli
     const counter=container.find("span");
     let value=Number(counter.text());
     value-=1;
-    if(value<=1){
+    if(value===0){
         $(this).attr("disabled",true);
+        $(this).parents(".productlist__products-container-element-controllers-manipulator").find(".productlist__products-container-element-controllers-shop button").attr("disabled",true);
     }
     const finalAdd=container.parents(".productlist__products-container-element-controllers-manipulator").find(".desktop");
     finalAdd.text(`${value} new added to cart`)
@@ -111,8 +115,9 @@ $('.productlist__products-container-element-controllers-counter .minus').on('cli
     const counter=container.find("span");
     let value=Number(counter.text());
     value+=1;
-    if(value>1){
+    if(value>=1){
         container.find(".minus").attr("disabled",false);
+        $(this).parents(".productlist__products-container-element-controllers-manipulator").find(".productlist__products-container-element-controllers-shop button").attr("disabled",false);
     }
     const finalAdd=container.parents(".productlist__products-container-element-controllers-manipulator").find(".desktop");
     finalAdd.text(`${value} new added to cart`)

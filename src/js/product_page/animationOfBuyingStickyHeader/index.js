@@ -108,10 +108,14 @@ export const useBuyingAnimationStickyHeader=function main(element){
           elm.querySelectorAll("button").forEach((e)=>{
             e.removeAttribute("disabled");
           })
+          elm.parentNode.querySelector(".productpage__pageheader_sticky-wrap-manipulator-withprice button").removeAttribute("disabled");
+
         }else{
           elm.querySelectorAll(".minus").forEach((e)=>{
             e.setAttribute("disabled","disabled");
           })
+          elm.parentNode.querySelector(".productpage__pageheader_sticky-wrap-manipulator-withprice button").setAttribute("disabled","disabled");
+
         }
       })
     $('.productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-data .minus').on('click', function(){
@@ -119,8 +123,10 @@ export const useBuyingAnimationStickyHeader=function main(element){
         const counter=container.find("span");
         let value=Number(counter.text());
         value-=1;
-        if(value<=1){
+        if(value===0){
           $(this).attr("disabled",true);
+          $(this).parents(".productpage__pageheader_sticky-wrap-manipulator-container.overlay").find(".productpage__pageheader_sticky-wrap-manipulator-withprice button").attr("disabled",true);
+
         }
         const finalAdd=container.parents(".productpage__pageheader_sticky-wrap-manipulator-container").find(".productpage__pageheader_sticky-wrap-manipulator-successbuying p span");
         finalAdd.text(`${value} new added to cart`)
@@ -132,8 +138,9 @@ export const useBuyingAnimationStickyHeader=function main(element){
         const counter=container.find("span");
         let value=Number(counter.text());
         value+=1;
-        if(value>1){
+        if(value>=1){
             container.find(".minus").attr("disabled",false);
+            $(this).parents(".productpage__pageheader_sticky-wrap-manipulator-container.overlay").find(".productpage__pageheader_sticky-wrap-manipulator-withprice button").attr("disabled",false);
         }
         const finalAdd=container.parents(".productpage__pageheader_sticky-wrap-manipulator-container").find(".productpage__pageheader_sticky-wrap-manipulator-successbuying p span");
         finalAdd.text(`${value} new added to cart`)

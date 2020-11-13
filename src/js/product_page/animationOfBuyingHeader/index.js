@@ -4,10 +4,11 @@ function cartHeaderAnim(){
     const infoSuccessHeader=cart.find(".droupup-block-info");
 
     const container= $(this).parents(".productpage__pageheader-wrap-manipulator-container");
+    if(Number(container.find(".productpage__pageheader-wrap-manipulator-data span").text())===0)
+      return null;
     const counter=container.find(".productpage__pageheader-wrap-manipulator-data span.text");
     const value=Number(counter.text());
     const finalAdd=container.find(".productpage__pageheader-wrap-manipulator-successbuying p span")
-    console.log(container)
     finalAdd.text(`${value} new added to cart`)
 
     //SHOW SUCCESS BUYING ICON
@@ -63,14 +64,16 @@ function cartHeaderAnim(){
 export const useBuyingAnimationHeader=function main(){
     document.querySelectorAll('.productpage__pageheader .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator-data').forEach(function(elm){
         const value=elm.querySelector("span").textContent;
-        if(+value>1){
+        if(+value>=1){
           elm.querySelectorAll("button").forEach((e)=>{
             e.removeAttribute("disabled");
           })
+          elm.parentNode.querySelector(".productpage__pageheader-wrap-manipulator-withprice button").removeAttribute("disabled");
         }else{
           elm.querySelectorAll(".minus").forEach((e)=>{
             e.setAttribute("disabled","disabled");
           })
+          elm.parentNode.querySelector(".productpage__pageheader-wrap-manipulator-withprice button").setAttribute("disabled","disabled");
         }
       })
     $('.productpage__pageheader .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator-withprice').on('click', cartHeaderAnim);
@@ -79,8 +82,10 @@ export const useBuyingAnimationHeader=function main(){
         const counter=container.find("span");
         let value=Number(counter.text());
         value-=1;
-        if(value===1){
+        if(value===0){
           $(this).attr("disabled",true);
+          $(this).parents(".productpage__pageheader-wrap-manipulator-container").find(".productpage__pageheader-wrap-manipulator-withprice button").attr("disabled",true);
+
         }
         // const finalAdd=container.parents(".productpage__pageheader-wrap-manipulator-container").find(".productpage__pageheader-wrap-manipulator-successbuying").find("p span")
         // finalAdd.text(`${value} new added to cart`)
@@ -92,8 +97,9 @@ export const useBuyingAnimationHeader=function main(){
         const counter=container.find("span");
         let value=Number(counter.text());
         value+=1;
-        if(value>1){
+        if(value>=1){
             container.find(".minus").attr("disabled",false);
+            $(this).parents(".productpage__pageheader-wrap-manipulator-container").find(".productpage__pageheader-wrap-manipulator-withprice button").attr("disabled",false);
           }
         // const finalAdd=container.parents(".productpage__pageheader-wrap-manipulator-container").find(".productpage__pageheader-wrap-manipulator-successbuying ").find("p span")
         // console.log(finalAdd)
