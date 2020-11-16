@@ -63,8 +63,9 @@ section.use_case__filter{
 					margin:10px;
 					transition: all ease 0.5s;
 					@include media-tablet {
-						flex:1;
-						width: 100%;
+						// flex:1;
+						flex:none;
+						width: calc(100% - 20px);
 					}
 					.custom-select {
 						position: relative;

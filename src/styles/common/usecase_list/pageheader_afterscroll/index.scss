@@ -31,9 +31,16 @@ section.use_case__scrollheader{
             letter-spacing: 0px;
             color: #FFFFFF;
             opacity: 1;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            display: block;
             @include media-tablet {
                 font: normal normal normal 18px/23px Muli;
             }
+        }
+        @include media-tablet {
+            max-width: 65%;
         }
     }
     .use_case__scrollheader-content-container__picker{
@@ -43,6 +50,7 @@ section.use_case__scrollheader{
             display: flex;
             align-items: center;
             flex-flow: row wrap;
+            cursor: pointer;
         }
         h3{
             font: italic normal normal 14px/18px Muli;
