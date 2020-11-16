@@ -255,7 +255,8 @@ section.productpage__pageheader {
                                 opacity: 1;
                                 color:white;
                                 &:disabled {
-                                    opacity: 0.4;
+									opacity: 0.4;
+									cursor: not-allowed;
                                 }
 						    }
                             span.text {

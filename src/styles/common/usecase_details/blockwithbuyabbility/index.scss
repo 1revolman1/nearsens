@@ -84,7 +84,22 @@ section.usecase_details__blockwithbuyabbility{
                             color: #FFFFFF;
                             opacity: 1;
                             margin-bottom: 5px;
+                            .disqount{
+                                margin-left: 10px;
+                                background: #FFA10A 0% 0% no-repeat padding-box;
+                                padding: 4px 10px;
+                                border-radius: 10px;
+                                font: normal normal 600 16px/20px Muli;
+                                letter-spacing: 0px;
+                                color: #FFFFFF;
+                                opacity: 1;
+                                // @include media-tablet {
+                                //     margin-left: auto;
+                                // }
+                            }
                             @include media-tablet {
+                                display: flex;
+                                flex-flow: row wrap;
                                 font: normal normal normal 16px/20px Muli;
                             }
                         }

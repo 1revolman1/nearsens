@@ -223,6 +223,7 @@ section.productpage__pageheader_sticky {
 					color: white;
 					&:disabled {
 						opacity: 0.4;
+						cursor: not-allowed;
 					}
 				}
 				span.text {
