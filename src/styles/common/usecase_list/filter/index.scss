@@ -14,7 +14,7 @@ section.use_case__filter{
 	.use_case__filter-wrapper{
 		overflow: inherit;
 		@include media-tablet {
-			width: 95%;
+			width: 90%;
 			margin:0 auto;
 		}
 		.use_case__filter__container{
@@ -29,7 +29,7 @@ section.use_case__filter{
 				margin-right: 10px;
 				@include media-tablet {
 					margin-right: 0;
-					margin-left: 10px;
+					// margin-left: 10px;
 				}
 				h3{
 					font: normal normal normal 22px/28px Muli;
@@ -64,8 +64,10 @@ section.use_case__filter{
 					transition: all ease 0.5s;
 					@include media-tablet {
 						// flex:1;
+						margin:10px 0;
 						flex:none;
-						width: calc(100% - 20px);
+						width: 100%;
+						// width: calc(100% - 20px);
 					}
 					.custom-select {
 						position: relative;
@@ -225,7 +227,8 @@ section.use_case__filter{
 			display: flex;
 			flex-flow: row wrap;
 			button{
-				margin: 10px;
+				margin: 10px 0;
+				// margin: 10px;
 				padding: 8px 20px;
 				outline: none;
 				border: 1px solid #AAAAAA;
@@ -243,7 +246,6 @@ section.use_case__filter{
 			}
 		}	
 	}
-	
 }
 
 

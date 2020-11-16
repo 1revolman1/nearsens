@@ -3,11 +3,12 @@
 section.use_case__usecases-last {
   margin-bottom: 88px;
   @include media-tablet {
-    padding: 0 10px;
-    margin-bottom: 40px;
+    // padding: 0 10px;
+    width: 90%;
+    margin: 0 auto 40px;
   }
   h3 {
-    margin:0 30px 15px;
+    margin: 0 0 15px;
     // margin-bottom: 15px;
     font: normal normal normal 32px/40px Muli;
     letter-spacing: 0px;
@@ -15,7 +16,7 @@ section.use_case__usecases-last {
     opacity: 1;
 
     @include media-tablet {
-      margin: 0 3% 10px;
+      margin: 10px 0;
       font: normal normal normal 26px/33px Muli;
     }
   }
@@ -25,7 +26,7 @@ section.use_case__usecases-last {
     flex-direction: column;
 
     .use_case__usecases-last__element {
-      width: 95%;
+      width: 100%;
       margin: 15px auto;
       display: flex;
       transition: all ease .5s;
@@ -42,8 +43,7 @@ section.use_case__usecases-last {
       }
 
       @include media-tablet {
-        width: 90%;
-        margin: 15px auto;
+        margin: 15px 0;
         padding: 10px;
       }
       &.active-element {

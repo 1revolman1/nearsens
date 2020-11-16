@@ -1,0 +1,85 @@
+section.page_garbit__bluelinkcards{
+    background: #005B9D 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 76px 0 100px;
+    .page_garbit__bluelinkcards__wrap{
+        display: flex;
+        flex-flow: column wrap;
+        .page_garbit__bluelinkcards__wrap__textcontainer{
+            display: flex;
+            flex-direction: column;
+            width: 47%;
+            h3{
+                font: normal normal 300 45px/56px Muli;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                opacity: 1;
+                margin-bottom: 50px;
+            }
+            p{
+                font: normal normal 300 18px/23px Muli;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                opacity: 1;
+                margin-bottom: 30px;
+            }
+        }
+        .page_garbit__bluelinkcards__wrap__blockcontainer{
+            display: flex;
+            flex-flow: row  wrap;
+            .page_garbit__bluelinkcards__wrap__blockcontainer__element{
+                display: flex;
+                flex-flow: row wrap;
+                margin:25px;
+                flex: 0 1 30%;
+                &:nth-child(3n+3){
+                    margin-right: 0;
+                }
+                &:nth-child(3n+1){
+                    margin-left: 0;
+                }
+                .page_garbit__bluelinkcards__wrap__blockcontainer__element__img{
+                    margin-right: 25px;
+                     img{
+                        width: 43px;
+                        object-fit: cover;
+                    }
+                }
+                .page_garbit__bluelinkcards__wrap__blockcontainer__element__text{
+                    flex:1;
+                    h3{
+                        font: normal normal bold 22px/28px Muli;
+                        letter-spacing: 0px;
+                        color: #FFFFFF;
+                        opacity: 1;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        font: normal normal 300 16px/20px Muli;
+                        letter-spacing: 0px;
+                        color: #FFFFFF;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .page_garbit__bluelinkcards__wrap__manipulatorcontainer{
+            margin: 15px 0;
+            .page_garbit__bluelinkcards__wrap__manipulatorcontainer__btn{
+                padding: 9px 30px;
+                font: normal normal bold 18px/23px Muli;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                opacity: 1;
+                border: 1px solid #FFFFFF;
+                border-radius: 40px;
+                opacity: 1;
+                background: #005b9d;
+                cursor: pointer;
+                &:disabled{
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+}

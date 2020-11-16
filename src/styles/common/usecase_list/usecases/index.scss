@@ -3,20 +3,107 @@
 section.use_case__usecases {
   margin-bottom: 100px;
   @include media-tablet {
-    padding: 0 10px;
-    margin-bottom: 40px;
+    width: 90%;
+    // padding: 0 10px;
+    margin: 10px auto 40px;
   } 
   h3 {
     font: normal normal normal 32px/40px Muli;
     letter-spacing: 0px;
     color: #28373B;
     opacity: 1;
-    margin: 15px;
+    margin: 15px 0;
     @include media-tablet {
       font: normal normal normal 26px/33px Muli;
     } 
   }
 
+  .use_case__usecases-biglist{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    .use_case__usecases-biglist__element{
+      max-width: initial;
+      flex: 0 1 47%;
+      margin: 2%;
+      background: #005B9D 0% 0% no-repeat padding-box;
+      cursor: pointer;
+      box-shadow: 0px 0px 10px #00000066;
+      border-radius: 10px;
+      opacity: 1;
+      overflow: hidden;
+      transition: all ease .5s;
+      @include media-tablet {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        flex: none;
+        max-width: inherit;
+        display: flex;
+        margin: 10px auto ;
+      }
+      &:nth-child(odd){
+        margin-left: 0;;
+      }
+      &:nth-child(even){
+        margin-right: 0;
+      }
+      &:hover {
+        transform: translate(0, -10px);
+        @include media-tablet {
+          transform: translate(0, -5px);
+        }
+      }
+      .use_case__usecases-biglist__element-img{
+        overflow: hidden;
+        background: #005B9D 0% 0% no-repeat padding-box;   
+        @include media-tablet {
+          flex: 0 1 33%;
+          margin-right: 0;
+        }
+        img {
+          max-width: initial;
+          transition: all ease .5s;
+          object-fit: cover;
+          max-height: 250px;
+          width: 100%;
+          height: 100%;
+          @include media-tablet {
+            border-radius: 10px;
+          }
+        }
+      }
+      .use_case__usecases-biglist__element-text{
+        padding: 30px;
+        @include media-tablet {
+          padding: 20px;
+          flex: 1 1;
+        }
+        h4{
+          color: white;
+          margin-bottom: 5px;
+          font: italic normal normal 16px/20px Muli;
+          letter-spacing: 0px;
+          opacity: 1;
+          @include media-tablet {
+            font: italic normal normal 14px/18px Muli;
+          }
+        }
+        p {
+          text-align: left;
+          font: normal normal normal 26px/33px Muli;
+          letter-spacing: 0px;
+          color: white;
+          opacity: 1;
+
+          @include media-tablet {
+            font: normal normal normal 14px/18px Muli;
+          }
+        }
+      }
+    }
+  }
   .use_case__usecases-list {
     display: flex;
     flex-flow: row wrap;
@@ -30,7 +117,7 @@ section.use_case__usecases {
       opacity: 1;
       overflow: hidden;
       max-width: 393px;
-      flex: 0 1 29%;
+      flex: 0 1 30%;
       //   margin: 15px;
       margin: 2%;
       transition: all ease .5s;
@@ -39,11 +126,23 @@ section.use_case__usecases {
         // display: flex;
         flex: none;
         padding: 10px;
-        width: 90%;
+        width: 100%;
         margin: 10px auto;
         max-width: inherit;
         display: flex;
         flex-direction: row;
+      }
+      &:nth-child(3n+1){
+        margin-left: 0;
+        @include media-tablet {
+          margin: 10px auto;
+        }
+      }
+      &:nth-child(3n+3){
+        margin-right: 0;
+        @include media-tablet {
+          margin: 10px auto;
+        }
       }
 
       &:hover {
@@ -54,51 +153,67 @@ section.use_case__usecases {
 
       }
 
-      &.big-element{
-        max-width: initial;
-        flex: 1 1 39%;
-        margin: 2%;
-        background: #005B9D 0% 0% no-repeat padding-box;
+      // &.big-element{
+        // max-width: initial;
+        // flex: 1 1 39%;
+        // margin: 2%;
+        // background: #005B9D 0% 0% no-repeat padding-box;
 
-        @include media-tablet {
-          flex-direction: column;
-          padding: 0;
-          flex: none;
-          width: 90%;
-          margin: 25px auto !important;
-        }
+        // @include media-tablet {
+        //   flex-direction: column;
+        //   padding: 0;
+        //   flex: none;
+        //   width: 90%;
+        //   margin: 25px auto !important;
+        // }
 
-        .use_case__usecases-list__element-text {
-          h4,
-          p {
-            color: white;
-          }
-        }
+      //   .use_case__usecases-list__element-img {
+      //     background: #005B9D 0% 0% no-repeat padding-box;
 
-        .use_case__usecases-list__element-img {
-          background: #005B9D 0% 0% no-repeat padding-box;
-
-          @include media-tablet {
-            margin: 0;
-          }    
-          img {
-            max-width: initial;
-            // @include media-tablet {
-            //   flex-direction: column;
-            //   padding: 0;
-            //   flex: none;
-            //   width: 90%;
-            //   margin: 25px auto !important;
-            //   background: #005B9D 0% 0% no-repeat padding-box;
-            // }    
-          }
-        }
-        .use_case__usecases-list__element-text{
-          @include media-tablet {
-            padding: 20px;
-          }  
-        }
-      }
+      //     @include media-tablet {
+      //       margin: 0;
+      //     }    
+      //     img {
+      //       max-width: initial;
+      //       // @include media-tablet {
+      //       //   flex-direction: column;
+      //       //   padding: 0;
+      //       //   flex: none;
+      //       //   width: 90%;
+      //       //   margin: 25px auto !important;
+      //       //   background: #005B9D 0% 0% no-repeat padding-box;
+      //       // }    
+      //     }
+      //   }
+      //   .use_case__usecases-list__element-text{
+      //     padding: 30px;
+      //     @include media-tablet {
+      //       padding: 20px;
+      //       flex: 1 1;
+      //     }
+      //     h4{
+      //       color: white;
+      //       margin-bottom: 5px;
+      //       font: italic normal normal 16px/20px Muli;
+      //       letter-spacing: 0px;
+      //       opacity: 1;
+      //       @include media-tablet {
+      //         font: italic normal normal 14px/18px Muli;
+      //       }
+      //     }
+      //     p {
+      //       text-align: left;
+      //       font: normal normal normal 26px/33px Muli;
+      //       letter-spacing: 0px;
+      //       color: white;
+      //       opacity: 1;
+  
+      //       @include media-tablet {
+      //         font: normal normal normal 14px/18px Muli;
+      //       }
+      //     }
+      //   }
+      // }
 
 
       .use_case__usecases-list__element-img {
@@ -137,7 +252,6 @@ section.use_case__usecases {
 
           @include media-tablet {
             font: italic normal normal 14px/18px Muli;
-
           }
         }
 
@@ -149,6 +263,7 @@ section.use_case__usecases {
           opacity: 1;
 
           @include media-tablet {
+            margin-bottom: 20px;
             font: normal normal normal 14px/18px Muli;
           }
         }
