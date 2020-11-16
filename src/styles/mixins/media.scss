@@ -15,6 +15,11 @@
   }
 }
 
+@mixin detect-ios {
+  @supports (-webkit-text-size-adjust:none) and (not (-ms-ime-align:auto)) and (not (-moz-appearance:none)){
+    @content;
+  }
+}
 
 // @mixin media-tablet {
 

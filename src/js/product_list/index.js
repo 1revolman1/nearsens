@@ -125,7 +125,7 @@ export const useProductList=function main(){
         slidesToShow: 15,
         slidesToScroll: 3,
         adaptiveHeight: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 500,
         arrows:false,
         swipeToSlide:true,
