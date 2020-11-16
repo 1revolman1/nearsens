@@ -1,0 +1,38 @@
+@import '../../../mixins/media';
+
+section.page_gabarit__blockwithbigimg{
+    margin-bottom: 0;
+    padding-bottom: 80px;
+    &.blue{
+        background: #005B9D 0% 0% no-repeat padding-box;
+        .page_gabarit__blockwithbigimg__wrap{
+            .productpage__textblockvariations-textimgheader__text{
+                h3,p{
+                    color: white;
+                }
+            }
+        }
+    }
+    .page_gabarit__blockwithbigimg__wrap{
+        &.img-left{
+            .productpage__textblockvariations-textimgheader__img{
+                padding: 40px 40px 40px 0;
+                flex: 1 1 7%;
+                @include media-tablet {
+                    padding: 0 ;
+                    flex:1;
+                }
+            }   
+        }
+        &.img-right{
+            .productpage__textblockvariations-textimgheader__img{
+                padding: 40px 0 40px 40px;
+                flex: 1 1 7%;
+                @include media-tablet {
+                    padding: 0 ;
+                    flex:1;
+                }
+            }  
+        }
+    }
+}

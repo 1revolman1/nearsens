@@ -1,0 +1,70 @@
+section.page_gabarit__blockwithimg{
+    &.blue{
+        background: #005B9D 0% 0% no-repeat padding-box;
+        .page_gabarit__blockwithimg__wrap{
+            .page_gabarit__blockwithimg__wrap__element{
+                .page_gabarit__blockwithimg__wrap__element__text{
+                    h3,p{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    .page_gabarit__blockwithimg__wrap{
+        display: flex;
+        flex-flow: row wrap;
+        .page_gabarit__blockwithimg__wrap__element{
+            display: flex;
+            flex-flow: column wrap;
+            flex: 0 1 26%;
+            max-width: 334px;
+            margin: 0 auto 70px;
+            &:nth-child(3n+3){
+                margin-right: 0;
+            }
+            &:nth-child(3n+1){
+                margin-left: 0;
+            }
+            &.left{
+                .page_gabarit__blockwithimg__wrap__element__text{
+                    justify-content: flex-start;
+                    h3,p{
+                        text-align: left;
+                    }
+                }
+            }
+            &.center{
+                .page_gabarit__blockwithimg__wrap__element__text{
+                    justify-content: center;
+                    h3,p{
+                        text-align: center;
+                    }
+                }
+            }
+            .page_gabarit__blockwithimg__wrap__element__img{
+                margin-bottom: 30px;
+                img{
+                    object-fit: cover;
+                }
+            }
+            .page_gabarit__blockwithimg__wrap__element__text{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                h3{
+                    font: normal normal bold 22px/28px Muli;
+                    letter-spacing: 0px;
+                    color: #28373B;
+                    opacity: 1;
+                }
+                p{
+                    font: normal normal 300 16px/20px Muli;
+                    letter-spacing: 0px;
+                    color: #28373B;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
