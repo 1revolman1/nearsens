@@ -133,7 +133,8 @@ header.header {
 
         .logo-phone {
           margin-top: -6px;
-          margin-right: 10px;
+          margin-right: 5px;
+          // margin-right: 10px;
 
           img {
             width: 24px;
@@ -806,14 +807,18 @@ nav.nav {
     }
 
     .nav-menu {
-      flex: 3;
+      // flex: 3;
 
+      // flex:auto;
+      width: 50%;
       @include media-tablet {
         width: 100%;
+        flex: 3;
       }
 
       ul {
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
 
         @include media-tablet {
@@ -822,6 +827,8 @@ nav.nav {
 
         li {
           margin: 0 2.5%;
+          // margin: 0 !important;
+          // margin: 0 2.5%;
           // margin: 0 25px;
           list-style-type: none;
           @media screen and (max-width:900px){
@@ -1045,6 +1052,9 @@ nav.nav {
           }
 
           a {
+            text-overflow: ellipsis;
+            overflow: hidden; 
+            white-space: nowrap;
             text-align: left;
             font: normal normal bold 16px/20px Muli;
             letter-spacing: 0px;
@@ -1065,7 +1075,8 @@ nav.nav {
     }
 
     .shop-menu {
-      flex: 1.5;
+      // flex: 1.5;
+      flex: auto;
       justify-content: flex-end;
       // flex: 1;
       display: flex;
@@ -1111,7 +1122,9 @@ nav.nav {
 
         a {
           span {
-            text-align: left;
+            text-overflow: ellipsis;
+            overflow: hidden; 
+            white-space: nowrap;
             font: normal normal bold 16px/20px Muli;
             letter-spacing: 0px;
             color: #ffffff;
@@ -1428,6 +1441,9 @@ nav.nav {
 
         }
         .ammount-items{
+          text-overflow: ellipsis;
+          overflow: hidden; 
+          white-space: nowrap;
           margin-left: 28px;
           text-align: left;
           font: normal normal bold 16px/20px Muli;

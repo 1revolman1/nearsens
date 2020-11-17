@@ -23,13 +23,15 @@ section.productpage__pageheader_sticky {
 		padding:13px 0 15px;
     }
 	.productpage__pageheader_sticky-wrap {
-		width: 90%;
+		// width: 90%;
+		width: 100%;
     	margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
 		position: relative;
 		@include media-tablet {
 			margin:0 auto;
+			width: 90%;
 			overflow: visible;
 		}
 		.productpage__pageheader_sticky-wrap-containter{
@@ -153,14 +155,15 @@ section.productpage__pageheader_sticky {
 		}
 		.productpage__pageheader_sticky-wrap-manipulator-container {
 			position: relative;
-			max-width: 369px;
+			// max-width: 369px;
 			overflow: auto;
 			display: flex;
 			background: #ffffff 0% 0% no-repeat padding-box;
 			border-radius: 100px;
 			justify-content: space-between;
-            align-items: center;
-			width: 100%;
+			align-items: center;
+			width: auto;
+			// width: 100%;
 			&.main-btn{
 				display: none;
 				width:auto;
@@ -176,7 +179,7 @@ section.productpage__pageheader_sticky {
 				justify-content: space-between;
 				z-index: 1;
 				height: 100%;
-				width: 106%;
+				// width: 106%;
 				overflow: hidden;
 				@include media-tablet {
 					transition: visibility 0s, opacity 0.5s linear;
@@ -194,9 +197,9 @@ section.productpage__pageheader_sticky {
 					}
 				}
 			}
-			@media screen and (max-width:1000px) {	
-				max-width: 309px;
-			}
+			// @media screen and (max-width:1000px) {	
+			// 	// max-width: 309px;
+			// }
 			@include media-tablet {
 				flex:1;
 				position: inherit;
@@ -215,12 +218,15 @@ section.productpage__pageheader_sticky {
 				padding: 9px 20px;
 				button {
 					cursor: pointer;
-					padding: 8.5px;
+					padding: 8.5px 10px;
 					border: none;
 					background: #2ec9ad 0% 0% no-repeat padding-box;
 					border-radius: 10px;
 					opacity: 1;
 					color: white;
+					@include media-tablet {
+						padding: 3.5px 8px;
+					}
 					&:disabled {
 						opacity: 0.4;
 						cursor: not-allowed;
@@ -236,7 +242,7 @@ section.productpage__pageheader_sticky {
 						margin: 0 10px;
 					}
 					@include media-tablet {
-						margin: 0 22px;
+						margin: 0 14px;
 					}
 				}
 			}

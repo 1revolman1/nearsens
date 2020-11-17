@@ -29,12 +29,14 @@ section.productlist__scrollheader{
     .productlist__scrollheader-wrapper{
         z-index: 1;
         position: relative;
-        padding: 40px ;
+        padding: 40px 0 ;
         max-width: $mediaMAXWIDTH;
         margin: 0 auto;
         width: 100%;
         @include media-tablet {
-          padding: 19px 20px;
+        //   padding: 19px 20px;
+            padding: 19px 0;
+            width: 90%;
 
         }
         .productlist__scrollheader-wrapper__text-container{
