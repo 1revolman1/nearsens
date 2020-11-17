@@ -126,18 +126,17 @@ export const useProductList=function main(){
         slidesToScroll: 3,
         adaptiveHeight: true,
         // autoplay: true,
-        autoplaySpeed: 500,
         arrows:false,
         swipeToSlide:true,
         responsive: [
-            {
+          {
               breakpoint: 769,
               settings: {
                 slidesToShow: 7,
                 slidesToScroll: 2
-              }
-            },
-          ]
+            }
+          },
+        ]
     })
     
     const scrollToThisBlock=document.querySelector(".productlist__pageheader");
