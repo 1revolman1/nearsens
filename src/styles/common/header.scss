@@ -68,6 +68,10 @@ header.header {
   @include detect-ios {
     box-shadow: none;
   }
+//   @supports (-webkit-touch-callout: none) {
+//     /* CSS specific to iOS devices */ 
+//     box-shadow: none;
+//  }
   @include media-tablet {
     display: flex;
     position: fixed;

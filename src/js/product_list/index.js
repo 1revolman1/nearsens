@@ -33,9 +33,9 @@ function cartAnim() {
       //SHAKE ANIM
 
       setTimeout(()=>{
-        // console.log(  $(this))
-        $(this).parents(".productlist__products-container-element-controllers-manipulator").find(".productlist__products-container-element-controllers-counter button").attr("disabled",true)
-        $(this).prop("disabled",true).children("i").addClass("fa-check").removeClass("fa-shopping-basket");
+        // It's block your card        
+        // $(this).parents(".productlist__products-container-element-controllers-manipulator").find(".productlist__products-container-element-controllers-counter button").attr("disabled",true)
+        // $(this).prop("disabled",true).children("i").addClass("fa-check").removeClass("fa-shopping-basket");
         $(this).parents(".productlist__products-container-element-controllers-manipulator").removeClass("show-success");
         infoSuccessHeader.addClass("unshow");
       },2000)
@@ -75,7 +75,8 @@ export const useProductList=function main(){
         rootMargin: '-100px',
         threshold: 0,
       };
-    document.querySelectorAll('.productlist__products-container-element-controllers-counter').forEach(function(elm){
+    const preInitAddList=document.querySelectorAll(".productlist__products-container-element-controllers-successbuying .desktop")
+    document.querySelectorAll('.productlist__products-container-element-controllers-counter').forEach(function(elm,index){
       const value=elm.querySelector("span").textContent;
       if(+value>=1){
         elm.querySelectorAll("button").forEach((e)=>{
@@ -88,6 +89,8 @@ export const useProductList=function main(){
         })
         elm.parentNode.querySelector(".productlist__products-container-element-controllers-shop button").setAttribute("disabled","disabled");
       }
+      //init ammount of preadded
+      preInitAddList[index].textContent=`${value} new added to cart`
     })
 
     $('.productlist__products-container-element-controllers-counter .minus').on('click', function(){
@@ -125,7 +128,6 @@ export const useProductList=function main(){
         slidesToShow: 15,
         slidesToScroll: 3,
         adaptiveHeight: true,
-        // autoplay: true,
         arrows:false,
         swipeToSlide:true,
         responsive: [

@@ -16,7 +16,7 @@
 }
 
 @mixin detect-ios {
-  @supports (-webkit-text-size-adjust:none) and (not (-ms-ime-align:auto)) and (not (-moz-appearance:none)){
+  @supports (-webkit-touch-callout: none) and (-webkit-text-size-adjust:none) and (not (-ms-ime-align:auto)) and (not (-moz-appearance:none)){
     @content;
   }
 }
