@@ -1,3 +1,5 @@
+@import '../../../mixins/media';
+
 section.page_gabarit__twobigblockperline{
     &.blue{
         background: #005B9D 0% 0% no-repeat padding-box;
@@ -12,13 +14,26 @@ section.page_gabarit__twobigblockperline{
         }
     }
     padding-bottom: 87px;
+    @include media-tablet {
+        padding-bottom: 40px;
+    }
     .page_gabarit__twobigblockperline__wrap{
         display: flex;
+        @include media-tablet {
+            width: 90%;
+            flex-direction: column;
+            margin: 0 auto;
+        }
         .page_gabarit__twobigblockperline__wrap__element{
             display: flex;
             flex-flow: column wrap;
             margin:20px auto;
             flex: 0 1 48%;
+            @include media-tablet {
+               flex:none;
+               width: 100%;
+               margin: 0;
+            }
             &:nth-child(even){
                 margin-right: 0;
             }
@@ -38,6 +53,9 @@ section.page_gabarit__twobigblockperline{
                     color: #28373B;
                     opacity: 1;
                     margin-bottom: 30px;
+                    @include media-tablet {
+                        font: normal normal normal 20px/25px Muli;
+                    }
                 }
                 p{
                     font: normal normal 300 18px/23px Muli;
@@ -45,6 +63,9 @@ section.page_gabarit__twobigblockperline{
                     color: #333333;
                     opacity: 1;
                     margin-bottom: 20px;
+                    @include media-tablet {
+                        font: normal normal 300 14px/23px Muli;
+                    }
                 }
             }
         }
