@@ -38,6 +38,7 @@ section.productlist__pageheader{
                 align-items: center;
                 justify-content: center;
                 margin: 0 10px;
+                outline: none;
                 @include media-tablet {
                     margin: 0 7px;
             
@@ -135,6 +136,9 @@ section.productlist__pageheader{
                     outline: none;
                     &:hover{
                         font: normal normal 800 16px/20px Muli;
+                        @include media-tablet {
+                            font: normal normal 800 14.05px/18px Muli;
+                        }
                     }
                     &.active{
                         color: #005B9D;

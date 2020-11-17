@@ -318,6 +318,7 @@ header.header {
             outline: none;
             cursor: pointer;
             .fas.globe{
+              
               margin-right: 10px;
             }
             &.unshow {
@@ -344,6 +345,7 @@ header.header {
               }
             }
             >svg,>i:not(.globe) {
+              transform-origin: center;
               transform: rotate(90deg);
               margin: 0 7px;
               transition: transform ease 0.5s;
@@ -363,9 +365,11 @@ header.header {
           .dropup-content {
             display: none;
             position: absolute;
-            right: -20px;
+            // right: -20px;
+            right: -5px;
             top:20px;
-            padding: 17px 20px;
+            padding: 5px 15px;
+            // padding: 17px 20px;
             max-height: 300px;
             background: #ffffff 0% 0% no-repeat padding-box;
             box-shadow: 0px 0px 10px #00000033;
@@ -398,7 +402,8 @@ header.header {
               }
 
               bottom: 100%;
-              right: 25px;
+              // right: 25px;
+              right: 10px;
               border: solid transparent;
               content: '';
               height: 0;
