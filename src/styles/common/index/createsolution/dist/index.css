@@ -1,0 +1,102 @@
+section.index__createsolution {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+  margin: 50px 0;
+}
+section.index__createsolution .bigimg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+section.index__createsolution .bigimg iframe {
+  height: 100%;
+}
+section.index__createsolution::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(-180deg, #fff 0, #fffFFF00 70%) 0 0 no-repeat padding-box;
+}
+section.index__createsolution::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(0deg, #fff 0, #fffFFF00 70%) 0 0 no-repeat padding-box;
+}
+section.index__createsolution .index__createsolution__wrap {
+  position: relative;
+  z-index: 2;
+  padding: 20px 0;
+}
+section.index__createsolution .index__createsolution__wrap h3 {
+  text-align: center;
+  font: normal normal 800 30px/38px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  text-shadow: 0px 0px 25px #FFFFFF;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+section.index__createsolution .index__createsolution__wrap p {
+  text-align: center;
+  font: normal normal 300 22px/28px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  text-shadow: 0px 0px 25px #FFFFFF;
+  opacity: 1;
+  margin-bottom: 5px;
+  margin-bottom: 15px;
+}
+section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__btncontainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__btncontainer .index__createsolution__wrap__btncontainer__btn {
+  cursor: pointer;
+  padding: 13px 30px;
+  margin: 15px 20px;
+  background: #2EC9AD 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  opacity: 1;
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__discover {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+}
+section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__discover p {
+  text-align: center;
+  font: italic normal 300 26px/33px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  text-shadow: 0px 0px 25px #FFFFFF;
+  opacity: 1;
+  margin-bottom: 6.5px;
+}
+section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__discover i {
+  font-size: 20px;
+  color: #333333;
+}

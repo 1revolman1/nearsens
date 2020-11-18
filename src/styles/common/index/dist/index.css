@@ -1,0 +1,367 @@
+section.index__parallax #scene {
+  background: red;
+}
+
+section.index__morewithless {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+section.index__morewithless .index__morewithless__blockwithbutton {
+  flex: 1;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section.index__morewithless .index__morewithless__blockwithbutton hr {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 150px;
+  height: 1px;
+  background: #707070;
+  opacity: 0.6;
+  border: none;
+}
+section.index__morewithless .index__morewithless__blockwithbutton h3 {
+  font: normal normal 800 30px/38px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 5px;
+}
+section.index__morewithless .index__morewithless__blockwithbutton p {
+  font: normal normal 300 22px/28px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+section.index__morewithless .index__morewithless__blockwithbutton .index__morewithless__blockwithbutton__btn {
+  border: 1px solid #2EC9AD;
+  border-radius: 40px;
+  opacity: 1;
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #2EC9AD;
+  opacity: 1;
+  padding: 13px 30px;
+  transition: all 0.3s ease;
+  margin: 10px 0;
+  background: white;
+}
+section.index__morewithless .index__morewithless__blockwithbutton .index__morewithless__blockwithbutton__btn:hover {
+  color: #FFFFFF;
+  background: #2EC9AD;
+}
+section.index__morewithless .index__morewithless__blockwithhover {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  background: white 0% 0% no-repeat padding-box;
+  border-radius: 100px;
+  opacity: 1;
+  padding: 8px 50px 8px 8px;
+  position: relative;
+  transition: all 0.3s ease;
+  margin: 15px 0;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover {
+  background: #005B9D 0% 0% no-repeat padding-box;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .invert-collor {
+  transform: scale(0.8);
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .invert-collor path {
+  fill: #005B9D;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .fire {
+  transform: scale(0.7);
+  left: -14px;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .spec {
+  transform: scale(0.7);
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .spec .color {
+  fill: #005B9D;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .lock {
+  transform: scale(0.7);
+  right: -14px;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .lock path {
+  transition: all 0.3s ease;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text h3 {
+  transform: translate(0, 0%);
+  color: #FFFFFF;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow {
+  color: white;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #005B9D 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 3px #00000033;
+  max-width: 68px;
+  max-height: 68px;
+  min-width: 68px;
+  min-height: 68px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor {
+  transition: all 0.3s ease;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor path {
+  transition: all 0.3s ease;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec {
+  transition: all 0.3s ease;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec .color {
+  transition: all 0.3s ease;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .fire {
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 22px;
+  left: -19px;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .lock {
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 22px;
+  right: -17px;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img svg {
+  width: 100%;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text h3 {
+  transform: translate(0, 25%);
+  transition: all 0.3s ease;
+  font: normal normal 300 22px/28px Muli;
+  letter-spacing: 0px;
+  color: #324044;
+  opacity: 1;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
+  font: normal normal 300 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__arrow {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  color: #005B9D;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+section.index__createsolution {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+  margin: 50px 0;
+}
+section.index__createsolution .bigimg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+section.index__createsolution .bigimg iframe {
+  height: 100%;
+}
+section.index__createsolution::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(-180deg, #fff 0, #fffFFF00 70%) 0 0 no-repeat padding-box;
+}
+section.index__createsolution::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(0deg, #fff 0, #fffFFF00 70%) 0 0 no-repeat padding-box;
+}
+section.index__createsolution .index__createsolution__wrap {
+  position: relative;
+  z-index: 2;
+  padding: 20px 0;
+}
+section.index__createsolution .index__createsolution__wrap h3 {
+  text-align: center;
+  font: normal normal 800 30px/38px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  text-shadow: 0px 0px 25px #FFFFFF;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+section.index__createsolution .index__createsolution__wrap p {
+  text-align: center;
+  font: normal normal 300 22px/28px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  text-shadow: 0px 0px 25px #FFFFFF;
+  opacity: 1;
+  margin-bottom: 5px;
+  margin-bottom: 15px;
+}
+section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__btncontainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__btncontainer .index__createsolution__wrap__btncontainer__btn {
+  cursor: pointer;
+  padding: 13px 30px;
+  margin: 15px 20px;
+  background: #2EC9AD 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  opacity: 1;
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__discover {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+}
+section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__discover p {
+  text-align: center;
+  font: italic normal 300 26px/33px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  text-shadow: 0px 0px 25px #FFFFFF;
+  opacity: 1;
+  margin-bottom: 6.5px;
+}
+section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__discover i {
+  font-size: 20px;
+  color: #333333;
+}
+
+section.index__youtubeframe {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 51px;
+}
+section.index__youtubeframe .index__youtubeframe__frame {
+  display: flex;
+  flex: 1;
+}
+section.index__youtubeframe .index__youtubeframe__frame #player-container {
+  width: 100%;
+  height: 100%;
+}
+section.index__youtubeframe .index__youtubeframe__text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+section.index__youtubeframe .index__youtubeframe__text h3 {
+  font: normal normal 800 30px/38px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 28px;
+}
+section.index__youtubeframe .index__youtubeframe__text p {
+  font: normal normal 300 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 27px;
+}
+section.index__youtubeframe .index__youtubeframe__text ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+section.index__youtubeframe .index__youtubeframe__text ul li {
+  display: flex;
+  flex: 0 1 35%;
+  margin: 10px auto;
+  font: normal normal 300 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer {
+  display: flex;
+  margin: 17px 0;
+}
+section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer .index__youtubeframe__text__btncontainer__btn {
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #2EC9AD;
+  opacity: 1;
+  border: 1px solid #2EC9AD;
+  border-radius: 40px;
+  opacity: 1;
+  padding: 13px 30px;
+}
+section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer .index__youtubeframe__text__btncontainer__btn:hover {
+  color: #FFFFFF;
+  background: #2EC9AD 0% 0% no-repeat padding-box;
+  border: 1px solid #2EC9AD;
+}
+section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__download {
+  display: flex;
+  flex-flow: row wrap;
+}
+section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__download a {
+  display: flex;
+  margin: 0 13px;
+}
+section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__download a:first-of-type {
+  margin-left: 0;
+}
+section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__download a:last-of-type {
+  margin-right: 0;
+}
+section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__download a img {
+  object-fit: cover;
+}

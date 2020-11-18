@@ -1,24 +1,16 @@
 extends common/layout
 
 block content
-  main.main
-    h2 Title
-    include includes/index/banner
-    hr
-    p paragraph
-    img(src="img/forest.jpg",alt="hello")
-    ul.items
-      li.items__t
-      li.items__t
-      li.items1__t 
-    img(src="img/forest.jpg",alt="hello")
-    ul.items
-      li.items__t
-      li.items__t
-      li.items1__t
-    img(src="img/forest.jpg",alt="hello")
-    ul.items
-      li.items__t
-      li.items__t
-      li.items1__t
-    //- и другие блоки
+  script(src="https://www.youtube.com/iframe_api",defer)
+  script
+      |var typePage = "home_page";
+      |var videoId = "kZZ9cMZKDO8";
+  main
+    include includes/page_gabarit/pageheader/index
+    //- include includes/index/parallax/index
+    section.main
+      include includes/index/morewithless/index
+    include includes/index/createsolution/index
+    section.main
+      include includes/index/youtubeframe/index
+      include includes/index/reviews/index

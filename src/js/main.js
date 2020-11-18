@@ -1,8 +1,10 @@
 // import $ from '../local_modules/jquery/dist/jquery.min';
+// import'../local_modules/parallax.js-master/parallax';
 import {useCasesList} from "./usecases_list";
 import {useProductList} from "./product_list";
 import {useProductPage} from "./product_page";
 import {useCasesDetails} from "./usecases_details";
+import {useHomePage} from "./home_page";
 
 
 $(document).ready(() => {
@@ -21,7 +23,8 @@ $(document).ready(() => {
       useProductPage();
       break;
     case typePage==="home_page":
-      console.log(`HOME PAGE`);
+      // console.log(`HOME PAGE`);
+      useHomePage();
       break;
     case typePage==="usecase_details":
       useCasesDetails();
