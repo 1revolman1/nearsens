@@ -1,0 +1,226 @@
+section.contact__findanswer {
+  width: 100%;
+  background: #F2F2F2 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 40px 0 62px;
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer {
+    padding: 40px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__firstinit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__firstinit h3 {
+  font: normal normal normal 32px/40px Muli;
+  letter-spacing: 0px;
+  color: #28373B;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__firstinit h3 {
+    font: normal normal normal 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #28373B;
+    opacity: 1;
+    margin-bottom: 20px;
+  }
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__firstinit .contact__findanswer__wrap__btn {
+  text-align: center;
+  padding: 14px 30px;
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  background: #2EC9AD 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__firstinit .contact__findanswer__wrap__btn {
+    padding: 10px 30px;
+    font: normal normal bold 20px/23px Muli;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit h3 {
+  font: normal normal normal 32px/40px Muli;
+  letter-spacing: 0px;
+  color: #28373B;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit h3 {
+    font: normal normal normal 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #28373B;
+    opacity: 1;
+    margin-bottom: 20px;
+  }
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container {
+  display: flex;
+  flex-direction: column;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .textinput {
+  margin: 20px 25px;
+  padding: 14px 30px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #BBBBBB;
+  border-radius: 6px;
+  opacity: 1;
+  font: normal normal 300 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first {
+  display: flex;
+  flex-flow: row wrap;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__first {
+  flex: 1;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second {
+  flex: 3;
+  display: flex;
+  flex-flow: row wrap;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second .textinput {
+  flex: 1;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second {
+  display: flex;
+  flex-flow: row wrap;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea {
+  flex: 3;
+  display: flex;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea {
+  resize: none;
+  margin: 20px 25px;
+  width: 100%;
+  padding: 14px 30px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #BBBBBB;
+  border-radius: 6px;
+  opacity: 1;
+  font: normal normal 300 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px 0;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__robot {
+  flex: 1;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox {
+  display: flex;
+  flex-direction: row;
+  flex: 3;
+  padding: 0 25px;
+  align-items: flex-start;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .submit {
+  margin-left: 100px;
+  padding: 14px 22px;
+  background: #2EC9AD 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  opacity: 1;
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container {
+  font: normal normal 300 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #28373B;
+  opacity: 1;
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container {
+    font: normal normal 300 14px/18px Muli;
+    letter-spacing: 0px;
+    color: #28373B;
+    opacity: 1;
+  }
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container input:checked ~ .checkmark {
+  background-color: #eee;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container input:checked ~ .checkmark:after {
+  display: block;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container .checkmark:after {
+  left: 12px;
+  top: 0px;
+  width: 10px;
+  height: 18px;
+  border: solid #005B9D;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .checkmark {
+  border: 1px solid #BBBBBB;
+  border-radius: 6px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 32px;
+  background-color: #eee;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}

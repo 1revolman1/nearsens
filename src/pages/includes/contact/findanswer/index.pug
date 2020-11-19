@@ -1,0 +1,43 @@
+section.contact__findanswer
+    .contact__findanswer__wrap.main
+        .contact__findanswer__wrap__firstinit
+            h3 Found the answer to your questions?
+            button.contact__findanswer__wrap__btn NO, I WANT TO CONTACT THE TEAM
+        .contact__findanswer__wrap__secondinit
+            h3 Send an email
+            //- .contact__findanswer__wrap__secondinit__container
+            //-     .inputs2
+            //-         input.textinput(type="text" placeholder="First name*")
+            //-         input.textinput(type="text" placeholder="Adresse e-mail*")
+            //-     .bigInput
+            //-         textarea(name="", cols="30", rows="10" placeholder="Your message …")
+            //-     .layout-input
+            //-         input.textinput(type="text" placeholder="Last name*")
+            //-         input.textinput(type="text" placeholder="Phone number*")
+            //-         input.textinput(type="text" placeholder="Compagny name")
+            //-         input.textinput(type="text" placeholder="Country")
+            //-     .bottom-input
+            //-         input.textinput(type="text")
+            form(action="").contact__findanswer__wrap__secondinit__container
+                .contact__findanswer__wrap__secondinit__container__first
+                    .contact__findanswer__wrap__secondinit__container__first__first
+                        input.textinput(type="text" required placeholder="Last name*")
+                    .contact__findanswer__wrap__secondinit__container__first__second
+                        input.textinput(type="text" required placeholder="First name*")
+                        input.textinput(type="email" required placeholder="Adresse e-mail*")
+                .contact__findanswer__wrap__secondinit__container__second
+                    .contact__findanswer__wrap__secondinit__container__second__inputs
+                        input.textinput(type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number*")
+                        input.textinput(type="text" placeholder="Compagny name")
+                        input.textinput(type="text" placeholder="Country")
+                    .contact__findanswer__wrap__secondinit__container__second__textarea
+                        textarea(name="", placeholder="Your message …" cols="30", rows="10")
+                .contact__findanswer__wrap__secondinit__container__third
+                    .contact__findanswer__wrap__secondinit__container__third__robot
+                        input.textinput(type="text" placeholder="Robot")
+                    .contact__findanswer__wrap__secondinit__container__third__checkbox
+                        label.container
+                            | J’accepte de recevoir des informations et des offres promotionnelles exclusives de la part de Nearsens.com
+                            input(type="checkbox")
+                            span.checkmark
+                        button(type="submit").submit ENVOYER

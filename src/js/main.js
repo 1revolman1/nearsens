@@ -6,6 +6,7 @@ import {useProductPage} from "./product_page";
 import {useCasesDetails} from "./usecases_details";
 import {useHomePage} from "./home_page";
 import {useSignUpPage} from "./signup_page";
+import {useContactPage} from "./contact_page";
 
 
 $(document).ready(() => {
@@ -26,6 +27,10 @@ $(document).ready(() => {
     case typePage==="home_page":
       // console.log(`HOME PAGE`);
       useHomePage();
+      break;
+    case typePage==="contact_page":
+      // console.log(`HOME PAGE`);
+      useContactPage();
       break;
     case typePage==="usecase_details":
       useCasesDetails();
