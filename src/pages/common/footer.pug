@@ -1,32 +1,71 @@
 footer.globalfooter
     .globalfooter__wrapper
-        .globalfooter__wrapper__logo
-            a(href="/"): img(class="logo-img" src="img/Logotype.png", alt="logo")
+        //- .globalfooter__wrapper__logo
+        //-     a(href="/"): img(class="logo-img" src="img/Logotype.png", alt="logo")
         .globalfooter__wrapper__content
-            each val in [1,2,3,4]
-                ul
-                    li.header= val+"Lorem Ipsum"
-                    each val in [1,2,3,4]
-                        li 
-                           a(href="") Lorem ipsum
             ul
-                li.header Contact
-                li 
-                    a(href="") Contact us
-                li 
-                    a(href="") Support
-                li.images
-                    a(href="")
-                        img(src="img/France.png", alt="language picker")
-                    a(href="")
-                        img(src="img/England.png", alt="language picker")
+                li: a(href="/"): img(class="logo-img" src="img/Logotype.png", alt="logo")
+            ul
+                li.header.big: a(href="") Home
+                li.header.big: a(href="") The solution
+                li.header.big: a(href="") Our products
+            ul
+                li.header.big-head: a(href="") About Nearsens
+                li.header.inside: a(href="") Inside Nearsens
+                li.header.inside: a(href="") Our values
+                li.header.inside: a(href="") How shipping works
+                li.header.inside: a(href="") Installation Guide
+            ul
+                li.header.big: a(href="") Build your own solution
+                li.header.big: a(href="") Nearsens app
+            ul
+                li.header.big-head: a(href="") Contact
+                li.header.inside: a(href="") FAQ
+                li.header.inside: a(href="") Contact us
+                li.header.inside: a(href="") Support request
+            //- each val in [1,2,3]
+            //-     ul
+            //-         li.header= val+"Lorem Ipsum"
+            //-         li.header= val+"Lorem Ipsum"
+            //-         li.header= val+"Lorem Ipsum"
+            //-         //- each val in [1,2,3,4]
+            //-         //-     li 
+            //-         //-        a(href="") Lorem ipsum
+            //- ul
+            //-     li.header Contact
+            //-     li 
+            //-         a(href="") Contact us
+            //-     li 
+            //-         a(href="") Support
+            //-     li.images
+            //-         a(href="")
+            //-             img(src="img/France.png", alt="language picker")
+            //-         a(href="")
+            //-             img(src="img/England.png", alt="language picker")
         .globalfooter__wrapper__additional
             .globalfooter__wrapper__additional__text
-                h4 
-                    |Copyright © 2020 Nearsens - 
-                    a(href="") Privacy policy 
-                    |- 
-                    a(href="") About
+                ul
+                    li Copyright © 2020 Nearsens
+                    li: a(href="") Terms of Use
+                    li: a(href="") Privacy Policy
+                    li: a(href="") Legal
+                    li.img 
+                        a(href="")
+                            img(src="img/France.png", alt="language picker")
+                        a(href="")
+                            img(src="img/England.png", alt="language picker")
+                //- h4
+                //-     |Copyright © 2020 Nearsens - 
+                //-     a(href="") Terms of Use 
+                //-     | -  
+                //-     a(href="") Privacy Policy
+                //-     | -  
+                //-     a(href="") Legal
+                //-     | -
+                //-     a(href="")
+                //-         img(src="img/France.png", alt="language picker")
+                //-     a(href="")
+                //-         img(src="img/England.png", alt="language picker")
             .globalfooter__wrapper__additional__logos
                 a(href="")
                     i(class="fab fa-linkedin-in")
