@@ -1,6 +1,12 @@
 section.index__youtubeframe
     .index__youtubeframe__frame
         div#player-container
+            video.landing(width="100%" controls="" autoplay="" loop="" muted="")
+                source(src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4")
+
+            //- iframe(width="“560”" height='“315"' src="“https://www.youtube.com/embed/iG9CE55wbtY?rel=0;&autoplay=1&mute=1&loop=1&playlist=iG9CE55wbtY”" frameborder='“0"' allowfullscreen="" include="")
+
+            //- video(src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls="" loop="" muted="")
         //- iframe(width="560" height="315" src="https://www.youtube.com/embed/kZZ9cMZKDO8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
         //- img(src="https://www.imgworlds.com/wp-content/uploads/2015/12/18-CONTACTUS-HEADER.jpg", alt="")
     .index__youtubeframe__text
