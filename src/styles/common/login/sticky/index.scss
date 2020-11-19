@@ -1,0 +1,30 @@
+@import '../../../mixins/media';
+
+section.loginpage__sticky{
+    position: sticky;
+    top: 113px;
+    padding:30px 0;
+    background: #005B9D 0% 0% no-repeat padding-box;
+    opacity: 1;
+    @include media-tablet {
+        top: 57px;
+    }
+    .loginpage__sticky__wrap{
+        @include media-tablet {
+            width: 90%;
+            margin: 0 auto;
+        }
+        h2{
+            font: normal normal normal 32px/40px Muli;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;  
+            @include media-tablet {
+                font: normal normal normal 22px/28px Muli;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                opacity: 1;
+            }         
+        }
+    }
+}

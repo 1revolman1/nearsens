@@ -1,0 +1,32 @@
+section.loginpage__sticky {
+  position: sticky;
+  top: 113px;
+  padding: 30px 0;
+  background: #005B9D 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.loginpage__sticky {
+    top: 57px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.loginpage__sticky .loginpage__sticky__wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+section.loginpage__sticky .loginpage__sticky__wrap h2 {
+  font: normal normal normal 32px/40px Muli;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.loginpage__sticky .loginpage__sticky__wrap h2 {
+    font: normal normal normal 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+}
