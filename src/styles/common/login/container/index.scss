@@ -102,6 +102,9 @@ section.loginpage__container{
                 opacity: 1;
                 outline: none;
                 border: none;
+                @include media-tablet {
+                    padding: 11px 20px;
+                }
             }
         }
         .loginpage__container__block__createaccount{

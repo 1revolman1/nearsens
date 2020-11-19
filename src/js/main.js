@@ -5,6 +5,7 @@ import {useProductList} from "./product_list";
 import {useProductPage} from "./product_page";
 import {useCasesDetails} from "./usecases_details";
 import {useHomePage} from "./home_page";
+import {useSignUpPage} from "./signup_page";
 
 
 $(document).ready(() => {
@@ -28,6 +29,9 @@ $(document).ready(() => {
       break;
     case typePage==="usecase_details":
       useCasesDetails();
+      break;
+    case typePage==="signup_page":
+      useSignUpPage();
       break;
     default:
       console.log(`ELSE PAGE`);

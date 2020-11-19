@@ -1,0 +1,47 @@
+section.loginpage__container.signuppage__container
+    h2 CREATE AN ACCOUNT
+    form.loginpage__container__block
+        h3 Your id
+        .loginpage__container__block__manipulator
+            input(type="email" placeholder="EMAIL")
+            input(type="password" placeholder="PASSWORD")
+        h3 Your personals informations
+        .loginpage__container__block__manipulator
+            input(type="text" placeholder="First name")
+            input(type="text" placeholder="Last name")
+            each val in [1]
+                    .custom-select-wrapper
+                        .custom-select
+                            .custom-select__trigger
+                                span Country
+                                span.arrow 
+                                    i.fas.fa-angle-up
+                            .custom-options
+                                span.custom-option.selected(data-value="tesla") 
+                                    |Tesla
+                                    i.fas.fa-times
+                                span.custom-option(data-value="volvo") 
+                                    |Volvo
+                                    i.fas.fa-times
+                                span.custom-option(data-value="nisan") 
+                                    |Nisan
+                                    i.fas.fa-times
+                                span.custom-option(data-value="mitsubisi")
+                                    |Mitsubisi
+                                    i.fas.fa-times
+                                span.custom-option(data-value="opel")
+                                    |Opel
+                                    i.fas.fa-times
+                                span.custom-option(data-value="mercedes benz l class") 
+                                    |Mercedes Benz L Class
+                                    i.fas.fa-times
+        .signuppage__container__block__checkbox
+            label.container
+                | J’accepte de recevoir des informations et des offres promotionnelles exclusives de la part de Nearsens.com
+                input(type="checkbox")
+                span.checkmark
+        .loginpage__container__block__email.signuppage__container__block__email
+            button(type="submit") CREATE
+        //- .loginpage__container__block__createaccount
+        //-     p New customer ?
+        //-     a(href="") CREATE AN ACCOUNT
