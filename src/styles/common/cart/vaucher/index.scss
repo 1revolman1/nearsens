@@ -1,0 +1,87 @@
+@import '../../../mixins/media';
+
+section.cart__vaucher{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 25px 20px 25px 30px;
+    margin-bottom: 45px;
+    @include media-tablet {
+        width: 90%;
+        padding: 20px 11px;
+        margin: 0 auto 46px;
+        flex-direction: column;
+    }
+    h3{
+        font: normal normal normal 18px/23px Muli;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+        @include media-tablet {
+            margin-bottom: 20px;
+        }
+    }
+    .cart__vaucher__manipulator{
+        display: flex;
+        flex-flow: row wrap;
+        @include media-tablet {
+            width: 100%;
+            justify-content: space-between;
+        }  
+        .cart__vaucher__manipulator__btn{
+            margin: 0 10px;
+            padding: 14px 29px;
+            font: normal normal bold 18px/23px Muli;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            background: #005B9D 0% 0% no-repeat padding-box;
+            border-radius: 5px;
+            opacity: 1;   
+            @include media-tablet {
+                // flex:1;
+                width: 35%;
+                margin: 0;
+                padding: 12px 18px;
+                // padding: 14px 20px;
+                font: normal normal bold 15px/20px Muli;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                opacity: 1;
+            }     
+        }
+        .cart__vaucher__manipulator__input{
+            margin: 0 10px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #BBBBBB;
+            border-radius: 6px;
+            opacity: 1;
+            padding: 14px 20px;  
+            font: italic normal 300 18px/23px Muli;
+            letter-spacing: 0px;
+            color: #333333;
+            opacity: 1;
+            @include media-tablet {
+                flex:1;
+                // width: 62%;
+                // margin:0;
+                width: 57%;
+                margin: 0 20px 0 0;
+                padding: 12px 15px;  
+                font: italic normal 300 15px/20px Muli;
+                letter-spacing: 0px;
+                color: #333333;
+                opacity: 1;
+            }
+            //     font: italic normal 300 18px/23px Muli;
+            //     letter-spacing: 0px;
+            //     color: #333333;
+            //     opacity: 1;
+                
+            // }         
+        }
+    }
+}
