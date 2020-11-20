@@ -9,8 +9,68 @@ import {useSignUpPage} from "./signup_page";
 import {useContactPage} from "./contact_page";
 
 
+
 $(document).ready(() => {
+  function footerJS() {
+    if(window.innerWidth<=768){
+      document.querySelectorAll("footer.globalfooter .globalfooter__wrapper__content ul .header").forEach((button,index,buttons) => {
+        button.addEventListener("click", function () {
+          buttons.forEach(function(btn){
+            const menues=btn.parentNode.classList;
+            if(btn.isEqualNode(button)){
+              menues.toggle("open");
+              return null;
+            }
+            if(menues.contains("open"))
+              menues.remove("open");
+          })
+        })
+      })
+    }
+  }
   
+  function headerJS() {
+    const menuelm = document.querySelector(".nav-menu ul li:first-of-type .active-link");
+  
+    function onScrollChange(changes, observer) {
+        changes.forEach(change => {
+            if (change.intersectionRatio === 0) {
+                menuelm.classList.remove("in-viewport");
+            } else {
+                menuelm.classList.add("in-viewport");
+            }
+        });
+    }
+    const options = {
+        root: null, //root
+        rootMargin: '0%',
+    }
+    const observer = new IntersectionObserver(onScrollChange, options);
+    const target = document.querySelector('header.header');
+    if (target) observer.observe(target);
+    document.querySelectorAll("ul li.dropup .dropbtn").forEach((button, index, buttons) => {
+        button.addEventListener("click", () => {
+            buttons.forEach((btn) => {
+                if (btn.isEqualNode(button))
+                    return null;
+                const classListBTN = btn.parentNode?.querySelector(".dropbtn").classList;
+                const classListCONTENT = btn.parentNode?.querySelector(".dropup-content").classList;
+                if (!classListCONTENT.contains("unshow")) {
+                    classListCONTENT.toggle("unshow");
+                    classListBTN.toggle("unshow");
+                }
+            })
+            button.parentNode?.querySelector(".dropbtn").classList?.toggle("unshow");
+            button.parentNode?.querySelector(".dropup-content").classList?.toggle("unshow");
+            // button?.parentElement?.childNodes[1].firstChild.classList.toggle("unshow")
+            // button?.parentElement?.childNodes[0].classList.toggle("unshow")
+        })
+    })
+  }
+  
+  headerJS();
+  footerJS();
+
   switch (true) {
     case typePage==="about_page":
       console.log(`ABOUT PAGE`);
@@ -37,6 +97,8 @@ $(document).ready(() => {
       break;
     case typePage==="signup_page":
       useSignUpPage();
+    case typePage==="cart_page":
+      console.log("CART PAGE")
       break;
     default:
       console.log(`ELSE PAGE`);
@@ -84,64 +146,4 @@ $(document).ready(() => {
   //     console.log(`ELSE PAGE`);
   //     break;
   // }
-  function footerJS() {
-    if(window.innerWidth<=768){
-      document.querySelectorAll("footer.globalfooter .globalfooter__wrapper__content ul .header").forEach((button,index,buttons) => {
-        button.addEventListener("click", function () {
-          buttons.forEach(function(btn){
-            const menues=btn.parentNode.classList;
-            if(btn.isEqualNode(button)){
-              menues.toggle("open");
-              return null;
-            }
-            if(menues.contains("open"))
-              menues.remove("open");
-          })
-        })
-      })
-    }
-  }
-  
-  function headerJS() {
-    const menuelm = document.querySelector(".nav-menu ul li:first-of-type .active-link");
-
-    function onScrollChange(changes, observer) {
-        changes.forEach(change => {
-            if (change.intersectionRatio === 0) {
-                menuelm.classList.remove("in-viewport");
-                console.log('Header1 is outside viewport', menuelm);
-            } else {
-                menuelm.classList.add("in-viewport");
-                console.log('Header1 is IN THE viewport', menuelm);
-            }
-        });
-    }
-    const options = {
-        root: null, //root
-        rootMargin: '0%',
-    }
-    const observer = new IntersectionObserver(onScrollChange, options);
-    const target = document.querySelector('header.header');
-    if (target) observer.observe(target);
-    document.querySelectorAll("ul li.dropup .dropbtn").forEach((button, index, buttons) => {
-        button.addEventListener("click", () => {
-            buttons.forEach((btn) => {
-                if (btn.isEqualNode(button))
-                    return null;
-                const classListBTN = btn.parentNode?.querySelector(".dropbtn").classList;
-                const classListCONTENT = btn.parentNode?.querySelector(".dropup-content").classList;
-                if (!classListCONTENT.contains("unshow")) {
-                    classListCONTENT.toggle("unshow");
-                    classListBTN.toggle("unshow");
-                }
-            })
-            button.parentNode?.querySelector(".dropbtn").classList?.toggle("unshow");
-            button.parentNode?.querySelector(".dropup-content").classList?.toggle("unshow");
-            // button?.parentElement?.childNodes[1].firstChild.classList.toggle("unshow")
-            // button?.parentElement?.childNodes[0].classList.toggle("unshow")
-        })
-    })
-}
-  headerJS();
-  footerJS();
 });

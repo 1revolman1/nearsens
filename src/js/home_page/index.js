@@ -51,26 +51,29 @@ export const useHomePage = function () {
     // onYouTubeIframeAPIReady();
     
     const video = document.querySelector("div#player-container video");
-    video.pause();
-    function onScrollChange(changes, observer) {
-        changes.forEach(change => {
-            if (change.intersectionRatio===0) {
-                video.pause();
-            }
-            else{
-                video.play();
-            }
-        });
+
+    if(video!==null && typeof video!=="undefined"){
+        video.pause();
+        function onScrollChange(changes, observer) {
+            changes.forEach(change => {
+                if (change.intersectionRatio===0) {
+                    video.pause();
+                }
+                else{
+                    video.play();
+                }
+            });
+        }
+        const options = {
+            root: null, //root
+            rootMargin: '0%',
+            threshold: 0,
+        };
+        const observer = new IntersectionObserver(onScrollChange, options);
+        const target = document.querySelector('.index__youtubeframe');
+        if(target) observer.observe(target);
     }
-    const options = {
-        root: null, //root
-        rootMargin: '0%',
-        threshold: 0,
-    };
-    const observer = new IntersectionObserver(onScrollChange, options);
     
-    const target = document.querySelector('.index__youtubeframe');
-    if(target) observer.observe(target);
 
     // const video = document.querySelector(".video-container video");
     // video.play();

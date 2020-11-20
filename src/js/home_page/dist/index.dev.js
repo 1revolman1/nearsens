@@ -55,27 +55,29 @@ var useHomePage = function useHomePage() {
   // }
   // onYouTubeIframeAPIReady();
   var video = document.querySelector("div#player-container video");
-  video.pause();
 
-  function onScrollChange(changes, observer) {
-    changes.forEach(function (change) {
-      if (change.intersectionRatio === 0) {
-        video.pause();
-      } else {
-        video.play();
-      }
-    });
-  }
+  if (video !== null && typeof video !== "undefined") {
+    var onScrollChange = function onScrollChange(changes, observer) {
+      changes.forEach(function (change) {
+        if (change.intersectionRatio === 0) {
+          video.pause();
+        } else {
+          video.play();
+        }
+      });
+    };
 
-  var options = {
-    root: null,
-    //root
-    rootMargin: '0%',
-    threshold: 0
-  };
-  var observer = new IntersectionObserver(onScrollChange, options);
-  var target = document.querySelector('.index__youtubeframe');
-  if (target) observer.observe(target); // const video = document.querySelector(".video-container video");
+    video.pause();
+    var options = {
+      root: null,
+      //root
+      rootMargin: '0%',
+      threshold: 0
+    };
+    var observer = new IntersectionObserver(onScrollChange, options);
+    var target = document.querySelector('.index__youtubeframe');
+    if (target) observer.observe(target);
+  } // const video = document.querySelector(".video-container video");
   // video.play();
   // const observer = new IntersectionObserver((entries) => {
   // entries.forEach((entry) => {
@@ -100,6 +102,7 @@ var useHomePage = function useHomePage() {
   //       }
   //     });
   //   });
+
 };
 
 exports.useHomePage = useHomePage;
