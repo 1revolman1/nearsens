@@ -59,7 +59,9 @@ nav.nav
       label(class="checker-label" for="btnControlInNav"): img(src="img/magnifying-glass.svg", alt="btn" id="btnLeft")
     .nav-menu
       ul
-        li: a(href="/" class="active-link") Home
+        li: a(href="/" class="active-link in-viewport")
+          img(class="logo-img" src="img/Nearsens - Logotype - Seul.svg", alt="logo")
+          span Home
         each val, index in [ 'Solution', 'Products', 'Use cases']
           li: a(href="/"+val.toLowerCase())=val
         li.dropup

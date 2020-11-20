@@ -756,6 +756,33 @@ nav.nav .second-menu .nav-menu ul li {
   margin: 0 2.5%;
   list-style-type: none;
 }
+nav.nav .second-menu .nav-menu ul li .in-viewport .logo-img {
+  display: none;
+}
+nav.nav .second-menu .nav-menu ul li .in-viewport .logo-img ~ span {
+  display: inherit;
+}
+nav.nav .second-menu .nav-menu ul li .logo-img {
+  min-width: 87px;
+}
+@media screen and (max-width: 900px) {
+  nav.nav .second-menu .nav-menu ul li .logo-img {
+    min-width: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav.nav .second-menu .nav-menu ul li .logo-img {
+    display: none;
+  }
+}
+nav.nav .second-menu .nav-menu ul li .logo-img ~ span {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  nav.nav .second-menu .nav-menu ul li .logo-img ~ span {
+    display: inherit;
+  }
+}
 @media screen and (max-width: 900px) {
   nav.nav .second-menu .nav-menu ul li {
     margin: 0 1%;

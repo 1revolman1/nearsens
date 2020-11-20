@@ -21,6 +21,9 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   justify-content: center;
   align-items: center;
 }
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__firstinit.unshow {
+  display: none;
+}
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__firstinit h3 {
   font: normal normal normal 32px/40px Muli;
   letter-spacing: 0px;
@@ -47,6 +50,8 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   background: #2EC9AD 0% 0% no-repeat padding-box;
   border-radius: 40px;
   opacity: 1;
+  border: none;
+  outline: none;
 }
 @media screen and (max-width: 768px) {
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__firstinit .contact__findanswer__wrap__btn {
@@ -58,10 +63,14 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   }
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit {
-  display: flex;
+  transition: all ease 0.3s;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit.show {
+  display: flex;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit h3 {
   font: normal normal normal 32px/40px Muli;
@@ -72,6 +81,7 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
 }
 @media screen and (max-width: 768px) {
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit h3 {
+    align-self: flex-start;
     font: normal normal normal 22px/28px Muli;
     letter-spacing: 0px;
     color: #28373B;
@@ -95,11 +105,27 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   color: #333333;
   opacity: 1;
 }
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .textinput {
+    padding: 11px 20px;
+    margin: 10px 0;
+    font: normal normal 300 18px/23px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+}
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first {
   display: flex;
   flex-flow: row wrap;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__first {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__first .textinput {
+  margin-left: 0;
   flex: 1;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second {
@@ -109,6 +135,31 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second .textinput {
   flex: 1;
+  margin-right: 0;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second .textinput:last-child {
+  margin-right: 0;
+  margin-left: 40px;
+}
+@media screen and (max-width: 950px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second .textinput:last-child {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second .textinput:last-child {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second {
+    flex-flow: column wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first {
+    flex-flow: column wrap;
+  }
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second {
   display: flex;
@@ -119,13 +170,16 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   display: flex;
   flex-direction: column;
 }
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__inputs .textinput {
+  margin-left: 0;
+}
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea {
   flex: 3;
   display: flex;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea {
   resize: none;
-  margin: 20px 25px;
+  margin: 20px 0 20px 25px;
   width: 100%;
   padding: 14px 30px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -137,22 +191,44 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   color: #333333;
   opacity: 1;
 }
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea {
+    padding: 11px 20px;
+    margin: 10px 0;
+    font: normal normal 300 18px/23px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second {
+    flex-flow: column wrap;
+  }
+}
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third {
   display: flex;
   flex-flow: row wrap;
   margin: 20px 0;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__robot {
+  display: flex;
+  align-items: flex-start;
   flex: 1;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__robot .textinput {
+  flex: 1;
+  margin-left: 0;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox {
   display: flex;
   flex-direction: row;
   flex: 3;
-  padding: 0 25px;
+  padding: 0 0 0 25px;
   align-items: flex-start;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .submit {
+  border: none;
   margin-left: 100px;
   padding: 14px 22px;
   background: #2EC9AD 0% 0% no-repeat padding-box;
@@ -162,6 +238,12 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 1;
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .submit {
+    margin: 30px auto 0;
+  }
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container {
   font: normal normal 300 18px/23px Muli;
@@ -177,6 +259,7 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
 }
 @media screen and (max-width: 768px) {
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container {
+    margin: 10px 0;
     font: normal normal 300 14px/18px Muli;
     letter-spacing: 0px;
     color: #28373B;
@@ -223,4 +306,16 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   content: "";
   position: absolute;
   display: none;
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox {
+    padding: 0;
+    flex-flow: column wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third {
+    flex-flow: column wrap;
+    margin: 0;
+  }
 }

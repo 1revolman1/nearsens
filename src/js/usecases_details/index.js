@@ -1,7 +1,9 @@
 function cartAnim() {
   const isMobile=window.innerWidth<=768;
   const cart=isMobile? $('.second-block-in-menu .cart-block'): $('.shop-cart');
-  const imgtodrag = $(this).parents('.usecase_details__blockwithbuyabbility-wrap').find(".usecase_details__blockwithbuyabbility-wrap__head img").eq(0);
+  const imgtodrag=$(this).parents('.usecase_details__blockwithbuyabbility-wrap__manipulator').find("img").eq(0);
+  $(this).attr("disabled","disabled");
+//   const imgtodrag = $(this).parents('.usecase_details__blockwithbuyabbility-wrap').find(".usecase_details__blockwithbuyabbility-wrap__head img").eq(0);
   const infoSuccessHeader=cart.find(".droupup-block-info");
   const parent=$(this).parents(".usecase_details__blockwithbuyabbility-wrap__manipulator__block");
   const currentValue=parent.find("p").text().replace(/[^\d;]/g, '');
@@ -37,6 +39,7 @@ function cartAnim() {
 
       setTimeout(()=>{
         $(this).parents(".usecase_details__blockwithbuyabbility-wrap__manipulator__block").removeClass("show-success")
+        $(this).removeAttr("disabled")
         infoSuccessHeader.addClass("unshow");
       },2000)
 

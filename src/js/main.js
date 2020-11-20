@@ -101,26 +101,47 @@ $(document).ready(() => {
       })
     }
   }
+  
   function headerJS() {
-    document.querySelectorAll("ul li.dropup .dropbtn").forEach((button,index,buttons) => {
-      button.addEventListener("click", () =>{
-        buttons.forEach((btn)=>{
-          if(btn.isEqualNode(button))
-            return null;
-          const classListBTN=btn.parentNode?.querySelector(".dropbtn").classList;
-          const classListCONTENT=btn.parentNode?.querySelector(".dropup-content").classList;
-          if(!classListCONTENT.contains("unshow")){
-            classListCONTENT.toggle("unshow");
-            classListBTN.toggle("unshow");
-          }
+    const menuelm = document.querySelector(".nav-menu ul li:first-of-type .active-link");
+
+    function onScrollChange(changes, observer) {
+        changes.forEach(change => {
+            if (change.intersectionRatio === 0) {
+                menuelm.classList.remove("in-viewport");
+                console.log('Header1 is outside viewport', menuelm);
+            } else {
+                menuelm.classList.add("in-viewport");
+                console.log('Header1 is IN THE viewport', menuelm);
+            }
+        });
+    }
+    const options = {
+        root: null, //root
+        rootMargin: '0%',
+    }
+    const observer = new IntersectionObserver(onScrollChange, options);
+    const target = document.querySelector('header.header');
+    if (target) observer.observe(target);
+    document.querySelectorAll("ul li.dropup .dropbtn").forEach((button, index, buttons) => {
+        button.addEventListener("click", () => {
+            buttons.forEach((btn) => {
+                if (btn.isEqualNode(button))
+                    return null;
+                const classListBTN = btn.parentNode?.querySelector(".dropbtn").classList;
+                const classListCONTENT = btn.parentNode?.querySelector(".dropup-content").classList;
+                if (!classListCONTENT.contains("unshow")) {
+                    classListCONTENT.toggle("unshow");
+                    classListBTN.toggle("unshow");
+                }
+            })
+            button.parentNode?.querySelector(".dropbtn").classList?.toggle("unshow");
+            button.parentNode?.querySelector(".dropup-content").classList?.toggle("unshow");
+            // button?.parentElement?.childNodes[1].firstChild.classList.toggle("unshow")
+            // button?.parentElement?.childNodes[0].classList.toggle("unshow")
         })
-        button.parentNode?.querySelector(".dropbtn").classList?.toggle("unshow");
-        button.parentNode?.querySelector(".dropup-content").classList?.toggle("unshow");
-        // button?.parentElement?.childNodes[1].firstChild.classList.toggle("unshow")
-        // button?.parentElement?.childNodes[0].classList.toggle("unshow")
-      })
     })
-  }
+}
   headerJS();
   footerJS();
 });

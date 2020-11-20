@@ -9,7 +9,6 @@ var useContactPage = function useContactPage() {
   console.log("CONTACT PAGE");
   var acc = document.querySelectorAll(".accordion");
   acc.forEach(function (elm) {
-    console.log(elm);
     elm.addEventListener("click", function () {
       this.classList.toggle("active");
       var panel = this.nextElementSibling;
@@ -20,6 +19,13 @@ var useContactPage = function useContactPage() {
         panel.style.maxHeight = panel.scrollHeight + "px";
       }
     });
+  });
+  var hidden = document.querySelector(".contact__findanswer__wrap__secondinit");
+  var btnContainer = document.querySelector(".contact__findanswer__wrap__firstinit");
+  document.querySelector(".contact__findanswer__wrap__btn").addEventListener("click", function (elm) {
+    // console.log(elm)
+    btnContainer.classList.add("unshow");
+    hidden.classList.add("show");
   });
 };
 

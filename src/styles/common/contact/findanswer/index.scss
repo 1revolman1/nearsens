@@ -20,6 +20,9 @@ section.contact__findanswer{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            &.unshow{
+                display: none;
+            }
             h3{
                 font: normal normal normal 32px/40px Muli;
                 letter-spacing: 0px;
@@ -44,6 +47,8 @@ section.contact__findanswer{
                 background: #2EC9AD 0% 0% no-repeat padding-box;
                 border-radius: 40px;
                 opacity: 1;
+                border: none;
+                outline: none;
                 @include media-tablet {
                     padding: 10px 30px;
                     font: normal normal bold 20px/23px Muli;
@@ -54,10 +59,18 @@ section.contact__findanswer{
             }
         }
         .contact__findanswer__wrap__secondinit{
-            display: flex;
+            // opacity: 0;
+            // visibility: hidden;
+            transition: all ease 0.3s;
+            display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            &.show{
+                display: flex;
+                // opacity: 1;
+                // visibility: visible;
+            }
             h3{
                 font: normal normal normal 32px/40px Muli;
                 letter-spacing: 0px;
@@ -65,6 +78,7 @@ section.contact__findanswer{
                 opacity: 1;  
                 margin-bottom: 10px;        
                 @include media-tablet {
+                    align-self: flex-start;
                     font: normal normal normal 22px/28px Muli;
                     letter-spacing: 0px;
                     color: #28373B;
@@ -85,7 +99,15 @@ section.contact__findanswer{
                     font: normal normal 300 18px/23px Muli;
                     letter-spacing: 0px;
                     color: #333333;
-                    opacity: 1;                   
+                    opacity: 1;   
+                    @include media-tablet {
+                        padding: 11px 20px;
+                        margin: 10px 0;
+                        font: normal normal 300 18px/23px Muli;
+                        letter-spacing: 0px;
+                        color: #333333;
+                        opacity: 1;
+                    }                 
                 }
                 .contact__findanswer__wrap__secondinit__container__first{
                     display: flex;
@@ -94,7 +116,13 @@ section.contact__findanswer{
 
                     }
                     .contact__findanswer__wrap__secondinit__container__first__first{
+                        display: flex;
+                        align-items: flex-start;
                         flex:1;
+                        .textinput{
+                            margin-left: 0;
+                            flex: 1;
+                        }
 
                     }
                     .contact__findanswer__wrap__secondinit__container__first__second{
@@ -103,8 +131,25 @@ section.contact__findanswer{
                         flex-flow: row wrap;
                         .textinput{
                             flex: 1;
+                            margin-right: 0;
+                            &:last-child{
+                                margin-right: 0;
+                                margin-left:40px;
+                                @media screen and (max-width:950px) {
+                                    margin-left:20px; 
+                                }
+                                @include media-tablet {
+                                    margin-left:0px;
+                                }
+                            }
+                        }
+                        @include media-tablet {
+                            flex-flow: column wrap;
                         }
                     }
+                    @include media-tablet {
+                        flex-flow: column wrap;
+                    }   
                 }
                 .contact__findanswer__wrap__secondinit__container__second{
                     display: flex;
@@ -113,13 +158,16 @@ section.contact__findanswer{
                         flex:1;
                         display: flex;
                         flex-direction: column;
+                        .textinput{
+                            margin-left: 0;
+                        }
                     }
                     .contact__findanswer__wrap__secondinit__container__second__textarea{
                         flex:3;
                         display: flex;
                         textarea{
                             resize: none;
-                            margin: 20px 25px;
+                            margin: 20px 0 20px 25px;
                             width: 100%;
                             padding: 14px 30px;
                             background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -130,24 +178,41 @@ section.contact__findanswer{
                             letter-spacing: 0px;
                             color: #333333;
                             opacity: 1;
+                            @include media-tablet {
+                                padding: 11px 20px;
+                                margin: 10px 0;
+                                font: normal normal 300 18px/23px Muli;
+                                letter-spacing: 0px;
+                                color: #333333;
+                                opacity: 1;
+                            }   
                         }
                     }
+                    @include media-tablet {
+                        flex-flow: column wrap;
+                    } 
                 }
                 .contact__findanswer__wrap__secondinit__container__third{
                     display: flex;
                     flex-flow: row wrap;
                     margin:20px 0;
                     .contact__findanswer__wrap__secondinit__container__third__robot{
+                        display: flex;
+                        align-items: flex-start;
                         flex: 1;
-
+                        .textinput{
+                            flex: 1;
+                            margin-left: 0;
+                        }
                     }
                     .contact__findanswer__wrap__secondinit__container__third__checkbox{
                         display: flex;
                         flex-direction: row;
                         flex:3;
-                        padding: 0 25px;
+                        padding: 0 0 0 25px;
                         align-items: flex-start;
                         .submit{
+                            border:none;
                             margin-left: 100px;
                             padding: 14px 22px;
                             background: #2EC9AD 0% 0% no-repeat padding-box;
@@ -157,6 +222,10 @@ section.contact__findanswer{
                             letter-spacing: 0px;
                             color: #FFFFFF;
                             opacity: 1;
+                            outline: none;
+                            @include media-tablet {
+                                margin: 30px auto 0;
+                            }
                         }
                         .container {
                             font: normal normal 300 18px/23px Muli;
@@ -170,6 +239,7 @@ section.contact__findanswer{
                             cursor: pointer;
                             user-select: none;
                             @include media-tablet {
+                                margin: 10px 0;
                                 font: normal normal 300 14px/18px Muli;
                                 letter-spacing: 0px;
                                 color: #28373B;
@@ -229,8 +299,15 @@ section.contact__findanswer{
                                 display: none;
                             }
                         } 
+                        @include media-tablet {
+                            padding: 0;
+                            flex-flow: column wrap;
+                        } 
                     }
-                    
+                    @include media-tablet {
+                        flex-flow: column wrap;
+                        margin: 0;
+                    } 
                 }
             }
             // .contact__findanswer__wrap__secondinit__container{

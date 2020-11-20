@@ -164,7 +164,7 @@ section.usecase_details__blockwithbuyabbility{
                                 justify-content: flex-end;
                             }
                             .button{
-                                padding: 7.5px;
+                                padding: 6px 8px;
                                 border: 1px solid #FFFFFF;
                                 background: transparent;
                                 border-radius: 10px;
@@ -198,8 +198,22 @@ section.usecase_details__blockwithbuyabbility{
             margin:35px 0 0;
             display: flex;
             justify-content: flex-end;
+            align-items: center;
             @include media-tablet {
                 margin:23px 0 0;
+            }
+            img{
+                // right: 0;
+                // position: absolute;
+                width: 86px;
+                object-fit: cover;
+                @include media-tablet {
+                    width: 70px;
+                    margin-right: auto;
+                }
+                // @include media-tablet {
+                //     display: none;
+                // }
             }
             .usecase_details__blockwithbuyabbility-wrap__manipulator__block{
                 display: flex;
