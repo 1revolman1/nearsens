@@ -64,11 +64,16 @@ section.cart__disqount ul.cart__disqount__main-list .price {
   opacity: 1;
 }
 section.cart__disqount ul.cart__disqount__main-list .price sup {
-  font: normal normal 300 28px/40px Muli;
+  font: normal normal 300 20px/0px Muli;
+}
+@media screen and (max-width: 768px) {
+  section.cart__disqount ul.cart__disqount__main-list .price sup {
+    font: normal normal normal 17px/0px Muli;
+  }
 }
 @media screen and (max-width: 768px) {
   section.cart__disqount ul.cart__disqount__main-list .price {
-    font: normal normal normal 20px/28px Muli;
+    font: normal normal normal 26px/33px Muli;
     letter-spacing: 0px;
     color: #28373B;
     opacity: 1;

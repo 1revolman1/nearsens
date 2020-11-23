@@ -7,6 +7,7 @@ import {useCasesDetails} from "./usecases_details";
 import {useHomePage} from "./home_page";
 import {useSignUpPage} from "./signup_page";
 import {useContactPage} from "./contact_page";
+import {useCartPage} from "./cart_page";
 
 
 
@@ -98,7 +99,7 @@ $(document).ready(() => {
     case typePage==="signup_page":
       useSignUpPage();
     case typePage==="cart_page":
-      console.log("CART PAGE")
+      useCartPage();
       break;
     default:
       console.log(`ELSE PAGE`);

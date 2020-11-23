@@ -13,7 +13,7 @@ section.cart__productcontainer{
         grid-template-rows: auto;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
-        border-bottom: 1px solid #28373B;
+        border-bottom: 1px solid rgba(40,55,59,0.2);
         padding-bottom: 21px;
         @include media-tablet {
             display: none;
@@ -52,7 +52,7 @@ section.cart__productcontainer{
             grid-column-gap: 5px;
             grid-row-gap: 5px;
             padding: 21px 0;
-            border-bottom: 1px solid #28373b;
+            border-bottom: 1px solid rgba(40,55,59,0.2);
             @include media-tablet {
                 grid-template-columns: repeat(1, 1fr)  repeat(2, max-content);
                 grid-column-gap: 5px;
@@ -123,9 +123,11 @@ section.cart__productcontainer{
                 align-items: center;       
                 padding-right: 80px;         
                 grid-area: 1 / 3 / 2 / 4;
+                min-width: 298px;
                 @include media-tablet {
                     grid-area: 2 / 1 / 3 / 2;
-                    padding-right: 0;   
+                    padding-right: 0;  
+                    min-width: inherit; 
                 }
                 .price{
                     margin:0 19.5px;
@@ -183,7 +185,7 @@ section.cart__productcontainer{
                     align-items: center;
                     justify-content: center;
                     padding: 8.5px 9.5px;
-
+                    cursor: pointer;
                     background: #2EC9AD 0% 0% no-repeat padding-box;
                     border-radius: 10px;
                     opacity: 1;
@@ -211,6 +213,9 @@ section.cart__productcontainer{
                 justify-content: center;
                 align-items: center;               
                 grid-area: 1 / 5 / 2 / 6;
+                i{
+                    cursor: pointer;
+                }
                 @include media-tablet {
                     grid-area: 2 / 3 / 3 / 4;
                     padding-left: 25px;
