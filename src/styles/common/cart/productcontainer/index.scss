@@ -189,11 +189,15 @@ section.cart__productcontainer{
                     background: #2EC9AD 0% 0% no-repeat padding-box;
                     border-radius: 10px;
                     opacity: 1;
+                    outline: none;
+                    border: none;
                     // padding: 6.5px 8.5px;
                     font-size: 14px;
                     color:white;
                     &:disabled{
-                        background: #AAAAAA;
+                        opacity: .4;
+                        cursor: not-allowed;
+                        // background: #AAAAAA;
                     }                       
                 }
                 .cart__productcontainer__container__element__quantity__ammount{

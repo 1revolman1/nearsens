@@ -5,13 +5,12 @@ section.cart__headersticky {
   visibility: hidden;
   opacity: 0;
   margin: 0;
-  padding: 15px;
+  padding: 15px 0;
   z-index: 1;
   top: 114px;
 }
 @media screen and (max-width: 768px) {
   section.cart__headersticky {
-    padding: 15px 0;
     top: 54px;
   }
 }
@@ -45,6 +44,11 @@ section.cart__headersticky.out-viewport {
 @media screen and (max-width: 768px) {
   section.cart__headersticky .cart__header__wrap .cart__header__wrap__first .cart__header__wrap__first__contmanip {
     display: none;
+  }
+}
+@media screen and (max-width: 840px) {
+  section.cart__headersticky .cart__header__wrap .cart__header__wrap__first .cart__header__wrap__first__contmanip .cart__header__wrap__first__contmanip__manip {
+    margin-right: 12px;
   }
 }
 section.cart__headersticky .cart__header__wrap .cart__header__wrap__second {

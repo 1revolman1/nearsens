@@ -76,13 +76,17 @@ section.cart__havegateway{
         display: flex;
         align-items: center;
         flex-direction: row;
-        margin: 5px 0;
+        // margin: 5px 0;
         &.unshow{
             display: none;
+        }
+        &.flex-layout{
+            display: flex !important;
         }
         @include media-tablet {
             flex-direction: column;
             flex: 1;
+            margin: 5px 0;
         }
         .cart__havegateway__information__btn{
             padding: 16px 30px;
@@ -120,13 +124,19 @@ section.cart__havegateway{
         align-items: center;
         flex-direction: row;
         justify-content: flex-end;
-        margin: 5px 0;
+        // margin: 5px 0;
+        min-height: 57px;
         &.unshow{
             display: none;
         }
+        &.flex-layout{
+            display: flex !important;
+        }
         @include media-tablet {
             flex-direction: column;
+            justify-content: center;
             flex: 1;
+            margin: 5px 0;
         }
         .got_one_text{
             margin: 0 10px;

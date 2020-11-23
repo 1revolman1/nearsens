@@ -1,5 +1,6 @@
 section.loginpage__sticky {
   position: sticky;
+  width: 100%;
   top: 113px;
   padding: 30px 0;
   background: #005B9D 0% 0% no-repeat padding-box;

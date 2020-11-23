@@ -7,11 +7,10 @@ section.cart__headersticky{
     visibility: hidden;
     opacity: 0;
     margin: 0;
-    padding: 15px;
+    padding: 15px 0;
     z-index: 1;
     top: 114px;
     @include media-tablet {
-        padding: 15px 0;
         top: 54px;
     }
     &.out-viewport{
@@ -42,6 +41,11 @@ section.cart__headersticky{
             .cart__header__wrap__first__contmanip{
                 @include media-tablet {
                     display: none;
+                }
+                .cart__header__wrap__first__contmanip__manip{
+                    @media screen and (max-width:840px){
+                        margin-right: 12px;
+                    }
                 }
             }
         }

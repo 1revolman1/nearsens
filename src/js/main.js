@@ -8,6 +8,7 @@ import {useHomePage} from "./home_page";
 import {useSignUpPage} from "./signup_page";
 import {useContactPage} from "./contact_page";
 import {useCartPage} from "./cart_page";
+import { doc } from "prettier";
 
 
 
@@ -32,13 +33,25 @@ $(document).ready(() => {
   
   function headerJS() {
     const menuelm = document.querySelector(".nav-menu ul li:first-of-type .active-link");
-  
+    const target = document.querySelector('header.header');
     function onScrollChange(changes, observer) {
         changes.forEach(change => {
             if (change.intersectionRatio === 0) {
-                menuelm.classList.remove("in-viewport");
+              const event = new CustomEvent("header", {
+                detail: {
+                  inViewPort: false
+                }
+              });
+              target.dispatchEvent(event);
+              menuelm.classList.remove("in-viewport");
             } else {
-                menuelm.classList.add("in-viewport");
+              const event = new CustomEvent("header", {
+                detail: {
+                  inViewPort: true
+                }
+              });
+              target.dispatchEvent(event);
+              menuelm.classList.add("in-viewport");
             }
         });
     }
@@ -47,7 +60,6 @@ $(document).ready(() => {
         rootMargin: '0%',
     }
     const observer = new IntersectionObserver(onScrollChange, options);
-    const target = document.querySelector('header.header');
     if (target) observer.observe(target);
     document.querySelectorAll("ul li.dropup .dropbtn").forEach((button, index, buttons) => {
         button.addEventListener("click", () => {

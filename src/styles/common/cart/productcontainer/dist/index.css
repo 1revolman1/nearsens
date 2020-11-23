@@ -206,11 +206,14 @@ section.cart__productcontainer .cart__productcontainer__container .cart__product
   background: #2EC9AD 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
+  outline: none;
+  border: none;
   font-size: 14px;
   color: white;
 }
 section.cart__productcontainer .cart__productcontainer__container .cart__productcontainer__container__element .cart__productcontainer__container__element__quantity .cart__productcontainer__container__element__quantity__btn:disabled {
-  background: #AAAAAA;
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 section.cart__productcontainer .cart__productcontainer__container .cart__productcontainer__container__element .cart__productcontainer__container__element__quantity .cart__productcontainer__container__element__quantity__ammount {
   font: normal normal normal 22px/28px Muli;
