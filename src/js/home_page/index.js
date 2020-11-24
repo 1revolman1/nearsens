@@ -1,5 +1,56 @@
+Parallax=(parallaxContainer)=>{
+    let oneINIT=false;
+    const header = document.querySelector('header.header');
+    const textBlock=parallaxContainer.querySelector(".text-container");
+    const gadgetBlock=parallaxContainer.querySelector(".gadget");
+    const shadowOne=parallaxContainer.querySelector(".shadow-1");
+    const shadowThree=parallaxContainer.querySelector(".shadow-3");
+    const shadowFour=parallaxContainer.querySelector(".shadow-4");
+    const shadowFive=parallaxContainer.querySelector(".shadow-5");
+    const LastLayer=parallaxContainer.querySelector(".last-mount");
+    const FirstMountLayer=parallaxContainer.querySelector(".first-mount-layer");
+    const MiddleMountLayer=parallaxContainer.querySelector(".middle-mount-layer");
+    header.addEventListener("header",function({detail:{inViewPort}}){
+        // console.log(inViewPort);
+        if(!inViewPort && !oneINIT){
+            oneINIT=true;
+            LastLayer.style.transform="scale(0.89)";
+            MiddleMountLayer.style.transform="scale(0.95)";
+            shadowOne.style.bottom="15%";
+            shadowThree.style.bottom="13%";
+            shadowFour.style.bottom="15%";
+            shadowFive.style.bottom="35%";
+            FirstMountLayer.style.transform="scale(1.21) translate(40px,26px)";
+            setTimeout(()=>{
+                textBlock.style.top="15%";
+                gadgetBlock.style.bottom="20%";
+            },1000)
+        }
+    })
+    // parallaxContainer.addEventListener("click",()=>{
+    //     console.log("CLICK")
+    //     LastLayer.style.transform="scale(0.89)";
+    //     MiddleMountLayer.style.transform="scale(0.95)";
+    //     shadowOne.style.bottom="15%";
+    //     shadowThree.style.bottom="13%";
+    //     shadowFour.style.bottom="15%";
+    //     shadowFive.style.bottom="35%";
+    //     FirstMountLayer.style.transform="scale(1.21) translate(40px,26px)";
+    //     setTimeout(()=>{
+    //         textBlock.style.top="15%";
+    //         gadgetBlock.style.bottom="20%";
+    //     },1000)
+    // });
+}
+
+
 export const useHomePage = function () {
+    const parallaxContainer=document.querySelector(".index__parallax");
+    // parallaxContainer.addEventListener("click",function(){
+    //     console.log("CLICK")
+    // })
     
+    Parallax(parallaxContainer);
     // function onYouTubeIframeAPIReady() {
     //     window.YT.ready(function() {
     //         window.player = new YT.Player("player-container", {

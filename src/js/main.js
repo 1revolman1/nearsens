@@ -43,7 +43,7 @@ $(document).ready(() => {
                 }
               });
               target.dispatchEvent(event);
-              menuelm.classList.remove("in-viewport");
+              menuelm && menuelm.classList.remove("in-viewport");
             } else {
               const event = new CustomEvent("header", {
                 detail: {
@@ -51,7 +51,7 @@ $(document).ready(() => {
                 }
               });
               target.dispatchEvent(event);
-              menuelm.classList.add("in-viewport");
+              menuelm && menuelm.classList.add("in-viewport");
             }
         });
     }

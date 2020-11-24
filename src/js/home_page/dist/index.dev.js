@@ -5,8 +5,58 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.useHomePage = void 0;
 
+Parallax = function Parallax(parallaxContainer) {
+  var oneINIT = false;
+  var header = document.querySelector('header.header');
+  var textBlock = parallaxContainer.querySelector(".text-container");
+  var gadgetBlock = parallaxContainer.querySelector(".gadget");
+  var shadowOne = parallaxContainer.querySelector(".shadow-1");
+  var shadowThree = parallaxContainer.querySelector(".shadow-3");
+  var shadowFour = parallaxContainer.querySelector(".shadow-4");
+  var shadowFive = parallaxContainer.querySelector(".shadow-5");
+  var LastLayer = parallaxContainer.querySelector(".last-mount");
+  var FirstMountLayer = parallaxContainer.querySelector(".first-mount-layer");
+  var MiddleMountLayer = parallaxContainer.querySelector(".middle-mount-layer");
+  header.addEventListener("header", function (_ref) {
+    var inViewPort = _ref.detail.inViewPort;
+
+    // console.log(inViewPort);
+    if (!inViewPort && !oneINIT) {
+      oneINIT = true;
+      LastLayer.style.transform = "scale(0.89)";
+      MiddleMountLayer.style.transform = "scale(0.95)";
+      shadowOne.style.bottom = "15%";
+      shadowThree.style.bottom = "13%";
+      shadowFour.style.bottom = "15%";
+      shadowFive.style.bottom = "35%";
+      FirstMountLayer.style.transform = "scale(1.21) translate(40px,26px)";
+      setTimeout(function () {
+        textBlock.style.top = "15%";
+        gadgetBlock.style.bottom = "20%";
+      }, 1000);
+    }
+  }); // parallaxContainer.addEventListener("click",()=>{
+  //     console.log("CLICK")
+  //     LastLayer.style.transform="scale(0.89)";
+  //     MiddleMountLayer.style.transform="scale(0.95)";
+  //     shadowOne.style.bottom="15%";
+  //     shadowThree.style.bottom="13%";
+  //     shadowFour.style.bottom="15%";
+  //     shadowFive.style.bottom="35%";
+  //     FirstMountLayer.style.transform="scale(1.21) translate(40px,26px)";
+  //     setTimeout(()=>{
+  //         textBlock.style.top="15%";
+  //         gadgetBlock.style.bottom="20%";
+  //     },1000)
+  // });
+};
+
 var useHomePage = function useHomePage() {
-  // function onYouTubeIframeAPIReady() {
+  var parallaxContainer = document.querySelector(".index__parallax"); // parallaxContainer.addEventListener("click",function(){
+  //     console.log("CLICK")
+  // })
+
+  Parallax(parallaxContainer); // function onYouTubeIframeAPIReady() {
   //     window.YT.ready(function() {
   //         window.player = new YT.Player("player-container", {
   //             videoId, // YouTube Video ID
@@ -54,6 +104,7 @@ var useHomePage = function useHomePage() {
   //     if(target) observer.observe(target);
   // }
   // onYouTubeIframeAPIReady();
+
   var video = document.querySelector("div#player-container video");
 
   if (video !== null && typeof video !== "undefined") {
