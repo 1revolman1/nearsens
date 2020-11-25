@@ -1,87 +1,87 @@
 @import '../../../mixins/media';
 
-section.contact__container{
-    margin-top: 60px;
+section.contact__container {
+  margin-top: 60px;
+  @include media-tablet {
+    width: 90%;
+    margin: 40px auto 0;
+  }
+  .contact__container__texthead {
+    margin-bottom: 40px;
     @include media-tablet {
-        width: 90%;
-        margin: 90px auto 0;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font: normal normal normal 32px/40px Muli;
+      letter-spacing: 0px;
+      color: #28373b;
+      opacity: 1;
+      margin-bottom: 10px;
+      @include media-tablet {
+        font: normal normal normal 22px/28px Muli;
+        letter-spacing: 0px;
+        color: #28373b;
+        opacity: 1;
       }
-    .contact__container__texthead{
-        margin-bottom: 40px;
-        @include media-tablet {
-            margin-bottom: 10px;
-        }
-        h3{
-            font: normal normal normal 32px/40px Muli;
-            letter-spacing: 0px;
-            color: #28373B;
-            opacity: 1;
-            margin-bottom: 10px;
-            @include media-tablet {
-                font: normal normal normal 22px/28px Muli;
-                letter-spacing: 0px;
-                color: #28373B;
-                opacity: 1;
-            }
-        }
-        p{
-            font: normal normal 300 18px/23px Muli;
-            letter-spacing: 0px;
-            color: #28373B;
-            opacity: 1;
-            @include media-tablet {
-                font: normal normal 300 16px/20px Muli;
-                letter-spacing: 0px;
-                color: #28373B;
-                opacity: 1;
-            }
-        }
     }
-    .contact__container__phonecontainer{
-        margin-bottom: 90px;
-        @include media-tablet {
-            margin-bottom: 47px;
-        }
-        .phone-container{
-            display: flex;
-            align-items: center;
-            margin-right: 15px;
-            font: normal normal 800 24px/30px Muli;
-            letter-spacing: 0px;
-            color: #28373B;
-            opacity: 1;
-            @include media-tablet {
-                font: normal normal 800 20px/25px Muli;
-                letter-spacing: 0px;
-                color: #28373B;
-                opacity: 1;
-            }
-            .fas.fa-phone-alt{
-                @include media-tablet {
-                    font-size: 30px;
-                }
-            }
-            .phone-container__text{
-                margin-left: 20px;
-                @include media-tablet {
-                   display: flex;
-                   flex-direction: column;
-                }
-                .text{
-                    margin-left: 15px;
-                    font: italic normal 300 16px/20px Muli;
-                    letter-spacing: 0px;
-                    color: #28373B;
-                    opacity: 1;
-                    @include media-tablet {
-                        margin-left: 0;
-                        font: italic normal 300 14px/18px Muli;
-                        letter-spacing: 0px;
-                        color: #28373B;
-                        opacity: 1;
-                    }
-                }
-            }        
-        }
+    p {
+      font: normal normal 300 18px/23px Muli;
+      letter-spacing: 0px;
+      color: #28373b;
+      opacity: 1;
+      @include media-tablet {
+        font: normal normal 300 16px/20px Muli;
+        letter-spacing: 0px;
+        color: #28373b;
+        opacity: 1;
+      }
     }
+  }
+  .contact__container__phonecontainer {
+    margin-bottom: 90px;
+    @include media-tablet {
+      margin-bottom: 47px;
+    }
+    .phone-container {
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+      font: normal normal 800 24px/30px Muli;
+      letter-spacing: 0px;
+      color: #28373b;
+      opacity: 1;
+      @include media-tablet {
+        font: normal normal 800 20px/25px Muli;
+        letter-spacing: 0px;
+        color: #28373b;
+        opacity: 1;
+      }
+      .fas.fa-phone-alt {
+        @include media-tablet {
+          font-size: 30px;
+        }
+      }
+      .phone-container__text {
+        margin-left: 20px;
+        @include media-tablet {
+          display: flex;
+          flex-direction: column;
+        }
+        .text {
+          margin-left: 15px;
+          font: italic normal 300 16px/20px Muli;
+          letter-spacing: 0px;
+          color: #28373b;
+          opacity: 1;
+          @include media-tablet {
+            margin-left: 0;
+            font: italic normal 300 14px/18px Muli;
+            letter-spacing: 0px;
+            color: #28373b;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }

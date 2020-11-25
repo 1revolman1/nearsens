@@ -15,7 +15,7 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header h3 {
   font: normal normal normal 32px/40px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -44,16 +44,16 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header .productpage__posibletodowithdevice__header-btn {
   margin-left: 30px;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #2EC9AD;
+  border: 1px solid #2ec9ad;
   border-radius: 40px;
   opacity: 1;
   padding: 5px 12px;
   font: normal normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #2EC9AD;
+  color: #2ec9ad;
   opacity: 1;
   cursor: pointer;
   background: transparent;
@@ -66,7 +66,7 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header .productpage__posibletodowithdevice__header-btn:hover {
   color: white;
-  background: #2EC9AD;
+  background: #2ec9ad;
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content {
   display: flex;
@@ -76,7 +76,7 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element {
   flex: 0 1 30%;
   max-width: 393px;
-  box-shadow: 0px 0px 10px #0000001A;
+  box-shadow: 0px 0px 10px #0000001a;
   border-radius: 10px;
   overflow: auto;
   transition: transform ease 0.5s;
@@ -119,7 +119,7 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element .productpage__posibletodowithdevice__content-element-text h3 {
   font: italic normal normal 16px/20px Muli;
   letter-spacing: 0px;
-  color: #6D7476;
+  color: #6d7476;
   opacity: 1;
   margin-bottom: 5px;
 }
@@ -137,14 +137,14 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
     display: block;
     font: normal normal bold 12px/15px Muli;
     letter-spacing: 0px;
-    color: #6D7476;
+    color: #6d7476;
     opacity: 1;
   }
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element .productpage__posibletodowithdevice__content-element-text p {
   font: normal normal normal 26px/33px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {

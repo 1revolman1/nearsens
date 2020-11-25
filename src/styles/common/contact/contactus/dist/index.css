@@ -4,7 +4,7 @@ section.contact__container {
 @media screen and (max-width: 768px) {
   section.contact__container {
     width: 90%;
-    margin: 90px auto 0;
+    margin: 40px auto 0;
   }
 }
 section.contact__container .contact__container__texthead {
@@ -18,7 +18,7 @@ section.contact__container .contact__container__texthead {
 section.contact__container .contact__container__texthead h3 {
   font: normal normal normal 32px/40px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
   margin-bottom: 10px;
 }
@@ -26,21 +26,21 @@ section.contact__container .contact__container__texthead h3 {
   section.contact__container .contact__container__texthead h3 {
     font: normal normal normal 22px/28px Muli;
     letter-spacing: 0px;
-    color: #28373B;
+    color: #28373b;
     opacity: 1;
   }
 }
 section.contact__container .contact__container__texthead p {
   font: normal normal 300 18px/23px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
   section.contact__container .contact__container__texthead p {
     font: normal normal 300 16px/20px Muli;
     letter-spacing: 0px;
-    color: #28373B;
+    color: #28373b;
     opacity: 1;
   }
 }
@@ -58,14 +58,14 @@ section.contact__container .contact__container__phonecontainer .phone-container 
   margin-right: 15px;
   font: normal normal 800 24px/30px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
   section.contact__container .contact__container__phonecontainer .phone-container {
     font: normal normal 800 20px/25px Muli;
     letter-spacing: 0px;
-    color: #28373B;
+    color: #28373b;
     opacity: 1;
   }
 }
@@ -87,7 +87,7 @@ section.contact__container .contact__container__phonecontainer .phone-container 
   margin-left: 15px;
   font: italic normal 300 16px/20px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -95,7 +95,7 @@ section.contact__container .contact__container__phonecontainer .phone-container 
     margin-left: 0;
     font: italic normal 300 14px/18px Muli;
     letter-spacing: 0px;
-    color: #28373B;
+    color: #28373b;
     opacity: 1;
   }
 }

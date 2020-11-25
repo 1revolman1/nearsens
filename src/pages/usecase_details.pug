@@ -3,9 +3,9 @@ extends common/layout
 block content
     script
         |var typePage = "usecase_details";
-    include includes/usecase_details/pageheader/index
-    include includes/usecase_details/pageheader_afterscroll/index
     main
+        include includes/usecase_details/pageheader/index
+        include includes/usecase_details/pageheader_afterscroll/index
         section.main
             include includes/usecase_details/blockperline/index
             include includes/usecase_details/textblocks/index

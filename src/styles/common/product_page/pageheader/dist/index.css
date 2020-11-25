@@ -2,7 +2,8 @@ section.productpage__pageheader {
   position: relative;
   margin-bottom: 81px;
 }
-section.productpage__pageheader > picture img, section.productpage__pageheader > picture source {
+section.productpage__pageheader > picture img,
+section.productpage__pageheader > picture source {
   position: absolute;
   top: 0;
   left: 0;
@@ -11,13 +12,9 @@ section.productpage__pageheader > picture img, section.productpage__pageheader >
   height: 100%;
 }
 @media screen and (max-width: 768px) {
-  section.productpage__pageheader > picture img, section.productpage__pageheader > picture source {
+  section.productpage__pageheader > picture img,
+section.productpage__pageheader > picture source {
     max-height: 325px;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.productpage__pageheader {
-    margin-top: 58px;
   }
 }
 section.productpage__pageheader .productpage__pageheader-wrapimgoverlay {
@@ -28,7 +25,7 @@ section.productpage__pageheader .productpage__pageheader-wrapimgoverlay {
 @media screen and (max-width: 768px) {
   section.productpage__pageheader .productpage__pageheader-wrapimgoverlay {
     padding: 0;
-    background: transparent linear-gradient(0deg, #F2F2F2 0%, #F0F0F000 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(0deg, #f2f2f2 0%, #f0f0f000 100%) 0% 0% no-repeat padding-box;
   }
 }
 section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap {
@@ -40,7 +37,7 @@ section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .product
 @media screen and (max-width: 768px) {
   section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap {
     background-size: 100% 52% !important;
-    background: transparent linear-gradient(0deg, #F2F2F2 0%, #F0F0F000 62%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(0deg, #f2f2f2 0%, #f0f0f000 62%) 0% 0% no-repeat padding-box;
     margin-top: 0;
     padding-top: 354px;
   }
@@ -234,7 +231,7 @@ section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .product
   align-items: center;
   display: flex;
   margin-left: auto;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 100px;
   justify-content: space-between;
 }
@@ -262,7 +259,7 @@ section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .product
   cursor: pointer;
   padding: 8.5px 10px;
   border: none;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
   color: white;
@@ -275,7 +272,7 @@ section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .product
   margin: 0 22px;
   font: normal normal normal 22px/28px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -291,14 +288,14 @@ section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .product
   outline: none;
   cursor: pointer;
   padding: 13px 28px;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
-  border: 1px solid #2EC9AD;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
   border-radius: 40px;
   opacity: 1;
   text-transform: uppercase;
   font: normal normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -321,14 +318,14 @@ section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .product
   position: absolute;
   top: 0;
   right: 0;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
-  border: 1px solid #2EC9AD;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
   border-radius: 40px;
   padding: 10px 20px;
 }
 section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator .productpage__pageheader-wrap-manipulator-container .productpage__pageheader-wrap-manipulator-successbuying p {
   font: italic normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }

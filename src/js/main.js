@@ -8,7 +8,7 @@ import { useHomePage } from './home_page';
 import { useSignUpPage } from './signup_page';
 import { useContactPage } from './contact_page';
 import { useCartPage } from './cart_page';
-
+import { useHolidayFunc } from './holdayfunctionality';
 $(document).ready(() => {
   function footerJS() {
     if (window.innerWidth <= 768) {
@@ -90,14 +90,12 @@ $(document).ready(() => {
         });
       });
   }
-
   headerJS();
   footerJS();
 
+  if (holiday_event) useHolidayFunc();
+
   switch (true) {
-    case typePage === 'about_page':
-      console.log(`ABOUT PAGE`);
-      break;
     case typePage === 'usecase_list':
       useCasesList();
       break;

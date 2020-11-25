@@ -14,11 +14,11 @@ section.productpage__pageheader_sticky.out-viewport {
   opacity: 1;
 }
 section.productpage__pageheader_sticky.scroll-to-bottom {
-  top: -15px;
+  top: -15px !important;
 }
 @media screen and (max-width: 768px) {
   section.productpage__pageheader_sticky {
-    top: 54px;
+    top: 58px;
     padding: 13px 0 15px;
   }
 }

@@ -9,6 +9,9 @@
   cursor: pointer;
   z-index: 10;
 }
+.menu__btn__header.holiday-header {
+  top: 60px;
+}
 @media screen and (max-width: 768px) {
   .menu__btn__header {
     display: flex;
@@ -49,8 +52,36 @@
   transform: translate(0, 0%);
 }
 
+#menu__toggle__header:checked ~ .nav.holiday-header {
+  transform: translate(0, 44px);
+}
+
 .oppen_nav {
   display: none;
+}
+
+section.header__holiday {
+  width: 100%;
+  min-height: 44px;
+  background: red;
+  z-index: 9;
+}
+@media screen and (max-width: 768px) {
+  section.header__holiday {
+    position: fixed;
+    top: 0;
+  }
+}
+section.header__holiday .header__holiday__wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+section.header__holiday .header__holiday__wrap img {
+  width: 100%;
+  height: 100%;
+  max-height: 44px;
+  object-fit: cover;
 }
 
 header.header {
@@ -71,6 +102,9 @@ header.header {
     top: 0;
     left: 0;
   }
+}
+header.header.holiday-header {
+  top: 44px;
 }
 header.header .first-menu {
   border-bottom: 1px solid #33709c;
@@ -286,7 +320,8 @@ header.header .first-menu .second-block-in-menu .change-language-input .dropup .
   margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
-  header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropbtn.unshow > svg, header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropbtn.unshow > i:not(.globe) {
+  header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropbtn.unshow > svg,
+header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropbtn.unshow > i:not(.globe) {
     transform: rotate(180deg);
   }
 }
@@ -304,7 +339,8 @@ header.header .first-menu .second-block-in-menu .change-language-input .dropup .
 header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropbtn.active-link > svg path {
   fill: #2ec9ad;
 }
-header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropbtn > svg, header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropbtn > i:not(.globe) {
+header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropbtn > svg,
+header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropbtn > i:not(.globe) {
   transform-origin: center;
   transform: rotate(90deg);
   margin: 0 7px;
@@ -393,7 +429,7 @@ header.header .first-menu .second-block-in-menu .change-language-input .dropup .
 }
 header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropup-content a i {
   margin-right: 9px;
-  color: #005B9D;
+  color: #005b9d;
 }
 @media screen and (max-width: 768px) {
   header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropup-content a i {
@@ -428,15 +464,15 @@ header.header .first-menu .second-block-in-menu .cart-block .droupup-block-info.
 }
 header.header .first-menu .second-block-in-menu .cart-block .droupup-block-info .show-info {
   min-width: 260px;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 10px #00000033;
   border-radius: 10px;
 }
 header.header .first-menu .second-block-in-menu .cart-block .droupup-block-info .show-info:after {
-  border-bottom-color: #2EC9AD;
+  border-bottom-color: #2ec9ad;
 }
 header.header .first-menu .second-block-in-menu .cart-block .droupup-block-info .show-info h3 {
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
   font: italic normal normal 16px/20px Muli;
   letter-spacing: 0px;
@@ -529,7 +565,7 @@ header.header .first-menu .second-block-in-menu .cart-block .dropdown .shop-cont
 }
 header.header .first-menu .second-block-in-menu .cart-block .dropdown .shop-content-summarise h3 span {
   text-align: left;
-  font: normal normal 300 18px/23px Muli;
+  font: normal normal 600 22px/28px Muli;
   letter-spacing: 0px;
   color: #005b9d;
   opacity: 1;
@@ -671,10 +707,13 @@ nav.nav {
     transition: all ease 0.5s;
     transform: translate(0, -100%);
     position: fixed;
-    top: 57px;
+    top: 58px;
     min-height: calc(100vh - 57px);
     max-height: calc(100vh - 57px);
     overflow: auto;
+  }
+  nav.nav.holiday-header {
+    transform: translate(0, calc(-100% - 44px));
   }
 }
 nav.nav .second-menu {
@@ -715,7 +754,7 @@ nav.nav .second-menu .search-menu input {
   border-radius: 40px;
   font: italic normal normal 14px/18px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.7;
   background: transparent;
   padding: 9px 50px 9px 20px;
@@ -858,7 +897,8 @@ nav.nav .second-menu .nav-menu ul li.dropup .dropbtn {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  nav.nav .second-menu .nav-menu ul li.dropup .dropbtn.unshow > svg, nav.nav .second-menu .nav-menu ul li.dropup .dropbtn.unshow > i:not(.globe) {
+  nav.nav .second-menu .nav-menu ul li.dropup .dropbtn.unshow > svg,
+nav.nav .second-menu .nav-menu ul li.dropup .dropbtn.unshow > i:not(.globe) {
     transform: rotate(180deg);
   }
 }
@@ -876,7 +916,8 @@ nav.nav .second-menu .nav-menu ul li.dropup .dropbtn.active-link {
 nav.nav .second-menu .nav-menu ul li.dropup .dropbtn.active-link > svg path {
   fill: #2ec9ad;
 }
-nav.nav .second-menu .nav-menu ul li.dropup .dropbtn > svg, nav.nav .second-menu .nav-menu ul li.dropup .dropbtn > i:not(.globe) {
+nav.nav .second-menu .nav-menu ul li.dropup .dropbtn > svg,
+nav.nav .second-menu .nav-menu ul li.dropup .dropbtn > i:not(.globe) {
   transform: rotate(90deg);
   margin: 0 7px;
   transition: all ease 0.5s;
@@ -964,7 +1005,7 @@ nav.nav .second-menu .nav-menu ul li.dropup .dropup-content a:hover {
 }
 nav.nav .second-menu .nav-menu ul li.dropup .dropup-content a i {
   margin-right: 9px;
-  color: #005B9D;
+  color: #005b9d;
 }
 @media screen and (max-width: 768px) {
   nav.nav .second-menu .nav-menu ul li.dropup .dropup-content a i {
@@ -1129,15 +1170,15 @@ nav.nav .second-menu .shop-menu .shop-cart.dropup .droupup-block-info:hover {
 }
 nav.nav .second-menu .shop-menu .shop-cart.dropup .droupup-block-info .show-info {
   min-width: 260px;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 10px #00000033;
   border-radius: 10px;
 }
 nav.nav .second-menu .shop-menu .shop-cart.dropup .droupup-block-info .show-info:after {
-  border-bottom-color: #2EC9AD;
+  border-bottom-color: #2ec9ad;
 }
 nav.nav .second-menu .shop-menu .shop-cart.dropup .droupup-block-info .show-info h3 {
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
   font: italic normal normal 16px/20px Muli;
   letter-spacing: 0px;
@@ -1247,14 +1288,14 @@ nav.nav .second-menu .shop-menu .shop-cart.dropup .dropdown .shop-content-summar
 }
 nav.nav .second-menu .shop-menu .shop-cart.dropup .dropdown .shop-content-summarise h3 span {
   text-align: left;
-  font: normal normal 300 18px/23px Muli;
+  font: normal normal 600 22px/28px Muli;
   letter-spacing: 0px;
   color: #005b9d;
   opacity: 1;
   margin: 0 5px;
 }
 nav.nav .second-menu .shop-menu .shop-cart.dropup .dropdown .shop-content-summarise h3 span sup {
-  font: normal normal 300 12px/5px Muli;
+  font: normal normal 600 16px/5px Muli;
 }
 nav.nav .second-menu .shop-menu .shop-cart.dropup .dropdown .shop-content-summarise p {
   text-align: left;
@@ -1323,10 +1364,10 @@ nav.nav .second-menu .shop-menu .shop-cart .counter {
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
   font: normal normal bold 14px/18px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 nav.nav .second-menu .shop-menu .shop-cart .ammount-items {
@@ -1337,6 +1378,6 @@ nav.nav .second-menu .shop-menu .shop-cart .ammount-items {
   text-align: left;
   font: normal normal bold 16px/20px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }

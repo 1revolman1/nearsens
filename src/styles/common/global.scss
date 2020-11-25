@@ -1,8 +1,8 @@
-@import "../../local_modules/normalize.css/normalize";
-@import "../../local_modules/font-awesome/all.min";
-@import "../../local_modules/muli/muli";
-@import "../mixins/media";
-@import "../utils/variables.scss";
+@import '../../local_modules/normalize.css/normalize';
+@import '../../local_modules/font-awesome/all.min';
+@import '../../local_modules/muli/muli';
+@import '../mixins/media';
+@import '../utils/variables.scss';
 
 *,
 *::before,
@@ -26,8 +26,8 @@ body {
 }
 
 img {
-  object-fit:cover;
-  max-width:100%;
+  object-fit: cover;
+  max-width: 100%;
   // max-width: 100%;
 }
 
@@ -35,27 +35,52 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-li{
+li {
   list-style: none;
 }
-button{
+button {
   cursor: pointer;
 }
-.button{
+.button {
   outline: none;
-  &:disabled{
-    color: #A9AFB0;
-    border: 1px solid #A9AFB0;
+  &:disabled {
+    color: #a9afb0;
+    border: 1px solid #a9afb0;
   }
 }
 
+nav.nav.holiday-header ~ script + main {
+  @include media-tablet {
+    margin-top: $marginTopResp;
+  }
+  .cart__headersticky,
+  .loginpage__sticky,
+  .productpage__pageheader_sticky,
+  .productlist__scrollheader,
+  .usecase_details__pageheaderafterscroll,
+  .use_case__scrollheader {
+    @include media-tablet {
+      top: $marginTopResp;
+    }
+  }
+}
+main {
+  @include media-tablet {
+    margin-top: 57px;
+  }
+  &.holiday-state {
+    @include media-tablet {
+      margin-top: $additionalNavMenuToTopRESP;
+    }
+  }
+}
 main.main,
-.main{
+.main {
   max-width: $mediaMAXWIDTH;
   margin: 0 auto;
   width: 100%;
   @include media-tablet {
     // margin: 58px auto 0 ;
     overflow: hidden;
-}
+  }
 }

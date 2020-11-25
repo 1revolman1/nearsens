@@ -1,139 +1,138 @@
 @import '../../../mixins/media';
-@import "../../../utils/variables.scss";
+@import '../../../utils/variables.scss';
 
-section.productpage__posibletodowithdevice{
-    margin-bottom:81px;
-    @include media-tablet {
-        width: 90%;
-        margin: 0 auto 50px;
+section.productpage__posibletodowithdevice {
+  margin-bottom: 81px;
+  @include media-tablet {
+    width: 90%;
+    margin: 0 auto 50px;
+  }
+  .productpage__posibletodowithdevice__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    h3 {
+      font: normal normal normal 32px/40px Muli;
+      letter-spacing: 0px;
+      color: #28373b;
+      opacity: 1;
+      @include media-tablet {
+        font: normal normal normal 20px/25px Muli;
+      }
     }
-    .productpage__posibletodowithdevice__header{
-        display:flex;
-        justify-content:space-between;
-        margin-bottom:30px;
-        h3{
-            font: normal normal normal 32px/40px Muli;
+    &.productpage__posibletodowithdevice__bottom {
+      display: none;
+      justify-content: flex-end;
+      margin-top: 20px;
+      @include media-tablet {
+        display: flex;
+      }
+      .productpage__posibletodowithdevice__header-btn {
+        margin: 0;
+        @include media-tablet {
+          display: flex;
+          font: normal normal bold 16px/23px Muli;
+        }
+      }
+    }
+    .productpage__posibletodowithdevice__header-btn {
+      margin-left: 30px;
+      //   display: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #2ec9ad;
+      border-radius: 40px;
+      opacity: 1;
+      padding: 5px 12px;
+      font: normal normal bold 18px/23px Muli;
+      letter-spacing: 0px;
+      color: #2ec9ad;
+      opacity: 1;
+      cursor: pointer;
+      background: transparent;
+      @include media-tablet {
+        display: none;
+        font: normal normal bold 16px/23px Muli;
+      }
+      &:hover {
+        color: white;
+        background: #2ec9ad;
+      }
+    }
+  }
+  .productpage__posibletodowithdevice__content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .productpage__posibletodowithdevice__content-element {
+      flex: 0 1 30%;
+      max-width: 393px;
+      box-shadow: 0px 0px 10px #0000001a;
+      border-radius: 10px;
+      overflow: auto;
+      transition: transform ease 0.5s;
+      cursor: pointer;
+      &:hover {
+        transform: translate(0, -5px);
+      }
+      @include media-tablet {
+        display: flex;
+        flex: 1 1 100%;
+        margin: 10px 0;
+        padding: 15px;
+        max-width: inherit;
+      }
+      img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+        @include media-tablet {
+          align-self: center;
+          max-width: 100px;
+          border-radius: 10px;
+        }
+      }
+      .productpage__posibletodowithdevice__content-element-text {
+        padding: 30px;
+        @include media-tablet {
+          display: flex;
+          flex-direction: column;
+          // padding: 15px;
+          padding: 0 0 0 15px;
+        }
+        h3 {
+          font: italic normal normal 16px/20px Muli;
+          letter-spacing: 0px;
+          color: #6d7476;
+          opacity: 1;
+          margin-bottom: 5px;
+          @include media-tablet {
+            font: italic normal normal 14px/18px Muli;
+          }
+        }
+        span {
+          display: none;
+          @include media-tablet {
+            margin-top: auto;
+            display: block;
+            font: normal normal bold 12px/15px Muli;
             letter-spacing: 0px;
-            color: #28373B;
+            color: #6d7476;
             opacity: 1;
-            @include media-tablet {
-                font: normal normal normal 20px/25px Muli;
-            }
+          }
         }
-        &.productpage__posibletodowithdevice__bottom{
-            display: none;
-            justify-content: flex-end;
-            margin-top: 20px;
-            @include media-tablet {
-                display: flex;
-            }
-            .productpage__posibletodowithdevice__header-btn{
-                margin: 0;
-                @include media-tablet {
-                    display: flex;
-                    font: normal normal bold 16px/23px Muli;
-                }
-            }
+        p {
+          font: normal normal normal 26px/33px Muli;
+          letter-spacing: 0px;
+          color: #28373b;
+          opacity: 1;
+          @include media-tablet {
+            margin-bottom: 10px;
+            font: normal normal normal 14px/18px Muli;
+          }
         }
-        .productpage__posibletodowithdevice__header-btn{
-            margin-left:30px;
-            display: none;
-            // display:flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #2EC9AD;
-            border-radius: 40px;
-            opacity: 1;
-            padding:5px 12px;
-            font: normal normal bold 18px/23px Muli;
-            letter-spacing: 0px;
-            color: #2EC9AD;
-            opacity: 1;
-            cursor:pointer;
-            background:transparent;
-            @include media-tablet {
-                display: none;
-                font: normal normal bold 16px/23px Muli;
-            }
-            &:hover{
-                color:white;
-                background:#2EC9AD;
-            }
-          
-        }
+      }
     }
-    .productpage__posibletodowithdevice__content{
-        display:flex;
-        flex-flow:row wrap;
-        justify-content:space-between;
-        .productpage__posibletodowithdevice__content-element{
-            flex:0 1 30%;
-            max-width:393px;
-            box-shadow: 0px 0px 10px #0000001A;
-            border-radius: 10px;
-            overflow:auto;
-            transition: transform ease 0.5s;
-            cursor: pointer;
-            &:hover{
-                transform: translate(0,-5px);
-            }
-            @include media-tablet {
-                display: flex;
-                flex: 1 1 100%;
-                margin:10px 0;
-                padding: 15px;
-                max-width: inherit;
-            }
-            img{
-                width:100%;
-                max-height:250px;
-                object-fit:cover;
-                @include media-tablet {
-                    align-self: center;
-                    max-width: 100px;
-                    border-radius: 10px;
-                }
-            }
-            .productpage__posibletodowithdevice__content-element-text{
-                padding:30px;
-                @include media-tablet {
-                    display: flex;
-                    flex-direction: column;
-                    // padding: 15px;
-                    padding: 0 0 0 15px;
-                }
-                h3{
-                    font: italic normal normal 16px/20px Muli;
-                    letter-spacing: 0px;
-                    color: #6D7476;
-                    opacity: 1;
-                    margin-bottom:5px;
-                    @include media-tablet {
-                        font: italic normal normal 14px/18px Muli;
-                    }
-                }
-                span{
-                    display: none;
-                    @include media-tablet {
-                        margin-top: auto;
-                        display: block;
-                        font: normal normal bold 12px/15px Muli;
-                        letter-spacing: 0px;
-                        color: #6D7476;
-                        opacity: 1; 
-                    }
-                }
-                p{
-                    font: normal normal normal 26px/33px Muli;
-                    letter-spacing: 0px;
-                    color: #28373B;
-                    opacity: 1;
-                    @include media-tablet {
-                        margin-bottom: 10px;
-                        font: normal normal normal 14px/18px Muli;
-                    }
-                }
-            }
-        }
-    }
+  }
 }

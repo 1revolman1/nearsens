@@ -35,6 +35,8 @@ section.index__parallax::before {
   }
 }
 section.index__parallax #scene {
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
   position: relative;
   overflow: hidden;

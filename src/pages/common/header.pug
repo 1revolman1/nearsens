@@ -1,7 +1,16 @@
-input.oppen_nav#menu__toggle__header(type="checkbox", name="")
 
+script
+  |var holiday_event=true
+
+//- section.header__holiday
+//-   a(href="").header__holiday__wrap.main
+//-     img(src="https://zn.ua/img/forall/u/0/-1/users/Jun2019/233430.jpg", alt="")
+
+input.oppen_nav#menu__toggle__header(type="checkbox", name="")
+// holiday-header - добавить класс в лейбл во время холидей
 label.menu__btn__header(for="menu__toggle__header")
   span
+// holiday-header - добавить класс в хедер во время холидей
 header.header
   section.first-menu
     .first-block-in-menu
@@ -51,146 +60,146 @@ header.header
       //-   a(href="/login")
       //-      i(class="fas fa-user-circle")
       //-      |Sign In
-
+// holiday-header - добавить класс в nav во время холидей
 nav.nav
-  .second-menu
-    .search-menu
-      input(type="text" class="text-input" placeholder="What are you looking for ?" )
-      label(class="checker-label" for="btnControlInNav"): img(src="img/magnifying-glass.svg", alt="btn" id="btnLeft")
-    .nav-menu
-      ul
-        li: a(href="/" class="active-link in-viewport")
-          //- img(class="logo-img" src="img/Nearsens - Logotype - Seul.svg", alt="logo")
-          span Home
-        each val, index in [ 'Solution', 'Products', 'Use cases']
-          li: a(href="/"+val.toLowerCase())=val
-        li.dropup
-          button.dropbtn.active-link About
-            include header/svg-down
+    .second-menu
+      .search-menu
+        input(type="text" class="text-input" placeholder="What are you looking for ?" )
+        label(class="checker-label" for="btnControlInNav"): img(src="img/magnifying-glass.svg", alt="btn" id="btnLeft")
+      .nav-menu
+        ul
+          li: a(href="/" class="active-link in-viewport")
+            //- img(class="logo-img" src="img/Nearsens - Logotype - Seul.svg", alt="logo")
+            span Home
+          each val, index in [ 'Solution', 'Products', 'Use cases']
+            li: a(href="/"+val.toLowerCase())=val
+          li.dropup
+            button.dropbtn.active-link About
+              include header/svg-down
+            .droupup-block
+              .dropup-content.unshow
+                a(href="" class="active-link")
+                  include header/svg-down
+                  span How shipping works
+                a(href="")
+                  include header/svg-down
+                  span Inside Nearsens
+                a(href="") 
+                  include header/svg-down
+                  span Our values
+                a(href="") 
+                  include header/svg-down
+                  span The Nearsens APP
+                a(href="")
+                  include header/svg-down
+                  span Installation guide
+                a(href="") 
+                  include header/svg-down
+                  span About Nearsens
+          li.dropup
+            button.dropbtn Support 
+              include header/svg-down
+            .droupup-block
+              .dropup-content.unshow
+                a(href="") 
+                  include header/svg-down
+                  span FAQ
+                a(href="") 
+                  include header/svg-down
+                  span Contact us
+                a(href="") 
+                  include header/svg-down
+                  span Support request
+          li.dropup.dropup-language
+            button.dropbtn 
+              i(class="fas fa-globe-europe globe") 
+              |EN 
+              include header/svg-down
+            .droupup-block
+              .dropup-content.unshow
+                a(href="") 
+                  include header/svg-down
+                  span FR
+      .shop-menu
+        .build-your-solution
+          a(href="") 
+            img(src="img/wrench.svg", alt="Shoping cart")
+            //- span 
+            span Build your solution
+        .phone-number
+          a(href="tel:+33930088008") 
+            img(class="logo-phone" src="img/call-white-all.svg", alt="logo") 
+            span +339 3008 8008
+          .text-content
+            p (Monday to Friday - 9 am to 7 pm)   
+        .shop-cart.dropup
+          .shop-cart-logo
+            img(src="img/noun_bag_95443.svg", alt="Shoping cart")
+            sup.counter 3 
+            p.ammount-items 3 items
+          .droupup-block-info.unshow
+            div.dropdown.show-info
+              h3 1 product added to your cart
           .droupup-block
-            .dropup-content.unshow
-              a(href="" class="active-link")
-                include header/svg-down
-                span How shipping works
-              a(href="")
-                include header/svg-down
-                span Inside Nearsens
-              a(href="") 
-                include header/svg-down
-                span Our values
-              a(href="") 
-                include header/svg-down
-                span The Nearsens APP
-              a(href="")
-                include header/svg-down
-                span Installation guide
-              a(href="") 
-                include header/svg-down
-                span About Nearsens
-        li.dropup
-          button.dropbtn Support 
-            include header/svg-down
-          .droupup-block
-            .dropup-content.unshow
-              a(href="") 
-                include header/svg-down
-                span FAQ
-              a(href="") 
-                include header/svg-down
-                span Contact us
-              a(href="") 
-                include header/svg-down
-                span Support request
-        li.dropup.dropup-language
-          button.dropbtn 
-            i(class="fas fa-globe-europe globe") 
-            |EN 
-            include header/svg-down
-          .droupup-block
-            .dropup-content.unshow
-              a(href="") 
-                include header/svg-down
-                span FR
-    .shop-menu
-      .build-your-solution
-        a(href="") 
-          img(src="img/wrench.svg", alt="Shoping cart")
-          //- span 
-          span Build your solution
-      .phone-number
-        a(href="tel:+33930088008") 
-          img(class="logo-phone" src="img/call-white-all.svg", alt="logo") 
-          span +339 3008 8008
-        .text-content
-          p (Monday to Friday - 9 am to 7 pm)   
-      .shop-cart.dropup
-        .shop-cart-logo
-          img(src="img/noun_bag_95443.svg", alt="Shoping cart")
-          sup.counter 3 
-          p.ammount-items 3 items
-        .droupup-block-info.unshow
-          div.dropdown.show-info
-            h3 1 product added to your cart
-        .droupup-block
-          div.dropdown
-            h3 LAST PRODUCTS ADDED
-            .shop-content
-              .shop-content-item
-                img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
-                p Keypad - white
-                span 112
-                  sup.small €90
-            .shop-content
-              .shop-content-item
-                img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
-                p Keypad - white and blue with plug and dirt and dirt and dirt ith plug and dirt and dirt and dirt
-                span 112
-                  sup.small €90
-            .shop-content
-              .shop-content-item
-                img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
-                p Keypad - white
-                span 112
-                  sup.small €90
-            .shop-content-summarise
-              h3 Total :
-                span 68
-                  sup.small €90
-              p In stock. Can be shipped tomorrow.
-              a(href="") GO TO CART 
-                i(class="fas fa-angle-right")
+            div.dropdown
+              h3 LAST PRODUCTS ADDED
+              .shop-content
+                .shop-content-item
+                  img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
+                  p Keypad - white
+                  span 112
+                    sup.small €90
+              .shop-content
+                .shop-content-item
+                  img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
+                  p Keypad - white and blue with plug and dirt and dirt and dirt ith plug and dirt and dirt and dirt
+                  span 112
+                    sup.small €90
+              .shop-content
+                .shop-content-item
+                  img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
+                  p Keypad - white
+                  span 112
+                    sup.small €90
+              .shop-content-summarise
+                h3 Total :
+                  span 68
+                    sup.small €90
+                p In stock. Can be shipped tomorrow.
+                a(href="") GO TO CART 
+                  i(class="fas fa-angle-right")
 
-        
-      //- .shop-cart.dropup
-      //-   .shop-cart-logo
-      //-     img(src="img/noun_bag_95443.svg", alt="Shoping cart")
-      //-     div.counter 3 
-      //-     span.ammount-items 3 items
-      //-     .droupup-block
-      //-       .dropup-content
-      //-         h3 LAST PRODUCTS ADDED
-      //-         .shop-content
-      //-           .shop-content-item
-      //-             img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
-      //-             p Keypad - white
-      //-             span 112
-      //-               sup.small €90
-      //-         .shop-content
-      //-           .shop-content-item
-      //-             img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
-      //-             p Keypad - white
-      //-             span 112
-      //-               sup.small €90
-      //-         .shop-content
-      //-           .shop-content-item
-      //-             img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
-      //-             p Keypad - white
-      //-             span 112
-      //-               sup.small €90
-      //-         .shop-content-summarise
-      //-           h3 Total :
-      //-             span 68
-      //-               sup.small €90
-      //-           p In stock. Can be shipped tomorrow.
-      //-           button GO TO CART 
-      //-             img(src="img/button-header.svg", alt="btn" id="btnLeft")
+          
+        //- .shop-cart.dropup
+        //-   .shop-cart-logo
+        //-     img(src="img/noun_bag_95443.svg", alt="Shoping cart")
+        //-     div.counter 3 
+        //-     span.ammount-items 3 items
+        //-     .droupup-block
+        //-       .dropup-content
+        //-         h3 LAST PRODUCTS ADDED
+        //-         .shop-content
+        //-           .shop-content-item
+        //-             img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
+        //-             p Keypad - white
+        //-             span 112
+        //-               sup.small €90
+        //-         .shop-content
+        //-           .shop-content-item
+        //-             img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
+        //-             p Keypad - white
+        //-             span 112
+        //-               sup.small €90
+        //-         .shop-content
+        //-           .shop-content-item
+        //-             img(src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg", alt="")
+        //-             p Keypad - white
+        //-             span 112
+        //-               sup.small €90
+        //-         .shop-content-summarise
+        //-           h3 Total :
+        //-             span 68
+        //-               sup.small €90
+        //-           p In stock. Can be shipped tomorrow.
+        //-           button GO TO CART 
+        //-             img(src="img/button-header.svg", alt="btn" id="btnLeft")

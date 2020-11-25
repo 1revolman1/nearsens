@@ -1,0 +1,172 @@
+section.usecase_details__pageheader {
+  padding: 50px 0;
+  margin-bottom: 80px;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap {
+    margin: 0px auto;
+    flex-direction: column-reverse;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text {
+  flex: 1;
+  margin-right: 50px;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__head {
+    margin-bottom: 30px;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__head a {
+  font: italic normal normal 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #004c83;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__head a:hover {
+  color: #2ec9ad;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__head a {
+    display: none;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__head h3 {
+  font: normal normal normal 32px/40px Muli;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__head h3 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__head p {
+  font: italic normal normal 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #6d7476;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__head p {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label {
+    margin: 0;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+  padding-right: 30px;
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card.not-active {
+  opacity: 0.65;
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card img {
+  margin-right: 10px;
+  width: 20px;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card img {
+    width: 18px;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card p {
+  font: normal normal normal 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card p {
+    font: normal normal normal 16px/20px Muli;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__text-block-text {
+  margin-bottom: 41px;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__text-block-text {
+    margin-bottom: 21px;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__text-block-text p {
+  font: normal normal normal 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__text-block-text p {
+    font: normal normal normal 14px/18px Muli;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__require {
+  position: relative;
+  padding-left: 55px;
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__require img {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 41px;
+  object-fit: cover;
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__require p {
+  font: italic normal normal 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__require {
+    display: none;
+  }
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__img {
+  flex: 0 1 46%;
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__img img {
+  display: flex;
+  position: sticky;
+  top: 121px;
+}

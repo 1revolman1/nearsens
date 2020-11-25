@@ -38,6 +38,8 @@ section.index__parallax {
     margin-top: 60px;
   }
   #scene {
+    max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     position: relative;
     overflow: hidden;
