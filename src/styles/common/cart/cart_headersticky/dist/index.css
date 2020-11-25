@@ -7,7 +7,7 @@ section.cart__headersticky {
   margin: 0;
   padding: 15px 0;
   z-index: 1;
-  top: 114px;
+  top: 113px;
 }
 @media screen and (max-width: 768px) {
   section.cart__headersticky {
@@ -37,7 +37,7 @@ section.cart__headersticky.out-viewport {
   section.cart__headersticky .cart__header__wrap .cart__header__wrap__first .cart__header__wrap__first__text h3 {
     font: normal normal normal 22px/28px Muli;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 1;
   }
 }
@@ -69,7 +69,7 @@ section.cart__headersticky .cart__header__wrap .cart__header__wrap__second {
 section.cart__headersticky .cart__header__wrap .cart__header__wrap__second .cart__header__wrap__second__head p {
   font: italic normal normal 18px/23px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -80,14 +80,14 @@ section.cart__headersticky .cart__header__wrap .cart__header__wrap__second .cart
 section.cart__headersticky .cart__header__wrap .cart__header__wrap__second .cart__header__wrap__second__head span {
   font: normal normal 300 36px/45px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
   section.cart__headersticky .cart__header__wrap .cart__header__wrap__second .cart__header__wrap__second__head span {
     font: normal normal normal 16px/20px Muli;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 section.cart__headersticky .cart__header__wrap .cart__header__wrap__second .cart__header__wrap__second__head span sup {
@@ -97,7 +97,7 @@ section.cart__headersticky .cart__header__wrap .cart__header__wrap__second .cart
   section.cart__headersticky .cart__header__wrap .cart__header__wrap__second .cart__header__wrap__second__head span sup {
     font: normal normal normal 11px/0 Muli;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 section.cart__headersticky .cart__header__wrap .cart__header__wrap__second .cart__header__wrap__second__containerbutton {
@@ -113,7 +113,7 @@ section.cart__headersticky .cart__header__wrap .cart__header__wrap__second .cart
     padding: 10px 20px;
     font: normal normal bold 16px/20px Muli;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 1;
   }
 }

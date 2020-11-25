@@ -1,0 +1,113 @@
+section.usecase_details__pageheaderafterscroll {
+  position: fixed;
+  z-index: 1;
+  top: 113px;
+  width: 100%;
+  padding: 28px 0 32px;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  transition: visibility 0.2s, opacity 0.5s linear, top ease 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+section.usecase_details__pageheaderafterscroll.out-viewport {
+  visibility: visible;
+  opacity: 1;
+}
+section.usecase_details__pageheaderafterscroll.scroll-to-bottom {
+  top: -15px;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheaderafterscroll {
+    top: 58px;
+    padding: 13px 0 15px;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap {
+    width: 90%;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text {
+  flex: 1;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text {
+    max-width: 75%;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  font: normal normal normal 32px/40px Muli;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text h3 {
+    max-width: 100%;
+    font: normal normal normal 20px/25px Muli;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text p {
+  font: italic normal normal 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #6d7476;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text p {
+    display: none;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  justify-content: flex-end;
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+  padding-left: 40px;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem {
+    padding-left: 0;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem.not-active {
+  opacity: 0.65;
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem img {
+  margin-right: 10px;
+  width: 20px;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem img {
+    width: 11px;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem p {
+  font: normal normal normal 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem p {
+    display: none;
+  }
+}

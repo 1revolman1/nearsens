@@ -1,0 +1,73 @@
+section.use_case__scrollheader {
+  display: flex;
+  position: fixed;
+  top: 113px;
+  width: 100%;
+  background: #005b9d 0 0 no-repeat padding-box;
+  padding: 55px 0;
+  z-index: 5;
+  transition: visibility 0s, opacity 0.5s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__scrollheader {
+    padding: 18px 4%;
+    top: 58px;
+  }
+}
+section.use_case__scrollheader.out-viewport {
+  visibility: visible;
+  opacity: 1;
+}
+section.use_case__scrollheader .use_case__scrollheader-content {
+  flex: 1;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+section.use_case__scrollheader .use_case__scrollheader-content h2 {
+  font: normal normal normal 32px/40px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__scrollheader .use_case__scrollheader-content h2 {
+    font: normal normal normal 18px/23px Muli;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.use_case__scrollheader .use_case__scrollheader-content {
+    max-width: 65%;
+    margin: 0 auto 0 0;
+  }
+}
+section.use_case__scrollheader .use_case__scrollheader-content-container__picker {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__scrollheader .use_case__scrollheader-content-container__picker {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    cursor: pointer;
+  }
+}
+section.use_case__scrollheader .use_case__scrollheader-content-container__picker h3 {
+  font: italic normal normal 14px/18px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+section.use_case__scrollheader .use_case__scrollheader-content-container__picker i {
+  margin-left: 8px;
+  font-size: 21px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
