@@ -3,7 +3,10 @@
 section.index__reviews{
     display: flex;
     flex-direction: column;
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
+    @include media-tablet {
+        margin-bottom: 80px;
+    } 
     .index__reviews__head{
         margin-bottom: 60.5px; 
         h3{

@@ -12,6 +12,11 @@
   box-sizing: inherit;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 html {
   box-sizing: border-box;
 }

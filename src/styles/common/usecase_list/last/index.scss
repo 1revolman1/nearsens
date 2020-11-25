@@ -12,7 +12,7 @@ section.use_case__usecases-last {
     // margin-bottom: 15px;
     font: normal normal normal 32px/40px Muli;
     letter-spacing: 0px;
-    color: #28373B;
+    color: #28373b;
     opacity: 1;
 
     @include media-tablet {
@@ -29,17 +29,16 @@ section.use_case__usecases-last {
       width: 100%;
       margin: 15px auto;
       display: flex;
-      transition: all ease .5s;
+      transition: all ease 0.5s;
 
-      background: #FFFFFF 0% 0% no-repeat padding-box;
-      box-shadow: 0px 0px 10px #0000001A;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 0px 10px #0000001a;
       border-radius: 10px;
       opacity: 1;
       padding: 20px;
 
       &:hover {
         transform: translate(0, -10px);
-
       }
 
       @include media-tablet {
@@ -47,15 +46,15 @@ section.use_case__usecases-last {
         padding: 10px;
       }
       &.active-element {
-        background: #005B9D 0% 0% no-repeat padding-box;
+        background: #005b9d 0% 0% no-repeat padding-box;
 
         .use_case__usecases-last__element-text {
-          background: #005B9D 0% 0% no-repeat padding-box;
+          background: #005b9d 0% 0% no-repeat padding-box;
 
           h4,
           p,
           span {
-            color: white
+            color: white;
           }
         }
       }
@@ -95,13 +94,12 @@ section.use_case__usecases-last {
           text-align: left;
           font: italic normal normal 16px/20px Muli;
           letter-spacing: 0px;
-          color: #6D7476;
+          color: #6d7476;
           opacity: 1;
           margin-bottom: 10px;
 
           @include media-tablet {
             font: italic normal normal 14px/18px Muli;
-
           }
         }
 
@@ -109,7 +107,7 @@ section.use_case__usecases-last {
           text-align: left;
           font: normal normal normal 26px/33px Muli;
           letter-spacing: 0px;
-          color: #28373B;
+          color: #28373b;
           opacity: 1;
           margin-bottom: 34px;
 
@@ -123,13 +121,43 @@ section.use_case__usecases-last {
           text-align: left;
           font: normal normal bold 16px/20px Muli;
           letter-spacing: 0px;
-          color: #6D7476;
+          color: #6d7476;
           opacity: 1;
 
           @include media-tablet {
             font: normal normal bold 14px/18px Muli;
           }
         }
+      }
+    }
+  }
+  .use_case__posibletodowithdevice__bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0 20px;
+    .use_case__posibletodowithdevice__bottom-btn {
+      margin-left: 30px;
+      display: none;
+      // display:flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #2ec9ad;
+      border-radius: 40px;
+      opacity: 1;
+      padding: 5px 12px;
+      font: normal normal bold 18px/23px Muli;
+      letter-spacing: 0px;
+      color: #2ec9ad;
+      opacity: 1;
+      cursor: pointer;
+      background: transparent;
+      @include media-tablet {
+        display: flex;
+        font: normal normal bold 16px/23px Muli;
+      }
+      &:hover {
+        color: white;
+        background: #2ec9ad;
       }
     }
   }

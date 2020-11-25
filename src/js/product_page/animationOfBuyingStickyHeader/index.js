@@ -104,7 +104,7 @@ export const useBuyingAnimationStickyHeader=function main(element){
     element.querySelector(".productpage__pageheader_sticky-wrap-manipulator-withprice").addEventListener("click",cartAnimInStickyHeader)
     document.querySelectorAll('.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container.overlay').forEach(function(elm){
         const value=elm.querySelector("span").textContent;
-        if(+value>1){
+        if(+value>=1){
           elm.querySelectorAll("button").forEach((e)=>{
             e.removeAttribute("disabled");
           })

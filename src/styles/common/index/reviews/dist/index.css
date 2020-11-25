@@ -2,7 +2,11 @@
 section.index__reviews {
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews {
+    margin-bottom: 80px;
+  }
 }
 section.index__reviews .index__reviews__head {
   margin-bottom: 60.5px;

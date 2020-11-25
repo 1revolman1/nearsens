@@ -1,43 +1,309 @@
+@charset "UTF-8";
+section.index__parallax {
+  position: relative;
+  user-select: none;
+}
+section.index__parallax * {
+  user-select: none;
+}
+section.index__parallax::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16%;
+  background: transparent linear-gradient(180deg, #FFFFFF 32%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax::after {
+    display: none;
+  }
+}
+section.index__parallax::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 42%;
+  background: transparent linear-gradient(0deg, #FFFFFF 42%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax {
+    margin-top: 60px;
+  }
+}
 section.index__parallax #scene {
-  background: red;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+section.index__parallax #scene::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background: transparent linear-gradient(90deg, #FFFFFF 30%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax #scene::after {
+    display: none;
+  }
+}
+section.index__parallax #scene::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  transform: scale(-1);
+  background: transparent linear-gradient(90deg, #FFFFFF 30%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax #scene::before {
+    display: none;
+  }
+}
+section.index__parallax #scene .last-mount {
+  transition: transform 1s ease;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax #scene .last-mount img {
+    height: 711px;
+    max-height: 711px;
+  }
+}
+section.index__parallax #scene .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section.index__parallax #scene .first-mount-layer {
+  transform: scale(1.1) translate(40px, 0px);
+  transition: transform 1.3s ease;
+  position: absolute;
+  bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax #scene .first-mount-layer {
+    bottom: -17%;
+    transform: scale(3);
+  }
+}
+@media screen and (max-width: 670px) {
+  section.index__parallax #scene .first-mount-layer {
+    bottom: -5%;
+  }
+}
+@media screen and (max-width: 425px) {
+  section.index__parallax #scene .first-mount-layer {
+    bottom: 14%;
+  }
+}
+@media screen and (max-width: 360px) {
+  section.index__parallax #scene .first-mount-layer {
+    bottom: 18%;
+  }
+}
+section.index__parallax #scene .middle-mount-layer {
+  transition: transform 1s ease;
+  position: absolute;
+  top: 22%;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax #scene .middle-mount-layer img {
+    height: 1332px;
+  }
+}
+section.index__parallax #scene .text-container {
+  position: absolute;
+  transition: top 1s ease;
+  top: 60%;
+  left: 15%;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax #scene .text-container {
+    padding-left: 40px;
+    top: 5%;
+    left: 0%;
+  }
+}
+section.index__parallax #scene .text-container h3 {
+  margin-bottom: 5px;
+  font: normal normal 800 32px/40px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax #scene .text-container h3 {
+    font: normal normal 800 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+}
+section.index__parallax #scene .text-container p {
+  font: normal normal normal 26px/33px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax #scene .text-container p {
+    font: normal normal normal 18px/23px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+}
+section.index__parallax #scene .gadget {
+  position: absolute;
+  transition: bottom 1s ease;
+  bottom: -20%;
+  right: 15%;
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax #scene .gadget {
+    width: 53%;
+    bottom: 18%;
+  }
+}
+@media screen and (max-width: 670px) {
+  section.index__parallax #scene .gadget {
+    bottom: 26%;
+  }
+}
+@media screen and (max-width: 605px) {
+  section.index__parallax #scene .gadget {
+    bottom: 18%;
+  }
+}
+@media screen and (max-width: 425px) {
+  section.index__parallax #scene .gadget {
+    bottom: 31%;
+  }
+}
+section.index__parallax #scene .shadow {
+  position: absolute;
+  transition: bottom 1s ease;
+}
+section.index__parallax #scene .shadow.shadow-1 {
+  bottom: 10%;
+  left: 0;
+}
+section.index__parallax #scene .shadow.shadow-2 {
+  bottom: 10%;
+  left: 20%;
+}
+section.index__parallax #scene .shadow.shadow-2 {
+  bottom: 10%;
+  left: 40%;
+}
+section.index__parallax #scene .shadow.shadow-3 {
+  bottom: 10%;
+  left: 60%;
+}
+section.index__parallax #scene .shadow.shadow-4 {
+  bottom: 10%;
+  left: 90%;
+}
+section.index__parallax #scene .shadow.shadow-5 {
+  bottom: 10%;
+  left: 20%;
 }
 
 section.index__morewithless {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
 }
-section.index__morewithless .index__morewithless__blockwithbutton {
-  flex: 1;
-  padding: 10px 0;
+@media screen and (max-width: 768px) {
+  section.index__morewithless {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+section.index__morewithless .index__morewithless__head {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 140px;
 }
-section.index__morewithless .index__morewithless__blockwithbutton hr {
-  margin-bottom: 20px;
-  width: 100%;
-  max-width: 150px;
-  height: 1px;
-  background: #707070;
-  opacity: 0.6;
-  border: none;
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__head {
+    margin-bottom: 30px;
+  }
 }
-section.index__morewithless .index__morewithless__blockwithbutton h3 {
+section.index__morewithless .index__morewithless__head p {
+  text-align: center;
+  font: normal normal normal 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__head p {
+    font: normal normal normal 16px/20px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+}
+section.index__morewithless .index__morewithless__head h3 {
+  text-align: center;
   font: normal normal 800 30px/38px Muli;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
-  margin-bottom: 5px;
 }
-section.index__morewithless .index__morewithless__blockwithbutton p {
-  font: normal normal 300 22px/28px Muli;
-  letter-spacing: 0px;
-  color: #333333;
-  opacity: 1;
-  margin-bottom: 20px;
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__head h3 {
+    font: normal normal 800 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    margin-bottom: 30px;
+  }
 }
-section.index__morewithless .index__morewithless__blockwithbutton .index__morewithless__blockwithbutton__btn {
+section.index__morewithless .index__morewithless__head hr {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__head hr {
+    display: block;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+section.index__morewithless .index__morewithless__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap {
+    flex-direction: column;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton__btn {
   border: 1px solid #2EC9AD;
   border-radius: 40px;
   opacity: 1;
@@ -50,16 +316,95 @@ section.index__morewithless .index__morewithless__blockwithbutton .index__morewi
   margin: 10px 0;
   background: white;
 }
-section.index__morewithless .index__morewithless__blockwithbutton .index__morewithless__blockwithbutton__btn:hover {
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton__btn {
+    flex: 1;
+    margin: 9.5px;
+    padding: 7px 30px;
+    font: normal normal bold 14px/18px Muli;
+    letter-spacing: 0px;
+    color: #2EC9AD;
+    opacity: 1;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton__btn:first-of-type {
+    margin-left: 0;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton__btn:last-of-type {
+    margin-right: 0;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton__btn:hover {
   color: #FFFFFF;
   background: #2EC9AD;
 }
-section.index__morewithless .index__morewithless__blockwithhover {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton {
+  flex: 1;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton {
+    align-items: center;
+    padding: 0;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton hr {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 150px;
+  height: 1px;
+  background: #707070;
+  opacity: 0.6;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton hr {
+    display: none;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton h3 {
+  font: normal normal 800 30px/38px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton h3 {
+    font: normal normal 800 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton p {
+  font: normal normal 300 22px/28px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton p {
+    font: normal normal 300 18px/23px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton .index__morewithless__blockwithbutton__btn {
+    display: none;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element {
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -71,46 +416,45 @@ section.index__morewithless .index__morewithless__blockwithhover .index__morewit
   transition: all 0.3s ease;
   margin: 15px 0;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover {
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:first-of-type {
+    margin-top: 0;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover {
   background: #005B9D 0% 0% no-repeat padding-box;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img {
   background: #FFFFFF 0% 0% no-repeat padding-box;
+  transform: scale(0.9);
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .invert-collor {
-  transform: scale(0.8);
-}
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .invert-collor path {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .invert-collor path {
   fill: #005B9D;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .fire {
-  transform: scale(0.7);
-  left: -14px;
-}
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .spec {
-  transform: scale(0.7);
-}
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .spec .color {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .spec .color {
   fill: #005B9D;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .lock {
-  transform: scale(0.7);
-  right: -14px;
-}
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .lock path {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .lock path {
   transition: all 0.3s ease;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text h3 {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text h3 {
   transform: translate(0, 0%);
   color: #FFFFFF;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow {
   color: white;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img {
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img {
   flex: 1;
   position: relative;
   display: flex;
+  align-self: center;
   justify-content: center;
   align-items: center;
   background: #005B9D 0% 0% no-repeat padding-box;
@@ -121,41 +465,47 @@ section.index__morewithless .index__morewithless__blockwithhover .index__morewit
   min-height: 68px;
   border-radius: 50%;
   margin-right: 25px;
-}
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor {
   transition: all 0.3s ease;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor path {
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img {
+    padding: 10px;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor {
   transition: all 0.3s ease;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor path {
   transition: all 0.3s ease;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec .color {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec {
   transition: all 0.3s ease;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .fire {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec .color {
+  transition: all 0.3s ease;
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .fire {
   transition: all 0.3s ease;
   position: absolute;
   top: 22px;
   left: -19px;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .lock {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .lock {
   transition: all 0.3s ease;
   position: absolute;
   top: 22px;
   right: -17px;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img svg {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img svg {
   width: 100%;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text {
   flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text h3 {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text h3 {
   transform: translate(0, 25%);
   transition: all 0.3s ease;
   font: normal normal 300 22px/28px Muli;
@@ -163,13 +513,30 @@ section.index__morewithless .index__morewithless__blockwithhover .index__morewit
   color: #324044;
   opacity: 1;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text h3 {
+    font: normal normal normal 16px/20px Muli;
+    letter-spacing: 0px;
+    color: #324044;
+    opacity: 1;
+    transform: translate(0, 50%);
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
   font: normal normal 300 16px/20px Muli;
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 1;
 }
-section.index__morewithless .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__arrow {
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
+    font: normal normal 300 13px/16px Muli;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__arrow {
   position: absolute;
   right: 25px;
   top: 50%;
@@ -178,12 +545,32 @@ section.index__morewithless .index__morewithless__blockwithhover .index__morewit
   font-size: 20px;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__arrow {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__buttons {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__buttons {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
 
 section.index__createsolution {
   position: relative;
   overflow: hidden;
   padding: 60px 0;
   margin: 50px 0;
+}
+@media screen and (max-width: 768px) {
+  section.index__createsolution {
+    margin: 0;
+  }
 }
 section.index__createsolution .bigimg {
   position: absolute;
@@ -207,6 +594,11 @@ section.index__createsolution::before {
   height: 100%;
   background: transparent linear-gradient(-180deg, #fff 0, #fffFFF00 70%) 0 0 no-repeat padding-box;
 }
+@media screen and (max-width: 768px) {
+  section.index__createsolution::before {
+    background: transparent linear-gradient(-180deg, #fff 0, #fffFFF00 25%) 0 0 no-repeat padding-box;
+  }
+}
 section.index__createsolution::after {
   content: "";
   z-index: 1;
@@ -216,6 +608,11 @@ section.index__createsolution::after {
   width: 100%;
   height: 100%;
   background: transparent linear-gradient(0deg, #fff 0, #fffFFF00 70%) 0 0 no-repeat padding-box;
+}
+@media screen and (max-width: 768px) {
+  section.index__createsolution::after {
+    background: transparent linear-gradient(0deg, #fff 0, #fffFFF00 40%) 0 0 no-repeat padding-box;
+  }
 }
 section.index__createsolution .index__createsolution__wrap {
   position: relative;
@@ -231,6 +628,15 @@ section.index__createsolution .index__createsolution__wrap h3 {
   opacity: 1;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 768px) {
+  section.index__createsolution .index__createsolution__wrap h3 {
+    font: normal normal 800 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    text-shadow: 0px 0px 25px #FFFFFF;
+    opacity: 1;
+  }
+}
 section.index__createsolution .index__createsolution__wrap p {
   text-align: center;
   font: normal normal 300 22px/28px Muli;
@@ -240,6 +646,15 @@ section.index__createsolution .index__createsolution__wrap p {
   opacity: 1;
   margin-bottom: 5px;
   margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  section.index__createsolution .index__createsolution__wrap p {
+    font: normal normal 300 18px/23px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    text-shadow: 0px 0px 25px #FFFFFF;
+    opacity: 1;
+  }
 }
 section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__btncontainer {
   display: flex;
@@ -259,12 +674,28 @@ section.index__createsolution .index__createsolution__wrap .index__createsolutio
   color: #FFFFFF;
   opacity: 1;
 }
+@media screen and (max-width: 768px) {
+  section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__btncontainer .index__createsolution__wrap__btncontainer__btn {
+    margin: 10px 20px;
+    font: normal normal bold 18px/23px Muli;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__btncontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__discover {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   width: fit-content;
+  width: intrinsic;
   margin: 0 auto;
   cursor: pointer;
 }
@@ -277,9 +708,30 @@ section.index__createsolution .index__createsolution__wrap .index__createsolutio
   opacity: 1;
   margin-bottom: 6.5px;
 }
+@media screen and (max-width: 768px) {
+  section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__discover p {
+    font: italic normal 300 16px/20px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    text-shadow: 0px 0px 25px #FFFFFF;
+    opacity: 1;
+  }
+}
 section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__discover i {
   font-size: 20px;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  section.index__createsolution .index__createsolution__wrap .index__createsolution__wrap__discover i {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__createsolution .index__createsolution__wrap {
+    width: 90%;
+    padding: 25px 0;
+    margin: 0 auto;
+  }
 }
 
 section.index__youtubeframe {
@@ -287,13 +739,34 @@ section.index__youtubeframe {
   flex-direction: row;
   margin-bottom: 51px;
 }
+@media screen and (max-width: 768px) {
+  section.index__youtubeframe {
+    margin-bottom: 15px;
+    flex-direction: column;
+  }
+}
 section.index__youtubeframe .index__youtubeframe__frame {
   display: flex;
   flex: 1;
 }
+@media screen and (max-width: 768px) {
+  section.index__youtubeframe .index__youtubeframe__frame {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+}
 section.index__youtubeframe .index__youtubeframe__frame #player-container {
   width: 100%;
   height: 100%;
+}
+section.index__youtubeframe .index__youtubeframe__frame #player-container video {
+  width: 100%;
+  height: 100%;
+}
+section.index__youtubeframe .index__youtubeframe__frame #player-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 section.index__youtubeframe .index__youtubeframe__text {
   display: flex;
@@ -302,6 +775,13 @@ section.index__youtubeframe .index__youtubeframe__text {
   padding-left: 30px;
   padding-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+  section.index__youtubeframe .index__youtubeframe__text {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
 section.index__youtubeframe .index__youtubeframe__text h3 {
   font: normal normal 800 30px/38px Muli;
   letter-spacing: 0px;
@@ -309,12 +789,28 @@ section.index__youtubeframe .index__youtubeframe__text h3 {
   opacity: 1;
   margin-bottom: 28px;
 }
+@media screen and (max-width: 768px) {
+  section.index__youtubeframe .index__youtubeframe__text h3 {
+    font: normal normal 800 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+}
 section.index__youtubeframe .index__youtubeframe__text p {
   font: normal normal 300 18px/23px Muli;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
   margin-bottom: 27px;
+}
+@media screen and (max-width: 768px) {
+  section.index__youtubeframe .index__youtubeframe__text p {
+    font: normal normal 300 16px/20px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
 }
 section.index__youtubeframe .index__youtubeframe__text ul {
   display: flex;
@@ -328,6 +824,26 @@ section.index__youtubeframe .index__youtubeframe__text ul li {
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
+}
+section.index__youtubeframe .index__youtubeframe__text ul li:nth-child(even) {
+  margin-left: 0;
+}
+section.index__youtubeframe .index__youtubeframe__text ul li:nth-child(odd) {
+  margin-left: 0;
+}
+section.index__youtubeframe .index__youtubeframe__text ul li i {
+  margin-right: 15px;
+}
+@media screen and (max-width: 768px) {
+  section.index__youtubeframe .index__youtubeframe__text ul li i {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__youtubeframe .index__youtubeframe__text ul li {
+    flex: none;
+    width: 100%;
+  }
 }
 section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer {
   display: flex;
@@ -348,6 +864,11 @@ section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__tex
   background: #2EC9AD 0% 0% no-repeat padding-box;
   border: 1px solid #2EC9AD;
 }
+@media screen and (max-width: 768px) {
+  section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer {
+    justify-content: center;
+  }
+}
 section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__download {
   display: flex;
   flex-flow: row wrap;
@@ -364,4 +885,170 @@ section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__tex
 }
 section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__download a img {
   object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__download {
+    justify-content: center;
+  }
+}
+
+section.index__reviews {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews {
+    margin-bottom: 80px;
+  }
+}
+section.index__reviews .index__reviews__head {
+  margin-bottom: 60.5px;
+}
+section.index__reviews .index__reviews__head h3 {
+  text-align: center;
+  font: normal normal 300 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  padding-bottom: 60.5px;
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews .index__reviews__head h3 {
+    font: normal normal 300 16px/20px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    padding-bottom: 30px;
+  }
+}
+section.index__reviews .index__reviews__head hr {
+  margin: 0 auto;
+  width: 150px;
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews .index__reviews__head {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews .index__reviews__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+section.index__reviews .index__reviews__content .index__reviews__content__element {
+  max-width: 846px;
+  margin: 0 auto;
+}
+section.index__reviews .index__reviews__content .index__reviews__content__element h3 {
+  text-align: center;
+  font: normal normal 800 26px/33px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews .index__reviews__content .index__reviews__content__element h3 {
+    font: normal normal 800 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    margin-bottom: 5px;
+  }
+}
+section.index__reviews .index__reviews__content .index__reviews__content__element span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 33px;
+  font-size: 18px;
+}
+section.index__reviews .index__reviews__content .index__reviews__content__element span i {
+  color: #FFB600;
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews .index__reviews__content .index__reviews__content__element span {
+    margin-bottom: 30px;
+  }
+}
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q {
+  text-align: center;
+  font: normal normal bold 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 7px;
+  quotes: "“" "„";
+}
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::before, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::before {
+  font-size: 30px;
+  position: relative;
+  right: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::before, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::before {
+    right: 10px;
+  }
+}
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::after, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::after {
+  font-size: 30px;
+  position: relative;
+  left: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::after, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::after {
+    left: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q {
+    font: normal normal bold 16px/20px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    margin-bottom: 30px;
+  }
+}
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text span {
+  text-align: center;
+  margin: 0;
+  font: normal normal 300 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text span {
+    font: normal normal 300 14px/18px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+}
+
+.index-page-container {
+  transition: all 1s ease;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .index-page-container {
+    opacity: 1;
+    transform: translate(0, -5%);
+  }
+}
+.index-page-container.transform-block {
+  opacity: 1;
+  transform: translate(0, -5%);
+}
+@media screen and (max-width: 1100px) {
+  .index-page-container.transform-block {
+    transform: translate(0, -3%);
+  }
 }
