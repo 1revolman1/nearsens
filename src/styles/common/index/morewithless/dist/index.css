@@ -9,66 +9,6 @@ section.index__morewithless {
     margin: 0 auto;
   }
 }
-section.index__morewithless .index__morewithless__head {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 140px;
-}
-@media screen and (max-width: 768px) {
-  section.index__morewithless .index__morewithless__head {
-    margin-bottom: 30px;
-  }
-}
-section.index__morewithless .index__morewithless__head p {
-  text-align: center;
-  font: normal normal normal 18px/23px Muli;
-  letter-spacing: 0px;
-  color: #333333;
-  text-transform: uppercase;
-  opacity: 1;
-  margin-bottom: 9px;
-}
-@media screen and (max-width: 768px) {
-  section.index__morewithless .index__morewithless__head p {
-    font: normal normal normal 16px/20px Muli;
-    letter-spacing: 0px;
-    color: #333333;
-    text-transform: uppercase;
-    opacity: 1;
-  }
-}
-section.index__morewithless .index__morewithless__head h3 {
-  text-align: center;
-  font: normal normal 800 30px/38px Muli;
-  letter-spacing: 0px;
-  color: #333333;
-  opacity: 1;
-}
-@media screen and (max-width: 768px) {
-  section.index__morewithless .index__morewithless__head h3 {
-    font: normal normal 800 22px/28px Muli;
-    letter-spacing: 0px;
-    color: #333333;
-    opacity: 1;
-    margin-bottom: 30px;
-  }
-}
-section.index__morewithless .index__morewithless__head hr {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  section.index__morewithless .index__morewithless__head hr {
-    display: block;
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-}
 section.index__morewithless .index__morewithless__wrap {
   width: 100%;
   display: flex;
@@ -81,12 +21,12 @@ section.index__morewithless .index__morewithless__wrap {
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton__btn {
-  border: 1px solid #2EC9AD;
+  border: 1px solid #2ec9ad;
   border-radius: 40px;
   opacity: 1;
   font: normal normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #2EC9AD;
+  color: #2ec9ad;
   opacity: 1;
   padding: 13px 30px;
   transition: all 0.3s ease;
@@ -100,7 +40,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
     padding: 7px 30px;
     font: normal normal bold 14px/18px Muli;
     letter-spacing: 0px;
-    color: #2EC9AD;
+    color: #2ec9ad;
     opacity: 1;
   }
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton__btn:first-of-type {
@@ -111,8 +51,8 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton__btn:hover {
-  color: #FFFFFF;
-  background: #2EC9AD;
+  color: #ffffff;
+  background: #2ec9ad;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton {
   flex: 1;
@@ -199,24 +139,24 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover {
-  background: #005B9D 0% 0% no-repeat padding-box;
+  background: #005b9d 0% 0% no-repeat padding-box;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
   transform: scale(0.9);
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .invert-collor path {
-  fill: #005B9D;
+  fill: #005b9d;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .spec .color {
-  fill: #005B9D;
+  fill: #005b9d;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .lock path {
   transition: all 0.3s ease;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text h3 {
   transform: translate(0, 0%);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow {
   color: white;
@@ -234,7 +174,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   align-self: center;
   justify-content: center;
   align-items: center;
-  background: #005B9D 0% 0% no-repeat padding-box;
+  background: #005b9d 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 3px #00000033;
   max-width: 68px;
   max-height: 68px;
@@ -302,14 +242,14 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
   font: normal normal 300 16px/20px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
     font: normal normal 300 13px/16px Muli;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 1;
   }
 }
@@ -318,7 +258,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   right: 25px;
   top: 50%;
   transform: translate(0px, -50%);
-  color: #005B9D;
+  color: #005b9d;
   font-size: 20px;
   transition: all 0.3s ease;
 }

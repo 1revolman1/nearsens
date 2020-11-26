@@ -1,125 +1,126 @@
 @import '../../../mixins/media';
 
-section.index__reviews{
-    display: flex;
-    flex-direction: column;
-    // margin-bottom: 80px;
+section.index__reviews {
+  display: flex;
+  flex-direction: column;
+  // margin-bottom: 80px;
+  // @include media-tablet {
+  //     margin-bottom: 80px;
+  // }
+  .index__reviews__head {
+    margin-bottom: 60.5px;
+    h3 {
+      text-align: center;
+      font: normal normal 300 18px/23px Muli;
+      letter-spacing: 0px;
+      color: #333333;
+      opacity: 1;
+      padding-bottom: 60.5px;
+      @include media-tablet {
+        font: normal normal 300 16px/20px Muli;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+        padding-bottom: 30px;
+      }
+    }
+    hr {
+      margin: 0 auto;
+      width: 150px;
+    }
     @include media-tablet {
-        margin-bottom: 80px;
-    } 
-    .index__reviews__head{
-        margin-bottom: 60.5px; 
-        h3{
-            text-align: center;
-            font: normal normal 300 18px/23px Muli;
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+  }
+  .index__reviews__content {
+    @include media-tablet {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .index__reviews__content__element {
+      max-width: 846px;
+      margin: 0 auto;
+      h3 {
+        text-align: center;
+        font: normal normal 800 26px/33px Muli;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+        margin-bottom: 10px;
+        @include media-tablet {
+          font: normal normal 800 22px/28px Muli;
+          letter-spacing: 0px;
+          color: #333333;
+          opacity: 1;
+          margin-bottom: 5px;
+        }
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 33px;
+        font-size: 18px;
+        i {
+          color: #ffb600;
+        }
+        @include media-tablet {
+          margin-bottom: 30px;
+        }
+      }
+      .index__reviews__content__element__text {
+        p,
+        q {
+          text-align: center;
+          font: normal normal bold 20px/25px Muli;
+          letter-spacing: 0px;
+          color: #333333;
+          opacity: 1;
+          margin-bottom: 7px;
+          quotes: '\201c''\201e';
+          &::before {
+            font-size: 30px;
+            position: relative;
+            right: 30px;
+            @include media-tablet {
+              right: 10px;
+            }
+          }
+          &::after {
+            font-size: 30px;
+            position: relative;
+            left: 30px;
+            @include media-tablet {
+              left: 10px;
+            }
+          }
+          @include media-tablet {
+            font: normal normal bold 16px/20px Muli;
             letter-spacing: 0px;
             color: #333333;
             opacity: 1;
-            padding-bottom: 60.5px;  
-            @include media-tablet {
-                font: normal normal 300 16px/20px Muli;
-                letter-spacing: 0px;
-                color: #333333;
-                opacity: 1;
-                padding-bottom: 30px; 
-            }         
+            margin-bottom: 30px;
+          }
         }
-        hr{
-            margin:0 auto;
-            width: 150px;
+        span {
+          text-align: center;
+          margin: 0;
+          font: normal normal 300 16px/20px Muli;
+          letter-spacing: 0px;
+          color: #333333;
+          opacity: 1;
+          @include media-tablet {
+            font: normal normal 300 14px/18px Muli;
+            letter-spacing: 0px;
+            color: #333333;
+            opacity: 1;
+          }
         }
-        @include media-tablet {
-            width: 90%;
-            margin: 0 auto;
-            margin-bottom: 30px; 
-        } 
+      }
     }
-    .index__reviews__content{
-        @include media-tablet {
-            width: 90%;
-            margin: 0 auto;
-        } 
-        .index__reviews__content__element{
-            max-width: 846px;
-            margin: 0 auto;
-            h3{
-                text-align: center;
-                font: normal normal 800 26px/33px Muli;
-                letter-spacing: 0px;
-                color: #333333;
-                opacity: 1;
-                margin-bottom: 10px;
-                @include media-tablet {
-                    font: normal normal 800 22px/28px Muli;
-                    letter-spacing: 0px;
-                    color: #333333;
-                    opacity: 1;
-                    margin-bottom: 5px;
-                } 
-            }
-            span{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 auto;
-                text-align: center;
-                margin-bottom: 33px;
-                font-size: 18px;
-                i{
-                    color: #FFB600;
-                }
-                @include media-tablet {
-                    margin-bottom: 30px;
-                } 
-            }
-            .index__reviews__content__element__text{
-                p,q{
-                    text-align: center;   
-                    font: normal normal bold 20px/25px Muli;
-                    letter-spacing: 0px;
-                    color: #333333;
-                    opacity: 1;
-                    margin-bottom: 7px;
-                    quotes: "\201c" "\201e";
-                    &::before{
-                        font-size:30px;
-                        position: relative;
-                        right: 30px;
-                        @include media-tablet {
-                            right: 10px;
-                        } 
-                    }
-                    &::after{
-                        font-size:30px;
-                        position: relative;
-                        left: 30px;
-                        @include media-tablet {
-                            left: 10px;
-                        } 
-                    }
-                    @include media-tablet {
-                        font: normal normal bold 16px/20px Muli;
-                        letter-spacing: 0px;
-                        color: #333333;
-                        opacity: 1;
-                        margin-bottom: 30px;
-                    } 
-                }
-                span{
-                    text-align: center;
-                    margin: 0;
-                    font: normal normal 300 16px/20px Muli;
-                    letter-spacing: 0px;
-                    color: #333333;
-                    opacity: 1;
-                    @include media-tablet {
-                        font: normal normal 300 14px/18px Muli;
-                        letter-spacing: 0px;
-                        color: #333333;
-                        opacity: 1;
-                    } 
-                }
-            }
-        }
-    }
+  }
 }

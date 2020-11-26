@@ -39,6 +39,7 @@ var useHomePage = function useHomePage() {
           // })
 
           document.querySelector('.index-page-container').classList.add('transform-block');
+          document.querySelector('.index__parallax__text').classList.add('transform-block');
           setTimeout(function () {
             $('body').removeClass('stop-scrolling');
           }, 1000);
@@ -117,6 +118,7 @@ var useHomePage = function useHomePage() {
     };
 
     video.pause();
+    video.removeAttribute('controls');
     var options = {
       root: null,
       //root

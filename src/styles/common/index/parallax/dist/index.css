@@ -3,6 +3,7 @@ section.index__parallax {
   user-select: none;
 }
 section.index__parallax * {
+  pointer-events: none;
   user-select: none;
 }
 section.index__parallax::after {
@@ -72,6 +73,9 @@ section.index__parallax #scene::before {
 }
 section.index__parallax #scene .last-mount {
   transition: transform 1s ease;
+}
+section.index__parallax #scene .last-mount img {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   section.index__parallax #scene .last-mount img {
@@ -277,4 +281,100 @@ section.index__parallax #scene .shadow.shadow-4 {
 section.index__parallax #scene .shadow.shadow-5 {
   bottom: 10%;
   left: 20%;
+}
+section.index__parallax .index__parallax__text {
+  opacity: 0;
+  z-index: 1;
+  transition: all 1s ease;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+section.index__parallax .index__parallax__text.transform-block {
+  opacity: 1;
+  transform: translate(-50%, -5%);
+}
+@media screen and (max-width: 1100px) {
+  section.index__parallax .index__parallax__text.transform-block {
+    transform: translate(-50%, -5%);
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.index__parallax .index__parallax__text.transform-block {
+    transform: translate(0, -5%);
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.index__parallax .index__parallax__text {
+    position: relative;
+    top: -70px;
+    left: inherit;
+    transform: translate(0%, 100%);
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax .index__parallax__text {
+    opacity: 1;
+    margin-bottom: 30px;
+    transform: translate(0%, -5%);
+  }
+}
+@media screen and (max-width: 425px) {
+  section.index__parallax .index__parallax__text {
+    top: -60px;
+    transform: translate(0%, -5%);
+  }
+}
+section.index__parallax .index__parallax__text p {
+  text-align: center;
+  font: normal normal normal 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax .index__parallax__text p {
+    font: normal normal normal 16px/20px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+}
+section.index__parallax .index__parallax__text h3 {
+  text-align: center;
+  font: normal normal 800 30px/38px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax .index__parallax__text h3 {
+    font: normal normal 800 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    margin-bottom: 30px;
+  }
+}
+section.index__parallax .index__parallax__text hr {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax .index__parallax__text hr {
+    display: block;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }

@@ -93,9 +93,8 @@ $(document).ready(() => {
   headerJS();
   footerJS();
 
-  if (holiday_event) useHolidayFunc();
-
-  switch (true) {
+  if (typeof holiday_event != undefined) useHolidayFunc();
+  switch (typeof typePage != undefined) {
     case typePage === 'usecase_list':
       useCasesList();
       break;

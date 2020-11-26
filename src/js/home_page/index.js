@@ -36,6 +36,9 @@ export const useHomePage = function () {
           document
             .querySelector('.index-page-container')
             .classList.add('transform-block');
+          document
+            .querySelector('.index__parallax__text')
+            .classList.add('transform-block');
           setTimeout(() => {
             $('body').removeClass('stop-scrolling');
           }, 1000);
@@ -106,6 +109,7 @@ export const useHomePage = function () {
 
   if (video !== null && typeof video !== 'undefined') {
     video.pause();
+    video.removeAttribute('controls');
     function onScrollChange(changes, observer) {
       changes.forEach((change) => {
         if (change.intersectionRatio === 0) {

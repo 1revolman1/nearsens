@@ -4,6 +4,7 @@ section.index__parallax {
   user-select: none;
 }
 section.index__parallax * {
+  pointer-events: none;
   user-select: none;
 }
 section.index__parallax::after {
@@ -13,7 +14,7 @@ section.index__parallax::after {
   left: 0;
   width: 100%;
   height: 16%;
-  background: transparent linear-gradient(180deg, #FFFFFF 32%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #ffffff 32%, #ffffff00 100%) 0% 0% no-repeat padding-box;
   z-index: 1;
 }
 @media screen and (max-width: 768px) {
@@ -27,7 +28,7 @@ section.index__parallax::before {
   bottom: 0;
   width: 100%;
   height: 42%;
-  background: transparent linear-gradient(0deg, #FFFFFF 42%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(0deg, #ffffff 42%, #ffffff00 100%) 0% 0% no-repeat padding-box;
   z-index: 1;
 }
 @media screen and (max-width: 768px) {
@@ -36,6 +37,8 @@ section.index__parallax::before {
   }
 }
 section.index__parallax #scene {
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -46,7 +49,7 @@ section.index__parallax #scene::after {
   left: 0;
   width: 20%;
   height: 100%;
-  background: transparent linear-gradient(90deg, #FFFFFF 30%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat padding-box;
   z-index: 1;
 }
 @media screen and (max-width: 768px) {
@@ -61,7 +64,7 @@ section.index__parallax #scene::before {
   width: 20%;
   height: 100%;
   transform: scale(-1);
-  background: transparent linear-gradient(90deg, #FFFFFF 30%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat padding-box;
   z-index: 1;
 }
 @media screen and (max-width: 768px) {
@@ -71,6 +74,9 @@ section.index__parallax #scene::before {
 }
 section.index__parallax #scene .last-mount {
   transition: transform 1s ease;
+}
+section.index__parallax #scene .last-mount img {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   section.index__parallax #scene .last-mount img {
@@ -93,8 +99,13 @@ section.index__parallax #scene .first-mount-layer {
 }
 @media screen and (max-width: 768px) {
   section.index__parallax #scene .first-mount-layer {
-    bottom: -17%;
+    bottom: -14%;
     transform: scale(3);
+  }
+}
+@media screen and (max-width: 700px) {
+  section.index__parallax #scene .first-mount-layer {
+    bottom: -10%;
   }
 }
 @media screen and (max-width: 670px) {
@@ -102,14 +113,29 @@ section.index__parallax #scene .first-mount-layer {
     bottom: -5%;
   }
 }
+@media screen and (max-width: 550px) {
+  section.index__parallax #scene .first-mount-layer {
+    bottom: 3%;
+  }
+}
+@media screen and (max-width: 470px) {
+  section.index__parallax #scene .first-mount-layer {
+    bottom: 10%;
+  }
+}
 @media screen and (max-width: 425px) {
   section.index__parallax #scene .first-mount-layer {
     bottom: 14%;
   }
 }
+@media screen and (max-width: 400px) {
+  section.index__parallax #scene .first-mount-layer {
+    bottom: 16%;
+  }
+}
 @media screen and (max-width: 360px) {
   section.index__parallax #scene .first-mount-layer {
-    bottom: 18%;
+    bottom: 21%;
   }
 }
 section.index__parallax #scene .middle-mount-layer {
@@ -150,6 +176,11 @@ section.index__parallax #scene .text-container h3 {
     opacity: 1;
   }
 }
+@media screen and (max-width: 1100px) {
+  section.index__parallax #scene .text-container h3 {
+    font: normal normal 800 25px/28px Muli;
+  }
+}
 section.index__parallax #scene .text-container p {
   font: normal normal normal 26px/33px Muli;
   letter-spacing: 0px;
@@ -164,32 +195,64 @@ section.index__parallax #scene .text-container p {
     opacity: 1;
   }
 }
+@media screen and (max-width: 1100px) {
+  section.index__parallax #scene .text-container p {
+    font: normal normal normal 17px/23px Muli;
+  }
+}
 section.index__parallax #scene .gadget {
   position: absolute;
   transition: bottom 1s ease;
   bottom: -20%;
-  right: 15%;
-  width: 25%;
+  right: 22%;
+  width: 27%;
 }
 @media screen and (max-width: 768px) {
   section.index__parallax #scene .gadget {
-    width: 53%;
-    bottom: 18%;
+    width: 49%;
+    right: 15%;
+    bottom: 22%;
   }
 }
 @media screen and (max-width: 670px) {
   section.index__parallax #scene .gadget {
-    bottom: 26%;
+    bottom: 24%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 605px) {
   section.index__parallax #scene .gadget {
-    bottom: 18%;
+    bottom: 24%;
+  }
+}
+@media screen and (max-width: 550px) {
+  section.index__parallax #scene .gadget {
+    bottom: 26%;
+  }
+}
+@media screen and (max-width: 470px) {
+  section.index__parallax #scene .gadget {
+    bottom: 32%;
+    width: 58%;
   }
 }
 @media screen and (max-width: 425px) {
   section.index__parallax #scene .gadget {
-    bottom: 31%;
+    bottom: 32%;
+    width: 66%;
+    right: 10%;
+  }
+}
+@media screen and (max-width: 400px) {
+  section.index__parallax #scene .gadget {
+    bottom: 33%;
+  }
+}
+@media screen and (max-width: 360px) {
+  section.index__parallax #scene .gadget {
+    bottom: 35%;
+    right: 10%;
+    width: 65%;
   }
 }
 section.index__parallax #scene .shadow {
@@ -220,6 +283,102 @@ section.index__parallax #scene .shadow.shadow-5 {
   bottom: 10%;
   left: 20%;
 }
+section.index__parallax .index__parallax__text {
+  opacity: 0;
+  z-index: 1;
+  transition: all 1s ease;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+section.index__parallax .index__parallax__text.transform-block {
+  opacity: 1;
+  transform: translate(-50%, -5%);
+}
+@media screen and (max-width: 1100px) {
+  section.index__parallax .index__parallax__text.transform-block {
+    transform: translate(-50%, -5%);
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.index__parallax .index__parallax__text.transform-block {
+    transform: translate(0, -5%);
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.index__parallax .index__parallax__text {
+    position: relative;
+    top: -70px;
+    left: inherit;
+    transform: translate(0%, 100%);
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax .index__parallax__text {
+    opacity: 1;
+    margin-bottom: 30px;
+    transform: translate(0%, -5%);
+  }
+}
+@media screen and (max-width: 425px) {
+  section.index__parallax .index__parallax__text {
+    top: -60px;
+    transform: translate(0%, -5%);
+  }
+}
+section.index__parallax .index__parallax__text p {
+  text-align: center;
+  font: normal normal normal 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax .index__parallax__text p {
+    font: normal normal normal 16px/20px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+}
+section.index__parallax .index__parallax__text h3 {
+  text-align: center;
+  font: normal normal 800 30px/38px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax .index__parallax__text h3 {
+    font: normal normal 800 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    margin-bottom: 30px;
+  }
+}
+section.index__parallax .index__parallax__text hr {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax .index__parallax__text hr {
+    display: block;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
 
 section.index__morewithless {
   display: flex;
@@ -230,66 +389,6 @@ section.index__morewithless {
   section.index__morewithless {
     width: 90%;
     margin: 0 auto;
-  }
-}
-section.index__morewithless .index__morewithless__head {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 140px;
-}
-@media screen and (max-width: 768px) {
-  section.index__morewithless .index__morewithless__head {
-    margin-bottom: 30px;
-  }
-}
-section.index__morewithless .index__morewithless__head p {
-  text-align: center;
-  font: normal normal normal 18px/23px Muli;
-  letter-spacing: 0px;
-  color: #333333;
-  text-transform: uppercase;
-  opacity: 1;
-  margin-bottom: 9px;
-}
-@media screen and (max-width: 768px) {
-  section.index__morewithless .index__morewithless__head p {
-    font: normal normal normal 16px/20px Muli;
-    letter-spacing: 0px;
-    color: #333333;
-    text-transform: uppercase;
-    opacity: 1;
-  }
-}
-section.index__morewithless .index__morewithless__head h3 {
-  text-align: center;
-  font: normal normal 800 30px/38px Muli;
-  letter-spacing: 0px;
-  color: #333333;
-  opacity: 1;
-}
-@media screen and (max-width: 768px) {
-  section.index__morewithless .index__morewithless__head h3 {
-    font: normal normal 800 22px/28px Muli;
-    letter-spacing: 0px;
-    color: #333333;
-    opacity: 1;
-    margin-bottom: 30px;
-  }
-}
-section.index__morewithless .index__morewithless__head hr {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  section.index__morewithless .index__morewithless__head hr {
-    display: block;
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
   }
 }
 section.index__morewithless .index__morewithless__wrap {
@@ -304,12 +403,12 @@ section.index__morewithless .index__morewithless__wrap {
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton__btn {
-  border: 1px solid #2EC9AD;
+  border: 1px solid #2ec9ad;
   border-radius: 40px;
   opacity: 1;
   font: normal normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #2EC9AD;
+  color: #2ec9ad;
   opacity: 1;
   padding: 13px 30px;
   transition: all 0.3s ease;
@@ -323,7 +422,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
     padding: 7px 30px;
     font: normal normal bold 14px/18px Muli;
     letter-spacing: 0px;
-    color: #2EC9AD;
+    color: #2ec9ad;
     opacity: 1;
   }
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton__btn:first-of-type {
@@ -334,8 +433,8 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton__btn:hover {
-  color: #FFFFFF;
-  background: #2EC9AD;
+  color: #ffffff;
+  background: #2ec9ad;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithbutton {
   flex: 1;
@@ -422,24 +521,24 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover {
-  background: #005B9D 0% 0% no-repeat padding-box;
+  background: #005b9d 0% 0% no-repeat padding-box;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
   transform: scale(0.9);
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .invert-collor path {
-  fill: #005B9D;
+  fill: #005b9d;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .spec .color {
-  fill: #005B9D;
+  fill: #005b9d;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .lock path {
   transition: all 0.3s ease;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text h3 {
   transform: translate(0, 0%);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow {
   color: white;
@@ -457,7 +556,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   align-self: center;
   justify-content: center;
   align-items: center;
-  background: #005B9D 0% 0% no-repeat padding-box;
+  background: #005b9d 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 3px #00000033;
   max-width: 68px;
   max-height: 68px;
@@ -525,14 +624,14 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
   font: normal normal 300 16px/20px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
     font: normal normal 300 13px/16px Muli;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 1;
   }
 }
@@ -541,7 +640,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   right: 25px;
   top: 50%;
   transform: translate(0px, -50%);
-  color: #005B9D;
+  color: #005b9d;
   font-size: 20px;
   transition: all 0.3s ease;
 }
@@ -1036,11 +1135,22 @@ section.index__reviews .index__reviews__content .index__reviews__content__elemen
   position: relative;
   z-index: 2;
   opacity: 0;
+  padding-top: 60px;
+}
+@media screen and (max-width: 1000px) {
+  .index-page-container {
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .index-page-container {
     opacity: 1;
-    transform: translate(0, -5%);
+    transform: translate(0, -3%);
+  }
+}
+@media screen and (max-width: 425px) {
+  .index-page-container {
+    transform: translate(0, -3%);
   }
 }
 .index-page-container.transform-block {
