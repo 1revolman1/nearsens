@@ -109,7 +109,6 @@ export const useHomePage = function () {
 
   if (video !== null && typeof video !== 'undefined') {
     video.pause();
-    video.removeAttribute('controls');
     function onScrollChange(changes, observer) {
       changes.forEach((change) => {
         if (change.intersectionRatio === 0) {

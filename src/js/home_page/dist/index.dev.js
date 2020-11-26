@@ -118,7 +118,6 @@ var useHomePage = function useHomePage() {
     };
 
     video.pause();
-    video.removeAttribute('controls');
     var options = {
       root: null,
       //root
