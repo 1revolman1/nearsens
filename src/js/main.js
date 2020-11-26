@@ -38,7 +38,8 @@ $(document).ready(() => {
     const target = document.querySelector('header.header');
     function onScrollChange(changes, observer) {
       changes.forEach((change) => {
-        if (change.intersectionRatio === 0) {
+        console.log(change.intersectionRatio);
+        if (Math.floor(change.intersectionRatio) === 0) {
           const event = new CustomEvent('header', {
             detail: {
               inViewPort: false,
@@ -60,6 +61,7 @@ $(document).ready(() => {
     const options = {
       root: null, //root
       rootMargin: '0%',
+      threshold: 1,
     };
     const observer = new IntersectionObserver(onScrollChange, options);
     if (target) observer.observe(target);

@@ -1,7 +1,13 @@
 @charset "UTF-8";
 section.index__parallax {
   position: relative;
+  top: -70px;
   user-select: none;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax {
+    top: inherit;
+  }
 }
 section.index__parallax * {
   pointer-events: none;
@@ -295,7 +301,7 @@ section.index__parallax .index__parallax__text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 section.index__parallax .index__parallax__text.transform-block {
   opacity: 1;
@@ -995,11 +1001,6 @@ section.index__reviews {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 768px) {
-  section.index__reviews {
-    margin-bottom: 80px;
-  }
-}
 section.index__reviews .index__reviews__head {
   margin-bottom: 60.5px;
 }
@@ -1068,14 +1069,15 @@ section.index__reviews .index__reviews__content .index__reviews__content__elemen
   font-size: 18px;
 }
 section.index__reviews .index__reviews__content .index__reviews__content__element span i {
-  color: #FFB600;
+  color: #ffb600;
 }
 @media screen and (max-width: 768px) {
   section.index__reviews .index__reviews__content .index__reviews__content__element span {
     margin-bottom: 30px;
   }
 }
-section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q {
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p,
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q {
   text-align: center;
   font: normal normal bold 20px/25px Muli;
   letter-spacing: 0px;
@@ -1084,28 +1086,33 @@ section.index__reviews .index__reviews__content .index__reviews__content__elemen
   margin-bottom: 7px;
   quotes: "“" "„";
 }
-section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::before, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::before {
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::before,
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::before {
   font-size: 30px;
   position: relative;
   right: 30px;
 }
 @media screen and (max-width: 768px) {
-  section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::before, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::before {
+  section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::before,
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::before {
     right: 10px;
   }
 }
-section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::after, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::after {
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::after,
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::after {
   font-size: 30px;
   position: relative;
   left: 30px;
 }
 @media screen and (max-width: 768px) {
-  section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::after, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::after {
+  section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p::after,
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q::after {
     left: 10px;
   }
 }
 @media screen and (max-width: 768px) {
-  section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p, section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q {
+  section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text p,
+section.index__reviews .index__reviews__content .index__reviews__content__element .index__reviews__content__element__text q {
     font: normal normal bold 16px/20px Muli;
     letter-spacing: 0px;
     color: #333333;
@@ -1133,6 +1140,7 @@ section.index__reviews .index__reviews__content .index__reviews__content__elemen
 .index-page-container {
   transition: all 1s ease;
   position: relative;
+  top: -70px;
   z-index: 2;
   opacity: 0;
   padding-top: 60px;
@@ -1140,6 +1148,7 @@ section.index__reviews .index__reviews__content .index__reviews__content__elemen
 @media screen and (max-width: 1000px) {
   .index-page-container {
     padding-top: 0;
+    top: inherit;
   }
 }
 @media screen and (max-width: 768px) {

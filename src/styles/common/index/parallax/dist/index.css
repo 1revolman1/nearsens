@@ -1,6 +1,12 @@
 section.index__parallax {
   position: relative;
+  top: -70px;
   user-select: none;
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax {
+    top: inherit;
+  }
 }
 section.index__parallax * {
   pointer-events: none;
@@ -294,7 +300,7 @@ section.index__parallax .index__parallax__text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 section.index__parallax .index__parallax__text.transform-block {
   opacity: 1;

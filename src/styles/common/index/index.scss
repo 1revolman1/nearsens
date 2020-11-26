@@ -9,12 +9,14 @@
 .index-page-container {
   transition: all 1s ease;
   position: relative;
+  top: -70px;
   z-index: 2;
   opacity: 0;
   // padding-top: 100px;
   padding-top: 60px;
   @media screen and (max-width: 1000px) {
     padding-top: 0;
+    top: inherit;
   }
   @include media-tablet {
     opacity: 1;

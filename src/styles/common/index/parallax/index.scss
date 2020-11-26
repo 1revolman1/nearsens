@@ -2,7 +2,11 @@
 
 section.index__parallax {
   position: relative;
+  top: -70px;
   user-select: none;
+  @include media-tablet {
+    top: inherit;
+  }
   * {
     pointer-events: none;
     user-select: none;
@@ -278,7 +282,8 @@ section.index__parallax {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+    // margin-bottom: 70px;
     // margin-bottom: 140px;
     &.transform-block {
       opacity: 1;
