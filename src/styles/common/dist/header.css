@@ -1204,6 +1204,9 @@ nav.nav .second-menu .shop-menu .shop-cart.dropup .droupup-block-info.unshow {
   visibility: hidden;
   opacity: 0;
 }
+nav.nav .second-menu .shop-menu .shop-cart.dropup .droupup-block-info.unshow .show-info {
+  visibility: hidden;
+}
 nav.nav .second-menu .shop-menu .shop-cart.dropup .droupup-block-info:hover {
   visibility: hidden;
   opacity: 0;
@@ -1367,7 +1370,7 @@ nav.nav .second-menu .shop-menu .shop-cart.dropup .dropdown .shop-content-summar
 }
 nav.nav .second-menu .shop-menu .shop-cart .shop-cart-logo {
   cursor: pointer;
-  align-items: flex-end;
+  align-items: center;
   display: flex;
 }
 nav.nav .second-menu .shop-menu .shop-cart .shop-cart-logo:hover ~ .droupup-block .dropdown,

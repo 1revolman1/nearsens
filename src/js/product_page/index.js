@@ -14,16 +14,10 @@ function cartAnim() {
   const container = $(this).parents(
     '.productlist__products-container-element-controllers-manipulator'
   );
-  if (
-    Number(
-      container
-        .find(
-          '.productlist__products-container-element-controllers-counter span'
-        )
-        .text()
-    ) === 0
-  )
-    return null;
+  const textContainer = container.find(
+    '.productlist__products-container-element-controllers-counter span'
+  );
+  if (Number(textContainer.text()) <= 0) return null;
   //SHOW SUCCESS BUYING ICON
   $(this)
     .parents('.productlist__products-container-element-controllers-manipulator')
@@ -59,11 +53,23 @@ function cartAnim() {
     //SHAKE ANIM
 
     setTimeout(() => {
-      $(this)
-        .parents(
-          '.productlist__products-container-element-controllers-manipulator'
+      const containerShown = $(this).parents(
+        '.productlist__products-container-element-controllers-manipulator'
+      );
+      containerShown.removeClass('show-success');
+      textContainer.text('1');
+      containerShown
+        .find(
+          '.productlist__products-container-element-controllers-counter .minus'
         )
-        .removeClass('show-success');
+        .attr('disabled', true);
+      setTimeout(() => {
+        containerShown
+          .find(
+            '.productlist__products-container-element-controllers-successbuying .desktop'
+          )
+          .text('1 new added to cart');
+      }, 500);
       infoSuccessHeader.addClass('unshow');
     }, 2000);
 
@@ -120,25 +126,34 @@ export const useProductPage = function main() {
       const value = elm.querySelector(
         '.productlist__products-container-element-controllers-counter span'
       ).textContent;
-      if (+value >= 1) {
-        elm.querySelectorAll('button').forEach((e) => {
-          e.removeAttribute('disabled');
-        });
-        elm
-          .querySelector(
-            '.productlist__products-container-element-controllers-shop button'
-          )
-          .removeAttribute('disabled');
-      } else {
+      if (+value <= 1) {
         elm.querySelectorAll('.minus').forEach((e) => {
           e.setAttribute('disabled', 'disabled');
         });
-        elm
-          .querySelector(
-            '.productlist__products-container-element-controllers-shop button'
-          )
-          .setAttribute('disabled', 'disabled');
+      } else {
+        elm.querySelectorAll('button').forEach((e) => {
+          e.removeAttribute('disabled');
+        });
       }
+      // if (+value >= 1) {
+      //   elm.querySelectorAll('button').forEach((e) => {
+      //     e.removeAttribute('disabled');
+      //   });
+      //   elm
+      //     .querySelector(
+      //       '.productlist__products-container-element-controllers-shop button'
+      //     )
+      //     .removeAttribute('disabled');
+      // } else {
+      //   elm.querySelectorAll('.minus').forEach((e) => {
+      //     e.setAttribute('disabled', 'disabled');
+      //   });
+      //   elm
+      //     .querySelector(
+      //       '.productlist__products-container-element-controllers-shop button'
+      //     )
+      //     .setAttribute('disabled', 'disabled');
+      // }
     });
 
   $('.productlist__products-container-element-controllers-shop button').on(
@@ -155,16 +170,16 @@ export const useProductPage = function main() {
       const counter = container.find('span');
       let value = Number(counter.text());
       value -= 1;
-      if (value === 0) {
+      if (value === 1) {
         $(this).attr('disabled', true);
-        $(this)
-          .parents(
-            '.productlist__products-container-element-controllers-manipulator'
-          )
-          .find(
-            '.productlist__products-container-element-controllers-shop button'
-          )
-          .attr('disabled', true);
+        // $(this)
+        //   .parents(
+        //     '.productlist__products-container-element-controllers-manipulator'
+        //   )
+        //   .find(
+        //     '.productlist__products-container-element-controllers-shop button'
+        //   )
+        //   .attr('disabled', true);
       }
       const finalAdd = container
         .parents(
@@ -184,7 +199,7 @@ export const useProductPage = function main() {
       const counter = container.find('span');
       let value = Number(counter.text());
       value += 1;
-      if (value >= 1) {
+      if (value >= 2) {
         container.find('.minus').attr('disabled', false);
         $(this)
           .parents(
@@ -246,4 +261,33 @@ export const useProductPage = function main() {
   const observer = new IntersectionObserver(onScrollChange, options);
   const target = document.querySelector('section.productpage__pageheader');
   if (target) observer.observe(target);
+
+  //SLICk
+
+  // window.innerWidth >= 768 &&
+  $('.productlist__products-container').slick({
+    slidesToShow: 3,
+    speed: 500,
+    dots: true,
+    cssEase: 'linear',
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: 'unslick',
+      },
+    ],
+  });
 };

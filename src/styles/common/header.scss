@@ -1303,6 +1303,9 @@ nav.nav {
             &.unshow {
               visibility: hidden;
               opacity: 0;
+              .show-info {
+                visibility: hidden;
+              }
             }
             &:hover {
               visibility: hidden;
@@ -1480,7 +1483,7 @@ nav.nav {
         }
         .shop-cart-logo {
           cursor: pointer;
-          align-items: flex-end;
+          align-items: center;
           display: flex;
         }
 
