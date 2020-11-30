@@ -18,11 +18,14 @@ header.header
         img(class="logo-img" src="img/Nearsens - Logotype - Seul.svg", alt="logo")
       .phone-information
         a(href="tel:+33930088008").logo-phone
-          img(class="logo-phone" src="img/call-white.svg", alt="logo")
+          //- include header/svg-call
+          i.fas.fa-phone-alt
+          //- <i class="far fa-phone-alt"></i>
+          //- img(class="logo-phone" src="img/call-white.svg", alt="logo")
         .text-content
           .phone-content
             a(href="tel:+33930088008") +339 3008 8008
-          .text-content
+          a(href="tel:+33930088008").text-content
             p.second Click to call
             p.first Monday to Friday - 9 am to 7 pm         
     .second-block-in-menu
@@ -128,6 +131,7 @@ nav.nav
             span Build your solution
         .phone-number
           a(href="tel:+33930088008") 
+            //- include header/svg-call
             img(class="logo-phone" src="img/call-white-all.svg", alt="logo") 
             span +339 3008 8008
           .text-content

@@ -108,7 +108,7 @@ header.header.holiday-header {
 }
 header.header .first-menu {
   border-bottom: 1px solid #33709c;
-  padding: 27px 0;
+  padding: 23px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -133,14 +133,30 @@ header.header .first-menu .first-block-in-menu {
   }
 }
 header.header .first-menu .first-block-in-menu > a {
+  position: fixed;
+  top: 29px;
+  z-index: 9;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  transition: top 0.2s ease;
+}
+@media screen and (max-width: 768px) {
+  header.header .first-menu .first-block-in-menu > a {
+    position: initial;
+  }
+}
+header.header .first-menu .first-block-in-menu > a.after-scroll {
+  top: 25px;
+}
+header.header .first-menu .first-block-in-menu > a.after-scroll img {
+  max-width: 89px;
 }
 header.header .first-menu .first-block-in-menu > a img {
   max-width: 160px;
   height: auto;
   object-fit: contain;
+  transition: max-width 0.2s ease;
 }
 header.header .first-menu .first-block-in-menu img {
   max-width: 160px;
@@ -148,7 +164,7 @@ header.header .first-menu .first-block-in-menu img {
   object-fit: contain;
 }
 header.header .first-menu .first-block-in-menu .phone-information {
-  margin-left: 7%;
+  margin-left: calc(7% + 159px);
   margin-bottom: -8px;
   display: flex;
   align-items: center;
@@ -156,9 +172,14 @@ header.header .first-menu .first-block-in-menu .phone-information {
 }
 header.header .first-menu .first-block-in-menu .phone-information .logo-phone {
   margin-top: -6px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
-header.header .first-menu .first-block-in-menu .phone-information .logo-phone img {
+header.header .first-menu .first-block-in-menu .phone-information .logo-phone i {
+  font-size: 25px;
+  color: white;
+}
+header.header .first-menu .first-block-in-menu .phone-information .logo-phone img,
+header.header .first-menu .first-block-in-menu .phone-information .logo-phone svg {
   width: 24px;
   height: 24px;
 }
@@ -446,6 +467,7 @@ header.header .first-menu .second-block-in-menu .cart-block {
   }
 }
 header.header .first-menu .second-block-in-menu .cart-block .shop-cart-logo {
+  align-items: flex-end;
   cursor: pointer;
   display: flex;
 }
@@ -717,7 +739,7 @@ nav.nav {
   }
 }
 nav.nav .second-menu {
-  padding: 45px 0;
+  padding: 20px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -783,16 +805,24 @@ nav.nav .second-menu .nav-menu {
 }
 nav.nav .second-menu .nav-menu ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: row;
+  padding-left: 0;
+  transition: all 0.2s ease;
 }
 @media screen and (max-width: 768px) {
   nav.nav .second-menu .nav-menu ul {
     flex-direction: column;
   }
 }
+nav.nav .second-menu .nav-menu ul.after-scroll {
+  padding-left: calc(3.9% + 89px);
+}
+nav.nav .second-menu .nav-menu ul.after-scroll li:nth-child(2) {
+  margin-left: 3.9%;
+}
 nav.nav .second-menu .nav-menu ul li {
-  margin: 0 2.5%;
+  margin: 0 3.9%;
   list-style-type: none;
 }
 nav.nav .second-menu .nav-menu ul li .in-viewport .logo-img {
@@ -824,7 +854,7 @@ nav.nav .second-menu .nav-menu ul li .logo-img ~ span {
 }
 @media screen and (max-width: 900px) {
   nav.nav .second-menu .nav-menu ul li {
-    margin: 0 1%;
+    margin: 0 3%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -836,10 +866,20 @@ nav.nav .second-menu .nav-menu ul li .logo-img ~ span {
 }
 nav.nav .second-menu .nav-menu ul li:first-of-type {
   margin-left: 0px;
+  display: none;
 }
 @media screen and (max-width: 768px) {
   nav.nav .second-menu .nav-menu ul li:first-of-type {
     margin: 0 25px;
+    display: initial;
+  }
+}
+nav.nav .second-menu .nav-menu ul li:nth-child(2) {
+  margin-left: 0;
+}
+@media screen and (max-width: 768px) {
+  nav.nav .second-menu .nav-menu ul li:nth-child(2) {
+    margin-left: 25px;
   }
 }
 nav.nav .second-menu .nav-menu ul li:last-of-type {
@@ -1327,6 +1367,7 @@ nav.nav .second-menu .shop-menu .shop-cart.dropup .dropdown .shop-content-summar
 }
 nav.nav .second-menu .shop-menu .shop-cart .shop-cart-logo {
   cursor: pointer;
+  align-items: flex-end;
   display: flex;
 }
 nav.nav .second-menu .shop-menu .shop-cart .shop-cart-logo:hover ~ .droupup-block .dropdown,

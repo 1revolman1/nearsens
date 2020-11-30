@@ -15,36 +15,37 @@ export const useHomePage = function () {
     const MiddleMountLayer = parallaxContainer.querySelector(
       '.middle-mount-layer'
     );
-    header.addEventListener('header', function ({ detail: { inViewPort } }) {
-      if (!inViewPort && !oneINIT) {
-        $('body').addClass('stop-scrolling');
-        oneINIT = true;
-        LastLayer.style.transform = 'scale(0.89)';
-        MiddleMountLayer.style.transform = 'scale(0.95)';
-        shadowOne.style.bottom = '15%';
-        shadowThree.style.bottom = '13%';
-        shadowFour.style.bottom = '15%';
-        shadowFive.style.bottom = '35%';
-        FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
-        setTimeout(() => {
-          textBlock.style.top = '15%';
-          gadgetBlock.style.bottom = '24%';
-          // $(".index-page-container").css({
-          //     opacity:"1",
-          //     transform:"translate(0,-150px)"
-          // })
-          document
-            .querySelector('.index-page-container')
-            .classList.add('transform-block');
-          document
-            .querySelector('.index__parallax__text')
-            .classList.add('transform-block');
-          setTimeout(() => {
-            $('body').removeClass('stop-scrolling');
-          }, 1000);
-        }, 1000);
-      }
-    });
+    // header.addEventListener('header', function ({ detail: { inViewPort } }) {
+    // if (!inViewPort && !oneINIT) {
+    // $('body').addClass('stop-scrolling');
+    oneINIT = true;
+    // LastLayer.style.transform = 'scale(0.89)';
+    // MiddleMountLayer.style.transform = 'scale(0.95)';
+    shadowOne.style.bottom = '15%';
+    shadowThree.style.bottom = '13%';
+    shadowFour.style.bottom = '15%';
+    shadowFive.style.bottom = '35%';
+    FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
+    setTimeout(() => {
+      textBlock.style.top = '15%';
+      gadgetBlock.style.bottom = '27%';
+      // gadgetBlock.style.bottom = '24%';
+      // $(".index-page-container").css({
+      //     opacity:"1",
+      //     transform:"translate(0,-150px)"
+      // })
+      document
+        .querySelector('.index-page-container')
+        .classList.add('transform-block');
+      document
+        .querySelector('.index__parallax__text')
+        .classList.add('transform-block');
+      // setTimeout(() => {
+      //   $('body').removeClass('stop-scrolling');
+      // }, 1000);
+    }, 1000);
+    // }
+    // });
   }
   const parallaxContainer = document.querySelector('.index__parallax');
   document
@@ -54,7 +55,7 @@ export const useHomePage = function () {
         .querySelector('.index__youtubeframe')
         .scrollIntoView({ block: 'center', behavior: 'smooth' });
     });
-  window.innerWidth >= 768 && Parallax(parallaxContainer);
+  window.innerWidth > 768 && Parallax(parallaxContainer);
   // function onYouTubeIframeAPIReady() {
   //     window.YT.ready(function() {
   //         window.player = new YT.Player("player-container", {

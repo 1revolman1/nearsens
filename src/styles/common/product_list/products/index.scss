@@ -91,7 +91,9 @@ section.productlist__products {
           grid-column: initial;
         }
         .productlist__products-container-element-imgcontainer {
-          flex: 0 1 25%;
+          // flex: 0 1 25%;
+          flex: 0 1 27%;
+          max-width: 333px;
           @include media-tablet {
             width: 100%;
             margin-bottom: 20.5px;
@@ -119,14 +121,26 @@ section.productlist__products {
           }
           .productlist__products-container-element-text {
             h4 {
-              font: normal normal normal 16px/20px Muli;
+              font: normal normal normal 26px/33px Muli;
               letter-spacing: 0px;
               color: #28373b;
+              opacity: 1;
+              @include media-tablet {
+                font: normal normal normal 16px/20px Muli;
+                letter-spacing: 0px;
+                color: #28373b;
+              }
             }
             p {
-              font: italic normal normal 14px/18px Muli;
+              font: italic normal normal 16px/20px Muli;
               letter-spacing: 0px;
               color: #6d7476;
+              opacity: 1;
+              @include media-tablet {
+                font: italic normal normal 14px/18px Muli;
+                letter-spacing: 0px;
+                color: #6d7476;
+              }
             }
           }
           .productlist__products-container-element-controllers {

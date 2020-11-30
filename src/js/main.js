@@ -32,19 +32,27 @@ $(document).ready(() => {
   }
 
   function headerJS() {
+    const menuList = document.querySelector('.nav-menu ul');
     const menuelm = document.querySelector(
       '.nav-menu ul li:first-of-type .active-link'
+    );
+    const logo = document.querySelector(
+      'header.header .first-block-in-menu > a'
     );
     const target = document.querySelector('header.header');
     function onScrollChange(changes, observer) {
       changes.forEach((change) => {
-        console.log(change.intersectionRatio);
         if (Math.floor(change.intersectionRatio) === 0) {
           const event = new CustomEvent('header', {
             detail: {
               inViewPort: false,
             },
           });
+          console.log('Header hidden');
+          if (window.innerWidth > 768) {
+            logo && logo.classList.add('after-scroll');
+            menuList && menuList.classList.add('after-scroll');
+          }
           target.dispatchEvent(event);
           menuelm && menuelm.classList.remove('in-viewport');
         } else {
@@ -53,6 +61,11 @@ $(document).ready(() => {
               inViewPort: true,
             },
           });
+          console.log('Header shown');
+          if (window.innerWidth > 768) {
+            logo && logo.classList.remove('after-scroll');
+            menuList && menuList.classList.remove('after-scroll');
+          }
           target.dispatchEvent(event);
           menuelm && menuelm.classList.add('in-viewport');
         }

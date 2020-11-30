@@ -1,6 +1,6 @@
 section.index__parallax {
   position: relative;
-  top: -70px;
+  top: -59px;
   user-select: none;
 }
 @media screen and (max-width: 768px) {
@@ -42,35 +42,40 @@ section.index__parallax::before {
   }
 }
 section.index__parallax #scene {
-  max-width: 1300px;
+  width: 100%;
+  max-width: 2500px;
   margin: 0 auto;
   display: flex;
   position: relative;
   overflow: hidden;
 }
-section.index__parallax #scene::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 20%;
-  height: 100%;
-  background: transparent linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat padding-box;
-  z-index: 1;
+@media screen and (min-width: 1900px) {
+  section.index__parallax #scene::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: transparent linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat padding-box;
+    z-index: 1;
+  }
 }
 @media screen and (max-width: 768px) {
   section.index__parallax #scene::after {
     display: none;
   }
 }
-section.index__parallax #scene::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 20%;
-  height: 100%;
-  transform: scale(-1);
-  background: transparent linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat padding-box;
-  z-index: 1;
+@media screen and (min-width: 1900px) {
+  section.index__parallax #scene::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    transform: scale(-1);
+    background: transparent linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat padding-box;
+    z-index: 1;
+  }
 }
 @media screen and (max-width: 768px) {
   section.index__parallax #scene::before {
@@ -78,7 +83,14 @@ section.index__parallax #scene::before {
   }
 }
 section.index__parallax #scene .last-mount {
+  max-height: 1200px;
   transition: transform 1s ease;
+}
+section.index__parallax #scene .last-mount::after {
+  content: "";
+}
+section.index__parallax #scene .last-mount::before {
+  content: "";
 }
 section.index__parallax #scene .last-mount img {
   width: 100%;
@@ -97,6 +109,7 @@ section.index__parallax #scene .container {
   height: 100%;
 }
 section.index__parallax #scene .first-mount-layer {
+  max-height: 535px;
   transform: scale(1.1) translate(40px, 0px);
   transition: transform 1.3s ease;
   position: absolute;
@@ -159,14 +172,22 @@ section.index__parallax #scene .middle-mount-layer {
 section.index__parallax #scene .text-container {
   position: absolute;
   transition: top 1s ease;
-  top: 60%;
-  left: 15%;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 @media screen and (max-width: 768px) {
   section.index__parallax #scene .text-container {
     padding-left: 40px;
     top: 5%;
     left: 0%;
+    width: initial;
+    margin: initial;
+    transform: initial;
   }
 }
 section.index__parallax #scene .text-container h3 {
@@ -176,6 +197,11 @@ section.index__parallax #scene .text-container h3 {
   color: #333333;
   opacity: 1;
 }
+@media screen and (max-width: 1100px) {
+  section.index__parallax #scene .text-container h3 {
+    font: normal normal 800 25px/28px Muli;
+  }
+}
 @media screen and (max-width: 768px) {
   section.index__parallax #scene .text-container h3 {
     font: normal normal 800 22px/28px Muli;
@@ -184,16 +210,16 @@ section.index__parallax #scene .text-container h3 {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1100px) {
-  section.index__parallax #scene .text-container h3 {
-    font: normal normal 800 25px/28px Muli;
-  }
-}
 section.index__parallax #scene .text-container p {
   font: normal normal normal 26px/33px Muli;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
+}
+@media screen and (max-width: 1100px) {
+  section.index__parallax #scene .text-container p {
+    font: normal normal normal 17px/23px Muli;
+  }
 }
 @media screen and (max-width: 768px) {
   section.index__parallax #scene .text-container p {
@@ -203,17 +229,13 @@ section.index__parallax #scene .text-container p {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1100px) {
-  section.index__parallax #scene .text-container p {
-    font: normal normal normal 17px/23px Muli;
-  }
-}
 section.index__parallax #scene .gadget {
+  max-height: 373px;
   position: absolute;
   transition: bottom 1s ease;
   bottom: -20%;
-  right: 27%;
-  width: 23%;
+  right: 31%;
+  width: 19%;
 }
 @media screen and (max-width: 768px) {
   section.index__parallax #scene .gadget {
@@ -237,6 +259,7 @@ section.index__parallax #scene .gadget {
 @media screen and (max-width: 550px) {
   section.index__parallax #scene .gadget {
     bottom: 26%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 470px) {
@@ -248,7 +271,7 @@ section.index__parallax #scene .gadget {
 @media screen and (max-width: 425px) {
   section.index__parallax #scene .gadget {
     bottom: 24%;
-    width: 53%;
+    width: 65%;
     right: 10%;
   }
 }

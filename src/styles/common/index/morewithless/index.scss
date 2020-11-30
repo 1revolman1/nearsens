@@ -163,10 +163,11 @@ section.index__morewithless {
         cursor: pointer;
         display: flex;
         flex-direction: row;
-        background: white 0% 0% no-repeat padding-box;
+        background: #f2f2f2 0% 0% no-repeat padding-box;
         border-radius: 100px;
         opacity: 1;
-        padding: 8px 50px 8px 8px;
+        padding-right: 50px;
+        // padding: 8px 50px 8px 8px;
         position: relative;
         transition: all 0.3s ease;
         margin: 15px 0;
@@ -210,6 +211,7 @@ section.index__morewithless {
               color: #ffffff;
             }
             p {
+              opacity: 1;
             }
           }
           .index__morewithless__blockwithhover__element__arrow {
@@ -268,12 +270,15 @@ section.index__morewithless {
           }
         }
         .index__morewithless__blockwithhover__element__text {
+          position: relative;
+          margin: 8px 0;
           flex: 3;
           display: flex;
           flex-direction: column;
           justify-content: center;
           h3 {
-            transform: translate(0, 25%);
+            transform: translate(0, 35%);
+            // transform: translate(0, 25%);
             transition: all 0.3s ease;
             font: normal normal 300 22px/28px Muli;
             letter-spacing: 0px;
@@ -284,19 +289,19 @@ section.index__morewithless {
               letter-spacing: 0px;
               color: #324044;
               opacity: 1;
-              transform: translate(0, 50%);
+              transform: translate(0, 55%);
             }
           }
           p {
             font: normal normal 300 16px/20px Muli;
             letter-spacing: 0px;
             color: #ffffff;
-            opacity: 1;
+            opacity: 0;
             @include media-tablet {
               font: normal normal 300 13px/16px Muli;
               letter-spacing: 0px;
               color: #ffffff;
-              opacity: 1;
+              // opacity: 1;
             }
           }
         }

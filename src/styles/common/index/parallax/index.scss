@@ -2,7 +2,8 @@
 
 section.index__parallax {
   position: relative;
-  top: -70px;
+  // top: -70px;
+  top: -59px;
   user-select: none;
   @include media-tablet {
     top: inherit;
@@ -40,44 +41,60 @@ section.index__parallax {
     margin-top: 60px;
   }
   #scene {
-    max-width: 1300px;
+    // max-width: 100%;
+    // width: 90%;
+    width: 100%;
+    max-width: 2500px;
+    // max-width: 1300px;
     margin: 0 auto;
     display: flex;
     position: relative;
     overflow: hidden;
     // background: red;
     &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      width: 20%;
-      height: 100%;
-      background: transparent
-        linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat
-        padding-box;
-      z-index: 1;
+      @media screen and (min-width: 1900px) {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        background: transparent
+          linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat
+          padding-box;
+        z-index: 1;
+      }
       @include media-tablet {
         display: none;
       }
     }
     &::before {
-      content: '';
-      position: absolute;
-      right: 0;
-      width: 20%;
-      height: 100%;
-      transform: scale(-1);
-      background: transparent
-        linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat
-        padding-box;
-      z-index: 1;
+      @media screen and (min-width: 1900px) {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 20%;
+        height: 100%;
+        transform: scale(-1);
+        background: transparent
+          linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat
+          padding-box;
+        z-index: 1;
+      }
+
       @include media-tablet {
         display: none;
       }
     }
     .last-mount {
+      max-height: 1200px;
       // max-height: calc(100vh - 97px - 114px);
       transition: transform 1s ease;
+      &::after {
+        content: '';
+      }
+      &::before {
+        content: '';
+      }
       img {
         width: 100%;
         // min-height: 700px;
@@ -100,6 +117,7 @@ section.index__parallax {
       height: 100%;
     }
     .first-mount-layer {
+      max-height: 535px;
       transform: scale(1.1) translate(40px, 0px);
       // transform: scale(1.11);
       transition: transform 1.3s ease;
@@ -154,13 +172,23 @@ section.index__parallax {
     .text-container {
       position: absolute;
       transition: top 1s ease;
-      top: 60%;
-      left: 15%;
+      // top: 60%;
+      // left: 15%;
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
       // z-index: 2;
       @include media-tablet {
         padding-left: 40px;
         top: 5%;
         left: 0%;
+        width: initial;
+        margin: initial;
+        transform: initial;
       }
       h3 {
         margin-bottom: 5px;
@@ -168,15 +196,15 @@ section.index__parallax {
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
+
+        @media screen and (max-width: 1100px) {
+          font: normal normal 800 25px/28px Muli;
+        }
         @include media-tablet {
           font: normal normal 800 22px/28px Muli;
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
-        }
-
-        @media screen and (max-width: 1100px) {
-          font: normal normal 800 25px/28px Muli;
         }
       }
       p {
@@ -184,28 +212,27 @@ section.index__parallax {
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
+
+        @media screen and (max-width: 1100px) {
+          font: normal normal normal 17px/23px Muli;
+        }
         @include media-tablet {
           font: normal normal normal 18px/23px Muli;
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
         }
-
-        @media screen and (max-width: 1100px) {
-          font: normal normal normal 17px/23px Muli;
-        }
       }
     }
     .gadget {
+      max-height: 373px;
       position: absolute;
       transition: bottom 1s ease;
       bottom: -20%;
-      //   right: 15%;
-      // right: 22%;
-      right: 27%;
-      // width: 27%;
-      width: 23%;
-      //   width: 25%;
+      // right: 27%;
+      right: 31%;
+      // width: 23%;
+      width: 19%;
       @include media-tablet {
         // width: 35%;
         // width: 49%;
@@ -232,16 +259,16 @@ section.index__parallax {
       // }
       @media screen and (max-width: 550px) {
         bottom: 26%;
+        width: 50%;
       }
       @media screen and (max-width: 470px) {
         bottom: 25%;
         width: 50%;
       }
       @media screen and (max-width: 425px) {
-        // bottom: 35%;
-        // width: 58%;
         bottom: 24%;
-        width: 53%;
+        width: 65%;
+        // width: 53%;
         right: 10%;
       }
       @media screen and (max-width: 400px) {
