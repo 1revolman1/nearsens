@@ -1,0 +1,158 @@
+section.use_case__subscribe {
+  width: 100%;
+  margin: 15px auto 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #005b9d 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 10px #0000001a;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 60px 30px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 21px 20px 40px;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-text {
+  margin: 0 30px;
+  flex: 1;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-text {
+    margin: 0;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-text h3 {
+  text-align: left;
+  font: normal normal normal 32px/40px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-text h3 {
+    font: normal normal normal 26px/33px Muli;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-text p {
+  font: normal normal normal 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-text p {
+    font: italic normal normal 14px/18px Muli;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email {
+  margin: 0 30px;
+  flex: 2;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email {
+    margin: 0;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email p {
+  text-align: left;
+  font: italic normal normal 14px/18px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email p {
+    margin-bottom: 20px;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email {
+  padding-right: 40px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email {
+    padding-right: 0;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email h4 {
+  font: normal normal normal 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email h4 {
+    display: none;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1000px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block input {
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 6px;
+  opacity: 1;
+  font: normal normal 300 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  padding: 14px 30px;
+  flex: 2;
+  margin-right: 30px;
+}
+@media screen and (max-width: 1000px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block input {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block input {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block input::placeholder {
+  font: normal normal 300 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 0.5;
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block button {
+  flex: 1;
+  max-width: 160px;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  opacity: 1;
+  cursor: pointer;
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  padding: 14px 27px;
+}

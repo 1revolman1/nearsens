@@ -27,20 +27,19 @@ section.productpage__productslinked .productlist__products__wrap h3 {
   }
 }
 section.productpage__productslinked .productlist__products__wrap .productlist__products-container {
-  width: calc(100% - 100px);
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row wrap;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-column-gap: 0;
-  grid-row-gap: 0;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   section.productpage__productslinked .productlist__products__wrap .productlist__products-container {
-    width: 100%;
+    justify-content: inherit;
   }
+}
+section.productpage__productslinked .productlist__products__wrap .productlist__products-container .slick-list {
+  grid-column: 1/-1;
+}
+section.productpage__productslinked .productlist__products__wrap .productlist__products-container.slick-initialized {
+  width: 90%;
+  margin: 0 auto;
 }
 section.productpage__productslinked .productlist__products__wrap .productlist__products-container .productlist__products-container-element {
   outline: none;

@@ -264,30 +264,36 @@ export const useProductPage = function main() {
 
   //SLICk
 
-  // window.innerWidth >= 768 &&
-  $('.productlist__products-container').slick({
-    slidesToShow: 3,
-    speed: 500,
-    dots: true,
-    cssEase: 'linear',
-    swipeToSlide: true,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
+  if (
+    window.innerWidth >= 768 &&
+    $(
+      '.productlist__products-container .productlist__products-container-element'
+    ).length > 3
+  ) {
+    $('.productlist__products-container').slick({
+      slidesToShow: 3,
+      speed: 500,
+      dots: true,
+      cssEase: 'linear',
+      swipeToSlide: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          },
         },
-      },
-      {
-        breakpoint: 850,
-        settings: {
-          slidesToShow: 1,
+        {
+          breakpoint: 850,
+          settings: {
+            slidesToShow: 1,
+          },
         },
-      },
-      {
-        breakpoint: 768,
-        settings: 'unslick',
-      },
-    ],
-  });
+        {
+          breakpoint: 768,
+          settings: 'unslick',
+        },
+      ],
+    });
+  }
 };
