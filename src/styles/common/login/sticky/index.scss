@@ -12,8 +12,11 @@ section.loginpage__sticky {
   // &.sticky-state{
   //     position: fixed;
   // }
-  @include media-tablet {
-    top: $additionalNavMenuToTopRESP;
+  @include media-forHEADER {
+    top: $additionalNavMenuToTopBIGMENU;
+    @include media-tablet {
+      top: $additionalNavMenuToTopRESP;
+    }
   }
   .loginpage__sticky__wrap {
     @include media-tablet {

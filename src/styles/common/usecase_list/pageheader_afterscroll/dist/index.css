@@ -1,7 +1,7 @@
 section.use_case__scrollheader {
   display: flex;
   position: fixed;
-  top: 113px;
+  top: 63px;
   width: 100%;
   background: #005b9d 0 0 no-repeat padding-box;
   padding: 55px 0;
@@ -10,7 +10,12 @@ section.use_case__scrollheader {
   visibility: hidden;
   opacity: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  section.use_case__scrollheader {
+    top: 65px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   section.use_case__scrollheader {
     padding: 18px 4%;
     top: 58px;

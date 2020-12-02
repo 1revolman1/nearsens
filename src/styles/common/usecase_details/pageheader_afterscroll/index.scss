@@ -18,10 +18,14 @@ section.usecase_details__pageheaderafterscroll {
   &.scroll-to-bottom {
     top: -15px;
   }
-  @include media-tablet {
-    top: $additionalNavMenuToTopRESP;
-    padding: 13px 0 15px;
+  @include media-forHEADER {
+    top: $additionalNavMenuToTopBIGMENU;
+    @include media-tablet {
+      top: $additionalNavMenuToTopRESP;
+      padding: 13px 0 15px;
+    }
   }
+
   .usecase_details__pageheaderafterscroll-wrap {
     // width: 90%;
     margin: 0 auto;

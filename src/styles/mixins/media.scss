@@ -5,7 +5,11 @@
     @content;
   }
 }
-
+@mixin media-forHEADER {
+  @media screen and (max-width: 1023px) {
+    @content;
+  }
+}
 @mixin media-phone {
   @media screen and (max-width: $mediaWidthMobile) {
     @content;

@@ -12,10 +12,14 @@ section.use_case__scrollheader {
   transition: visibility 0s, opacity 0.5s linear;
   visibility: hidden;
   opacity: 0;
-  @include media-tablet {
-    padding: 18px 4%;
-    // padding: 18px 30px;
-    top: $additionalNavMenuToTopRESP;
+
+  @include media-forHEADER {
+    top: $additionalNavMenuToTopBIGMENU;
+    @include media-tablet {
+      padding: 18px 4%;
+      // padding: 18px 30px;
+      top: $additionalNavMenuToTopRESP;
+    }
   }
   &.out-viewport {
     visibility: visible;

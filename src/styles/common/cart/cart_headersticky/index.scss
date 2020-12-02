@@ -11,8 +11,11 @@ section.cart__headersticky {
   padding: 15px 0;
   z-index: 1;
   top: $additionalNavMenuToTop;
-  @include media-tablet {
-    top: $additionalNavMenuToTopRESP;
+  @include media-forHEADER {
+    top: $additionalNavMenuToTopBIGMENU;
+    @include media-tablet {
+      top: $additionalNavMenuToTopRESP;
+    }
   }
   &.out-viewport {
     visibility: visible;

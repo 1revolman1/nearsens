@@ -20,11 +20,15 @@ section.productpage__pageheader_sticky {
   &.scroll-to-bottom {
     top: -15px !important;
   }
-  @include media-tablet {
-    // top: 58px;
-    top: $additionalNavMenuToTopRESP;
-    padding: 13px 0 15px;
+  @include media-forHEADER {
+    top: $additionalNavMenuToTopBIGMENU;
+    @include media-tablet {
+      // top: 58px;
+      top: $additionalNavMenuToTopRESP;
+      padding: 13px 0 15px;
+    }
   }
+
   .productpage__pageheader_sticky-wrap {
     // width: 90%;
     width: 100%;

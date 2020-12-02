@@ -59,8 +59,11 @@ nav.nav.holiday-header ~ script + main {
   .productlist__scrollheader,
   .usecase_details__pageheaderafterscroll,
   .use_case__scrollheader {
-    @include media-tablet {
-      top: $marginTopResp;
+    @include media-forHEADER {
+      top: 111px;
+      @include media-tablet {
+        top: $marginTopResp;
+      }
     }
   }
 }
@@ -68,9 +71,13 @@ main {
   @include media-tablet {
     margin-top: 57px;
   }
+
   &.holiday-state {
-    @include media-tablet {
-      margin-top: $additionalNavMenuToTopRESP;
+    @include media-forHEADER {
+      top: 75px;
+      @include media-tablet {
+        margin-top: $additionalNavMenuToTopRESP;
+      }
     }
   }
 }

@@ -7,11 +7,16 @@ section.cart__headersticky {
   margin: 0;
   padding: 15px 0;
   z-index: 1;
-  top: 113px;
+  top: 63px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   section.cart__headersticky {
-    top: 54px;
+    top: 65px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
+  section.cart__headersticky {
+    top: 58px;
   }
 }
 section.cart__headersticky.out-viewport {

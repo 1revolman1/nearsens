@@ -6360,7 +6360,17 @@ button {
     margin-top: 101px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  nav.nav.holiday-header ~ script + main .cart__headersticky,
+nav.nav.holiday-header ~ script + main .loginpage__sticky,
+nav.nav.holiday-header ~ script + main .productpage__pageheader_sticky,
+nav.nav.holiday-header ~ script + main .productlist__scrollheader,
+nav.nav.holiday-header ~ script + main .usecase_details__pageheaderafterscroll,
+nav.nav.holiday-header ~ script + main .use_case__scrollheader {
+    top: 111px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   nav.nav.holiday-header ~ script + main .cart__headersticky,
 nav.nav.holiday-header ~ script + main .loginpage__sticky,
 nav.nav.holiday-header ~ script + main .productpage__pageheader_sticky,
@@ -6376,7 +6386,12 @@ nav.nav.holiday-header ~ script + main .use_case__scrollheader {
     margin-top: 57px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  main.holiday-state {
+    top: 75px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   main.holiday-state {
     margin-top: 58px;
   }

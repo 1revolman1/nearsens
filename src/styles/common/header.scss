@@ -14,7 +14,13 @@
   &.holiday-header {
     top: 60px;
   }
-  @include media-tablet {
+  @include media-forHEADER {
+    top: 20px;
+    @include media-tablet {
+      top: 16px;
+    }
+  }
+  @include media-forHEADER {
     display: flex;
   }
 
@@ -69,7 +75,7 @@ section.header__holiday {
   min-height: 44px;
   background: red;
   z-index: 9;
-  @include media-tablet {
+  @include media-forHEADER {
     position: fixed;
     top: 0;
   }
@@ -98,7 +104,7 @@ header.header {
   //     /* CSS specific to iOS devices */
   //     box-shadow: none;
   //  }
-  @include media-tablet {
+  @include media-forHEADER {
     display: flex;
     position: fixed;
     top: 0;
@@ -126,9 +132,13 @@ header.header {
     // width: 100%;
     margin: 0 auto;
 
-    @include media-tablet {
-      padding: 13px 0;
+    @include media-forHEADER {
+      padding: 17px 0;
       width: 100%;
+      @include media-tablet {
+        padding: 13px 0;
+        width: 100%;
+      }
     }
 
     .first-block-in-menu {
@@ -137,7 +147,7 @@ header.header {
       flex-direction: row;
       justify-content: flex-start;
 
-      @include media-tablet {
+      @include media-forHEADER {
         margin-left: 45px;
       }
 
@@ -149,7 +159,7 @@ header.header {
         align-items: center;
         justify-content: flex-start;
         transition: top 0.2s ease;
-        @include media-tablet {
+        @include media-forHEADER {
           position: initial;
         }
         &.after-scroll {
@@ -255,7 +265,7 @@ header.header {
           }
         }
 
-        @include media-tablet {
+        @include media-forHEADER {
           display: none;
         }
       }
@@ -267,7 +277,7 @@ header.header {
       flex-direction: row;
       justify-content: flex-end;
 
-      @include media-tablet {
+      @include media-forHEADER {
         padding-right: 40px;
       }
 
@@ -280,7 +290,7 @@ header.header {
         // margin-right: 40px;
         // margin-right: 6%;
 
-        @include media-tablet {
+        @include media-forHEADER {
           display: none;
         }
 
@@ -332,7 +342,7 @@ header.header {
         display: flex;
         align-items: center;
         margin: 0px 24px;
-        @include media-tablet {
+        @include media-forHEADER {
           display: none;
         }
         .dropup {
@@ -346,7 +356,7 @@ header.header {
                 color: #2ec9ad;
                 transform: rotate(-90deg);
 
-                @include media-tablet {
+                @include media-forHEADER {
                   transform: rotate(90deg);
                 }
               }
@@ -376,12 +386,12 @@ header.header {
             &.unshow {
               > svg,
               > i:not(.globe) {
-                @include media-tablet {
+                @include media-forHEADER {
                   transform: rotate(180deg);
                 }
               }
             }
-            @include media-tablet {
+            @include media-forHEADER {
               padding: 0px 0;
               width: 100%;
               display: flex;
@@ -433,13 +443,13 @@ header.header {
             transition: all ease 0.5s;
 
             &.unshow {
-              @include media-tablet {
+              @include media-forHEADER {
                 max-height: 0;
                 padding: 0;
               }
             }
 
-            @include media-tablet {
+            @include media-forHEADER {
               padding: 0;
               display: block;
               position: initial;
@@ -451,7 +461,7 @@ header.header {
             }
 
             &:after {
-              @include media-tablet {
+              @include media-forHEADER {
                 display: none;
               }
 
@@ -481,7 +491,7 @@ header.header {
               opacity: 1;
               text-decoration: none;
 
-              @include media-tablet {
+              @include media-forHEADER {
                 color: white;
               }
 
@@ -495,7 +505,7 @@ header.header {
               i {
                 margin-right: 9px;
                 color: #005b9d;
-                @include media-tablet {
+                @include media-forHEADER {
                   color: #33709c;
                 }
               }
@@ -507,7 +517,7 @@ header.header {
         display: none;
         position: relative;
 
-        @include media-tablet {
+        @include media-forHEADER {
           display: block;
         }
         .shop-cart-logo {
@@ -724,7 +734,7 @@ header.header {
           display: flex;
           flex-direction: column;
 
-          @include media-tablet {
+          @include media-forHEADER {
             display: none;
           }
 
@@ -752,7 +762,7 @@ header.header {
         align-items: center;
         justify-content: center;
 
-        @include media-tablet {
+        @include media-forHEADER {
           display: none;
         }
 
@@ -791,7 +801,7 @@ nav.nav {
   }
   width: 100%;
 
-  @include media-tablet {
+  @include media-forHEADER {
     transition: all ease 0.5s;
     transform: translate(0, -100%);
     position: fixed;
@@ -816,7 +826,7 @@ nav.nav {
     width: 100%;
     margin: 0 auto;
 
-    @include media-tablet {
+    @include media-forHEADER {
       flex-direction: column;
       padding: 0;
       min-height: calc(100vh - 57px);
@@ -830,7 +840,7 @@ nav.nav {
       align-items: center;
       justify-content: flex-end;
 
-      @include media-tablet {
+      @include media-forHEADER {
         display: flex;
         margin-top: 20px;
       }
@@ -870,7 +880,7 @@ nav.nav {
 
       // flex:auto;
       width: 50%;
-      @include media-tablet {
+      @include media-forHEADER {
         width: 100%;
         flex: 3;
       }
@@ -882,7 +892,7 @@ nav.nav {
         flex-direction: row;
         padding-left: 0;
         transition: all 0.2s ease;
-        @include media-tablet {
+        @include media-forHEADER {
           flex-direction: column;
         }
         &.after-scroll {
@@ -915,12 +925,12 @@ nav.nav {
             @media screen and (max-width: 900px) {
               min-width: 55px;
             }
-            @include media-tablet {
+            @include media-forHEADER {
               display: none;
             }
             & ~ span {
               display: none;
-              @include media-tablet {
+              @include media-forHEADER {
                 display: inherit;
               }
             }
@@ -929,7 +939,7 @@ nav.nav {
             // margin: 0 1%;
             margin: 0 3%;
           }
-          @include media-tablet {
+          @include media-forHEADER {
             padding: 16px 0;
             margin: 0 25px;
             border-bottom: 2px solid #33709c;
@@ -938,21 +948,21 @@ nav.nav {
           &:first-of-type {
             margin-left: 0px;
             display: none;
-            @include media-tablet {
+            @include media-forHEADER {
               margin: 0 25px;
               display: initial;
             }
           }
           &:nth-child(2) {
             margin-left: 0;
-            @include media-tablet {
+            @include media-forHEADER {
               margin-left: 25px;
             }
           }
           &:last-of-type {
             margin-right: 0px;
 
-            @include media-tablet {
+            @include media-forHEADER {
               margin: 0 25px;
               margin-bottom: 75px;
               // margin-bottom: 140px;
@@ -964,7 +974,7 @@ nav.nav {
             display: inline-block;
             &.dropup-language {
               display: none;
-              @include media-tablet {
+              @include media-forHEADER {
                 display: inline-block;
               }
               .dropbtn {
@@ -982,7 +992,7 @@ nav.nav {
                 i:not(.globe) {
                   transform: rotate(-90deg);
 
-                  @include media-tablet {
+                  @include media-forHEADER {
                     transform: rotate(90deg);
                   }
                 }
@@ -1009,12 +1019,12 @@ nav.nav {
               &.unshow {
                 > svg,
                 > i:not(.globe) {
-                  @include media-tablet {
+                  @include media-forHEADER {
                     transform: rotate(180deg);
                   }
                 }
               }
-              @include media-tablet {
+              @include media-forHEADER {
                 padding: 0px 0;
                 width: 100%;
                 display: flex;
@@ -1063,13 +1073,13 @@ nav.nav {
               transition: all ease 0.5s;
 
               &.unshow {
-                @include media-tablet {
+                @include media-forHEADER {
                   max-height: 0;
                   padding: 0;
                 }
               }
 
-              @include media-tablet {
+              @include media-forHEADER {
                 padding: 0;
                 display: block;
                 position: initial;
@@ -1081,7 +1091,7 @@ nav.nav {
               }
 
               &:after {
-                @include media-tablet {
+                @include media-forHEADER {
                   display: none;
                 }
 
@@ -1110,7 +1120,7 @@ nav.nav {
                 opacity: 1;
                 text-decoration: none;
 
-                @include media-tablet {
+                @include media-forHEADER {
                   color: white;
                 }
 
@@ -1124,7 +1134,7 @@ nav.nav {
                 i {
                   margin-right: 9px;
                   color: #005b9d;
-                  @include media-tablet {
+                  @include media-forHEADER {
                     color: #33709c;
                   }
                 }
@@ -1139,7 +1149,7 @@ nav.nav {
                 //     fill: #005B9D;
                 //   }
 
-                //   @include media-tablet {
+                //   @include media-forHEADER {
                 //     path {
                 //       fill: #33709c;
                 //     }
@@ -1159,7 +1169,7 @@ nav.nav {
             color: #ffffff;
             opacity: 1;
 
-            @include media-tablet {
+            @include media-forHEADER {
               display: flex;
               width: 100%;
             }
@@ -1181,7 +1191,7 @@ nav.nav {
       align-items: center;
       flex-direction: row;
 
-      @include media-tablet {
+      @include media-forHEADER {
         flex: none;
         min-height: 230px;
         padding: 30px 0;
@@ -1191,7 +1201,7 @@ nav.nav {
       }
 
       .build-your-solution {
-        @include media-tablet {
+        @include media-forHEADER {
           position: relative;
           width: 70%;
           margin: 0 auto 44px;
@@ -1210,7 +1220,7 @@ nav.nav {
           content: '';
           position: absolute;
 
-          @include media-tablet {
+          @include media-forHEADER {
             bottom: -25px;
             width: 60px;
             height: 2px;
@@ -1240,7 +1250,7 @@ nav.nav {
       .phone-number {
         display: none;
 
-        @include media-tablet {
+        @include media-forHEADER {
           display: flex;
           width: 100%;
           flex-direction: column;
@@ -1293,7 +1303,7 @@ nav.nav {
           display: flex;
           flex-direction: column;
           position: relative;
-          @include media-tablet {
+          @include media-forHEADER {
             display: none;
           }
           .droupup-block,
@@ -1355,7 +1365,7 @@ nav.nav {
               opacity: 1;
               display: flex;
               flex-direction: column;
-              @include media-tablet {
+              @include media-forHEADER {
                 visibility: hidden;
                 opacity: 0;
                 display: none;
@@ -1513,7 +1523,7 @@ nav.nav {
           opacity: 1;
           display: flex;
           flex-direction: column;
-          @include media-tablet {
+          @include media-forHEADER {
             visibility: hidden;
             opacity: 0;
             display: none;
@@ -1557,7 +1567,7 @@ nav.nav {
       //   margin-left: 10%;
       //   // margin-left: 50px;
 
-      //   @include media-tablet {
+      //   @include media-forHEADER {
       //     display: none !important;
       //   }
 

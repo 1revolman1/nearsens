@@ -14,8 +14,11 @@ section.productlist__scrollheader {
     visibility: visible;
     opacity: 1;
   }
-  @include media-tablet {
-    top: $additionalNavMenuToTopRESP;
+  @include media-forHEADER {
+    top: $additionalNavMenuToTopBIGMENU;
+    @include media-tablet {
+      top: $additionalNavMenuToTopRESP;
+    }
   }
   img.bg-block {
     width: 100%;

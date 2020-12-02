@@ -1,6 +1,6 @@
 section.productlist__scrollheader {
   position: fixed;
-  top: 113px;
+  top: 63px;
   width: 100%;
   background: #005b9d;
   z-index: 1;
@@ -12,7 +12,12 @@ section.productlist__scrollheader.out-viewport {
   visibility: visible;
   opacity: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  section.productlist__scrollheader {
+    top: 65px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   section.productlist__scrollheader {
     top: 58px;
   }
