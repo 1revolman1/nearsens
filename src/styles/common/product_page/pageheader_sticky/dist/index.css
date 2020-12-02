@@ -28,10 +28,11 @@ section.productpage__pageheader_sticky.scroll-to-bottom {
   }
 }
 section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap {
-  width: 100%;
+  width: 94%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
 }
 @media screen and (max-width: 768px) {

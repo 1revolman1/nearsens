@@ -1,11 +1,16 @@
 footer.globalfooter {
   padding: 50px 0 86px;
-  background: #003F6D 0% 0% no-repeat padding-box;
+  background: #003f6d 0% 0% no-repeat padding-box;
 }
 footer.globalfooter .globalfooter__wrapper {
   max-width: 1300px;
   margin: 0 auto;
-  width: 100%;
+  width: 94%;
+}
+@media screen and (max-width: 768px) {
+  footer.globalfooter .globalfooter__wrapper {
+    width: 100%;
+  }
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content {
   margin-bottom: 60px;
@@ -27,7 +32,7 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li
   text-align: left;
   font: normal normal normal 16px/30px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: all ease 0.5s;
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.images img {
@@ -36,7 +41,7 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header {
   text-align: left;
@@ -44,19 +49,19 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header.big {
   font: normal normal bold 16px/40px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header.big-head {
   font: normal normal bold 16px/30px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header.inside {
   font: normal normal normal 16px/30px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media screen and (max-width: 768px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header.inside {
@@ -89,7 +94,7 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .g
   margin: 0 5px;
   font: normal normal normal 16px/20px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
   text-decoration: none;
 }
@@ -120,7 +125,7 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .g
   }
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .globalfooter__wrapper__additional__text ul li a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .globalfooter__wrapper__additional__text ul li a img {

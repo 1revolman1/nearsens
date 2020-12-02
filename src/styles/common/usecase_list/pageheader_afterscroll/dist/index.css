@@ -26,10 +26,15 @@ section.use_case__scrollheader.out-viewport {
   opacity: 1;
 }
 section.use_case__scrollheader .use_case__scrollheader-content {
-  flex: 1;
   max-width: 1300px;
   margin: 0 auto;
-  width: 100%;
+  width: 94%;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__scrollheader .use_case__scrollheader-content {
+    width: 100%;
+    flex: 1;
+  }
 }
 section.use_case__scrollheader .use_case__scrollheader-content h2 {
   font: normal normal normal 32px/40px Muli;

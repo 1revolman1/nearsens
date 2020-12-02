@@ -11,7 +11,8 @@ section.productpage__specificationblock {
   }
   .productpage__specificationblock-wrap {
     max-width: $mediaMAXWIDTH;
-    width: 100%;
+    // width: 100%;
+    width: 94%;
     margin: 0 auto;
     @include media-tablet {
       margin: 0 auto;

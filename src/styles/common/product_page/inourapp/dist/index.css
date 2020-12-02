@@ -33,12 +33,6 @@ section.productpage__inourapp .productpage__inourapp-wrap h3 {
 section.productpage__inourapp .productpage__inourapp-wrap .productpage__inourapp-content {
   display: flex;
 }
-@media screen and (max-width: 1150px) {
-  section.productpage__inourapp .productpage__inourapp-wrap .productpage__inourapp-content {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 @media screen and (max-width: 768px) {
   section.productpage__inourapp .productpage__inourapp-wrap .productpage__inourapp-content {
     width: 90%;

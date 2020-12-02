@@ -43,6 +43,8 @@ section.productpage__productslinked {
         background: white;
         flex: 0 1 calc(24% + 60px);
         // margin: 20px 2%
+        margin-left: 30px;
+        margin-right: 30px;
         margin-top: 20px;
         margin-bottom: 20px;
         @include media-tablet {
@@ -59,7 +61,7 @@ section.productpage__productslinked {
             width: 137px;
             height: 137px;
             margin: 0;
-            align-self: center;
+            align-self: flex-start;
           }
         }
         &.with-disqount {

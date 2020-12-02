@@ -34,11 +34,11 @@ section.productlist__scrollheader {
     padding: 40px 0;
     max-width: $mediaMAXWIDTH;
     margin: 0 auto;
-    width: 100%;
+    width: 94%;
     @include media-tablet {
       //   padding: 19px 20px;
       padding: 19px 0;
-      width: 90%;
+      // width: 100%;
     }
     .productlist__scrollheader-wrapper__text-container {
       display: flex;

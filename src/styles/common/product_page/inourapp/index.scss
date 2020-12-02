@@ -29,10 +29,10 @@ section.productpage__inourapp {
     }
     .productpage__inourapp-content {
       display: flex;
-      @media screen and (max-width: 1150px) {
-        width: 90%;
-        margin: 0 auto;
-      }
+      // @media screen and (max-width: 1150px) {
+      //   width: 90%;
+      //   margin: 0 auto;
+      // }
       @include media-tablet {
         width: 90%;
         flex-direction: column-reverse;

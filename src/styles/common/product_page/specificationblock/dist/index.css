@@ -11,7 +11,7 @@ section.productpage__specificationblock {
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap {
   max-width: 1300px;
-  width: 100%;
+  width: 94%;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {

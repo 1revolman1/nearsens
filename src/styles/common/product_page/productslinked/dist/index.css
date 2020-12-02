@@ -48,6 +48,8 @@ section.productpage__productslinked .productlist__products__wrap .productlist__p
   box-shadow: none;
   background: white;
   flex: 0 1 calc(24% + 60px);
+  margin-left: 30px;
+  margin-right: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -66,7 +68,7 @@ section.productpage__productslinked .productlist__products__wrap .productlist__p
     width: 137px;
     height: 137px;
     margin: 0;
-    align-self: center;
+    align-self: flex-start;
   }
 }
 section.productpage__productslinked .productlist__products__wrap .productlist__products-container .productlist__products-container-element.with-disqount .productlist__products-container-element-disqount {
