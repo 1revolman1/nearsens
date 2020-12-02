@@ -126,6 +126,7 @@ header.header .first-menu {
   flex-direction: row;
   justify-content: space-between;
   max-width: 1300px;
+  width: 94%;
   margin: 0 auto;
 }
 @media screen and (max-width: 1023px) {
@@ -764,7 +765,7 @@ nav.nav .second-menu {
   align-items: center;
   justify-content: space-between;
   max-width: 1300px;
-  width: 100%;
+  width: 94%;
   margin: 0 auto;
 }
 @media screen and (max-width: 1023px) {
