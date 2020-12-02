@@ -51,6 +51,7 @@ section.page404__container h3 {
   margin-bottom: 30px;
 }
 section.page404__container h3 span {
+  margin-top: 6px;
   text-align: center;
   font: italic normal bold 18px/23px Muli;
   letter-spacing: 0px;
@@ -72,12 +73,12 @@ section.page404__container .page404__container__btn {
   cursor: pointer;
   font: normal normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
   text-transform: uppercase;
   padding: 14px 30px;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
-  border: 1px solid #2EC9AD;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
   border-radius: 40px;
   opacity: 1;
 }

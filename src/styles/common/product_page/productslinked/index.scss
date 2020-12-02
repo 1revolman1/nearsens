@@ -36,6 +36,7 @@ section.productpage__productslinked {
       }
       justify-content: space-between;
       .productlist__products-container-element {
+        min-height: 508px;
         outline: none;
         position: relative;
         box-shadow: none;
@@ -45,6 +46,7 @@ section.productpage__productslinked {
         margin-top: 20px;
         margin-bottom: 20px;
         @include media-tablet {
+          min-height: inherit;
           flex-direction: row;
           flex: none;
           width: 100%;

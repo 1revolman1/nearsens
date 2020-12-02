@@ -106,6 +106,9 @@ header.header {
 header.header.holiday-header {
   top: 44px;
 }
+header.header.holiday-header .first-menu .first-block-in-menu > a {
+  top: 73px;
+}
 header.header .first-menu {
   border-bottom: 1px solid #33709c;
   padding: 23px 0;

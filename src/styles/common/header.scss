@@ -106,6 +106,13 @@ header.header {
   }
   &.holiday-header {
     top: 44px;
+    .first-menu {
+      .first-block-in-menu {
+        > a {
+          top: 73px;
+        }
+      }
+    }
   }
   .first-menu {
     border-bottom: 1px solid #33709c;

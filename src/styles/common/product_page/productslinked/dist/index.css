@@ -42,6 +42,7 @@ section.productpage__productslinked .productlist__products__wrap .productlist__p
   margin: 0 auto;
 }
 section.productpage__productslinked .productlist__products__wrap .productlist__products-container .productlist__products-container-element {
+  min-height: 508px;
   outline: none;
   position: relative;
   box-shadow: none;
@@ -52,6 +53,7 @@ section.productpage__productslinked .productlist__products__wrap .productlist__p
 }
 @media screen and (max-width: 768px) {
   section.productpage__productslinked .productlist__products__wrap .productlist__products-container .productlist__products-container-element {
+    min-height: inherit;
     flex-direction: row;
     flex: none;
     width: 100%;

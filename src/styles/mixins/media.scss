@@ -1,22 +1,20 @@
-@import "../utils/variables";
-
+@import '../utils/variables';
 
 @mixin media-tablet {
-
   @media screen and (max-width: $mediaWidthTablet) {
     @content;
   }
 }
 
 @mixin media-phone {
-
   @media screen and (max-width: $mediaWidthMobile) {
     @content;
   }
 }
 
 @mixin detect-ios {
-  @supports (-webkit-touch-callout: none) and (-webkit-text-size-adjust:none) and (not (-ms-ime-align:auto)) and (not (-moz-appearance:none)){
+  @supports (-webkit-touch-callout: none) and (-webkit-text-size-adjust: none)
+    and (not (-ms-ime-align: auto)) and (not (-moz-appearance: none)) {
     @content;
   }
 }

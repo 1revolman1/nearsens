@@ -7,40 +7,33 @@ exports.useHomePage = void 0;
 
 var useHomePage = function useHomePage() {
   function Parallax(parallaxContainer) {
-    var oneINIT = false;
-    var header = document.querySelector('header.header');
+    var oneINIT = false; // const header = document.querySelector('header.header');
+
     var textBlock = parallaxContainer.querySelector('.text-container');
     var gadgetBlock = parallaxContainer.querySelector('.gadget');
     var shadowOne = parallaxContainer.querySelector('.shadow-1');
     var shadowThree = parallaxContainer.querySelector('.shadow-3');
     var shadowFour = parallaxContainer.querySelector('.shadow-4');
     var shadowFive = parallaxContainer.querySelector('.shadow-5');
-    var LastLayer = parallaxContainer.querySelector('.last-mount');
+    var LastMountLayer = parallaxContainer.querySelector('.last-mount');
+    var MiddleMountLayer = parallaxContainer.querySelector('.middle-mount-layer'); // const LastLayer = parallaxContainer.querySelector('.last-mount');
+
     var FirstMountLayer = parallaxContainer.querySelector('.first-mount-layer');
-    var MiddleMountLayer = parallaxContainer.querySelector('.middle-mount-layer'); // header.addEventListener('header', function ({ detail: { inViewPort } }) {
-    // if (!inViewPort && !oneINIT) {
-    // $('body').addClass('stop-scrolling');
-
-    oneINIT = true; // LastLayer.style.transform = 'scale(0.89)';
-    // MiddleMountLayer.style.transform = 'scale(0.95)';
-
+    oneINIT = true;
     shadowOne.style.bottom = '15%';
     shadowThree.style.bottom = '13%';
     shadowFour.style.bottom = '15%';
     shadowFive.style.bottom = '35%';
-    FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
+    FirstMountLayer.classList.add('anim');
+    MiddleMountLayer.classList.add('anim');
+    LastMountLayer.classList.add('anim'); // FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
+
     setTimeout(function () {
       textBlock.style.top = '15%';
-      gadgetBlock.style.bottom = '27%'; // gadgetBlock.style.bottom = '24%';
-      // $(".index-page-container").css({
-      //     opacity:"1",
-      //     transform:"translate(0,-150px)"
-      // })
+      gadgetBlock.classList.add('anim'); // gadgetBlock.style.bottom = '27%';
 
       document.querySelector('.index-page-container').classList.add('transform-block');
-      document.querySelector('.index__parallax__text').classList.add('transform-block'); // setTimeout(() => {
-      //   $('body').removeClass('stop-scrolling');
-      // }, 1000);
+      document.querySelector('.index__parallax__text').classList.add('transform-block');
     }, 1000); // }
     // });
   }
@@ -52,7 +45,51 @@ var useHomePage = function useHomePage() {
       behavior: 'smooth'
     });
   });
-  window.innerWidth > 768 && Parallax(parallaxContainer); // function onYouTubeIframeAPIReady() {
+  var imageObject = {
+    images: document.querySelectorAll('.index__parallax #scene img'),
+    countOfLoadedImages: 0,
+
+    get ammount() {
+      return this.images.length;
+    },
+
+    set setCount(x) {
+      this.countOfLoadedImages = x;
+    },
+
+    init: function init() {
+      var _this = this;
+
+      this.images.forEach(function (logo) {
+        if (logo.complete) {
+          _this.countOfLoadedImages = _this.countOfLoadedImages + 1;
+        } else {
+          logo.addEventListener('load', function () {
+            _this.countOfLoadedImages = _this.countOfLoadedImages + 1;
+
+            if (_this.countOfLoadedImages === _this.images.length) {
+              //animation start when all pictures loaded
+              Parallax(parallaxContainer);
+            }
+          });
+        }
+
+        if (_this.countOfLoadedImages === _this.images.length) {
+          //animation start when all pictures loaded
+          Parallax(parallaxContainer);
+        }
+      });
+    }
+  }; // window.innerWidth > 768 && imageObject.init();
+
+  if (window.innerWidth > 768) {
+    Parallax(parallaxContainer);
+  } else {
+    var elements = document.querySelectorAll('.index__morewithless__blockwithhover__element');
+    elements.forEach(function (elm) {
+      elm.classList.add('mobile-page');
+    });
+  } // function onYouTubeIframeAPIReady() {
   //     window.YT.ready(function() {
   //         window.player = new YT.Player("player-container", {
   //             videoId, // YouTube Video ID
@@ -100,6 +137,7 @@ var useHomePage = function useHomePage() {
   //     if(target) observer.observe(target);
   // }
   // onYouTubeIframeAPIReady();
+
 
   var video = document.querySelector('div#player-container video');
 

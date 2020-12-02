@@ -46,11 +46,13 @@ section.productlist__products .productlist__products-container .productlist__pro
   section.productlist__products .productlist__products-container .productlist__products-container-element {
     margin: 10px;
     padding: 10px;
+    min-height: initial;
     flex: 0 1 100%;
     flex-direction: row;
   }
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element.big-block {
+  min-height: inherit;
   grid-column: 1/-1;
   flex-direction: row;
   flex-wrap: wrap;
@@ -215,12 +217,14 @@ section.productlist__products .productlist__products-container .productlist__pro
   }
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller {
+  flex: 1;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller {
+    flex: inherit;
     width: 100%;
     margin-left: 10px;
     display: flex;

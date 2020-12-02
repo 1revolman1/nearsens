@@ -9,6 +9,14 @@ import { useSignUpPage } from './signup_page';
 import { useContactPage } from './contact_page';
 import { useCartPage } from './cart_page';
 import { useHolidayFunc } from './holdayfunctionality';
+function getBodyScrollTop() {
+  return (
+    self.pageYOffset ||
+    (document.documentElement && document.documentElement.scrollTop) ||
+    (document.body && document.body.scrollTop)
+  );
+}
+
 $(document).ready(() => {
   function footerJS() {
     if (window.innerWidth <= 768) {
@@ -40,6 +48,7 @@ $(document).ready(() => {
       'header.header .first-block-in-menu > a'
     );
     const target = document.querySelector('header.header');
+    if (typeof holiday_event != undefined) useHolidayFunc();
     function onScrollChange(changes, observer) {
       changes.forEach((change) => {
         if (Math.floor(change.intersectionRatio) === 0) {
@@ -48,7 +57,6 @@ $(document).ready(() => {
               inViewPort: false,
             },
           });
-          console.log('Header hidden');
           if (window.innerWidth > 768) {
             logo && logo.classList.add('after-scroll');
             menuList && menuList.classList.add('after-scroll');
@@ -61,7 +69,6 @@ $(document).ready(() => {
               inViewPort: true,
             },
           });
-          console.log('Header shown');
           if (window.innerWidth > 768) {
             logo && logo.classList.remove('after-scroll');
             menuList && menuList.classList.remove('after-scroll');
@@ -73,7 +80,7 @@ $(document).ready(() => {
     }
     const options = {
       root: null, //root
-      rootMargin: '0%',
+      rootMargin: '0px',
       threshold: 1,
     };
     const observer = new IntersectionObserver(onScrollChange, options);
@@ -100,15 +107,11 @@ $(document).ready(() => {
           button.parentNode
             ?.querySelector('.dropup-content')
             .classList?.toggle('unshow');
-          // button?.parentElement?.childNodes[1].firstChild.classList.toggle("unshow")
-          // button?.parentElement?.childNodes[0].classList.toggle("unshow")
         });
       });
   }
   headerJS();
   footerJS();
-
-  if (typeof holiday_event != undefined) useHolidayFunc();
   switch (typeof typePage != undefined) {
     case typePage === 'usecase_list':
       useCasesList();

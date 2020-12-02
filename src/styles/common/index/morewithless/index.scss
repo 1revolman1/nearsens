@@ -176,7 +176,8 @@ section.index__morewithless {
             margin-top: 0;
           }
         }
-        &:hover {
+        &:hover,
+        &.mobile-page {
           background: #005b9d 0% 0% no-repeat padding-box;
           .index__morewithless__blockwithhover__element__img {
             background: #ffffff 0% 0% no-repeat padding-box;

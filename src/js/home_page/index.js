@@ -1,48 +1,40 @@
 export const useHomePage = function () {
   function Parallax(parallaxContainer) {
     let oneINIT = false;
-    const header = document.querySelector('header.header');
+    // const header = document.querySelector('header.header');
     const textBlock = parallaxContainer.querySelector('.text-container');
     const gadgetBlock = parallaxContainer.querySelector('.gadget');
     const shadowOne = parallaxContainer.querySelector('.shadow-1');
     const shadowThree = parallaxContainer.querySelector('.shadow-3');
     const shadowFour = parallaxContainer.querySelector('.shadow-4');
     const shadowFive = parallaxContainer.querySelector('.shadow-5');
-    const LastLayer = parallaxContainer.querySelector('.last-mount');
-    const FirstMountLayer = parallaxContainer.querySelector(
-      '.first-mount-layer'
-    );
+    const LastMountLayer = parallaxContainer.querySelector('.last-mount');
     const MiddleMountLayer = parallaxContainer.querySelector(
       '.middle-mount-layer'
     );
-    // header.addEventListener('header', function ({ detail: { inViewPort } }) {
-    // if (!inViewPort && !oneINIT) {
-    // $('body').addClass('stop-scrolling');
+    // const LastLayer = parallaxContainer.querySelector('.last-mount');
+    const FirstMountLayer = parallaxContainer.querySelector(
+      '.first-mount-layer'
+    );
     oneINIT = true;
-    // LastLayer.style.transform = 'scale(0.89)';
-    // MiddleMountLayer.style.transform = 'scale(0.95)';
     shadowOne.style.bottom = '15%';
     shadowThree.style.bottom = '13%';
     shadowFour.style.bottom = '15%';
     shadowFive.style.bottom = '35%';
-    FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
+    FirstMountLayer.classList.add('anim');
+    MiddleMountLayer.classList.add('anim');
+    LastMountLayer.classList.add('anim');
+    // FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
     setTimeout(() => {
       textBlock.style.top = '15%';
-      gadgetBlock.style.bottom = '27%';
-      // gadgetBlock.style.bottom = '24%';
-      // $(".index-page-container").css({
-      //     opacity:"1",
-      //     transform:"translate(0,-150px)"
-      // })
+      gadgetBlock.classList.add('anim');
+      // gadgetBlock.style.bottom = '27%';
       document
         .querySelector('.index-page-container')
         .classList.add('transform-block');
       document
         .querySelector('.index__parallax__text')
         .classList.add('transform-block');
-      // setTimeout(() => {
-      //   $('body').removeClass('stop-scrolling');
-      // }, 1000);
     }, 1000);
     // }
     // });
@@ -55,7 +47,46 @@ export const useHomePage = function () {
         .querySelector('.index__youtubeframe')
         .scrollIntoView({ block: 'center', behavior: 'smooth' });
     });
-  window.innerWidth > 768 && Parallax(parallaxContainer);
+  const imageObject = {
+    images: document.querySelectorAll('.index__parallax #scene img'),
+    countOfLoadedImages: 0,
+    get ammount() {
+      return this.images.length;
+    },
+    set setCount(x) {
+      this.countOfLoadedImages = x;
+    },
+    init: function () {
+      this.images.forEach((logo) => {
+        if (logo.complete) {
+          this.countOfLoadedImages = this.countOfLoadedImages + 1;
+        } else {
+          logo.addEventListener('load', () => {
+            this.countOfLoadedImages = this.countOfLoadedImages + 1;
+            if (this.countOfLoadedImages === this.images.length) {
+              //animation start when all pictures loaded
+              Parallax(parallaxContainer);
+            }
+          });
+        }
+        if (this.countOfLoadedImages === this.images.length) {
+          //animation start when all pictures loaded
+          Parallax(parallaxContainer);
+        }
+      });
+    },
+  };
+  // window.innerWidth > 768 && imageObject.init();
+  if (window.innerWidth > 768) {
+    Parallax(parallaxContainer);
+  } else {
+    const elements = document.querySelectorAll(
+      '.index__morewithless__blockwithhover__element'
+    );
+    elements.forEach((elm) => {
+      elm.classList.add('mobile-page');
+    });
+  }
   // function onYouTubeIframeAPIReady() {
   //     window.YT.ready(function() {
   //         window.player = new YT.Player("player-container", {
