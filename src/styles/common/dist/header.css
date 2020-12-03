@@ -131,7 +131,7 @@ header.header .first-menu {
 }
 @media screen and (max-width: 1023px) {
   header.header .first-menu {
-    padding: 17px 0;
+    padding: 13px 0;
     width: 100%;
   }
 }
@@ -275,6 +275,12 @@ header.header .first-menu .second-block-in-menu .looking-input {
 }
 @media screen and (max-width: 1023px) {
   header.header .first-menu .second-block-in-menu .looking-input {
+    display: flex;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
+  header.header .first-menu .second-block-in-menu .looking-input {
     display: none;
   }
 }
@@ -291,6 +297,11 @@ header.header .first-menu .second-block-in-menu .looking-input input {
   background: transparent;
   padding: 11px 50px 11px 20px;
   width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  header.header .first-menu .second-block-in-menu .looking-input input {
+    padding: 9px 50px 9px 20px;
+  }
 }
 header.header .first-menu .second-block-in-menu .looking-input input::placeholder {
   color: white;
@@ -785,6 +796,7 @@ nav.nav .second-menu .search-menu {
 }
 @media screen and (max-width: 1023px) {
   nav.nav .second-menu .search-menu {
+    position: relative;
     display: flex;
     margin-top: 20px;
   }
@@ -988,6 +1000,11 @@ nav.nav .second-menu .nav-menu ul li.dropup .droupup-block {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+@media screen and (max-width: 1023px) {
+  nav.nav .second-menu .nav-menu ul li.dropup .droupup-block {
+    padding-left: 15px;
+  }
 }
 nav.nav .second-menu .nav-menu ul li.dropup .dropup-content {
   display: none;

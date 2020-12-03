@@ -6355,6 +6355,13 @@ button {
   border: 1px solid #a9afb0;
 }
 
+.btn-disabled,
+.btn-disabled[disabled] {
+  opacity: 0.4 !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
 @media screen and (max-width: 768px) {
   nav.nav.holiday-header ~ script + main {
     margin-top: 101px;

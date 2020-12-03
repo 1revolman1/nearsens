@@ -48,7 +48,12 @@ button {
     border: 1px solid #a9afb0;
   }
 }
-
+.btn-disabled,
+.btn-disabled[disabled] {
+  opacity: 0.4 !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
 nav.nav.holiday-header ~ script + main {
   @include media-tablet {
     margin-top: $marginTopResp;
