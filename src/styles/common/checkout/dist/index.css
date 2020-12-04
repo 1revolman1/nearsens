@@ -1,3 +1,30 @@
+section.checkout_page__stickycont {
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+}
+
+section.checkout_page__content {
+  padding: 82px 0 155px;
+  height: 5000px;
+  background: red;
+}
+
 .checkout_page {
-  padding: 0.1px 0 0.1px;
+  position: relative;
+}
+.checkout_page__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 16.971%;
+  grid-row-gap: 0px;
+}
+.checkout_page::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 36%;
+  height: 100%;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
 }

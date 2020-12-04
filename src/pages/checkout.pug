@@ -1,13 +1,9 @@
 extends common/layoutWITHOUTHEADER
 
-block content
+block content  
+  script
+    |var typePage = "checkout_page";
   main.checkout_page
-    h1 gfdgfdg
-    //- include includes/index/parallax/index
-    //- .index-page-container
-    //-   section.main
-    //-     include includes/index/morewithless/index
-    //-   include includes/index/createsolution/index
-    //-   section.main
-    //-     include includes/index/youtubeframe/index
-    //-     include includes/index/reviews/index
+    .checkout_page__container.main
+      include includes/checkout/content/index
+      include includes/checkout/stickycont/index
