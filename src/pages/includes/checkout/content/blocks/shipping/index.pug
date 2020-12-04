@@ -1,0 +1,19 @@
+
+section.checkout_page__content__contact
+    .checkout_page__content__contact__head
+        h3 Shipping address
+    .checkout_page__content__contact__manip
+        .checkout_page__content__contact__manip__inputs
+            each val in ["First name","Last name","Adresse line","Addresse line","City","State","Postal code","Country","Phone number"]
+                .checkout_page__input
+                    input(type="text" placeholder=val)
+        .checkout_page__content__contact__manip__chekedbox
+            each val in [1,2]
+                label.checkout_page__content__contact__manip__chekedbox__box
+                    img(src="", alt="")
+                    h4 Colissimo
+                    p 48h shipping
+                    span 7
+                        sup €
+                    input(type='checkbox')
+                    span.checkmark

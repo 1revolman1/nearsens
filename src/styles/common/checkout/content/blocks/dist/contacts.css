@@ -1,3 +1,6 @@
+section.checkout_page__content__contact {
+  margin-bottom: 60px;
+}
 section.checkout_page__content__contact .checkout_page__content__contact__head {
   padding-bottom: 20.5px;
   border-bottom: 1px solid #f2f2f2;
@@ -17,6 +20,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   grid-template-rows: auto;
   grid-column-gap: 30px;
   grid-row-gap: 15px;
+  margin-bottom: 18px;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox {
   position: relative;
@@ -83,6 +87,108 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   transform: rotate(45deg);
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox .border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__inputs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 18px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__btncont {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__btncont .checkout_page__content__contact__manip__btn {
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
+  border-radius: 40px;
+  opacity: 1;
+  padding: 14px 30px;
+  outline: none;
+  text-transform: uppercase;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  opacity: 1;
+  padding: 14px 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  cursor: pointer;
+  overflow: hidden;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box input:checked ~ .checkmark {
+  background: #005b9d 0% 0% no-repeat padding-box;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box input:checked ~ .checkmark:after {
+  display: block;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box input:checked ~ .border {
+  border: 1px solid #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box:hover {
+  border: 1px solid #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box:hover input ~ .checkmark {
+  background-color: #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  border-bottom-left-radius: 6px;
+  background-color: transparent;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 11px;
+  top: 3px;
+  width: 9px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box .border {
   position: absolute;
   top: 0;
   right: 0;

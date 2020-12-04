@@ -17,6 +17,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   grid-template-rows: auto;
   grid-column-gap: 30px;
   grid-row-gap: 15px;
+  margin-bottom: 18px;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox {
   position: relative;
@@ -92,6 +93,29 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   height: 100%;
   border-radius: 10px;
 }
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__input {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 18px;
+}
+.checkout_page__input {
+  display: flex;
+}
+.checkout_page__input input {
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  opacity: 1;
+  width: 100%;
+  border-radius: 8px;
+  font: normal normal 300 18px/23px Muli;
+  color: #333333;
+  opacity: 1;
+  padding: 14px 20px;
+  background: white;
+}
+
 section.checkout_page__content {
   padding: 82px 0 155px;
   height: 5000px;
