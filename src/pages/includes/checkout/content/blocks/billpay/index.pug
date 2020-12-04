@@ -12,9 +12,13 @@ section.checkout_page__content__contact
     .checkout_page__content__contact__manip
         .checkout_page__content__contact__manip__payMethod
             each val in [1,2,3]
-                .checkout_page__content__contact__manip__payMethod__elm
+                label.checkout_page__content__contact__manip__payMethod__elm
+                    //- .logo
                     img(src="https://thumbs.dreamstime.com/b/parcel-icon-trendy-logo-concept-white-background-delivery-logistics-collection-suitable-use-web-apps-mobile-print-131189753.jpg", alt="")
-                    p Paypal
+                    p 48h shipping
+                    input(type='checkbox')
+                    span.checkmark
+                    span.border
         .checkout_page__content__contact__manip__btncont
                 a.checkout_page__content__contact__manip__btn PAY
         

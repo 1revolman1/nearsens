@@ -1,11 +1,523 @@
 section.checkout_page__stickycont {
+  position: relative;
+  padding: 82px 0 0 40px;
   background: #f2f2f2 0% 0% no-repeat padding-box;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block {
+  position: sticky;
+  width: 100%;
+  top: 82px;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block h3 {
+  font: normal normal normal 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 21px;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .head {
+  padding-bottom: 36.5px;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 36.5px;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  --gap: 12px;
+  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont input {
+  margin: var(--gap) 0 0 var(--gap);
+  flex: 1 0 100px;
+  padding: 14px 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  opacity: 1;
+  font: italic normal 300 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont button {
+  max-width: 116px;
+  margin: var(--gap) 0 0 var(--gap);
+  flex: 1 0 100px;
+  padding: 14px 29px;
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  background: #005b9d 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay {
+  padding-bottom: 14px;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 75px;
+  grid-row-gap: 0px;
+  margin: 36px 0;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price:first-of-type {
+  margin-top: 0;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price:last-of-type {
+  margin-bottom: 0;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__text span {
+  font: normal normal normal 22px/28px Muli;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__ammount {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__ammount span {
+  font: normal normal 300 32px/40px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__ammount span span {
+  font: normal normal 300 35px/40px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__ammount span sup {
+  font-size: 59%;
+}
+
+section.checkout_page__content__contact {
+  margin-bottom: 60px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__head {
+  padding-bottom: 20.5px;
+  border-bottom: 1px solid #f2f2f2;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__head h3 {
+  font: normal normal normal 32px/40px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip {
+  margin-top: 50px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip.buy {
+  margin-top: 32px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+  margin-bottom: 18px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  border-radius: 10px;
+  padding: 14px 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #bbbbbb;
+  opacity: 1;
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  user-select: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox input:checked ~ .checkmark {
+  background: #005b9d 0% 0% no-repeat padding-box;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox input:checked ~ .border {
+  border: 1px solid #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox:hover {
+  border: 1px solid #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox:hover input ~ .checkmark {
+  background-color: #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  border-bottom-left-radius: 6px;
+  background-color: transparent;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 11px;
+  top: 3px;
+  width: 9px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox .border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__inputs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__btncont {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__btncont .checkout_page__content__contact__manip__btn {
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
+  border-radius: 40px;
+  opacity: 1;
+  padding: 14px 30px;
+  outline: none;
+  text-transform: uppercase;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-top: 20px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  opacity: 1;
+  padding: 14px 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  cursor: pointer;
+  overflow: hidden;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: black;
+  margin-bottom: 10px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box h4 {
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box p {
+  font: normal normal 300 16px/20px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 5px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box span {
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box span sup {
+  top: -5px;
+  font-size: 70%;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box input:checked ~ .checkmark {
+  background: #005b9d 0% 0% no-repeat padding-box;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box input:checked ~ .checkmark:after {
+  display: block;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box input:checked ~ .border {
+  border: 1px solid #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box:hover {
+  border: 1px solid #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box:hover input ~ .checkmark {
+  background-color: #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  border-bottom-left-radius: 6px;
+  background-color: transparent;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 11px;
+  top: 3px;
+  width: 9px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box.checked {
+  background: #005b9d 0% 0% no-repeat padding-box;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box.checked .logo {
+  background: white;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box.checked h4,
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box.checked p,
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box.checked span {
+  color: white;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedboxAccept {
+  position: relative;
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font: normal normal 300 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+  user-select: none;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedboxAccept .text {
+  display: flex;
+  align-items: center;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedboxAccept input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedboxAccept input:checked ~ .checkmark:after {
+  display: block;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedboxAccept .checkmark {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  grid-area: 1/1/2/2;
+  background: #eeeeee 0% 0% no-repeat padding-box;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  opacity: 1;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedboxAccept .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 16px;
+  top: 2px;
+  width: 13px;
+  height: 20px;
+  border: solid #005b9d;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm {
+  position: relative;
+  margin: 11px 0;
+  padding: 11px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  opacity: 1;
+  cursor: pointer;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm img {
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm p {
+  font: normal normal bold 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm input:checked ~ .checkmark {
+  background: #005b9d 0% 0% no-repeat padding-box;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm input:checked ~ .checkmark:after {
+  display: block;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm input:checked ~ .border {
+  border: 1px solid #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm:hover {
+  border: 1px solid #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm:hover input ~ .checkmark {
+  background-color: #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm:hover input ~ .border {
+  border: 1px solid #005b9d;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  border-bottom-left-radius: 6px;
+  background-color: transparent;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 11px;
+  top: 3px;
+  width: 9px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm .border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm.checked {
+  background: #005b9d 0% 0% no-repeat padding-box;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm.checked .logo {
+  background: white;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm.checked h4,
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm.checked p,
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm.checked span {
+  color: white;
+}
+
+.checkout_page__input {
+  display: flex;
+  margin-bottom: 18px;
+}
+.checkout_page__input input {
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  opacity: 1;
+  width: 100%;
+  border-radius: 8px;
+  font: normal normal 300 18px/23px Muli;
+  color: #333333;
+  opacity: 1;
+  padding: 14px 20px;
+  background: white;
 }
 
 section.checkout_page__content {
   padding: 82px 0 155px;
-  height: 5000px;
-  background: red;
+}
+section.checkout_page__content > svg {
+  margin-bottom: 75.3px;
 }
 
 .checkout_page {
@@ -14,7 +526,8 @@ section.checkout_page__content {
 .checkout_page__container {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(auto-fit, minmax(312px, 1fr)) minmax(313px, 393px);
   grid-template-rows: auto;
   grid-column-gap: 16.971%;
   grid-row-gap: 0px;
@@ -22,9 +535,10 @@ section.checkout_page__content {
 .checkout_page::after {
   position: absolute;
   content: "";
+  z-index: -1;
   top: 0;
   right: 0;
-  width: 36%;
+  width: 30%;
   height: 100%;
   background: #f2f2f2 0% 0% no-repeat padding-box;
 }
