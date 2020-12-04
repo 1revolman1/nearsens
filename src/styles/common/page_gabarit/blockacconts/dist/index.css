@@ -1,11 +1,12 @@
 section.page_garbit__blockacconts {
-  margin-bottom: 50px;
-  margin-top: 100px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__blockacconts {
     width: 90%;
-    margin: 0 auto 40px;
+    margin: 0 auto;
+    padding: 0 0 40px;
   }
 }
 section.page_garbit__blockacconts .page_garbit__blockacconts__text {

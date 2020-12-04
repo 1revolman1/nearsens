@@ -1,17 +1,18 @@
-@import "common/global";
+@import 'common/global';
 
-@import "common/header";
+@import 'common/header';
 
-@import "common/footer";
+@import 'common/footer';
 
-@import "common/usecase_list/index";
-@import "common/product_list/index";
-@import "common/product_page/index";
-@import "common/usecase_details/index";
-@import "common/page_gabarit/index";
-@import "common/index/index";
-@import "common/404/index";
-@import "common/login/index";
-@import "common/signup/index";
-@import "common/contact/index";
-@import "common/cart/index";
+@import 'common/usecase_list/index';
+@import 'common/product_list/index';
+@import 'common/product_page/index';
+@import 'common/usecase_details/index';
+@import 'common/page_gabarit/index';
+@import 'common/index/index';
+@import 'common/404/index';
+@import 'common/login/index';
+@import 'common/signup/index';
+@import 'common/contact/index';
+@import 'common/cart/index';
+@import 'common/checkout/index';

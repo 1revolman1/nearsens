@@ -1,12 +1,16 @@
 section.page_garbit__textblockwithlogo {
-  margin-bottom: 98px;
-  margin-top: 80px;
+  padding-bottom: 38px;
+  padding-top: 80px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__textblockwithlogo {
     width: 90%;
-    margin: 40px auto 40px;
+    margin: 0 auto;
+    padding: 40px 0 40px;
   }
+}
+section.page_garbit__textblockwithlogo.add-padding {
+  padding-top: 80px;
 }
 section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h3 {
   font: normal normal 300 45px/56px Muli;

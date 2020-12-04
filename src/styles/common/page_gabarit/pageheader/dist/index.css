@@ -1,3 +1,15 @@
+section.page_gabarit__pageheader {
+  margin-bottom: 0;
+  padding: 50px 0;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader {
+    padding: 0;
+  }
+}
+section.page_gabarit__pageheader.add-padding {
+  padding: 80px 0 80px;
+}
 section.page_gabarit__pageheader.gray {
   background: #f2f2f2 0% 0% no-repeat padding-box;
 }

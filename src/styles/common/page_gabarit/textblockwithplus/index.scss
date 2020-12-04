@@ -1,10 +1,14 @@
 @import '../../../mixins/media';
 section.page_garbit__textblockwithplus {
-  margin-bottom: 100px;
-  margin-top: 98px;
+  // margin-bottom: 100px;
+  // margin-top: 98px;
+  padding-top: 38px;
+  padding-bottom: 50px;
   @include media-tablet {
     width: 90%;
-    margin: 40px auto 40px;
+    margin: 0 auto;
+
+    padding: 40px 0 40px;
   }
   .page_garbit__textblockwithplus__text {
     width: 46%;

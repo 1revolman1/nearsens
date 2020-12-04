@@ -14,9 +14,11 @@ section.page_gabarit__twobigblockperline {
       }
     }
   }
-  margin-bottom: 87px;
+  // margin-bottom: 87px;
+  padding-bottom: 43px;
   @include media-tablet {
-    margin-bottom: 40px;
+    padding-bottom: 15px;
+    // margin-bottom: 40px;
   }
   .page_gabarit__twobigblockperline__wrap {
     display: flex;

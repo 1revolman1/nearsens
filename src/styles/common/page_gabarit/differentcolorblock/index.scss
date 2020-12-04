@@ -2,11 +2,17 @@
 
 section.page_garbarit__differentcolorblock {
   padding: 75px 0;
-  margin-bottom: 74px;
-  margin-top: 48px;
+  // margin-bottom: 74px;
+  // margin-top: 48px;
   @include media-tablet {
     padding: 50px 0 50px;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
+  }
+  &.add-padding {
+    padding: 120px 0 123px;
+    @include media-tablet {
+      padding: 90px 0 90px;
+    }
   }
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;

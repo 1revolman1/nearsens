@@ -1,11 +1,19 @@
 section.page_gabarit__fourblocks {
-  margin-bottom: 86px;
-  margin-top: 87px;
+  padding-bottom: 43px;
+  padding-top: 43px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks {
-    margin-bottom: 40px;
-    margin-top: 40px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+  }
+}
+section.page_gabarit__fourblocks.add-padding {
+  padding-bottom: 86px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__fourblocks.add-padding {
+    padding-bottom: 40px;
   }
 }
 section.page_gabarit__fourblocks.blue {
