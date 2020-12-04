@@ -92,11 +92,3 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   height: 100%;
   border-radius: 10px;
 }
-section.checkout_page__content {
-  padding: 82px 0 155px;
-  height: 5000px;
-  background: red;
-}
-section.checkout_page__content > svg {
-  margin-bottom: 75.3px;
-}
