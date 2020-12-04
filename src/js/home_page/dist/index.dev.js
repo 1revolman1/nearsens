@@ -38,13 +38,74 @@ var useHomePage = function useHomePage() {
     // });
   }
 
-  var parallaxContainer = document.querySelector('.index__parallax');
-  document.querySelector('.index__createsolution__wrap__discover').addEventListener('click', function () {
-    document.querySelector('.index__youtubeframe').scrollIntoView({
-      block: 'center',
-      behavior: 'smooth'
+  function Video() {
+    console.log('VIDEO');
+    var video = document.querySelector('div#player-container video');
+
+    if (video !== null && typeof video !== 'undefined') {
+      var onScrollChange = function onScrollChange(changes, observer) {
+        changes.forEach(function (change) {
+          if (change.intersectionRatio === 0) {
+            video.pause();
+          } else {
+            video.play();
+          }
+        });
+      };
+
+      video.pause();
+      var options = {
+        root: null,
+        //root
+        rootMargin: '0%',
+        threshold: 0
+      };
+      var observer = new IntersectionObserver(onScrollChange, options);
+      var target = document.querySelector('.index__youtubeframe');
+      if (target) observer.observe(target);
+    }
+  }
+
+  function OtherPage() {
+    console.log('LOAD OTHER PAGE');
+
+    if (!window.innerWidth > 768) {
+      var elements = document.querySelectorAll('.index__morewithless__blockwithhover__element');
+      elements.forEach(function (elm) {
+        elm.classList.add('mobile-page');
+      });
+    }
+
+    document.querySelector('.index__createsolution__wrap__discover').addEventListener('click', function () {
+      document.querySelector('.index__youtubeframe').scrollIntoView({
+        block: 'center',
+        behavior: 'smooth'
+      });
     });
-  });
+    Video();
+  }
+
+  var parallaxContainer = document.querySelector('.index__parallax');
+  parallaxContainer.addEventListener('parallax', function (event) {
+    switch (event.detail.state) {
+      case 'loaded img':
+        Parallax(parallaxContainer);
+        break;
+
+      case 'load other script':
+        OtherPage();
+        break;
+
+      default:
+        console.log("ELSE");
+        break;
+    }
+  }); // parallaxContainer.dispatchEvent(
+  //   new CustomEvent('parallax', {
+  //     detail: { state: 'init' },
+  //   })
+  // );
+
   var imageObject = {
     images: document.querySelectorAll('.index__parallax #scene img'),
     countOfLoadedImages: 0,
@@ -69,124 +130,42 @@ var useHomePage = function useHomePage() {
 
             if (_this.countOfLoadedImages === _this.images.length) {
               //animation start when all pictures loaded
-              Parallax(parallaxContainer);
+              // Parallax(parallaxContainer);
+              parallaxContainer.dispatchEvent(new CustomEvent('parallax', {
+                detail: {
+                  state: 'loaded img'
+                }
+              }));
             }
           });
         }
 
         if (_this.countOfLoadedImages === _this.images.length) {
           //animation start when all pictures loaded
-          Parallax(parallaxContainer);
+          // Parallax(parallaxContainer);
+          parallaxContainer.dispatchEvent(new CustomEvent('parallax', {
+            detail: {
+              state: 'loaded img'
+            }
+          }));
         }
       });
     }
   }; // window.innerWidth > 768 && imageObject.init();
 
   if (window.innerWidth > 768) {
-    Parallax(parallaxContainer);
+    // Parallax(parallaxContainer);
+    imageObject.init();
   } else {
     var elements = document.querySelectorAll('.index__morewithless__blockwithhover__element');
     elements.forEach(function (elm) {
       elm.classList.add('mobile-page');
     });
-  } // function onYouTubeIframeAPIReady() {
-  //     window.YT.ready(function() {
-  //         window.player = new YT.Player("player-container", {
-  //             videoId, // YouTube Video ID
-  //             width: 640, // Player width (in px)
-  //              events: {
-  //                 'onReady':onPlayerReady,
-  //              },
-  //             playerVars: {
-  //                 autoplay: 0, // Auto-play the video on load
-  //                 loop: 1, // Run the video in a loop
-  //                 mute: 1, // Sound Off On
-  //                 rel: 0,
-  //                 controls: 0, // Show pause/play buttons in player
-  //                 showinfo: 0, // Hide the video title
-  //                 modestbranding: 1, // Hide the Youtube Logo
-  //                 fs: 0, // Hide the full screen button
-  //                 cc_load_policy: 0, // Hide closed captions
-  //                 iv_load_policy: 0, // Hide the Video Annotations
-  //                 autohide: 1, // Hide video controls when playing
-  //             },
-  //         });
-  //     });
-  // }
-  // function onPlayerReady(event) {
-  //     console.log("EVENT",event)
-  //     // event.target.setVolume(100);
-  //     event.target.playVideo();
-  //     function onScrollChange(changes, observer) {
-  //         changes.forEach(change => {
-  //             if (change.intersectionRatio===0) {
-  //                 event.target.pauseVideo();
-  //             }
-  //             else{
-  //                 event.target.playVideo();
-  //             }
-  //         });
-  //     }
-  //     const options = {
-  //         root: null, //root
-  //         rootMargin: '0%',
-  //         threshold: 0,
-  //     };
-  //     const observer = new IntersectionObserver(onScrollChange, options);
-  //     const target = document.querySelector('.index__youtubeframe');
-  //     if(target) observer.observe(target);
-  // }
-  // onYouTubeIframeAPIReady();
+  }
 
-
-  var video = document.querySelector('div#player-container video');
-
-  if (video !== null && typeof video !== 'undefined') {
-    var onScrollChange = function onScrollChange(changes, observer) {
-      changes.forEach(function (change) {
-        if (change.intersectionRatio === 0) {
-          video.pause();
-        } else {
-          video.play();
-        }
-      });
-    };
-
-    video.pause();
-    var options = {
-      root: null,
-      //root
-      rootMargin: '0%',
-      threshold: 0
-    };
-    var observer = new IntersectionObserver(onScrollChange, options);
-    var target = document.querySelector('.index__youtubeframe');
-    if (target) observer.observe(target);
-  } // const video = document.querySelector(".video-container video");
-  // video.play();
-  // const observer = new IntersectionObserver((entries) => {
-  // entries.forEach((entry) => {
-  //     if (!entry.isIntersecting) {
-  //     video.pause();
-  //     } else {
-  //     video.play();
-  //     }
-  // });
-  // }, {});
-  // observer.observe(video);
-  // $(window).on('scroll load', function(){
-  //     $('.index__youtubeframe__frame iframe').each( function(i){
-  //       player.pauseVideo();
-  //       var scroll_position = $(window).scrollTop();
-  //       var bottom_of_video = $(this).offset().top + ($(this).outerHeight() / 2);
-  //       var bottom_of_window3 = $(window).scrollTop() + $(window).height();
-  //       if( bottom_of_window3 > bottom_of_video && scroll_position < bottom_of_video ) {
-  //         player.playVideo();
-  //       } else {
-  //         player.pauseVideo();
-  //       }
-  //     });
-  //   });
+  if (typeof development === 'boolean' && development) {
+    OtherPage();
+  } // Video();
 
 };
 

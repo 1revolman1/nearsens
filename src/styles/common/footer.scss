@@ -22,6 +22,14 @@ footer.globalfooter {
       ul {
         margin: 0 0 20px;
         flex: 1 1 calc(17% + 30px);
+        &:first-of-type {
+          @include media-forHEADER {
+            display: none;
+            @include media-tablet {
+              display: inherit;
+            }
+          }
+        }
         &.open {
           li {
             display: block;

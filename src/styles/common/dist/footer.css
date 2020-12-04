@@ -21,6 +21,16 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul {
   margin: 0 0 20px;
   flex: 1 1 calc(17% + 30px);
 }
+@media screen and (max-width: 1023px) {
+  footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul:first-of-type {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
+  footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul:first-of-type {
+    display: inherit;
+  }
+}
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul.open li {
   display: block;
 }

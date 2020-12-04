@@ -1,27 +1,27 @@
-section.page_gabarit__pageheader{
-    &.gray{
-        background: #F2F2F2 0% 0% no-repeat padding-box;
-    }
-    &.blue{
-        background: #005B9D 0% 0% no-repeat padding-box;
-    }
-    .page_gabarit__pageheader-wrap{
-        .page_gabarit__pageheader__text{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .page_gabarit__pageheader__text__head{
-                h3{
-                    color: #FFFFFF;
-                }
-            }
-            .page_gabarit__pageheader__text__info{
-                .page_gabarit__pageheader__text__info__text-block-text{
-                    p{
-                        color: #FFFFFF;
-                    }
-                }
-            }
+section.page_gabarit__pageheader {
+  &.gray {
+    background: #f2f2f2 0% 0% no-repeat padding-box;
+  }
+  &.blue {
+    background: #005b9d 0% 0% no-repeat padding-box;
+  }
+  .page_gabarit__pageheader-wrap {
+    .page_gabarit__pageheader__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .page_gabarit__pageheader__text__head {
+        h3 {
+          color: #ffffff;
         }
+      }
+      .page_gabarit__pageheader__text__info {
+        .page_gabarit__pageheader__text__info__text-block-text {
+          p {
+            color: #ffffff;
+          }
+        }
+      }
     }
+  }
 }
