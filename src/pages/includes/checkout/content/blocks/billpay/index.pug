@@ -1,0 +1,20 @@
+section.checkout_page__content__contact
+    .checkout_page__content__contact__head
+        h3 Billing address
+    .checkout_page__content__contact__manip.buy
+        label.checkout_page__content__contact__manip__chekedboxAccept
+            span.text Same as shipping address
+            input(type='checkbox' checked='checked')
+            span.checkmark
+section.checkout_page__content__contact
+    .checkout_page__content__contact__head
+        h3 Payment method
+    .checkout_page__content__contact__manip
+        .checkout_page__content__contact__manip__payMethod
+            each val in [1,2,3]
+                .checkout_page__content__contact__manip__payMethod__elm
+                    img(src="https://thumbs.dreamstime.com/b/parcel-icon-trendy-logo-concept-white-background-delivery-logistics-collection-suitable-use-web-apps-mobile-print-131189753.jpg", alt="")
+                    p Paypal
+        .checkout_page__content__contact__manip__btncont
+                a.checkout_page__content__contact__manip__btn PAY
+        

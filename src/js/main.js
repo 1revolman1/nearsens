@@ -9,6 +9,8 @@ import { useSignUpPage } from './signup_page';
 import { useContactPage } from './contact_page';
 import { useCartPage } from './cart_page';
 import { useHolidayFunc } from './holdayfunctionality';
+import { useCheckoutPage } from './checkout_page';
+
 function getBodyScrollTop() {
   return (
     self.pageYOffset ||
@@ -137,6 +139,9 @@ $(document).ready(() => {
       useSignUpPage();
     case typePage === 'cart_page':
       useCartPage();
+      break;
+    case typePage === 'checkout_page':
+      useCheckoutPage();
       break;
     default:
       console.log(`ELSE PAGE`);

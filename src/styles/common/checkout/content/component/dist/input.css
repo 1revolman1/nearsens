@@ -1,5 +1,6 @@
 .checkout_page__input {
   display: flex;
+  margin-bottom: 18px;
 }
 .checkout_page__input input {
   border: 1px solid #bbbbbb;
