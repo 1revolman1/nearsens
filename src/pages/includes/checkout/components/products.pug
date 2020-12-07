@@ -1,0 +1,14 @@
+section.checkout_page__products
+    button.accordion 
+        |Section 1 
+        i.fas.fa-angle-up
+    .panel
+        each val in [1,2,3,4,5]
+            .checkout_page__products__element
+                .checkout_page__products__element__img
+                    img(src="img/product12.png", alt="")
+                .checkout_page__products__element__text
+                    p Product name lorem ipsum
+                .checkout_page__products__element__price
+                    span 49
+                        sup €99

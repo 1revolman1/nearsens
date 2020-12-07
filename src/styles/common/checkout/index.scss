@@ -15,6 +15,96 @@
     grid-column-gap: 16.971%;
     grid-row-gap: 0px;
   }
+  &__products {
+    padding-bottom: 20.5px;
+    margin-bottom: 36.5px;
+    border-bottom: 1px solid #707070;
+    .accordion {
+      margin: 10px 0;
+      border-radius: 15px;
+      position: relative;
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 15px 36px 15px 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+      font: normal normal 300 16px/20px Muli;
+      &.active {
+        i {
+          transform: rotate(0deg);
+        }
+      }
+      i {
+        transition: all ease 0.5s;
+        transform: rotate(180deg);
+        position: absolute;
+        right: 18px;
+      }
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: #ccc;
+    }
+
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      // max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      display: grid;
+      grid-template-columns: 1fr;
+      // grid-template-rows: 1fr;
+      grid-row-gap: 20px;
+      .checkout_page__products__element {
+        display: grid;
+        grid-template-columns: 60px 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        .checkout_page__products__element__img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          border-radius: 15px;
+          background: #005b9d;
+          img {
+            object-fit: cover;
+          }
+        }
+        .checkout_page__products__element__text {
+          display: flex;
+          align-items: center;
+          p {
+            font: normal normal normal 16px/20px Muli;
+            letter-spacing: 0px;
+            color: #28373b;
+            opacity: 1;
+          }
+        }
+        .checkout_page__products__element__price {
+          display: flex;
+          align-items: center;
+          span {
+            font: normal normal 300 20px/25px Muli;
+            letter-spacing: 0px;
+            color: #333333;
+            opacity: 1;
+            sup {
+              top: -0.5em;
+              font-size: 65%;
+            }
+          }
+        }
+      }
+    }
+  }
   &::after {
     position: absolute;
     content: '';
