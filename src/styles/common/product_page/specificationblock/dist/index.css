@@ -187,87 +187,52 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
   text-align: left;
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block {
-  display: flex;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
 @media screen and (max-width: 768px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block {
-    flex-direction: column;
-  }
-}
-section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul span:last-of-type {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head li {
-    opacity: 1 !important;
-    text-transform: unset !important;
-  }
-  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head li span:first-of-type {
-    display: inline-block;
-    padding-right: 20px;
-    font: normal normal normal 14px/18px Muli;
-    letter-spacing: 0px;
-    color: #ffffff;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 5px;
-  }
-  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head li span:last-of-type {
-    padding-left: 20px;
-    text-align: right;
-    display: block;
-    font: normal normal normal 14px/18px Muli;
-    letter-spacing: 0px;
-    text-transform: unset;
-    color: #ffffff;
-    opacity: 1;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.text {
-    display: none;
+    grid-gap: inherit;
   }
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul li {
-  list-style: none;
-  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 49px;
+  grid-row-gap: 0px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul li {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     margin-bottom: 15px;
   }
 }
-section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul:nth-child(odd) {
-  margin-right: 50px;
-}
-@media screen and (max-width: 768px) {
-  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul:nth-child(odd) {
-    margin-right: 0;
-  }
-}
-section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul:nth-child(odd) li {
+section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul li span:first-of-type {
   font: normal normal normal 14px/18px Muli;
   letter-spacing: 0px;
   color: #ffffff;
   text-transform: uppercase;
   opacity: 0.7;
 }
-section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul:nth-child(even) {
-  margin-right: 140px;
-}
 @media screen and (max-width: 768px) {
-  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul:nth-child(even) {
-    margin-right: 0;
+  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul li span:first-of-type {
+    margin-bottom: 5px;
+    text-align: start;
   }
 }
-section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul:nth-child(even) li {
-  font: normal normal normal 16px/18px Muli;
+section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul li span:last-of-type {
+  font: normal normal normal 16px/20px Muli;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul li span:last-of-type {
+    font: normal normal normal 14px/18px Muli;
+    text-align: end;
+  }
 }
