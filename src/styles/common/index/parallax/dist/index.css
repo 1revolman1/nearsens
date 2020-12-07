@@ -439,7 +439,7 @@ section.index__parallax #scene .middle-mount-layer {
 section.index__parallax #scene .text-container {
   position: absolute;
   transition: top 1s ease;
-  width: 100%;
+  width: 95%;
   max-width: 1300px;
   margin: 0 auto;
   position: absolute;

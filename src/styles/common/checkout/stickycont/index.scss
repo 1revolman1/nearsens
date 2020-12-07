@@ -1,12 +1,21 @@
+@import '../../../mixins/media.scss';
+
 section.checkout_page__stickycont {
   position: relative;
   padding: 82px 0 0 40px;
   background: #f2f2f2 0% 0% no-repeat padding-box;
+  @include media-tablet {
+    padding: 82px 0 40px;
+  }
   .checkout_page__stickycont__block {
     position: sticky;
     // background: red;
     width: 100%;
     top: 82px;
+    @include media-tablet {
+      width: 90%;
+      margin: 0 auto;
+    }
     h3 {
       font: normal normal normal 18px/23px Muli;
       letter-spacing: 0px;

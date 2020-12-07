@@ -13,6 +13,12 @@ section.page_gabarit__pageheader.add-padding {
 section.page_gabarit__pageheader.gray {
   background: #f2f2f2 0% 0% no-repeat padding-box;
 }
+section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h3 {
+  color: black;
+}
+section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text p {
+  color: black;
+}
 section.page_gabarit__pageheader.blue {
   background: #005b9d 0% 0% no-repeat padding-box;
 }

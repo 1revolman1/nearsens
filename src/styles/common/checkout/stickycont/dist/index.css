@@ -3,10 +3,21 @@ section.checkout_page__stickycont {
   padding: 82px 0 0 40px;
   background: #f2f2f2 0% 0% no-repeat padding-box;
 }
+@media screen and (max-width: 768px) {
+  section.checkout_page__stickycont {
+    padding: 82px 0 40px;
+  }
+}
 section.checkout_page__stickycont .checkout_page__stickycont__block {
   position: sticky;
   width: 100%;
   top: 82px;
+}
+@media screen and (max-width: 768px) {
+  section.checkout_page__stickycont .checkout_page__stickycont__block {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 section.checkout_page__stickycont .checkout_page__stickycont__block h3 {
   font: normal normal normal 18px/23px Muli;

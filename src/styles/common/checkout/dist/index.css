@@ -3,10 +3,21 @@ section.checkout_page__stickycont {
   padding: 82px 0 0 40px;
   background: #f2f2f2 0% 0% no-repeat padding-box;
 }
+@media screen and (max-width: 768px) {
+  section.checkout_page__stickycont {
+    padding: 82px 0 40px;
+  }
+}
 section.checkout_page__stickycont .checkout_page__stickycont__block {
   position: sticky;
   width: 100%;
   top: 82px;
+}
+@media screen and (max-width: 768px) {
+  section.checkout_page__stickycont .checkout_page__stickycont__block {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 section.checkout_page__stickycont .checkout_page__stickycont__block h3 {
   font: normal normal normal 18px/23px Muli;
@@ -516,21 +527,49 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
 section.checkout_page__content {
   padding: 82px 0 155px;
 }
+@media screen and (max-width: 768px) {
+  section.checkout_page__content {
+    width: 90%;
+    padding: 60px 0 55px;
+    margin: 0 auto;
+  }
+}
 section.checkout_page__content > svg {
   margin-bottom: 75.3px;
+}
+@media screen and (max-width: 768px) {
+  section.checkout_page__content > svg {
+    margin-bottom: 45px;
+  }
 }
 
 .checkout_page {
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .checkout_page {
+    margin: 0;
+  }
+}
+.checkout_page * {
+  user-select: none;
+}
 .checkout_page__container {
   position: relative;
   display: grid;
   grid-auto-flow: row dense;
-  grid-template-columns: repeat(auto-fit, minmax(312px, 1fr)) minmax(313px, 393px);
+  grid-template-columns: repeat(auto-fit, minmax(312px, 1fr)) minmax(270px, 393px);
   grid-template-rows: auto;
   grid-column-gap: 16.971%;
   grid-row-gap: 0px;
+}
+@media screen and (max-width: 768px) {
+  .checkout_page__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
 }
 .checkout_page__products {
   padding-bottom: 20.5px;
@@ -567,21 +606,30 @@ section.checkout_page__content > svg {
   background-color: #ccc;
 }
 .checkout_page__products .panel {
-  padding: 0 18px;
+  padding: 0 18px 0;
   background-color: white;
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 20px;
+  transition: all ease 0.3s;
+}
+.checkout_page__products .panel.active {
+  max-height: 395px;
+  overflow-y: scroll;
+  padding: 10px 18px 0;
 }
 .checkout_page__products .panel .checkout_page__products__element {
   display: grid;
-  grid-template-columns: 60px 1fr 1fr;
+  grid-template-columns: 60px 1fr max-content;
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
+  align-items: flex-start;
 }
 .checkout_page__products .panel .checkout_page__products__element .checkout_page__products__element__img {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -589,11 +637,28 @@ section.checkout_page__content > svg {
   border-radius: 15px;
   background: #005b9d;
 }
+.checkout_page__products .panel .checkout_page__products__element .checkout_page__products__element__img .checkout_page__products__element__img__digit {
+  position: absolute;
+  padding: 1px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -5px;
+  right: -5px;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 50%;
+  font: normal normal bold 14px/18px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
 .checkout_page__products .panel .checkout_page__products__element .checkout_page__products__element__img img {
   object-fit: cover;
 }
 .checkout_page__products .panel .checkout_page__products__element .checkout_page__products__element__text {
   display: flex;
+  align-self: center;
   align-items: center;
 }
 .checkout_page__products .panel .checkout_page__products__element .checkout_page__products__element__text p {
@@ -603,6 +668,7 @@ section.checkout_page__content > svg {
   opacity: 1;
 }
 .checkout_page__products .panel .checkout_page__products__element .checkout_page__products__element__price {
+  align-self: center;
   display: flex;
   align-items: center;
 }
@@ -625,4 +691,14 @@ section.checkout_page__content > svg {
   width: 30%;
   height: 100%;
   background: #f2f2f2 0% 0% no-repeat padding-box;
+}
+@media screen and (max-width: 768px) {
+  .checkout_page::after {
+    content: inherit;
+    width: 100%;
+    height: 30%;
+    top: inherit;
+    right: inherit;
+    bottom: 0;
+  }
 }

@@ -1,9 +1,18 @@
 @import './blocks/contacts.scss';
 @import './component/input.scss';
+@import '../../../mixins/media.scss';
 
 section.checkout_page__content {
   padding: 82px 0 155px;
+  @include media-tablet {
+    width: 90%;
+    padding: 60px 0 55px;
+    margin: 0 auto;
+  }
   > svg {
     margin-bottom: 75.3px;
+    @include media-tablet {
+      margin-bottom: 45px;
+    }
   }
 }
