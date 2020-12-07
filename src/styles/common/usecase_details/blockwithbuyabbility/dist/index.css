@@ -1,6 +1,6 @@
 section.usecase_details__blockwithbuyabbility {
   padding: 60px 0;
-  background: #005B9D 0% 0% no-repeat padding-box;
+  background: #005b9d 0% 0% no-repeat padding-box;
   margin-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
@@ -27,7 +27,7 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__head h3 {
   font: normal normal normal 32px/40px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -98,18 +98,19 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-text h4 {
   font: normal normal normal 22px/28px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
   margin-bottom: 5px;
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-text h4 .disqount {
+  white-space: nowrap;
   margin-left: 10px;
-  background: #FFA10A 0% 0% no-repeat padding-box;
+  background: #ffa10a 0% 0% no-repeat padding-box;
   padding: 4px 10px;
   border-radius: 10px;
   font: normal normal 600 16px/20px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -122,7 +123,7 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-text p {
   font: normal normal 300 16px/20px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -155,7 +156,7 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   margin: 0 10.5px;
   font: normal normal 300 30px/38px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -174,10 +175,10 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   position: absolute;
   left: 0;
   top: 50%;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
   height: 0;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
   transform: rotate(-30deg);
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons {
@@ -194,7 +195,7 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons .button {
   padding: 6px 8px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background: transparent;
   border-radius: 10px;
   opacity: 1;
@@ -203,8 +204,8 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   outline: none;
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons .button:disabled {
-  color: #A9AFB0;
-  border: 1px solid #A9AFB0;
+  color: #a9afb0;
+  border: 1px solid #a9afb0;
   border-radius: 10px;
   opacity: 1;
 }
@@ -212,7 +213,7 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   margin: 0 20px;
   font: normal normal normal 22px/28px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -232,13 +233,17 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   }
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator img {
-  width: 86px;
+  width: 56px;
+  height: 32px;
   object-fit: cover;
+  margin-right: 0;
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator img {
-    width: 70px;
-    margin-right: auto;
+    width: 41px;
+    height: 24px;
+    display: block;
+    margin-right: 11px;
   }
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator .usecase_details__blockwithbuyabbility-wrap__manipulator__block {
@@ -252,6 +257,9 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
     align-items: flex-end;
   }
 }
+section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator .usecase_details__blockwithbuyabbility-wrap__manipulator__block .usecase_details__blockwithbuyabbility-wrap__manipulator__block__text {
+  display: flex;
+}
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator .usecase_details__blockwithbuyabbility-wrap__manipulator__block.show-success .shop-cart .success_block {
   opacity: 1;
   visibility: visible;
@@ -259,9 +267,9 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator .usecase_details__blockwithbuyabbility-wrap__manipulator__block p {
   font: normal normal 300 24px/30px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
-  margin: 0 30px;
+  margin: 0 30px 0 18px;
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator .usecase_details__blockwithbuyabbility-wrap__manipulator__block p {
@@ -272,14 +280,14 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator .usecase_details__blockwithbuyabbility-wrap__manipulator__block .shop-cart {
   display: flex;
   position: relative;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
-  border: 1px solid #2EC9AD;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
   border-radius: 40px;
   opacity: 1;
   outline: none;
   font: normal normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
   text-transform: uppercase;
   padding: 12px 30px;
@@ -303,6 +311,6 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   left: 0;
   width: 100%;
   height: 100%;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
-  border: 1px solid #2EC9AD;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
 }

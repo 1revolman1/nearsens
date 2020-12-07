@@ -214,6 +214,9 @@ section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .pro
 section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container.main-btn .productpage__pageheader_sticky-wrap-manipulator-withprice {
   width: 100%;
 }
+section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container.main-btn .productpage__pageheader_sticky-wrap-manipulator-withprice button {
+  padding: 10px 20px;
+}
 section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container.overlay {
   justify-content: space-between;
   z-index: 1;

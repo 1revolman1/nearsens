@@ -41,6 +41,7 @@ section.productlist__scrollheader .productlist__scrollheader-wrapper {
 @media screen and (max-width: 768px) {
   section.productlist__scrollheader .productlist__scrollheader-wrapper {
     padding: 19px 0;
+    width: 90%;
   }
 }
 section.productlist__scrollheader .productlist__scrollheader-wrapper .productlist__scrollheader-wrapper__text-container {

@@ -21,7 +21,7 @@ footer.globalfooter {
       flex-flow: row wrap;
       ul {
         margin: 0 0 20px;
-        flex: 1 1 calc(17% + 30px);
+        flex: 1 1 calc(15% + 30px);
         &:first-of-type {
           @include media-forHEADER {
             display: none;
@@ -52,6 +52,8 @@ footer.globalfooter {
             }
           }
           a {
+            display: flex;
+            justify-content: flex-start;
             text-decoration: none;
             color: #ffffff;
           }
@@ -91,10 +93,12 @@ footer.globalfooter {
     .globalfooter__wrapper__additional {
       display: flex;
       justify-content: space-between;
+      flex-flow: row wrap;
       padding-top: 31px;
       border-top: 1px solid #33709c;
       margin-bottom: 30px;
       .globalfooter__wrapper__additional__text {
+        margin: 5px 10px 5px 0;
         ul {
           display: flex;
           flex-flow: row wrap;
@@ -146,6 +150,7 @@ footer.globalfooter {
         }
       }
       .globalfooter__wrapper__additional__logos {
+        margin: 5px 0 5px 10px;
         @include media-tablet {
           display: flex;
           justify-content: center;

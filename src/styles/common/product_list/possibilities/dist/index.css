@@ -1,6 +1,12 @@
 section.productlist__posibilities {
   margin-bottom: 80px;
 }
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 section.productlist__posibilities .productlist__posibilities-head {
   display: flex;
   justify-content: space-between;

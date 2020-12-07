@@ -3,7 +3,8 @@
 section.use_case__subscribe {
   // width: 95%;
   width: 100%;
-  margin: 15px auto 160px;
+  margin: 15px auto 80px;
+  // margin: 15px auto 160px;
   // margin-bottom: 160px;
   display: flex;
   flex-direction: row;
@@ -16,7 +17,7 @@ section.use_case__subscribe {
   padding: 60px 30px;
   @include media-tablet {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     flex-direction: column;
     padding: 21px 20px 40px;
   }

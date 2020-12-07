@@ -1,6 +1,6 @@
 section.use_case__subscribe {
   width: 100%;
-  margin: 15px auto 160px;
+  margin: 15px auto 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,7 +14,7 @@ section.use_case__subscribe {
 @media screen and (max-width: 768px) {
   section.use_case__subscribe {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     flex-direction: column;
     padding: 21px 20px 40px;
   }

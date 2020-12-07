@@ -833,6 +833,7 @@ nav.nav {
     margin: 0 auto;
 
     @include media-forHEADER {
+      width: 100%;
       flex-direction: column;
       padding: 0;
       min-height: calc(100vh - 57px);
@@ -847,9 +848,12 @@ nav.nav {
       justify-content: flex-end;
 
       @include media-forHEADER {
+        display: none;
         position: relative;
-        display: flex;
         margin-top: 20px;
+        @include media-tablet {
+          display: flex;
+        }
       }
 
       input {

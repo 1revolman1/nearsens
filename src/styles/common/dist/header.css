@@ -781,6 +781,7 @@ nav.nav .second-menu {
 }
 @media screen and (max-width: 1023px) {
   nav.nav .second-menu {
+    width: 100%;
     flex-direction: column;
     padding: 0;
     min-height: calc(100vh - 57px);
@@ -796,9 +797,14 @@ nav.nav .second-menu .search-menu {
 }
 @media screen and (max-width: 1023px) {
   nav.nav .second-menu .search-menu {
+    display: none;
     position: relative;
-    display: flex;
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
+  nav.nav .second-menu .search-menu {
+    display: flex;
   }
 }
 nav.nav .second-menu .search-menu input {

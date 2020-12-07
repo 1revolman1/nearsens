@@ -2,6 +2,10 @@
 
 section.productlist__posibilities {
   margin-bottom: 80px;
+  @include media-tablet {
+    width: 95%;
+    margin: 0 auto;
+  }
   .productlist__posibilities-head {
     display: flex;
     justify-content: space-between;

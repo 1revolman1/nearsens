@@ -1,6 +1,11 @@
 @import '../../../mixins/media';
 
 section.productlist__products {
+  width: 100%;
+  @include media-tablet {
+    width: 95%;
+    margin: 0 auto;
+  }
   h3 {
     font: normal normal normal 32px/40px Muli;
     letter-spacing: 0px;

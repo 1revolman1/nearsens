@@ -181,6 +181,9 @@ section.productpage__pageheader_sticky {
         }
         .productpage__pageheader_sticky-wrap-manipulator-withprice {
           width: 100%;
+          button {
+            padding: 10px 20px;
+          }
         }
       }
       &.overlay {

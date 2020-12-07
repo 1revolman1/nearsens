@@ -38,6 +38,7 @@ section.productlist__scrollheader {
     @include media-tablet {
       //   padding: 19px 20px;
       padding: 19px 0;
+      width: 90%;
       // width: 100%;
     }
     .productlist__scrollheader-wrapper__text-container {

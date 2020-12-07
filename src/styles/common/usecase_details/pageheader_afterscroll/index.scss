@@ -36,7 +36,7 @@ section.usecase_details__pageheaderafterscroll {
       width: 90%;
     }
     .usecase_details__pageheaderafterscroll-wrap__text {
-      flex: 1;
+      // flex: 1;
       @include media-tablet {
         max-width: 75%;
       }

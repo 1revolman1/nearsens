@@ -15,8 +15,10 @@ section.use_case__pageheader {
   .use-case__pageheader-content {
     max-width: 1300px;
     margin: 0 auto;
-    width: 100%;
-
+    width: 94%;
+    @include media-tablet {
+      width: 100%;
+    }
     h2 {
       text-align: left;
       font: normal normal normal 32px/40px Muli;
