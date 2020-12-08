@@ -40,13 +40,16 @@ section.productpage__specificationblock {
       }
       .productpage__specificationblock-wrap__container-block {
         width: 100%;
-        flex: 0 1 calc(20% + 40px);
+        flex: 0 1 calc(19% + 40px);
+        // flex: 0 1 calc(20% + 40px);
+        // max-width: calc(20% + 40px);
         // flex:0 1 calc(24% + 40px);
         @include media-tablet {
           display: flex;
           flex-flow: row wrap;
           justify-content: space-between;
           flex: none;
+          max-width: inherit;
         }
         .productpage__specificationblock-wrap__container-block__element {
           display: flex;
@@ -103,6 +106,7 @@ section.productpage__specificationblock {
             }
           }
           p {
+            word-break: break-word;
             font: normal normal 300 16px/20px Muli;
             letter-spacing: 0px;
             color: #ffffff;

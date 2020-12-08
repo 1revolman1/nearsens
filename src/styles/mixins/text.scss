@@ -1,0 +1,29 @@
+@mixin hblock($tag: 'h6', $font-size: 24px, $weight: normal, $line: 40px) {
+  $variable: $font-size;
+  @if $tag== 'h6' {
+    $variable: $font-size - 2px;
+  } @else if $tag== 'h5' {
+    $variable: $font-size - 4px;
+  } @else if $tag== 'h4' {
+    $variable: $font-size - 6px;
+  } @else if $tag== 'h3' {
+    $variable: $font-size - 8px;
+  } @else if $tag== 'h2' {
+    $variable: $font-size - 10px;
+  } @else if $tag== 'h1' {
+    $variable: $font-size - 12px;
+  } @else {
+    $variable: $font-size;
+  }
+  @for $i from 1 through 6 {
+    h#{7 - $i} {
+      font: normal normal $weight #{($i * 2) + $variable} / #{$line} Muli;
+      letter-spacing: 0px;
+      opacity: 1;
+      @content;
+      //   @include media-tablet {
+      //     font: normal normal normal 22px/28px Muli;
+      //   }
+    }
+  }
+}

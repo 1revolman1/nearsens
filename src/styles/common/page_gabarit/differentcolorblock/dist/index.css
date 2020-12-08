@@ -17,13 +17,79 @@ section.page_garbarit__differentcolorblock.add-padding {
 section.page_garbarit__differentcolorblock.blue {
   background: #005b9d 0% 0% no-repeat padding-box;
 }
+section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h6 {
+  font: normal normal 300 39px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+}
+section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h5 {
+  font: normal normal 300 41px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+}
+section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h4 {
+  font: normal normal 300 43px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+}
 section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h3 {
+  font: normal normal 300 45px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+}
+section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h2 {
+  font: normal normal 300 47px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+}
+section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h1 {
+  font: normal normal 300 49px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
   color: #ffffff;
 }
 section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap p {
   color: #ffffff;
 }
+section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h6 {
+  font: normal normal 300 39px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #333333;
+}
+section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h5 {
+  font: normal normal 300 41px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #333333;
+}
+section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h4 {
+  font: normal normal 300 43px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #333333;
+}
 section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h3 {
+  font: normal normal 300 45px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #333333;
+}
+section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h2 {
+  font: normal normal 300 47px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #333333;
+}
+section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h1 {
+  font: normal normal 300 49px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
   color: #333333;
 }
 section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap p {
@@ -35,14 +101,75 @@ section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorbl
     margin: 0 auto;
   }
 }
+section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h6 {
+  font: normal normal 300 39px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #333333;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h6 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
+section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h5 {
+  font: normal normal 300 41px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #333333;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h5 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
+section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h4 {
+  font: normal normal 300 43px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #333333;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h4 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h3 {
   font: normal normal 300 45px/56px Muli;
   letter-spacing: 0px;
   opacity: 1;
+  color: #333333;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h3 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
+section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h2 {
+  font: normal normal 300 47px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #333333;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h2 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
+section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h1 {
+  font: normal normal 300 49px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #333333;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap h1 {
     font: normal normal normal 22px/28px Muli;
   }
 }

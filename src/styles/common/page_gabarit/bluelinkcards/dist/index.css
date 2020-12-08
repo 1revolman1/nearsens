@@ -36,15 +36,80 @@ section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbi
     width: 100%;
   }
 }
+section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h6 {
+  font: normal normal 300 39px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h6 {
+    margin-bottom: 20px;
+    font: normal normal normal 22px/28px Muli;
+  }
+}
+section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h5 {
+  font: normal normal 300 41px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h5 {
+    margin-bottom: 20px;
+    font: normal normal normal 22px/28px Muli;
+  }
+}
+section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h4 {
+  font: normal normal 300 43px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h4 {
+    margin-bottom: 20px;
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h3 {
   font: normal normal 300 45px/56px Muli;
   letter-spacing: 0px;
-  color: #ffffff;
   opacity: 1;
+  color: #ffffff;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h3 {
+    margin-bottom: 20px;
+    font: normal normal normal 22px/28px Muli;
+  }
+}
+section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h2 {
+  font: normal normal 300 47px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h2 {
+    margin-bottom: 20px;
+    font: normal normal normal 22px/28px Muli;
+  }
+}
+section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h1 {
+  font: normal normal 300 49px/56px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer h1 {
     margin-bottom: 20px;
     font: normal normal normal 22px/28px Muli;
   }
@@ -103,15 +168,75 @@ section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbi
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text {
   flex: 1;
 }
+section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h6 {
+  font: normal normal bold 16px/28px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h6 {
+    font: normal normal bold 18px/23px Muli;
+  }
+}
+section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h5 {
+  font: normal normal bold 18px/28px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h5 {
+    font: normal normal bold 18px/23px Muli;
+  }
+}
+section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h4 {
+  font: normal normal bold 20px/28px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h4 {
+    font: normal normal bold 18px/23px Muli;
+  }
+}
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h3 {
   font: normal normal bold 22px/28px Muli;
   letter-spacing: 0px;
-  color: #ffffff;
   opacity: 1;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h3 {
+    font: normal normal bold 18px/23px Muli;
+  }
+}
+section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h2 {
+  font: normal normal bold 24px/28px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h2 {
+    font: normal normal bold 18px/23px Muli;
+  }
+}
+section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h1 {
+  font: normal normal bold 26px/28px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text h1 {
     font: normal normal bold 18px/23px Muli;
   }
 }

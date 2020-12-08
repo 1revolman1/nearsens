@@ -13,7 +13,40 @@ section.page_gabarit__pageheader.add-padding {
 section.page_gabarit__pageheader.gray {
   background: #f2f2f2 0% 0% no-repeat padding-box;
 }
+section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h6 {
+  font: normal normal normal 26px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: black;
+}
+section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h5 {
+  font: normal normal normal 28px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: black;
+}
+section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h4 {
+  font: normal normal normal 30px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: black;
+}
 section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h3 {
+  font: normal normal normal 32px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: black;
+}
+section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h2 {
+  font: normal normal normal 34px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: black;
+}
+section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h1 {
+  font: normal normal normal 36px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
   color: black;
 }
 section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text p {
@@ -27,7 +60,40 @@ section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__p
   flex-direction: column;
   justify-content: center;
 }
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h6 {
+  font: normal normal normal 26px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h5 {
+  font: normal normal normal 28px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h4 {
+  font: normal normal normal 30px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+}
 section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h3 {
+  font: normal normal normal 32px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h2 {
+  font: normal normal normal 34px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #ffffff;
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h1 {
+  font: normal normal normal 36px/40px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
   color: #ffffff;
 }
 section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text p {

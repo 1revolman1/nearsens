@@ -1,4 +1,5 @@
 @import '../../../mixins/media';
+@import '../../../mixins/text';
 
 section.page_gabarit__pageheader {
   margin-bottom: 0;
@@ -14,9 +15,12 @@ section.page_gabarit__pageheader {
     .page_gabarit__pageheader-wrap {
       .page_gabarit__pageheader__text {
         .page_gabarit__pageheader__text__head {
-          h3 {
+          @include hblock('h3', 32px) {
             color: black;
           }
+          // h3 {
+          //   color: black;
+          // }
         }
         .page_gabarit__pageheader__text__info {
           .page_gabarit__pageheader__text__info__text-block-text {
@@ -37,9 +41,13 @@ section.page_gabarit__pageheader {
       flex-direction: column;
       justify-content: center;
       .page_gabarit__pageheader__text__head {
-        h3 {
+        @include hblock('h3', 32px) {
           color: #ffffff;
         }
+
+        // h3 {
+        //   color: #ffffff;
+        // }
       }
       .page_gabarit__pageheader__text__info {
         .page_gabarit__pageheader__text__info__text-block-text {
