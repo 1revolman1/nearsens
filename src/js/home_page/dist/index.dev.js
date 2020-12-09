@@ -16,17 +16,20 @@ var useHomePage = function useHomePage() {
     var shadowFour = parallaxContainer.querySelector('.shadow-4');
     var shadowFive = parallaxContainer.querySelector('.shadow-5');
     var LastMountLayer = parallaxContainer.querySelector('.last-mount');
-    var MiddleMountLayer = parallaxContainer.querySelector('.middle-mount-layer'); // const LastLayer = parallaxContainer.querySelector('.last-mount');
+    var MiddleMountLayer = parallaxContainer.querySelector('.middle-mount-layer');
+    var PreMiddleMountLayer = parallaxContainer.querySelector('.premiddle-mount-layer'); // const LastLayer = parallaxContainer.querySelector('.last-mount');
 
     var FirstMountLayer = parallaxContainer.querySelector('.first-mount-layer');
     oneINIT = true;
+    parallaxContainer.classList.add('animated');
     shadowOne.style.bottom = '15%';
     shadowThree.style.bottom = '13%';
     shadowFour.style.bottom = '15%';
     shadowFive.style.bottom = '35%';
     FirstMountLayer.classList.add('anim');
     MiddleMountLayer.classList.add('anim');
-    LastMountLayer.classList.add('anim'); // FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
+    LastMountLayer.classList.add('anim');
+    PreMiddleMountLayer.classList.add('anim'); // FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
 
     setTimeout(function () {
       textBlock.style.top = '15%';
@@ -85,8 +88,9 @@ var useHomePage = function useHomePage() {
     Video();
   }
 
+  document.querySelector('.index-page-container').style.opacity = 1;
   var parallaxContainer = document.querySelector('.index__parallax');
-  parallaxContainer.addEventListener('parallax', function (event) {
+  if (parallaxContainer) parallaxContainer.addEventListener('parallax', function (event) {
     switch (event.detail.state) {
       case 'loaded img':
         Parallax(parallaxContainer);
@@ -100,12 +104,7 @@ var useHomePage = function useHomePage() {
         console.log("ELSE");
         break;
     }
-  }); // parallaxContainer.dispatchEvent(
-  //   new CustomEvent('parallax', {
-  //     detail: { state: 'init' },
-  //   })
-  // );
-
+  });
   var imageObject = {
     images: document.querySelectorAll('.index__parallax #scene img'),
     countOfLoadedImages: 0,
@@ -151,7 +150,7 @@ var useHomePage = function useHomePage() {
         }
       });
     }
-  }; // window.innerWidth > 768 && imageObject.init();
+  };
 
   if (window.innerWidth > 768) {
     // Parallax(parallaxContainer);
@@ -165,7 +164,28 @@ var useHomePage = function useHomePage() {
 
   if (typeof development === 'boolean' && development) {
     OtherPage();
-  } // Video();
+  } // anime({
+  //   targets: '.moving-layer',
+  //   translateX: {
+  //     value: '*=2.5', // 100px * 2.5 = '250px'
+  //     duration: 1000,
+  //     easing: 'easeInOutSine',
+  //   },
+  //   scale: function (el, i, l) {
+  //     return l - i + 0.25;
+  //   },
+  //   // width: {
+  //   //   value: '-=20px', // 28 - 20 = '8px'
+  //   //   duration: 1800,
+  //   //   easing: 'easeInOutSine',
+  //   // },
+  //   // rotate: {
+  //   //   value: '+=2turn', // 0 + 2 = '2turn'
+  //   //   duration: 1800,
+  //   //   easing: 'easeInOutSine',
+  //   // },
+  //   direction: 'alternate',
+  // });
 
 };
 

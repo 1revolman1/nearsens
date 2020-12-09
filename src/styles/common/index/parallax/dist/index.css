@@ -12,6 +12,9 @@ section.index__parallax * {
   pointer-events: none;
   user-select: none;
 }
+section.index__parallax.animated::before {
+  background: transparent linear-gradient(0deg, #ffffff 42%, #ffffff00 100%) 0% 0% no-repeat padding-box;
+}
 section.index__parallax::after {
   content: "";
   position: absolute;
@@ -35,6 +38,11 @@ section.index__parallax::before {
   height: 42%;
   background: transparent linear-gradient(0deg, #ffffff 42%, #ffffff00 100%) 0% 0% no-repeat padding-box;
   z-index: 1;
+}
+@media screen and (min-width: 2500px) {
+  section.index__parallax::before {
+    background: transparent linear-gradient(0deg, #ffffff 8%, #ffffff00 100%) 0% 0% no-repeat padding-box;
+  }
 }
 @media screen and (max-width: 768px) {
   section.index__parallax {
@@ -92,124 +100,12 @@ section.index__parallax #scene .last-mount::after {
 section.index__parallax #scene .last-mount::before {
   content: "";
 }
-@media screen and (min-width: 769px) and (min-width: 1921px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(1.2);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2000px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(1.4);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2100px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(1.6);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2200px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(1.9);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2300px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(2.1);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2400px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(2.4);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2500px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(2.7);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1920px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(1);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1850px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(1);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1440px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(1);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1280px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(1);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1050px) {
-  section.index__parallax #scene .last-mount.anim {
-    transform: scale(1);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 1921px) {
-  section.index__parallax #scene .last-mount {
-    transform: scale(1.5);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2000px) {
-  section.index__parallax #scene .last-mount {
-    transform: scale(1.7);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2100px) {
-  section.index__parallax #scene .last-mount {
-    transform: scale(1.9);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2200px) {
-  section.index__parallax #scene .last-mount {
-    transform: scale(2.2);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2300px) {
-  section.index__parallax #scene .last-mount {
-    transform: scale(2.4);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2400px) {
-  section.index__parallax #scene .last-mount {
-    transform: scale(2.7);
-  }
-}
 @media screen and (min-width: 769px) and (min-width: 2500px) {
   section.index__parallax #scene .last-mount {
     transform: scale(3);
   }
-}
-@media screen and (min-width: 769px) and (max-width: 1920px) {
-  section.index__parallax #scene .last-mount {
-    transform: scale(1.3);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1850px) {
-  section.index__parallax #scene .last-mount {
-    transform: scale(1.1);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1440px) {
-  section.index__parallax #scene .last-mount {
-    transform: scale(1.3);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1280px) {
-  section.index__parallax #scene .last-mount {
-    transform: scale(1.3);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1050px) {
-  section.index__parallax #scene .last-mount {
-    transform: scale(1.3);
+  section.index__parallax #scene .last-mount img {
+    transform: translate(0px, 11%);
   }
 }
 section.index__parallax #scene .last-mount img {
@@ -233,6 +129,94 @@ section.index__parallax #scene .last-mount img {
     max-height: 711px;
   }
 }
+section.index__parallax #scene .premiddle-mount-layer {
+  position: absolute;
+  width: 100%;
+  top: 26%;
+  transition: transform 1s ease;
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) {
+  section.index__parallax #scene .premiddle-mount-layer.anim {
+    width: 57%;
+    top: 25%;
+    transform: translate(-50px, 0px) scale(0.9);
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2000px) {
+  section.index__parallax #scene .premiddle-mount-layer.anim {
+    top: 275px;
+    transform: translate(-50px, 0px) scale(0.9);
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2100px) {
+  section.index__parallax #scene .premiddle-mount-layer.anim {
+    top: 255px;
+    transform: translate(-50px, 0px) scale(0.9);
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2200px) {
+  section.index__parallax #scene .premiddle-mount-layer.anim {
+    top: 235px;
+    transform: translate(-50px, 0px) scale(0.9);
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2300px) {
+  section.index__parallax #scene .premiddle-mount-layer.anim {
+    top: 215px;
+    transform: translate(-50px, 0px) scale(0.9);
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2400px) {
+  section.index__parallax #scene .premiddle-mount-layer.anim {
+    top: 205px;
+    width: 100%;
+    transform: translate(-50px, 0px) scale(0.9);
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 2500px) {
+  section.index__parallax #scene .premiddle-mount-layer.anim {
+    top: 26%;
+    width: 100%;
+    transform: translate(-50px, 0px) scale(0.9);
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) {
+  section.index__parallax #scene .premiddle-mount-layer {
+    width: 57%;
+    top: 25%;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2000px) {
+  section.index__parallax #scene .premiddle-mount-layer {
+    top: 275px;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2100px) {
+  section.index__parallax #scene .premiddle-mount-layer {
+    top: 255px;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2200px) {
+  section.index__parallax #scene .premiddle-mount-layer {
+    top: 235px;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2300px) {
+  section.index__parallax #scene .premiddle-mount-layer {
+    top: 215px;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2400px) {
+  section.index__parallax #scene .premiddle-mount-layer {
+    top: 205px;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 2500px) {
+  section.index__parallax #scene .premiddle-mount-layer {
+    width: 100%;
+    top: 26%;
+  }
+}
 section.index__parallax #scene .container {
   position: absolute;
   top: 0;
@@ -246,104 +230,84 @@ section.index__parallax #scene .first-mount-layer {
   position: absolute;
   bottom: 0;
 }
-@media screen and (min-width: 769px) and (min-width: 1921px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) {
   section.index__parallax #scene .first-mount-layer.anim {
-    transform: scale(1.3) translate(45px, -10px);
+    transform: scale(1.2) translate(34px, 24px);
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1920px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2000px) {
   section.index__parallax #scene .first-mount-layer.anim {
-    transform: scale(1.5) translate(0%, 8%);
+    top: 615px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2100px) {
   section.index__parallax #scene .first-mount-layer.anim {
-    transform: scale(1.5) translate(0%, 8%);
+    top: 615px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1280px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2200px) {
   section.index__parallax #scene .first-mount-layer.anim {
-    transform: scale(1.5) translate(0%, 8%);
+    top: 615px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1150px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2300px) {
   section.index__parallax #scene .first-mount-layer.anim {
-    transform: scale(1.8) translate(2%, 8%);
+    top: 615px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1080px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2400px) {
   section.index__parallax #scene .first-mount-layer.anim {
-    transform: scale(1.8) translate(2%, 6%);
+    top: 615px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1050px) {
+@media screen and (min-width: 769px) and (min-width: 2500px) {
   section.index__parallax #scene .first-mount-layer.anim {
-    transform: scale(2) translate(2%, 0%);
+    top: inherit;
+    transform: scale(1.2) translate(64px, 29px);
   }
 }
-@media screen and (min-width: 769px) and (max-width: 945px) {
-  section.index__parallax #scene .first-mount-layer.anim {
-    transform: scale(2) translate(2%, -16px);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 900px) {
-  section.index__parallax #scene .first-mount-layer.anim {
-    transform: scale(2) translate(2%, -10%);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 850px) {
-  section.index__parallax #scene .first-mount-layer.anim {
-    transform: scale(2) translate(2%, -18%);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 800px) {
-  section.index__parallax #scene .first-mount-layer.anim {
-    transform: scale(2) translate(2%, -20%);
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 1921px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) {
   section.index__parallax #scene .first-mount-layer {
-    transform: scale(1) translate(4px, -40px);
+    bottom: inherit;
+    top: 585px;
+    transform: translate(20px, 0px);
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1920px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2000px) {
   section.index__parallax #scene .first-mount-layer {
-    transform: scale(1.4) translate(0%, 0%);
+    top: 585px;
+    transform: translate(20px, 0px);
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2100px) {
   section.index__parallax #scene .first-mount-layer {
-    transform: scale(1.4) translate(0%, 0%);
+    top: 585px;
+    transform: translate(20px, 0px);
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1280px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2200px) {
   section.index__parallax #scene .first-mount-layer {
-    transform: scale(1.4) translate(0%, 0%);
+    top: 585px;
+    transform: translate(20px, 0px);
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1150px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2300px) {
   section.index__parallax #scene .first-mount-layer {
-    transform: scale(1.4) translate(0%, -3%);
+    top: 585px;
+    transform: translate(20px, 0px);
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1050px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2400px) {
   section.index__parallax #scene .first-mount-layer {
-    transform: scale(1.6) translate(23px, -24px);
+    top: 585px;
+    transform: translate(20px, 0px);
   }
 }
-@media screen and (min-width: 769px) and (max-width: 900px) {
+@media screen and (min-width: 769px) and (min-width: 2500px) {
   section.index__parallax #scene .first-mount-layer {
-    transform: scale(2) translate(23px, -24px);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 850px) {
-  section.index__parallax #scene .first-mount-layer {
-    transform: scale(2.3) translate(23px, -24px);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 800px) {
-  section.index__parallax #scene .first-mount-layer {
-    transform: scale(2.3) translate(23px, -24px);
+    bottom: 0;
+    top: inherit;
+    transform: scale(1) translate(64px, -6px);
   }
 }
 @media screen and (max-width: 768px) {
@@ -352,77 +316,57 @@ section.index__parallax #scene .first-mount-layer {
     transform: scale(2.5);
   }
 }
-@media screen and (max-width: 700px) {
-  section.index__parallax #scene .first-mount-layer {
-    bottom: -15%;
-    transform: scale(3);
-  }
-}
-@media screen and (max-width: 670px) {
-  section.index__parallax #scene .first-mount-layer {
-    bottom: -5%;
-    transform: scale(2.5);
-  }
-}
-@media screen and (max-width: 550px) {
-  section.index__parallax #scene .first-mount-layer {
-    bottom: 3%;
-    transform: scale(3);
-  }
-}
-@media screen and (max-width: 470px) {
-  section.index__parallax #scene .first-mount-layer {
-    bottom: 2%;
-  }
-}
-@media screen and (max-width: 425px) {
-  section.index__parallax #scene .first-mount-layer {
-    bottom: 5%;
-  }
-}
-@media screen and (max-width: 400px) {
-  section.index__parallax #scene .first-mount-layer {
-    bottom: 5%;
-  }
-}
-@media screen and (max-width: 360px) {
-  section.index__parallax #scene .first-mount-layer {
-    bottom: 13%;
-  }
-}
 section.index__parallax #scene .middle-mount-layer {
   transition: transform 1s ease;
   position: absolute;
   top: 22%;
   transform: scale(1);
 }
-@media screen and (min-width: 769px) and (min-width: 1921px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) {
+  section.index__parallax #scene .middle-mount-layer.anim {
+    transform: scale(1.25);
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 2500px) {
+  section.index__parallax #scene .middle-mount-layer.anim {
+    transform: scale(1.15);
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) {
   section.index__parallax #scene .middle-mount-layer {
+    top: 300px;
+    transform: scale(1.3);
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2000px) {
+  section.index__parallax #scene .middle-mount-layer {
+    top: 275px;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2100px) {
+  section.index__parallax #scene .middle-mount-layer {
+    top: 255px;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2200px) {
+  section.index__parallax #scene .middle-mount-layer {
+    top: 235px;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2300px) {
+  section.index__parallax #scene .middle-mount-layer {
+    top: 215px;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2400px) {
+  section.index__parallax #scene .middle-mount-layer {
+    top: 205px;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 2500px) {
+  section.index__parallax #scene .middle-mount-layer {
+    top: 22%;
     transform: scale(1.2);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1920px) {
-  section.index__parallax #scene .middle-mount-layer {
-    transform: scale(1.8);
-    top: 35%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1440px) {
-  section.index__parallax #scene .middle-mount-layer {
-    transform: scale(2);
-    top: 35%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1280px) {
-  section.index__parallax #scene .middle-mount-layer {
-    transform: scale(2);
-    top: 39%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1050px) {
-  section.index__parallax #scene .middle-mount-layer {
-    transform: scale(2);
-    top: 39%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -505,105 +449,48 @@ section.index__parallax #scene .gadget {
   right: 31%;
   width: 19%;
 }
-section.index__parallax #scene .gadget.anim {
-  bottom: 27%;
-}
-@media screen and (min-width: 769px) and (min-width: 1921px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) {
   section.index__parallax #scene .gadget.anim {
-    bottom: 24%;
-    right: 31%;
-    transform: inherit;
-  }
-}
-@media screen and (min-width: 769px) and (min-width: 2000px) {
-  section.index__parallax #scene .gadget.anim {
+    bottom: 350px;
     right: 32%;
-    bottom: 24%;
+    transform: none;
   }
 }
-@media screen and (min-width: 769px) and (min-width: 2100px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2000px) {
   section.index__parallax #scene .gadget.anim {
+    bottom: 300px;
+    right: 32%;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2100px) {
+  section.index__parallax #scene .gadget.anim {
+    bottom: 300px;
     right: 33%;
   }
 }
-@media screen and (min-width: 769px) and (min-width: 2300px) {
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2200px) {
   section.index__parallax #scene .gadget.anim {
-    bottom: 22%;
+    bottom: 300px;
     right: 34%;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2300px) {
+  section.index__parallax #scene .gadget.anim {
+    bottom: 300px;
+    right: 35%;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1920px) and (min-width: 2400px) {
+  section.index__parallax #scene .gadget.anim {
+    bottom: 300px;
+    right: 36%;
   }
 }
 @media screen and (min-width: 769px) and (min-width: 2500px) {
   section.index__parallax #scene .gadget.anim {
-    right: 35%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1920px) {
-  section.index__parallax #scene .gadget.anim {
-    bottom: 23%;
-    width: 38%;
-    right: 42%;
-    transform: translate(58%, 0);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1440px) {
-  section.index__parallax #scene .gadget.anim {
-    bottom: 21%;
-    right: 25%;
-    width: 27%;
-    transform: inherit;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1280px) {
-  section.index__parallax #scene .gadget.anim {
-    bottom: 17%;
-    right: 29%;
-    width: 38%;
-    transform: translate(29%, 0);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1150px) {
-  section.index__parallax #scene .gadget.anim {
-    right: 24%;
-    bottom: 21%;
-    transform: translate(24%, 0);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1050px) {
-  section.index__parallax #scene .gadget.anim {
-    bottom: 23%;
-    width: 38%;
-    right: 29%;
-    transform: translate(40%, 0);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  section.index__parallax #scene .gadget.anim {
-    bottom: 23%;
-    right: 29%;
-    transform: translate(40%, 0);
-    width: 38%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 900px) {
-  section.index__parallax #scene .gadget.anim {
-    bottom: 24%;
-    right: 29%;
-    transform: translate(40%, 0);
-    width: 35%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 850px) {
-  section.index__parallax #scene .gadget.anim {
-    bottom: 30%;
-    width: 35%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 800px) {
-  section.index__parallax #scene .gadget.anim {
-    bottom: 28%;
-    right: 29%;
-    transform: translate(40%, 0);
-    width: 35%;
+    right: 36%;
+    bottom: 20%;
+    transform: none;
   }
 }
 @media screen and (max-width: 768px) {

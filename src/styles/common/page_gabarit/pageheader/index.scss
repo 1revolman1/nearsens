@@ -24,6 +24,9 @@ section.page_gabarit__pageheader {
         }
         .page_gabarit__pageheader__text__info {
           .page_gabarit__pageheader__text__info__text-block-text {
+            @include hblock('h3', 32px) {
+              color: black;
+            }
             p {
               color: black;
             }
@@ -51,6 +54,9 @@ section.page_gabarit__pageheader {
       }
       .page_gabarit__pageheader__text__info {
         .page_gabarit__pageheader__text__info__text-block-text {
+          @include hblock('h3', 32px) {
+            color: #ffffff;
+          }
           p {
             color: #ffffff;
           }

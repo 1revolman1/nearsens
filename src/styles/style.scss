@@ -19,3 +19,35 @@
 .wp-admin .wp-block {
   max-width: inherit !important;
 }
+b,
+strong {
+  font-weight: 900;
+}
+blockquote p,
+blockquote h1,
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5,
+blockquote h6 {
+  display: contents;
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote {
+  display: contents;
+  quotes: '“' '”' '‘' '’';
+}
+.blue a {
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: #005b9d;
+  font-weight: bold;
+  background-color: transparent;
+}

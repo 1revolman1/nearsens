@@ -75,6 +75,12 @@ section.page_garbit__textblockwithlogo {
         }
       }
       .page_garbit__textblockwithlogo__logos__element__text {
+        @include hblock('h3', 16px, bold, 20px) {
+          color: #28373b;
+          @include media-tablet {
+            font: normal normal bold 14px/18px Muli;
+          }
+        }
         p {
           font: normal normal bold 16px/20px Muli;
           letter-spacing: 0px;

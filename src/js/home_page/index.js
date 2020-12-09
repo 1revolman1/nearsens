@@ -12,11 +12,15 @@ export const useHomePage = function () {
     const MiddleMountLayer = parallaxContainer.querySelector(
       '.middle-mount-layer'
     );
+    const PreMiddleMountLayer = parallaxContainer.querySelector(
+      '.premiddle-mount-layer'
+    );
     // const LastLayer = parallaxContainer.querySelector('.last-mount');
     const FirstMountLayer = parallaxContainer.querySelector(
       '.first-mount-layer'
     );
     oneINIT = true;
+    parallaxContainer.classList.add('animated');
     shadowOne.style.bottom = '15%';
     shadowThree.style.bottom = '13%';
     shadowFour.style.bottom = '15%';
@@ -24,6 +28,7 @@ export const useHomePage = function () {
     FirstMountLayer.classList.add('anim');
     MiddleMountLayer.classList.add('anim');
     LastMountLayer.classList.add('anim');
+    PreMiddleMountLayer.classList.add('anim');
     // FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
     setTimeout(() => {
       textBlock.style.top = '15%';
@@ -83,25 +88,24 @@ export const useHomePage = function () {
       });
     Video();
   }
+
+  document.querySelector('.index-page-container').style.opacity = 1;
+
   const parallaxContainer = document.querySelector('.index__parallax');
-  parallaxContainer.addEventListener('parallax', function (event) {
-    switch (event.detail.state) {
-      case 'loaded img':
-        Parallax(parallaxContainer);
-        break;
-      case 'load other script':
-        OtherPage();
-        break;
-      default:
-        console.log(`ELSE`);
-        break;
-    }
-  });
-  // parallaxContainer.dispatchEvent(
-  //   new CustomEvent('parallax', {
-  //     detail: { state: 'init' },
-  //   })
-  // );
+  if (parallaxContainer)
+    parallaxContainer.addEventListener('parallax', function (event) {
+      switch (event.detail.state) {
+        case 'loaded img':
+          Parallax(parallaxContainer);
+          break;
+        case 'load other script':
+          OtherPage();
+          break;
+        default:
+          console.log(`ELSE`);
+          break;
+      }
+    });
   const imageObject = {
     images: document.querySelectorAll('.index__parallax #scene img'),
     countOfLoadedImages: 0,
@@ -141,7 +145,6 @@ export const useHomePage = function () {
       });
     },
   };
-  // window.innerWidth > 768 && imageObject.init();
   if (window.innerWidth > 768) {
     // Parallax(parallaxContainer);
     imageObject.init();
@@ -156,5 +159,27 @@ export const useHomePage = function () {
   if (typeof development === 'boolean' && development) {
     OtherPage();
   }
-  // Video();
+
+  // anime({
+  //   targets: '.moving-layer',
+  //   translateX: {
+  //     value: '*=2.5', // 100px * 2.5 = '250px'
+  //     duration: 1000,
+  //     easing: 'easeInOutSine',
+  //   },
+  //   scale: function (el, i, l) {
+  //     return l - i + 0.25;
+  //   },
+  //   // width: {
+  //   //   value: '-=20px', // 28 - 20 = '8px'
+  //   //   duration: 1800,
+  //   //   easing: 'easeInOutSine',
+  //   // },
+  //   // rotate: {
+  //   //   value: '+=2turn', // 0 + 2 = '2turn'
+  //   //   duration: 1800,
+  //   //   easing: 'easeInOutSine',
+  //   // },
+  //   direction: 'alternate',
+  // });
 };

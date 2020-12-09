@@ -135,6 +135,72 @@ section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .p
     width: 50px;
   }
 }
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h6 {
+  font: normal normal bold 10px/20px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h6 {
+    font: normal normal bold 14px/18px Muli;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h5 {
+  font: normal normal bold 12px/20px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h5 {
+    font: normal normal bold 14px/18px Muli;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h4 {
+  font: normal normal bold 14px/20px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h4 {
+    font: normal normal bold 14px/18px Muli;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h3 {
+  font: normal normal bold 16px/20px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h3 {
+    font: normal normal bold 14px/18px Muli;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h2 {
+  font: normal normal bold 18px/20px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h2 {
+    font: normal normal bold 14px/18px Muli;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h1 {
+  font: normal normal bold 20px/20px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h1 {
+    font: normal normal bold 14px/18px Muli;
+  }
+}
 section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text p {
   font: normal normal bold 16px/20px Muli;
   letter-spacing: 0px;

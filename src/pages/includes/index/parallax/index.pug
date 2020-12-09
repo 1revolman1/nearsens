@@ -1,19 +1,25 @@
 section.index__parallax
+	//- picture
+	//- 	source(media="(min-width: 768px)", srcset="https://i.pinimg.com/originals/61/e7/8b/61e78b08a8dd18779132812218a9f2a8.jpg")
+	//- 	<source media="(min-width:650px)" srcset="https://www.w3schools.com/tags/img_pink_flowers.jpg">
+	//- 	<source media="(min-width:465px)" srcset="https://www.w3schools.com/tags/img_white_flower.jpg">
+	//- 	<img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+	
 	#scene
-		//- .last-mount1(data-depth="0.1")
-		//- 	img(src="img/Grouped.png", alt="")
-		.last-mount(data-depth="0.1")
+		.last-mount.moving-layer(data-depth="0.1")
 			img(src="img/mount_last_layer.png", alt="")
+		.shadow.shadow-5(data-depth="1")
+			img(src="img/shadow.png", alt="")
+		.premiddle-mount-layer.moving-layer(data-depth="0.5")
+			img(src="img/AdobeStock_mountain_3.png", alt="")
 		.text-container
 			h3 Security system, reinvented.
 			p Designed in Denmark with Scandinavian Simplicity
-		.shadow.shadow-5(data-depth="1")
-			img(src="img/shadow.png", alt="")
-		.middle-mount-layer(data-depth="0.5")
+		.middle-mount-layer.moving-layer(data-depth="0.5")
 			img(src="img/mount_middle_layer.png", alt="")
 		.gadget(data-depth="0.5")
 			img(src="img/gadget.png", alt="")
-		.first-mount-layer(data-depth="0.8")
+		.first-mount-layer.moving-layer(data-depth="0.8")
 			img(src="img/mount_first_layer.png", alt="")
 		.shadow.shadow-1(data-depth="1")
 			img(src="img/shadow.png", alt="")
@@ -21,6 +27,13 @@ section.index__parallax
 			img(src="img/shadow.png", alt="")
 		.shadow.shadow-4(data-depth="1")
 			img(src="img/shadow.png", alt="")
+	//- #hero
+	//- 	.layer-bg.layer.parallax(data-depth='0.10')
+	//- 	.layer-1.layer.parallax(data-depth='0.20')
+	//- 	.layer-2.layer.parallax(data-depth='0.50')
+	//- 	.layer-3.layer.parallax(data-depth='0.80')
+	//- 	.layer-overlay.layer.parallax(data-depth='0.85')
+	//- 	.layer-4.layer.parallax(data-depth='1.00')
 	.index__parallax__text
 		p Easy to Install - Easy to use - Easy to evolve.
 		h3 Because it’s so much easier.
