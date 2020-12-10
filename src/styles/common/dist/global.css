@@ -6388,7 +6388,12 @@ nav.nav.holiday-header ~ script + main .use_case__scrollheader {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  main {
+    margin-top: 65px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   main {
     margin-top: 57px;
   }

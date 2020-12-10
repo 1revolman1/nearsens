@@ -5,11 +5,14 @@ section.usecase_details__pageheaderafterscroll
             p Category of this use case
         .usecase_details__pageheaderafterscroll-wrap__logos
             .usecase_details__pageheaderafterscroll-wrap__logos__elem
-                img(src="img/shield.svg", alt="")
+                //- img(src="img/shield.svg", alt="")
+                include ../includes/shieldSVG.pug
                 p Protect
             .usecase_details__pageheaderafterscroll-wrap__logos__elem
-                img(src="img/green_energy.svg", alt="")
+                //- img(src="img/green_energy.svg", alt="")
+                include ../includes/lampSVG.pug
                 p Save energy
-            .usecase_details__pageheaderafterscroll-wrap__logos__elem
-                img(src="img/sofa.svg", alt="")
+            .usecase_details__pageheaderafterscroll-wrap__logos__elem.active
+                include ../includes/sofaSVG.pug
+                //- img(src="img/sofa.svg", alt="")
                 p Daily comfort

@@ -496,6 +496,9 @@ section.index__parallax #scene .text-container p {
     opacity: 1;
   }
 }
+section.index__parallax #scene .premiddle-mount-layer {
+  display: none;
+}
 section.index__parallax #scene .gadget {
   max-height: 373px;
   max-width: 379px;

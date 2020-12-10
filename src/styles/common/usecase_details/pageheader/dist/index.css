@@ -155,18 +155,29 @@ section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_d
   flex-direction: row;
   align-items: center;
   margin: 5px 0;
+  opacity: 0.65;
   padding-right: 30px;
 }
-section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card.not-active {
-  opacity: 0.65;
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card.active {
+  opacity: 1;
 }
-section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card img {
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card.active img path,
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card.active svg path {
+  fill: #005b9d;
+}
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card img,
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card svg {
   margin-right: 10px;
   width: 20px;
   object-fit: cover;
 }
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card img path,
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card svg path {
+  fill: #28373b;
+}
 @media screen and (max-width: 768px) {
-  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card img {
+  section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card img,
+section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__type-block-label .usecase_details__pageheader__text__info__type-block__card svg {
     width: 18px;
   }
 }

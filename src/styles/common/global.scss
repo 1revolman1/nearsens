@@ -73,8 +73,11 @@ nav.nav.holiday-header ~ script + main {
   }
 }
 main {
-  @include media-tablet {
-    margin-top: 57px;
+  @include media-forHEADER {
+    margin-top: 65px;
+    @include media-tablet {
+      margin-top: 57px;
+    }
   }
 
   &.holiday-state {

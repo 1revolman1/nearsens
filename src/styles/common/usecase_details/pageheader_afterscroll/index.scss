@@ -36,8 +36,12 @@ section.usecase_details__pageheaderafterscroll {
       width: 90%;
     }
     .usecase_details__pageheaderafterscroll-wrap__text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       // flex: 1;
       @include media-tablet {
+        justify-content: flex-start;
         max-width: 75%;
       }
       h3 {
@@ -78,16 +82,30 @@ section.usecase_details__pageheaderafterscroll {
         margin: 5px 0;
         // flex:0 1 30%;
         padding-left: 40px;
+        opacity: 0.65;
         @include media-tablet {
           padding-left: 0;
         }
-        &.not-active {
-          opacity: 0.65;
+        // &.not-active {
+        //   opacity: 0.65;
+        // }
+        &.active {
+          opacity: 1;
+          img,
+          svg {
+            path {
+              fill: #005b9d;
+            }
+          }
         }
-        img {
+        img,
+        svg {
           margin-right: 10px;
           width: 20px;
           object-fit: cover;
+          path {
+            fill: #28373b;
+          }
           @include media-tablet {
             width: 11px;
           }

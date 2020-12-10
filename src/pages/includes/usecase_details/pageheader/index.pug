@@ -9,13 +9,17 @@ section.usecase_details__pageheader
             .usecase_details__pageheader__text__info
                 .usecase_details__pageheader__text__info__type-block-label
                     .usecase_details__pageheader__text__info__type-block__card
-                        img(src="img/shield.svg", alt="")
+                        include ../includes/shieldSVG.pug
+                        //- img(src="img/shield.svg", alt="")
                         p Protect
-                    .usecase_details__pageheader__text__info__type-block__card.not-active
-                        img(src="img/green_energy.svg", alt="")
+                    .usecase_details__pageheader__text__info__type-block__card.active
+                        //- img(src="img/green_energy.svg", alt="")
+                        //- img(src="img/lampSVG.svg", alt="")
+                        include ../includes/lampSVG.pug
                         p Save energy
                     .usecase_details__pageheader__text__info__type-block__card
-                        img(src="img/sofa.svg", alt="")
+                        //- img(src="img/sofa.svg", alt="")
+                        include ../includes/sofaSVG.pug
                         p Daily comfort
                 .usecase_details__pageheader__text__info__text-block-text
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id lorem et risus cursus imperdiet. Etiam dapibus diam condimentum, sagittis est nec, convallis nulla. Nulla non rhoncus dolor, euismod imperdiet quam. Quisque sed massa ac est tristique accumsan quis ac nisi. Pellentesque habitant morbi tristique senectus et netus…
