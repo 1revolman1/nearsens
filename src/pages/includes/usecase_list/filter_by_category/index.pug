@@ -6,30 +6,54 @@ section.use_case__filter
                     i(class="fas fa-sliders-h") 
                     |Filter by
             .use_case__filter__container__manipulator
-                each val in [1,2]
-                    .custom-select-wrapper
-                        .custom-select
-                            .custom-select__trigger
-                                span CATEGORY
-                                span.arrow 
-                                    i.fas.fa-angle-up
-                            .custom-options
-                                span.custom-option.selected(data-value="tesla") 
+                .custom-select-wrapper(data-type="category")
+                    .custom-select
+                        .custom-select__trigger
+                            span CATEGORY
+                            span.arrow 
+                                i.fas.fa-angle-up
+                        .custom-options
+                            span.custom-option(data-value="tesla") 
+                                |Tesla
+                                i.fas.fa-times
+                            span.custom-option(data-value="volvo") 
+                                |Volvo
+                                i.fas.fa-times
+                            span.custom-option(data-value="nisan") 
+                                |Nisan
+                                i.fas.fa-times
+                            span.custom-option(data-value="mitsubisi")
+                                |Mitsubisi
+                                i.fas.fa-times
+                            span.custom-option(data-value="opel")
+                                |Opel
+                                i.fas.fa-times
+                            span.custom-option(data-value="mercedes") 
+                                |Mercedes Benz L Class
+                                i.fas.fa-
+                .custom-select-wrapper(data-type="products")
+                    .custom-select
+                        .custom-select__trigger
+                            span PRODUCTS
+                            span.arrow 
+                                i.fas.fa-angle-up
+                        .custom-options
+                                span.custom-option.selected(data-value="tesla1") 
                                     |Tesla
                                     i.fas.fa-times
-                                span.custom-option(data-value="volvo") 
+                                span.custom-option(data-value="volvo1") 
                                     |Volvo
                                     i.fas.fa-times
-                                span.custom-option(data-value="nisan") 
+                                span.custom-option(data-value="nisan1") 
                                     |Nisan
                                     i.fas.fa-times
-                                span.custom-option(data-value="mitsubisi")
+                                span.custom-option(data-value="mitsubisi1")
                                     |Mitsubisi
                                     i.fas.fa-times
-                                span.custom-option(data-value="opel")
+                                span.custom-option(data-value="opel1")
                                     |Opel
                                     i.fas.fa-times
-                                span.custom-option(data-value="mercedes benz l class") 
+                                span.custom-option(data-value="mercedes1") 
                                     |Mercedes Benz L Class
                                     i.fas.fa-times
         .use_case__filter__selectedoptions
