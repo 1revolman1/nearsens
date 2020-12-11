@@ -26,10 +26,14 @@ section.use_case__usecases
         //-     .use_case__usecases-list__element-text
         //-         h4 BIG
         //-         p Use case name lorem ipsum dolor sit amet, consectetur adipiscing elit
-        each val, index in ["tesla","volvo","nisan","mitsubisi","opel","mercedes","tesla,sergay","fsdf","fdsfds","tesla","opel","opel,tesla"]
-            a(href="").use_case__usecases-list__element(data-category=val)
+        each val, index in ["tesla,volvo","volvo","nisan,mercedes","mitsubisi","opel","mercedes","tesla,sergay","fsdf","fdsfds","tesla","opel","opel,tesla"]
+            a(href="").use_case__usecases-list__element(data-category=val, data-products=val+"1")
                 .use_case__usecases-list__element-img
                     img(src="https://cdn.guidingtech.com/imager/assets/190747/Beautiful-HD-Birds-Wallpapers-Download_4d470f76dc99e18ad75087b1b8410ea9.jpg?1524142273", alt="")
                 .use_case__usecases-list__element-text
-                    h4 Category of this use case
-                    p Use case name lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    h4 
+                        |Category of this use case
+                        =" "+val
+                    p
+                        =" "+val+"1" 
+                        |Use case name lorem ipsum dolor sit amet, consectetur adipiscing elit

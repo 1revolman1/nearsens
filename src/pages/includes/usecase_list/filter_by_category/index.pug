@@ -13,22 +13,25 @@ section.use_case__filter
                             span.arrow 
                                 i.fas.fa-angle-up
                         .custom-options
-                            span.custom-option(data-value="tesla") 
+                            span.custom-option(data-value="tesla" data-name="category:tesla") 
                                 |Tesla
                                 i.fas.fa-times
-                            span.custom-option(data-value="volvo") 
+                            span.custom-option(data-value="volvo" data-name="category:volvo") 
                                 |Volvo
                                 i.fas.fa-times
-                            span.custom-option(data-value="nisan") 
+                            span.custom-option(data-value="nisan" data-name="category:nisan") 
                                 |Nisan
                                 i.fas.fa-times
-                            span.custom-option(data-value="mitsubisi")
+                            span.custom-option(data-value="mitsubisi" data-name="category:mitsubisi")
                                 |Mitsubisi
                                 i.fas.fa-times
-                            span.custom-option(data-value="opel")
+                            span.custom-option(data-value="opel" data-name="category:opel")
                                 |Opel
                                 i.fas.fa-times
-                            span.custom-option(data-value="mercedes") 
+                            span.custom-option(data-value="notfound" data-name="category:notfound")
+                                |Not Found
+                                i.fas.fa-times
+                            span.custom-option(data-value="mercedes" data-name="category:mercedes") 
                                 |Mercedes Benz L Class
                                 i.fas.fa-
                 .custom-select-wrapper(data-type="products")
@@ -38,34 +41,37 @@ section.use_case__filter
                             span.arrow 
                                 i.fas.fa-angle-up
                         .custom-options
-                                span.custom-option.selected(data-value="tesla1") 
+                                span.custom-option(data-value="tesla1" data-name="products:mercedes") 
                                     |Tesla
                                     i.fas.fa-times
-                                span.custom-option(data-value="volvo1") 
+                                span.custom-option(data-value="volvo1" data-name="products:volvo1" ) 
                                     |Volvo
                                     i.fas.fa-times
-                                span.custom-option(data-value="nisan1") 
+                                span.custom-option(data-value="nisan1" data-name="products:nisan1") 
                                     |Nisan
                                     i.fas.fa-times
-                                span.custom-option(data-value="mitsubisi1")
+                                span.custom-option(data-value="mitsubisi1" data-name="products:mitsubisi1")
                                     |Mitsubisi
                                     i.fas.fa-times
-                                span.custom-option(data-value="opel1")
+                                span.custom-option(data-value="opel1" data-name="products:opel1")
                                     |Opel
                                     i.fas.fa-times
-                                span.custom-option(data-value="mercedes1") 
+                                span.custom-option(data-value="notfound" data-name="products:notfound")
+                                    |Not Found
+                                    i.fas.fa-times
+                                span.custom-option(data-value="mercedes1" data-name="products:mercedes1") 
                                     |Mercedes Benz L Class
                                     i.fas.fa-times
         .use_case__filter__selectedoptions
-            .use_case__filter__selectedoptions__element
-                span
-                    = "Filter name sdfgfsd gsfd gs" + val
-                    i.fas.fa-times
-            each val in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-                .use_case__filter__selectedoptions__element
-                    span
-                        = "Filter name " + val
-                        i.fas.fa-times
+            //- .use_case__filter__selectedoptions__element
+            //-     span
+            //-         = "Filter name sdfgfsd gsfd gs" + val
+            //-         i.fas.fa-times
+            //- each val in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+            //-     .use_case__filter__selectedoptions__element
+            //-         span
+            //-             = "Filter name " + val
+            //-             i.fas.fa-times
         .use_case__filter__filtermanipul
             button Remove all filters
 

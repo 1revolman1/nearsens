@@ -46,13 +46,99 @@
 export const useCasesList = function main() {
   console.log(`USECASES LIST PAGE`);
   const FilterFunctionality = {
-    filters: {},
+    _filters: {},
+    _placeForFilter: document.querySelector(
+      '.use_case__filter__selectedoptions'
+    ),
+    _capitalFirst: function (str) {
+      if (!str) return str;
+      return str[0].toUpperCase() + str.slice(1);
+    },
+    _addToFilter: function (type, selected) {
+      this._filters[type] = [...new Set([...this._filters[type], selected])];
+      //ФИЛЬТР И
+      [
+        ...document.querySelectorAll(
+          `.use_case__usecases [data-${type}]:not(.filtered)`
+        ),
+      ].forEach((e) => {
+        if (!e.dataset[type].split(',').includes(selected)) {
+          $(e).hide('fade');
+        } else {
+          $(e).show('fade');
+          e.classList.add('filtered');
+        }
+      });
+      return this._filters;
+    },
+    _removeFromFilter: function (type, selected) {
+      this._filters[type] = [
+        ...new Set(this._filters[type].filter((elm) => elm !== selected)),
+      ];
+      [
+        ...document.querySelectorAll(
+          `.use_case__usecases [data-${type}].filtered`
+        ),
+      ]
+        .filter((e) => e.dataset[type].split(',').includes(selected))
+        .forEach((e) => {
+          console.log(
+            e,
+            e.dataset,
+            this._filters[type],
+            e.dataset[type].split(',')
+          );
+          if (this._filters[type].length > 0) {
+            if (
+              !e.dataset[type]
+                .split(',')
+                .some((r) => this._filters[type].includes(r))
+            ) {
+              $(e).hide('fade');
+              e.classList.remove('filtered');
+            }
+          } else {
+            $(`[data-${type}]`).removeClass('filtered').show('fade');
+          }
+        });
+      return selected;
+    },
+    _createFilterHTML: function (value, type, selector, name) {
+      const currentFilter = this;
+      const newDiv = document.createElement('div');
+      const listener = function () {
+        selector.classList.remove('selected');
+        newDiv.removeEventListener('click', listener);
+        currentFilter._removeFromFilter(type, value);
+        this.remove();
+      };
+      newDiv.setAttribute(`data-${type}`, value);
+      newDiv.classList.add('use_case__filter__selectedoptions__element');
+      newDiv.innerHTML = `<span>${this._capitalFirst(
+        type
+      )} : ${this._capitalFirst(name)} <i class="fas fa-times"></i></span>`;
+      newDiv.addEventListener('click', listener);
+      this._placeForFilter.appendChild(newDiv);
+    },
+    _removeFilterHTML: function (value, type) {
+      this._removeFromFilter(type, value);
+      this._placeForFilter.querySelector(`[data-${type}="${value}"]`).remove();
+    },
+    _removeAllFilter: function () {
+      Object.keys(this._filters).forEach((e) => {
+        this._filters[e] = [];
+      });
+      $('.use_case__usecases-list__element').show('fast');
+      $('.use_case__filter__selectedoptions__element').remove();
+      $('.custom-options .selected').removeClass('selected');
+      $('.filtered').removeClass('filtered');
+    },
     init: function () {
       const currentFilter = this;
       document
         .querySelectorAll('.custom-select-wrapper')
         .forEach((dropdown) => {
-          currentFilter.filters[dropdown.dataset?.type] = [];
+          currentFilter._filters[dropdown.dataset?.type] = [];
           dropdown.addEventListener('click', function () {
             const listOfAll = document.querySelectorAll(
               '.custom-select-wrapper.open'
@@ -77,63 +163,39 @@ export const useCasesList = function main() {
           event.stopPropagation();
           const type = this.closest('.custom-select-wrapper').dataset?.type;
           const selected = this.dataset?.value;
+          const name = this.dataset?.name.split(':')[1];
           if (!this.classList.contains('selected')) {
-            currentFilter.filters[type] = [
-              ...new Set([...currentFilter.filters[type], selected]),
-            ];
-            [
-              ...document.querySelectorAll(`[data-${type}]:not(.filtered)`),
-            ].forEach((e) => {
-              if (!e.dataset[type].split(',').includes(selected)) {
-                $(e).hide('explode');
-              } else {
-                $(e).show('explode');
-                e.classList.add('filtered');
-              }
-              //   else {
-              //     console.log('INCLUDE', e);
-              //     //спрятанные
-              //     $(e).show('explode');
-              //     e.classList.remove('filtered');
-              //   }
-            });
-            // [...document.querySelectorAll(`[data-${type}]`)]
-            //   .filter((e) => !e.dataset[type].split(',').includes(selected))
-            //   .forEach((e) => {
-            //     $(e).hide('explode');
-            //     e.classList.add('filtered');
-            //   });
-            this.classList.add('selected');
-          } else {
-            currentFilter.filters[type] = [
-              ...new Set(
-                currentFilter.filters[type].filter((elm) => elm !== selected)
-              ),
-            ];
-            //ФИЛЬТР И
-            [...document.querySelectorAll(`[data-${type}].filtered`)]
-              .filter((e) => e.dataset[type].split(',').includes(selected))
-              .forEach((e) => {
-                if (currentFilter.filters[type].length > 0) {
-                  $(e).hide('explode');
-                  e.classList.remove('filtered');
-                } else {
-                  $(`[data-${type}]`).removeClass('filtered').show('explode');
-                }
-              });
+            currentFilter._addToFilter(type, selected);
+            currentFilter._createFilterHTML(selected, type, this, name);
             //ФИЛЬТР ИЛИ
             // [...document.querySelectorAll(`[data-${type}]`)]
             //   .filter((e) => !e.dataset[type].split(',').includes(selected))
             //   .forEach((e) => {
-            //     $(e).show('explode');
+            //     $(e).hide('fade');
+            //     e.classList.add('filtered');
+            //   });
+            this.classList.add('selected');
+          } else {
+            currentFilter._removeFromFilter(type, selected);
+            currentFilter._removeFilterHTML(selected, type);
+            //ФИЛЬТР ИЛИ
+            // [...document.querySelectorAll(`[data-${type}]`)]
+            //   .filter((e) => !e.dataset[type].split(',').includes(selected))
+            //   .forEach((e) => {
+            //     $(e).show('fade');
             //     e.classList.remove('filtered');
             //   });
             // УБРАТЬ ФИЛЬТР
             this.classList.remove('selected');
           }
-          console.log(currentFilter, currentFilter.filters[type]);
+          console.log(currentFilter, currentFilter._filters[type]);
         })
       );
+      document
+        .querySelector('.use_case__filter__filtermanipul button')
+        .addEventListener('click', function () {
+          currentFilter._removeAllFilter();
+        });
     },
   };
   FilterFunctionality.init();
