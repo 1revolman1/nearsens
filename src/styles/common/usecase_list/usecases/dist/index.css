@@ -53,6 +53,9 @@ section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-bigli
     display: flex;
   }
 }
+section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element.filtered {
+  display: none;
+}
 section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element:hover {
   transform: translate(0, -10px);
 }
@@ -139,6 +142,9 @@ section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__el
   opacity: 1;
   overflow: hidden;
   transition: all ease 0.5s;
+}
+section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element.filtered {
+  display: none;
 }
 @media screen and (max-width: 768px) {
   section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element {

@@ -43,70 +43,75 @@
 //   }
 // }
 
-// function intersect(a, b) {
-//   if (a.length === 0) {
-//     return b;
-//   } else if (b.length === 0) {
-//     return a;
-//   } else return a.filter(Set.prototype.has, new Set(b));
-// }
+function intersect(a, b) {
+  return a.filter(Set.prototype.has, new Set(b));
+}
 export const useCasesList = function main() {
   console.log(`USECASES LIST PAGE`);
   const FilterFunctionality = {
-    _blocks: [
-      ...document.querySelectorAll(
-        `.use_case__usecases .use_case__usecases-list__element, .use_case__usecases .use_case__usecases-biglist__element`
-      ),
-    ].map(function (elm) {
-      return {
-        ...elm.dataset,
-        elm,
-      };
-    }),
     _filters: {},
     _placeForFilter: document.querySelector(
       '.use_case__filter__selectedoptions'
     ),
-    _intersect: function (a, b) {
-      if (a.length === 0) {
-        return b;
-      } else if (b.length === 0) {
-        return a;
-      } else return a.filter(Set.prototype.has, new Set(b));
-    },
     _capitalFirst: function (str) {
       if (!str) return str;
       return str[0].toUpperCase() + str.slice(1);
     },
-    _filterFunc: function () {
-      const keyArray = Object.keys(this._filters);
-      const filterArray = Object.values(this._filters);
-      this._blocks.forEach(({ elm }) => {
-        elm.classList.add('filtered');
-        elm.classList.remove('choosen');
-      });
-      const filtered = keyArray.reduce((accum, key, index) => {
-        return accum.filter(
-          (elm) =>
-            this._intersect([...elm[key].split(',')], filterArray[index])
-              .length > 0
-        );
-      }, this._blocks);
-      console.log(filtered);
-      filtered.forEach(({ elm }) => {
-        elm.classList.add('choosen');
-        elm.classList.remove('filtered');
-      });
-    },
     _addToFilter: function (type, selected) {
       this._filters[type] = [...new Set([...this._filters[type], selected])];
-      this._filterFunc();
+
+      [
+        ...document.querySelectorAll(
+          `.use_case__usecases [data-${type}]:not(.filtered)`
+        ),
+      ].forEach((e) => {
+        if (!e.dataset[type].split(',').includes(selected)) {
+          $(e).hide('fade');
+        } else {
+          $(e).show('fade');
+          e.classList.add('filtered');
+        }
+      });
+      //ФИЛЬТР И
+      // [
+      //   ...document.querySelectorAll(
+      //     `.use_case__usecases [data-${type}]:not(.filtered)`
+      //   ),
+      // ].forEach((e) => {
+      //   if (!e.dataset[type].split(',').includes(selected)) {
+      //     $(e).hide('fade');
+      //   } else {
+      //     $(e).show('fade');
+      //     e.classList.add('filtered');
+      //   }
+      // });
+      return this._filters;
     },
     _removeFromFilter: function (type, selected) {
       this._filters[type] = [
         ...new Set(this._filters[type].filter((elm) => elm !== selected)),
       ];
-      this._filterFunc();
+      [
+        ...document.querySelectorAll(
+          `.use_case__usecases [data-${type}].filtered`
+        ),
+      ]
+        .filter((e) => e.dataset[type].split(',').includes(selected))
+        .forEach((e) => {
+          if (this._filters[type].length > 0) {
+            if (
+              !e.dataset[type]
+                .split(',')
+                .some((r) => this._filters[type].includes(r))
+            ) {
+              $(e).hide('fade');
+              e.classList.remove('filtered');
+            }
+          } else {
+            $(`[data-${type}]`).removeClass('filtered').show('fade');
+          }
+        });
+      return selected;
     },
     _createFilterHTML: function (value, type, selector, name) {
       const currentFilter = this;
@@ -126,16 +131,17 @@ export const useCasesList = function main() {
       this._placeForFilter.appendChild(newDiv);
     },
     _removeFilterHTML: function (value, type) {
+      this._removeFromFilter(type, value);
       this._placeForFilter.querySelector(`[data-${type}="${value}"]`).remove();
     },
     _removeAllFilter: function () {
       Object.keys(this._filters).forEach((e) => {
         this._filters[e] = [];
       });
+      $('.use_case__usecases-list__element').show('fast');
       $('.use_case__filter__selectedoptions__element').remove();
       $('.custom-options .selected').removeClass('selected');
       $('.filtered').removeClass('filtered');
-      $('.choosen').removeClass('choosen');
     },
     init: function () {
       const currentFilter = this;
@@ -192,7 +198,7 @@ export const useCasesList = function main() {
             // УБРАТЬ ФИЛЬТР
             this.classList.remove('selected');
           }
-          // console.log(currentFilter, currentFilter._filters[type]);
+          console.log(currentFilter, currentFilter._filters[type]);
         })
       );
       document

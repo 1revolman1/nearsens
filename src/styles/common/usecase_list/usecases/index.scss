@@ -47,6 +47,11 @@ section.use_case__usecases {
         display: flex;
         // margin: 10px auto;
       }
+      &.choosen {
+      }
+      &.filtered {
+        display: none;
+      }
       &:hover {
         transform: translate(0, -10px);
         @include media-tablet {
@@ -125,7 +130,11 @@ section.use_case__usecases {
       //   margin: 15px;
       // margin: 2%;
       transition: all ease 0.5s;
-
+      &.choosen {
+      }
+      &.filtered {
+        display: none;
+      }
       @include media-tablet {
         padding: 10px;
         width: 100%;

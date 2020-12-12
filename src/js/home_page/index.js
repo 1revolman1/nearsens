@@ -28,7 +28,7 @@ export const useHomePage = function () {
     FirstMountLayer.classList.add('anim');
     MiddleMountLayer.classList.add('anim');
     LastMountLayer.classList.add('anim');
-    PreMiddleMountLayer.classList.add('anim');
+    // PreMiddleMountLayer.classList.add('anim');
     // FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
     setTimeout(() => {
       textBlock.style.top = '15%';

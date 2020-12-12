@@ -28,8 +28,8 @@ var useHomePage = function useHomePage() {
     shadowFive.style.bottom = '35%';
     FirstMountLayer.classList.add('anim');
     MiddleMountLayer.classList.add('anim');
-    LastMountLayer.classList.add('anim');
-    PreMiddleMountLayer.classList.add('anim'); // FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
+    LastMountLayer.classList.add('anim'); // PreMiddleMountLayer.classList.add('anim');
+    // FirstMountLayer.style.transform = 'scale(1.21) translate(40px,26px)';
 
     setTimeout(function () {
       textBlock.style.top = '15%';

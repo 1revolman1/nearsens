@@ -1,31 +1,19 @@
 section.use_case__usecases
     h3 Uses cases
     .use_case__usecases-biglist
-        a(href="").use_case__usecases-biglist__element
+        a(href="" data-category="volvo" data-products="volvo1").use_case__usecases-biglist__element
             .use_case__usecases-biglist__element-img
                 img(src="https://cdn.guidingtech.com/imager/assets/190747/Beautiful-HD-Birds-Wallpapers-Download_4d470f76dc99e18ad75087b1b8410ea9.jpg?1524142273", alt="")
             .use_case__usecases-biglist__element-text
                 h4 BIG
                 p Use case name lorem ipsum dolor sit amet, consectetur adipiscing elit
-        a(href="").use_case__usecases-biglist__element
+        a(href="" data-category="volvo" data-products="volvo1").use_case__usecases-biglist__element
             .use_case__usecases-biglist__element-img
                 img(src="https://cdn.guidingtech.com/imager/assets/190747/Beautiful-HD-Birds-Wallpapers-Download_4d470f76dc99e18ad75087b1b8410ea9.jpg?1524142273", alt="")
             .use_case__usecases-biglist__element-text
                 h4 BIG
                 p Use case name lorem ipsum dolor sit amet, consectetur adipiscing elit
     .use_case__usecases-list
-        //- a(href="").use_case__usecases-list__element.big-element
-        //-     .use_case__usecases-list__element-img
-        //-         img(src="https://cdn.guidingtech.com/imager/assets/190747/Beautiful-HD-Birds-Wallpapers-Download_4d470f76dc99e18ad75087b1b8410ea9.jpg?1524142273", alt="")
-        //-     .use_case__usecases-list__element-text
-        //-         h4 BIG
-        //-         p Use case name lorem ipsum dolor sit amet, consectetur adipiscing elit
-        //- a(href="").use_case__usecases-list__element.big-element
-        //-     .use_case__usecases-list__element-img
-        //-         img(src="https://cdn.guidingtech.com/imager/assets/190747/Beautiful-HD-Birds-Wallpapers-Download_4d470f76dc99e18ad75087b1b8410ea9.jpg?1524142273", alt="")
-        //-     .use_case__usecases-list__element-text
-        //-         h4 BIG
-        //-         p Use case name lorem ipsum dolor sit amet, consectetur adipiscing elit
         each val, index in ["tesla,volvo","volvo","nisan,mercedes","mitsubisi","opel","mercedes","tesla,sergay","fsdf","fdsfds","tesla","opel","opel,tesla"]
             a(href="").use_case__usecases-list__element(data-category=val, data-products=val+"1")
                 .use_case__usecases-list__element-img
