@@ -1,14 +1,22 @@
-@import "pageheader/index";
-@import "textblockwithlogo/index";
-@import "textblockwithplus/index";
-@import "blockacconts/index";
-@import "bluelinkcards/index";
-@import "differentcolorblock/index";
-@import "blockwithimg/index";
-@import "blockwithbigimg/index";
-@import "twobigblockperline/index";
-@import "fourblocks/index";
-@import "bigblueblock/index";
+@import 'pageheader/index';
+@import 'textblockwithlogo/index';
+@import 'textblockwithplus/index';
+@import 'blockacconts/index';
+@import 'bluelinkcards/index';
+@import 'differentcolorblock/index';
+@import 'blockwithimg/index';
+@import 'blockwithbigimg/index';
+@import 'twobigblockperline/index';
+@import 'fourblocks/index';
+@import 'bigblueblock/index';
 
-@import "../../utils/variables.scss";
+@import '../../utils/variables.scss';
 
+.custom-block {
+  a {
+    text-decoration: none;
+    color: #005b9d;
+    font-weight: bold;
+    background-color: transparent;
+  }
+}

@@ -206,24 +206,42 @@ export const useProductList = function main() {
     'click',
     cartAnim
   );
-
-  $('.productlist__pageheader-wrapper__slider-container__slider').slick({
-    infinite: true,
-    slidesToShow: 15,
-    slidesToScroll: 3,
-    adaptiveHeight: true,
-    arrows: false,
-    swipeToSlide: true,
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 7,
-          slidesToScroll: 2,
+  function settingsSlick() {
+    const length = document.querySelectorAll(
+      '.productlist__pageheader-wrapper__slider-container__slider-element'
+    ).length;
+    let slidesToShow;
+    // length < 15 ? length : 15
+    if (length < 15) {
+      slidesToShow = length - 1;
+      if (length === 1) {
+        slidesToShow = length;
+      }
+    } else {
+      slidesToShow = 15;
+    }
+    return {
+      infinite: true,
+      slidesToShow,
+      slidesToScroll: 3,
+      adaptiveHeight: true,
+      arrows: false,
+      swipeToSlide: true,
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 7,
+            slidesToScroll: 2,
+          },
         },
-      },
-    ],
-  });
+      ],
+    };
+  }
+  console.log(settingsSlick());
+  $('.productlist__pageheader-wrapper__slider-container__slider').slick(
+    settingsSlick()
+  );
 
   const scrollToThisBlock = document.querySelector('.productlist__pageheader');
   const scrollable = document.querySelector(

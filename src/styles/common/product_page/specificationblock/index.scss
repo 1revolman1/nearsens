@@ -173,25 +173,41 @@ section.productpage__specificationblock {
         text-align: left;
       }
       .productpage__specificationblock-wrap__container__specification-block {
-        display: grid;
-        grid-gap: 40px;
-        // grid-gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-        // display: flex;
+        // display: grid;
+        // grid-gap: 40px;
+        // // grid-gap: 10px;
+        // grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        // // display: flex;
+        // // @include media-tablet {
+        // //   flex-direction: column;
+        // // }
         // @include media-tablet {
-        //   flex-direction: column;
+        //   grid-gap: inherit;
         // }
-        @include media-tablet {
-          grid-gap: inherit;
-        }
+
         ul {
+          &.head {
+            width: 90%;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-gap: 20px 40px;
+            @include media-forHEADER {
+              width: 95%;
+              grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+            }
+            @include media-tablet {
+              width: 100%;
+              display: block;
+            }
+          }
           li {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
             grid-column-gap: 49px;
             grid-row-gap: 0px;
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
             @include media-tablet {
               grid-template-columns: repeat(1, 1fr);
               grid-template-rows: repeat(2, 1fr);

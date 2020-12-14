@@ -188,14 +188,23 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
   opacity: 1;
   text-align: left;
 }
-section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block {
+section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head {
+  width: 90%;
+  margin-right: auto;
   display: grid;
-  grid-gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px 40px;
+}
+@media screen and (max-width: 1023px) {
+  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head {
+    width: 95%;
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  }
 }
 @media screen and (max-width: 768px) {
-  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block {
-    grid-gap: inherit;
+  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head {
+    width: 100%;
+    display: block;
   }
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul li {
@@ -204,7 +213,6 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
   grid-template-rows: 1fr;
   grid-column-gap: 49px;
   grid-row-gap: 0px;
-  margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul li {

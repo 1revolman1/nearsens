@@ -154,21 +154,40 @@ var useProductList = function main() {
     counter.text(value);
   });
   $('.productlist__products-container-element-controllers-shop button').on('click', cartAnim);
-  $('.productlist__pageheader-wrapper__slider-container__slider').slick({
-    infinite: true,
-    slidesToShow: 15,
-    slidesToScroll: 3,
-    adaptiveHeight: true,
-    arrows: false,
-    swipeToSlide: true,
-    responsive: [{
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 7,
-        slidesToScroll: 2
+
+  function settingsSlick() {
+    var length = document.querySelectorAll('.productlist__pageheader-wrapper__slider-container__slider-element').length;
+    var slidesToShow; // length < 15 ? length : 15
+
+    if (length < 15) {
+      slidesToShow = length - 1;
+
+      if (length === 1) {
+        slidesToShow = length;
       }
-    }]
-  });
+    } else {
+      slidesToShow = 15;
+    }
+
+    return {
+      infinite: true,
+      slidesToShow: slidesToShow,
+      slidesToScroll: 3,
+      adaptiveHeight: true,
+      arrows: false,
+      swipeToSlide: true,
+      responsive: [{
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 2
+        }
+      }]
+    };
+  }
+
+  console.log(settingsSlick());
+  $('.productlist__pageheader-wrapper__slider-container__slider').slick(settingsSlick());
   var scrollToThisBlock = document.querySelector('.productlist__pageheader');
   var scrollable = document.querySelector('section.productlist__scrollheader');
   if (scrollToThisBlock && scrollable) document.querySelector('.productlist__scrollheader-wrapper__text-container__picker').addEventListener('click', function (event) {

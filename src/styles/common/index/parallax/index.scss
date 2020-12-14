@@ -51,6 +51,35 @@ section.index__parallax {
     position: relative;
     overflow: hidden;
     // background: red;
+    &:not(.parallax-block) {
+      .last-mount {
+        max-height: 1200px;
+        transition: transform 1s ease;
+        &::after {
+          content: '';
+        }
+        &::before {
+          content: '';
+        }
+        img {
+          width: 100%;
+          @media screen and (min-width: 769px) {
+            @media (max-width: 1280px) {
+              height: 925px;
+              max-height: 925px;
+            }
+            @media (max-width: 1050px) {
+              height: 925px;
+              max-height: 925px;
+            }
+          }
+          @include media-tablet {
+            height: 711px;
+            max-height: 711px;
+          }
+        }
+      }
+    }
     &::after {
       @media screen and (min-width: 1925px) {
         content: '';
