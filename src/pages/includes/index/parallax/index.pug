@@ -1,32 +1,37 @@
-section.index__parallax
-	//- picture
-	//- 	source(media="(min-width: 768px)", srcset="https://i.pinimg.com/originals/61/e7/8b/61e78b08a8dd18779132812218a9f2a8.jpg")
-	//- 	<source media="(min-width:650px)" srcset="https://www.w3schools.com/tags/img_pink_flowers.jpg">
-	//- 	<source media="(min-width:465px)" srcset="https://www.w3schools.com/tags/img_white_flower.jpg">
-	//- 	<img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
-	
-	#scene
-		.last-mount.moving-layer(data-depth="0.1")
-			img(src="img/mount_last_layer.png", alt="")
-		.shadow.shadow-5(data-depth="1")
-			img(src="img/shadow.png", alt="")
-		.premiddle-mount-layer.moving-layer(data-depth="0.5")
-			img(src="img/AdobeStock_mountain_3.png", alt="")
-		.text-container
-			h3 Security system, reinvented.
-			p Designed in Denmark with Scandinavian Simplicity
-		.middle-mount-layer.moving-layer(data-depth="0.5")
-			img(src="img/mount_middle_layer.png", alt="")
-		.gadget(data-depth="0.5")
-			img(src="img/gadget.png", alt="")
-		.first-mount-layer.moving-layer(data-depth="0.8")
-			img(src="img/mount_first_layer.png", alt="")
-		.shadow.shadow-1(data-depth="1")
-			img(src="img/shadow.png", alt="")
-		.shadow.shadow-3(data-depth="1")
-			img(src="img/shadow.png", alt="")
-		.shadow.shadow-4(data-depth="1")
-			img(src="img/shadow.png", alt="")
+section.index__parallax.no-parallax
+	.text-container
+		h3 Security system, reinvented.
+		p Designed in Denmark with Scandinavian Simplicity
+	picture
+		<source media="(max-width:735px)" srcset="img/735.png">
+		<source media="(max-width:1023px)" srcset="img/1024.png">
+		<img src="img/2560.png" alt="Mount" >
+		//- source(media="(min-width: 768px)", srcset="https://i.pinimg.com/originals/61/e7/8b/61e78b08a8dd18779132812218a9f2a8.jpg")
+		//- <source media="(min-width:650px)" srcset="https://www.w3schools.com/tags/img_pink_flowers.jpg">
+		//- <source media="(min-width:465px)" srcset="https://www.w3schools.com/tags/img_white_flower.jpg">
+		//- <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+	//- #scene
+	//- 	.last-mount.moving-layer(data-depth="0.1")
+	//- 		img(src="img/mount_last_layer.png", alt="")
+	//- 	.shadow.shadow-5(data-depth="1")
+	//- 		img(src="img/shadow.png", alt="")
+	//- 	.premiddle-mount-layer.moving-layer(data-depth="0.5")
+	//- 		img(src="img/AdobeStock_mountain_3.png", alt="")
+		//- .text-container
+		//- 	h3 Security system, reinvented.
+		//- 	p Designed in Denmark with Scandinavian Simplicity
+	//- 	.middle-mount-layer.moving-layer(data-depth="0.5")
+	//- 		img(src="img/mount_middle_layer.png", alt="")
+	//- 	.gadget(data-depth="0.5")
+	//- 		img(src="img/gadget.png", alt="")
+	//- 	.first-mount-layer.moving-layer(data-depth="0.8")
+	//- 		img(src="img/mount_first_layer.png", alt="")
+	//- 	.shadow.shadow-1(data-depth="1")
+	//- 		img(src="img/shadow.png", alt="")
+	//- 	.shadow.shadow-3(data-depth="1")
+	//- 		img(src="img/shadow.png", alt="")
+	//- 	.shadow.shadow-4(data-depth="1")
+	//- 		img(src="img/shadow.png", alt="")
 	//- #hero
 	//- 	.layer-bg.layer.parallax(data-depth='0.10')
 	//- 	.layer-1.layer.parallax(data-depth='0.20')
