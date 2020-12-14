@@ -57,12 +57,13 @@ export const useCasesList = function main() {
       ...document.querySelectorAll(
         `.use_case__usecases .use_case__usecases-list__element, .use_case__usecases .use_case__usecases-biglist__element`
       ),
-    ].map(function (elm) {
+    ].map((elm) => {
       return {
         ...elm.dataset,
         elm,
       };
     }),
+    _currentFiltersAndValues: {},
     _filters: {},
     _placeForFilter: document.querySelector(
       '.use_case__filter__selectedoptions'
@@ -139,6 +140,7 @@ export const useCasesList = function main() {
     },
     init: function () {
       const currentFilter = this;
+
       document
         .querySelectorAll('.custom-select-wrapper')
         .forEach((dropdown) => {
@@ -161,40 +163,61 @@ export const useCasesList = function main() {
             }
           });
       });
-
-      document.querySelectorAll('.custom-option').forEach((option) =>
-        option.addEventListener('click', function (event) {
-          event.stopPropagation();
-          const type = this.closest('.custom-select-wrapper').dataset?.type;
-          const selected = this.dataset?.value;
-          const name = this.dataset?.name.split(':')[1];
-          if (!this.classList.contains('selected')) {
-            currentFilter._addToFilter(type, selected);
-            currentFilter._createFilterHTML(selected, type, this, name);
-            //ФИЛЬТР ИЛИ
-            // [...document.querySelectorAll(`[data-${type}]`)]
-            //   .filter((e) => !e.dataset[type].split(',').includes(selected))
-            //   .forEach((e) => {
-            //     $(e).hide('fade');
-            //     e.classList.add('filtered');
-            //   });
-            this.classList.add('selected');
-          } else {
-            currentFilter._removeFromFilter(type, selected);
-            currentFilter._removeFilterHTML(selected, type);
-            //ФИЛЬТР ИЛИ
-            // [...document.querySelectorAll(`[data-${type}]`)]
-            //   .filter((e) => !e.dataset[type].split(',').includes(selected))
-            //   .forEach((e) => {
-            //     $(e).show('fade');
-            //     e.classList.remove('filtered');
-            //   });
-            // УБРАТЬ ФИЛЬТР
-            this.classList.remove('selected');
-          }
-          // console.log(currentFilter, currentFilter._filters[type]);
-        })
-      );
+      const filterKeys = Object.keys(currentFilter._filters);
+      currentFilter._blocks.forEach((elm) => {
+        filterKeys.forEach((filterKey) => {
+          const type = filterKey.toLowerCase();
+          currentFilter._currentFiltersAndValues[type] = [
+            ...new Set(
+              [
+                ...(currentFilter._currentFiltersAndValues[type] || []),
+                ...elm[type].toLowerCase().split(','),
+              ] || []
+            ),
+          ];
+        });
+      });
+      console.log(currentFilter._currentFiltersAndValues);
+      document.querySelectorAll('.custom-option').forEach((option) => {
+        const globalDataset = { ...option.dataset };
+        const type = globalDataset.name.toLowerCase().split(':')[0];
+        const value = globalDataset.value.toLowerCase();
+        if (currentFilter._currentFiltersAndValues[type].includes(value)) {
+          option.addEventListener('click', function (event) {
+            event.stopPropagation();
+            const type = this.closest('.custom-select-wrapper').dataset?.type;
+            const selected = this.dataset?.value;
+            const name = this.dataset?.name.split(':')[1];
+            if (!this.classList.contains('selected')) {
+              currentFilter._addToFilter(type, selected);
+              currentFilter._createFilterHTML(selected, type, this, name);
+              //ФИЛЬТР ИЛИ
+              // [...document.querySelectorAll(`[data-${type}]`)]
+              //   .filter((e) => !e.dataset[type].split(',').includes(selected))
+              //   .forEach((e) => {
+              //     $(e).hide('fade');
+              //     e.classList.add('filtered');
+              //   });
+              this.classList.add('selected');
+            } else {
+              currentFilter._removeFromFilter(type, selected);
+              currentFilter._removeFilterHTML(selected, type);
+              //ФИЛЬТР ИЛИ
+              // [...document.querySelectorAll(`[data-${type}]`)]
+              //   .filter((e) => !e.dataset[type].split(',').includes(selected))
+              //   .forEach((e) => {
+              //     $(e).show('fade');
+              //     e.classList.remove('filtered');
+              //   });
+              // УБРАТЬ ФИЛЬТР
+              this.classList.remove('selected');
+            }
+            // console.log(currentFilter, currentFilter._filters[type]);
+          });
+        } else {
+          option.style.display = 'none';
+        }
+      });
       document
         .querySelector('.use_case__filter__filtermanipul button')
         .addEventListener('click', function () {

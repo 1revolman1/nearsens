@@ -21,20 +21,20 @@ section.contact__findanswer
             form(action="").contact__findanswer__wrap__secondinit__container
                 .contact__findanswer__wrap__secondinit__container__first
                     .contact__findanswer__wrap__secondinit__container__first__first
-                        input.textinput(type="text" required placeholder="Last name*")
+                        span: input.textinput(type="text" required placeholder="Last name*")
                     .contact__findanswer__wrap__secondinit__container__first__second
-                        input.textinput(type="text" required placeholder="First name*")
-                        input.textinput(type="email" required placeholder="Adresse e-mail*")
+                        span: input.textinput(type="text" required placeholder="First name*")
+                        span: input.textinput(type="email" required placeholder="Adresse e-mail*")
                 .contact__findanswer__wrap__secondinit__container__second
                     .contact__findanswer__wrap__secondinit__container__second__inputs
-                        input.textinput(type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number*")
-                        input.textinput(type="text" placeholder="Compagny name")
-                        input.textinput(type="text" placeholder="Country")
+                        span: input.textinput(type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number*")
+                        span: input.textinput(type="text" placeholder="Compagny name")
+                        span: input.textinput(type="text" placeholder="Country")
                     .contact__findanswer__wrap__secondinit__container__second__textarea
-                        textarea(name="", placeholder="Your message …" cols="30", rows="10")
+                        span: textarea(name="", placeholder="Your message …" cols="30", rows="10")
                 .contact__findanswer__wrap__secondinit__container__third
                     .contact__findanswer__wrap__secondinit__container__third__robot
-                        input.textinput(type="text" placeholder="Поставь Google Я не робот")
+                        span: input.textinput(type="text" placeholder="Поставь Google Я не робот")
                     .contact__findanswer__wrap__secondinit__container__third__checkbox
                         label.container
                             | J’accepte de recevoir des informations et des offres promotionnelles exclusives de la part de Nearsens.com
