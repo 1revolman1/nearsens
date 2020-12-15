@@ -295,12 +295,12 @@ header.header .first-menu .second-block-in-menu .looking-input input {
   letter-spacing: 0px;
   color: #ffffff;
   background: transparent;
-  padding: 11px 50px 11px 20px;
+  padding: 11px 60px 11px 20px;
   width: 100%;
 }
 @media screen and (max-width: 1023px) {
   header.header .first-menu .second-block-in-menu .looking-input input {
-    padding: 9px 50px 9px 20px;
+    padding: 9px 60px 9px 20px;
   }
 }
 header.header .first-menu .second-block-in-menu .looking-input input::placeholder {
@@ -315,7 +315,6 @@ header.header .first-menu .second-block-in-menu .looking-input #btnControl {
 }
 header.header .first-menu .second-block-in-menu .looking-input #btnControl:checked ~ label {
   transform: translate(-50px, 0);
-  margin-left: 10px;
 }
 header.header .first-menu .second-block-in-menu .looking-input #btnControl:checked ~ input {
   opacity: 1;

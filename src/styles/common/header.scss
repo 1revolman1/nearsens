@@ -309,10 +309,10 @@ header.header {
           letter-spacing: 0px;
           color: #ffffff;
           background: transparent;
-          padding: 11px 50px 11px 20px;
+          padding: 11px 60px 11px 20px;
           width: 100%;
           @include media-forHEADER {
-            padding: 9px 50px 9px 20px;
+            padding: 9px 60px 9px 20px;
           }
           &::placeholder {
             color: white;
@@ -329,7 +329,7 @@ header.header {
 
           &:checked ~ label {
             transform: translate(-50px, 0);
-            margin-left: 10px;
+            // margin-left: 10px;
           }
 
           &:checked ~ input {
@@ -339,7 +339,6 @@ header.header {
         }
 
         img {
-          // height: 24px;
           width: 27px;
           cursor: pointer;
         }
