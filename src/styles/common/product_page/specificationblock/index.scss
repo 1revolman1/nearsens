@@ -190,11 +190,13 @@ section.productpage__specificationblock {
             width: 90%;
             margin-right: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            grid-gap: 20px 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            // grid-gap: 20px 40px;
+            grid-gap: 20px 140px;
             @include media-forHEADER {
               width: 95%;
-              grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+              grid-gap: 20px 100px;
+              grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             }
             @include media-tablet {
               width: 100%;

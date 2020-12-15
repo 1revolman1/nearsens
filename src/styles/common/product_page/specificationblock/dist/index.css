@@ -192,13 +192,14 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
   width: 90%;
   margin-right: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 20px 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px 140px;
 }
 @media screen and (max-width: 1023px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head {
     width: 95%;
-    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+    grid-gap: 20px 100px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
 }
 @media screen and (max-width: 768px) {
