@@ -3,7 +3,7 @@ section.productpage__pageheader_sticky {
   z-index: 1;
   top: 63px;
   width: 100%;
-  padding: 28px 0 32px;
+  padding: 18px 0 22px;
   background: #f2f2f2 0% 0% no-repeat padding-box;
   transition: visibility 0.2s, opacity 0.5s linear, top ease 0.5s;
   visibility: hidden;
@@ -24,7 +24,7 @@ section.productpage__pageheader_sticky.scroll-to-bottom {
 @media screen and (max-width: 1023px) and (max-width: 768px) {
   section.productpage__pageheader_sticky {
     top: 58px;
-    padding: 13px 0 15px;
+    padding: 10px 0;
   }
 }
 section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap {

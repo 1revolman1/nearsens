@@ -193,11 +193,11 @@ section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_d
   }
 }
 section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__text-block-text {
-  margin-bottom: 41px;
+  margin-bottom: 42px;
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__text-block-text {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 }
 section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__text-block-text p {

@@ -6,7 +6,8 @@ section.usecase_details__pageheaderafterscroll {
   z-index: 1;
   top: $additionalNavMenuToTop;
   width: 100%;
-  padding: 28px 0 32px;
+  padding: 18px 0;
+  // padding: 28px 0 32px;
   background: #f2f2f2 0% 0% no-repeat padding-box;
   transition: visibility 0.2s, opacity 0.5s linear, top ease 0.5s;
   visibility: hidden;
@@ -22,7 +23,8 @@ section.usecase_details__pageheaderafterscroll {
     top: $additionalNavMenuToTopBIGMENU;
     @include media-tablet {
       top: $additionalNavMenuToTopRESP;
-      padding: 13px 0 15px;
+      // padding: 13px 0 15px;
+      padding: 17px 0 18px;
     }
   }
 
@@ -55,9 +57,12 @@ section.usecase_details__pageheaderafterscroll {
         color: #28373b;
         opacity: 1;
         margin-bottom: 4px;
-        @include media-tablet {
-          max-width: 100%;
-          font: normal normal normal 20px/25px Muli;
+        @include media-forHEADER {
+          margin-bottom: 0;
+          @include media-tablet {
+            max-width: 100%;
+            font: normal normal normal 20px/25px Muli;
+          }
         }
       }
       p {
@@ -84,6 +89,7 @@ section.usecase_details__pageheaderafterscroll {
         padding-left: 40px;
         opacity: 0.65;
         @include media-tablet {
+          display: contents;
           padding-left: 0;
         }
         // &.not-active {

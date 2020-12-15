@@ -1,6 +1,11 @@
 section.usecase_details__textblockimgheader .productpage__textblockimgheader-text {
   padding: 0 40px 0;
 }
+@media screen and (max-width: 768px) {
+  section.usecase_details__textblockimgheader .productpage__textblockimgheader-text {
+    padding: 0;
+  }
+}
 section.usecase_details__textblockimgheader .productpage__textblockimgheader-text h3 {
   margin-bottom: 21px;
 }

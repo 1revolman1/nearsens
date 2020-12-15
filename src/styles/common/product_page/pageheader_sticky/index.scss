@@ -8,7 +8,8 @@ section.productpage__pageheader_sticky {
   top: $additionalNavMenuToTop;
 
   width: 100%;
-  padding: 28px 0 32px;
+  padding: 18px 0 22px;
+  // padding: 28px 0 32px;
   background: #f2f2f2 0% 0% no-repeat padding-box;
   transition: visibility 0.2s, opacity 0.5s linear, top ease 0.5s;
   visibility: hidden;
@@ -25,7 +26,8 @@ section.productpage__pageheader_sticky {
     @include media-tablet {
       // top: 58px;
       top: $additionalNavMenuToTopRESP;
-      padding: 13px 0 15px;
+      // padding: 13px 0 15px;
+      padding: 10px 0;
     }
   }
 

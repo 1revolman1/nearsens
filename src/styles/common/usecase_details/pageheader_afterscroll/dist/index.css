@@ -3,7 +3,7 @@ section.usecase_details__pageheaderafterscroll {
   z-index: 1;
   top: 63px;
   width: 100%;
-  padding: 28px 0 32px;
+  padding: 18px 0;
   background: #f2f2f2 0% 0% no-repeat padding-box;
   transition: visibility 0.2s, opacity 0.5s linear, top ease 0.5s;
   visibility: hidden;
@@ -24,7 +24,7 @@ section.usecase_details__pageheaderafterscroll.scroll-to-bottom {
 @media screen and (max-width: 1023px) and (max-width: 768px) {
   section.usecase_details__pageheaderafterscroll {
     top: 58px;
-    padding: 13px 0 15px;
+    padding: 17px 0 18px;
   }
 }
 section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap {
@@ -60,7 +60,12 @@ section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafter
   opacity: 1;
   margin-bottom: 4px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text h3 {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text h3 {
     max-width: 100%;
     font: normal normal normal 20px/25px Muli;
@@ -93,6 +98,7 @@ section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafter
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem {
+    display: contents;
     padding-left: 0;
   }
 }
