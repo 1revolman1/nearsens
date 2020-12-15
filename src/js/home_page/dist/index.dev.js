@@ -155,12 +155,15 @@ var useHomePage = function useHomePage() {
   if (window.innerWidth > 768) {
     // Parallax(parallaxContainer);
     imageObject.init();
-  } else {
-    var elements = document.querySelectorAll('.index__morewithless__blockwithhover__element');
-    elements.forEach(function (elm) {
-      elm.classList.add('mobile-page');
-    });
-  }
+  } // else {
+  // const elements = document.querySelectorAll(
+  //   '.index__morewithless__blockwithhover__element'
+  // );
+  // elements.forEach((elm) => {
+  //   elm.classList.add('mobile-page');
+  // });
+  // }
+
 
   if (typeof development === 'boolean' && development) {
     OtherPage();

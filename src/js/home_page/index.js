@@ -148,14 +148,15 @@ export const useHomePage = function () {
   if (window.innerWidth > 768) {
     // Parallax(parallaxContainer);
     imageObject.init();
-  } else {
-    const elements = document.querySelectorAll(
-      '.index__morewithless__blockwithhover__element'
-    );
-    elements.forEach((elm) => {
-      elm.classList.add('mobile-page');
-    });
   }
+  // else {
+  // const elements = document.querySelectorAll(
+  //   '.index__morewithless__blockwithhover__element'
+  // );
+  // elements.forEach((elm) => {
+  //   elm.classList.add('mobile-page');
+  // });
+  // }
   if (typeof development === 'boolean' && development) {
     OtherPage();
   }
