@@ -2,11 +2,24 @@
 
 section.usecase_details__textblockimgheader {
   .productpage__textblockimgheader-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0 40px 0;
+    a {
+      font-style: italic;
+      font-weight: bold;
+      color: #005b9d;
+    }
     @include media-tablet {
       padding: 0;
     }
-    h3 {
+    h3,
+    h1,
+    h2,
+    h4,
+    h5,
+    h6 {
       margin-bottom: 21px;
     }
   }

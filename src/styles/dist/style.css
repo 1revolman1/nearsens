@@ -6720,12 +6720,12 @@ header.header .first-menu .second-block-in-menu .looking-input input {
   letter-spacing: 0px;
   color: #ffffff;
   background: transparent;
-  padding: 11px 50px 11px 20px;
+  padding: 11px 60px 11px 20px;
   width: 100%;
 }
 @media screen and (max-width: 1023px) {
   header.header .first-menu .second-block-in-menu .looking-input input {
-    padding: 9px 50px 9px 20px;
+    padding: 9px 60px 9px 20px;
   }
 }
 header.header .first-menu .second-block-in-menu .looking-input input::placeholder {
@@ -6740,7 +6740,6 @@ header.header .first-menu .second-block-in-menu .looking-input #btnControl {
 }
 header.header .first-menu .second-block-in-menu .looking-input #btnControl:checked ~ label {
   transform: translate(-50px, 0);
-  margin-left: 10px;
 }
 header.header .first-menu .second-block-in-menu .looking-input #btnControl:checked ~ input {
   opacity: 1;
@@ -8584,7 +8583,7 @@ section.use_case__usecases-last {
   }
 }
 section.use_case__usecases-last h3 {
-  margin: 0 0 15px;
+  margin: 0 0 30.5px;
   font: normal normal normal 32px/40px Muli;
   letter-spacing: 0px;
   color: #28373b;
@@ -8592,7 +8591,7 @@ section.use_case__usecases-last h3 {
 }
 @media screen and (max-width: 768px) {
   section.use_case__usecases-last h3 {
-    margin: 10px 0;
+    margin: 0 0 21.5px;
     font: normal normal normal 26px/33px Muli;
   }
 }
@@ -8613,6 +8612,22 @@ section.use_case__usecases-last .use_case__usecases-last .use_case__usecases-las
 }
 section.use_case__usecases-last .use_case__usecases-last .use_case__usecases-last__element:hover {
   transform: translate(0, -10px);
+}
+section.use_case__usecases-last .use_case__usecases-last .use_case__usecases-last__element:first-of-type {
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__usecases-last .use_case__usecases-last .use_case__usecases-last__element:first-of-type {
+    margin-top: 0;
+  }
+}
+section.use_case__usecases-last .use_case__usecases-last .use_case__usecases-last__element:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__usecases-last .use_case__usecases-last .use_case__usecases-last__element:last-of-type {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   section.use_case__usecases-last .use_case__usecases-last .use_case__usecases-last__element {
@@ -8932,7 +8947,7 @@ section.use_case__scrollheader {
   top: 63px;
   width: 100%;
   background: #005b9d 0 0 no-repeat padding-box;
-  padding: 55px 0;
+  padding: 40px 0;
   z-index: 5;
   transition: visibility 0s, opacity 0.5s linear;
   visibility: hidden;
@@ -9004,7 +9019,7 @@ section.use_case__scrollheader .use_case__scrollheader-content-container__picker
 }
 section.use_case__scrollheader .use_case__scrollheader-content-container__picker i {
   margin-left: 8px;
-  font-size: 21px;
+  font-size: 25px;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
@@ -9012,12 +9027,6 @@ section.use_case__scrollheader .use_case__scrollheader-content-container__picker
 
 section.productlist__products {
   width: 100%;
-}
-@media screen and (max-width: 768px) {
-  section.productlist__products {
-    width: 95%;
-    margin: 0 auto;
-  }
 }
 section.productlist__products h3 {
   font: normal normal normal 32px/40px Muli;
@@ -9028,7 +9037,7 @@ section.productlist__products h3 {
 }
 @media screen and (max-width: 768px) {
   section.productlist__products h3 {
-    margin: 0 10px 21px;
+    margin: 0 10px 21.5px;
     font: normal normal normal 26px/33px Muli;
   }
 }
@@ -9051,6 +9060,7 @@ section.productlist__products .productlist__products-container {
     grid-template-columns: repeat(1, auto);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    margin-bottom: 42.5px;
   }
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element {
@@ -9061,6 +9071,16 @@ section.productlist__products .productlist__products-container .productlist__pro
   border-radius: 10px;
   opacity: 1;
   padding: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__products .productlist__products-container .productlist__products-container-element:first-of-type {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.productlist__products .productlist__products-container .productlist__products-container-element:last-of-type {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element {
@@ -9085,7 +9105,6 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-imgcontainer {
   flex: 0 1 27%;
-  max-width: 333px;
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-imgcontainer {
@@ -9244,7 +9263,6 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller {
-    flex: inherit;
     width: 100%;
     margin-left: 10px;
     display: flex;
@@ -9505,7 +9523,7 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 
 section.productlist__posibilities {
-  margin-bottom: 80px;
+  margin-bottom: 140px;
 }
 @media screen and (max-width: 768px) {
   section.productlist__posibilities {
@@ -9725,7 +9743,6 @@ section.productlist__additionaltips .productlist__posibilities-wrap .productlist
 section.productlist__additionaltips .productlist__posibilities-wrap .productlist__additionaltips-list-element img {
   height: 100px;
   width: 100px;
-  border-radius: 100px;
   opacity: 1;
   margin-bottom: 33px;
 }
@@ -10066,7 +10083,7 @@ section.productpage__textblockheader .productpage__textblockheader_element {
   margin: 15px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex: 1 1 calc(28% + 30px);
 }
 @media screen and (max-width: 768px) {
@@ -10090,7 +10107,7 @@ section.productpage__textblockheader .productpage__textblockheader_element .prod
   text-align: center;
   font: normal normal bold 20px/25px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
   margin-bottom: 10px;
 }
@@ -10103,7 +10120,7 @@ section.productpage__textblockheader .productpage__textblockheader_element .prod
   text-align: center;
   font: normal normal 300 16px/20px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -10141,8 +10158,11 @@ section.productpage__textblockimgheader .productpage__textblockimgheader-img img
   object-fit: cover;
 }
 section.productpage__textblockimgheader .productpage__textblockimgheader-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex: 0 1 50%;
-  padding: 40px;
+  padding: 0 40px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockimgheader .productpage__textblockimgheader-text {
@@ -10151,14 +10171,80 @@ section.productpage__textblockimgheader .productpage__textblockimgheader-text {
     width: 100%;
   }
 }
+section.productpage__textblockimgheader .productpage__textblockimgheader-text h6 {
+  font: normal normal normal 20px/33px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockimgheader .productpage__textblockimgheader-text h6 {
+    margin-bottom: 20px;
+    font: normal normal normal 20px/25px Muli;
+  }
+}
+section.productpage__textblockimgheader .productpage__textblockimgheader-text h5 {
+  font: normal normal normal 22px/33px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockimgheader .productpage__textblockimgheader-text h5 {
+    margin-bottom: 20px;
+    font: normal normal normal 20px/25px Muli;
+  }
+}
+section.productpage__textblockimgheader .productpage__textblockimgheader-text h4 {
+  font: normal normal normal 24px/33px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockimgheader .productpage__textblockimgheader-text h4 {
+    margin-bottom: 20px;
+    font: normal normal normal 20px/25px Muli;
+  }
+}
 section.productpage__textblockimgheader .productpage__textblockimgheader-text h3 {
   font: normal normal normal 26px/33px Muli;
   letter-spacing: 0px;
-  color: #28373B;
   opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockimgheader .productpage__textblockimgheader-text h3 {
+    margin-bottom: 20px;
+    font: normal normal normal 20px/25px Muli;
+  }
+}
+section.productpage__textblockimgheader .productpage__textblockimgheader-text h2 {
+  font: normal normal normal 28px/33px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockimgheader .productpage__textblockimgheader-text h2 {
+    margin-bottom: 20px;
+    font: normal normal normal 20px/25px Muli;
+  }
+}
+section.productpage__textblockimgheader .productpage__textblockimgheader-text h1 {
+  font: normal normal normal 30px/33px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockimgheader .productpage__textblockimgheader-text h1 {
     margin-bottom: 20px;
     font: normal normal normal 20px/25px Muli;
   }
@@ -10366,14 +10452,24 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
   opacity: 1;
   text-align: left;
 }
-section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block {
+section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head {
+  width: 90%;
+  margin-right: auto;
   display: grid;
-  grid-gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px 140px;
+}
+@media screen and (max-width: 1023px) {
+  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head {
+    width: 95%;
+    grid-gap: 20px 100px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
 }
 @media screen and (max-width: 768px) {
-  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block {
-    grid-gap: inherit;
+  section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head {
+    width: 100%;
+    display: block;
   }
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul li {
@@ -10382,7 +10478,6 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
   grid-template-rows: 1fr;
   grid-column-gap: 49px;
   grid-row-gap: 0px;
-  margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul li {
@@ -10429,6 +10524,7 @@ section.productpage__textblockvariations {
 section.productpage__textblockvariations .productpage__textblockvariations-textimgheader {
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockvariations .productpage__textblockvariations-textimgheader {
@@ -10438,7 +10534,10 @@ section.productpage__textblockvariations .productpage__textblockvariations-texti
 }
 section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text {
   flex: 1;
-  padding: 100px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 25px 0 10px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text {
@@ -10533,7 +10632,7 @@ section.productpage__textblockvariations .productpage__textblockvariations-texti
 section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__img {
   display: flex;
   flex: 1;
-  padding: 40px 0 40px 40px;
+  padding: 0 0 0 25px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__img {
@@ -10551,6 +10650,78 @@ section.productpage__textblockvariations .productpage__textblockvariations-texti
   display: flex;
   flex-direction: column;
 }
+section.productpage__textblockvariations .productpage__textblockvariations-textimg h6 {
+  font: normal normal normal 20px/33px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockvariations .productpage__textblockvariations-textimg h6 {
+    font: normal normal normal 20px/25px Muli;
+  }
+}
+section.productpage__textblockvariations .productpage__textblockvariations-textimg h5 {
+  font: normal normal normal 22px/33px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockvariations .productpage__textblockvariations-textimg h5 {
+    font: normal normal normal 20px/25px Muli;
+  }
+}
+section.productpage__textblockvariations .productpage__textblockvariations-textimg h4 {
+  font: normal normal normal 24px/33px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockvariations .productpage__textblockvariations-textimg h4 {
+    font: normal normal normal 20px/25px Muli;
+  }
+}
+section.productpage__textblockvariations .productpage__textblockvariations-textimg h3 {
+  font: normal normal normal 26px/33px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockvariations .productpage__textblockvariations-textimg h3 {
+    font: normal normal normal 20px/25px Muli;
+  }
+}
+section.productpage__textblockvariations .productpage__textblockvariations-textimg h2 {
+  font: normal normal normal 28px/33px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockvariations .productpage__textblockvariations-textimg h2 {
+    font: normal normal normal 20px/25px Muli;
+  }
+}
+section.productpage__textblockvariations .productpage__textblockvariations-textimg h1 {
+  font: normal normal normal 30px/33px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockvariations .productpage__textblockvariations-textimg h1 {
+    font: normal normal normal 20px/25px Muli;
+  }
+}
 section.productpage__textblockvariations .productpage__textblockvariations-textimg img {
   width: 100%;
   max-height: 425px;
@@ -10563,6 +10734,7 @@ section.productpage__textblockvariations .productpage__textblockvariations-texti
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockvariations .productpage__textblockvariations-textimg p {
@@ -10583,6 +10755,11 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header {
+    margin-bottom: 21.5px;
+  }
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header h3 {
   font: normal normal normal 32px/40px Muli;
@@ -10641,13 +10818,22 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
   background: #2ec9ad;
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    grid-column-gap: inherit;
+    grid-row-gap: inherit;
+  }
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element {
-  flex: 0 1 30%;
-  max-width: 393px;
   box-shadow: 0px 0px 10px #0000001a;
   border-radius: 10px;
   overflow: auto;
@@ -10656,6 +10842,16 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element:hover {
   transform: translate(0, -5px);
+}
+@media screen and (max-width: 768px) {
+  section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element:first-of-type {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element:last-of-type {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element {
@@ -11325,13 +11521,14 @@ section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .product
   width: 50px;
   height: 50px;
   object-fit: cover;
+  margin-right: 18px;
 }
 section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-headblock h3 {
   font: normal normal normal 32px/40px Muli;
   letter-spacing: 0px;
   color: #28373b;
   opacity: 1;
-  margin: 0 18px;
+  margin-right: 18px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-headblock h3 {
@@ -11502,7 +11699,7 @@ section.productpage__pageheader .productpage__pageheader-wrapimgoverlay .product
   align-items: center;
   display: flex;
   margin-left: auto;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 100px;
   justify-content: space-between;
 }
@@ -11606,7 +11803,7 @@ section.productpage__pageheader_sticky {
   z-index: 1;
   top: 63px;
   width: 100%;
-  padding: 28px 0 32px;
+  padding: 18px 0 22px;
   background: #f2f2f2 0% 0% no-repeat padding-box;
   transition: visibility 0.2s, opacity 0.5s linear, top ease 0.5s;
   visibility: hidden;
@@ -11627,7 +11824,7 @@ section.productpage__pageheader_sticky.scroll-to-bottom {
 @media screen and (max-width: 1023px) and (max-width: 768px) {
   section.productpage__pageheader_sticky {
     top: 58px;
-    padding: 13px 0 15px;
+    padding: 10px 0;
   }
 }
 section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap {
@@ -12296,6 +12493,9 @@ section.usecase_details__pageheader .usecase_details__pageheader-wrap {
   }
 }
 section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex: 1;
   margin-right: 50px;
 }
@@ -12469,11 +12669,11 @@ section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_d
   }
 }
 section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__text-block-text {
-  margin-bottom: 41px;
+  margin-bottom: 42px;
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__text-block-text {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 }
 section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__text .usecase_details__pageheader__text__info .usecase_details__pageheader__text__info__text-block-text p {
@@ -12523,7 +12723,7 @@ section.usecase_details__pageheaderafterscroll {
   z-index: 1;
   top: 63px;
   width: 100%;
-  padding: 28px 0 32px;
+  padding: 18px 0;
   background: #f2f2f2 0% 0% no-repeat padding-box;
   transition: visibility 0.2s, opacity 0.5s linear, top ease 0.5s;
   visibility: hidden;
@@ -12544,7 +12744,7 @@ section.usecase_details__pageheaderafterscroll.scroll-to-bottom {
 @media screen and (max-width: 1023px) and (max-width: 768px) {
   section.usecase_details__pageheaderafterscroll {
     top: 58px;
-    padding: 13px 0 15px;
+    padding: 17px 0 18px;
   }
 }
 section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap {
@@ -12580,7 +12780,12 @@ section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafter
   opacity: 1;
   margin-bottom: 4px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text h3 {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text h3 {
     max-width: 100%;
     font: normal normal normal 20px/25px Muli;
@@ -12613,6 +12818,7 @@ section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafter
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem {
+    display: contents;
     padding-left: 0;
   }
 }
@@ -12649,6 +12855,31 @@ section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafter
   section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem p {
     display: none;
   }
+}
+
+section.usecase_details__textblockimgheader .productpage__textblockimgheader-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px 0;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__textblockimgheader .productpage__textblockimgheader-text {
+    padding: 0;
+  }
+}
+section.usecase_details__textblockimgheader .productpage__textblockimgheader-text h3 {
+  margin-bottom: 21px;
+}
+
+section.usecase_details__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.usecase_details__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__img {
+  padding: 0 0 40px 40px;
 }
 
 section.page_gabarit__pageheader {
@@ -14755,6 +14986,13 @@ section.bigblueblock__container {
   background: #005b9d 0 0 no-repeat padding-box;
 }
 
+.custom-block a {
+  text-decoration: none;
+  color: #005b9d;
+  font-weight: bold;
+  background-color: transparent;
+}
+
 section.index__parallax {
   position: relative;
   top: -59px;
@@ -14769,33 +15007,128 @@ section.index__parallax * {
   pointer-events: none;
   user-select: none;
 }
-section.index__parallax::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 16%;
-  background: transparent linear-gradient(180deg, #ffffff 32%, #ffffff00 100%) 0% 0% no-repeat padding-box;
-  z-index: 1;
-}
-@media screen and (max-width: 768px) {
-  section.index__parallax::after {
-    display: none;
-  }
-}
-section.index__parallax::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 42%;
-  background: transparent linear-gradient(0deg, #ffffff 42%, #ffffff00 100%) 0% 0% no-repeat padding-box;
-  z-index: 1;
-}
 @media screen and (max-width: 768px) {
   section.index__parallax {
     margin-top: 60px;
+  }
+}
+section.index__parallax.no-parallax {
+  position: relative;
+  top: inherit;
+}
+@media screen and (min-width: 1925px) {
+  section.index__parallax.no-parallax::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: transparent linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat padding-box;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax.no-parallax::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 1925px) {
+  section.index__parallax.no-parallax::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    transform: scale(-1);
+    background: transparent linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat padding-box;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax.no-parallax::before {
+    display: none;
+  }
+}
+section.index__parallax.no-parallax picture {
+  width: 100%;
+  max-width: 2500px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+section.index__parallax.no-parallax img {
+  width: 100%;
+  min-height: 500px;
+  max-height: 1200px;
+  height: 82vh;
+  object-fit: cover;
+}
+section.index__parallax.no-parallax .text-container {
+  position: absolute;
+  transition: top 1s ease;
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+@media screen and (max-width: 1023px) {
+  section.index__parallax.no-parallax .text-container {
+    top: 63px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax.no-parallax .text-container {
+    padding-left: 40px;
+    top: 40px;
+    left: 0%;
+    width: initial;
+    margin: initial;
+    transform: initial;
+  }
+}
+section.index__parallax.no-parallax .text-container h3 {
+  margin-bottom: 5px;
+  font: normal normal 800 32px/40px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+@media screen and (max-width: 1100px) {
+  section.index__parallax.no-parallax .text-container h3 {
+    font: normal normal 800 25px/28px Muli;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax.no-parallax .text-container h3 {
+    font: normal normal 800 22px/28px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+}
+section.index__parallax.no-parallax .text-container p {
+  font: normal normal normal 26px/33px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+@media screen and (max-width: 1100px) {
+  section.index__parallax.no-parallax .text-container p {
+    font: normal normal normal 17px/23px Muli;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax.no-parallax .text-container p {
+    font: normal normal normal 18px/23px Muli;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
   }
 }
 section.index__parallax #scene {
@@ -14805,37 +15138,6 @@ section.index__parallax #scene {
   display: flex;
   position: relative;
   overflow: hidden;
-}
-section.index__parallax #scene:not(.parallax-block) .last-mount {
-  max-height: 1200px;
-  transition: transform 1s ease;
-}
-section.index__parallax #scene:not(.parallax-block) .last-mount::after {
-  content: "";
-}
-section.index__parallax #scene:not(.parallax-block) .last-mount::before {
-  content: "";
-}
-section.index__parallax #scene:not(.parallax-block) .last-mount img {
-  width: 100%;
-}
-@media screen and (min-width: 769px) and (max-width: 1280px) {
-  section.index__parallax #scene:not(.parallax-block) .last-mount img {
-    height: 925px;
-    max-height: 925px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1050px) {
-  section.index__parallax #scene:not(.parallax-block) .last-mount img {
-    height: 925px;
-    max-height: 925px;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.index__parallax #scene:not(.parallax-block) .last-mount img {
-    height: 711px;
-    max-height: 711px;
-  }
 }
 @media screen and (min-width: 1925px) {
   section.index__parallax #scene::after {
@@ -15477,11 +15779,9 @@ section.index__parallax #scene .shadow.shadow-5 {
   left: 20%;
 }
 section.index__parallax .index__parallax__text {
-  opacity: 0;
-  z-index: 1;
   transition: all 1s ease;
   position: absolute;
-  bottom: 5%;
+  bottom: 1%;
   left: 50%;
   transform: translate(-50%, 100%);
   display: flex;
@@ -15489,6 +15789,21 @@ section.index__parallax .index__parallax__text {
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 1023px) {
+  section.index__parallax .index__parallax__text {
+    position: inherit;
+    width: 100%;
+    left: initial;
+    transform: translate(0, -55px);
+  }
+}
+@media screen and (max-width: 768px) {
+  section.index__parallax .index__parallax__text {
+    opacity: 1;
+    transform: translate(0, -55px);
+    margin-bottom: 30px;
+  }
 }
 section.index__parallax .index__parallax__text.transform-block {
   opacity: 1;
@@ -15502,27 +15817,6 @@ section.index__parallax .index__parallax__text.transform-block {
 @media screen and (max-width: 1000px) {
   section.index__parallax .index__parallax__text.transform-block {
     transform: translate(0, -5%);
-  }
-}
-@media screen and (max-width: 1000px) {
-  section.index__parallax .index__parallax__text {
-    position: relative;
-    top: -70px;
-    left: inherit;
-    transform: translate(0%, 100%);
-  }
-}
-@media screen and (max-width: 768px) {
-  section.index__parallax .index__parallax__text {
-    opacity: 1;
-    margin-bottom: 30px;
-    transform: translate(0%, -5%);
-  }
-}
-@media screen and (max-width: 425px) {
-  section.index__parallax .index__parallax__text {
-    top: -60px;
-    transform: translate(0%, -5%);
   }
 }
 section.index__parallax .index__parallax__text p {
@@ -15710,38 +16004,44 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   margin: 15px 0;
 }
 @media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element {
+    background: #005b9d 0% 0% no-repeat padding-box;
+  }
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:first-of-type {
     margin-top: 0;
   }
 }
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page {
-  background: #005b9d 0% 0% no-repeat padding-box;
+@media screen and (min-width: 769px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover {
+    background: #005b9d 0% 0% no-repeat padding-box;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    transform: scale(0.9);
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .invert-collor path {
+    fill: #005b9d;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .spec .color {
+    fill: #005b9d;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .lock path {
+    transition: all 0.3s ease;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text h3 {
+    top: 0;
+    transform: translate(0, 0%);
+    color: #ffffff;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text p {
+    opacity: 1;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow {
+    color: white;
+  }
 }
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__img {
-  background: #ffffff 0% 0% no-repeat padding-box;
-  transform: scale(0.9);
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .invert-collor path, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__img .invert-collor path {
-  fill: #005b9d;
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .spec .color, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__img .spec .color {
-  fill: #005b9d;
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .lock path, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__img .lock path {
-  transition: all 0.3s ease;
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text h3, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__text h3 {
-  transform: translate(0, 0%);
-  color: #ffffff;
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text p, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__text p {
-  opacity: 1;
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__arrow {
-  color: white;
-}
-@media screen and (max-width: 768px) {
-  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__arrow {
+@media screen and (min-width: 769px) and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow {
     opacity: 1;
     visibility: visible;
   }
@@ -15766,6 +16066,8 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
 @media screen and (max-width: 768px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img {
     padding: 10px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    transform: scale(0.9);
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor {
@@ -15774,11 +16076,21 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor path {
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor path {
+    fill: #005b9d;
+  }
+}
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec {
   transition: all 0.3s ease;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec .color {
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec .color {
+    fill: #005b9d;
+  }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .fire {
   transition: all 0.3s ease;
@@ -15792,6 +16104,11 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   top: 22px;
   right: -17px;
 }
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .lock path {
+    transition: all 0.3s ease;
+  }
+}
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img svg {
   width: 100%;
 }
@@ -15804,7 +16121,9 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   justify-content: center;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text h3 {
-  transform: translate(0, 35%);
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
   transition: all 0.3s ease;
   font: normal normal 300 22px/28px Muli;
   letter-spacing: 0px;
@@ -15815,9 +16134,10 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text h3 {
     font: normal normal normal 16px/20px Muli;
     letter-spacing: 0px;
-    color: #324044;
     opacity: 1;
-    transform: translate(0, 55%);
+    top: 0;
+    transform: translate(0, 0%);
+    color: #ffffff;
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
@@ -15831,6 +16151,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
     font: normal normal 300 13px/16px Muli;
     letter-spacing: 0px;
     color: #ffffff;
+    opacity: 1;
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__arrow {
@@ -15838,14 +16159,14 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   right: 25px;
   top: 50%;
   transform: translate(0px, -50%);
-  color: #005b9d;
+  color: white;
   font-size: 20px;
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 768px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__arrow {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__buttons {
@@ -16144,22 +16465,22 @@ section.index__youtubeframe .index__youtubeframe__text ul li i {
 }
 section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer {
   display: flex;
-  margin: 17px 0;
+  margin: 17px 0 20.1px;
 }
 section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer .index__youtubeframe__text__btncontainer__btn {
   font: normal normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #2EC9AD;
+  color: #2ec9ad;
   opacity: 1;
-  border: 1px solid #2EC9AD;
+  border: 1px solid #2ec9ad;
   border-radius: 40px;
   opacity: 1;
   padding: 13px 30px;
 }
 section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer .index__youtubeframe__text__btncontainer__btn:hover {
-  color: #FFFFFF;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
-  border: 1px solid #2EC9AD;
+  color: #ffffff;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
 }
 @media screen and (max-width: 768px) {
   section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer {
@@ -16192,6 +16513,12 @@ section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__tex
 section.index__reviews {
   display: flex;
   flex-direction: column;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews {
+    margin-bottom: 80px;
+  }
 }
 section.index__reviews .index__reviews__head {
   margin-bottom: 60.5px;
@@ -16332,13 +16659,12 @@ section.index__reviews .index__reviews__content .index__reviews__content__elemen
 .index-page-container {
   transition: all 1s ease;
   position: relative;
-  top: -70px;
   z-index: 2;
   opacity: 0;
-  padding-top: 60px;
+  padding-top: 139px;
   background: white;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1023px) {
   .index-page-container {
     padding-top: 0;
     top: inherit;
@@ -16347,12 +16673,7 @@ section.index__reviews .index__reviews__content .index__reviews__content__elemen
 @media screen and (max-width: 768px) {
   .index-page-container {
     opacity: 1;
-    transform: translate(0, -3%);
-  }
-}
-@media screen and (max-width: 425px) {
-  .index-page-container {
-    transform: translate(0, -3%);
+    transform: translate(0, -55px);
   }
 }
 .index-page-container.transform-block {
@@ -16934,7 +17255,7 @@ section.contact__container .contact__container__phonecontainer .phone-container 
 
 section.contact__findanswer {
   width: 100%;
-  background: #F2F2F2 0% 0% no-repeat padding-box;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
   opacity: 1;
   padding: 40px 0 62px;
 }
@@ -16961,7 +17282,7 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__firstinit h3 {
   font: normal normal normal 32px/40px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
   margin-bottom: 10px;
 }
@@ -16969,7 +17290,7 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__firstinit h3 {
     font: normal normal normal 22px/28px Muli;
     letter-spacing: 0px;
-    color: #28373B;
+    color: #28373b;
     opacity: 1;
     margin-bottom: 20px;
   }
@@ -16979,9 +17300,9 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   padding: 14px 30px;
   font: normal normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
   border-radius: 40px;
   opacity: 1;
   border: none;
@@ -16992,7 +17313,7 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
     padding: 10px 30px;
     font: normal normal bold 20px/23px Muli;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 1;
   }
 }
@@ -17009,29 +17330,40 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit h3 {
   font: normal normal normal 32px/40px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit h3 {
     align-self: flex-start;
     font: normal normal normal 22px/28px Muli;
     letter-spacing: 0px;
-    color: #28373B;
+    color: #28373b;
     opacity: 1;
     margin-bottom: 20px;
   }
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container {
+    grid-row-gap: 20px;
+  }
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container span {
+  display: contents;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .textinput {
-  margin: 20px 25px;
+  width: 100%;
   padding: 14px 30px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #BBBBBB;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #bbbbbb;
   border-radius: 6px;
   opacity: 1;
   font: normal normal 300 18px/23px Muli;
@@ -17042,7 +17374,6 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
 @media screen and (max-width: 768px) {
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .textinput {
     padding: 11px 20px;
-    margin: 10px 0;
     font: normal normal 300 18px/23px Muli;
     letter-spacing: 0px;
     color: #333333;
@@ -17050,44 +17381,42 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   }
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    grid-template-rows: auto;
+  }
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__first {
   display: flex;
   align-items: flex-start;
-  flex: 1;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__first .textinput {
   margin-left: 0;
-  flex: 1;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second {
-  flex: 3;
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 40px;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second .textinput {
-  flex: 1;
   margin-right: 0;
-}
-section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second .textinput:last-child {
-  margin-right: 0;
-  margin-left: 40px;
-}
-@media screen and (max-width: 950px) {
-  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second .textinput:last-child {
-    margin-left: 25px;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second .textinput:last-child {
-    margin-left: 0px;
-  }
+  margin-left: 0;
 }
 @media screen and (max-width: 768px) {
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second {
-    flex-flow: column wrap;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    grid-template-rows: auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -17096,81 +17425,118 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   }
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    grid-template-rows: auto;
+  }
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__inputs {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
 }
-section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__inputs .textinput {
-  margin-left: 0;
-}
-section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea {
-  flex: 3;
-  display: flex;
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__inputs {
+    grid-row-gap: 20px;
+  }
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea {
   resize: none;
-  margin: 20px 0 20px 25px;
   width: 100%;
-  padding: 14px 30px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #BBBBBB;
+  height: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #bbbbbb;
   border-radius: 6px;
   opacity: 1;
   font: normal normal 300 18px/23px Muli;
   letter-spacing: 0px;
   color: #333333;
-  opacity: 1;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  padding: 14px 30px;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  padding: 14px 30px;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  padding: 14px 30px;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  padding: 14px 30px;
 }
 @media screen and (max-width: 768px) {
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea {
-    padding: 11px 20px;
-    margin: 10px 0;
     font: normal normal 300 18px/23px Muli;
     letter-spacing: 0px;
     color: #333333;
-    opacity: 1;
   }
-}
-@media screen and (max-width: 768px) {
-  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second {
-    flex-flow: column wrap;
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    padding: 11px 20px;
+  }
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    padding: 11px 20px;
+  }
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    padding: 11px 20px;
+  }
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    padding: 11px 20px;
   }
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    grid-template-rows: auto;
+  }
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__robot {
   display: flex;
   align-items: flex-start;
-  flex: 1;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__robot .textinput {
-  flex: 1;
   margin-left: 0;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox {
   display: flex;
   flex-direction: row;
-  flex: 3;
-  padding: 0 0 0 25px;
   align-items: flex-start;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .submit {
   border: none;
   margin-left: 100px;
   padding: 14px 22px;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
   border-radius: 40px;
   opacity: 1;
   font: normal normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
   outline: none;
 }
@@ -17182,7 +17548,7 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container {
   font: normal normal 300 18px/23px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
   display: block;
   position: relative;
@@ -17196,7 +17562,7 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
     margin: 10px 0;
     font: normal normal 300 14px/18px Muli;
     letter-spacing: 0px;
-    color: #28373B;
+    color: #28373b;
     opacity: 1;
   }
 }
@@ -17221,12 +17587,13 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   top: 0px;
   width: 10px;
   height: 18px;
-  border: solid #005B9D;
+  border: solid #005b9d;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .checkmark {
-  border: 1px solid #BBBBBB;
+  display: block;
+  border: 1px solid #bbbbbb;
   border-radius: 6px;
   opacity: 1;
   position: absolute;
@@ -17245,12 +17612,6 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox {
     padding: 0;
     flex-flow: column wrap;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third {
-    flex-flow: column wrap;
-    margin: 0;
   }
 }
 

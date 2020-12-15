@@ -78,15 +78,20 @@ section.index__parallax.no-parallax .text-container {
   width: 95%;
   max-width: 1300px;
   margin: 0 auto;
-  top: 0;
+  top: 90px;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 2;
 }
+@media screen and (max-width: 1023px) {
+  section.index__parallax.no-parallax .text-container {
+    top: 63px;
+  }
+}
 @media screen and (max-width: 768px) {
   section.index__parallax.no-parallax .text-container {
     padding-left: 40px;
-    top: 5%;
+    top: 40px;
     left: 0%;
     width: initial;
     margin: initial;
@@ -1005,38 +1010,44 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   margin: 15px 0;
 }
 @media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element {
+    background: #005b9d 0% 0% no-repeat padding-box;
+  }
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:first-of-type {
     margin-top: 0;
   }
 }
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page {
-  background: #005b9d 0% 0% no-repeat padding-box;
+@media screen and (min-width: 769px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover {
+    background: #005b9d 0% 0% no-repeat padding-box;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    transform: scale(0.9);
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .invert-collor path {
+    fill: #005b9d;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .spec .color {
+    fill: #005b9d;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .lock path {
+    transition: all 0.3s ease;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text h3 {
+    top: 0;
+    transform: translate(0, 0%);
+    color: #ffffff;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text p {
+    opacity: 1;
+  }
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow {
+    color: white;
+  }
 }
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__img {
-  background: #ffffff 0% 0% no-repeat padding-box;
-  transform: scale(0.9);
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .invert-collor path, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__img .invert-collor path {
-  fill: #005b9d;
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .spec .color, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__img .spec .color {
-  fill: #005b9d;
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__img .lock path, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__img .lock path {
-  transition: all 0.3s ease;
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text h3, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__text h3 {
-  transform: translate(0, 0%);
-  color: #ffffff;
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__text p, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__text p {
-  opacity: 1;
-}
-section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__arrow {
-  color: white;
-}
-@media screen and (max-width: 768px) {
-  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow, section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element.mobile-page .index__morewithless__blockwithhover__element__arrow {
+@media screen and (min-width: 769px) and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow {
     opacity: 1;
     visibility: visible;
   }
@@ -1061,6 +1072,8 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
 @media screen and (max-width: 768px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img {
     padding: 10px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    transform: scale(0.9);
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor {
@@ -1069,11 +1082,21 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor path {
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor path {
+    fill: #005b9d;
+  }
+}
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec {
   transition: all 0.3s ease;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec .color {
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec .color {
+    fill: #005b9d;
+  }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .fire {
   transition: all 0.3s ease;
@@ -1087,6 +1110,11 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   top: 22px;
   right: -17px;
 }
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .lock path {
+    transition: all 0.3s ease;
+  }
+}
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img svg {
   width: 100%;
 }
@@ -1099,7 +1127,9 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   justify-content: center;
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text h3 {
-  transform: translate(0, 35%);
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
   transition: all 0.3s ease;
   font: normal normal 300 22px/28px Muli;
   letter-spacing: 0px;
@@ -1110,9 +1140,10 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text h3 {
     font: normal normal normal 16px/20px Muli;
     letter-spacing: 0px;
-    color: #324044;
     opacity: 1;
-    transform: translate(0, 55%);
+    top: 0;
+    transform: translate(0, 0%);
+    color: #ffffff;
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
@@ -1126,6 +1157,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
     font: normal normal 300 13px/16px Muli;
     letter-spacing: 0px;
     color: #ffffff;
+    opacity: 1;
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__arrow {
@@ -1133,14 +1165,14 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   right: 25px;
   top: 50%;
   transform: translate(0px, -50%);
-  color: #005b9d;
+  color: white;
   font-size: 20px;
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 768px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__arrow {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__buttons {
@@ -1439,22 +1471,22 @@ section.index__youtubeframe .index__youtubeframe__text ul li i {
 }
 section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer {
   display: flex;
-  margin: 17px 0;
+  margin: 17px 0 20.1px;
 }
 section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer .index__youtubeframe__text__btncontainer__btn {
   font: normal normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #2EC9AD;
+  color: #2ec9ad;
   opacity: 1;
-  border: 1px solid #2EC9AD;
+  border: 1px solid #2ec9ad;
   border-radius: 40px;
   opacity: 1;
   padding: 13px 30px;
 }
 section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer .index__youtubeframe__text__btncontainer__btn:hover {
-  color: #FFFFFF;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
-  border: 1px solid #2EC9AD;
+  color: #ffffff;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
 }
 @media screen and (max-width: 768px) {
   section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__text__btncontainer {
@@ -1487,6 +1519,12 @@ section.index__youtubeframe .index__youtubeframe__text .index__youtubeframe__tex
 section.index__reviews {
   display: flex;
   flex-direction: column;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.index__reviews {
+    margin-bottom: 80px;
+  }
 }
 section.index__reviews .index__reviews__head {
   margin-bottom: 60.5px;
@@ -1629,7 +1667,7 @@ section.index__reviews .index__reviews__content .index__reviews__content__elemen
   position: relative;
   z-index: 2;
   opacity: 0;
-  padding-top: 140px;
+  padding-top: 139px;
   background: white;
 }
 @media screen and (max-width: 1023px) {

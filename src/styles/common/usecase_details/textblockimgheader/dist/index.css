@@ -1,11 +1,24 @@
 section.usecase_details__textblockimgheader .productpage__textblockimgheader-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 0 40px 0;
+}
+section.usecase_details__textblockimgheader .productpage__textblockimgheader-text a {
+  font-style: italic;
+  font-weight: bold;
+  color: #005b9d;
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__textblockimgheader .productpage__textblockimgheader-text {
     padding: 0;
   }
 }
-section.usecase_details__textblockimgheader .productpage__textblockimgheader-text h3 {
+section.usecase_details__textblockimgheader .productpage__textblockimgheader-text h3,
+section.usecase_details__textblockimgheader .productpage__textblockimgheader-text h1,
+section.usecase_details__textblockimgheader .productpage__textblockimgheader-text h2,
+section.usecase_details__textblockimgheader .productpage__textblockimgheader-text h4,
+section.usecase_details__textblockimgheader .productpage__textblockimgheader-text h5,
+section.usecase_details__textblockimgheader .productpage__textblockimgheader-text h6 {
   margin-bottom: 21px;
 }

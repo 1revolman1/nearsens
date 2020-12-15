@@ -1,5 +1,11 @@
 section.usecase_details__textblockvariations {
   .productpage__textblockvariations-textimgheader {
+    .productpage__textblockvariations-textimgheader__text {
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     .productpage__textblockvariations-textimgheader__img {
       padding: 0 0 40px 40px;
     }
