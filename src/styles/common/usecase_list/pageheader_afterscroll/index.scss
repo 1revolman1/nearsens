@@ -7,7 +7,8 @@ section.use_case__scrollheader {
   top: $additionalNavMenuToTop;
   width: 100%;
   background: #005b9d 0 0 no-repeat padding-box;
-  padding: 55px 0;
+  // padding: 55px 0;
+  padding: 40px 0;
   z-index: 5;
   transition: visibility 0s, opacity 0.5s linear;
   visibility: hidden;
@@ -17,6 +18,7 @@ section.use_case__scrollheader {
     top: $additionalNavMenuToTopBIGMENU;
     @include media-tablet {
       padding: 18px 4%;
+      // padding: 15px 0;
       // padding: 18px 30px;
       top: $additionalNavMenuToTopRESP;
     }
@@ -69,7 +71,7 @@ section.use_case__scrollheader {
     }
     i {
       margin-left: 8px;
-      font-size: 21px;
+      font-size: 25px;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;

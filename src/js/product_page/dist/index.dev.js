@@ -217,7 +217,7 @@ var useProductPage = function main() {
           slidesToShow: 1
         }
       }, {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: 'unslick'
       }]
     });

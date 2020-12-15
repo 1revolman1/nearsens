@@ -1,7 +1,7 @@
 @import '../../../mixins/media';
 
 section.productlist__posibilities {
-  margin-bottom: 80px;
+  margin-bottom: 140px;
   @include media-tablet {
     width: 95%;
     margin: 0 auto;

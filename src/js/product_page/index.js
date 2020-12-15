@@ -290,7 +290,7 @@ export const useProductPage = function main() {
           },
         },
         {
-          breakpoint: 768,
+          breakpoint: 769,
           settings: 'unslick',
         },
       ],

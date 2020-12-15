@@ -4,7 +4,7 @@ section.use_case__scrollheader {
   top: 63px;
   width: 100%;
   background: #005b9d 0 0 no-repeat padding-box;
-  padding: 55px 0;
+  padding: 40px 0;
   z-index: 5;
   transition: visibility 0s, opacity 0.5s linear;
   visibility: hidden;
@@ -76,7 +76,7 @@ section.use_case__scrollheader .use_case__scrollheader-content-container__picker
 }
 section.use_case__scrollheader .use_case__scrollheader-content-container__picker i {
   margin-left: 8px;
-  font-size: 21px;
+  font-size: 25px;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
