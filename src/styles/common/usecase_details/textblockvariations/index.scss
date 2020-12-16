@@ -1,3 +1,6 @@
+@import '../../../mixins/media';
+@import '../../../mixins/text';
+
 section.usecase_details__textblockvariations {
   .productpage__textblockvariations-textimgheader {
     .productpage__textblockvariations-textimgheader__text {
@@ -5,9 +8,15 @@ section.usecase_details__textblockvariations {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include media-tablet {
+        padding: 0;
+      }
     }
     .productpage__textblockvariations-textimgheader__img {
       padding: 0 0 40px 40px;
+      @include media-tablet {
+        padding: 0;
+      }
     }
   }
 }

@@ -7,6 +7,7 @@ section.productpage__textblockheader {
   margin-bottom: 70px;
   justify-content: center;
   @include media-tablet {
+    margin-bottom: 40.5px;
     justify-content: center;
   }
   .productpage__textblockheader_element {

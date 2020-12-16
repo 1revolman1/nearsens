@@ -67,7 +67,7 @@ section.productpage__inourapp .productpage__inourapp-wrap .productpage__inourapp
 section.productpage__inourapp .productpage__inourapp-wrap .productpage__inourapp-content .productpage__inourapp-content__blocks {
   display: flex;
   flex-flow: row wrap;
-  padding-top: 70px;
+  padding-top: 63px;
   padding-bottom: 60px;
 }
 @media screen and (max-width: 1150px) {

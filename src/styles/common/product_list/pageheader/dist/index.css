@@ -25,6 +25,8 @@ section.productlist__pageheader .productlist__pageheader-wrapper__slider-contain
   align-items: center;
 }
 section.productlist__pageheader .productlist__pageheader-wrapper__slider-container .productlist__pageheader-wrapper__slider-container__slider {
+  width: 95%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;

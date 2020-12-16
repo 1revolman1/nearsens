@@ -6,6 +6,7 @@ section.productpage__textblockheader {
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockheader {
+    margin-bottom: 40.5px;
     justify-content: center;
   }
 }

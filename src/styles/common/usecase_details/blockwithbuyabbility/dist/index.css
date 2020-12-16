@@ -107,11 +107,18 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   margin-left: 10px;
   background: #ffa10a 0% 0% no-repeat padding-box;
   padding: 4px 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   font: normal normal 600 16px/20px Muli;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-text h4 .disqount {
+    border-radius: 5px;
+    padding: 5px;
+    font: normal normal 600 12px/15px Muli;
+  }
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-text h4 {
@@ -159,6 +166,10 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   color: #ffffff;
   opacity: 1;
 }
+section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price .current sup {
+  font-weight: 100;
+  font-size: 65%;
+}
 @media screen and (max-width: 768px) {
   section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price .current {
     margin: 0 4.25px;
@@ -166,8 +177,26 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   }
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price .current.current-low {
+  display: flex;
+  align-items: center;
+  opacity: 0.65;
   position: relative;
-  font: normal normal 300 23px/38px Muli;
+  font: normal normal 300 22px/28px Muli;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price .current.current-low {
+    font: normal normal 300 18px/23px Muli;
+  }
+}
+section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price .current.current-low sup {
+  font-size: 60%;
+  top: -0.3em;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price .current.current-low sup {
+    top: -0.5em;
+    font-size: 55%;
+  }
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price .current.current-low::after {
   content: "";

@@ -2,8 +2,13 @@
 @import '../../../utils/variables.scss';
 section.productpage__pageheader {
   position: relative;
+  max-height: 450px;
+  @include media-tablet {
+    max-height: inherit;
+  }
   > picture img,
   > picture source {
+    object-position: right;
     position: absolute;
     top: 0;
     left: 0;
@@ -12,6 +17,7 @@ section.productpage__pageheader {
     height: 100%;
     // z-index: 1;
     @include media-tablet {
+      object-position: inherit;
       max-height: 325px;
     }
   }
@@ -23,7 +29,8 @@ section.productpage__pageheader {
     position: relative;
     background: transparent linear-gradient(90deg, #f2f2f2 0%, #f0f0f000 100%)
       0% 0% no-repeat padding-box;
-    padding: 90px 0 80px;
+    // padding: 90px 0 80px;
+    padding: 80px 0;
     @include media-tablet {
       padding: 0;
       background: transparent linear-gradient(0deg, #f2f2f2 0%, #f0f0f000 100%)
@@ -61,12 +68,20 @@ section.productpage__pageheader {
       z-index: 1;
       display: flex;
       flex-flow: row wrap;
+      overflow: auto;
+      max-height: 320px;
+      // max-height: 295px;
+      // max-height: 290px;
       @include media-tablet {
-        background-size: 100% 52% !important;
-        background: transparent linear-gradient(0deg, #f2f2f2 0%, #f0f0f000 62%)
-          0% 0% no-repeat padding-box;
+        max-height: inherit;
+        background-size: 100% 325px !important;
+        // background-size: 100% 52% !important;
+        background: transparent
+          linear-gradient(0deg, #f8f8f8fa 20px, #f0f0f000 62%) 0% 0px no-repeat
+          padding-box;
         margin-top: 0;
-        padding-top: 354px;
+        padding-top: 325px;
+        // padding-top: 354px;
       }
       // @media screen and (max-width:328px){
       // 	background-size: 100% 42%!important;
@@ -117,7 +132,8 @@ section.productpage__pageheader {
           }
         }
         .productpage__pageheader-wrap-textblock {
-          margin-bottom: 63px;
+          // margin-bottom: 63px;
+          margin-bottom: 58px;
           @include media-tablet {
             margin-bottom: 25px;
           }
@@ -126,8 +142,10 @@ section.productpage__pageheader {
             font: normal normal normal 20px/25px Muli;
             letter-spacing: 0px;
             color: #28373b;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+            // margin-bottom: 30px;
             @include media-tablet {
+              margin-bottom: 18px;
               font: normal normal normal 14px/18px Muli;
             }
           }

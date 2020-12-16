@@ -21,7 +21,7 @@ section.productlist__additionaltips {
       margin: 10px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       @include media-tablet {
         flex: 0 1 calc(36% + 20px);

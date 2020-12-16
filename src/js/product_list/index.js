@@ -225,7 +225,7 @@ export const useProductList = function main() {
       slidesToShow,
       slidesToScroll: 3,
       adaptiveHeight: true,
-      arrows: false,
+      // arrows: false,
       swipeToSlide: true,
       responsive: [
         {

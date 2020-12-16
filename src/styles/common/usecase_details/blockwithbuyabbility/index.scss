@@ -89,11 +89,16 @@ section.usecase_details__blockwithbuyabbility {
                 margin-left: 10px;
                 background: #ffa10a 0% 0% no-repeat padding-box;
                 padding: 4px 10px;
-                border-radius: 10px;
+                border-radius: 5px;
                 font: normal normal 600 16px/20px Muli;
                 letter-spacing: 0px;
                 color: #ffffff;
                 opacity: 1;
+                @include media-tablet {
+                  border-radius: 5px;
+                  padding: 5px;
+                  font: normal normal 600 12px/15px Muli;
+                }
               }
               @include media-tablet {
                 display: flex;
@@ -132,13 +137,31 @@ section.usecase_details__blockwithbuyabbility {
                 letter-spacing: 0px;
                 color: #ffffff;
                 opacity: 1;
+                sup {
+                  font-weight: 100;
+                  font-size: 65%;
+                }
                 @include media-tablet {
                   margin: 0 4.25px;
                   font: normal normal 300 26px/33px Muli;
                 }
                 &.current-low {
+                  display: flex;
+                  align-items: center;
+                  opacity: 0.65;
                   position: relative;
-                  font: normal normal 300 23px/38px Muli;
+                  font: normal normal 300 22px/28px Muli;
+                  @include media-tablet {
+                    font: normal normal 300 18px/23px Muli;
+                  }
+                  sup {
+                    font-size: 60%;
+                    top: -0.3em;
+                    @include media-tablet {
+                      top: -0.5em;
+                      font-size: 55%;
+                    }
+                  }
                   &::after {
                     content: '';
                     display: block;

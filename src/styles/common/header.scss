@@ -134,6 +134,7 @@ header.header {
     margin: 0 auto;
 
     @include media-forHEADER {
+      border-bottom:none;
       padding: 13px 0;
       width: 100%;
       @include media-tablet {
