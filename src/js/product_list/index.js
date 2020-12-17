@@ -260,10 +260,9 @@ export const useProductList = function main() {
     } else {
       slidesToShow = 15;
     }
-    console.log(slidesToShow);
     return {
       container: '.productlist__pageheader-wrapper__slider-container__slider',
-      items: slidesToShow,
+      items: 4,
       loop: true,
       nav: false,
       autoplayButtonOutput: false,
@@ -273,13 +272,16 @@ export const useProductList = function main() {
       prevButton: '.prev',
       nextButton: '.next',
       responsive: {
-        770: {
+        // 770: {
+        //   items: slidesToShow,
+        // },
+        769: {
           items: slidesToShow,
         },
-        769: {
+        426: {
           items: 5,
         },
-        375: {
+        425: {
           items: 4,
         },
       },

@@ -1,10 +1,10 @@
 @import '../../../mixins/media';
 
 section.productlist__posibilities {
-  margin-bottom: 140px;
+  margin-bottom: 80px;
   @include media-tablet {
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto 60px;
   }
   .productlist__posibilities-head {
     display: flex;
@@ -158,8 +158,5 @@ section.productlist__posibilities {
     @include media-tablet {
       display: flex;
     }
-  }
-  @include media-tablet {
-    margin-bottom: 60px;
   }
 }
