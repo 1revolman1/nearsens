@@ -1,5 +1,5 @@
 @import '../../../mixins/media';
-
+@import '../../../utils/variables';
 section.index__parallax {
   position: relative;
   // top: -70px;
@@ -38,7 +38,7 @@ section.index__parallax {
   //   z-index: 1;
   // }
   @include media-tablet {
-    margin-top: 59px;
+    margin-top: $additionalNavMenuToTopRESP;
   }
   &.no-parallax {
     position: relative;

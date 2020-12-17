@@ -134,7 +134,7 @@ header.header {
     margin: 0 auto;
 
     @include media-forHEADER {
-      border-bottom:none;
+      border-bottom: none;
       padding: 13px 0;
       width: 100%;
       @include media-tablet {
@@ -544,6 +544,9 @@ header.header {
             opacity: 0;
           }
           .show-info {
+            // position: fixed;
+            // top: 30px;
+            // left: 30px;
             min-width: 260px;
             background: #2ec9ad 0% 0% no-repeat padding-box;
             box-shadow: 0px 0px 10px #00000033;
@@ -1343,6 +1346,10 @@ nav.nav {
               opacity: 0;
             }
             .show-info {
+              // position: fixed;
+              // top: 45px;
+              // right: 30px;
+              // min-width: 280px;
               min-width: 260px;
               background: #2ec9ad 0% 0% no-repeat padding-box;
               box-shadow: 0px 0px 10px #00000033;

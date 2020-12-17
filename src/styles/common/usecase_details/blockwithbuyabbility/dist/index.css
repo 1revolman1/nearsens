@@ -21,8 +21,7 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-right: 90px;
-  padding-bottom: 67px;
+  padding-bottom: 71px;
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__head h3 {
   font: normal normal normal 32px/40px Muli;
@@ -49,8 +48,8 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__head {
-    padding-right: 0;
-    padding-bottom: 20px;
+    justify-content: center;
+    padding-bottom: 24.5px;
   }
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element {
@@ -58,6 +57,14 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   flex-direction: row;
   padding: 31px 0;
   border-bottom: 1px solid #33709c;
+}
+section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element:first-of-type {
+  padding-top: 0;
+}
+@media screen and (max-width: 768px) {
+  section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element {
+    padding: 20.5px 0;
+  }
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__content .usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-logo {
   margin-right: 30px;
@@ -258,7 +265,7 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator {
-    margin: 23px 0 0;
+    margin: 20.5px 0 0;
   }
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator img {
@@ -302,7 +309,7 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator .usecase_details__blockwithbuyabbility-wrap__manipulator__block p {
-    margin: 0 0 10px;
+    margin: 0 0 20px;
     font: normal normal 300 18px/23px Muli;
   }
 }

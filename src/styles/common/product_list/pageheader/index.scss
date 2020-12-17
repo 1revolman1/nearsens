@@ -21,15 +21,73 @@ section.productlist__pageheader {
     left: 0;
   }
   .productlist__pageheader-wrapper__slider-container {
-    .slick-track {
-      display: flex;
-      align-items: center;
-      // justify-content: center;
-      // align-items: flex-end;
+    position: relative;
+    width: 95%;
+    padding: 0 25px;
+    overflow: hidden;
+    margin: 0 auto;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include media-tablet {
+      width: 80%;
+      border-radius: 50%;
     }
+    .btn {
+      outline: none;
+      // position: absolute;
+      // top: 50%;
+      z-index: 1;
+      // transform: translate(0%, -50%);
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: transparent;
+      border: none;
+      outline: none;
+      background: transparent;
+      &::before {
+        font-family: 'slick';
+        font-size: 20px;
+        line-height: 1;
+        opacity: 0.75;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+      }
+      &.prev {
+        left: 0;
+        &::before {
+          content: '←';
+        }
+      }
+      &.next {
+        right: 0;
+        &::before {
+          content: '→';
+        }
+      }
+    }
+
+    // .slick-track {
+    //   display: flex;
+    //   align-items: center;
+    //   // justify-content: center;
+    //   // align-items: flex-end;
+    // }
     .productlist__pageheader-wrapper__slider-container__slider {
-      width: 95%;
-      margin: 0 auto;
+      user-select: none;
+      // width: 95%;
+      // overflow: hidden;
+      // margin: 0 auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -38,6 +96,7 @@ section.productlist__pageheader {
       }
       .productlist__pageheader-wrapper__slider-container__slider-element {
         display: flex;
+        user-select: none;
         align-items: center;
         justify-content: center;
         margin: 0 10px;
