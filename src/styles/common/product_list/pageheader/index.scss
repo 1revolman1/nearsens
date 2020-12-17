@@ -130,14 +130,14 @@ section.productlist__pageheader {
       grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
       grid-template-rows: auto;
       grid-column-gap: 0px;
-      grid-row-gap: 0px;
+      grid-row-gap: 40px;
       margin-bottom: 81px;
       @include media-tablet {
         grid-template-columns: 1fr;
       }
       .productlist__pageheader-wrapper__text-container__text {
         // flex: 1 0 calc(45% + 30px);
-        margin: 10px 0;
+        // margin: 10px 0;
         h3 {
           text-align: left;
           font: normal normal normal 32px/40px Muli;
@@ -161,8 +161,11 @@ section.productlist__pageheader {
         }
       }
       .productlist__pageheader-wrapper__text-container__picker {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         // flex: 1 0 calc(45% + 30px);
-        margin: 10px 0;
+        // margin: 10px 0;
         h3 {
           text-align: right;
           font: italic normal normal 22px/28px Muli;

@@ -31,7 +31,8 @@ section.productlist__scrollheader {
   .productlist__scrollheader-wrapper {
     z-index: 1;
     position: relative;
-    padding: 40px 0;
+    // padding: 40px 0;
+    padding: 39px 0;
     max-width: $mediaMAXWIDTH;
     margin: 0 auto;
     width: 94%;
@@ -81,6 +82,7 @@ section.productlist__scrollheader {
         }
         .productlist__scrollheader-wrapper__text-container__picker-filters {
           display: flex;
+          gap: 20px;
           button {
             cursor: pointer;
             display: flex;
@@ -96,11 +98,17 @@ section.productlist__scrollheader {
             color: #ffffff;
             opacity: 1;
             text-transform: uppercase;
-            margin: 10px;
+            // margin: 10px;
             outline: none;
+            &:hover {
+              text-shadow: 0 0 1.65px #ffffff, 0 0 1.65px #ffffff;
+            }
             &.active {
               color: #005b9d;
               background: #ffffff 0% 0% no-repeat padding-box;
+              &:hover {
+                text-shadow: 0 0 0.65px #005b9d, 0 0 0.65px #005b9d;
+              }
             }
             @include media-tablet {
               display: none;

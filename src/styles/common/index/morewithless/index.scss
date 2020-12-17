@@ -172,13 +172,13 @@ section.index__morewithless {
         position: relative;
         transition: all 0.3s ease;
         margin: 15px 0;
-        @include media-tablet {
+        @include media-forHEADER {
           &:first-of-type {
             margin-top: 0;
           }
           background: #005b9d 0% 0% no-repeat padding-box;
         }
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 1024) {
           &:hover {
             background: #005b9d 0% 0% no-repeat padding-box;
             .index__morewithless__blockwithhover__element__img {
@@ -304,15 +304,18 @@ section.index__morewithless {
             letter-spacing: 0px;
             color: #324044;
             opacity: 1;
-            @include media-tablet {
-              font: normal normal normal 16px/20px Muli;
+            @include media-forHEADER {
+              color: #ffffff;
+              // font: normal normal normal 16px/20px Muli;
               letter-spacing: 0px;
               // color: #324044;
               opacity: 1;
               // transform: translate(0, 55%);
               top: 0;
               transform: translate(0, 0%);
-              color: #ffffff;
+              @include media-tablet {
+                font: normal normal normal 16px/20px Muli;
+              }
             }
           }
           p {
@@ -320,11 +323,14 @@ section.index__morewithless {
             letter-spacing: 0px;
             color: #ffffff;
             opacity: 0;
-            @include media-tablet {
-              font: normal normal 300 13px/16px Muli;
-              letter-spacing: 0px;
+            @include media-forHEADER {
               color: #ffffff;
+
+              letter-spacing: 0px;
               opacity: 1;
+              @include media-tablet {
+                font: normal normal 300 13px/16px Muli;
+              }
             }
           }
         }
