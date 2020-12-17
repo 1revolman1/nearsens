@@ -6,7 +6,7 @@ section.productpage__textblockimgheader {
 @media screen and (max-width: 768px) {
   section.productpage__textblockimgheader {
     width: 90%;
-    padding-bottom: 50px;
+    padding-bottom: 40.5px;
     margin: 0 auto;
     flex-direction: column-reverse;
   }

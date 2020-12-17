@@ -3,6 +3,9 @@
 
 section.usecase_details__textblockvariations {
   .productpage__textblockvariations-textimgheader {
+    @include media-tablet {
+      margin-bottom: 41px;
+    }
     .productpage__textblockvariations-textimgheader__text {
       padding: 0 10px;
       display: flex;

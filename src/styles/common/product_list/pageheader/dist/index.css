@@ -31,6 +31,11 @@ section.productlist__pageheader .productlist__pageheader-wrapper__slider-contain
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  section.productlist__pageheader .productlist__pageheader-wrapper__slider-container .productlist__pageheader-wrapper__slider-container__slider {
+    width: 80%;
+  }
+}
 section.productlist__pageheader .productlist__pageheader-wrapper__slider-container .productlist__pageheader-wrapper__slider-container__slider .productlist__pageheader-wrapper__slider-container__slider-element {
   display: flex;
   align-items: center;

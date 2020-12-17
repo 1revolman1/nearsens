@@ -8,7 +8,7 @@ section.use_case__pageheader {
 }
 @media screen and (max-width: 768px) {
   section.use_case__pageheader {
-    padding: 35px 30px;
+    padding: 30px 30px 38.5px;
     margin: 0 auto;
   }
 }
@@ -16,10 +16,17 @@ section.use_case__pageheader .use-case__pageheader-content {
   max-width: 1300px;
   margin: 0 auto;
   width: 94%;
+  padding-right: 23%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  section.use_case__pageheader .use-case__pageheader-content {
+    padding-right: 20%;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   section.use_case__pageheader .use-case__pageheader-content {
     width: 100%;
+    padding-right: 5%;
   }
 }
 section.use_case__pageheader .use-case__pageheader-content h2 {
@@ -30,6 +37,11 @@ section.use_case__pageheader .use-case__pageheader-content h2 {
   opacity: 1;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 768px) {
+  section.use_case__pageheader .use-case__pageheader-content h2 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.use_case__pageheader .use-case__pageheader-content p {
   transition: max-height ease 0.5s;
   overflow: hidden;
@@ -39,4 +51,9 @@ section.use_case__pageheader .use-case__pageheader-content p {
   color: #ffffff;
   opacity: 1;
   margin: 10px 0;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__pageheader .use-case__pageheader-content p {
+    font: normal normal normal 14px/18px Muli;
+  }
 }

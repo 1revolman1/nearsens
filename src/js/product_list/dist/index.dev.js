@@ -172,14 +172,20 @@ var useProductList = function main() {
     return {
       infinite: true,
       slidesToShow: slidesToShow,
-      slidesToScroll: 3,
+      slidesToScroll: 7,
       adaptiveHeight: true,
       // arrows: false,
       swipeToSlide: true,
       responsive: [{
         breakpoint: 769,
         settings: {
-          slidesToShow: 7,
+          slidesToShow: 5,
+          slidesToScroll: 2
+        }
+      }, {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 4,
           slidesToScroll: 2
         }
       }]

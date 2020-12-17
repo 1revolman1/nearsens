@@ -14,8 +14,8 @@ section.productpage__textblockvariations .productpage__textblockvariations-texti
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockvariations .productpage__textblockvariations-textimgheader {
-    flex-flow: column-reverse wrap;
-    margin-bottom: 30px;
+    flex-flow: column wrap;
+    margin-bottom: 20px;
   }
 }
 section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text {
@@ -28,7 +28,6 @@ section.productpage__textblockvariations .productpage__textblockvariations-texti
 @media screen and (max-width: 768px) {
   section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text {
     padding: 0;
-    margin-top: 30px;
   }
 }
 section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text a {
@@ -116,7 +115,7 @@ section.productpage__textblockvariations .productpage__textblockvariations-texti
   margin-bottom: 36px;
 }
 section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text p:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 24.5px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text p {

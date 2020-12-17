@@ -74,7 +74,7 @@ nav.nav.holiday-header ~ script + main {
 }
 main {
   @include media-forHEADER {
-    margin-top: 65px;
+    margin-top: 64px;
     @include media-tablet {
       margin-top: 57px;
     }

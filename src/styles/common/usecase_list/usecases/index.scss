@@ -5,15 +5,16 @@ section.use_case__usecases {
   @include media-tablet {
     width: 90%;
     // padding: 0 10px;
-    margin: 10px auto 40px;
+    margin: 39.9px auto 40px;
   }
   h3 {
     font: normal normal normal 32px/40px Muli;
     letter-spacing: 0px;
     color: #28373b;
     opacity: 1;
-    margin: 15px 0;
+    margin: 15px 0 20.5px;
     @include media-tablet {
+      margin: 15px 0 21.5px;
       font: normal normal normal 26px/33px Muli;
     }
   }

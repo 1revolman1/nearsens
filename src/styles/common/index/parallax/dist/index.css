@@ -14,7 +14,7 @@ section.index__parallax * {
 }
 @media screen and (max-width: 768px) {
   section.index__parallax {
-    margin-top: 60px;
+    margin-top: 59px;
   }
 }
 section.index__parallax.no-parallax {

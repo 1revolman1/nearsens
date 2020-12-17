@@ -33,6 +33,9 @@ section.productlist__pageheader {
       display: flex;
       justify-content: center;
       align-items: center;
+      @include media-tablet {
+        width: 80%;
+      }
       .productlist__pageheader-wrapper__slider-container__slider-element {
         display: flex;
         align-items: center;

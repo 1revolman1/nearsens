@@ -9,16 +9,23 @@ section.use_case__pageheader {
   -webkit-backface-visibility: hidden;
   // margin-bottom: 81px;
   @include media-tablet {
-    padding: 35px 30px;
+    padding: 30px 30px 38.5px;
+    // padding: 35px 30px;
     margin: 0 auto;
   }
   .use-case__pageheader-content {
     max-width: 1300px;
     margin: 0 auto;
     width: 94%;
-    @include media-tablet {
-      width: 100%;
+    padding-right: 23%;
+    @include media-forHEADER {
+      padding-right: 20%;
+      @include media-tablet {
+        width: 100%;
+        padding-right: 5%;
+      }
     }
+
     h2 {
       text-align: left;
       font: normal normal normal 32px/40px Muli;
@@ -26,6 +33,9 @@ section.use_case__pageheader {
       color: #ffffff;
       opacity: 1;
       margin-bottom: 10px;
+      @include media-tablet {
+        font: normal normal normal 22px/28px Muli;
+      }
     }
     p {
       transition: max-height ease 0.5s;
@@ -37,6 +47,8 @@ section.use_case__pageheader {
       opacity: 1;
       margin: 10px 0;
       @include media-tablet {
+        font: normal normal normal 14px/18px Muli;
+
         //   display: none;
       }
     }

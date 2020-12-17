@@ -8,7 +8,8 @@ section.productpage__textblockimgheader {
   padding-bottom: 80px;
   @include media-tablet {
     width: 90%;
-    padding-bottom: 50px;
+    padding-bottom: 40.5px;
+    // padding-bottom: 50px;
     margin: 0 auto;
     flex-direction: column-reverse;
   }

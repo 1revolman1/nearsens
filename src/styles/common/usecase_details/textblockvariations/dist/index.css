@@ -1,3 +1,8 @@
+@media screen and (max-width: 768px) {
+  section.usecase_details__textblockvariations .productpage__textblockvariations-textimgheader {
+    margin-bottom: 41px;
+  }
+}
 section.usecase_details__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text {
   padding: 0 10px;
   display: flex;
