@@ -83,6 +83,10 @@ section.productlist__scrollheader {
         .productlist__scrollheader-wrapper__text-container__picker-filters {
           display: flex;
           gap: 20px;
+          @include media-tablet {
+            gap: 0px;
+            display: flex;
+          }
           button {
             cursor: pointer;
             display: flex;

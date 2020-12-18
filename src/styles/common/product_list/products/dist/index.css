@@ -1,6 +1,12 @@
 section.productlist__products {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  section.productlist__products {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 section.productlist__products h3 {
   font: normal normal normal 32px/40px Muli;
   letter-spacing: 0px;
@@ -10,7 +16,7 @@ section.productlist__products h3 {
 }
 @media screen and (max-width: 768px) {
   section.productlist__products h3 {
-    margin: 0 10px 21.5px;
+    margin: 0 0 21.5px;
     font: normal normal normal 26px/33px Muli;
   }
 }
@@ -32,7 +38,7 @@ section.productlist__products .productlist__products-container {
     display: grid;
     grid-template-columns: repeat(1, auto);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 20px;
     margin-bottom: 42.5px;
   }
 }
@@ -46,18 +52,7 @@ section.productlist__products .productlist__products-container .productlist__pro
   padding: 30px;
 }
 @media screen and (max-width: 768px) {
-  section.productlist__products .productlist__products-container .productlist__products-container-element:first-of-type {
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.productlist__products .productlist__products-container .productlist__products-container-element:last-of-type {
-    margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element {
-    margin: 10px;
     padding: 10px;
     min-height: initial;
     flex: 0 1 100%;
@@ -73,6 +68,7 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element.big-block {
+    padding: 20px;
     grid-column: initial;
   }
 }
@@ -81,9 +77,17 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-imgcontainer {
+    min-width: 295px;
     width: 100%;
-    margin-bottom: 20.5px;
+    height: 200px;
     flex: none;
+    margin-bottom: 20.5px;
+    max-height: 200px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 350px) {
+  section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-imgcontainer {
+    min-width: 230px;
   }
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-imgcontainer img {
@@ -93,6 +97,7 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-imgcontainer img {
+    max-height: 200px;
     max-width: none;
     margin: 0;
   }
@@ -118,6 +123,7 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-controller .productlist__products-container-element-text h4 {
+    margin-bottom: 9.5px;
     font: normal normal normal 16px/20px Muli;
     letter-spacing: 0px;
     color: #28373b;
@@ -131,6 +137,7 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-controller .productlist__products-container-element-text p {
+    margin-bottom: 10px;
     font: italic normal normal 14px/18px Muli;
     letter-spacing: 0px;
     color: #6d7476;
@@ -179,6 +186,12 @@ section.productlist__products .productlist__products-container .productlist__pro
   padding: 12px 20px;
   font-size: 20px;
 }
+@media screen and (max-width: 768px) {
+  section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-controller .productlist__products-container-element-controllers .productlist__products-container-element-controllers-manipulator .productlist__products-container-element-controllers-shop button {
+    padding: 8px 9px;
+    font-size: 22.21px;
+  }
+}
 section.productlist__products .productlist__products-container .productlist__products-container-element.with-disqount {
   position: relative;
 }
@@ -213,13 +226,32 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element img {
-    margin-bottom: 15px;
+    margin-bottom: 0;
+    height: 100%;
+    max-height: 134px;
     max-width: 340px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 350px) {
+  section.productlist__products .productlist__products-container .productlist__products-container-element img {
+    height: 100%;
   }
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-imgcontainer {
   position: relative;
   max-width: none;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-imgcontainer {
+    width: 137px;
+    height: 134px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 350px) {
+  section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-imgcontainer {
+    height: 100%;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-imgcontainer img {
@@ -252,7 +284,7 @@ section.productlist__products .productlist__products-container .productlist__pro
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller .productlist__products-container-element-text h4 {
     margin-bottom: 5px;
-    font: normal normal normal 16px/20px Muli;
+    font: normal normal normal 14px/18px Muli;
   }
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller .productlist__products-container-element-text p {
@@ -264,7 +296,7 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller .productlist__products-container-element-text p {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font: italic normal normal 12px/15px Muli;
   }
 }
@@ -434,8 +466,8 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller .productlist__products-container-element-controllers .productlist__products-container-element-controllers-manipulator .productlist__products-container-element-controllers-shop button {
-    padding: 7px;
-    font-size: 18px;
+    padding: 8px 9px;
+    font-size: 22.21px;
   }
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller .productlist__products-container-element-controllers .productlist__products-container-element-controllers-manipulator .productlist__products-container-element-controllers-successbuying {

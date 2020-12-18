@@ -14,12 +14,12 @@ section.productlist__scrollheader.out-viewport {
 }
 @media screen and (max-width: 1023px) {
   section.productlist__scrollheader {
-    top: 65px;
+    top: 64px;
   }
 }
 @media screen and (max-width: 1023px) and (max-width: 768px) {
   section.productlist__scrollheader {
-    top: 58px;
+    top: 57px;
   }
 }
 section.productlist__scrollheader img.bg-block {
@@ -33,7 +33,7 @@ section.productlist__scrollheader img.bg-block {
 section.productlist__scrollheader .productlist__scrollheader-wrapper {
   z-index: 1;
   position: relative;
-  padding: 40px 0;
+  padding: 39px 0;
   max-width: 1300px;
   margin: 0 auto;
   width: 94%;
@@ -90,6 +90,13 @@ section.productlist__scrollheader .productlist__scrollheader-wrapper .productlis
 }
 section.productlist__scrollheader .productlist__scrollheader-wrapper .productlist__scrollheader-wrapper__text-container .productlist__scrollheader-wrapper__text-container__picker .productlist__scrollheader-wrapper__text-container__picker-filters {
   display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__scrollheader .productlist__scrollheader-wrapper .productlist__scrollheader-wrapper__text-container .productlist__scrollheader-wrapper__text-container__picker .productlist__scrollheader-wrapper__text-container__picker-filters {
+    gap: 0px;
+    display: flex;
+  }
 }
 section.productlist__scrollheader .productlist__scrollheader-wrapper .productlist__scrollheader-wrapper__text-container .productlist__scrollheader-wrapper__text-container__picker .productlist__scrollheader-wrapper__text-container__picker-filters button {
   cursor: pointer;
@@ -106,12 +113,17 @@ section.productlist__scrollheader .productlist__scrollheader-wrapper .productlis
   color: #ffffff;
   opacity: 1;
   text-transform: uppercase;
-  margin: 10px;
   outline: none;
+}
+section.productlist__scrollheader .productlist__scrollheader-wrapper .productlist__scrollheader-wrapper__text-container .productlist__scrollheader-wrapper__text-container__picker .productlist__scrollheader-wrapper__text-container__picker-filters button:hover {
+  text-shadow: 0 0 1.65px #ffffff, 0 0 1.65px #ffffff;
 }
 section.productlist__scrollheader .productlist__scrollheader-wrapper .productlist__scrollheader-wrapper__text-container .productlist__scrollheader-wrapper__text-container__picker .productlist__scrollheader-wrapper__text-container__picker-filters button.active {
   color: #005b9d;
   background: #ffffff 0% 0% no-repeat padding-box;
+}
+section.productlist__scrollheader .productlist__scrollheader-wrapper .productlist__scrollheader-wrapper__text-container .productlist__scrollheader-wrapper__text-container__picker .productlist__scrollheader-wrapper__text-container__picker-filters button.active:hover {
+  text-shadow: 0 0 0.65px #005b9d, 0 0 0.65px #005b9d;
 }
 @media screen and (max-width: 768px) {
   section.productlist__scrollheader .productlist__scrollheader-wrapper .productlist__scrollheader-wrapper__text-container .productlist__scrollheader-wrapper__text-container__picker .productlist__scrollheader-wrapper__text-container__picker-filters button {

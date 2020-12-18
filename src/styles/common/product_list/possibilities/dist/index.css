@@ -1,10 +1,10 @@
 section.productlist__posibilities {
-  margin-bottom: 140px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
   section.productlist__posibilities {
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto 60px;
   }
 }
 section.productlist__posibilities .productlist__posibilities-head {
@@ -75,6 +75,7 @@ section.productlist__posibilities .productlist__posibilities-prodcontainer .prod
 }
 section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:hover {
   transform: translate(0, -5px);
+  box-shadow: 0px 0px 39px #0000001a;
 }
 @media screen and (max-width: 768px) {
   section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:hover {
@@ -153,7 +154,7 @@ section.productlist__posibilities .productlist__posibilities-button {
 section.productlist__posibilities .productlist__posibilities-button button.discover {
   display: none;
   background: white;
-  padding: 9px 20px;
+  padding: 7.5px 20px;
   border: 1px solid #2ec9ad;
   border-radius: 40px;
   opacity: 1;
@@ -177,10 +178,5 @@ section.productlist__posibilities .productlist__posibilities-button button.disco
 @media screen and (max-width: 768px) {
   section.productlist__posibilities .productlist__posibilities-button {
     display: flex;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.productlist__posibilities {
-    margin-bottom: 60px;
   }
 }
