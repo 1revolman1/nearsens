@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Muli';
     src: local('Muli Light'), local('Muli-Light'), url('../webfonts/Mulilight.woff2') format('woff2'), url('../webfonts/Mulilight.woff') format('woff'), url('../webfonts/Mulilight.ttf') format('truetype');
     font-weight: 300;
@@ -81,4 +81,4 @@
     src: local('Muli Black Italic'), local('Muli-BlackItalic'), url('../webfonts/Muliblackitalic.woff2') format('woff2'), url('../webfonts/Muliblackitalic.woff') format('woff'), url('../webfonts/Muliblackitalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
-}
+} */
