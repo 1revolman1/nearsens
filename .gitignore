@@ -6,7 +6,8 @@ Thumbs.db
 .idea
 *.sublime*
 .vscode
-
+build.rar
+src.rar
 # Вспомогательные файлы
 *.log*
 node_modules/

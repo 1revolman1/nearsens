@@ -6,13 +6,14 @@ section.productpage__textblockheader {
   flex-flow: row wrap;
   margin-bottom: 70px;
   justify-content: center;
+  gap: 15px;
   @include media-tablet {
     margin-bottom: 40.5px;
     justify-content: center;
   }
   .productpage__textblockheader_element {
     display: flex;
-    margin: 15px;
+    // margin: 15px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
