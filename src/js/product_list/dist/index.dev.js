@@ -5,18 +5,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.useProductList = void 0;
 
+var _tinySlider = require("../../local_modules/tiny-slider/src/tiny-slider");
+
 function cartAnim() {
   var _this = this;
 
-  var isMobile = window.innerWidth <= 768;
+  var isMobile = window.innerWidth <= 1023;
   var cart = isMobile ? $('.second-block-in-menu .cart-block') : $('.shop-cart');
   var imgtodrag = $(this).parents('.productlist__products-container-element').find('img').eq(0);
   var infoSuccessHeader = cart.find('.droupup-block-info');
   var container = $(this).parents('.productlist__products-container-element-controllers-manipulator');
   var textContainer = container.find('.productlist__products-container-element-controllers-counter span');
   if (Number(textContainer.text()) <= 0) return null;
+  var totalPrice = container.find('.productlist__products-container-element-controllers-counter span').text();
   container.addClass('show-success');
   infoSuccessHeader.removeClass('unshow');
+  infoSuccessHeader.find('h3').text(totalPrice === 1 ? "".concat(totalPrice, " product added to your cart") : "".concat(totalPrice, " products added to your cart"));
 
   if (imgtodrag) {
     var imgclone = imgtodrag.clone().offset({
@@ -153,7 +157,44 @@ var useProductList = function main() {
     finalAdd.text("".concat(value, " new added to cart"));
     counter.text(value);
   });
-  $('.productlist__products-container-element-controllers-shop button').on('click', cartAnim);
+  $('.productlist__products-container-element-controllers-shop button').on('click', cartAnim); // function settingsSlick() {
+  //   const length = document.querySelectorAll(
+  //     '.productlist__pageheader-wrapper__slider-container__slider-element'
+  //   ).length;
+  //   let slidesToShow;
+  //   // length < 15 ? length : 15
+  //   if (length < 15) {
+  //     slidesToShow = length - 1;
+  //     if (length === 1) {
+  //       slidesToShow = length;
+  //     }
+  //   } else {
+  //     slidesToShow = 15;
+  //   }
+  //   return {
+  //     infinite: true,
+  //     slidesToShow,
+  //     // slidesToScroll: 1,
+  //     swipeToSlide: true,
+  //     touchThreshold: 100,
+  //     responsive: [
+  //       {
+  //         breakpoint: 769,
+  //         settings: {
+  //           slidesToShow: 5,
+  //           // slidesToScroll: 1,
+  //         },
+  //       },
+  //       {
+  //         breakpoint: 375,
+  //         settings: {
+  //           slidesToShow: 4,
+  //           // slidesToScroll: 1,
+  //         },
+  //       },
+  //     ],
+  //   };
+  // }
 
   function settingsSlick() {
     var length = document.querySelectorAll('.productlist__pageheader-wrapper__slider-container__slider-element').length;
@@ -170,30 +211,38 @@ var useProductList = function main() {
     }
 
     return {
-      infinite: true,
-      slidesToShow: slidesToShow,
-      slidesToScroll: 7,
-      adaptiveHeight: true,
-      // arrows: false,
-      swipeToSlide: true,
-      responsive: [{
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 2
+      container: '.productlist__pageheader-wrapper__slider-container__slider',
+      items: 4,
+      loop: true,
+      nav: false,
+      autoplayButtonOutput: false,
+      mouseDrag: true,
+      lazyload: true,
+      swipeAngle: false,
+      prevButton: '.prev',
+      nextButton: '.next',
+      responsive: {
+        // 770: {
+        //   items: slidesToShow,
+        // },
+        769: {
+          items: slidesToShow
+        },
+        426: {
+          items: 5
+        },
+        425: {
+          items: 4
         }
-      }, {
-        breakpoint: 375,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 2
-        }
-      }]
+      }
     };
   }
 
-  console.log(settingsSlick());
-  $('.productlist__pageheader-wrapper__slider-container__slider').slick(settingsSlick());
+  (0, _tinySlider.tns)(settingsSlick()); // console.log(settingsSlick());
+  // $('.productlist__pageheader-wrapper__slider-container__slider').slick(
+  //   settingsSlick()
+  // );
+
   var scrollToThisBlock = document.querySelector('.productlist__pageheader');
   var scrollable = document.querySelector('section.productlist__scrollheader');
   if (scrollToThisBlock && scrollable) document.querySelector('.productlist__scrollheader-wrapper__text-container__picker').addEventListener('click', function (event) {

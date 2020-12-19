@@ -1,20 +1,30 @@
 function cartHeaderAnim() {
-  const isMobile = window.innerWidth <= 768;
+  const isMobile = window.innerWidth <= 1023;
   const cart = isMobile
     ? $('.second-block-in-menu .cart-block')
     : $('.shop-cart');
   const infoSuccessHeader = cart.find('.droupup-block-info');
-
+  const container = $(this).parents(
+    '.productpage__pageheader-wrap-manipulator-container'
+  );
   //SHOW SUCCESS BUYING ICON
-  $(this)
-    .parents('.productpage__pageheader-wrap-manipulator-container')
-    .addClass('show-success');
-  infoSuccessHeader.removeClass('unshow');
 
+  container.addClass('show-success');
+  infoSuccessHeader.removeClass('unshow');
+  const totalPrice = container
+    .find('.productlist__products-container-element-controllers-counter span')
+    .text();
   const imgtodrag = $(this)
     .parents('.productpage__pageheader-wrap-container')
     .find('.productpage__pageheader-wrap-headblock img')
     .eq(0);
+  infoSuccessHeader
+    .find('h3')
+    .text(
+      totalPrice === 1
+        ? `${totalPrice} product added to your cart`
+        : `${totalPrice} products added to your cart`
+    );
   if (imgtodrag) {
     const imgclone = imgtodrag
       .clone()
@@ -84,10 +94,18 @@ function cartAnimInStickyHeader() {
   if (Number(textContainer.text()) <= 0) return null;
   //SHOW SUCCESS BUYING ICON
   $(this)
-    .parents('.productpage__pageheader_sticky-wrap-manipulator-container')
+    .parents('.productpage__pageheader_sticky-wrap-manipulator-data')
     .addClass('show-success');
+  const totalPrice = textContainer.text();
+  console.log(totalPrice);
   infoSuccessHeader.removeClass('unshow');
-
+  infoSuccessHeader
+    .find('h3')
+    .text(
+      totalPrice === 1
+        ? `${totalPrice} product added to your cart`
+        : `${totalPrice} products added to your cart`
+    );
   const imgtodrag = $('.productpage__pageheader_sticky-wrap-headblock > img');
   if (imgtodrag) {
     const imgclone = imgtodrag

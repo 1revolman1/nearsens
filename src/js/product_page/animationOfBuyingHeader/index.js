@@ -1,5 +1,5 @@
 function cartHeaderAnim() {
-  const isMobile = window.innerWidth <= 768;
+  const isMobile = window.innerWidth <= 1023;
   const cart = isMobile
     ? $('.second-block-in-menu .cart-block')
     : $('.shop-cart');
@@ -26,7 +26,13 @@ function cartHeaderAnim() {
     .parents('.productpage__pageheader-wrap-manipulator-container')
     .addClass('show-success');
   infoSuccessHeader.removeClass('unshow');
-
+  infoSuccessHeader
+    .find('h3')
+    .text(
+      value === 1
+        ? `${value} product added to your cart`
+        : `${value} products added to your cart`
+    );
   const imgtodrag = $(this)
     .parents('.productpage__pageheader-wrap-container')
     .find('.productpage__pageheader-wrap-headblock img')

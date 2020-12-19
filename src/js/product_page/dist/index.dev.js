@@ -12,7 +12,7 @@ var _animationOfBuyingStickyHeader = require("./animationOfBuyingStickyHeader");
 function cartAnim() {
   var _this = this;
 
-  var isMobile = window.innerWidth <= 768;
+  var isMobile = window.innerWidth <= 1023;
   var cart = isMobile ? $('.second-block-in-menu .cart-block') : $('.shop-cart');
   var imgtodrag = $(this).parents('.productlist__products-container-element').find('img').eq(0);
   var infoSuccessHeader = cart.find('.droupup-block-info');
@@ -20,8 +20,10 @@ function cartAnim() {
   var textContainer = container.find('.productlist__products-container-element-controllers-counter span');
   if (Number(textContainer.text()) <= 0) return null; //SHOW SUCCESS BUYING ICON
 
-  $(this).parents('.productlist__products-container-element-controllers-manipulator').addClass('show-success');
+  var totalPrice = container.find('.productlist__products-container-element-controllers-counter span').text();
+  container.addClass('show-success');
   infoSuccessHeader.removeClass('unshow');
+  infoSuccessHeader.find('h3').text(totalPrice === 1 ? "".concat(totalPrice, " product added to your cart") : "".concat(totalPrice, " products added to your cart"));
 
   if (imgtodrag) {
     var imgclone = imgtodrag.clone().offset({

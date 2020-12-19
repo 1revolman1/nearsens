@@ -1,7 +1,7 @@
 import { tns } from '../../local_modules/tiny-slider/src/tiny-slider';
 
 function cartAnim() {
-  const isMobile = window.innerWidth <= 768;
+  const isMobile = window.innerWidth <= 1023;
   const cart = isMobile
     ? $('.second-block-in-menu .cart-block')
     : $('.shop-cart');
@@ -17,9 +17,18 @@ function cartAnim() {
     '.productlist__products-container-element-controllers-counter span'
   );
   if (Number(textContainer.text()) <= 0) return null;
+  const totalPrice = container
+    .find('.productlist__products-container-element-controllers-counter span')
+    .text();
   container.addClass('show-success');
   infoSuccessHeader.removeClass('unshow');
-
+  infoSuccessHeader
+    .find('h3')
+    .text(
+      totalPrice === 1
+        ? `${totalPrice} product added to your cart`
+        : `${totalPrice} products added to your cart`
+    );
   if (imgtodrag) {
     const imgclone = imgtodrag
       .clone()

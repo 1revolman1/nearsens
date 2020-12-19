@@ -2,7 +2,7 @@ import { useBuyingAnimationHeader } from './animationOfBuyingHeader';
 import { useBuyingAnimationStickyHeader } from './animationOfBuyingStickyHeader';
 
 function cartAnim() {
-  const isMobile = window.innerWidth <= 768;
+  const isMobile = window.innerWidth <= 1023;
   const cart = isMobile
     ? $('.second-block-in-menu .cart-block')
     : $('.shop-cart');
@@ -19,11 +19,18 @@ function cartAnim() {
   );
   if (Number(textContainer.text()) <= 0) return null;
   //SHOW SUCCESS BUYING ICON
-  $(this)
-    .parents('.productlist__products-container-element-controllers-manipulator')
-    .addClass('show-success');
+  const totalPrice = container
+    .find('.productlist__products-container-element-controllers-counter span')
+    .text();
+  container.addClass('show-success');
   infoSuccessHeader.removeClass('unshow');
-
+  infoSuccessHeader
+    .find('h3')
+    .text(
+      totalPrice === 1
+        ? `${totalPrice} product added to your cart`
+        : `${totalPrice} products added to your cart`
+    );
   if (imgtodrag) {
     const imgclone = imgtodrag
       .clone()

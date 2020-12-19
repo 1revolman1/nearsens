@@ -8,13 +8,16 @@ exports.useBuyingAnimationStickyHeader = void 0;
 function cartHeaderAnim() {
   var _this = this;
 
-  var isMobile = window.innerWidth <= 768;
+  var isMobile = window.innerWidth <= 1023;
   var cart = isMobile ? $('.second-block-in-menu .cart-block') : $('.shop-cart');
-  var infoSuccessHeader = cart.find('.droupup-block-info'); //SHOW SUCCESS BUYING ICON
+  var infoSuccessHeader = cart.find('.droupup-block-info');
+  var container = $(this).parents('.productpage__pageheader-wrap-manipulator-container'); //SHOW SUCCESS BUYING ICON
 
-  $(this).parents('.productpage__pageheader-wrap-manipulator-container').addClass('show-success');
+  container.addClass('show-success');
   infoSuccessHeader.removeClass('unshow');
+  var totalPrice = container.find('.productlist__products-container-element-controllers-counter span').text();
   var imgtodrag = $(this).parents('.productpage__pageheader-wrap-container').find('.productpage__pageheader-wrap-headblock img').eq(0);
+  infoSuccessHeader.find('h3').text(totalPrice === 1 ? "".concat(totalPrice, " product added to your cart") : "".concat(totalPrice, " products added to your cart"));
 
   if (imgtodrag) {
     var imgclone = imgtodrag.clone().offset({
@@ -63,8 +66,11 @@ function cartAnimInStickyHeader() {
   var textContainer = container.find('.productpage__pageheader_sticky-wrap-manipulator-data span');
   if (Number(textContainer.text()) <= 0) return null; //SHOW SUCCESS BUYING ICON
 
-  $(this).parents('.productpage__pageheader_sticky-wrap-manipulator-container').addClass('show-success');
+  $(this).parents('.productpage__pageheader_sticky-wrap-manipulator-data').addClass('show-success');
+  var totalPrice = textContainer.text();
+  console.log(totalPrice);
   infoSuccessHeader.removeClass('unshow');
+  infoSuccessHeader.find('h3').text(totalPrice === 1 ? "".concat(totalPrice, " product added to your cart") : "".concat(totalPrice, " products added to your cart"));
   var imgtodrag = $('.productpage__pageheader_sticky-wrap-headblock > img');
 
   if (imgtodrag) {
