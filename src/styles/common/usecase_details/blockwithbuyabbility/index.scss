@@ -233,14 +233,15 @@ section.usecase_details__blockwithbuyabbility {
       }
       img {
         // width: 86px;
-        width: 56px;
+        width: 32px;
         height: 32px;
         object-fit: cover;
         margin-right: 0;
         @include media-tablet {
           // width: 70px;
-          width: 41px;
+          // width: 41px;
           height: 24px;
+          width: 24px;
           display: block;
           margin-right: 11px;
         }

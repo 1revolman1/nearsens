@@ -5,8 +5,8 @@ section.usecase_details__blockwithbuyabbility {
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__blockwithbuyabbility {
-    padding: 30px 0 50px;
-    margin-bottom: 40px;
+    padding: 31.5px 0 40px;
+    margin-bottom: 44.5px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -269,15 +269,15 @@ section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbi
   }
 }
 section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator img {
-  width: 56px;
+  width: 32px;
   height: 32px;
   object-fit: cover;
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
   section.usecase_details__blockwithbuyabbility .usecase_details__blockwithbuyabbility-wrap .usecase_details__blockwithbuyabbility-wrap__manipulator img {
-    width: 41px;
     height: 24px;
+    width: 24px;
     display: block;
     margin-right: 11px;
   }
