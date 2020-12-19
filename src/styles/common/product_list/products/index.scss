@@ -248,9 +248,8 @@ section.productlist__products {
       img {
         width: 100%;
         border-radius: 10px;
-        margin-bottom: 21px;
+        // margin-bottom: 21px;
         @include media-tablet {
-          margin-bottom: 0;
           height: 100%;
           max-height: 134px;
           // margin-bottom: 15px;
@@ -263,7 +262,11 @@ section.productlist__products {
       .productlist__products-container-element-imgcontainer {
         position: relative;
         max-width: none;
+        margin-bottom: 21px;
+        // width: 333px;
+        height: 250px;
         @include media-tablet {
+          margin-bottom: 0;
           width: 137px;
           height: 134px;
           @media screen and (max-width: 350px) {
@@ -272,7 +275,9 @@ section.productlist__products {
           }
         }
         img {
+          height: 100%;
           @include media-tablet {
+            height: auto;
             display: flex;
             position: sticky;
             top: 134px;
