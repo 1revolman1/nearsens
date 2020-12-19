@@ -40,17 +40,20 @@ section.contact__container {
   .contact__container__phonecontainer {
     margin-bottom: 90px;
     @include media-tablet {
-      margin-bottom: 47px;
+      margin-bottom: 50px;
     }
     .phone-container {
-      display: flex;
-      align-items: center;
+      // display: flex;
+      // align-items: center;
       margin-right: 15px;
       font: normal normal 800 24px/30px Muli;
       letter-spacing: 0px;
       color: #28373b;
       opacity: 1;
       @include media-tablet {
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
         font: normal normal 800 20px/25px Muli;
         letter-spacing: 0px;
         color: #28373b;
@@ -63,7 +66,9 @@ section.contact__container {
       }
       .phone-container__text {
         margin-left: 20px;
+        display: inherit;
         @include media-tablet {
+          margin-left: 0;
           display: flex;
           flex-direction: column;
         }

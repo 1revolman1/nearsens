@@ -49,12 +49,10 @@ section.contact__container .contact__container__phonecontainer {
 }
 @media screen and (max-width: 768px) {
   section.contact__container .contact__container__phonecontainer {
-    margin-bottom: 47px;
+    margin-bottom: 50px;
   }
 }
 section.contact__container .contact__container__phonecontainer .phone-container {
-  display: flex;
-  align-items: center;
   margin-right: 15px;
   font: normal normal 800 24px/30px Muli;
   letter-spacing: 0px;
@@ -63,6 +61,9 @@ section.contact__container .contact__container__phonecontainer .phone-container 
 }
 @media screen and (max-width: 768px) {
   section.contact__container .contact__container__phonecontainer .phone-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
     font: normal normal 800 20px/25px Muli;
     letter-spacing: 0px;
     color: #28373b;
@@ -76,9 +77,11 @@ section.contact__container .contact__container__phonecontainer .phone-container 
 }
 section.contact__container .contact__container__phonecontainer .phone-container .phone-container__text {
   margin-left: 20px;
+  display: inherit;
 }
 @media screen and (max-width: 768px) {
   section.contact__container .contact__container__phonecontainer .phone-container .phone-container__text {
+    margin-left: 0;
     display: flex;
     flex-direction: column;
   }
