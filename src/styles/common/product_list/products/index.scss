@@ -70,37 +70,49 @@ section.productlist__products {
         // flex: 0 1 calc(37% + 20px);
       }
       &.big-block {
-        // display: none;
-
+        display: grid;
+        grid-template-columns: 333px repeat(auto-fit, minmax(333px, 1fr));
+        // grid-template-columns: 333px 1fr;
+        // grid-template-columns: minmax(333px, 1fr) repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 40px;
+        grid-row-gap: 0px;
         min-height: inherit;
         grid-column: 1/-1;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex: 1 1 100%;
-        @include media-tablet {
-          padding: 20px;
-          grid-column: initial;
-        }
-        .productlist__products-container-element-imgcontainer {
-          // flex: 0 1 25%;
-          flex: 0 1 27%;
-          // max-width: 333px;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+
+        // flex: 1 1 100%;
+        @media screen and (max-width: 925px) {
+          grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
           @include media-tablet {
-            min-width: 295px;
-            width: 100%;
-            height: 200px;
-            flex: none;
-            margin-bottom: 20.5px;
-            max-height: 200px;
-            @media screen and (max-width: 350px) {
-              min-width: 230px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 20px;
+            grid-column: initial;
+          }
+        }
+
+        .productlist__products-container-element-imgcontainer {
+          // flex: 0 1 27%;
+          min-width: 333px;
+          max-height: 250px;
+          @media screen and (max-width: 925px) {
+            min-width: inherit;
+
+            @include media-tablet {
+              min-width: 295px;
+              width: 100%;
+              height: 200px;
+              flex: none;
+              margin-bottom: 20.5px;
+              max-height: 200px;
+              @media screen and (max-width: 350px) {
+                min-width: 230px;
+              }
             }
           }
-          // @include media-tablet {
-          //   width: 100%;
-          //   // margin-bottom: 20.5px;
-          //   flex: none;
-          // }
           img {
             margin: 0 auto;
             flex: 1 1;
@@ -113,9 +125,9 @@ section.productlist__products {
           }
         }
         .productlist__products-container-element-controller {
-          padding: 2% 0 2% 2%;
+          // padding: 2% 0 2% 2%;
           height: auto;
-          flex: 1;
+          // flex: 1;
           @include media-tablet {
             flex: none;
             padding: 0;
@@ -149,18 +161,27 @@ section.productlist__products {
             }
           }
           .productlist__products-container-element-controllers {
+            // flex-flow: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-rows: auto;
+            grid-row-gap: 10px;
             @include media-tablet {
+              display: flex;
               align-items: center;
             }
             .productlist__products-container-element-controllers-price {
               flex-direction: row-reverse;
+              width: 100%;
+              gap: 30px;
+              justify-content: flex-end;
               .price {
                 font: normal normal 300 44px/55px Muli;
                 @include media-tablet {
                   font: normal normal 300 32px/40px Muli;
                 }
                 &.price-disqount {
-                  margin: 0 30px;
+                  // margin: 0 30px;
                   font: normal normal 300 35px/50px Muli;
                   @include media-tablet {
                     display: none;
@@ -179,6 +200,11 @@ section.productlist__products {
             }
             .productlist__products-container-element-controllers-manipulator {
               flex: none;
+              width: 100%;
+              justify-content: flex-end;
+              @include media-tablet {
+                width: inherit;
+              }
               .productlist__products-container-element-controllers-shop {
                 button {
                   padding: 12px 20px;
