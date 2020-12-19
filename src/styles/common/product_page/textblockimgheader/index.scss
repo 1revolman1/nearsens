@@ -22,6 +22,10 @@ section.productpage__textblockimgheader {
       width: 100%;
     }
     img {
+      border-radius: 25px;
+      @include media-tablet {
+        border-radius: 15px;
+      }
       position: sticky;
       top: 260px;
       object-fit: cover;
@@ -32,7 +36,7 @@ section.productpage__textblockimgheader {
     flex-direction: column;
     justify-content: center;
     flex: 0 1 50%;
-    padding: 0 40px;
+    padding: 0 0 0 40px;
     @include media-tablet {
       padding: 0;
       flex: none;

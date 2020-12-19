@@ -173,8 +173,6 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
   }
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container .productpage__specificationblock-wrap__container-img img {
-  position: sticky;
-  top: 252px;
   width: 100%;
   object-fit: cover;
 }
