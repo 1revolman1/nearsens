@@ -91,8 +91,8 @@ export const useCasesDetails = function main() {
         .css({
           opacity: '0.5',
           position: 'absolute',
-          height: '50px',
-          width: '50px',
+          height: imgtodrag.height(),
+          width: imgtodrag.width(),
           'border-radius': '10px',
           'z-index': '100',
         })
@@ -101,8 +101,8 @@ export const useCasesDetails = function main() {
           {
             top: cart.offset().top + 10,
             left: cart.offset().left + 10,
-            width: 30,
-            height: 30,
+            width: 20,
+            height: 20,
           },
           1000,
           'easeInOutExpo'
