@@ -49,10 +49,10 @@ section.page_gabarit__twobigblockperline {
       .page_gabarit__twobigblockperline__wrap__element__img {
         margin-bottom: 31px;
         img {
-          border-radius: 25px;
-          @include media-tablet {
-            border-radius: 15px;
-          }
+          border-radius: 10px;
+          // @include media-tablet {
+          //   border-radius: 15px;
+          // }
         }
       }
       .page_gabarit__twobigblockperline__wrap__element__text {

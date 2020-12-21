@@ -22,15 +22,10 @@ section.productpage__textblockimgheader .productpage__textblockimgheader-img {
   }
 }
 section.productpage__textblockimgheader .productpage__textblockimgheader-img img {
-  border-radius: 25px;
+  border-radius: 10px;
   position: sticky;
   top: 260px;
   object-fit: cover;
-}
-@media screen and (max-width: 768px) {
-  section.productpage__textblockimgheader .productpage__textblockimgheader-img img {
-    border-radius: 15px;
-  }
 }
 section.productpage__textblockimgheader .productpage__textblockimgheader-text {
   display: flex;

@@ -250,7 +250,7 @@ section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_d
   flex: 0 1 46%;
 }
 section.usecase_details__pageheader .usecase_details__pageheader-wrap .usecase_details__pageheader__img img {
-  border-radius: 25px;
+  border-radius: 10px;
   display: flex;
   position: sticky;
   top: 121px;

@@ -22,10 +22,10 @@ section.productpage__textblockimgheader {
       width: 100%;
     }
     img {
-      border-radius: 25px;
-      @include media-tablet {
-        border-radius: 15px;
-      }
+      border-radius: 10px;
+      // @include media-tablet {
+      //   border-radius: 15px;
+      // }
       position: sticky;
       top: 260px;
       object-fit: cover;
