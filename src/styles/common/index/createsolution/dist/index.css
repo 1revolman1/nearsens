@@ -51,6 +51,7 @@ section.index__createsolution::after {
 }
 @media screen and (max-width: 768px) {
   section.index__createsolution::after {
+    top: 10px;
     background: transparent linear-gradient(0deg, #fff 0, #ffffff00 40%) 0 0 no-repeat padding-box;
   }
 }
