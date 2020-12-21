@@ -4,7 +4,7 @@ section.use_case__usecases {
 @media screen and (max-width: 768px) {
   section.use_case__usecases {
     width: 90%;
-    margin: 39.9px auto 40px;
+    margin: 10px auto 40px;
   }
 }
 section.use_case__usecases h3 {
@@ -12,32 +12,23 @@ section.use_case__usecases h3 {
   letter-spacing: 0px;
   color: #28373b;
   opacity: 1;
-  margin: 15px 0 20.5px;
+  margin: 15px 0;
 }
 @media screen and (max-width: 768px) {
   section.use_case__usecases h3 {
-    margin: 15px 0 21.5px;
     font: normal normal normal 26px/33px Muli;
   }
 }
 section.use_case__usecases .use_case__usecases-biglist {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-  grid-template-rows: auto;
-  grid-column-gap: 61px;
-  grid-row-gap: 60px;
-  margin-bottom: 60px;
-}
-@media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-biglist {
-    grid-column-gap: 0px;
-    grid-row-gap: 21px;
-    margin-bottom: 20px;
-    grid-template-columns: 1fr;
-  }
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element {
   max-width: initial;
+  flex: 0 1 47%;
+  margin: 2%;
   background: #005b9d 0% 0% no-repeat padding-box;
   cursor: pointer;
   box-shadow: 0px 0px 10px #00000066;
@@ -51,11 +42,17 @@ section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-bigli
     width: 100%;
     flex-direction: column;
     padding: 0;
+    flex: none;
+    max-width: inherit;
     display: flex;
+    margin: 10px auto;
   }
 }
-section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element.filtered {
-  display: none;
+section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element:nth-child(odd) {
+  margin-left: 0;
+}
+section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element:nth-child(even) {
+  margin-right: 0;
 }
 section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element:hover {
   transform: translate(0, -10px);
@@ -71,6 +68,7 @@ section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-bigli
 }
 @media screen and (max-width: 768px) {
   section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-img {
+    flex: 0 1 33%;
     margin-right: 0;
   }
 }
@@ -121,20 +119,10 @@ section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-bigli
   }
 }
 section.use_case__usecases .use_case__usecases-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: auto;
-  grid-column-gap: 61px;
-  grid-row-gap: 60px;
-  margin: 60px 0 30px;
-}
-@media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-list {
-    grid-template-columns: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 20px;
-    margin: 20px 0 10px;
-  }
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element {
   cursor: pointer;
@@ -142,17 +130,36 @@ section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__el
   border-radius: 10px;
   opacity: 1;
   overflow: hidden;
+  max-width: 393px;
+  flex: 0 1 30%;
+  margin: 2%;
   transition: all ease 0.5s;
-}
-section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element.filtered {
-  display: none;
 }
 @media screen and (max-width: 768px) {
   section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element {
+    flex: none;
     padding: 10px;
     width: 100%;
+    margin: 10px auto;
+    max-width: inherit;
     display: flex;
     flex-direction: row;
+  }
+}
+section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:nth-child(3n+1) {
+  margin-left: 0;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:nth-child(3n+1) {
+    margin: 10px auto;
+  }
+}
+section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:nth-child(3n+3) {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:nth-child(3n+3) {
+    margin: 10px auto;
   }
 }
 section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:hover {
@@ -175,6 +182,7 @@ section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__el
 section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-img img {
   transition: all ease 0.5s;
   object-fit: cover;
+  max-width: 393px;
   max-height: 250px;
   width: 100%;
   height: 100%;

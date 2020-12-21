@@ -30,13 +30,14 @@ section.use_case__usecases-last .use_case__usecases-last .use_case__usecases-las
   display: flex;
   transition: all ease 0.5s;
   background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 0px 10px #0000001a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   opacity: 1;
   padding: 20px;
 }
 section.use_case__usecases-last .use_case__usecases-last .use_case__usecases-last__element:hover {
   transform: translate(0, -10px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 section.use_case__usecases-last .use_case__usecases-last .use_case__usecases-last__element:first-of-type {
   margin-top: 0;

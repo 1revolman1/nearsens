@@ -62,7 +62,7 @@ section.productlist__posibilities .productlist__posibilities-prodcontainer .prod
   padding: 20px;
   margin: 30px 0;
   background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 0px 10px #0000001a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   opacity: 1;
   transition: all ease 0.5s;
@@ -75,7 +75,7 @@ section.productlist__posibilities .productlist__posibilities-prodcontainer .prod
 }
 section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:hover {
   transform: translate(0, -5px);
-  box-shadow: 0px 0px 39px #0000001a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 768px) {
   section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:hover {
