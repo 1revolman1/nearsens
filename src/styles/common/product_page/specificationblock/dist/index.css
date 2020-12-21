@@ -6,7 +6,7 @@ section.productpage__specificationblock {
 @media screen and (max-width: 768px) {
   section.productpage__specificationblock {
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40.5px;
   }
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap {

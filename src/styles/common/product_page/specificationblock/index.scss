@@ -7,7 +7,8 @@ section.productpage__specificationblock {
   margin-bottom: 80px;
   @include media-tablet {
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40.5px;
+    // margin-bottom: 50px;
   }
   .productpage__specificationblock-wrap {
     max-width: $mediaMAXWIDTH;
