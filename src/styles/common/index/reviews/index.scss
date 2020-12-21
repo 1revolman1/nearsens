@@ -42,8 +42,12 @@ section.index__reviews {
       margin: 0 auto;
     }
     .index__reviews__content__element {
-      max-width: 846px;
+      // max-width: 846px;
+      max-width: 65%;
       margin: 0 auto;
+      @include media-tablet {
+        max-width: 100%;
+      }
       h3 {
         text-align: center;
         font: normal normal 800 26px/33px Muli;
@@ -75,30 +79,44 @@ section.index__reviews {
         }
       }
       .index__reviews__content__element__text {
-        p,
-        q {
+        p {
+          position: relative;
           text-align: center;
           font: normal normal bold 20px/25px Muli;
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
           margin-bottom: 7px;
-          quotes: '\201c''\201e';
+          // quotes: '\201c''\201e';
           &::before {
+            content: '\201c';
             font-size: 30px;
-            position: relative;
-            right: 30px;
+            position: absolute;
+            left: -45px;
             @include media-tablet {
-              right: 10px;
+              left: 0px;
+              top: -10px;
             }
+            // position: relative;
+            // right: 30px;
+            // @include media-tablet {
+            //   right: 10px;
+            // }
           }
           &::after {
+            content: '\201e';
             font-size: 30px;
-            position: relative;
-            left: 30px;
+            position: absolute;
+            right: -45px;
             @include media-tablet {
-              left: 10px;
+              right: 0px;
+              bottom: -10px;
             }
+            // position: relative;
+            // left: 30px;
+            // @include media-tablet {
+            //   left: 10px;
+            // }
           }
           @include media-tablet {
             font: normal normal bold 16px/20px Muli;
