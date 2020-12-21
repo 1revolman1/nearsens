@@ -19,17 +19,25 @@ section.page_gabarit__blockwithbigimg {
   .page_gabarit__blockwithbigimg__wrap {
     &.img-left {
       .productpage__textblockvariations-textimgheader__img {
-        padding: 40px 40px 40px 0;
+        padding: 0 25px 0 0px;
+        // padding: 40px 40px 40px 0;
         flex: 1 1 7%;
         @include media-tablet {
+          margin-bottom: 24.5px;
           padding: 0;
           flex: 1;
+        }
+      }
+      .productpage__textblockvariations-textimgheader__text {
+        padding: 0 0 0 25px;
+        @include media-tablet {
+          padding: 0;
         }
       }
     }
     &.img-right {
       .productpage__textblockvariations-textimgheader__img {
-        padding: 40px 0 40px 40px;
+        // padding: 40px 0 40px 40px;
         flex: 1 1 7%;
         @include media-tablet {
           padding: 0;
