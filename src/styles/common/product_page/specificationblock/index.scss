@@ -194,7 +194,8 @@ section.productpage__specificationblock {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             // grid-gap: 20px 40px;
-            grid-gap: 20px 140px;
+            // grid-gap: 20px 140px;
+            grid-gap: 20px 20%;
             @include media-forHEADER {
               width: 95%;
               grid-gap: 20px 100px;

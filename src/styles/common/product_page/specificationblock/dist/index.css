@@ -192,7 +192,7 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
   margin-right: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px 140px;
+  grid-gap: 20px 20%;
 }
 @media screen and (max-width: 1023px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul.head {
