@@ -39,6 +39,7 @@ export const useCasesDetails = function main() {
       : $('.shop-cart');
     const imgtodrag = container.find('img').eq(0);
     $(this).attr('disabled', 'disabled');
+    //   const imgtodrag = $(this).parents('.usecase_details__blockwithbuyabbility-wrap').find(".usecase_details__blockwithbuyabbility-wrap__head img").eq(0);
     const infoSuccessHeader = cart.find('.droupup-block-info');
     const parent = $(this).parents(
       '.usecase_details__blockwithbuyabbility-wrap__manipulator__block'
@@ -53,7 +54,30 @@ export const useCasesDetails = function main() {
     );
     curerentBlocks.attr('data-ammount', 1);
     curerentBlocks.find('.minus').attr('disabled', true);
-
+    curerentBlocks.find('.counter').text(1);
+    container
+      .find(
+        '.usecase_details__blockwithbuyabbility-wrap__manipulator__block__text p'
+      )
+      .text(`${curerentBlocks.length} items`);
+    infoSuccessHeader
+      .find('h3')
+      .text(
+        totalPrice === 1
+          ? `${totalPrice} product added to your cart`
+          : `${totalPrice} products added to your cart`
+      );
+    // .text(
+    //   `${
+    //     $(
+    //       ".usecase_details__blockwithbuyabbility-wrap__element-content-manipulator:not([data-ammount='0'])"
+    //     ).length
+    //   } product added to your cart`
+    // );
+    totalPrice = curerentBlocks.length;
+    parent
+      .find('.shop-cart .success_block span')
+      .text(`${currentValue} new added to cart`);
     //SHOW SUCCESS BUYING ICON
     parent.addClass('show-success');
     infoSuccessHeader.removeClass('unshow');
@@ -94,6 +118,14 @@ export const useCasesDetails = function main() {
         $(this).removeAttr('disabled');
         infoSuccessHeader.addClass('unshow');
       }, 2000);
+
+      // if(!isMobile)
+      //     setTimeout(function () {
+      //         cart.effect("shake", {
+      //             times: 2
+      //         }, 200);
+      //     }, 1500);
+
       imgclone.animate(
         {
           width: 0,
@@ -134,6 +166,26 @@ export const useCasesDetails = function main() {
     if (value === 1) {
       $(this).attr('disabled', true);
     }
+    const finalAdd = container
+      .parents('.usecase_details__blockwithbuyabbility-wrap.main')
+      .find(
+        '.usecase_details__blockwithbuyabbility-wrap__manipulator .usecase_details__blockwithbuyabbility-wrap__manipulator__block p'
+      );
+    finalAdd.text(`${--totalPrice} items`);
+    let newPrice = totalPrice;
+    container
+      .parents(
+        '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator'
+      )
+      .attr('data-ammount', value);
+    if (newPrice === 1) {
+      $(this)
+        .parents('.usecase_details__blockwithbuyabbility-wrap.main')
+        .find(
+          '.usecase_details__blockwithbuyabbility-wrap__manipulator .usecase_details__blockwithbuyabbility-wrap__manipulator__block .shop-cart'
+        )
+        .attr('disabled', true);
+    }
     counter.text(value);
   });
   $(
@@ -147,6 +199,26 @@ export const useCasesDetails = function main() {
     value += 1;
     if (value >= 2) {
       container.find('.minus').attr('disabled', false);
+    }
+    const finalAdd = container
+      .parents('.usecase_details__blockwithbuyabbility-wrap.main')
+      .find(
+        '.usecase_details__blockwithbuyabbility-wrap__manipulator .usecase_details__blockwithbuyabbility-wrap__manipulator__block p'
+      );
+    finalAdd.text(`${++totalPrice} items`);
+    let newPrice = totalPrice;
+    container
+      .parents(
+        '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator'
+      )
+      .attr('data-ammount', value);
+    if (newPrice > 1) {
+      $(this)
+        .parents('.usecase_details__blockwithbuyabbility-wrap.main')
+        .find(
+          '.usecase_details__blockwithbuyabbility-wrap__manipulator .usecase_details__blockwithbuyabbility-wrap__manipulator__block .shop-cart'
+        )
+        .attr('disabled', false);
     }
     counter.text(value);
   });
