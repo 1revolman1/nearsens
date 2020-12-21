@@ -122,6 +122,11 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover {
+    margin-bottom: 30px;
+  }
+}
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element {
   cursor: pointer;
   display: flex;
@@ -134,7 +139,33 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   transition: all 0.3s ease;
   margin: 15px 0;
 }
-@media screen and (max-width: 768px) {
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:first-of-type {
+  margin-top: 0;
+}
+@media screen and (max-width: 1023px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:first-of-type {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:first-of-type {
+    margin-top: 0;
+  }
+}
+section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1023px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:last-of-type {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:last-of-type {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element {
     background: #005b9d 0% 0% no-repeat padding-box;
   }
@@ -142,7 +173,12 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
     margin-top: 0;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 1023px) and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element {
+    margin: 10px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover {
     background: #005b9d 0% 0% no-repeat padding-box;
   }
@@ -171,7 +207,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
     color: white;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 768px) {
+@media screen and (min-width: 1024px) and (max-width: 768px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element:hover .index__morewithless__blockwithhover__element__arrow {
     opacity: 1;
     visibility: visible;
@@ -194,7 +230,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   margin-right: 25px;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img {
     padding: 10px;
     background: #ffffff 0% 0% no-repeat padding-box;
@@ -207,7 +243,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor path {
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .invert-collor path {
     fill: #005b9d;
   }
@@ -218,7 +254,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec .color {
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .spec .color {
     fill: #005b9d;
   }
@@ -235,7 +271,7 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   top: 22px;
   right: -17px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__img .lock path {
     transition: all 0.3s ease;
   }
@@ -261,14 +297,18 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   color: #324044;
   opacity: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text h3 {
-    font: normal normal normal 16px/20px Muli;
+    color: #ffffff;
     letter-spacing: 0px;
     opacity: 1;
     top: 0;
     transform: translate(0, 0%);
-    color: #ffffff;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text h3 {
+    font: normal normal normal 16px/20px Muli;
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
@@ -277,12 +317,16 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   color: #ffffff;
   opacity: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
+    color: #ffffff;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 1023px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__text p {
     font: normal normal 300 13px/16px Muli;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
   }
 }
 section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__arrow {
@@ -294,7 +338,12 @@ section.index__morewithless .index__morewithless__wrap .index__morewithless__blo
   font-size: 20px;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
+  section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__arrow {
+    color: #005b9d;
+  }
+}
+@media screen and (max-width: 1023px) {
   section.index__morewithless .index__morewithless__wrap .index__morewithless__blockwithhover .index__morewithless__blockwithhover__element .index__morewithless__blockwithhover__element__arrow {
     opacity: 1;
     visibility: visible;

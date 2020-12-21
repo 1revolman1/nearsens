@@ -14,7 +14,7 @@ section.index__parallax * {
 }
 @media screen and (max-width: 768px) {
   section.index__parallax {
-    margin-top: 59px;
+    margin-top: 57px;
   }
 }
 section.index__parallax.no-parallax {
@@ -87,7 +87,7 @@ section.index__parallax.no-parallax .text-container {
     top: 63px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) and (max-width: 768px) {
   section.index__parallax.no-parallax .text-container {
     padding-left: 40px;
     top: 40px;
@@ -95,6 +95,14 @@ section.index__parallax.no-parallax .text-container {
     width: initial;
     margin: initial;
     transform: initial;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) and (max-width: 425px) {
+  section.index__parallax.no-parallax .text-container {
+    padding: 0;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
 section.index__parallax.no-parallax .text-container h3 {
