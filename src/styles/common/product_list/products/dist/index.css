@@ -51,6 +51,22 @@ section.productlist__products .productlist__products-container .productlist__pro
   opacity: 1;
   padding: 30px;
 }
+section.productlist__products .productlist__products-container .productlist__products-container-element .mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__products .productlist__products-container .productlist__products-container-element .mobile {
+    display: inline;
+  }
+}
+section.productlist__products .productlist__products-container .productlist__products-container-element .desktop {
+  display: inline;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__products .productlist__products-container .productlist__products-container-element .desktop {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element {
     padding: 10px;

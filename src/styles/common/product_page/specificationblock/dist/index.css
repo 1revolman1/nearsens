@@ -209,7 +209,7 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .productpage__specificationblock-wrap__container__specification-block ul li {
   display: grid;
-  grid-template-columns: 1fr fit-content(55%);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 49px;
   grid-row-gap: 0px;

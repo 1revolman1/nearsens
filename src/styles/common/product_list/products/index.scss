@@ -61,6 +61,18 @@ section.productlist__products {
       //     margin-bottom: 0;
       //   }
       // }
+      .mobile {
+        display: none;
+        @include media-tablet {
+          display: inline;
+        }
+      }
+      .desktop {
+        display: inline;
+        @include media-tablet {
+          display: none;
+        }
+      }
       @include media-tablet {
         // margin: 10px;
         padding: 10px;

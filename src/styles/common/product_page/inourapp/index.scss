@@ -24,12 +24,21 @@ section.productpage__inourapp {
       @include media-tablet {
         font: normal normal normal 22px/28px Muli;
         letter-spacing: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 33.5px;
       }
     }
     .productpage__inourapp-content {
-      display: flex;
+      // display: flex;
+      display: grid;
+      grid-template-columns: minmax(433px, 1fr) 2fr;
+      grid-template-rows: auto;
+      grid-column-gap: 117px;
+      @include media-forHEADER {
+        grid-column-gap: 60px;
+        grid-template-columns: minmax(350px, 1fr) 2fr;
+      }
       // @media screen and (max-width: 1150px) {
+      //   display: flex;
       //   width: 90%;
       //   margin: 0 auto;
       // }
@@ -39,36 +48,73 @@ section.productpage__inourapp {
         margin: 0 auto;
       }
       .productpage__inourapp-content__img {
-        margin-right: 58px;
+        // margin-right: 58px;
         width: 100%;
         display: flex;
         align-items: flex-start;
         img {
-          position: sticky;
-          top: 252px;
           width: 100%;
           object-fit: cover;
         }
-        @media screen and (max-width: 1150px) {
-          flex: 1;
-          margin-right: 20px;
-        }
+        // @media screen and (max-width: 1150px) {
+        //   flex: 1;
+        //   margin-right: 20px;
+        // }
         @include media-tablet {
           flex: none;
           margin: 0;
         }
       }
       .productpage__inourapp-content__blocks {
-        display: flex;
-        flex-flow: row wrap;
+        display: grid;
+        align-self: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: auto;
+        grid-column-gap: 113px;
+        grid-row-gap: 60px;
+        // display: flex;
+        // align-items: center;
+        // flex-flow: row wrap;
         // padding-top: 70px;
-        padding-top: 63px;
-        padding-bottom: 60px;
-        @media screen and (max-width: 1150px) {
-          flex: 1;
+        // padding-top: 63px;
+        // padding-bottom: 60px;
+        // @media screen and (max-width: 1150px) {
+        //   flex: 1;
+        // }
+        @media screen and (max-width: 1130px) {
+          grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+          @include media-forHEADER {
+            grid-column-gap: 20px;
+            grid-row-gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+            // grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+          }
+          @media screen and (max-width: 1000px) {
+            grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+          }
+          @media screen and (max-width: 810px) {
+            grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+          }
         }
+
         @include media-tablet {
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          @media screen and (max-width: 520px) {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          }
+          @media screen and (max-width: 425px) {
+            grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+          }
+          @media screen and (max-width: 375px) {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          }
+          // display: flex;
+          // align-items: center;
+          // flex-flow: row wrap;
           flex: none;
+          grid-column-gap: 20px;
+          grid-row-gap: 30px;
+          width: 100%;
           margin-bottom: 30px;
           padding: 0;
           justify-content: space-between;
@@ -77,14 +123,14 @@ section.productpage__inourapp {
           flex: 0 1 calc(32% + 10px);
           display: flex;
           flex-direction: column;
-          margin: 15px 58px;
+          // margin: 15px 58px;
           @media screen and (max-width: 1150px) {
-            margin: 15px;
+            // margin: 15px;
             flex: 1 1 calc(32% + 10px);
           }
           @include media-tablet {
             flex: 0 1 calc(32% + 10px);
-            margin: 15px 0;
+            // margin: 15px 0;
           }
           img {
             object-fit: cover;
