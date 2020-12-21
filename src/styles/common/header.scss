@@ -166,7 +166,8 @@ header.header {
         }
         &.after-scroll {
           // top: 49px;
-          top: 25px;
+          // top: 25px;
+          top: 22px;
           img {
             max-width: 89px;
           }
@@ -825,18 +826,24 @@ nav.nav {
   }
 
   .second-menu {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
     padding: 20px 0;
-    // padding: 45px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: space-between;
     max-width: $mediaMAXWIDTH;
     width: 94%;
     margin: 0 auto;
 
     @include media-forHEADER {
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       flex-direction: column;
       padding: 0;
       min-height: calc(100vh - 57px);
@@ -890,41 +897,42 @@ nav.nav {
     }
 
     .nav-menu {
-      // flex: 3;
-
-      // flex:auto;
-      width: 50%;
+      // width: 50%;
       @include media-forHEADER {
         width: 100%;
         flex: 3;
       }
 
       ul {
-        display: flex;
-        justify-content: flex-start;
-        // justify-content: space-between;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(5, fit-content(100%));
+        grid-template-rows: auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 0px;
+        // display: flex;
+        // justify-content: flex-start;
+        // flex-direction: row;
         padding-left: 0;
         transition: all 0.2s ease;
         @include media-forHEADER {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: row;
           flex-direction: column;
         }
         &.after-scroll {
+          @media screen and (max-width: 1100px) {
+            grid-column-gap: 3.9%;
+          }
           padding-left: calc(3.9% + 89px);
-          // padding-left: calc(2.5% + 89px);
           li {
             &:nth-child(2) {
-              margin-left: 3.9%;
-              // margin-left: 2.5%;
+              // margin-left: 3.9%;
             }
           }
         }
         li {
-          margin: 0 3.9%;
-          // margin: 0 2.5%;
-          // margin: 0 !important;
-          // margin: 0 2.5%;
-          // margin: 0 25px;
+          // margin: 0 3.9%;
           list-style-type: none;
           .in-viewport {
             .logo-img {

@@ -168,7 +168,7 @@ header.header .first-menu .first-block-in-menu > a {
   }
 }
 header.header .first-menu .first-block-in-menu > a.after-scroll {
-  top: 25px;
+  top: 22px;
 }
 header.header .first-menu .first-block-in-menu > a.after-scroll img {
   max-width: 89px;
@@ -770,11 +770,11 @@ nav.nav {
   }
 }
 nav.nav .second-menu {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
   padding: 20px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   max-width: 1300px;
   width: 94%;
   margin: 0 auto;
@@ -782,6 +782,9 @@ nav.nav .second-menu {
 @media screen and (max-width: 1023px) {
   nav.nav .second-menu {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     padding: 0;
     min-height: calc(100vh - 57px);
@@ -832,9 +835,6 @@ nav.nav .second-menu .search-menu img {
   width: 20px;
   cursor: pointer;
 }
-nav.nav .second-menu .nav-menu {
-  width: 50%;
-}
 @media screen and (max-width: 1023px) {
   nav.nav .second-menu .nav-menu {
     width: 100%;
@@ -842,25 +842,31 @@ nav.nav .second-menu .nav-menu {
   }
 }
 nav.nav .second-menu .nav-menu ul {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(5, fit-content(100%));
+  grid-template-rows: auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
   padding-left: 0;
   transition: all 0.2s ease;
 }
 @media screen and (max-width: 1023px) {
   nav.nav .second-menu .nav-menu ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
     flex-direction: column;
   }
 }
 nav.nav .second-menu .nav-menu ul.after-scroll {
   padding-left: calc(3.9% + 89px);
 }
-nav.nav .second-menu .nav-menu ul.after-scroll li:nth-child(2) {
-  margin-left: 3.9%;
+@media screen and (max-width: 1100px) {
+  nav.nav .second-menu .nav-menu ul.after-scroll {
+    grid-column-gap: 3.9%;
+  }
 }
 nav.nav .second-menu .nav-menu ul li {
-  margin: 0 3.9%;
   list-style-type: none;
 }
 nav.nav .second-menu .nav-menu ul li .in-viewport .logo-img {
