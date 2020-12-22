@@ -10,8 +10,14 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #aaaaaa;
   border-radius: 10px;
-  margin: 10px;
+  margin: 0 10px;
   transition: all ease 0.5s;
+  &:first-of-type {
+    margin-left: 0;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
   @include media-tablet {
     // flex:1;
     margin: 10px 0;
@@ -152,13 +158,14 @@ section.use_case__filter {
     .use_case__filter__container {
       display: flex;
       flex-flow: row wrap;
+      margin-bottom: 20px;
       @include media-tablet {
         flex-flow: column wrap;
       }
       .use_case__filter__container__text {
         display: flex;
         align-items: center;
-        margin-right: 10px;
+        margin-right: 19px;
         @include media-tablet {
           margin-right: 0;
           // margin-left: 10px;
@@ -178,6 +185,7 @@ section.use_case__filter {
         align-items: baseline;
         flex-wrap: wrap;
         flex: 1;
+
         @include media-tablet {
           flex-direction: column;
         }
@@ -317,21 +325,53 @@ section.use_case__filter {
     }
     .use_case__filter__selectedoptions {
       display: flex;
+      align-items: flex-start;
       flex-flow: row wrap;
+
+      @media screen and (min-width: 769px) {
+        --fgp-gap-container: calc(var(--fgp-gap-parent, 0px) - 20px) !important;
+        --fgp-gap: var(--fgp-gap-container);
+        margin-top: var(--fgp-gap);
+        margin-right: var(--fgp-gap);
+        & > * {
+          --fgp-gap-parent: 20px !important;
+          --fgp-gap-item: 20px !important;
+          --fgp-gap: var(--fgp-gap-item) !important;
+          margin-top: var(--fgp-gap);
+          margin-right: var(--fgp-gap);
+        }
+      }
       @include media-tablet {
         width: 100%;
         // width: 97%;
-        margin: 0 auto;
+        margin: 0 auto 10px;
         overflow-y: auto;
         flex-flow: inherit;
+      }
+      .use_case__filter__filtermanipul {
+        display: flex;
+        @include media-tablet {
+          display: none;
+        }
       }
       .use_case__filter__selectedoptions__element {
         background: #005b9d 0% 0% no-repeat padding-box;
         border-radius: 10px;
         padding: 9px 15px;
-        margin: 10px;
+        // margin: 10px;
+        &:first-of-type {
+          @include media-tablet {
+            margin-left: 0px;
+          }
+        }
+        &:last-of-type {
+          @include media-tablet {
+            margin-right: 0px;
+          }
+        }
         @include media-tablet {
           margin: 5px;
+
           padding: 7px 10px;
         }
         span {
@@ -356,10 +396,13 @@ section.use_case__filter {
       }
     }
     .use_case__filter__filtermanipul {
-      display: flex;
+      display: none;
       flex-flow: row wrap;
+      @include media-tablet {
+        display: flex;
+      }
       button {
-        margin: 10px 0;
+        // margin: 10px 0;
         // margin: 10px;
         padding: 8px 20px;
         outline: none;
@@ -371,6 +414,11 @@ section.use_case__filter {
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
+        @include media-tablet {
+          padding: 8px 15px;
+          font: normal normal bold 14px/18px Muli;
+          color: #aaaaaa;
+        }
         &:hover {
           background: #e61414;
           color: white;

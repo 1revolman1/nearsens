@@ -124,7 +124,14 @@ export const useCasesList = function main() {
         type
       )} : ${this._capitalFirst(name)} <i class="fas fa-times"></i></span>`;
       newDiv.addEventListener('click', listener);
-      this._placeForFilter.appendChild(newDiv);
+      const insertBeforeMe = this._placeForFilter.querySelector(
+        '.use_case__filter__filtermanipul'
+      );
+      insertBeforeMe
+        ? this._placeForFilter.insertBefore(newDiv, insertBeforeMe)
+        : this._placeForFilter.appendChild(newDiv);
+      // console.log(this._placeForFilter);
+      // this._placeForFilter.insertBefore(newDiv, insertBeforeMe);
     },
     _removeFilterHTML: function (value, type) {
       this._placeForFilter.querySelector(`[data-${type}="${value}"]`).remove();
@@ -219,9 +226,11 @@ export const useCasesList = function main() {
         }
       });
       document
-        .querySelector('.use_case__filter__filtermanipul button')
-        .addEventListener('click', function () {
-          currentFilter._removeAllFilter();
+        .querySelectorAll('.use_case__filter__filtermanipul button')
+        .forEach((e) => {
+          e.addEventListener('click', function () {
+            currentFilter._removeAllFilter();
+          });
         });
     },
   };

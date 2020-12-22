@@ -5,8 +5,14 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #aaaaaa;
   border-radius: 10px;
-  margin: 10px;
+  margin: 0 10px;
   transition: all ease 0.5s;
+}
+.custom-select-wrapper:first-of-type {
+  margin-left: 0;
+}
+.custom-select-wrapper:last-of-type {
+  margin-right: 0;
 }
 @media screen and (max-width: 768px) {
   .custom-select-wrapper {
@@ -146,6 +152,7 @@ section.use_case__filter .use_case__filter-wrapper {
 section.use_case__filter .use_case__filter-wrapper .use_case__filter__container {
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
   section.use_case__filter .use_case__filter-wrapper .use_case__filter__container {
@@ -155,7 +162,7 @@ section.use_case__filter .use_case__filter-wrapper .use_case__filter__container 
 section.use_case__filter .use_case__filter-wrapper .use_case__filter__container .use_case__filter__container__text {
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 19px;
 }
 @media screen and (max-width: 768px) {
   section.use_case__filter .use_case__filter-wrapper .use_case__filter__container .use_case__filter__container__text {
@@ -184,21 +191,54 @@ section.use_case__filter .use_case__filter-wrapper .use_case__filter__container 
 }
 section.use_case__filter .use_case__filter-wrapper .use_case__filter__selectedoptions {
   display: flex;
+  align-items: flex-start;
   flex-flow: row wrap;
+}
+@media screen and (min-width: 769px) {
+  section.use_case__filter .use_case__filter-wrapper .use_case__filter__selectedoptions {
+    --fgp-gap-container: calc(var(--fgp-gap-parent, 0px) - 20px) !important;
+    --fgp-gap: var(--fgp-gap-container);
+    margin-top: var(--fgp-gap);
+    margin-right: var(--fgp-gap);
+  }
+  section.use_case__filter .use_case__filter-wrapper .use_case__filter__selectedoptions > * {
+    --fgp-gap-parent: 20px !important;
+    --fgp-gap-item: 20px !important;
+    --fgp-gap: var(--fgp-gap-item) !important;
+    margin-top: var(--fgp-gap);
+    margin-right: var(--fgp-gap);
+  }
 }
 @media screen and (max-width: 768px) {
   section.use_case__filter .use_case__filter-wrapper .use_case__filter__selectedoptions {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     overflow-y: auto;
     flex-flow: inherit;
+  }
+}
+section.use_case__filter .use_case__filter-wrapper .use_case__filter__selectedoptions .use_case__filter__filtermanipul {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__filter .use_case__filter-wrapper .use_case__filter__selectedoptions .use_case__filter__filtermanipul {
+    display: none;
   }
 }
 section.use_case__filter .use_case__filter-wrapper .use_case__filter__selectedoptions .use_case__filter__selectedoptions__element {
   background: #005b9d 0% 0% no-repeat padding-box;
   border-radius: 10px;
   padding: 9px 15px;
-  margin: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__filter .use_case__filter-wrapper .use_case__filter__selectedoptions .use_case__filter__selectedoptions__element:first-of-type {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.use_case__filter .use_case__filter-wrapper .use_case__filter__selectedoptions .use_case__filter__selectedoptions__element:last-of-type {
+    margin-right: 0px;
+  }
 }
 @media screen and (max-width: 768px) {
   section.use_case__filter .use_case__filter-wrapper .use_case__filter__selectedoptions .use_case__filter__selectedoptions__element {
@@ -228,11 +268,15 @@ section.use_case__filter .use_case__filter-wrapper .use_case__filter__selectedop
   margin-left: 15px;
 }
 section.use_case__filter .use_case__filter-wrapper .use_case__filter__filtermanipul {
-  display: flex;
+  display: none;
   flex-flow: row wrap;
 }
+@media screen and (max-width: 768px) {
+  section.use_case__filter .use_case__filter-wrapper .use_case__filter__filtermanipul {
+    display: flex;
+  }
+}
 section.use_case__filter .use_case__filter-wrapper .use_case__filter__filtermanipul button {
-  margin: 10px 0;
   padding: 8px 20px;
   outline: none;
   border: 1px solid #aaaaaa;
@@ -243,6 +287,13 @@ section.use_case__filter .use_case__filter-wrapper .use_case__filter__filtermani
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__filter .use_case__filter-wrapper .use_case__filter__filtermanipul button {
+    padding: 8px 15px;
+    font: normal normal bold 14px/18px Muli;
+    color: #aaaaaa;
+  }
 }
 section.use_case__filter .use_case__filter-wrapper .use_case__filter__filtermanipul button:hover {
   background: #e61414;

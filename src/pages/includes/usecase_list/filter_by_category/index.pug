@@ -65,18 +65,22 @@ section.use_case__filter
                                 span.custom-option(data-value="mercedes1" data-name="products:mercedes1") 
                                     |Mercedes Benz L Class
                                     i.fas.fa-times
-        .use_case__filter__selectedoptions
-            //- .use_case__filter__selectedoptions__element
-            //-     span
-            //-         = "Filter name sdfgfsd gsfd gs" + val
-            //-         i.fas.fa-times
-            //- each val in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-            //-     .use_case__filter__selectedoptions__element
-            //-         span
-            //-             = "Filter name " + val
-            //-             i.fas.fa-times
-        .use_case__filter__filtermanipul
-            button Remove all filters
+        .use_case__filter__listofmanip
+            .use_case__filter__selectedoptions
+                .use_case__filter__filtermanipul
+                    button Remove all filters
+
+                //- .use_case__filter__selectedoptions__element
+                //-     span
+                //-         = "Filter name sdfgfsd gsfd gs" + val
+                //-         i.fas.fa-times
+                //- each val in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+                //-     .use_case__filter__selectedoptions__element
+                //-         span
+                //-             = "Filter name " + val
+                //-             i.fas.fa-times
+            .use_case__filter__filtermanipul
+                button Remove all filters
 
 
     //- .use_case__filter-list

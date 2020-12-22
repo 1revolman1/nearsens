@@ -1,11 +1,11 @@
 @import '../../../mixins/media';
 
 section.use_case__usecases {
-  margin-bottom: 100px;
+  margin-bottom: 111.5px;
   @include media-tablet {
     width: 90%;
     // padding: 0 10px;
-    margin: 10px auto 40px;
+    margin: 10px auto 40.5px;
   }
   h3 {
     font: normal normal normal 32px/40px Muli;
