@@ -14,6 +14,16 @@ section.use_case__usecases h3 {
   opacity: 1;
   margin-bottom: 20.5px;
 }
+section.use_case__usecases h3 span {
+  font: italic normal normal 22px/28px Muli;
+  letter-spacing: 0px;
+  color: #28373b;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__usecases h3 span {
+    font: normal normal normal 14px/33px Muli;
+  }
+}
 @media screen and (max-width: 768px) {
   section.use_case__usecases h3 {
     font: normal normal normal 26px/33px Muli;
@@ -30,6 +40,9 @@ section.use_case__usecases .use_case__usecases__wrap {
   section.use_case__usecases .use_case__usecases__wrap {
     grid-row-gap: 20px;
   }
+}
+section.use_case__usecases .use_case__usecases__wrap .filtered-parent {
+  display: none !important;
 }
 section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist {
   display: grid;

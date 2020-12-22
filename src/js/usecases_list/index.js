@@ -65,9 +65,26 @@ export const useCasesList = function main() {
     }),
     _currentFiltersAndValues: {},
     _filters: {},
+    _filterAmmount: 0,
+    _allBlockContainer: document.querySelectorAll(
+      '.use_case__usecases__wrap > *'
+    ),
+    _ammountOfFilters: {
+      head: document.querySelector(
+        '.use_case__scrollheader .use_case__scrollheader-content-container__picker h3'
+      ),
+      doc: document.querySelector('.use_case__usecases h3 span'),
+    },
     _placeForFilter: document.querySelector(
       '.use_case__filter__selectedoptions'
     ),
+
+    _flatSingle: (arr) => [].concat(...arr),
+    _placeAmmountOfFilter: function (length) {
+      this._ammountOfFilters.head.textContent = `${length} Filters`;
+      this._ammountOfFilters.doc.textContent =
+        length > 0 ? ` - ${length} filter(s) selected` : '';
+    },
     _intersect: function (a, b) {
       if (a.length === 0) {
         return b;
@@ -82,7 +99,9 @@ export const useCasesList = function main() {
     _filterFunc: function () {
       const keyArray = Object.keys(this._filters);
       const filterArray = Object.values(this._filters);
+      let data = 0;
       this._blocks.forEach(({ elm }) => {
+        data += 1;
         elm.classList.add('filtered');
         elm.classList.remove('choosen');
       });
@@ -93,10 +112,21 @@ export const useCasesList = function main() {
               .length > 0
         );
       }, this._blocks);
-      console.log(filtered);
+      console.log(filtered, this._filters);
+      this._filterAmmount = this._flatSingle(filterArray).length;
+      this._placeAmmountOfFilter(this._filterAmmount);
       filtered.forEach(({ elm }) => {
         elm.classList.add('choosen');
         elm.classList.remove('filtered');
+      });
+      this._allBlockContainer.forEach((elm) => {
+        const generalLength = elm.childNodes.length;
+        const filteredLength = elm.querySelectorAll('.filtered').length;
+        if (generalLength === filteredLength) {
+          elm.classList.add('filtered-parent');
+        } else {
+          elm.classList.remove('filtered-parent');
+        }
       });
     },
     _addToFilter: function (type, selected) {
@@ -140,6 +170,7 @@ export const useCasesList = function main() {
       Object.keys(this._filters).forEach((e) => {
         this._filters[e] = [];
       });
+      this._placeAmmountOfFilter(0);
       $('.use_case__filter__selectedoptions__element').remove();
       $('.custom-options .selected').removeClass('selected');
       $('.filtered').removeClass('filtered');
@@ -147,7 +178,7 @@ export const useCasesList = function main() {
     },
     init: function () {
       const currentFilter = this;
-
+      this._ammountOfFilters.textContent = '0 Filters';
       document
         .querySelectorAll('.custom-select-wrapper')
         .forEach((dropdown) => {
@@ -244,7 +275,6 @@ export const useCasesList = function main() {
         scrollable.classList.add('out-viewport');
         scrollable.style.opacity = '1';
         scrollable.style.visibility = 'visible';
-
         console.log('Header is outside viewport');
       } else {
         scrollable.classList.remove('out-viewport');

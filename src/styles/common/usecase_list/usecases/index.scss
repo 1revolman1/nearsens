@@ -13,6 +13,14 @@ section.use_case__usecases {
     color: #28373b;
     opacity: 1;
     margin-bottom: 20.5px;
+    span {
+      font: italic normal normal 22px/28px Muli;
+      letter-spacing: 0px;
+      color: #28373b;
+      @include media-tablet {
+        font: normal normal normal 14px/33px Muli;
+      }
+    }
     @include media-tablet {
       font: normal normal normal 26px/33px Muli;
     }
@@ -25,6 +33,9 @@ section.use_case__usecases {
     grid-row-gap: 60px;
     @include media-tablet {
       grid-row-gap: 20px;
+    }
+    .filtered-parent {
+      display: none !important;
     }
     .use_case__usecases-biglist {
       display: grid;
