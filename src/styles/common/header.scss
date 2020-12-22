@@ -15,7 +15,7 @@
     top: 60px;
   }
   @include media-forHEADER {
-    top: 20px;
+    top: 19px;
     @include media-tablet {
       top: 16px;
     }
@@ -109,6 +109,10 @@ header.header {
     position: fixed;
     top: 0;
     left: 0;
+    height: 64px;
+    @include media-tablet {
+      height: inherit;
+    }
   }
   &.holiday-header {
     top: 44px;
@@ -282,6 +286,10 @@ header.header {
 
       @include media-forHEADER {
         padding-right: 40px;
+        height: 38px;
+        @include media-tablet {
+          height: inherit;
+        }
       }
 
       .looking-input {

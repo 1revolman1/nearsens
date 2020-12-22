@@ -14,7 +14,7 @@
 }
 @media screen and (max-width: 1023px) {
   .menu__btn__header {
-    top: 20px;
+    top: 19px;
   }
 }
 @media screen and (max-width: 1023px) and (max-width: 768px) {
@@ -111,6 +111,12 @@ header.header {
     position: fixed;
     top: 0;
     left: 0;
+    height: 64px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
+  header.header {
+    height: inherit;
   }
 }
 header.header.holiday-header {
@@ -265,6 +271,12 @@ header.header .first-menu .second-block-in-menu {
 @media screen and (max-width: 1023px) {
   header.header .first-menu .second-block-in-menu {
     padding-right: 40px;
+    height: 38px;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 768px) {
+  header.header .first-menu .second-block-in-menu {
+    height: inherit;
   }
 }
 header.header .first-menu .second-block-in-menu .looking-input {
