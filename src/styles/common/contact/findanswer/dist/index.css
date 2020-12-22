@@ -139,6 +139,9 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
     grid-template-rows: auto;
   }
 }
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first p {
+  display: none;
+}
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__first {
   display: flex;
   align-items: flex-start;
@@ -156,6 +159,9 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second .textinput {
   margin-right: 0;
   margin-left: 0;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second br {
+  display: none;
 }
 @media screen and (max-width: 768px) {
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__first .contact__findanswer__wrap__secondinit__container__first__second {
@@ -183,6 +189,10 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
     grid-template-rows: auto;
   }
 }
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second p,
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second br {
+  display: none;
+}
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__inputs {
   display: grid;
   grid-template-columns: 1fr;
@@ -194,6 +204,9 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__inputs {
     grid-row-gap: 20px;
   }
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__inputs br {
+  display: none;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea {
   resize: none;
@@ -260,6 +273,9 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
     grid-template-rows: auto;
   }
 }
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third > p {
+  display: none;
+}
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__robot {
   display: flex;
   align-items: flex-start;
@@ -271,6 +287,9 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+}
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox br {
+  display: none;
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .submit {
   border: none;

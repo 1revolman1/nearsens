@@ -234,8 +234,8 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-controller .productlist__products-container-element-controllers .productlist__products-container-element-controllers-manipulator .productlist__products-container-element-controllers-shop button {
-    padding: 8px 9px;
-    font-size: 22.21px;
+    padding: 12px 19px;
+    font-size: 24px;
   }
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element.with-disqount {
@@ -517,8 +517,8 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller .productlist__products-container-element-controllers .productlist__products-container-element-controllers-manipulator .productlist__products-container-element-controllers-shop button {
-    padding: 8px 9px;
-    font-size: 22.21px;
+    padding: 7.5px 16px;
+    font-size: 23.1px;
   }
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller .productlist__products-container-element-controllers .productlist__products-container-element-controllers-manipulator .productlist__products-container-element-controllers-successbuying {

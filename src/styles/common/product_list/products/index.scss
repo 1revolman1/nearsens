@@ -222,8 +222,10 @@ section.productlist__products {
                   padding: 12px 20px;
                   font-size: 20px;
                   @include media-tablet {
-                    padding: 8px 9px;
-                    font-size: 22.21px;
+                    padding: 12px 19px;
+                    font-size: 24px;
+                    // padding: 8px 9px;
+                    // font-size: 22.21px;
                   }
                 }
               }
@@ -491,12 +493,10 @@ section.productlist__products {
                 outline: none;
                 cursor: pointer;
                 @include media-tablet {
-                  // padding: 7px 11px;
-                  // font-size: 11px;
-                  // padding: 7px;
-                  // font-size: 18px;
-                  padding: 8px 9px;
-                  font-size: 22.21px;
+                  // padding: 8px 9px;
+                  // font-size: 22.21px;
+                  padding: 7.5px 16px;
+                  font-size: 23.1px;
                 }
               }
             }

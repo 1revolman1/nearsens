@@ -136,6 +136,9 @@ section.contact__findanswer {
             grid-row-gap: 20px;
             grid-template-rows: auto;
           }
+          p {
+            display: none;
+          }
           .textinput {
           }
           .contact__findanswer__wrap__secondinit__container__first__first {
@@ -164,6 +167,9 @@ section.contact__findanswer {
               margin-right: 0;
               margin-left: 0;
             }
+            br {
+              display: none;
+            }
             @include media-tablet {
               grid-template-columns: 1fr;
               grid-row-gap: 20px;
@@ -190,6 +196,10 @@ section.contact__findanswer {
             grid-row-gap: 20px;
             grid-template-rows: auto;
           }
+          p,
+          br {
+            display: none;
+          }
           .contact__findanswer__wrap__secondinit__container__second__inputs {
             // flex: 1;
             // display: flex;
@@ -201,6 +211,9 @@ section.contact__findanswer {
             grid-row-gap: 40px;
             @include media-tablet {
               grid-row-gap: 20px;
+            }
+            br {
+              display: none;
             }
           }
           .contact__findanswer__wrap__secondinit__container__second__textarea {
@@ -276,6 +289,9 @@ section.contact__findanswer {
             grid-row-gap: 20px;
             grid-template-rows: auto;
           }
+          > p {
+            display: none;
+          }
           .contact__findanswer__wrap__secondinit__container__third__robot {
             display: flex;
             align-items: flex-start;
@@ -291,6 +307,9 @@ section.contact__findanswer {
             // flex: 3;
             // padding: 0 0 0 25px;
             align-items: flex-start;
+            br {
+              display: none;
+            }
             .submit {
               border: none;
               margin-left: 100px;
