@@ -12,89 +12,90 @@ section.use_case__usecases h3 {
   letter-spacing: 0px;
   color: #28373b;
   opacity: 1;
-  margin: 15px 0;
+  margin-bottom: 20.5px;
 }
 @media screen and (max-width: 768px) {
   section.use_case__usecases h3 {
     font: normal normal normal 26px/33px Muli;
   }
 }
-section.use_case__usecases .use_case__usecases-biglist {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: space-between;
+section.use_case__usecases .use_case__usecases__wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 61px;
+  grid-row-gap: 60px;
 }
-section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element {
+@media screen and (max-width: 768px) {
+  section.use_case__usecases .use_case__usecases__wrap {
+    grid-row-gap: 20px;
+  }
+}
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(393px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 61px;
+  grid-row-gap: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 21px;
+  }
+}
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element {
   max-width: initial;
-  flex: 0 1 47%;
-  margin: 2%;
   background: #005b9d 0% 0% no-repeat padding-box;
   cursor: pointer;
-  box-shadow: 0px 0px 10px #00000066;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   opacity: 1;
   overflow: hidden;
   transition: all ease 0.5s;
 }
-@media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element {
-    width: 100%;
-    flex-direction: column;
-    padding: 0;
-    flex: none;
-    max-width: inherit;
-    display: flex;
-    margin: 10px auto;
-  }
-}
-section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element:nth-child(odd) {
-  margin-left: 0;
-}
-section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element:nth-child(even) {
-  margin-right: 0;
-}
-section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element:hover {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   transform: translate(0, -10px);
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element:hover {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element:hover {
     transform: translate(0, -5px);
   }
 }
-section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-img {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-img {
   overflow: hidden;
   background: #005b9d 0% 0% no-repeat padding-box;
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-img {
-    flex: 0 1 33%;
-    margin-right: 0;
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-img {
+    max-height: 150px;
   }
 }
-section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-img img {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-img img {
   max-width: initial;
   transition: all ease 0.5s;
   object-fit: cover;
-  max-height: 250px;
   width: 100%;
   height: 100%;
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-img img {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-img img {
+    max-height: 150px;
     border-radius: 10px;
   }
 }
-section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text {
   padding: 30px;
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text {
     padding: 20px;
     flex: 1 1;
   }
 }
-section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text h4 {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text h4 {
   color: white;
   margin-bottom: 5px;
   font: italic normal normal 16px/20px Muli;
@@ -102,11 +103,11 @@ section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-bigli
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text h4 {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text h4 {
     font: italic normal normal 14px/18px Muli;
   }
 }
-section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text p {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text p {
   text-align: left;
   font: normal normal normal 26px/33px Muli;
   letter-spacing: 0px;
@@ -114,95 +115,78 @@ section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-bigli
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text p {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-biglist .use_case__usecases-biglist__element .use_case__usecases-biglist__element-text p {
     font: normal normal normal 14px/18px Muli;
   }
 }
-section.use_case__usecases .use_case__usecases-list {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: space-between;
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 61px;
+  grid-row-gap: 60px;
 }
-section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element {
+@media screen and (max-width: 768px) {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list {
+    grid-row-gap: 20px;
+  }
+}
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element {
   cursor: pointer;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   opacity: 1;
   overflow: hidden;
-  max-width: 393px;
-  flex: 0 1 30%;
-  margin: 2%;
   transition: all ease 0.5s;
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element {
-    flex: none;
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element {
     padding: 10px;
     width: 100%;
-    margin: 10px auto;
-    max-width: inherit;
     display: flex;
     flex-direction: row;
   }
 }
-section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:nth-child(3n+1) {
-  margin-left: 0;
-}
-@media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:nth-child(3n+1) {
-    margin: 10px auto;
-  }
-}
-section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:nth-child(3n+3) {
-  margin-right: 0;
-}
-@media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:nth-child(3n+3) {
-    margin: 10px auto;
-  }
-}
-section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:hover {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   transform: translate(0, -10px);
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:hover {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element:hover {
     transform: translate(0, -5px);
   }
 }
-section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-img {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-img {
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-img {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-img {
     flex: 0 1 33%;
     margin-right: 16px;
   }
 }
-section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-img img {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-img img {
   transition: all ease 0.5s;
   object-fit: cover;
-  max-width: 393px;
   max-height: 250px;
   width: 100%;
   height: 100%;
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-img img {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-img img {
     border-radius: 10px;
   }
 }
-section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text {
   padding: 30px;
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text {
     padding: 0;
     flex: 1 1;
   }
 }
-section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text h4 {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text h4 {
   margin-bottom: 5px;
   font: italic normal normal 16px/20px Muli;
   letter-spacing: 0px;
@@ -210,11 +194,11 @@ section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__el
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text h4 {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text h4 {
     font: italic normal normal 14px/18px Muli;
   }
 }
-section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text p {
+section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text p {
   text-align: left;
   font: normal normal normal 26px/33px Muli;
   letter-spacing: 0px;
@@ -222,7 +206,7 @@ section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__el
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
-  section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text p {
+  section.use_case__usecases .use_case__usecases__wrap .use_case__usecases-list .use_case__usecases-list__element .use_case__usecases-list__element-text p {
     margin-bottom: 20px;
     font: normal normal normal 14px/18px Muli;
   }

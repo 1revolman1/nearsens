@@ -300,17 +300,6 @@ section.productlist__products .productlist__products-container .productlist__pro
     width: 100%;
   }
 }
-section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-imgcontainer img {
-  height: 100%;
-}
-@media screen and (max-width: 768px) {
-  section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-imgcontainer img {
-    height: auto;
-    display: flex;
-    position: sticky;
-    top: 134px;
-  }
-}
 section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller {
   flex: 1;
   display: flex;

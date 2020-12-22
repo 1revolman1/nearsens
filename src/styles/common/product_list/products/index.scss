@@ -288,15 +288,6 @@ section.productlist__products {
             width: 100%;
           }
         }
-        img {
-          height: 100%;
-          @include media-tablet {
-            height: auto;
-            display: flex;
-            position: sticky;
-            top: 134px;
-          }
-        }
       }
       .productlist__products-container-element-controller {
         flex: 1;

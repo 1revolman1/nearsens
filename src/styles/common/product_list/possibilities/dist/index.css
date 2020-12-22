@@ -95,7 +95,9 @@ section.productlist__posibilities .productlist__posibilities-prodcontainer .prod
 section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-img img {
   border-radius: 10px;
   object-fit: cover;
-  height: auto;
+  max-width: 150px;
+  min-height: 150px;
+  max-height: 150px;
 }
 @media screen and (max-width: 768px) {
   section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-img img {

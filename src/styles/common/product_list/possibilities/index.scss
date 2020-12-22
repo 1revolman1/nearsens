@@ -86,7 +86,10 @@ section.productlist__posibilities {
           // max-width: 150px;
           border-radius: 10px;
           object-fit: cover;
-          height: auto;
+          // height: auto;
+          max-width: 150px;
+          min-height: 150px;
+          max-height: 150px;
           @include media-tablet {
             max-width: 100px;
             min-height: 100px;
