@@ -126,7 +126,7 @@ section.use_case__usecases .use_case__usecases-list {
 }
 section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element {
   cursor: pointer;
-  box-shadow: 0px 0px 10px #00000066;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   opacity: 1;
   overflow: hidden;
@@ -163,6 +163,7 @@ section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__el
   }
 }
 section.use_case__usecases .use_case__usecases-list .use_case__usecases-list__element:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   transform: translate(0, -10px);
 }
 @media screen and (max-width: 768px) {
