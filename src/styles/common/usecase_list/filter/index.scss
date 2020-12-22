@@ -87,7 +87,8 @@
       .custom-option {
         position: relative;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        // justify-content: space-between;
         align-items: center;
         flex-direction: row;
         // display: block;
@@ -96,27 +97,68 @@
         letter-spacing: 0px;
         color: #333333;
         cursor: pointer;
-        transition: all 0.5s;
+        transition: all 0.5s ease;
         @include media-tablet {
           padding: 9px 18px;
+        }
+        span {
+          color: #333333;
+          transform: translate(-18px, 0);
+          transition: all 0.5s ease;
         }
         i {
           color: #2ec9ad;
           opacity: 0;
+          transition: all 0.5s ease;
           // display: none;
-          margin-left: 10px;
+          // margin-left: 10px;
+          &.fa-times {
+            margin-left: auto;
+          }
+          // &.fa-plus {
+          //   display: none;
+          // }
         }
         &.selected {
           color: #ffffff;
           background: #005b9d 0% 0% no-repeat padding-box;
+          span {
+            color: #ffffff;
+          }
           i {
-            opacity: 1;
+            &.fa-times {
+              opacity: 1;
+            }
           }
         }
-        &:hover {
+        &:not(.selected):hover {
+          color: #ffffff;
+          background: #005b9d 0% 0% no-repeat padding-box;
           cursor: pointer;
-          background-color: #b2b2b2;
+          span {
+            color: #ffffff;
+            transform: translate(0px, 0);
+          }
+          i {
+            &.fa-plus {
+              margin-right: 5px;
+              opacity: 1;
+            }
+          }
         }
+        // @media screen and (min-width: 769px) {
+        //   &:not(.selected):hover {
+        //     color: #ffffff;
+        //     background: #005b9d 0% 0% no-repeat padding-box;
+        //     cursor: pointer;
+        //     i {
+        //       &.fa-plus {
+        //         margin-right: 5px;
+        //         opacity: 1;
+        //       }
+        //     }
+        //   }
+        // }
       }
     }
   }
