@@ -10,12 +10,12 @@ section.productpage__textblockvariations {
 section.productpage__textblockvariations .productpage__textblockvariations-textimgheader {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockvariations .productpage__textblockvariations-textimgheader {
     flex-flow: column wrap;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text {

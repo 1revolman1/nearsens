@@ -20,7 +20,7 @@ section.productpage__posibletodowithdevice {
       color: #28373b;
       opacity: 1;
       @include media-tablet {
-        font: normal normal normal 20px/25px Muli;
+        font: normal normal normal 26px/33px Muli;
       }
     }
     &.productpage__posibletodowithdevice__bottom {
@@ -84,13 +84,19 @@ section.productpage__posibletodowithdevice {
     .productpage__posibletodowithdevice__content-element {
       // flex: 0 1 30%;
       // max-width: 393px;
-      box-shadow: 0px 0px 10px #0000001a;
+      box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.1);
+      // box-shadow: 0px 0px 10px #0000001a;
       border-radius: 10px;
       overflow: auto;
-      transition: transform ease 0.5s;
+      transition: all ease 0.5s;
       cursor: pointer;
       &:hover {
         transform: translate(0, -5px);
+        box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.4);
+        @include media-tablet {
+          transform: none;
+          box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.1);
+        }
       }
       &:first-of-type {
         @include media-tablet {
@@ -106,16 +112,19 @@ section.productpage__posibletodowithdevice {
         display: flex;
         flex: 1 1 100%;
         margin: 10px 0;
-        padding: 15px;
+        padding: 10px;
+        // padding: 15px;
         max-width: inherit;
       }
       img {
         width: 100%;
+        min-height: 250px;
         max-height: 250px;
         object-fit: cover;
         @include media-tablet {
-          align-self: center;
           max-width: 100px;
+          min-height: 100px;
+          height: 100px;
           border-radius: 10px;
         }
       }

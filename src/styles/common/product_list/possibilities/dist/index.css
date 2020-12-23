@@ -80,6 +80,7 @@ section.productlist__posibilities .productlist__posibilities-prodcontainer .prod
 @media screen and (max-width: 768px) {
   section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:hover {
     transform: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
 }
 section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-img {

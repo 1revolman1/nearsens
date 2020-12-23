@@ -11,10 +11,12 @@ section.productpage__textblockvariations {
   .productpage__textblockvariations-textimgheader {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
+    margin-bottom: 80px;
     @include media-tablet {
       flex-flow: column wrap;
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
+      margin-bottom: 40px;
       // margin-bottom: 30px;
     }
     .productpage__textblockvariations-textimgheader__text {

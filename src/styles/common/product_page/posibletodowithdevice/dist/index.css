@@ -25,7 +25,7 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
 }
 @media screen and (max-width: 768px) {
   section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header h3 {
-    font: normal normal normal 20px/25px Muli;
+    font: normal normal normal 26px/33px Muli;
   }
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header.productpage__posibletodowithdevice__bottom {
@@ -90,14 +90,21 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
   }
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element {
-  box-shadow: 0px 0px 10px #0000001a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: auto;
-  transition: transform ease 0.5s;
+  transition: all ease 0.5s;
   cursor: pointer;
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element:hover {
   transform: translate(0, -5px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 768px) {
+  section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element:hover {
+    transform: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
 }
 @media screen and (max-width: 768px) {
   section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element:first-of-type {
@@ -114,19 +121,21 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
     display: flex;
     flex: 1 1 100%;
     margin: 10px 0;
-    padding: 15px;
+    padding: 10px;
     max-width: inherit;
   }
 }
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element img {
   width: 100%;
+  min-height: 250px;
   max-height: 250px;
   object-fit: cover;
 }
 @media screen and (max-width: 768px) {
   section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element img {
-    align-self: center;
     max-width: 100px;
+    min-height: 100px;
+    height: 100px;
     border-radius: 10px;
   }
 }
