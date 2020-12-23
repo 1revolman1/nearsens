@@ -120,7 +120,7 @@ export const useCasesList = function main() {
         elm.classList.remove('filtered');
       });
       this._allBlockContainer.forEach((elm) => {
-        const generalLength = elm.childNodes.length;
+        const generalLength = elm.children.length;
         const filteredLength = elm.querySelectorAll('.filtered').length;
         if (generalLength === filteredLength) {
           elm.classList.add('filtered-parent');

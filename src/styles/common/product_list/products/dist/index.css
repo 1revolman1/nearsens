@@ -267,18 +267,13 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element img {
-    height: 100%;
     max-height: 134px;
     max-width: 340px;
-  }
-}
-@media screen and (max-width: 768px) and (max-width: 350px) {
-  section.productlist__products .productlist__products-container .productlist__products-container-element img {
-    height: 100%;
   }
 }
 section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-imgcontainer {

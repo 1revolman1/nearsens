@@ -754,6 +754,7 @@ header.header .first-menu .second-block-in-menu .sign-in-link a:hover {
 }
 
 nav.nav {
+  height: 64px;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
