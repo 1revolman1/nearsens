@@ -58,12 +58,20 @@ section.usecase_details__blockwithbuyabbility {
           padding: 20.5px 0;
         }
         .usecase_details__blockwithbuyabbility-wrap__element-logo {
+          width: 50px;
+          height: 50px;
           margin-right: 30px;
+          @include media-tablet {
+            width: 36px;
+            height: 36px;
+          }
           img {
             width: 50px;
+            height: 50px;
             object-fit: cover;
             @include media-tablet {
               width: 36px;
+              height: 36px;
             }
           }
           @include media-tablet {
@@ -80,15 +88,26 @@ section.usecase_details__blockwithbuyabbility {
           }
           .usecase_details__blockwithbuyabbility-wrap__element-content-text {
             flex: 1;
+            display: flex;
+            align-items: center;
             @include media-tablet {
-              margin-bottom: 10px;
+              margin-bottom: 20px;
             }
             h4 {
               font: normal normal normal 22px/28px Muli;
               letter-spacing: 0px;
               color: #ffffff;
               opacity: 1;
-              margin-bottom: 5px;
+              // margin-bottom: 5px;
+              flex: 1;
+              @include media-tablet {
+                // flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // display: inline-block;
+                font: normal normal normal 16px/20px Muli;
+              }
               .disqount {
                 white-space: nowrap;
                 margin-left: 10px;
@@ -104,11 +123,6 @@ section.usecase_details__blockwithbuyabbility {
                   padding: 5px;
                   font: normal normal 600 12px/15px Muli;
                 }
-              }
-              @include media-tablet {
-                display: flex;
-                flex-flow: row wrap;
-                font: normal normal normal 16px/20px Muli;
               }
             }
             p {
@@ -127,17 +141,19 @@ section.usecase_details__blockwithbuyabbility {
             flex-direction: row;
             flex-wrap: wrap;
             @include media-tablet {
+              padding-left: 46px;
               justify-content: flex-start;
             }
             .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price {
               flex: 1;
               display: flex;
               justify-content: space-between;
+              gap: 10px;
               @include media-tablet {
                 justify-content: flex-start;
               }
               .current {
-                margin: 0 10.5px;
+                // margin: 0 10.5px;
                 font: normal normal 300 30px/38px Muli;
                 letter-spacing: 0px;
                 color: #ffffff;
@@ -147,7 +163,7 @@ section.usecase_details__blockwithbuyabbility {
                   font-size: 65%;
                 }
                 @include media-tablet {
-                  margin: 0 4.25px;
+                  // margin: 0 4.25px;
                   font: normal normal 300 26px/33px Muli;
                 }
                 &.current-low {
@@ -186,8 +202,35 @@ section.usecase_details__blockwithbuyabbility {
               margin-left: 40px;
               display: flex;
               flex: 1;
+              // gap: 22px;
+              --fgp-gap-container: calc(
+                var(--fgp-gap-parent, 0px) - 22px
+              ) !important;
+              --fgp-gap: var(--fgp-gap-container);
+              margin-top: var(--fgp-gap);
+              margin-right: var(--fgp-gap);
+              > * {
+                --fgp-gap-parent: 22px !important;
+                --fgp-gap-item: 22px !important;
+                --fgp-gap: var(--fgp-gap-item) !important;
+                margin-top: var(--fgp-gap);
+                margin-right: var(--fgp-gap);
+                @include media-tablet {
+                  --fgp-gap-parent: 14px !important;
+                  --fgp-gap-item: 14px !important;
+                  --fgp-gap: var(--fgp-gap-item) !important;
+                  margin-top: var(--fgp-gap);
+                  margin-right: var(--fgp-gap);
+                }
+              }
               @include media-tablet {
-                // flex-flow: row wrap;
+                // gap: 14px;
+                --fgp-gap-container: calc(
+                  var(--fgp-gap-parent, 0px) - 14px
+                ) !important;
+                --fgp-gap: var(--fgp-gap-container);
+                margin-top: var(--fgp-gap);
+                margin-right: var(--fgp-gap);
                 margin-left: 0;
                 flex-direction: row;
                 justify-content: flex-end;
@@ -209,13 +252,13 @@ section.usecase_details__blockwithbuyabbility {
                 }
               }
               .counter {
-                margin: 0 20px;
+                // margin: 0 20px;
                 font: normal normal normal 22px/28px Muli;
                 letter-spacing: 0px;
                 color: #ffffff;
                 opacity: 1;
                 @include media-tablet {
-                  margin: 0 10px;
+                  // margin: 0 10px;
                 }
               }
             }
