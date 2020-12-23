@@ -160,6 +160,9 @@ section.use_case__usecases-last {
     display: flex;
     justify-content: flex-end;
     margin: 5px 0 20px;
+    @include media-tablet {
+      margin: 20px 0;
+    }
     .use_case__posibletodowithdevice__bottom-btn {
       margin-left: 30px;
       display: none;
