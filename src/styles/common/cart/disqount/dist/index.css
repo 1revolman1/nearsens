@@ -16,7 +16,12 @@ section.cart__disqount ul.cart__disqount__main-list {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  margin-bottom: 43px;
+  margin-bottom: 37px;
+}
+@media screen and (max-width: 768px) {
+  section.cart__disqount ul.cart__disqount__main-list {
+    margin-bottom: 20px;
+  }
 }
 section.cart__disqount ul.cart__disqount__main-list .titel-container {
   grid-area: 1/1/3/2;
@@ -42,14 +47,14 @@ section.cart__disqount ul.cart__disqount__main-list .title {
   text-align: right;
   font: normal normal normal 22px/28px Muli;
   letter-spacing: 0px;
-  color: #28373B;
+  color: #28373b;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
   section.cart__disqount ul.cart__disqount__main-list .title {
     font: normal normal normal 18px/23px Muli;
     letter-spacing: 0px;
-    color: #28373B;
+    color: #28373b;
     opacity: 1;
   }
 }
@@ -75,19 +80,19 @@ section.cart__disqount ul.cart__disqount__main-list .price sup {
   section.cart__disqount ul.cart__disqount__main-list .price {
     font: normal normal normal 26px/33px Muli;
     letter-spacing: 0px;
-    color: #28373B;
+    color: #28373b;
     opacity: 1;
   }
 }
 section.cart__disqount .cart__disqount__btn {
   padding: 14px 30px;
-  background: #2EC9AD 0% 0% no-repeat padding-box;
-  border: 1px solid #2EC9AD;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
   border-radius: 40px;
   opacity: 1;
   font: normal normal bold 18px/23px Muli;
   letter-spacing: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
