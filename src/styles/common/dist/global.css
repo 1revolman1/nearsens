@@ -6454,5 +6454,5 @@ main.main,
 }
 
 .filtered {
-  display: none;
+  display: none !important;
 }

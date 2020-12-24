@@ -17,6 +17,20 @@ section.page_gabarit__blockwithbigimg {
     }
   }
   .page_gabarit__blockwithbigimg__wrap {
+    ul {
+      padding-left: 20px;
+      li {
+        list-style: inherit;
+        font: normal normal 300 18px/23px Muli;
+        letter-spacing: 0;
+        color: #333;
+        opacity: 1;
+        margin-bottom: 2px;
+      }
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
     &.img-left {
       .productpage__textblockvariations-textimgheader__img {
         padding: 0 25px 0 0px;

@@ -44,6 +44,20 @@ section.page_gabarit__blockwithbigimg.blue .page_gabarit__blockwithbigimg__wrap 
 section.page_gabarit__blockwithbigimg.blue .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text p {
   color: white;
 }
+section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap ul {
+  padding-left: 20px;
+}
+section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap ul li {
+  list-style: inherit;
+  font: normal normal 300 18px/23px Muli;
+  letter-spacing: 0;
+  color: #333;
+  opacity: 1;
+  margin-bottom: 2px;
+}
+section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap:last-of-type {
+  margin-bottom: 0;
+}
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap.img-left .productpage__textblockvariations-textimgheader__img {
   padding: 0 25px 0 0px;
   flex: 1 1 7%;

@@ -46,6 +46,7 @@ section.page_gabarit__pageheader {
       .page_gabarit__pageheader__text__head {
         @include hblock('h3', 32px) {
           color: #ffffff;
+          margin-bottom: 4px;
         }
 
         // h3 {
@@ -56,6 +57,7 @@ section.page_gabarit__pageheader {
         .page_gabarit__pageheader__text__info__text-block-text {
           @include hblock('h3', 32px) {
             color: #ffffff;
+            margin-bottom: 4px;
           }
           p {
             color: #ffffff;
