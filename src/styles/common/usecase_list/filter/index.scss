@@ -131,7 +131,9 @@
             }
           }
         }
-        &:not(.selected):hover {
+        &:not(.selected):hover,
+        &:not(.selected):active,
+        &:not(.selected):focus {
           color: #ffffff;
           background: #005b9d 0% 0% no-repeat padding-box;
           cursor: pointer;
