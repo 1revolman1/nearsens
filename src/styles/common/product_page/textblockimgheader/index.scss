@@ -72,6 +72,12 @@ section.productpage__textblockimgheader {
       color: #333333;
       opacity: 1;
       margin-bottom: 36px;
+      &:last-of-type {
+        margin-bottom: 0;
+        @include media-tablet {
+          margin-bottom: 24.5px;
+        }
+      }
       @include media-tablet {
         font: normal normal 300 14px/18px Muli;
       }

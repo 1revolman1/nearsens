@@ -115,7 +115,12 @@ section.productpage__textblockvariations .productpage__textblockvariations-texti
   margin-bottom: 36px;
 }
 section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text p:last-of-type {
-  margin-bottom: 24.5px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text p:last-of-type {
+    margin-bottom: 24.5px;
+  }
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockvariations .productpage__textblockvariations-textimgheader .productpage__textblockvariations-textimgheader__text p {
