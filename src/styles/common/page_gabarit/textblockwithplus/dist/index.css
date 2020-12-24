@@ -109,46 +109,20 @@ section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__text p {
   }
 }
 section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__content {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 51px;
+  grid-row-gap: 46px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__content {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }
 section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__content .page_garbit__textblockwithplus__content__element {
   display: flex;
   flex-flow: row wrap;
-  flex: 0 1 30%;
-  margin: 1.5%;
-}
-section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__content .page_garbit__textblockwithplus__content__element:nth-child(3n+3) {
-  margin-right: 0;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__content .page_garbit__textblockwithplus__content__element:nth-child(3n+3) {
-    margin: 10px;
-  }
-}
-section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__content .page_garbit__textblockwithplus__content__element:nth-child(3n+1) {
-  margin-left: 0;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__content .page_garbit__textblockwithplus__content__element:nth-child(3n+1) {
-    margin: 10px;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__content .page_garbit__textblockwithplus__content__element:nth-child(even) {
-    margin-right: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__content .page_garbit__textblockwithplus__content__element:nth-child(odd) {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__content .page_garbit__textblockwithplus__content__element {
-    margin: 10px;
-    flex: 0 1 45%;
-  }
 }
 section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__content .page_garbit__textblockwithplus__content__element .page_garbit__textblockwithplus__content__element__img {
   display: flex;

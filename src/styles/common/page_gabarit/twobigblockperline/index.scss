@@ -17,35 +17,43 @@ section.page_gabarit__twobigblockperline {
       }
     }
   }
-  // margin-bottom: 87px;
   padding-bottom: 43px;
   @include media-tablet {
     padding-bottom: 15px;
-    // margin-bottom: 40px;
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
   }
+  @include hblock('h3', 40px, normal, 50px) {
+    color: #28373b;
+    opacity: 1;
+    margin-bottom: 30px;
+  }
+
   .page_gabarit__twobigblockperline__wrap {
-    display: flex;
-    @include media-tablet {
-      width: 90%;
-      flex-direction: column;
-      margin: 0 auto;
-    }
+    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    // grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 41px;
+    grid-row-gap: 41px;
+
     .page_gabarit__twobigblockperline__wrap__element {
       display: flex;
       flex-flow: column wrap;
-      margin: 20px auto;
-      flex: 0 1 48%;
+      // margin: 20px auto;
+      // flex: 0 1 48%;
       @include media-tablet {
-        flex: none;
+        // flex: none;
         width: 100%;
         margin: 0;
       }
-      &:nth-child(even) {
-        margin-right: 0;
-      }
-      &:nth-child(odd) {
-        margin-left: 0;
-      }
+      // &:nth-child(even) {
+      //   margin-right: 0;
+      // }
+      // &:nth-child(odd) {
+      //   margin-left: 0;
+      // }
       .page_gabarit__twobigblockperline__wrap__element__img {
         margin-bottom: 31px;
         img {

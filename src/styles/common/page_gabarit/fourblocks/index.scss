@@ -46,41 +46,50 @@ section.page_gabarit__fourblocks {
       }
     }
     .page_gabarit__fourblocks__wrap__container {
-      display: flex;
-      flex-flow: row wrap;
+      // display: flex;
+      // flex-flow: row wrap;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-template-rows: auto;
+      grid-column-gap: 25px;
+      grid-row-gap: 20px;
+      @include media-tablet {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
       .page_gabarit__fourblocks__wrap__elemenet {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        flex: 0 1 22%;
-        margin: 20px 15px;
-        @include media-tablet {
-          flex: 0 1 48.5%;
-          margin: 20px 1%;
-        }
-        &:nth-child(4n + 4) {
-          margin-left: 0;
-          @include media-tablet {
-            margin: 20px 1%;
-          }
-        }
-        &:nth-child(4n + 1) {
-          margin-right: 0;
-          @include media-tablet {
-            margin: 20px 1%;
-          }
-        }
-        &:nth-child(odd) {
-          @include media-tablet {
-            margin-left: 0;
-          }
-        }
-        &:nth-child(even) {
-          @include media-tablet {
-            margin-right: 0;
-          }
-        }
+        // flex: 0 1 22%;
+        // margin: 20px 15px;
+        // @include media-tablet {
+        //   flex: 0 1 48.5%;
+        //   margin: 20px 1%;
+        // }
+        // &:nth-child(4n + 4) {
+        //   margin-left: 0;
+        //   @include media-tablet {
+        //     margin: 20px 1%;
+        //   }
+        // }
+        // &:nth-child(4n + 1) {
+        //   margin-right: 0;
+        //   @include media-tablet {
+        //     margin: 20px 1%;
+        //   }
+        // }
+        // &:nth-child(odd) {
+        //   @include media-tablet {
+        //     margin-left: 0;
+        //   }
+        // }
+        // &:nth-child(even) {
+        //   @include media-tablet {
+        //     margin-right: 0;
+        //   }
+        // }
         .page_gabarit__fourblocks__wrap__elemenet__img {
           margin-bottom: 33px;
           img {

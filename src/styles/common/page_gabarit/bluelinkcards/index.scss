@@ -3,7 +3,7 @@
 section.page_garbit__bluelinkcards {
   background: #005b9d 0% 0% no-repeat padding-box;
   opacity: 1;
-  padding: 76px 0 100px;
+  padding: 75px 0 100px;
   // margin-top: 50px;
   // margin-bottom: 48px;
   &.add-padding {
@@ -61,26 +61,31 @@ section.page_garbit__bluelinkcards {
       }
     }
     .page_garbit__bluelinkcards__wrap__blockcontainer {
-      display: flex;
-      flex-flow: row wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+      grid-template-rows: auto;
+      grid-column-gap: 51px;
+      grid-row-gap: 46px;
+      // display: flex;
+      // flex-flow: row wrap;
       @include media-tablet {
         flex-flow: column wrap;
       }
       .page_garbit__bluelinkcards__wrap__blockcontainer__element {
         display: flex;
         flex-flow: row wrap;
-        margin: 2%;
+        // margin: 2%;
         // margin: 25px;
-        flex: 0 1 30%;
-        &:nth-child(3n + 3) {
-          margin-right: 0;
-        }
-        &:nth-child(3n + 1) {
-          margin-left: 0;
-        }
-        @include media-tablet {
-          margin: 10px 0;
-        }
+        // flex: 0 1 30%;
+        // &:nth-child(3n + 3) {
+        //   margin-right: 0;
+        // }
+        // &:nth-child(3n + 1) {
+        //   margin-left: 0;
+        // }
+        // @include media-tablet {
+        //   margin: 10px 0;
+        // }
         .page_garbit__bluelinkcards__wrap__blockcontainer__element__img {
           margin-right: 25px;
           @include media-tablet {
@@ -123,7 +128,7 @@ section.page_garbit__bluelinkcards {
       }
     }
     .page_garbit__bluelinkcards__wrap__manipulatorcontainer {
-      margin: 15px 0;
+      margin: 44px 0 0;
       .page_garbit__bluelinkcards__wrap__manipulatorcontainer__btn {
         padding: 9px 30px;
         font: normal normal bold 18px/23px Muli;

@@ -10,7 +10,7 @@ section.page_garbit__blockacconts {
   }
 }
 section.page_garbit__blockacconts .page_garbit__blockacconts__text {
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__blockacconts .page_garbit__blockacconts__text {
@@ -84,27 +84,16 @@ section.page_garbit__blockacconts .page_garbit__blockacconts__text h1 {
   }
 }
 section.page_garbit__blockacconts .page_garbit__blockacconts__blocks {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 70px;
+  grid-row-gap: 46px;
 }
 section.page_garbit__blockacconts .page_garbit__blockacconts__blocks .page_garbit__blockacconts__blocks__element {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  flex: 0 1 44%;
-  margin: 3%;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__blockacconts .page_garbit__blockacconts__blocks .page_garbit__blockacconts__blocks__element {
-    flex: 0 1 100%;
-    margin: 10px auto;
-  }
-}
-section.page_garbit__blockacconts .page_garbit__blockacconts__blocks .page_garbit__blockacconts__blocks__element:nth-child(even) {
-  margin-right: 0;
-}
-section.page_garbit__blockacconts .page_garbit__blockacconts__blocks .page_garbit__blockacconts__blocks__element:nth-child(odd) {
-  margin-left: 0;
 }
 section.page_garbit__blockacconts .page_garbit__blockacconts__blocks .page_garbit__blockacconts__blocks__element .page_garbit__blockacconts__blocks__element__img {
   margin-right: 30px;

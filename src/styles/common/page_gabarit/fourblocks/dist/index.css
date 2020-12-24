@@ -135,48 +135,23 @@ section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h1 {
   }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
-  display: flex;
-  flex-flow: row wrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex: 0 1 22%;
-  margin: 20px 15px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet {
-    flex: 0 1 48.5%;
-    margin: 20px 1%;
-  }
-}
-section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet:nth-child(4n+4) {
-  margin-left: 0;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet:nth-child(4n+4) {
-    margin: 20px 1%;
-  }
-}
-section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet:nth-child(4n+1) {
-  margin-right: 0;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet:nth-child(4n+1) {
-    margin: 20px 1%;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet:nth-child(odd) {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet:nth-child(even) {
-    margin-right: 0;
-  }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__img {
   margin-bottom: 33px;

@@ -1,7 +1,7 @@
 section.page_garbit__bluelinkcards {
   background: #005b9d 0% 0% no-repeat padding-box;
   opacity: 1;
-  padding: 76px 0 100px;
+  padding: 75px 0 100px;
 }
 section.page_garbit__bluelinkcards.add-padding {
   padding: 126px 0 148px;
@@ -128,8 +128,11 @@ section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbi
   }
 }
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 51px;
+  grid-row-gap: 46px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer {
@@ -139,19 +142,6 @@ section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbi
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element {
   display: flex;
   flex-flow: row wrap;
-  margin: 2%;
-  flex: 0 1 30%;
-}
-section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element:nth-child(3n+3) {
-  margin-right: 0;
-}
-section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element:nth-child(3n+1) {
-  margin-left: 0;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element {
-    margin: 10px 0;
-  }
 }
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__img {
   margin-right: 25px;
@@ -252,7 +242,7 @@ section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbi
   }
 }
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__manipulatorcontainer {
-  margin: 15px 0;
+  margin: 44px 0 0;
 }
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__manipulatorcontainer .page_garbit__bluelinkcards__wrap__manipulatorcontainer__btn {
   padding: 9px 30px;
