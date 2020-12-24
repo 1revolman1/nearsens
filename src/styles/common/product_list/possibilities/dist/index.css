@@ -3,7 +3,7 @@ section.productlist__posibilities {
 }
 @media screen and (max-width: 768px) {
   section.productlist__posibilities {
-    width: 95%;
+    width: 90%;
     margin: 0 auto 60px;
   }
 }
@@ -12,6 +12,11 @@ section.productlist__posibilities .productlist__posibilities-head {
   justify-content: space-between;
   flex-direction: row;
   margin: 0 0 30px;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-head {
+    margin: 0 0 21px;
+  }
 }
 section.productlist__posibilities .productlist__posibilities-head h3 {
   font: normal normal normal 32px/40px Muli;
@@ -51,11 +56,6 @@ section.productlist__posibilities .productlist__posibilities-head button.discove
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
-  section.productlist__posibilities .productlist__posibilities-head {
-    margin: 0 17px 21px;
-  }
-}
 section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element {
   display: flex;
   flex-direction: row;
@@ -70,7 +70,7 @@ section.productlist__posibilities .productlist__posibilities-prodcontainer .prod
 @media screen and (max-width: 768px) {
   section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element {
     padding: 10px;
-    margin: 21px 10px;
+    margin: 21px 0;
   }
 }
 section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:hover {

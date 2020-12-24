@@ -3,7 +3,8 @@
 section.productlist__posibilities {
   margin-bottom: 80px;
   @include media-tablet {
-    width: 95%;
+    // width: 95%;
+    width: 90%;
     margin: 0 auto 60px;
   }
   .productlist__posibilities-head {
@@ -11,7 +12,10 @@ section.productlist__posibilities {
     justify-content: space-between;
     flex-direction: row;
     margin: 0 0 30px;
-    // margin: 0 30px 30px;
+    @include media-tablet {
+      // margin: 0 17px 21px;
+      margin: 0 0 21px;
+    }
     h3 {
       font: normal normal normal 32px/40px Muli;
       letter-spacing: 0px;
@@ -47,7 +51,7 @@ section.productlist__posibilities {
       }
     }
     @include media-tablet {
-      margin: 0 17px 21px;
+      // margin: 0 17px 21px;
     }
   }
   .productlist__posibilities-prodcontainer {
@@ -64,7 +68,8 @@ section.productlist__posibilities {
       transition: all ease 0.5s;
       @include media-tablet {
         padding: 10px;
-        margin: 21px 10px;
+        margin: 21px 0;
+        // margin: 21px 10px;
       }
       &:hover {
         transform: translate(0, -5px);
