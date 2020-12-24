@@ -236,9 +236,32 @@ var useProductList = function main() {
         }
       }
     };
-  }
+  } // document
+  //   .querySelectorAll(
+  //     '.productlist__pageheader-wrapper__slider-container__slider-element'
+  //   )
+  //   .forEach(function (slide) {
+  //     slide.addEventListener('click', function () {
+  //       console.log('TEST CLICK ON ELEMENT');
+  //     });
+  //   });
 
-  (0, _tinySlider.tns)(settingsSlick()); // console.log(settingsSlick());
+
+  var state = {
+    moving: true
+  };
+  var slider = (0, _tinySlider.tns)(settingsSlick());
+  var drag = false;
+  var sliderContainer = document.querySelector('.productlist__pageheader-wrapper__slider-container__slider');
+  sliderContainer.addEventListener('mousedown', function () {
+    return drag = false;
+  });
+  sliderContainer.addEventListener('mousemove', function () {
+    return drag = true;
+  });
+  $('.productlist__pageheader-wrapper__slider-container').on('click', '.productlist__pageheader-wrapper__slider-container__slider-element', function (event) {
+    if (!drag) console.log('click');
+  }); // console.log(settingsSlick());
   // $('.productlist__pageheader-wrapper__slider-container__slider').slick(
   //   settingsSlick()
   // );

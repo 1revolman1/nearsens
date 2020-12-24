@@ -179,9 +179,6 @@ section.cart__havegateway {
         }
       }
       @include media-tablet {
-        flex-direction: column;
-        flex: 1;
-        //   margin: 5px 0;
         --fgp-gap-container: calc(var(--fgp-gap-parent, 0px) - 10px) !important;
         --fgp-gap: var(--fgp-gap-container);
         margin-top: var(--fgp-gap);

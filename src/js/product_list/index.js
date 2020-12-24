@@ -296,7 +296,33 @@ export const useProductList = function main() {
       },
     };
   }
-  tns(settingsSlick());
+
+  // document
+  //   .querySelectorAll(
+  //     '.productlist__pageheader-wrapper__slider-container__slider-element'
+  //   )
+  //   .forEach(function (slide) {
+  //     slide.addEventListener('click', function () {
+  //       console.log('TEST CLICK ON ELEMENT');
+  //     });
+  //   });
+
+  let state = { moving: true };
+  const slider = tns(settingsSlick());
+
+  let drag = false;
+  const sliderContainer = document.querySelector(
+    '.productlist__pageheader-wrapper__slider-container__slider'
+  );
+  sliderContainer.addEventListener('mousedown', () => (drag = false));
+  sliderContainer.addEventListener('mousemove', () => (drag = true));
+  $('.productlist__pageheader-wrapper__slider-container').on(
+    'click',
+    '.productlist__pageheader-wrapper__slider-container__slider-element',
+    function (event) {
+      if (!drag) console.log('click');
+    }
+  );
   // console.log(settingsSlick());
   // $('.productlist__pageheader-wrapper__slider-container__slider').slick(
   //   settingsSlick()
