@@ -51,11 +51,12 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
 }
 @media screen and (max-width: 768px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container .productpage__specificationblock-wrap__container-block {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     flex: none;
-    max-width: inherit;
   }
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container .productpage__specificationblock-wrap__container-block .productpage__specificationblock-wrap__container-block__element {
@@ -65,8 +66,7 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
 }
 @media screen and (max-width: 768px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container .productpage__specificationblock-wrap__container-block .productpage__specificationblock-wrap__container-block__element {
-    margin: 10px;
-    flex: 0 1 calc(36% + 20px);
+    margin: 0;
     width: 100%;
   }
 }
@@ -131,6 +131,7 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
 }
 @media screen and (max-width: 768px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container .productpage__specificationblock-wrap__container-block .productpage__specificationblock-wrap__container-block__element p {
+    margin-bottom: 0px;
     font: normal normal 300 14px/18px Muli;
   }
 }
@@ -169,7 +170,7 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container .productpage__specificationblock-wrap__container-img {
     flex: none;
     width: 100%;
-    margin: 15px 0;
+    margin: 30px 0;
   }
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container .productpage__specificationblock-wrap__container-img img {
