@@ -10,6 +10,7 @@ section.cart__vaucher {
   padding: 25px 20px 25px 30px;
   margin-bottom: 40px;
   @include media-tablet {
+    // display: grid;
     width: 90%;
     padding: 20px 11px;
     margin: 0 auto 20px;
@@ -31,9 +32,25 @@ section.cart__vaucher {
     grid-template-columns: 1fr fit-content(100%);
     grid-column-gap: 20px;
     @include media-tablet {
-      display: flex;
+      grid-row-gap: 0px;
+      // display: flex;
+      // flex-flow: row wrap;
+      // gap: 20px;
+
+      // row-gap: 10px;
+      // column-gap: 20px;
       width: 100%;
-      justify-content: space-between;
+      // justify-content: space-between;
+      @media screen and (max-width: 375px) {
+        display: flex;
+        flex-flow: row wrap;
+        // row-gap: 10px;
+        // column-gap: 20px;
+        // --fgp-gap-container: calc(var(--fgp-gap-parent, 0px) - 20px) !important;
+        // --fgp-gap: var(--fgp-gap-container);
+        // margin-top: var(--fgp-gap);
+        // margin-right: var(--fgp-gap);
+      }
     }
     .cart__vaucher__manipulator__btn {
       // margin: 0 10px;
@@ -47,10 +64,15 @@ section.cart__vaucher {
       opacity: 1;
       @include media-tablet {
         // flex:1;
-        width: 35%;
-        margin: 0;
+        // width: 35%;
+        // margin: 0;
         padding: 12px 18px;
         // padding: 14px 20px;
+        @media screen and (max-width: 375px) {
+          // flex: 1;
+          width: 35%;
+          margin: 0;
+        }
         font: normal normal bold 15px/20px Muli;
         letter-spacing: 0px;
         color: #ffffff;
@@ -69,11 +91,16 @@ section.cart__vaucher {
       color: #333333;
       opacity: 1;
       @include media-tablet {
-        flex: 1;
+        // flex: 1;
         // width: 62%;
         // margin:0;
-        width: 57%;
-        margin: 0 20px 0 0;
+        // width: 57%;
+        // margin: 0 20px 0 0;
+        @media screen and (max-width: 375px) {
+          flex: 1;
+          width: 62%;
+          margin: 0;
+        }
         padding: 12px 15px;
         font: italic normal 300 15px/20px Muli;
         letter-spacing: 0px;

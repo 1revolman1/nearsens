@@ -100,7 +100,11 @@ section.productlist__pageheader .productlist__pageheader-wrapper__slider-contain
 section.productlist__pageheader .productlist__pageheader-wrapper__slider-container .productlist__pageheader-wrapper__slider-container__slider .productlist__pageheader-wrapper__slider-container__slider-element.non-filter {
   opacity: 0.4;
 }
+section.productlist__pageheader .productlist__pageheader-wrapper__slider-container .productlist__pageheader-wrapper__slider-container__slider .productlist__pageheader-wrapper__slider-container__slider-element.non-filter img {
+  cursor: auto;
+}
 section.productlist__pageheader .productlist__pageheader-wrapper__slider-container .productlist__pageheader-wrapper__slider-container__slider .productlist__pageheader-wrapper__slider-container__slider-element img {
+  cursor: pointer;
   object-fit: cover;
 }
 section.productlist__pageheader .productlist__pageheader-wrapper {

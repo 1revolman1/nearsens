@@ -100,13 +100,18 @@ section.productlist__pageheader {
         justify-content: center;
         margin: 0 10px;
         outline: none;
+
         @include media-tablet {
           margin: 0 7px;
         }
         &.non-filter {
           opacity: 0.4;
+          img {
+            cursor: auto;
+          }
         }
         img {
+          cursor: pointer;
           object-fit: cover;
         }
       }
