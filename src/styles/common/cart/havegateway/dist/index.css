@@ -40,7 +40,8 @@ section.cart__havegateway .cart__havegateway__information .cart__havegateway__in
   }
 }
 section.cart__havegateway .cart__havegateway__information .cart__havegateway__information__img img {
-  width: 100%;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
 }
 section.cart__havegateway .cart__havegateway__information .cart__havegateway__information__text {
