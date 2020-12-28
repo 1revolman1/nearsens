@@ -316,9 +316,16 @@ export const useProductList = function main() {
   // sliderContainer.addEventListener('mousemove', () => (drag = true));
   // $('.productlist__pageheader-wrapper__slider-container').on(
   //   'click',
-  //   '.productlist__pageheader-wrapper__slider-container__slider-element',
+  //   '.productlist__pageheader-wrapper__slider-container__slider-element img',
   //   function (event) {
-  //     if (!drag) console.log('click');
+  //     if (!drag) {
+  //       console.log('click');
+  //       $(this).prop('disabled', true);
+  //       //время, за которое анимация проходит
+  //       setTimeout(() => {
+  //         $(this).prop('disabled', false);
+  //       }, 2000);
+  //     }
   //   }
   // );
 
