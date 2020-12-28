@@ -43,6 +43,8 @@ section.index__parallax {
   &.no-parallax {
     position: relative;
     top: inherit;
+    max-width: 2475px;
+    margin: 0 auto;
     &::after {
       @media screen and (min-width: 1925px) {
         content: '';

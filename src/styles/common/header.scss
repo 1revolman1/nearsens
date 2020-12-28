@@ -93,6 +93,7 @@ section.header__holiday {
 }
 
 header.header {
+  position: relative;
   width: 100%;
   z-index: 9;
   background: #004c83 0% 0% no-repeat padding-box;
@@ -111,7 +112,7 @@ header.header {
     left: 0;
     height: 64px;
     @include media-tablet {
-      height: inherit;
+      height: 55px;
     }
   }
   &.holiday-header {
@@ -127,8 +128,8 @@ header.header {
   .first-menu {
     border-bottom: 1px solid #33709c;
     // border-bottom: 1px solid #FFFFFF;
-    // padding: 27px 0;
-    padding: 23px 0;
+    // padding: 23px 0;
+    padding: 21px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -824,10 +825,15 @@ nav.nav {
     transition: all ease 0.5s;
     transform: translate(0, -100%);
     position: fixed;
-    top: $additionalNavMenuToTopRESP;
-    min-height: calc(100vh - 57px);
-    max-height: calc(100vh - 57px);
+    top: $additionalNavMenuToTopBIGMENU;
+    min-height: calc(100vh - 64px);
+    max-height: calc(100vh - 64px);
     overflow: auto;
+    @include media-tablet {
+      min-height: calc(100vh - 55px);
+      max-height: calc(100vh - 55px);
+      top: $additionalNavMenuToTopRESP;
+    }
     &.holiday-header {
       transform: translate(0, calc(-100% - 44px));
     }

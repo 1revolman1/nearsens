@@ -14,12 +14,14 @@ section.index__parallax * {
 }
 @media screen and (max-width: 768px) {
   section.index__parallax {
-    margin-top: 57px;
+    margin-top: 55px;
   }
 }
 section.index__parallax.no-parallax {
   position: relative;
   top: inherit;
+  max-width: 2475px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1925px) {
   section.index__parallax.no-parallax::after {

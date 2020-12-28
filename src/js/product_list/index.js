@@ -308,7 +308,6 @@ export const useProductList = function main() {
   //   });
 
   const slider = tns(settingsSlick());
-
   // let drag = false;
   // const sliderContainer = document.querySelector(
   //   '.productlist__pageheader-wrapper__slider-container__slider'
@@ -322,6 +321,7 @@ export const useProductList = function main() {
   //     if (!drag) console.log('click');
   //   }
   // );
+
   // console.log(settingsSlick());
   // $('.productlist__pageheader-wrapper__slider-container__slider').slick(
   //   settingsSlick()
