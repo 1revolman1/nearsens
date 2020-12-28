@@ -12,6 +12,12 @@ section.page_garbit__textblockwithplus {
 
     padding: 40px 0 40px;
   }
+  &.blue {
+    background: #005b9d 0% 0% no-repeat padding-box;
+    * {
+      color: white !important;
+    }
+  }
   .page_garbit__textblockwithplus__text {
     width: 46%;
     @include media-tablet {

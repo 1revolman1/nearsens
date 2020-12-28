@@ -12,6 +12,14 @@ section.page_gabarit__blockwithbigimg {
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
     .page_gabarit__blockwithbigimg__wrap {
+      ul {
+        li {
+          color: white;
+        }
+      }
+      * {
+        color: white !important;
+      }
       .productpage__textblockvariations-textimgheader__text {
         @include hblock('h3', 26px, normal, 33px) {
           color: white;
@@ -78,6 +86,7 @@ section.page_gabarit__blockwithbigimg {
       @include hblock('h3', 40px, normal, 50px) {
         margin-bottom: 30px;
         @include media-tablet {
+          font: normal normal normal 22px/28px Muli;
           margin-bottom: 15px;
         }
       }
@@ -86,9 +95,14 @@ section.page_gabarit__blockwithbigimg {
       padding: 0;
       flex: none;
       img {
+        width: 100%;
         max-height: 458px;
+        height: 458px;
+        max-width: 650px;
         @include media-forHEADER {
+          max-width: 100%;
           max-height: 325px;
+          height: 325px;
         }
       }
     }

@@ -4,6 +4,9 @@ section.page_gabarit__blockwithimg {
 section.page_gabarit__blockwithimg.blue {
   background: #005b9d 0% 0% no-repeat padding-box;
 }
+section.page_gabarit__blockwithimg.blue .page_gabarit__blockwithimg__wrap * {
+  color: white !important;
+}
 section.page_gabarit__blockwithimg.blue .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text p {
   color: white;
 }
@@ -66,6 +69,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h6 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h6 {
+    font: normal normal normal 22px/28px Muli;
     margin-bottom: 15px;
   }
 }
@@ -77,6 +81,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h5 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h5 {
+    font: normal normal normal 22px/28px Muli;
     margin-bottom: 15px;
   }
 }
@@ -88,6 +93,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h4 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h4 {
+    font: normal normal normal 22px/28px Muli;
     margin-bottom: 15px;
   }
 }
@@ -99,6 +105,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h3 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h3 {
+    font: normal normal normal 22px/28px Muli;
     margin-bottom: 15px;
   }
 }
@@ -110,6 +117,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h2 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h2 {
+    font: normal normal normal 22px/28px Muli;
     margin-bottom: 15px;
   }
 }
@@ -121,6 +129,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h1 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap h1 {
+    font: normal normal normal 22px/28px Muli;
     margin-bottom: 15px;
   }
 }
@@ -151,11 +160,21 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
   opacity: 1;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text h6 {
+    font: normal normal normal 16px/18px Muli;
+  }
+}
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text h5 {
   font: normal normal bold 18px/28px Muli;
   letter-spacing: 0px;
   opacity: 1;
   text-align: left;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text h5 {
+    font: normal normal normal 16px/18px Muli;
+  }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text h4 {
   font: normal normal bold 20px/28px Muli;
@@ -163,11 +182,21 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
   opacity: 1;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text h4 {
+    font: normal normal normal 16px/18px Muli;
+  }
+}
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text h3 {
   font: normal normal bold 22px/28px Muli;
   letter-spacing: 0px;
   opacity: 1;
   text-align: left;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text h3 {
+    font: normal normal normal 16px/18px Muli;
+  }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text h2 {
   font: normal normal bold 24px/28px Muli;
@@ -175,11 +204,21 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
   opacity: 1;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text h2 {
+    font: normal normal normal 16px/18px Muli;
+  }
+}
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text h1 {
   font: normal normal bold 26px/28px Muli;
   letter-spacing: 0px;
   opacity: 1;
   text-align: left;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text h1 {
+    font: normal normal normal 16px/18px Muli;
+  }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.left .page_gabarit__blockwithimg__wrap__element__text p {
   text-align: left;
@@ -193,11 +232,21 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
   opacity: 1;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text h6 {
+    font: normal normal normal 16px/18px Muli;
+  }
+}
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text h5 {
   font: normal normal bold 18px/28px Muli;
   letter-spacing: 0px;
   opacity: 1;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text h5 {
+    font: normal normal normal 16px/18px Muli;
+  }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text h4 {
   font: normal normal bold 20px/28px Muli;
@@ -205,11 +254,21 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
   opacity: 1;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text h4 {
+    font: normal normal normal 16px/18px Muli;
+  }
+}
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text h3 {
   font: normal normal bold 22px/28px Muli;
   letter-spacing: 0px;
   opacity: 1;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text h3 {
+    font: normal normal normal 16px/18px Muli;
+  }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text h2 {
   font: normal normal bold 24px/28px Muli;
@@ -217,11 +276,21 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
   opacity: 1;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text h2 {
+    font: normal normal normal 16px/18px Muli;
+  }
+}
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text h1 {
   font: normal normal bold 26px/28px Muli;
   letter-spacing: 0px;
   opacity: 1;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text h1 {
+    font: normal normal normal 16px/18px Muli;
+  }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element.center .page_gabarit__blockwithimg__wrap__element__text p {
   text-align: center;
@@ -235,8 +304,16 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
   }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__img img {
+  max-width: 334px;
+  width: 100%;
+  max-height: 204px;
   border-radius: 15px;
   object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__img img {
+    max-width: inherit;
+  }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text {
   display: flex;
@@ -251,7 +328,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text h6 {
-    font: normal normal bold 18px/28px Muli;
+    font: normal normal normal 16px/18px Muli;
   }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text h5 {
@@ -262,7 +339,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text h5 {
-    font: normal normal bold 18px/28px Muli;
+    font: normal normal normal 16px/18px Muli;
   }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text h4 {
@@ -273,7 +350,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text h4 {
-    font: normal normal bold 18px/28px Muli;
+    font: normal normal normal 16px/18px Muli;
   }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text h3 {
@@ -284,7 +361,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text h3 {
-    font: normal normal bold 18px/28px Muli;
+    font: normal normal normal 16px/18px Muli;
   }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text h2 {
@@ -295,7 +372,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text h2 {
-    font: normal normal bold 18px/28px Muli;
+    font: normal normal normal 16px/18px Muli;
   }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text h1 {
@@ -306,7 +383,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text h1 {
-    font: normal normal bold 18px/28px Muli;
+    font: normal normal normal 16px/18px Muli;
   }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text p {
@@ -317,6 +394,6 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element .page_gabarit__blockwithimg__wrap__element__text p {
-    font: normal normal 300 14px/20px Muli;
+    font: normal normal 300 12px/18px Muli;
   }
 }

@@ -4,7 +4,15 @@
 section.page_gabarit__twobigblockperline {
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
+    @include hblock('h3', 40px, normal, 50px) {
+      color: white;
+      opacity: 1;
+      margin-bottom: 30px;
+    }
     .page_gabarit__twobigblockperline__wrap {
+      * {
+        color: white !important;
+      }
       .page_gabarit__twobigblockperline__wrap__element {
         .page_gabarit__twobigblockperline__wrap__element__text {
           @include hblock('h3', 40px, normal, 50px) {
@@ -28,6 +36,9 @@ section.page_gabarit__twobigblockperline {
     color: #28373b;
     opacity: 1;
     margin-bottom: 30px;
+    @include media-tablet {
+      font: normal normal normal 22px/28px Muli;
+    }
   }
 
   .page_gabarit__twobigblockperline__wrap {
@@ -69,7 +80,7 @@ section.page_gabarit__twobigblockperline {
           opacity: 1;
           margin-bottom: 30px;
           @include media-tablet {
-            font: normal normal normal 20px/25px Muli;
+            font: normal normal normal 18px/25px Muli;
           }
         }
         // h3 {

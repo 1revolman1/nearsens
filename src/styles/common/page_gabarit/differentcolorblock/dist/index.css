@@ -23,11 +23,21 @@ section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorbl
   opacity: 1;
   color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h6 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h5 {
   font: normal normal 300 41px/56px Muli;
   letter-spacing: 0px;
   opacity: 1;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h5 {
+    font: normal normal normal 22px/28px Muli;
+  }
 }
 section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h4 {
   font: normal normal 300 43px/56px Muli;
@@ -35,11 +45,21 @@ section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorbl
   opacity: 1;
   color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h4 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h3 {
   font: normal normal 300 45px/56px Muli;
   letter-spacing: 0px;
   opacity: 1;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h3 {
+    font: normal normal normal 22px/28px Muli;
+  }
 }
 section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h2 {
   font: normal normal 300 47px/56px Muli;
@@ -47,11 +67,21 @@ section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorbl
   opacity: 1;
   color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h2 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h1 {
   font: normal normal 300 49px/56px Muli;
   letter-spacing: 0px;
   opacity: 1;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap h1 {
+    font: normal normal normal 22px/28px Muli;
+  }
 }
 section.page_garbarit__differentcolorblock.blue .page_garbarit__differentcolorblock-wrap p {
   color: #ffffff;
@@ -62,11 +92,21 @@ section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorbl
   opacity: 1;
   color: #333333;
 }
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h6 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h5 {
   font: normal normal 300 41px/56px Muli;
   letter-spacing: 0px;
   opacity: 1;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h5 {
+    font: normal normal normal 22px/28px Muli;
+  }
 }
 section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h4 {
   font: normal normal 300 43px/56px Muli;
@@ -74,11 +114,21 @@ section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorbl
   opacity: 1;
   color: #333333;
 }
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h4 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h3 {
   font: normal normal 300 45px/56px Muli;
   letter-spacing: 0px;
   opacity: 1;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h3 {
+    font: normal normal normal 22px/28px Muli;
+  }
 }
 section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h2 {
   font: normal normal 300 47px/56px Muli;
@@ -86,11 +136,21 @@ section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorbl
   opacity: 1;
   color: #333333;
 }
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h2 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h1 {
   font: normal normal 300 49px/56px Muli;
   letter-spacing: 0px;
   opacity: 1;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap h1 {
+    font: normal normal normal 22px/28px Muli;
+  }
 }
 section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap p {
   color: #333333;

@@ -19,6 +19,9 @@ section.page_garbarit__differentcolorblock {
     .page_garbarit__differentcolorblock-wrap {
       @include hblock('h3', 45px, 300, 56px) {
         color: #ffffff;
+        @include media-tablet {
+          font: normal normal normal 22px/28px Muli;
+        }
       }
       p {
         color: #ffffff;
@@ -29,6 +32,9 @@ section.page_garbarit__differentcolorblock {
     .page_garbarit__differentcolorblock-wrap {
       @include hblock('h3', 45px, 300, 56px) {
         color: #333333;
+        @include media-tablet {
+          font: normal normal normal 22px/28px Muli;
+        }
       }
       p {
         color: #333333;

@@ -11,6 +11,12 @@ section.page_garbit__blockacconts {
     margin: 0 auto;
     padding: 0 0 40px;
   }
+  &.blue {
+    background: #005b9d 0% 0% no-repeat padding-box;
+    * {
+      color: white !important;
+    }
+  }
   .page_garbit__blockacconts__text {
     margin-bottom: 53px;
     @include media-tablet {

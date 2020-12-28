@@ -9,6 +9,12 @@ section.page_garbit__textblockwithplus {
     padding: 40px 0 40px;
   }
 }
+section.page_garbit__textblockwithplus.blue {
+  background: #005b9d 0% 0% no-repeat padding-box;
+}
+section.page_garbit__textblockwithplus.blue * {
+  color: white !important;
+}
 section.page_garbit__textblockwithplus .page_garbit__textblockwithplus__text {
   width: 46%;
 }

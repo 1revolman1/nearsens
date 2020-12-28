@@ -15,6 +15,12 @@ section.page_garbit__textblockwithlogo {
   &.add-padding {
     padding-top: 80px;
   }
+  &.blue {
+    background: #005b9d 0% 0% no-repeat padding-box;
+    * {
+      color: white !important;
+    }
+  }
   .page_garbit__textblockwithlogo__text {
     @include hblock('h3', 45px, 300, 56px) {
       color: #333333;

@@ -4,6 +4,57 @@ section.page_gabarit__twobigblockperline {
 section.page_gabarit__twobigblockperline.blue {
   background: #005b9d 0% 0% no-repeat padding-box;
 }
+section.page_gabarit__twobigblockperline.blue h6 {
+  font: normal normal normal 34px/50px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue h5 {
+  font: normal normal normal 36px/50px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue h4 {
+  font: normal normal normal 38px/50px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue h3 {
+  font: normal normal normal 40px/50px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue h2 {
+  font: normal normal normal 42px/50px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue h1 {
+  font: normal normal normal 44px/50px Muli;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue .page_gabarit__twobigblockperline__wrap * {
+  color: white !important;
+}
 section.page_gabarit__twobigblockperline.blue .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h6 {
   font: normal normal normal 34px/50px Muli;
   letter-spacing: 0px;
@@ -59,6 +110,11 @@ section.page_gabarit__twobigblockperline h6 {
   opacity: 1;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h6 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.page_gabarit__twobigblockperline h5 {
   font: normal normal normal 36px/50px Muli;
   letter-spacing: 0px;
@@ -66,6 +122,11 @@ section.page_gabarit__twobigblockperline h5 {
   color: #28373b;
   opacity: 1;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h5 {
+    font: normal normal normal 22px/28px Muli;
+  }
 }
 section.page_gabarit__twobigblockperline h4 {
   font: normal normal normal 38px/50px Muli;
@@ -75,6 +136,11 @@ section.page_gabarit__twobigblockperline h4 {
   opacity: 1;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h4 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.page_gabarit__twobigblockperline h3 {
   font: normal normal normal 40px/50px Muli;
   letter-spacing: 0px;
@@ -82,6 +148,11 @@ section.page_gabarit__twobigblockperline h3 {
   color: #28373b;
   opacity: 1;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h3 {
+    font: normal normal normal 22px/28px Muli;
+  }
 }
 section.page_gabarit__twobigblockperline h2 {
   font: normal normal normal 42px/50px Muli;
@@ -91,6 +162,11 @@ section.page_gabarit__twobigblockperline h2 {
   opacity: 1;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h2 {
+    font: normal normal normal 22px/28px Muli;
+  }
+}
 section.page_gabarit__twobigblockperline h1 {
   font: normal normal normal 44px/50px Muli;
   letter-spacing: 0px;
@@ -98,6 +174,11 @@ section.page_gabarit__twobigblockperline h1 {
   color: #28373b;
   opacity: 1;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h1 {
+    font: normal normal normal 22px/28px Muli;
+  }
 }
 section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap {
   display: grid;
@@ -131,7 +212,7 @@ section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h6 {
-    font: normal normal normal 20px/25px Muli;
+    font: normal normal normal 18px/25px Muli;
   }
 }
 section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h5 {
@@ -144,7 +225,7 @@ section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h5 {
-    font: normal normal normal 20px/25px Muli;
+    font: normal normal normal 18px/25px Muli;
   }
 }
 section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h4 {
@@ -157,7 +238,7 @@ section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h4 {
-    font: normal normal normal 20px/25px Muli;
+    font: normal normal normal 18px/25px Muli;
   }
 }
 section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h3 {
@@ -170,7 +251,7 @@ section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h3 {
-    font: normal normal normal 20px/25px Muli;
+    font: normal normal normal 18px/25px Muli;
   }
 }
 section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h2 {
@@ -183,7 +264,7 @@ section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h2 {
-    font: normal normal normal 20px/25px Muli;
+    font: normal normal normal 18px/25px Muli;
   }
 }
 section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h1 {
@@ -196,7 +277,7 @@ section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h1 {
-    font: normal normal normal 20px/25px Muli;
+    font: normal normal normal 18px/25px Muli;
   }
 }
 section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text p {

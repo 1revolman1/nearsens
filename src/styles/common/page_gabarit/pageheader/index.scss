@@ -17,6 +17,9 @@ section.page_gabarit__pageheader {
         .page_gabarit__pageheader__text__head {
           @include hblock('h3', 32px) {
             color: black;
+            @include media-tablet {
+              font: normal normal normal 22px/28px Muli;
+            }
           }
           // h3 {
           //   color: black;
@@ -26,6 +29,9 @@ section.page_gabarit__pageheader {
           .page_gabarit__pageheader__text__info__text-block-text {
             @include hblock('h3', 32px) {
               color: black;
+              @include media-tablet {
+                font: normal normal normal 22px/28px Muli;
+              }
             }
             p {
               color: black;
@@ -37,6 +43,9 @@ section.page_gabarit__pageheader {
   }
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
+    * {
+      color: white !important;
+    }
   }
   .page_gabarit__pageheader-wrap {
     .page_gabarit__pageheader__text {
@@ -47,6 +56,9 @@ section.page_gabarit__pageheader {
         @include hblock('h3', 32px) {
           color: #ffffff;
           margin-bottom: 4px;
+          @include media-tablet {
+            font: normal normal normal 22px/28px Muli;
+          }
         }
 
         // h3 {
