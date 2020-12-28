@@ -2,6 +2,7 @@
 @import '../../../utils/variables.scss';
 section.productpage__pageheader {
   position: relative;
+  overflow: hidden;
   max-height: 450px;
   @include media-tablet {
     max-height: inherit;

@@ -1,5 +1,6 @@
 section.productpage__pageheader {
   position: relative;
+  overflow: hidden;
   max-height: 450px;
   margin-bottom: 80px;
 }

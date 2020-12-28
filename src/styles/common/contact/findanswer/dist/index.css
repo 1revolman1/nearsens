@@ -340,20 +340,18 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container input:checked ~ .checkmark {
   background-color: #eee;
 }
-section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container input:checked ~ .checkmark:after {
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container input:checked ~ .checkmark i {
   display: block;
 }
-section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container .checkmark:after {
-  left: 12px;
-  top: 0px;
-  width: 10px;
-  height: 18px;
-  border: solid #005b9d;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
+section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .container .checkmark i {
+  display: none;
+  font-size: 18px;
+  line-height: 23px;
+  color: #005b9d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__third .contact__findanswer__wrap__secondinit__container__third__checkbox .checkmark {
   display: block;
