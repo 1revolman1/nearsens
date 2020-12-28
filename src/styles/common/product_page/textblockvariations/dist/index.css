@@ -10,7 +10,7 @@ section.productpage__textblockvariations {
 section.productpage__textblockvariations .productpage__textblockvariations-textimgheader {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
   section.productpage__textblockvariations .productpage__textblockvariations-textimgheader {
