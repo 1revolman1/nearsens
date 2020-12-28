@@ -18,13 +18,14 @@ section.productpage__pageheader_sticky.scroll-to-bottom {
 }
 @media screen and (max-width: 1023px) {
   section.productpage__pageheader_sticky {
-    top: 65px;
+    top: 64px;
   }
 }
 @media screen and (max-width: 1023px) and (max-width: 768px) {
   section.productpage__pageheader_sticky {
-    top: 58px;
-    padding: 10px 0;
+    box-shadow: 0px 3px 5px #00000029;
+    top: 57px;
+    padding: 10px 0 9px;
   }
 }
 section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap {
@@ -217,6 +218,11 @@ section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .pro
 section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container.main-btn .productpage__pageheader_sticky-wrap-manipulator-withprice button {
   padding: 10px 20px;
 }
+@media screen and (max-width: 768px) {
+  section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container.main-btn .productpage__pageheader_sticky-wrap-manipulator-withprice button {
+    font: normal normal bold 16px/18px Muli;
+  }
+}
 section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container.overlay {
   justify-content: space-between;
   z-index: 1;
@@ -318,6 +324,7 @@ section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .pro
 @media screen and (max-width: 768px) {
   section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container .productpage__pageheader_sticky-wrap-manipulator-withprice button {
     padding: 3px 17px;
+    font: normal normal bold 18px/23px Muli;
   }
 }
 section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container .productpage__pageheader_sticky-wrap-manipulator-withprice button span {

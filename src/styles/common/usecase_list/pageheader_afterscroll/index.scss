@@ -17,6 +17,7 @@ section.use_case__scrollheader {
   @include media-forHEADER {
     top: $additionalNavMenuToTopBIGMENU;
     @include media-tablet {
+      box-shadow: 0px 3px 5px #00000029;
       padding: 18px 4%;
       // padding: 15px 0;
       // padding: 18px 30px;

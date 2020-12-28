@@ -22,6 +22,7 @@ section.usecase_details__pageheaderafterscroll {
   @include media-forHEADER {
     top: $additionalNavMenuToTopBIGMENU;
     @include media-tablet {
+      box-shadow: 0px 3px 5px #00000029;
       top: $additionalNavMenuToTopRESP;
       // padding: 13px 0 15px;
       padding: 17px 0 18px;
