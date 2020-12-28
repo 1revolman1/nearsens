@@ -1,9 +1,11 @@
 section.page_gabarit__fourblocks {
   padding-bottom: 43px;
   padding-top: 43px;
+  background: white;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks {
+    width: 100%;
     padding-bottom: 20px;
     padding-top: 15px;
   }
@@ -101,53 +103,13 @@ section.page_gabarit__fourblocks.blue h1 {
 section.page_gabarit__fourblocks.blue .page_gabarit__fourblocks__wrap * {
   color: white !important;
 }
-section.page_gabarit__fourblocks.blue .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h6 {
-  font: normal normal bold 16px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: white;
-}
-section.page_gabarit__fourblocks.blue .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h5 {
-  font: normal normal bold 18px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: white;
-}
-section.page_gabarit__fourblocks.blue .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h4 {
-  font: normal normal bold 20px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: white;
-}
-section.page_gabarit__fourblocks.blue .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h3 {
-  font: normal normal bold 22px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: white;
-}
-section.page_gabarit__fourblocks.blue .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h2 {
-  font: normal normal bold 24px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: white;
-}
-section.page_gabarit__fourblocks.blue .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h1 {
-  font: normal normal bold 26px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: white;
-}
-section.page_gabarit__fourblocks.blue .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text p {
-  color: white;
-}
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap {
   display: flex;
   flex-flow: row wrap;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
   }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h6 {
@@ -158,7 +120,6 @@ section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h6 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h6 {
-    margin-bottom: 15px;
     font: normal normal normal 22px/28px Muli;
   }
 }
@@ -170,7 +131,6 @@ section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h5 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h5 {
-    margin-bottom: 15px;
     font: normal normal normal 22px/28px Muli;
   }
 }
@@ -182,7 +142,6 @@ section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h4 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h4 {
-    margin-bottom: 15px;
     font: normal normal normal 22px/28px Muli;
   }
 }
@@ -194,7 +153,6 @@ section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h3 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h3 {
-    margin-bottom: 15px;
     font: normal normal normal 22px/28px Muli;
   }
 }
@@ -206,7 +164,6 @@ section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h2 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h2 {
-    margin-bottom: 15px;
     font: normal normal normal 22px/28px Muli;
   }
 }
@@ -218,124 +175,12 @@ section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h1 {
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h1 {
-    margin-bottom: 15px;
     font: normal normal normal 22px/28px Muli;
   }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  grid-template-rows: auto;
-  grid-column-gap: 25px;
-  grid-row-gap: 20px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-}
-section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-}
-section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__img {
-  margin-bottom: 33px;
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__img img {
-  width: 100px;
-  height: 100px;
   object-fit: contain;
-}
-section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h6 {
-  font: normal normal bold 16px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #28373b;
-  text-align: center;
-  margin-bottom: 3px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h6 {
-    font: normal normal bold 18px/28px Muli;
-  }
-}
-section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h5 {
-  font: normal normal bold 18px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #28373b;
-  text-align: center;
-  margin-bottom: 3px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h5 {
-    font: normal normal bold 18px/28px Muli;
-  }
-}
-section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h4 {
-  font: normal normal bold 20px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #28373b;
-  text-align: center;
-  margin-bottom: 3px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h4 {
-    font: normal normal bold 18px/28px Muli;
-  }
-}
-section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h3 {
-  font: normal normal bold 22px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #28373b;
-  text-align: center;
-  margin-bottom: 3px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h3 {
-    font: normal normal bold 18px/28px Muli;
-  }
-}
-section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h2 {
-  font: normal normal bold 24px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #28373b;
-  text-align: center;
-  margin-bottom: 3px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h2 {
-    font: normal normal bold 18px/28px Muli;
-  }
-}
-section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h1 {
-  font: normal normal bold 26px/28px Muli;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #28373b;
-  text-align: center;
-  margin-bottom: 3px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text h1 {
-    font: normal normal bold 18px/28px Muli;
-  }
-}
-section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text p {
-  text-align: center;
-  font: normal normal 300 16px/20px Muli;
-  letter-spacing: 0px;
-  color: #28373b;
-  opacity: 1;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__text p {
-    font: normal normal 300 12px/20px Muli;
-  }
 }

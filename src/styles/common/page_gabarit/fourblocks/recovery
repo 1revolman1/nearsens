@@ -1,0 +1,155 @@
+@import '../../../mixins/media';
+@import '../../../mixins/text';
+
+section.page_gabarit__fourblocks {
+  // margin-bottom: 86px;
+  padding-bottom: 43px;
+  // margin-top: 87px;
+  padding-top: 43px;
+
+  @include media-tablet {
+    padding-bottom: 20px;
+    // margin-top: 40px;
+    padding-top: 15px;
+  }
+  &.add-padding {
+    padding-bottom: 86px;
+    @include media-tablet {
+      padding-bottom: 40px;
+    }
+  }
+  &.blue {
+    background: #005b9d 0% 0% no-repeat padding-box;
+    padding-bottom: 40px;
+    @include media-tablet {
+      padding-bottom: 20px;
+      padding-top: 15px;
+    }
+    @include hblock('h3', 40px, normal, 50px) {
+      color: white;
+      margin-bottom: 30px;
+      @include media-tablet {
+        margin-bottom: 15px;
+      }
+    }
+    .page_gabarit__fourblocks__wrap {
+      * {
+        color: white !important;
+      }
+      .page_gabarit__fourblocks__wrap__container {
+        .page_gabarit__fourblocks__wrap__elemenet {
+          .page_gabarit__fourblocks__wrap__elemenet__text {
+            @include hblock('h3', 22px, bold, 28px) {
+              color: white;
+            }
+            p {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .page_gabarit__fourblocks__wrap {
+    display: flex;
+    flex-flow: row wrap;
+    @include media-tablet {
+      width: 90%;
+      margin: 0 auto;
+    }
+    @include hblock('h3', 40px, normal, 50px) {
+      margin-bottom: 30px;
+      @include media-tablet {
+        margin-bottom: 15px;
+        font: normal normal normal 22px/28px Muli;
+      }
+    }
+    .page_gabarit__fourblocks__wrap__container {
+      // display: flex;
+      // flex-flow: row wrap;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-template-rows: auto;
+      grid-column-gap: 25px;
+      grid-row-gap: 20px;
+      @include media-tablet {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+      .page_gabarit__fourblocks__wrap__elemenet {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        // flex: 0 1 22%;
+        // margin: 20px 15px;
+        // @include media-tablet {
+        //   flex: 0 1 48.5%;
+        //   margin: 20px 1%;
+        // }
+        // &:nth-child(4n + 4) {
+        //   margin-left: 0;
+        //   @include media-tablet {
+        //     margin: 20px 1%;
+        //   }
+        // }
+        // &:nth-child(4n + 1) {
+        //   margin-right: 0;
+        //   @include media-tablet {
+        //     margin: 20px 1%;
+        //   }
+        // }
+        // &:nth-child(odd) {
+        //   @include media-tablet {
+        //     margin-left: 0;
+        //   }
+        // }
+        // &:nth-child(even) {
+        //   @include media-tablet {
+        //     margin-right: 0;
+        //   }
+        // }
+        .page_gabarit__fourblocks__wrap__elemenet__img {
+          margin-bottom: 33px;
+          img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            // object-fit: cover;
+          }
+        }
+        .page_gabarit__fourblocks__wrap__elemenet__text {
+          @include hblock('h3', 22px, bold, 28px) {
+            color: #28373b;
+            text-align: center;
+            margin-bottom: 3px;
+            @include media-tablet {
+              font: normal normal bold 18px/28px Muli;
+            }
+          }
+          // h3 {
+          //   text-align: center;
+          //   font: normal normal bold 22px/28px Muli;
+          //   letter-spacing: 0px;
+          //   color: #28373b;
+          //   opacity: 1;
+          //   margin-bottom: 3px;
+          //   @include media-tablet {
+          //     font: normal normal bold 18px/28px Muli;
+          //   }
+          // }
+          p {
+            text-align: center;
+            font: normal normal 300 16px/20px Muli;
+            letter-spacing: 0px;
+            color: #28373b;
+            opacity: 1;
+            @include media-tablet {
+              font: normal normal 300 12px/20px Muli;
+            }
+          }
+        }
+      }
+    }
+  }
+}

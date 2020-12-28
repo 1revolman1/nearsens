@@ -8,6 +8,7 @@ section.page_gabarit__blockwithbigimg {
 @media screen and (max-width: 1023px) {
   section.page_gabarit__blockwithbigimg {
     grid-row-gap: 40px;
+    padding-bottom: 40px;
   }
 }
 section.page_gabarit__blockwithbigimg.blue {
@@ -108,8 +109,14 @@ section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap ul li
   }
 }
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text {
+  display: inline-block;
   padding: 0;
   flex: none;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text :last-child {
+    margin: 0 !important;
+  }
 }
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h6 {
   font: normal normal normal 34px/50px Muli;
@@ -183,9 +190,19 @@ section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .prod
     margin-bottom: 15px;
   }
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text p {
+    margin-bottom: 15px;
+  }
+}
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__img {
   padding: 0;
   flex: none;
+}
+@media screen and (max-width: 1023px) {
+  section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__img {
+    grid-area: 1;
+  }
 }
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__img img {
   width: 100%;
@@ -197,6 +214,6 @@ section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .prod
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__img img {
     max-width: 100%;
     max-height: 325px;
-    height: 325px;
+    height: auto;
   }
 }

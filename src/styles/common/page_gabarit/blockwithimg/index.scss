@@ -52,7 +52,8 @@ section.page_gabarit__blockwithimg {
       grid-row-gap: 56px;
       padding-bottom: 95px;
       @include media-tablet {
-        padding-bottom: 80px;
+        padding-bottom: 40px;
+        // padding-bottom: 80px;
       }
       // display: flex;
       // flex-flow: row wrap;

@@ -144,7 +144,7 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 }
 section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container .page_gabarit__blockwithimg__wrap__element {
