@@ -5,6 +5,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.useCasesDetails = void 0;
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 var useCasesDetails = function main() {
   console.log("usecase_details");
   var scrollable = document.querySelector('section.usecase_details__pageheaderafterscroll');
@@ -49,8 +57,18 @@ var useCasesDetails = function main() {
     var currentValue = parent.find('p').text().replace(/[^\d;]/g, '');
     if (currentValue === 0) return null;
     var curerentBlocks = $('.usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator');
-    curerentBlocks.attr('data-ammount', 1);
-    curerentBlocks.find('.minus').attr('disabled', true); //SHOW SUCCESS BUYING ICON
+    curerentBlocks.attr('data-ammount', 1); // const counters = curerentBlocks.find('.counter');
+    // const mimusBtn = curerentBlocks.find('.minus');
+    // curerentBlocks.find('.minus').attr('disabled', true);
+    // [...counters].forEach((elm, index) => {
+    //   if (elm.textContent <= 1) {
+    //     console.log(elm, mimusBtn, counters);
+    //     mimusBtn.eq(index).attr('disabled', true);
+    //   } else {
+    //     mimusBtn.eq(index).attr('disabled', false);
+    //   }
+    // });
+    //SHOW SUCCESS BUYING ICON
 
     parent.addClass('show-success');
     infoSuccessHeader.removeClass('unshow');
@@ -71,7 +89,22 @@ var useCasesDetails = function main() {
         left: cart.offset().left + 10,
         width: 30,
         height: 30
-      }, 1000, 'easeInOutExpo'); //SHAKE ANIM
+      }, 1000, 'easeInOutExpo', function () {
+        // const curerentBlocks = $(
+        //   '.usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator'
+        // );
+        var counters = curerentBlocks.find('.counter');
+        var mimusBtn = curerentBlocks.find('.minus');
+
+        _toConsumableArray(counters).forEach(function (elm, index) {
+          if (elm.textContent <= 1) {
+            console.log(elm, mimusBtn, counters);
+            mimusBtn.eq(index).attr('disabled', true);
+          } else {
+            mimusBtn.eq(index).attr('disabled', false);
+          }
+        });
+      }); //SHAKE ANIM
 
       setTimeout(function () {
         $(_this).parents('.usecase_details__blockwithbuyabbility-wrap__manipulator__block').removeClass('show-success');

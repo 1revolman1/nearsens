@@ -52,8 +52,17 @@ export const useCasesDetails = function main() {
       '.usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator'
     );
     curerentBlocks.attr('data-ammount', 1);
-    curerentBlocks.find('.minus').attr('disabled', true);
-
+    // const counters = curerentBlocks.find('.counter');
+    // const mimusBtn = curerentBlocks.find('.minus');
+    // curerentBlocks.find('.minus').attr('disabled', true);
+    // [...counters].forEach((elm, index) => {
+    //   if (elm.textContent <= 1) {
+    //     console.log(elm, mimusBtn, counters);
+    //     mimusBtn.eq(index).attr('disabled', true);
+    //   } else {
+    //     mimusBtn.eq(index).attr('disabled', false);
+    //   }
+    // });
     //SHOW SUCCESS BUYING ICON
     parent.addClass('show-success');
     infoSuccessHeader.removeClass('unshow');
@@ -81,7 +90,22 @@ export const useCasesDetails = function main() {
             height: 30,
           },
           1000,
-          'easeInOutExpo'
+          'easeInOutExpo',
+          function () {
+            // const curerentBlocks = $(
+            //   '.usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator'
+            // );
+            const counters = curerentBlocks.find('.counter');
+            const mimusBtn = curerentBlocks.find('.minus');
+            [...counters].forEach((elm, index) => {
+              if (elm.textContent <= 1) {
+                console.log(elm, mimusBtn, counters);
+                mimusBtn.eq(index).attr('disabled', true);
+              } else {
+                mimusBtn.eq(index).attr('disabled', false);
+              }
+            });
+          }
         );
       //SHAKE ANIM
 
