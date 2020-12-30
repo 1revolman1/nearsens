@@ -5,14 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.useCasesDetails = void 0;
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
 var useCasesDetails = function main() {
   console.log("usecase_details");
   var scrollable = document.querySelector('section.usecase_details__pageheaderafterscroll');
@@ -89,21 +81,19 @@ var useCasesDetails = function main() {
         left: cart.offset().left + 10,
         width: 30,
         height: 30
-      }, 1000, 'easeInOutExpo', function () {
-        // const curerentBlocks = $(
+      }, 1000, 'easeInOutExpo', function () {// const curerentBlocks = $(
         //   '.usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator'
         // );
-        var counters = curerentBlocks.find('.counter');
-        var mimusBtn = curerentBlocks.find('.minus');
-
-        _toConsumableArray(counters).forEach(function (elm, index) {
-          if (elm.textContent <= 1) {
-            console.log(elm, mimusBtn, counters);
-            mimusBtn.eq(index).attr('disabled', true);
-          } else {
-            mimusBtn.eq(index).attr('disabled', false);
-          }
-        });
+        // const counters = curerentBlocks.find('.counter');
+        // const mimusBtn = curerentBlocks.find('.minus');
+        // [...counters].forEach((elm, index) => {
+        //   if (elm.textContent <= 1) {
+        //     console.log(elm, mimusBtn, counters);
+        //     mimusBtn.eq(index).attr('disabled', true);
+        //   } else {
+        //     mimusBtn.eq(index).attr('disabled', false);
+        //   }
+        // });
       }); //SHAKE ANIM
 
       setTimeout(function () {

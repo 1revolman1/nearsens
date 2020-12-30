@@ -1,6 +1,133 @@
 @import '../../../mixins/media';
 @import '../../../mixins/text';
 
+// section.page_gabarit__blockwithimg {
+//   &.blue {
+//     background: #005b9d 0% 0% no-repeat padding-box;
+//     .page_gabarit__blockwithimg__wrap {
+//       * {
+//         color: white !important;
+//       }
+//       .page_gabarit__blockwithimg__wrap__element {
+//         .page_gabarit__blockwithimg__wrap__element__text {
+//           p {
+//             color: white;
+//           }
+//           @include hblock('h3', 22px, bold, 28px) {
+//             color: white;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   padding-top: 74px;
+//   @include media-tablet {
+//     padding: 74px 0 0;
+//   }
+//   .page_gabarit__blockwithimg__wrap {
+//     width: 100%;
+//     display: flex;
+//     flex-flow: row wrap;
+//     @include media-tablet {
+//       width: 90%;
+//       margin: 0 auto 40px;
+//     }
+//     @include hblock('h3', 40px, normal, 50px) {
+//       margin-bottom: 30px;
+//       @include media-tablet {
+//         font: normal normal normal 22px/28px Mulish;
+//         margin-bottom: 15px;
+//       }
+//     }
+//     .page_gabarit__blockwithimg__wrap__container {
+//       width: 100%;
+//       --fgp-gap-container: calc(var(--fgp-gap-parent, 0px) - 30px) !important;
+//       --fgp-gap: var(--fgp-gap-container);
+//       margin-top: var(--fgp-gap);
+//       margin-right: var(--fgp-gap);
+//       > * {
+//         --fgp-gap-parent: 30px !important;
+//         --fgp-gap-item: 30px !important;
+//         --fgp-gap: var(--fgp-gap-item) !important;
+//         margin-top: var(--fgp-gap);
+//         margin-right: var(--fgp-gap);
+//       }
+//       .page_gabarit__blockwithimg__wrap__element {
+//         display: flex;
+//         flex-flow: column wrap;
+//         @include media-tablet {
+//           flex: 0 1 calc(35% + 30px);
+//           @media screen and (max-width: 449px) {
+//             flex: 0 1 calc(29% + 30px);
+//           }
+//         }
+
+//         &.left {
+//           .page_gabarit__blockwithimg__wrap__element__text {
+//             justify-content: flex-start;
+//             @include hblock('h3', 22px, bold, 28px) {
+//               text-align: left;
+//               @include media-tablet {
+//                 font: normal normal normal 16px/18px Mulish;
+//               }
+//             }
+//             p {
+//               text-align: left;
+//             }
+//           }
+//         }
+//         &.center {
+//           .page_gabarit__blockwithimg__wrap__element__text {
+//             justify-content: center;
+//             @include hblock('h3', 22px, bold, 28px) {
+//               text-align: center;
+//               @include media-tablet {
+//                 font: normal normal normal 16px/18px Mulish;
+//               }
+//             }
+
+//             p {
+//               text-align: center;
+//             }
+//           }
+//         }
+//         img {
+//           max-width: 334px;
+//           // max-width: inherit;
+//           width: 100%;
+//           height: auto;
+//           max-height: 204px;
+//           border-radius: 15px;
+//           object-fit: cover;
+//           @include media-tablet {
+//             max-width: inherit;
+//           }
+//         }
+//         .page_gabarit__blockwithimg__wrap__element__text {
+//           display: flex;
+//           justify-content: flex-start;
+//           flex-direction: column;
+//           @include hblock('h3', 22px, bold, 28px) {
+//             color: #28373b;
+//             @include media-tablet {
+//               font: normal normal normal 16px/18px Mulish;
+//             }
+//           }
+//           p {
+//             font: normal normal 300 16px/20px Mulish;
+//             letter-spacing: 0px;
+//             color: #28373b;
+//             opacity: 1;
+//             @include media-tablet {
+//               font: normal normal 300 12px/18px Mulish;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
 section.page_gabarit__blockwithimg {
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
@@ -32,7 +159,7 @@ section.page_gabarit__blockwithimg {
   .page_gabarit__blockwithimg__wrap {
     display: flex;
     flex-flow: row wrap;
-    @include media-tablet {
+    @include media-forHEADER {
       width: 90%;
       margin: 0 auto 40px;
     }
@@ -46,21 +173,52 @@ section.page_gabarit__blockwithimg {
     .page_gabarit__blockwithimg__wrap__container {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(218px, 1fr));
+      // grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
       grid-template-rows: auto;
-      grid-column-gap: 149px;
+
+      // grid-column-gap: 149px;
+
+      // grid-column-gap: 15%;
+      grid-column-gap: 11%;
       grid-row-gap: 56px;
       padding-bottom: 95px;
-      @include media-tablet {
-        padding-bottom: 40px;
-        // padding-bottom: 80px;
+
+      @include media-forHEADER {
+        grid-column-gap: 3%;
+        @media screen and (max-width: 774px) {
+          grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+          @include media-tablet {
+            grid-template-columns: repeat(auto-fill, minmax(217px, 1fr));
+            padding-bottom: 40px;
+            @media screen and (max-width: 520px) {
+              grid-template-columns: repeat(auto-fill, minmax(147px, 1fr));
+              @media screen and (max-width: 337px) {
+                grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+              }
+            }
+          }
+        }
       }
+
       // display: flex;
       // flex-flow: row wrap;
 
       .page_gabarit__blockwithimg__wrap__element {
         display: flex;
         flex-flow: column wrap;
+        &:nth-child(3) {
+          @include media-tablet {
+            grid-column: 1/-1;
+            // max-width: 334px;
+            max-width: 50%;
+            margin: 0 auto;
+            @media screen and (max-width: 520px) {
+              // max-width: inherit;
+              // grid-column: inherit;
+            }
+          }
+        }
         // flex: 0 1 26%;
         // max-width: 334px;
         // margin: 0 auto 70px;
