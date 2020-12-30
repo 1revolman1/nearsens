@@ -1,84 +1,84 @@
 /* @font-face {
-    font-family: 'Muli';
-    src: local('Muli Light'), local('Muli-Light'), url('../webfonts/Mulilight.woff2') format('woff2'), url('../webfonts/Mulilight.woff') format('woff'), url('../webfonts/Mulilight.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish Light'), local('Mulish-Light'), url('../webfonts/Mulishlight.woff2') format('woff2'), url('../webfonts/Mulishlight.woff') format('woff'), url('../webfonts/Mulishlight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli Regular'), local('Muli-Regular'), url('../webfonts/Muliregular.woff2') format('woff2'), url('../webfonts/Muliregular.woff') format('woff'), url('../webfonts/Muliregular.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish Regular'), local('Mulish-Regular'), url('../webfonts/Mulishregular.woff2') format('woff2'), url('../webfonts/Mulishregular.woff') format('woff'), url('../webfonts/Mulishregular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli SemiBold'), local('Muli-SemiBold'), url('../webfonts/Mulisemibold.woff2') format('woff2'), url('../webfonts/Mulisemibold.woff') format('woff'), url('../webfonts/Mulisemibold.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish SemiBold'), local('Mulish-SemiBold'), url('../webfonts/Mulishsemibold.woff2') format('woff2'), url('../webfonts/Mulishsemibold.woff') format('woff'), url('../webfonts/Mulishsemibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli Italic'), local('Muli-Italic'), url('../webfonts/Muliitalic.woff2') format('woff2'), url('../webfonts/Muliitalic.woff') format('woff'), url('../webfonts/Muliitalic.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish Italic'), local('Mulish-Italic'), url('../webfonts/Mulishitalic.woff2') format('woff2'), url('../webfonts/Mulishitalic.woff') format('woff'), url('../webfonts/Mulishitalic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli ExtraLight Italic'), local('Muli-ExtraLightItalic'), url('../webfonts/Muliextralightitalic.woff2') format('woff2'), url('../webfonts/Muliextralightitalic.woff') format('woff'), url('../webfonts/Muliextralightitalic.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish ExtraLight Italic'), local('Mulish-ExtraLightItalic'), url('../webfonts/Mulishextralightitalic.woff2') format('woff2'), url('../webfonts/Mulishextralightitalic.woff') format('woff'), url('../webfonts/Mulishextralightitalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli ExtraBold Italic'), local('Muli-ExtraBoldItalic'), url('../webfonts/Muliextrabolditalic.woff2') format('woff2'), url('../webfonts/Muliextrabolditalic.woff') format('woff'), url('../webfonts/Muliextrabolditalic.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish ExtraBold Italic'), local('Mulish-ExtraBoldItalic'), url('../webfonts/Mulishextrabolditalic.woff2') format('woff2'), url('../webfonts/Mulishextrabolditalic.woff') format('woff'), url('../webfonts/Mulishextrabolditalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli ExtraBold'), local('Muli-ExtraBold'), url('../webfonts/Muliextrabold.woff2') format('woff2'), url('../webfonts/Muliextrabold.woff') format('woff'), url('../webfonts/Muliextrabold.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish ExtraBold'), local('Mulish-ExtraBold'), url('../webfonts/Mulishextrabold.woff2') format('woff2'), url('../webfonts/Mulishextrabold.woff') format('woff'), url('../webfonts/Mulishextrabold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli Light Italic'), local('Muli-LightItalic'), url('../webfonts/Mulilightitalic.woff2') format('woff2'), url('../webfonts/Mulilightitalic.woff') format('woff'), url('../webfonts/Mulilightitalic.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish Light Italic'), local('Mulish-LightItalic'), url('../webfonts/Mulishlightitalic.woff2') format('woff2'), url('../webfonts/Mulishlightitalic.woff') format('woff'), url('../webfonts/Mulishlightitalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli Black'), local('Muli-Black'), url('../webfonts/Muliblack.woff2') format('woff2'), url('../webfonts/Muliblack.woff') format('woff'), url('../webfonts/Muliblack.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish Black'), local('Mulish-Black'), url('../webfonts/Mulishblack.woff2') format('woff2'), url('../webfonts/Mulishblack.woff') format('woff'), url('../webfonts/Mulishblack.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli ExtraLight'), local('Muli-ExtraLight'), url('../webfonts/Muliextralight.woff2') format('woff2'), url('../webfonts/Muliextralight.woff') format('woff'), url('../webfonts/Muliextralight.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish ExtraLight'), local('Mulish-ExtraLight'), url('../webfonts/Mulishextralight.woff2') format('woff2'), url('../webfonts/Mulishextralight.woff') format('woff'), url('../webfonts/Mulishextralight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli Bold Italic'), local('Muli-BoldItalic'), url('../webfonts/Mulibolditalic.woff2') format('woff2'), url('../webfonts/Mulibolditalic.woff') format('woff'), url('../webfonts/Mulibolditalic.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish Bold Italic'), local('Mulish-BoldItalic'), url('../webfonts/Mulishbolditalic.woff2') format('woff2'), url('../webfonts/Mulishbolditalic.woff') format('woff'), url('../webfonts/Mulishbolditalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli SemiBold Italic'), local('Muli-SemiBoldItalic'), url('../webfonts/Mulisemibolditalic.woff2') format('woff2'), url('../webfonts/Mulisemibolditalic.woff') format('woff'), url('../webfonts/Mulisemibolditalic.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish SemiBold Italic'), local('Mulish-SemiBoldItalic'), url('../webfonts/Mulishsemibolditalic.woff2') format('woff2'), url('../webfonts/Mulishsemibolditalic.woff') format('woff'), url('../webfonts/Mulishsemibolditalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli Bold'), local('Muli-Bold'), url('../webfonts/Mulibold.woff2') format('woff2'), url('../webfonts/Mulibold.woff') format('woff'), url('../webfonts/Mulibold.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish Bold'), local('Mulish-Bold'), url('../webfonts/Mulishbold.woff2') format('woff2'), url('../webfonts/Mulishbold.woff') format('woff'), url('../webfonts/Mulishbold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Muli';
-    src: local('Muli Black Italic'), local('Muli-BlackItalic'), url('../webfonts/Muliblackitalic.woff2') format('woff2'), url('../webfonts/Muliblackitalic.woff') format('woff'), url('../webfonts/Muliblackitalic.ttf') format('truetype');
+    font-family: 'Mulish';
+    src: local('Mulish Black Italic'), local('Mulish-BlackItalic'), url('../webfonts/Mulishblackitalic.woff2') format('woff2'), url('../webfonts/Mulishblackitalic.woff') format('woff'), url('../webfonts/Mulishblackitalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
 } */

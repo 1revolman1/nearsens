@@ -22,13 +22,13 @@ section.usecase_details__blockwithbuyabbility {
       align-items: center;
       padding-bottom: 71px;
       h3 {
-        font: normal normal normal 32px/40px Muli;
+        font: normal normal normal 32px/40px Mulish;
         letter-spacing: 0px;
         color: #ffffff;
         opacity: 1;
         @include media-tablet {
           text-align: center;
-          font: normal normal normal 22px/28px Muli;
+          font: normal normal normal 22px/28px Mulish;
         }
       }
       img {
@@ -94,7 +94,7 @@ section.usecase_details__blockwithbuyabbility {
               margin-bottom: 20px;
             }
             h4 {
-              font: normal normal normal 22px/28px Muli;
+              font: normal normal normal 22px/28px Mulish;
               letter-spacing: 0px;
               color: #ffffff;
               opacity: 1;
@@ -106,7 +106,7 @@ section.usecase_details__blockwithbuyabbility {
                 align-items: center;
                 justify-content: space-between;
                 // display: inline-block;
-                font: normal normal normal 16px/20px Muli;
+                font: normal normal normal 16px/20px Mulish;
               }
               .disqount {
                 white-space: nowrap;
@@ -114,24 +114,24 @@ section.usecase_details__blockwithbuyabbility {
                 background: #ffa10a 0% 0% no-repeat padding-box;
                 padding: 4px 10px;
                 border-radius: 5px;
-                font: normal normal 600 16px/20px Muli;
+                font: normal normal 600 16px/20px Mulish;
                 letter-spacing: 0px;
                 color: #ffffff;
                 opacity: 1;
                 @include media-tablet {
                   border-radius: 5px;
                   padding: 5px;
-                  font: normal normal 600 12px/15px Muli;
+                  font: normal normal 600 12px/15px Mulish;
                 }
               }
             }
             p {
-              font: normal normal 300 16px/20px Muli;
+              font: normal normal 300 16px/20px Mulish;
               letter-spacing: 0px;
               color: #ffffff;
               opacity: 1;
               @include media-tablet {
-                font: normal normal 300 12px/15px Muli;
+                font: normal normal 300 12px/15px Mulish;
               }
             }
           }
@@ -154,7 +154,7 @@ section.usecase_details__blockwithbuyabbility {
               }
               .current {
                 // margin: 0 10.5px;
-                font: normal normal 300 30px/38px Muli;
+                font: normal normal 300 30px/38px Mulish;
                 letter-spacing: 0px;
                 color: #ffffff;
                 opacity: 1;
@@ -164,16 +164,16 @@ section.usecase_details__blockwithbuyabbility {
                 }
                 @include media-tablet {
                   // margin: 0 4.25px;
-                  font: normal normal 300 26px/33px Muli;
+                  font: normal normal 300 26px/33px Mulish;
                 }
                 &.current-low {
                   display: flex;
                   align-items: center;
                   opacity: 0.65;
                   position: relative;
-                  font: normal normal 300 22px/28px Muli;
+                  font: normal normal 300 22px/28px Mulish;
                   @include media-tablet {
-                    font: normal normal 300 18px/23px Muli;
+                    font: normal normal 300 18px/23px Mulish;
                   }
                   sup {
                     font-size: 60%;
@@ -253,7 +253,7 @@ section.usecase_details__blockwithbuyabbility {
               }
               .counter {
                 // margin: 0 20px;
-                font: normal normal normal 22px/28px Muli;
+                font: normal normal normal 22px/28px Mulish;
                 letter-spacing: 0px;
                 color: #ffffff;
                 opacity: 1;
@@ -309,14 +309,14 @@ section.usecase_details__blockwithbuyabbility {
           }
         }
         p {
-          font: normal normal 300 24px/30px Muli;
+          font: normal normal 300 24px/30px Mulish;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;
           margin: 0 30px 0 18px;
           @include media-tablet {
             margin: 0 0 20px;
-            font: normal normal 300 18px/23px Muli;
+            font: normal normal 300 18px/23px Mulish;
           }
         }
         .shop-cart {
@@ -327,7 +327,7 @@ section.usecase_details__blockwithbuyabbility {
           border-radius: 40px;
           opacity: 1;
           outline: none;
-          font: normal normal bold 18px/23px Muli;
+          font: normal normal bold 18px/23px Mulish;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;
@@ -343,7 +343,7 @@ section.usecase_details__blockwithbuyabbility {
             visibility: hidden;
             padding: 12px 30px;
             border-radius: 40px;
-            font: italic normal normal 16px/18px Muli;
+            font: italic normal normal 16px/18px Mulish;
             display: flex;
             justify-content: center;
             align-items: center;

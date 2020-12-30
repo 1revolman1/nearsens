@@ -72,13 +72,13 @@ section.page_gabarit__blockwithbigimg {
       padding-left: 20px;
       li {
         list-style: inherit;
-        font: normal normal 300 18px/23px Muli;
+        font: normal normal 300 18px/23px Mulish;
         letter-spacing: 0;
         color: #333;
         opacity: 1;
         margin-bottom: 2px;
         @include media-tablet {
-          font: normal normal 300 14px/18px Muli;
+          font: normal normal 300 14px/18px Mulish;
         }
       }
     }
@@ -94,7 +94,7 @@ section.page_gabarit__blockwithbigimg {
       @include hblock('h3', 40px, normal, 50px) {
         margin-bottom: 30px;
         @include media-tablet {
-          font: normal normal normal 22px/28px Muli;
+          font: normal normal normal 22px/28px Mulish;
           margin-bottom: 15px;
         }
       }

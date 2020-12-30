@@ -39,7 +39,7 @@ section.page_gabarit__blockwithimg {
     @include hblock('h3', 40px, normal, 50px) {
       margin-bottom: 30px;
       @include media-tablet {
-        font: normal normal normal 22px/28px Muli;
+        font: normal normal normal 22px/28px Mulish;
         margin-bottom: 15px;
       }
     }
@@ -96,7 +96,7 @@ section.page_gabarit__blockwithimg {
             @include hblock('h3', 22px, bold, 28px) {
               text-align: left;
               @include media-tablet {
-                font: normal normal normal 16px/18px Muli;
+                font: normal normal normal 16px/18px Mulish;
               }
             }
             p {
@@ -110,7 +110,7 @@ section.page_gabarit__blockwithimg {
             @include hblock('h3', 22px, bold, 28px) {
               text-align: center;
               @include media-tablet {
-                font: normal normal normal 16px/18px Muli;
+                font: normal normal normal 16px/18px Mulish;
               }
             }
 
@@ -142,25 +142,25 @@ section.page_gabarit__blockwithimg {
           @include hblock('h3', 22px, bold, 28px) {
             color: #28373b;
             @include media-tablet {
-              font: normal normal normal 16px/18px Muli;
+              font: normal normal normal 16px/18px Mulish;
             }
           }
           // h3 {
-          //   font: normal normal bold 22px/28px Muli;
+          //   font: normal normal bold 22px/28px Mulish;
           //   letter-spacing: 0px;
           //   color: #28373b;
           //   opacity: 1;
           //   @include media-tablet {
-          //     font: normal normal bold 18px/28px Muli;
+          //     font: normal normal bold 18px/28px Mulish;
           //   }
           // }
           p {
-            font: normal normal 300 16px/20px Muli;
+            font: normal normal 300 16px/20px Mulish;
             letter-spacing: 0px;
             color: #28373b;
             opacity: 1;
             @include media-tablet {
-              font: normal normal 300 12px/18px Muli;
+              font: normal normal 300 12px/18px Mulish;
             }
           }
         }

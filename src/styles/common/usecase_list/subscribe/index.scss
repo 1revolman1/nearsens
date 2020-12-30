@@ -29,24 +29,24 @@ section.use_case__subscribe {
     }
     h3 {
       text-align: left;
-      font: normal normal normal 32px/40px Muli;
+      font: normal normal normal 32px/40px Mulish;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
       margin-bottom: 30px;
       @include media-tablet {
         margin-bottom: 11px;
-        font: normal normal normal 26px/33px Muli;
+        font: normal normal normal 26px/33px Mulish;
       }
     }
 
     p {
-      font: normal normal normal 16px/20px Muli;
+      font: normal normal normal 16px/20px Mulish;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
       @include media-tablet {
-        font: italic normal normal 14px/18px Muli;
+        font: italic normal normal 14px/18px Mulish;
       }
     }
   }
@@ -58,7 +58,7 @@ section.use_case__subscribe {
     }
     p {
       text-align: left;
-      font: italic normal normal 14px/18px Muli;
+      font: italic normal normal 14px/18px Mulish;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
@@ -75,7 +75,7 @@ section.use_case__subscribe {
         padding-right: 0;
       }
       h4 {
-        font: normal normal normal 18px/23px Muli;
+        font: normal normal normal 18px/23px Mulish;
         letter-spacing: 0px;
         color: #ffffff;
         opacity: 1;
@@ -100,7 +100,7 @@ section.use_case__subscribe {
           border: none;
           border-radius: 6px;
           opacity: 1;
-          font: normal normal 300 18px/23px Muli;
+          font: normal normal 300 18px/23px Mulish;
           letter-spacing: 0px;
           color: #333333;
           padding: 14px 30px;
@@ -115,7 +115,7 @@ section.use_case__subscribe {
             margin-bottom: 30px;
           }
           &::placeholder {
-            font: normal normal 300 18px/23px Muli;
+            font: normal normal 300 18px/23px Mulish;
             letter-spacing: 0px;
             color: #333333;
             opacity: 0.5;
@@ -130,7 +130,7 @@ section.use_case__subscribe {
           outline: none;
           opacity: 1;
           cursor: pointer;
-          font: normal normal bold 18px/23px Muli;
+          font: normal normal bold 18px/23px Mulish;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;

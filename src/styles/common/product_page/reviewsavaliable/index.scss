@@ -1,82 +1,81 @@
 @import '../../../mixins/media';
-@import "../../../utils/variables.scss";
+@import '../../../utils/variables.scss';
 
-section.productpage__reviewsavaliable{
-    margin-bottom:80px;
+section.productpage__reviewsavaliable {
+  margin-bottom: 80px;
+  @include media-tablet {
+    margin-bottom: 40px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  h3 {
+    font: normal normal normal 32px/40px Mulish;
+    letter-spacing: 0px;
+    color: #28373b;
+    opacity: 1;
+    margin-bottom: 20px;
     @include media-tablet {
-        margin-bottom:40px;
-        width:90%;
-        margin:0 auto;
+      width: 100%;
+      display: flex;
+      margin-bottom: 10px;
+      font: normal normal normal 20px/25px Mulish;
+      i:first-of-type {
+        margin-left: auto;
+      }
     }
-    h3{
-        font: normal normal normal 32px/40px Muli;
-        letter-spacing: 0px;
-        color: #28373B;
-        opacity: 1;
-        margin-bottom:20px;
+  }
+  > p {
+    font: normal normal 300 18px/23px Mulish;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    margin-bottom: 62px;
+    @include media-tablet {
+      margin-bottom: 20px;
+      font: normal normal 300 14px/18px Mulish;
+    }
+  }
+  .productpage__reviewsavaliable-content {
+    .productpage__reviewsavaliable-content__element {
+      display: flex;
+      margin: 30px 0;
+      flex-flow: row wrap;
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 30px;
+        object-fit: cover;
         @include media-tablet {
-            width: 100%;
-            display: flex;
-            margin-bottom:10px;
-            font: normal normal normal 20px/25px Muli;
-            i:first-of-type{
-                margin-left: auto;
-            }
+          width: 40px;
+          height: 40px;
         }
-    }
-    > p{
-        font: normal normal 300 18px/23px Muli;
-        letter-spacing: 0px;
-        color: #333333;
-        opacity: 1;
-        margin-bottom:62px;
-        @include media-tablet {
-            margin-bottom:20px;
-            font: normal normal 300 14px/18px Muli;
+      }
+      .productpage__reviewsavaliable-content__element-text {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1;
+        h3 {
+          font: normal normal bold 22px/28px Mulish;
+          letter-spacing: 0px;
+          color: #28373b;
+          opacity: 1;
+          margin-bottom: 2px;
+          @include media-tablet {
+            margin-bottom: 11.5px;
+            font: normal normal bold 14px/18px Mulish;
+          }
         }
-    }
-    .productpage__reviewsavaliable-content{
-        .productpage__reviewsavaliable-content__element{
-            display:flex;
-            margin:30px 0;
-            flex-flow:row wrap;
-            img{
-                width:100px;
-                height:100px;
-                border-radius:50%;
-                margin-right:30px; 
-                object-fit:cover;
-                @include media-tablet {
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-            .productpage__reviewsavaliable-content__element-text{
-                display: flex;
-                flex-flow:row wrap;
-                flex: 1;
-                h3{
-                    font: normal normal bold 22px/28px Muli;
-                    letter-spacing: 0px;
-                    color: #28373B;
-                    opacity: 1;
-                    margin-bottom:2px;
-                    @include media-tablet {
-                        margin-bottom:11.5px;
-                        font: normal normal bold 14px/18px Muli;
-                    }
-                }
-                p{
-                    font: normal normal 300 16px/20px Muli;
-                    letter-spacing: 0px;
-                    color: #28373B;
-                    opacity: 1;
-                    @include media-tablet {
-                        font: normal normal 300 16px/20px Muli;
-                    }
-                }
-            }
-
+        p {
+          font: normal normal 300 16px/20px Mulish;
+          letter-spacing: 0px;
+          color: #28373b;
+          opacity: 1;
+          @include media-tablet {
+            font: normal normal 300 16px/20px Mulish;
+          }
         }
+      }
     }
+  }
 }

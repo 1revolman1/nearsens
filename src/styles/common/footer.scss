@@ -42,7 +42,7 @@ footer.globalfooter {
           cursor: pointer;
           list-style: none;
           text-align: left;
-          font: normal normal normal 16px/30px Muli;
+          font: normal normal normal 16px/30px Mulish;
           letter-spacing: 0px;
           color: #ffffff;
           transition: all ease 0.5s;
@@ -61,25 +61,25 @@ footer.globalfooter {
           &.header {
             text-align: left;
             &.big {
-              font: normal normal bold 16px/40px Muli;
+              font: normal normal bold 16px/40px Mulish;
               letter-spacing: 0px;
               color: #ffffff;
               opacity: 1;
               &:first-of-type {
-                font: normal normal bold 16px/30px Muli;
+                font: normal normal bold 16px/30px Mulish;
                 @include media-forHEADER {
-                  font: normal normal bold 16px/40px Muli;
+                  font: normal normal bold 16px/40px Mulish;
                 }
               }
             }
             &.big-head {
-              font: normal normal bold 16px/30px Muli;
+              font: normal normal bold 16px/30px Mulish;
               letter-spacing: 0px;
               color: #ffffff;
               opacity: 1;
             }
             &.inside {
-              font: normal normal normal 16px/30px Muli;
+              font: normal normal normal 16px/30px Mulish;
               letter-spacing: 0px;
               color: #ffffff;
               @include media-forHEADER {
@@ -136,7 +136,7 @@ footer.globalfooter {
           }
           li {
             // margin: 0 5px;
-            font: normal normal normal 16px/20px Muli;
+            font: normal normal normal 16px/20px Mulish;
             letter-spacing: 0px;
             color: #ffffff;
             opacity: 1;

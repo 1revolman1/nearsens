@@ -11,7 +11,7 @@ section.productlist__products {
   //   margin: 0 auto;
   // }
   h3 {
-    font: normal normal normal 32px/40px Muli;
+    font: normal normal normal 32px/40px Mulish;
     letter-spacing: 0px;
     color: #28373b;
     opacity: 1;
@@ -19,7 +19,7 @@ section.productlist__products {
     @include media-tablet {
       margin: 0 0 21.5px;
       // margin: 0 10px 21.5px;
-      font: normal normal normal 26px/33px Muli;
+      font: normal normal normal 26px/33px Mulish;
     }
   }
   .productlist__products-container {
@@ -114,23 +114,23 @@ section.productlist__products {
           }
           .productlist__products-container-element-text {
             h4 {
-              font: normal normal normal 26px/33px Muli;
+              font: normal normal normal 26px/33px Mulish;
               letter-spacing: 0px;
               color: #28373b;
               opacity: 1;
               @include media-tablet {
-                font: normal normal normal 16px/20px Muli;
+                font: normal normal normal 16px/20px Mulish;
                 letter-spacing: 0px;
                 color: #28373b;
               }
             }
             p {
-              font: italic normal normal 16px/20px Muli;
+              font: italic normal normal 16px/20px Mulish;
               letter-spacing: 0px;
               color: #6d7476;
               opacity: 1;
               @include media-tablet {
-                font: italic normal normal 14px/18px Muli;
+                font: italic normal normal 14px/18px Mulish;
                 letter-spacing: 0px;
                 color: #6d7476;
               }
@@ -143,24 +143,24 @@ section.productlist__products {
             .productlist__products-container-element-controllers-price {
               flex-direction: row-reverse;
               .price {
-                font: normal normal 300 44px/55px Muli;
+                font: normal normal 300 44px/55px Mulish;
                 @include media-tablet {
-                  font: normal normal 300 32px/40px Muli;
+                  font: normal normal 300 32px/40px Mulish;
                 }
                 &.price-disqount {
                   margin: 0 30px;
-                  font: normal normal 300 35px/50px Muli;
+                  font: normal normal 300 35px/50px Mulish;
                   @include media-tablet {
                     display: none;
                   }
                   sup {
-                    font: normal normal 300 25px/14px Muli;
+                    font: normal normal 300 25px/14px Mulish;
                   }
                 }
                 sup {
-                  font: normal normal 300 29px/14px Muli;
+                  font: normal normal 300 29px/14px Mulish;
                   @include media-tablet {
-                    font: normal normal 300 20px/14px Muli;
+                    font: normal normal 300 20px/14px Mulish;
                   }
                 }
               }
@@ -189,14 +189,14 @@ section.productlist__products {
           // right: 22px;
           z-index: 0;
           padding: 5px 10px;
-          font: normal normal 300 24px/30px Muli;
+          font: normal normal 300 24px/30px Mulish;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;
           background: #ffa10a 0% 0% no-repeat padding-box;
           border-radius: 10px;
           @include media-tablet {
-            font: normal normal 300 16px/20px Muli;
+            font: normal normal 300 16px/20px Mulish;
             left: 5px;
             top: 5px;
             right: inherit;
@@ -247,25 +247,25 @@ section.productlist__products {
         }
         .productlist__products-container-element-text {
           h4 {
-            font: normal normal normal 26px/33px Muli;
+            font: normal normal normal 26px/33px Mulish;
             letter-spacing: 0px;
             color: #28373b;
             opacity: 1;
             margin-bottom: 12px;
             @include media-tablet {
               margin-bottom: 5px;
-              font: normal normal normal 16px/20px Muli;
+              font: normal normal normal 16px/20px Mulish;
             }
           }
           p {
-            font: italic normal normal 16px/20px Muli;
+            font: italic normal normal 16px/20px Mulish;
             letter-spacing: 0px;
             color: #6d7476;
             opacity: 1;
             margin-bottom: 30px;
             @include media-tablet {
               margin-bottom: 10px;
-              font: italic normal normal 12px/15px Muli;
+              font: italic normal normal 12px/15px Mulish;
             }
           }
         }
@@ -286,7 +286,7 @@ section.productlist__products {
               color: #005b9d;
               @include media-tablet {
                 color: #005b9d;
-                font: normal normal 300 26px/33px Muli;
+                font: normal normal 300 26px/33px Mulish;
               }
               &.price-disqount {
                 @include media-tablet {
@@ -296,10 +296,10 @@ section.productlist__products {
                 width: fit-content;
                 width: intrinsic;
                 color: #28373b;
-                font: normal normal 300 23px/33px Muli;
+                font: normal normal 300 23px/33px Mulish;
                 opacity: 0.5;
                 sup {
-                  font: normal normal 300 18px/0px Muli;
+                  font: normal normal 300 18px/0px Mulish;
                   color: #28373b;
                 }
                 &:after {
@@ -319,22 +319,22 @@ section.productlist__products {
                 color: #005b9d;
                 @include media-tablet {
                   color: #005b9d;
-                  font: normal normal 300 15px/33px Muli;
+                  font: normal normal 300 15px/33px Mulish;
                 }
               }
             }
             span {
               text-align: left;
-              font: normal normal 300 32px/40px Muli;
+              font: normal normal 300 32px/40px Mulish;
               letter-spacing: 0px;
               color: #005b9d;
               sup {
-                font: normal normal normal 20px/28px Muli;
+                font: normal normal normal 20px/28px Mulish;
               }
               @include media-tablet {
-                font: normal normal 300 16px/20px Muli;
+                font: normal normal 300 16px/20px Mulish;
                 sup {
-                  font: normal normal normal 10px/10px Muli;
+                  font: normal normal normal 10px/10px Mulish;
                 }
               }
             }
@@ -365,7 +365,7 @@ section.productlist__products {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font: normal normal normal 15px/28px Muli;
+                font: normal normal normal 15px/28px Mulish;
                 padding: 7.5px;
                 border: 1px solid #28373b;
                 border-radius: 10px;
@@ -394,7 +394,7 @@ section.productlist__products {
               span {
                 margin: 0 11px;
                 // margin:0 22px;
-                font: normal normal normal 22px/28px Muli;
+                font: normal normal normal 22px/28px Mulish;
                 letter-spacing: 0px;
                 color: #28373b;
                 opacity: 1;
@@ -474,12 +474,12 @@ section.productlist__products {
               }
               p,
               span {
-                font: italic normal normal 16px/18px Muli;
+                font: italic normal normal 16px/18px Mulish;
                 letter-spacing: 0px;
                 color: #ffffff;
                 opacity: 1;
                 @include media-tablet {
-                  font: italic normal normal 14px/18px Muli;
+                  font: italic normal normal 14px/18px Mulish;
                 }
               }
             }

@@ -6,7 +6,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__head {
   border-bottom: 1px solid #707070;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__head h3 {
-  font: normal normal normal 32px/40px Muli;
+  font: normal normal normal 32px/40px Mulish;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
@@ -36,7 +36,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #bbbbbb;
   opacity: 1;
-  font: normal normal bold 18px/23px Muli;
+  font: normal normal bold 18px/23px Mulish;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
@@ -113,7 +113,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   align-items: flex-start;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__btncont .checkout_page__content__contact__manip__btn {
-  font: normal normal bold 18px/23px Muli;
+  font: normal normal bold 18px/23px Mulish;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
@@ -165,20 +165,20 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   margin-bottom: 10px;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box h4 {
-  font: normal normal bold 18px/23px Muli;
+  font: normal normal bold 18px/23px Mulish;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box p {
-  font: normal normal 300 16px/20px Muli;
+  font: normal normal 300 16px/20px Mulish;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
   margin-bottom: 5px;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box span {
-  font: normal normal bold 18px/23px Muli;
+  font: normal normal bold 18px/23px Mulish;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
@@ -253,7 +253,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   position: relative;
   margin-bottom: 12px;
   cursor: pointer;
-  font: normal normal 300 18px/23px Muli;
+  font: normal normal 300 18px/23px Mulish;
   letter-spacing: 0px;
   color: #28373b;
   opacity: 1;
@@ -318,7 +318,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   margin-right: 20px;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm p {
-  font: normal normal bold 18px/23px Muli;
+  font: normal normal bold 18px/23px Mulish;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;

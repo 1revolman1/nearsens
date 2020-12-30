@@ -22,13 +22,13 @@ section.productpage__specificationblock {
     }
     h3 {
       text-align: center;
-      font: normal normal normal 30px/38px Muli;
+      font: normal normal normal 30px/38px Mulish;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
       margin-bottom: 25px;
       @include media-tablet {
-        font: normal normal normal 22px/28px Muli;
+        font: normal normal normal 22px/28px Mulish;
       }
     }
     .productpage__specificationblock-wrap__container {
@@ -103,25 +103,25 @@ section.productpage__specificationblock {
             }
           }
           h4 {
-            font: normal normal bold 22px/28px Muli;
+            font: normal normal bold 22px/28px Mulish;
             letter-spacing: 0px;
             color: #ffffff;
             opacity: 1;
             margin-bottom: 10px;
             @include media-tablet {
-              font: normal normal bold 16px/20px Muli;
+              font: normal normal bold 16px/20px Mulish;
             }
           }
           p {
             word-break: break-word;
-            font: normal normal 300 16px/20px Muli;
+            font: normal normal 300 16px/20px Mulish;
             letter-spacing: 0px;
             color: #ffffff;
             opacity: 1;
             margin-bottom: 15px;
             @include media-tablet {
               margin-bottom: 0px;
-              font: normal normal 300 14px/18px Muli;
+              font: normal normal 300 14px/18px Mulish;
             }
           }
         }
@@ -174,7 +174,7 @@ section.productpage__specificationblock {
     .productpage__specificationblock-wrap__container__specification {
       width: 100%;
       h3 {
-        font: normal normal normal 24px/30px Muli;
+        font: normal normal normal 24px/30px Mulish;
         letter-spacing: 0px;
         color: #ffffff;
         opacity: 1;
@@ -228,7 +228,7 @@ section.productpage__specificationblock {
             }
             span {
               &:first-of-type {
-                font: normal normal normal 14px/18px Muli;
+                font: normal normal normal 14px/18px Mulish;
                 letter-spacing: 0px;
                 color: #ffffff;
                 text-transform: uppercase;
@@ -239,12 +239,12 @@ section.productpage__specificationblock {
                 }
               }
               &:last-of-type {
-                font: normal normal normal 16px/20px Muli;
+                font: normal normal normal 16px/20px Mulish;
                 letter-spacing: 0px;
                 color: #ffffff;
                 opacity: 1;
                 @include media-tablet {
-                  font: normal normal normal 14px/18px Muli;
+                  font: normal normal normal 14px/18px Mulish;
                   text-align: end;
                 }
               }
@@ -267,7 +267,7 @@ section.productpage__specificationblock {
         //       li span:first-of-type {
         //         display: inline-block;
         //         padding-right: 20px;
-        //         font: normal normal normal 14px/18px Muli;
+        //         font: normal normal normal 14px/18px Mulish;
         //         letter-spacing: 0px;
         //         color: #ffffff;
         //         text-transform: uppercase;
@@ -278,7 +278,7 @@ section.productpage__specificationblock {
         //         padding-left: 20px;
         //         text-align: right;
         //         display: block;
-        //         font: normal normal normal 14px/18px Muli;
+        //         font: normal normal normal 14px/18px Mulish;
         //         letter-spacing: 0px;
         //         text-transform: unset;
         //         color: #ffffff;
@@ -309,7 +309,7 @@ section.productpage__specificationblock {
         //       margin-right: 0;
         //     }
         //     li {
-        //       font: normal normal normal 14px/18px Muli;
+        //       font: normal normal normal 14px/18px Mulish;
         //       letter-spacing: 0px;
         //       color: #ffffff;
         //       text-transform: uppercase;
@@ -322,7 +322,7 @@ section.productpage__specificationblock {
         //       margin-right: 0;
         //     }
         //     li {
-        //       font: normal normal normal 16px/18px Muli;
+        //       font: normal normal normal 16px/18px Mulish;
         //       letter-spacing: 0px;
         //       color: #ffffff;
         //       opacity: 1;

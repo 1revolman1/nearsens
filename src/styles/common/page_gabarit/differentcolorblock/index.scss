@@ -20,7 +20,7 @@ section.page_garbarit__differentcolorblock {
       @include hblock('h3', 45px, 300, 56px) {
         color: #ffffff;
         @include media-tablet {
-          font: normal normal normal 22px/28px Muli;
+          font: normal normal normal 22px/28px Mulish;
         }
       }
       p {
@@ -33,7 +33,7 @@ section.page_garbarit__differentcolorblock {
       @include hblock('h3', 45px, 300, 56px) {
         color: #333333;
         @include media-tablet {
-          font: normal normal normal 22px/28px Muli;
+          font: normal normal normal 22px/28px Mulish;
         }
       }
       p {
@@ -50,16 +50,16 @@ section.page_garbarit__differentcolorblock {
       color: #333333;
       margin-bottom: 10px;
       @include media-tablet {
-        font: normal normal normal 22px/28px Muli;
+        font: normal normal normal 22px/28px Mulish;
       }
     }
 
     p {
-      font: normal normal 300 18px/23px Muli;
+      font: normal normal 300 18px/23px Mulish;
       letter-spacing: 0px;
       opacity: 1;
       @include media-tablet {
-        font: normal normal normal 14px/18px Muli;
+        font: normal normal normal 14px/18px Mulish;
       }
     }
   }

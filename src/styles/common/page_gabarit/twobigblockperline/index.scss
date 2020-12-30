@@ -37,7 +37,7 @@ section.page_gabarit__twobigblockperline {
     opacity: 1;
     margin-bottom: 30px;
     @include media-tablet {
-      font: normal normal normal 22px/28px Muli;
+      font: normal normal normal 22px/28px Mulish;
     }
   }
 
@@ -82,30 +82,30 @@ section.page_gabarit__twobigblockperline {
           opacity: 1;
           margin-bottom: 30px;
           @include media-tablet {
-            font: normal normal normal 18px/25px Muli;
+            font: normal normal normal 18px/25px Mulish;
           }
         }
         :last-child {
           margin: 0;
         }
         // h3 {
-        //   font: normal normal normal 40px/50px Muli;
+        //   font: normal normal normal 40px/50px Mulish;
         //   letter-spacing: 0px;
         //   color: #28373b;
         //   opacity: 1;
         //   margin-bottom: 30px;
         //   @include media-tablet {
-        //     font: normal normal normal 20px/25px Muli;
+        //     font: normal normal normal 20px/25px Mulish;
         //   }
         // }
         p {
-          font: normal normal 300 18px/23px Muli;
+          font: normal normal 300 18px/23px Mulish;
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
           margin-bottom: 20px;
           @include media-tablet {
-            font: normal normal 300 14px/18px Muli;
+            font: normal normal 300 14px/18px Mulish;
           }
         }
       }

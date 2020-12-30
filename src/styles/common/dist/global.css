@@ -6225,112 +6225,112 @@ template {
 }
 
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-BlackItalic.woff2") format("woff2"), url("../webfonts/Mulish-BlackItalic.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-Medium.woff2") format("woff2"), url("../webfonts/Mulish-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-BoldItalic.woff2") format("woff2"), url("../webfonts/Mulish-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-ExtraLight.woff2") format("woff2"), url("../webfonts/Mulish-ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-Light.woff2") format("woff2"), url("../webfonts/Mulish-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-Italic.woff2") format("woff2"), url("../webfonts/Mulish-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-ExtraBold.woff2") format("woff2"), url("../webfonts/Mulish-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-LightItalic.woff2") format("woff2"), url("../webfonts/Mulish-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-MediumItalic.woff2") format("woff2"), url("../webfonts/Mulish-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-ExtraLightItalic.woff2") format("woff2"), url("../webfonts/Mulish-ExtraLightItalic.woff") format("woff");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-Bold.woff2") format("woff2"), url("../webfonts/Mulish-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-Black.woff2") format("woff2"), url("../webfonts/Mulish-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-Regular.woff2") format("woff2"), url("../webfonts/Mulish-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-ExtraBoldItalic.woff2") format("woff2"), url("../webfonts/Mulish-ExtraBoldItalic.woff") format("woff");
   font-weight: 800;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-SemiBoldItalic.woff2") format("woff2"), url("../webfonts/Mulish-SemiBoldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Muli";
+  font-family: "Mulish";
   src: url("../webfonts/Mulish-SemiBold.woff2") format("woff2"), url("../webfonts/Mulish-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;

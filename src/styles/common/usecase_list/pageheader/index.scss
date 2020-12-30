@@ -28,26 +28,26 @@ section.use_case__pageheader {
 
     h2 {
       text-align: left;
-      font: normal normal normal 32px/40px Muli;
+      font: normal normal normal 32px/40px Mulish;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
       margin-bottom: 10px;
       @include media-tablet {
-        font: normal normal normal 22px/28px Muli;
+        font: normal normal normal 22px/28px Mulish;
       }
     }
     p {
       transition: max-height ease 0.5s;
       overflow: hidden;
       text-align: left;
-      font: normal normal normal 18px/23px Muli;
+      font: normal normal normal 18px/23px Mulish;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
       margin: 10px 0;
       @include media-tablet {
-        font: normal normal normal 14px/18px Muli;
+        font: normal normal normal 14px/18px Mulish;
 
         //   display: none;
       }

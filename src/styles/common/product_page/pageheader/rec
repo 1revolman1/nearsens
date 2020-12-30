@@ -129,20 +129,20 @@ section.productpage__pageheader {
             margin-right: 18px;
           }
           h3 {
-            font: normal normal normal 32px/40px Muli;
+            font: normal normal normal 32px/40px Mulish;
             letter-spacing: 0px;
             color: #28373b;
             opacity: 1;
             margin-right: 18px;
             // margin: 0 18px;
             @include media-forHEADER {
-              font: normal normal normal 22px/28px Muli;
+              font: normal normal normal 22px/28px Mulish;
             }
           }
           .productpage__pageheader-wrap-headblock-disqount {
             padding: 5px 10px;
             border-radius: 10px;
-            font: normal normal 300 24px/30px Muli;
+            font: normal normal 300 24px/30px Mulish;
             letter-spacing: 0px;
             color: #ffffff;
             opacity: 1;
@@ -160,40 +160,40 @@ section.productpage__pageheader {
           }
           p {
             white-space: pre-wrap;
-            font: normal normal normal 20px/25px Muli;
+            font: normal normal normal 20px/25px Mulish;
             letter-spacing: 0px;
             color: #28373b;
             margin-bottom: 25px;
             // margin-bottom: 30px;
             @include media-forHEADER {
               margin-bottom: 18px;
-              font: normal normal normal 14px/18px Muli;
+              font: normal normal normal 14px/18px Mulish;
             }
           }
           a {
             text-decoration: none;
-            font: normal normal bold 20px/25px Muli;
+            font: normal normal bold 20px/25px Mulish;
             letter-spacing: 0px;
             color: #005b9d;
             @include media-forHEADER {
-              font: normal normal bold 14px/18px Muli;
+              font: normal normal bold 14px/18px Mulish;
             }
           }
           span {
             white-space: pre-wrap;
-            font: italic normal normal 20px/25px Muli;
+            font: italic normal normal 20px/25px Mulish;
             letter-spacing: 0px;
             color: #28373b;
             @include media-forHEADER {
-              font: normal normal normal 14px/18px Muli;
+              font: normal normal normal 14px/18px Mulish;
             }
             a {
               text-decoration: none;
-              font: italic normal bold 20px/25px Muli;
+              font: italic normal bold 20px/25px Mulish;
               letter-spacing: 0px;
               color: #005b9d;
               @include media-forHEADER {
-                font: italic normal bold 14px/18px Muli;
+                font: italic normal bold 14px/18px Mulish;
               }
             }
           }
@@ -219,28 +219,28 @@ section.productpage__pageheader {
               display: flex;
               position: relative;
               text-align: left;
-              font: normal normal 300 48px/60px Muli;
+              font: normal normal 300 48px/60px Mulish;
               letter-spacing: 0px;
               color: #28373b;
               @include media-forHEADER {
-                font: normal normal 300 36px/45px Muli;
+                font: normal normal 300 36px/45px Mulish;
               }
               sup {
-                font: normal normal 300 28px/60px Muli;
+                font: normal normal 300 28px/60px Mulish;
                 @include media-forHEADER {
-                  font: normal normal 300 25px/45px Muli;
+                  font: normal normal 300 25px/45px Mulish;
                 }
               }
               &.old {
-                font: normal normal 300 31px/60px Muli;
+                font: normal normal 300 31px/60px Mulish;
                 opacity: 0.5;
                 @include media-forHEADER {
-                  font: normal normal 300 30px/45px Muli;
+                  font: normal normal 300 30px/45px Mulish;
                 }
                 sup {
-                  font: normal normal 300 19px/55px Muli;
+                  font: normal normal 300 19px/55px Mulish;
                   @include media-forHEADER {
-                    font: normal normal 300 19px/45px Muli;
+                    font: normal normal 300 19px/45px Mulish;
                   }
                 }
                 &:after {
@@ -264,7 +264,7 @@ section.productpage__pageheader {
               display: none;
               padding: 5px 10px;
               border-radius: 10px;
-              font: normal normal 600 24px/30px Muli;
+              font: normal normal 600 24px/30px Mulish;
               letter-spacing: 0px;
               color: #ffffff;
               opacity: 1;
@@ -273,7 +273,7 @@ section.productpage__pageheader {
                 padding: 5px 11px;
                 display: flex;
                 align-self: center;
-                font: normal normal 600 20px/25px Muli;
+                font: normal normal 600 20px/25px Mulish;
               }
             }
           }
@@ -330,7 +330,7 @@ section.productpage__pageheader {
               }
               span.text {
                 margin: 0 22px;
-                font: normal normal normal 22px/28px Muli;
+                font: normal normal normal 22px/28px Mulish;
                 letter-spacing: 0px;
                 color: #28373b;
                 opacity: 1;
@@ -351,13 +351,13 @@ section.productpage__pageheader {
                 border-radius: 40px;
                 opacity: 1;
                 text-transform: uppercase;
-                font: normal normal bold 18px/23px Muli;
+                font: normal normal bold 18px/23px Mulish;
                 letter-spacing: 0px;
                 color: #ffffff;
                 opacity: 1;
                 @include media-forHEADER {
                   padding: 14px 19px;
-                  font: normal normal bold 16px/20px Muli;
+                  font: normal normal bold 16px/20px Mulish;
                 }
                 i {
                   margin-right: 10px;
@@ -381,7 +381,7 @@ section.productpage__pageheader {
               border-radius: 40px;
               padding: 10px 20px;
               p {
-                font: italic normal bold 18px/23px Muli;
+                font: italic normal bold 18px/23px Mulish;
                 letter-spacing: 0px;
                 color: #ffffff;
                 opacity: 1;

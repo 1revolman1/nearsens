@@ -18,7 +18,7 @@ section.page_gabarit__pageheader {
           @include hblock('h3', 32px) {
             color: black;
             @include media-tablet {
-              font: normal normal normal 22px/28px Muli;
+              font: normal normal normal 22px/28px Mulish;
             }
           }
           // h3 {
@@ -30,7 +30,7 @@ section.page_gabarit__pageheader {
             @include hblock('h3', 32px) {
               color: black;
               @include media-tablet {
-                font: normal normal normal 22px/28px Muli;
+                font: normal normal normal 22px/28px Mulish;
               }
             }
             p {
@@ -57,7 +57,7 @@ section.page_gabarit__pageheader {
           color: #ffffff;
           margin-bottom: 4px;
           @include media-tablet {
-            font: normal normal normal 22px/28px Muli;
+            font: normal normal normal 22px/28px Mulish;
           }
         }
 

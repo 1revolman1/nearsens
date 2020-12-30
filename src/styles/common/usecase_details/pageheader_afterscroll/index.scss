@@ -53,7 +53,7 @@ section.usecase_details__pageheaderafterscroll {
         white-space: nowrap;
 
         display: block;
-        font: normal normal normal 32px/40px Muli;
+        font: normal normal normal 32px/40px Mulish;
         letter-spacing: 0px;
         color: #28373b;
         opacity: 1;
@@ -62,12 +62,12 @@ section.usecase_details__pageheaderafterscroll {
           margin-bottom: 0;
           @include media-tablet {
             max-width: 100%;
-            font: normal normal normal 20px/25px Muli;
+            font: normal normal normal 20px/25px Mulish;
           }
         }
       }
       p {
-        font: italic normal normal 16px/20px Muli;
+        font: italic normal normal 16px/20px Mulish;
         letter-spacing: 0px;
         color: #6d7476;
         opacity: 1;
@@ -118,7 +118,7 @@ section.usecase_details__pageheaderafterscroll {
           }
         }
         p {
-          font: normal normal normal 18px/23px Muli;
+          font: normal normal normal 18px/23px Mulish;
           letter-spacing: 0px;
           color: #28373b;
           opacity: 1;
