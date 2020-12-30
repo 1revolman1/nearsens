@@ -93,7 +93,7 @@ export const useHomePage = function () {
           .querySelector('.index__youtubeframe')
           .scrollIntoView({ block: 'center', behavior: 'smooth' });
       });
-    // Video();
+    Video();
   }
 
   document.querySelector('.index-page-container').style.opacity = 1;

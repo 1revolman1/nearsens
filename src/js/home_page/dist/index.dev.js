@@ -89,7 +89,8 @@ var useHomePage = function useHomePage() {
         block: 'center',
         behavior: 'smooth'
       });
-    }); // Video();
+    });
+    Video();
   }
 
   document.querySelector('.index-page-container').style.opacity = 1;

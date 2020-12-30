@@ -6,7 +6,8 @@ section.index__reviews {
 
   margin-bottom: 80px;
   @include media-tablet {
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
+    margin-bottom: 80px - 55px;
   }
 
   .index__reviews__head {
