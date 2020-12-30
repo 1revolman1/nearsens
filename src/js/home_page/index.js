@@ -47,15 +47,22 @@ export const useHomePage = function () {
   function Video() {
     console.log('VIDEO');
     const video = document.querySelector('div#player-container video');
-
+    // alert(video);
+    // console.log(video, video.paused);
+    // setTimeout(() => {
+    //   console.log('2', video, video.paused);
+    //   video.pause();
+    // }, 5000);
     if (video !== null && typeof video !== 'undefined') {
       video.pause();
       function onScrollChange(changes, observer) {
         changes.forEach((change) => {
           if (change.intersectionRatio === 0) {
             video.pause();
+            // if (video.paused) alert('PAUSED');
           } else {
             video.play();
+            // if (!video.paused) alert('NOT PAUSED');
           }
         });
       }
@@ -86,7 +93,7 @@ export const useHomePage = function () {
           .querySelector('.index__youtubeframe')
           .scrollIntoView({ block: 'center', behavior: 'smooth' });
       });
-    Video();
+    // Video();
   }
 
   document.querySelector('.index-page-container').style.opacity = 1;

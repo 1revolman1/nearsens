@@ -2,69 +2,95 @@
 @import '../../../utils/variables.scss';
 section.productpage__pageheader {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   max-height: 450px;
-  @include media-tablet {
+  height: 450px;
+  max-width: 1920px;
+  margin: 0 auto 80px;
+  @include media-forHEADER {
+    height: auto;
     max-height: inherit;
   }
-  > picture img,
-  > picture source {
-    object-position: right;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    // z-index: 1;
-    @include media-tablet {
-      object-position: inherit;
-      max-height: 325px;
+  &::before {
+    @media screen and (min-width: 1921px) {
+      position: absolute;
+      content: '';
+      width: 20%;
+      height: calc(100% + 1px);
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background: transparent
+        linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat
+        padding-box;
     }
   }
-  margin-bottom: 80px;
-  // margin-bottom: 81px;
-  // @include media-tablet {
-  // 	margin-top: 58px;
-  // }
+  &::after {
+    @media screen and (min-width: 1921px) {
+      position: absolute;
+      content: '';
+      width: 20%;
+      height: calc(100% + 1px);
+      top: 0;
+      right: 0;
+      z-index: 1;
+      transform: scale(-1);
+      background: transparent
+        linear-gradient(90deg, #ffffff 30%, #ffffff00 100%) 0% 0% no-repeat
+        padding-box;
+    }
+  }
+  > picture {
+    img {
+      max-width: 1920px;
+      object-position: right;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+
+      @include media-forHEADER {
+        position: inherit;
+        object-position: inherit;
+        max-height: 455px;
+        @include media-tablet {
+          max-height: 325px;
+        }
+      }
+    }
+  }
   .productpage__pageheader-wrapimgoverlay {
     position: relative;
     background: transparent linear-gradient(90deg, #f2f2f2 0%, #f0f0f000 100%)
       0% 0% no-repeat padding-box;
-    // padding: 90px 0 80px;
-    padding: 80px 0;
-    @include media-tablet {
-      padding: 0;
-      background: transparent linear-gradient(0deg, #f2f2f2 0%, #f0f0f000 100%)
-        0% 0% no-repeat padding-box;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    // padding: 80px 0;
+    &::before {
+      @include media-forHEADER {
+        position: absolute;
+        content: '';
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: transparent
+          linear-gradient(0deg, #f2f2f2 30px, #f0f0f000 100%) 0% 0% no-repeat
+          padding-box;
+        @include media-tablet {
+          top: -75%;
+          height: 75%;
+        }
+      }
     }
-    // &:after{
-    // 	position: absolute;
-    // 	top:0;
-    // 	right:0;
-    // 	content:"";
-    // 	height: 100%;
-    // 	width: 37.4%;
-    // 	transform: matrix(-1, 0, 0, -1, 0, 0);
-    // 	background: transparent linear-gradient(90deg, #F2F2F2 0%, #F0F0F000 100%) 0% 0% no-repeat padding-box;
-    // 	z-index: 1;
-    // 	@include media-tablet {
-    // 		content: unset;
-    // 	}
-    // }
-    // &:before{
-    // 	position: absolute;
-    // 	top:0;
-    // 	left:0;
-    // 	content: "";
-    // 	height: 100%;
-    // 	width: 76.19%;
-    // 	background: transparent linear-gradient(90deg, #F2F2F2 0%, #F0F0F000 100%) 0% 0% no-repeat padding-box;
-    // 	z-index: 1;
-    // 	@include media-tablet {
-    // 		content: unset;
-    // 	}
-    // }
+    @include media-forHEADER {
+      // padding: 0;
+      background: #f2f2f2 0% 0% no-repeat padding-box;
+    }
     .productpage__pageheader-wrap {
       position: relative;
       z-index: 1;
@@ -72,30 +98,23 @@ section.productpage__pageheader {
       flex-flow: row wrap;
       overflow: auto;
       max-height: 320px;
-      // max-height: 295px;
-      // max-height: 290px;
-      @include media-tablet {
-        max-height: inherit;
-        background-size: 100% 325px !important;
-        // background-size: 100% 52% !important;
-        background: transparent
-          linear-gradient(0deg, #f8f8f8fa 20px, #f0f0f000 62%) 0% 0px no-repeat
-          padding-box;
+      @include media-forHEADER {
+        width: 100%;
         margin-top: 0;
-        padding-top: 325px;
-        // padding-top: 354px;
-      }
-      // @media screen and (max-width:328px){
-      // 	background-size: 100% 42%!important;
-      // }
-      .productpage__pageheader-wrap-container {
-        flex: 0 0 60%;
-        @media screen and (max-width: 1100px) {
-          // flex: 0 0 90%;
-          flex: 0 0 100%;
-          margin: 0 auto;
-        }
+        max-height: inherit;
+        // background-size: 100% 340px !important;
+        // background: transparent
+        //   linear-gradient(0deg, #f8f8f8fa 20px, #f0f0f000 62%) 0% 0px no-repeat
+        //   padding-box;
+        // padding-top: 360px;
         @include media-tablet {
+          // background-size: 100% 325px !important;
+          // padding-top: 325px;
+        }
+      }
+      .productpage__pageheader-wrap-container {
+        flex: 0 0 62%;
+        @include media-forHEADER {
           width: 100%;
           flex: none;
           padding: 0 30px 30px;
@@ -117,7 +136,7 @@ section.productpage__pageheader {
             opacity: 1;
             margin-right: 18px;
             // margin: 0 18px;
-            @include media-tablet {
+            @include media-forHEADER {
               font: normal normal normal 22px/28px Muli;
             }
           }
@@ -129,7 +148,7 @@ section.productpage__pageheader {
             color: #ffffff;
             opacity: 1;
             background: #ffa10a 0% 0% no-repeat padding-box;
-            @include media-tablet {
+            @include media-forHEADER {
               display: none;
             }
           }
@@ -137,7 +156,7 @@ section.productpage__pageheader {
         .productpage__pageheader-wrap-textblock {
           // margin-bottom: 63px;
           margin-bottom: 58px;
-          @include media-tablet {
+          @include media-forHEADER {
             margin-bottom: 25px;
           }
           p {
@@ -147,7 +166,7 @@ section.productpage__pageheader {
             color: #28373b;
             margin-bottom: 25px;
             // margin-bottom: 30px;
-            @include media-tablet {
+            @include media-forHEADER {
               margin-bottom: 18px;
               font: normal normal normal 14px/18px Muli;
             }
@@ -157,7 +176,7 @@ section.productpage__pageheader {
             font: normal normal bold 20px/25px Muli;
             letter-spacing: 0px;
             color: #005b9d;
-            @include media-tablet {
+            @include media-forHEADER {
               font: normal normal bold 14px/18px Muli;
             }
           }
@@ -166,7 +185,7 @@ section.productpage__pageheader {
             font: italic normal normal 20px/25px Muli;
             letter-spacing: 0px;
             color: #28373b;
-            @include media-tablet {
+            @include media-forHEADER {
               font: normal normal normal 14px/18px Muli;
             }
             a {
@@ -174,7 +193,7 @@ section.productpage__pageheader {
               font: italic normal bold 20px/25px Muli;
               letter-spacing: 0px;
               color: #005b9d;
-              @include media-tablet {
+              @include media-forHEADER {
                 font: italic normal bold 14px/18px Muli;
               }
             }
@@ -183,12 +202,12 @@ section.productpage__pageheader {
         .productpage__pageheader-wrap-manipulator {
           align-items: flex-start;
           display: flex;
-          @include media-tablet {
+          @include media-forHEADER {
             flex-direction: column;
           }
           .productpage__pageheader-wrap-manipulator-containerprice {
             display: flex;
-            @include media-tablet {
+            @include media-forHEADER {
               margin-bottom: 18px;
               width: 100%;
               flex-wrap: wrap;
@@ -204,24 +223,24 @@ section.productpage__pageheader {
               font: normal normal 300 48px/60px Muli;
               letter-spacing: 0px;
               color: #28373b;
-              @include media-tablet {
+              @include media-forHEADER {
                 font: normal normal 300 36px/45px Muli;
               }
               sup {
                 font: normal normal 300 28px/60px Muli;
-                @include media-tablet {
+                @include media-forHEADER {
                   font: normal normal 300 25px/45px Muli;
                 }
               }
               &.old {
                 font: normal normal 300 31px/60px Muli;
                 opacity: 0.5;
-                @include media-tablet {
+                @include media-forHEADER {
                   font: normal normal 300 30px/45px Muli;
                 }
                 sup {
                   font: normal normal 300 19px/55px Muli;
-                  @include media-tablet {
+                  @include media-forHEADER {
                     font: normal normal 300 19px/45px Muli;
                   }
                 }
@@ -251,7 +270,7 @@ section.productpage__pageheader {
               color: #ffffff;
               opacity: 1;
               background: #ffa10a 0% 0% no-repeat padding-box;
-              @include media-tablet {
+              @include media-forHEADER {
                 padding: 5px 11px;
                 display: flex;
                 align-self: center;
@@ -275,7 +294,7 @@ section.productpage__pageheader {
             justify-content: space-between;
             // align-items:flex-start;
             // width: 100%;
-            @include media-tablet {
+            @include media-forHEADER {
               width: 100%;
               align-items: center;
               background: transparent;
@@ -290,7 +309,7 @@ section.productpage__pageheader {
             .productpage__pageheader-wrap-manipulator-data {
               display: flex;
               padding: 9px 20px;
-              @include media-tablet {
+              @include media-forHEADER {
                 padding: 0;
                 // padding: 9px 10px 9px 0;
               }
@@ -302,7 +321,7 @@ section.productpage__pageheader {
                 border-radius: 10px;
                 opacity: 1;
                 color: white;
-                // @include media-tablet {
+                // @include media-forHEADER  {
                 // 	padding: 3.5px 8px;
                 // }
                 &:disabled {
@@ -316,7 +335,7 @@ section.productpage__pageheader {
                 letter-spacing: 0px;
                 color: #28373b;
                 opacity: 1;
-                @include media-tablet {
+                @include media-forHEADER {
                   margin: 0 14px;
                 }
               }
@@ -337,7 +356,7 @@ section.productpage__pageheader {
                 letter-spacing: 0px;
                 color: #ffffff;
                 opacity: 1;
-                @include media-tablet {
+                @include media-forHEADER {
                   padding: 14px 19px;
                   font: normal normal bold 16px/20px Muli;
                 }

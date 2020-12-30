@@ -6435,7 +6435,7 @@ nav.nav.holiday-header ~ script + main .use_case__scrollheader {
 }
 @media screen and (max-width: 1023px) and (max-width: 768px) {
   main.holiday-state {
-    margin-top: 57px;
+    margin-top: 55px;
   }
 }
 
@@ -6456,3 +6456,9 @@ main.main,
 .filtered {
   display: none !important;
 }
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+/* Could Use thise as well for Individual Controls */
