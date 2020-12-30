@@ -1,3 +1,7 @@
+.page404 {
+  position: relative;
+}
+
 .page404__img {
   position: absolute;
   top: 0;
