@@ -3,12 +3,12 @@ section.page_gabarit__blockwithbigimg {
   grid-column-gap: 1fr;
   margin-bottom: 0;
   grid-row-gap: 80px;
-  padding-bottom: 80px;
+  padding: 40px 0 80px;
 }
 @media screen and (max-width: 1023px) {
   section.page_gabarit__blockwithbigimg {
     grid-row-gap: 40px;
-    padding-bottom: 40px;
+    padding: 20px 0 40px;
   }
 }
 section.page_gabarit__blockwithbigimg.blue {

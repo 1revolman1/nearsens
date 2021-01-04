@@ -5,11 +5,13 @@ section.page_gabarit__blockwithbigimg {
   grid-column-gap: 1fr;
   margin-bottom: 0;
   grid-row-gap: 80px;
-  padding-bottom: 80px;
+  padding: 40px 0 80px;
+  // padding-bottom: 80px;
   @include media-forHEADER {
     // grid-row-gap: 40px;
     grid-row-gap: 40px;
-    padding-bottom: 40px;
+    padding: 20px 0 40px;
+    // padding-bottom: 40px;
   }
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;

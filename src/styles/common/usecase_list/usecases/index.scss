@@ -48,8 +48,7 @@ section.use_case__usecases {
       // align-items: flex-start;
       // justify-content: space-between;
       @include media-tablet {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         grid-row-gap: 21px;
       }
       .use_case__usecases-biglist__element {

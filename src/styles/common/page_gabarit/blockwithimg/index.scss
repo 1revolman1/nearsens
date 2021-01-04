@@ -153,8 +153,8 @@ section.page_gabarit__blockwithimg {
   // margin-top: 74px;
   padding-top: 74px;
   @include media-tablet {
-    // margin: 40px 0 0;
-    padding: 74px 0 0;
+    margin: 35px 0 0;
+    // padding: 74px 0 0;
   }
   .page_gabarit__blockwithimg__wrap {
     display: flex;
@@ -168,6 +168,11 @@ section.page_gabarit__blockwithimg {
       @include media-tablet {
         font: normal normal normal 22px/28px Mulish;
         margin-bottom: 15px;
+      }
+    }
+    &:last-of-type {
+      .page_gabarit__blockwithimg__wrap__container {
+        padding-bottom: 0;
       }
     }
     .page_gabarit__blockwithimg__wrap__container {

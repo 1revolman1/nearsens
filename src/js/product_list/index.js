@@ -1,5 +1,19 @@
 import { tns } from '../../local_modules/tiny-slider/src/tiny-slider';
-
+function debounce(func, wait, immediate) {
+  var timeout;
+  return function () {
+    var context = this,
+      args = arguments;
+    var later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
 function cartAnim() {
   const isMobile = window.innerWidth <= 1023;
   const cart = isMobile
@@ -284,9 +298,6 @@ export const useProductList = function main() {
       prevButton: '.prev',
       nextButton: '.next',
       responsive: {
-        // 770: {
-        //   items: slidesToShow,
-        // },
         769: {
           items: slidesToShow,
         },
@@ -299,6 +310,39 @@ export const useProductList = function main() {
       },
     };
   }
+  function destroySlider(sliderElm) {
+    sliderElm.destroy();
+    document.querySelector('.active-slider').classList.remove('active-slider');
+  }
+  let isMobile = window.innerWidth <= 425,
+    isTablet = window.innerWidth > 425 && window.innerWidth <= 768,
+    isDesktop = window.innerWidth > 768;
+  let slider;
+  if (
+    (len > 4 && isMobile) ||
+    (len > 5 && isTablet) ||
+    (len >= 9 && isDesktop)
+  ) {
+    slider = tns(settingsSlick(len));
+  }
+  window.addEventListener(
+    'resize',
+    debounce(function () {
+      console.log('resize');
+      destroySlider(slider);
+      isMobile = window.innerWidth <= 425;
+      isTablet = window.innerWidth > 425 && window.innerWidth <= 768;
+      isDesktop = window.innerWidth > 768;
+      if (
+        (len > 4 && isMobile) ||
+        (len > 5 && isTablet) ||
+        (len >= 9 && isDesktop)
+      ) {
+        slider = tns(settingsSlick(len));
+      }
+    }, 250)
+  );
+  // const slider = tns(settingsSlick(len));
 
   // document
   //   .querySelectorAll(
@@ -311,9 +355,6 @@ export const useProductList = function main() {
   //   });
 
   // console.log(len);
-  if (len > 6) {
-    const slider = tns(settingsSlick(len));
-  }
 
   // let drag = false;
   // const sliderContainer = document.querySelector(

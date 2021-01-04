@@ -164,10 +164,10 @@ export const useHomePage = function () {
   //   elm.classList.add('mobile-page');
   // });
   // }
-  if (typeof development === 'boolean' && development) {
-    OtherPage();
-  }
-
+  // if (typeof development === 'boolean' && development) {
+  //   OtherPage();
+  // }
+  OtherPage();
   // anime({
   //   targets: '.moving-layer',
   //   translateX: {

@@ -23,6 +23,7 @@ section.productlist__pageheader {
   .productlist__pageheader-wrapper__slider-container {
     position: relative;
     width: 95%;
+    max-width: 1300px;
     // padding: 0 25px;
     overflow: hidden;
     margin: 0 auto;
@@ -30,6 +31,7 @@ section.productlist__pageheader {
       width: 90%;
     }
     &.active-slider {
+      max-width: inherit;
       padding: 0 25px;
       .btn {
         display: block;

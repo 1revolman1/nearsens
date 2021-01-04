@@ -168,11 +168,12 @@ var useHomePage = function useHomePage() {
   //   elm.classList.add('mobile-page');
   // });
   // }
+  // if (typeof development === 'boolean' && development) {
+  //   OtherPage();
+  // }
 
 
-  if (typeof development === 'boolean' && development) {
-    OtherPage();
-  } // anime({
+  OtherPage(); // anime({
   //   targets: '.moving-layer',
   //   translateX: {
   //     value: '*=2.5', // 100px * 2.5 = '250px'
@@ -194,7 +195,6 @@ var useHomePage = function useHomePage() {
   //   // },
   //   direction: 'alternate',
   // });
-
 };
 
 exports.useHomePage = useHomePage;
