@@ -1,0 +1,28 @@
+extends common/layout
+
+block content
+  script
+      |var typePage = "login_page";
+  main
+    include includes/login/sticky/index
+    .woocommerce.main
+        include includes/myaccount/navigationpanel/index
+        .woocommerce-MyAccount-content
+            .woocommerce-notices-wrapper
+                p
+                | Hello 
+                strong admin
+                |  (not 
+                strong admin
+                | ? 
+                a(href='http://nearsens.urich.work/my-account/customer-logout/?_wpnonce=486ce8a82f') Log out
+                | )
+                p
+                | From your account dashboard you can view your 
+                a(href='http://nearsens.urich.work/my-account/orders/') recent orders
+                | , manage your 
+                a(href='http://nearsens.urich.work/my-account/edit-address/') shipping and billing addresses
+                | , and 
+                a(href='http://nearsens.urich.work/my-account/edit-account/') edit your password and account details
+                | .
+
