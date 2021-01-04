@@ -1,36 +1,40 @@
 nav.woocommerce-MyAccount-navigation
-    .woocommerce-account
-        .woocommerce-account__avatar
-            img(src="img/avatarblack.svg", alt="avatar")
-        .woocommerce-account__text
-            h3 Welcome {DisplayName}
-            p Client number : #1687894
-    ul.woocommerce-naviation
-        li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--dashboard.is-active
-            a(href='http://nearsens.urich.work/my-account/')
-                i.fas.fa-tachometer-alt
-                span Dashboard
-        li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--orders
-            a(href='http://nearsens.urich.work/my-account/orders/') 
-                i.fas.fa-shopping-basket
-                span Orders
-        li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads
-            a(href='http://nearsens.urich.work/my-account/downloads/') 
-                i.fas.fa-file-archive
-                span Downloads
-        li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--edit-address
-            a(href='http://nearsens.urich.work/my-account/edit-address/') 
-                i.fas.fa-home
-                span Addresses
-        li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--payment-methods
-            a(href='http://nearsens.urich.work/my-account/payment-methods/') 
-                i.fas.fa-credit-card
-                span Payment methods
-        li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--edit-account
-            a(href='http://nearsens.urich.work/my-account/edit-account/') 
-                i.fas.fa-user
-                span Account details
-        li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout
-            a(href='http://nearsens.urich.work/my-account/customer-logout/?_wpnonce=486ce8a82f') 
-                i.fas.fa-sign-out-alt
-                span Logout
+    button.accordion 
+        i.fas.fa-chevron-up
+        |Menu
+    .panel
+        .woocommerce-account
+            .woocommerce-account__avatar
+                img(src="img/avatarblack.svg", alt="avatar")
+            .woocommerce-account__text
+                h3 Welcome {DisplayName}
+                p Client number : #1687894
+        ul.woocommerce-naviation
+            li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--dashboard.is-active
+                a(href='http://nearsens.urich.work/my-account/')
+                    i.fas.fa-tachometer-alt
+                    span Dashboard
+            li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--orders
+                a(href='http://nearsens.urich.work/my-account/orders/') 
+                    i.fas.fa-shopping-basket
+                    span Orders
+            li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads
+                a(href='http://nearsens.urich.work/my-account/downloads/') 
+                    i.fas.fa-file-archive
+                    span Downloads
+            li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--edit-address
+                a(href='http://nearsens.urich.work/my-account/edit-address/') 
+                    i.fas.fa-home
+                    span Addresses
+            li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--payment-methods
+                a(href='http://nearsens.urich.work/my-account/payment-methods/') 
+                    i.fas.fa-credit-card
+                    span Payment methods
+            li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--edit-account
+                a(href='http://nearsens.urich.work/my-account/edit-account/') 
+                    i.fas.fa-user
+                    span Account details
+            li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout
+                a(href='http://nearsens.urich.work/my-account/customer-logout/?_wpnonce=486ce8a82f') 
+                    i.fas.fa-sign-out-alt
+                    span Logout

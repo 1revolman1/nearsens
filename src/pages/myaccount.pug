@@ -2,27 +2,43 @@ extends common/layout
 
 block content
   script
-      |var typePage = "login_page";
+      |var typePage = "my_account";
   main
-    include includes/login/sticky/index
+    include includes/myaccount/sticky/index
     .woocommerce.main
         include includes/myaccount/navigationpanel/index
-        .woocommerce-MyAccount-content
-            .woocommerce-notices-wrapper
+        .woocommerce-MyAccount-content.woocommerce-Dashboard
+            .woocommerce-notices-wrapper.woocommerce-Dashboard__text
                 p
-                | Hello 
-                strong admin
-                |  (not 
-                strong admin
-                | ? 
-                a(href='http://nearsens.urich.work/my-account/customer-logout/?_wpnonce=486ce8a82f') Log out
-                | )
+                    | Hello 
+                    strong admin
+                    |  (not 
+                    strong admin
+                    | ? 
+                    a(href='http://nearsens.urich.work/my-account/customer-logout/?_wpnonce=486ce8a82f') Log out
+                    | )
                 p
-                | From your account dashboard you can view your 
-                a(href='http://nearsens.urich.work/my-account/orders/') recent orders
-                | , manage your 
-                a(href='http://nearsens.urich.work/my-account/edit-address/') shipping and billing addresses
-                | , and 
-                a(href='http://nearsens.urich.work/my-account/edit-account/') edit your password and account details
-                | .
+                    | From your account dashboard you can view your 
+                    a(href='http://nearsens.urich.work/my-account/orders/') recent orders
+                    | , manage your 
+                    a(href='http://nearsens.urich.work/my-account/edit-address/') shipping and billing addresses
+                    | , and 
+                    a(href='http://nearsens.urich.work/my-account/edit-account/') edit your password and account details
+                    | .
+            .woocommerce-notices-wrapper.woocommerce-Dashboard__dashboard
+                h3 Quickmenu
+                ul.woocommerce-Dashboard__dashelement
+                    li
+                        a(href="")
+                            i.fas.fa-shopping-basket
+                            span Orders
+                    li
+                        a(href="")
+                            i.fas.fa-home
+                            span Addresses
+                    li
+                        a(href="")
+                            i.fas.fa-credit-card
+                            span Account details
+                button.woocommerce-Dashboard__button LOGOUT
 

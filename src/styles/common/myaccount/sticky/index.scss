@@ -1,0 +1,11 @@
+@import '../../../mixins/media';
+@import '../../../utils/variables';
+
+section.woocommerce__page {
+  .woocommerce__page__wrap {
+    @include media-tablet {
+      width: 94%;
+      margin: 0 auto;
+    }
+  }
+}

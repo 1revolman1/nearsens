@@ -10,6 +10,7 @@ import { useContactPage } from './contact_page';
 import { useCartPage } from './cart_page';
 import { useHolidayFunc } from './holdayfunctionality';
 import { useCheckoutPage } from './checkout_page';
+import { useMyAccountPage } from './myaccount_page';
 
 function getBodyScrollTop() {
   return (
@@ -142,6 +143,9 @@ $(document).ready(() => {
       break;
     case typePage === 'checkout_page':
       useCheckoutPage();
+      break;
+    case typePage === 'my_account':
+      useMyAccountPage();
       break;
     default:
       console.log(`ELSE PAGE`);

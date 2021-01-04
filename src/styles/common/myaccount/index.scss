@@ -1,27 +1,23 @@
 @import 'navigation/index';
-// @import "textblockimgheader/index";
-// @import "specificationblock/index";
-// @import "textblockvariations/index";
-// @import "posibletodowithdevice/index";
-// @import "inourapp/index";
-// @import "reviewsavaliable/index";
-// @import "productslinked/index";
-// @import "pageheader/index";
-// @import "pageheader_sticky/index";
-// @import "products/index";
-// @import "possibilities/index";
-// @import "tips/index";
-// @import "pageheader/index";
-// @import "pageheader_afterscroll/index";
+@import 'dashboard/index';
+@import 'sticky/index';
 
+@import '../../mixins/media';
+@import '../../utils/variables';
 .woocommerce {
   padding: 80px 0;
   min-height: calc(100vh - 85px - 64px);
   display: grid;
   grid-template-columns: fit-content(100%) 1fr;
-  //   grid-template-columns: 300px 1fr;
-  //   grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
   grid-template-rows: auto;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-gap: 40px;
+  @include media-forHEADER {
+    @include media-tablet {
+      grid-template-columns: 1fr;
+      width: 94%;
+      grid-gap: 40px - 25px;
+      overflow: inherit;
+      min-height: inherit;
+    }
+  }
 }

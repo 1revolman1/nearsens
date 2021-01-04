@@ -1,0 +1,6 @@
+@media screen and (max-width: 768px) {
+  section.woocommerce__page .woocommerce__page__wrap {
+    width: 94%;
+    margin: 0 auto;
+  }
+}
