@@ -147,23 +147,23 @@ section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabar
     grid-column-gap: 3%;
   }
 }
-@media screen and (max-width: 1023px) and (max-width: 774px) {
+@media screen and (max-width: 1023px) and (max-width: 780px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container {
     grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
   }
 }
-@media screen and (max-width: 1023px) and (max-width: 774px) and (max-width: 768px) {
+@media screen and (max-width: 1023px) and (max-width: 780px) and (max-width: 768px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container {
     grid-template-columns: repeat(auto-fill, minmax(217px, 1fr));
     padding-bottom: 40px;
   }
 }
-@media screen and (max-width: 1023px) and (max-width: 774px) and (max-width: 768px) and (max-width: 520px) {
+@media screen and (max-width: 1023px) and (max-width: 780px) and (max-width: 768px) and (max-width: 520px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container {
     grid-template-columns: repeat(auto-fill, minmax(147px, 1fr));
   }
 }
-@media screen and (max-width: 1023px) and (max-width: 774px) and (max-width: 768px) and (max-width: 520px) and (max-width: 337px) {
+@media screen and (max-width: 1023px) and (max-width: 780px) and (max-width: 768px) and (max-width: 520px) and (max-width: 360px) {
   section.page_gabarit__blockwithimg .page_gabarit__blockwithimg__wrap .page_gabarit__blockwithimg__wrap__container {
     grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
   }

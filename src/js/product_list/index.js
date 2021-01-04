@@ -255,10 +255,10 @@ export const useProductList = function main() {
   //     ],
   //   };
   // }
-  function settingsSlick() {
-    const length = document.querySelectorAll(
-      '.productlist__pageheader-wrapper__slider-container__slider-element'
-    ).length;
+  const len = document.querySelectorAll(
+    '.productlist__pageheader-wrapper__slider-container__slider-element'
+  ).length;
+  function settingsSlick(length) {
     let slidesToShow;
     // length < 15 ? length : 15
     if (length < 15) {
@@ -269,6 +269,9 @@ export const useProductList = function main() {
     } else {
       slidesToShow = 15;
     }
+    document
+      .querySelector('.productlist__pageheader-wrapper__slider-container')
+      .classList.add('active-slider');
     return {
       container: '.productlist__pageheader-wrapper__slider-container__slider',
       items: 4,
@@ -307,7 +310,11 @@ export const useProductList = function main() {
   //     });
   //   });
 
-  const slider = tns(settingsSlick());
+  // console.log(len);
+  if (len > 6) {
+    const slider = tns(settingsSlick(len));
+  }
+
   // let drag = false;
   // const sliderContainer = document.querySelector(
   //   '.productlist__pageheader-wrapper__slider-container__slider'

@@ -186,14 +186,14 @@ section.page_gabarit__blockwithimg {
 
       @include media-forHEADER {
         grid-column-gap: 3%;
-        @media screen and (max-width: 774px) {
+        @media screen and (max-width: 780px) {
           grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
           @include media-tablet {
             grid-template-columns: repeat(auto-fill, minmax(217px, 1fr));
             padding-bottom: 40px;
             @media screen and (max-width: 520px) {
               grid-template-columns: repeat(auto-fill, minmax(147px, 1fr));
-              @media screen and (max-width: 337px) {
+              @media screen and (max-width: 360px) {
                 grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
               }
             }

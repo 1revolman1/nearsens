@@ -23,16 +23,32 @@ section.productlist__pageheader {
   .productlist__pageheader-wrapper__slider-container {
     position: relative;
     width: 95%;
-    padding: 0 25px;
+    // padding: 0 25px;
     overflow: hidden;
     margin: 0 auto;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     @include media-tablet {
       width: 90%;
     }
+    &.active-slider {
+      padding: 0 25px;
+      .btn {
+        display: block;
+      }
+      .productlist__pageheader-wrapper__slider-container__slider {
+        justify-content: center;
+        @include media-tablet {
+          width: 80%;
+        }
+        .productlist__pageheader-wrapper__slider-container__slider-element {
+          margin: 0 10px;
+          @include media-tablet {
+            margin: 0 7px;
+          }
+        }
+      }
+    }
     .btn {
+      display: none;
       outline: none;
       // position: absolute;
       // top: 50%;
@@ -42,7 +58,6 @@ section.productlist__pageheader {
       line-height: 0;
       position: absolute;
       top: 50%;
-      display: block;
       width: 20px;
       height: 20px;
       padding: 0;
@@ -84,26 +99,23 @@ section.productlist__pageheader {
     // }
     .productlist__pageheader-wrapper__slider-container__slider {
       user-select: none;
-      // width: 95%;
-      // overflow: hidden;
-      // margin: 0 auto;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      @include media-tablet {
-        width: 80%;
-      }
+      // @include media-tablet {
+      //   width: 80%;
+      // }
       .productlist__pageheader-wrapper__slider-container__slider-element {
         display: flex;
         user-select: none;
         align-items: center;
         justify-content: center;
-        margin: 0 10px;
         outline: none;
+        // margin: 0 10px;
+        // @include media-tablet {
+        //   margin: 0 7px;
+        // }
 
-        @include media-tablet {
-          margin: 0 7px;
-        }
         &.non-filter {
           opacity: 0.4;
           img {
