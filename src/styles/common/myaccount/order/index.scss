@@ -13,7 +13,7 @@ $row-bg: #f4f2f1;
   .flex-table {
     display: flex;
     flex-flow: row wrap;
-    border-left: solid 1px $table-border;
+    // border-left: solid 1px $table-border;
     transition: 0.5s;
     &:first-of-type {
       border: none;
@@ -21,13 +21,14 @@ $row-bg: #f4f2f1;
       //   border-left: solid 1px $table-header-border;
     }
     &:first-of-type .flex-row {
+      display: flex;
       font: normal normal bold 18px/23px Mulish;
       letter-spacing: 0px;
       color: #9f9f9f;
       text-transform: uppercase;
       opacity: 1;
-      background: $table-header;
       border: none;
+      // background: $table-header;
       //   border-color: $table-header-border;
     }
     &.row:nth-child(odd) .flex-row {
