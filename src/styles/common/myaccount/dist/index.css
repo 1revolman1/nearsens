@@ -321,7 +321,7 @@ nav.woocommerce-MyAccount-navigation .woocommerce-naviation li a {
     width: 100%;
   }
 }
-.woocommerce {
+.woocommerce-application {
   padding: 80px 0;
   min-height: calc(100vh - 85px - 64px);
   display: grid;
@@ -330,7 +330,7 @@ nav.woocommerce-MyAccount-navigation .woocommerce-naviation li a {
   grid-gap: 40px;
 }
 @media screen and (max-width: 1023px) and (max-width: 768px) {
-  .woocommerce {
+  .woocommerce-application {
     grid-template-columns: 1fr;
     width: 94%;
     grid-gap: 15px;

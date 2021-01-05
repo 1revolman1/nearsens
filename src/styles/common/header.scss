@@ -1198,7 +1198,11 @@ nav.nav {
               }
             }
           }
-
+          &:hover {
+            a {
+              color: #2ec9ad;
+            }
+          }
           a {
             text-overflow: ellipsis;
             overflow: hidden;

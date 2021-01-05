@@ -120,14 +120,16 @@ section.productlist__products {
           max-height: 250px;
           @media screen and (max-width: 925px) {
             min-width: inherit;
-
+            max-height: inherit;
+            height: auto;
             @include media-tablet {
               display: grid;
               grid-template-columns: minmax(137px, 1fr) 2fr;
               grid-gap: 10px;
 
-              height: auto;
-              max-height: inherit;
+              // height: auto;
+              // max-height: inherit;
+
               // min-width: 295px;
               // height: 200px;
               // max-height: 200px;
@@ -136,9 +138,8 @@ section.productlist__products {
               margin-bottom: 20.5px;
               @media screen and (max-width: 390px) {
                 display: inherit;
-
                 min-width: 295px;
-                height: auto;
+                // height: auto;
                 // height: 200px;
                 max-height: 200px;
                 @media screen and (max-width: 350px) {
@@ -329,13 +330,18 @@ section.productlist__products {
         margin-bottom: 21px;
         // width: 333px;
         height: 250px;
-        @include media-tablet {
-          margin-bottom: 0;
-          width: 137px;
-          height: 134px;
-          @media screen and (max-width: 350px) {
-            height: 100%;
-            width: 100%;
+        @media screen and (max-width: 1180px) {
+          max-height: inherit;
+          height: auto;
+          @include media-tablet {
+            margin-bottom: 0;
+            width: 137px;
+            height: 134px;
+
+            @media screen and (max-width: 350px) {
+              height: 100%;
+              width: 100%;
+            }
           }
         }
       }
@@ -572,7 +578,7 @@ section.productlist__products {
               .desktop {
                 display: inline;
                 @include media-tablet {
-                  display: none;
+                  display: none !important;
                 }
               }
               i {

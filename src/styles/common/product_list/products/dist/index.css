@@ -115,6 +115,8 @@ section.productlist__products .productlist__products-container .productlist__pro
 @media screen and (max-width: 925px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-imgcontainer {
     min-width: inherit;
+    max-height: inherit;
+    height: auto;
   }
 }
 @media screen and (max-width: 925px) and (max-width: 768px) {
@@ -122,8 +124,6 @@ section.productlist__products .productlist__products-container .productlist__pro
     display: grid;
     grid-template-columns: minmax(137px, 1fr) 2fr;
     grid-gap: 10px;
-    height: auto;
-    max-height: inherit;
     width: 100%;
     flex: none;
     margin-bottom: 20.5px;
@@ -133,7 +133,6 @@ section.productlist__products .productlist__products-container .productlist__pro
   section.productlist__products .productlist__products-container .productlist__products-container-element.big-block .productlist__products-container-element-imgcontainer {
     display: inherit;
     min-width: 295px;
-    height: auto;
     max-height: 200px;
   }
 }
@@ -341,14 +340,20 @@ section.productlist__products .productlist__products-container .productlist__pro
   margin-bottom: 21px;
   height: 250px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1180px) {
+  section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-imgcontainer {
+    max-height: inherit;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1180px) and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-imgcontainer {
     margin-bottom: 0;
     width: 137px;
     height: 134px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 350px) {
+@media screen and (max-width: 1180px) and (max-width: 768px) and (max-width: 350px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-imgcontainer {
     height: 100%;
     width: 100%;
@@ -599,7 +604,7 @@ section.productlist__products .productlist__products-container .productlist__pro
 }
 @media screen and (max-width: 768px) {
   section.productlist__products .productlist__products-container .productlist__products-container-element .productlist__products-container-element-controller .productlist__products-container-element-controllers .productlist__products-container-element-controllers-manipulator .productlist__products-container-element-controllers-successbuying .desktop {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (max-width: 768px) {

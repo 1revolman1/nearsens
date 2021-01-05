@@ -1124,6 +1124,9 @@ nav.nav .second-menu .nav-menu ul li.dropup .dropup-content a i {
     color: #33709c;
   }
 }
+nav.nav .second-menu .nav-menu ul li:hover a {
+  color: #2ec9ad;
+}
 nav.nav .second-menu .nav-menu ul li a {
   text-overflow: ellipsis;
   overflow: hidden;
