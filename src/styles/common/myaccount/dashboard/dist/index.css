@@ -1,22 +1,22 @@
-.woocommerce-Dashboard {
+.woocommerce-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: fit-content(100%);
   grid-gap: 40px;
 }
-.woocommerce-Dashboard .woocommerce-Dashboard__text p {
+.woocommerce-container .woocommerce-container__text p {
   font: normal normal 300 18px/23px Mulish;
   letter-spacing: 0px;
   color: #28373b;
 }
-.woocommerce-Dashboard .woocommerce-Dashboard__text p a {
+.woocommerce-container .woocommerce-container__text p a {
   text-align: left;
   text-decoration: underline;
   font: normal normal 600 18px/23px Mulish;
   letter-spacing: 0px;
   color: #005b9d;
 }
-.woocommerce-Dashboard .woocommerce-Dashboard__dashboard h3 {
+.woocommerce-container .woocommerce-container__dashboard h3 {
   font: normal normal normal 32px/40px Mulish;
   letter-spacing: 0px;
   color: #333333;
@@ -24,13 +24,13 @@
   padding: 0 0 15px;
   border-bottom: 1px solid #707070;
 }
-.woocommerce-Dashboard .woocommerce-Dashboard__dashboard ul.woocommerce-Dashboard__dashelement {
+.woocommerce-container .woocommerce-container__dashboard ul.woocommerce-container__dashelement {
   display: grid;
   grid-gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
   padding: 21px 0 40px;
 }
-.woocommerce-Dashboard .woocommerce-Dashboard__dashboard ul.woocommerce-Dashboard__dashelement li {
+.woocommerce-container .woocommerce-container__dashboard ul.woocommerce-container__dashelement li {
   display: flex;
   cursor: pointer;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -38,10 +38,10 @@
   border-radius: 10px;
   opacity: 1;
 }
-.woocommerce-Dashboard .woocommerce-Dashboard__dashboard ul.woocommerce-Dashboard__dashelement li:hover a {
+.woocommerce-container .woocommerce-container__dashboard ul.woocommerce-container__dashelement li:hover a {
   color: rgba(0, 92, 158, 0.5);
 }
-.woocommerce-Dashboard .woocommerce-Dashboard__dashboard ul.woocommerce-Dashboard__dashelement li a {
+.woocommerce-container .woocommerce-container__dashboard ul.woocommerce-container__dashelement li a {
   display: grid;
   grid-template-columns: 20px fit-content(100%);
   grid-gap: 15px;
@@ -52,7 +52,7 @@
   color: #005b9d;
   opacity: 1;
 }
-.woocommerce-Dashboard .woocommerce-Dashboard__dashboard .woocommerce-Dashboard__button {
+.woocommerce-container .woocommerce-container__dashboard .woocommerce-container__button {
   padding: 14px 29px;
   background: #005b9d 0% 0% no-repeat padding-box;
   border-radius: 5px;

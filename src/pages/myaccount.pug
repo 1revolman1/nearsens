@@ -7,8 +7,8 @@ block content
     include includes/myaccount/sticky/index
     .woocommerce-myaccountpage.main
         include includes/myaccount/navigationpanel/index
-        .woocommerce-MyAccount-content.woocommerce-Dashboard
-            .woocommerce-notices-wrapper.woocommerce-Dashboard__text
+        .woocommerce-container 
+            .woocommerce-container__text
                 p
                     | Hello 
                     strong admin
@@ -25,9 +25,9 @@ block content
                     | , and 
                     a(href='http://nearsens.urich.work/my-account/edit-account/') edit your password and account details
                     | .
-            .woocommerce-notices-wrapper.woocommerce-Dashboard__dashboard
+            .woocommerce-container__dashboard
                 h3 Quickmenu
-                ul.woocommerce-Dashboard__dashelement
+                ul.woocommerce-container__dashelement
                     li
                         a(href="")
                             i.fas.fa-shopping-basket
@@ -40,5 +40,5 @@ block content
                         a(href="")
                             i.fas.fa-credit-card
                             span Account details
-                button.woocommerce-Dashboard__button LOGOUT
+                button.woocommerce-container__button LOGOUT
 

@@ -1,11 +1,11 @@
-nav.woocommerce-naviationpanel {
+nav.woocommerce-navigationpanel {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 25px;
   grid-template-rows: fit-content(100%);
   width: 100%;
 }
-nav.woocommerce-naviationpanel .accordion {
+nav.woocommerce-navigationpanel .accordion {
   display: none;
   margin: 10px 0;
   color: #444;
@@ -25,7 +25,7 @@ nav.woocommerce-naviationpanel .accordion {
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
-  nav.woocommerce-naviationpanel .accordion {
+  nav.woocommerce-navigationpanel .accordion {
     margin: 5px 0;
     padding: 10px 20px;
     display: flex;
@@ -36,20 +36,20 @@ nav.woocommerce-naviationpanel .accordion {
     opacity: 1;
   }
 }
-nav.woocommerce-naviationpanel .accordion .fas.fa-chevron-up {
+nav.woocommerce-navigationpanel .accordion .fas.fa-chevron-up {
   transition: all 0.3s ease;
   transform: scale(-1);
   font-size: 20px;
   margin-right: 21px;
   color: #005b9d;
 }
-nav.woocommerce-naviationpanel .accordion:hover {
+nav.woocommerce-navigationpanel .accordion:hover {
   background-color: #ccc;
 }
-nav.woocommerce-naviationpanel .active .fas.fa-chevron-up {
+nav.woocommerce-navigationpanel .active .fas.fa-chevron-up {
   transform: scale(1);
 }
-nav.woocommerce-naviationpanel .panel {
+nav.woocommerce-navigationpanel .panel {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 27px;
@@ -57,67 +57,67 @@ nav.woocommerce-naviationpanel .panel {
   transition: max-height 0.3s ease;
 }
 @media screen and (max-width: 768px) {
-  nav.woocommerce-naviationpanel .panel {
+  nav.woocommerce-navigationpanel .panel {
     grid-gap: 15px;
     max-height: 0;
   }
 }
-nav.woocommerce-naviationpanel .woocommerce-account {
+nav.woocommerce-navigationpanel .woocommerce-account {
   display: flex;
   flex-direction: row;
   gap: 10px;
   padding-right: 44px;
 }
 @media screen and (max-width: 768px) {
-  nav.woocommerce-naviationpanel .woocommerce-account {
+  nav.woocommerce-navigationpanel .woocommerce-account {
     padding-right: 0px;
   }
 }
-nav.woocommerce-naviationpanel .woocommerce-account .woocommerce-account__avatar img {
+nav.woocommerce-navigationpanel .woocommerce-account .woocommerce-account__avatar img {
   width: 50px;
   height: 50px;
 }
-nav.woocommerce-naviationpanel .woocommerce-account .woocommerce-account__text {
+nav.woocommerce-navigationpanel .woocommerce-account .woocommerce-account__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
-nav.woocommerce-naviationpanel .woocommerce-account .woocommerce-account__text h3 {
+nav.woocommerce-navigationpanel .woocommerce-account .woocommerce-account__text h3 {
   text-align: left;
   font: normal normal bold 18px/23px Mulish;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
 }
-nav.woocommerce-naviationpanel .woocommerce-account .woocommerce-account__text p {
+nav.woocommerce-navigationpanel .woocommerce-account .woocommerce-account__text p {
   text-align: left;
   font: italic normal 300 12px/15px Mulish;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
 }
-nav.woocommerce-naviationpanel .woocommerce-naviation li {
+nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigation__block {
   display: flex;
   border-bottom: 1px solid rgba(112, 112, 112, 0.5);
   border-right: 8px solid transparent;
 }
-nav.woocommerce-naviationpanel .woocommerce-naviation li:last-of-type {
+nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigation__block:last-of-type {
   border-bottom: none;
 }
-nav.woocommerce-naviationpanel .woocommerce-naviation li:not(.is-active):hover {
+nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigation__block:not(.is-active):hover {
   opacity: 0.5;
 }
-nav.woocommerce-naviationpanel .woocommerce-naviation li.is-active {
+nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigation__block.is-active {
   border-right: 8px solid #333333;
 }
-nav.woocommerce-naviationpanel .woocommerce-naviation li.is-active a {
+nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigation__block.is-active a {
   font: italic normal bold 18px/23px Mulish;
 }
-nav.woocommerce-naviationpanel .woocommerce-naviation li * {
+nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigation__block * {
   user-select: none;
 }
-nav.woocommerce-naviationpanel .woocommerce-naviation li a {
+nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigation__block a {
   display: grid;
   align-items: center;
   grid-template-columns: 20px fit-content(100%);

@@ -1,6 +1,6 @@
 @import '../../../mixins/media';
 @import '../../../utils/variables';
-nav.woocommerce-naviationpanel {
+nav.woocommerce-navigationpanel {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 40px - 15px;
@@ -105,8 +105,8 @@ nav.woocommerce-naviationpanel {
       }
     }
   }
-  .woocommerce-naviation {
-    li {
+  .woocommerce-navigation {
+    li.woocommerce-navigation__block {
       display: flex;
       border-bottom: 1px solid hsla(0, 0%, 44%, 0.5);
       border-right: 8px solid transparent;
