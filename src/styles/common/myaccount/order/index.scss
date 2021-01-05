@@ -86,7 +86,6 @@ $row-bg: #f4f2f1;
   &:last-child {
   }
 }
-
 @include media-forHEADER {
   .flex-row {
     width: calc(100% / 3); //1px = border right
