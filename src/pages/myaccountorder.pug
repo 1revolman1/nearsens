@@ -1,0 +1,11 @@
+extends common/layout
+
+block content
+  script
+      |var typePage = "my_account";
+  main
+    include includes/myaccount/sticky/index
+    .woocommerce.main
+        include includes/myaccount/navigationpanel/index
+        .woocommerce-MyAccount-content.woocommerce-Dashboard
+           include includes/myaccount/order/index

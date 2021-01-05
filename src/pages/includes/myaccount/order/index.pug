@@ -1,0 +1,39 @@
+.table-container(role='table' aria-label='Destinations')
+    .flex-table.header(role='rowgroup')
+        .flex-row.first(role='columnheader') Order number
+        .flex-row(role='columnheader') Date
+        .flex-row(role='columnheader') STATE
+        .flex-row(role='columnheader') TOTAL
+        .flex-row.first(role='columnheader') 
+            i.fas.fa-tools
+    each val in [1,2,3]
+        .flex-table.row(role='rowgroup')
+            .flex-row.first(role='cell')
+                a.link.flag-icon.flag-icon-gb #35478
+            .flex-row(role='cell') 01/01/2020
+            .flex-row(role='cell') Shipping
+            .flex-row(role='cell') 49€99 - 4 items
+            .flex-row.first(role='cell')
+                i.fas.fa-eye
+                i.fas.fa-file-invoice-dollar
+    //- .flex-table.row(role='rowgroup')
+    //-     .flex-row.rowspan.first
+    //-         span.flag-icon.flag-icon-us
+    //-         |  United States
+    //-     .column
+    //-         .flex-row
+    //-             .flex-cell(role='cell') Napa and Sonoma Wine Country Tour
+    //-             .flex-cell(role='cell') 5 Sep, 9p.m.
+    //-             .flex-cell(role='cell') US$600
+    //-             .flex-cell(role='cell') US$600
+    //-         .flex-row(role='rowgroup')
+    //-             .flex-cell(role='cell') Day Trip to Martha&apos;s Vineyard
+    //-             .flex-cell(role='cell') 12 Sep, 5p.m.
+    //-             .flex-cell(role='cell') US$600
+    //-             .flex-cell(role='cell') US$600
+    //-         .flex-row(role='rowgroup')
+    //-             .flex-cell(role='cell') Grand Canyon West Rim and Hoover Dam Tour
+    //-             .flex-cell(role='cell') 5 Sep, 2p.m.
+    //-             .flex-cell(role='cell') US$550
+    //-             .flex-cell(role='cell') US$600
+    
