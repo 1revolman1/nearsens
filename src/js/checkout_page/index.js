@@ -35,7 +35,9 @@ export const useCheckoutPage = () => {
     '.checkout_page__content__contact__manip__chekedboxAccept input',
     true
   );
-
+  $('.ui.dropdown').dropdown({
+    clearable: true,
+  });
   document.querySelectorAll('.accordion').forEach((accordion) => {
     accordion.addEventListener('click', function () {
       this.classList.toggle('active');

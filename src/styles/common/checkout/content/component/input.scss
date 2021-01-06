@@ -1,7 +1,12 @@
 .checkout_page__input {
   display: flex;
   margin-bottom: 18px;
-  input {
+  input,
+  .styled-input.styled-input,
+  .search {
+    &.ui.active {
+      height: 53px;
+    }
     border: 1px solid #bbbbbb;
     border-radius: 6px;
     opacity: 1;
@@ -12,5 +17,8 @@
     opacity: 1;
     padding: 14px 20px;
     background: white;
+    &::placeholder {
+      font: normal normal 300 18px/23px Mulish;
+    }
   }
 }
