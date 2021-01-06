@@ -1026,6 +1026,7 @@ nav.nav {
             }
             &:hover {
               .dropbtn {
+                color: #2ec9ad;
                 i:not(.globe) {
                   transform: rotate(-90deg);
 
@@ -1082,7 +1083,7 @@ nav.nav {
               > i:not(.globe) {
                 transform: rotate(90deg);
                 margin: 0 7px;
-                transition: all ease 0.5s;
+                transition: transform ease 0.5s;
                 height: 15px;
                 width: 12px;
               }

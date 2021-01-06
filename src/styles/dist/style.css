@@ -7459,6 +7459,9 @@ nav.nav .second-menu .nav-menu ul li.dropup.dropup-language .dropbtn .fas.globe 
 nav.nav .second-menu .nav-menu ul li.dropup.dropup-language .dropbtn .fas.fa-angle-right {
   margin-left: auto;
 }
+nav.nav .second-menu .nav-menu ul li.dropup:hover .dropbtn {
+  color: #2ec9ad;
+}
 nav.nav .second-menu .nav-menu ul li.dropup:hover .dropbtn i:not(.globe) {
   transform: rotate(-90deg);
 }
@@ -7507,7 +7510,7 @@ nav.nav .second-menu .nav-menu ul li.dropup .dropbtn > svg,
 nav.nav .second-menu .nav-menu ul li.dropup .dropbtn > i:not(.globe) {
   transform: rotate(90deg);
   margin: 0 7px;
-  transition: all ease 0.5s;
+  transition: transform ease 0.5s;
   height: 15px;
   width: 12px;
 }
@@ -20231,6 +20234,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
+  margin: 0;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm input {
   position: absolute;
@@ -20306,7 +20310,9 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   display: flex;
   margin-bottom: 18px;
 }
-.checkout_page__input input {
+.checkout_page__input input,
+.checkout_page__input .styled-input.styled-input,
+.checkout_page__input .search {
   border: 1px solid #bbbbbb;
   border-radius: 6px;
   opacity: 1;
@@ -20317,6 +20323,16 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   opacity: 1;
   padding: 14px 20px;
   background: white;
+}
+.checkout_page__input input.ui.active,
+.checkout_page__input .styled-input.styled-input.ui.active,
+.checkout_page__input .search.ui.active {
+  height: 53px;
+}
+.checkout_page__input input::placeholder,
+.checkout_page__input .styled-input.styled-input::placeholder,
+.checkout_page__input .search::placeholder {
+  font: normal normal 300 18px/23px Mulish;
 }
 
 section.checkout_page__content {
@@ -20875,5 +20891,5 @@ blockquote {
 }
 
 * {
-  font-family: Mulish;
+  font-family: "Mulish";
 }

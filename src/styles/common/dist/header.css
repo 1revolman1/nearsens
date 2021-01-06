@@ -979,6 +979,9 @@ nav.nav .second-menu .nav-menu ul li.dropup.dropup-language .dropbtn .fas.globe 
 nav.nav .second-menu .nav-menu ul li.dropup.dropup-language .dropbtn .fas.fa-angle-right {
   margin-left: auto;
 }
+nav.nav .second-menu .nav-menu ul li.dropup:hover .dropbtn {
+  color: #2ec9ad;
+}
 nav.nav .second-menu .nav-menu ul li.dropup:hover .dropbtn i:not(.globe) {
   transform: rotate(-90deg);
 }
@@ -1027,7 +1030,7 @@ nav.nav .second-menu .nav-menu ul li.dropup .dropbtn > svg,
 nav.nav .second-menu .nav-menu ul li.dropup .dropbtn > i:not(.globe) {
   transform: rotate(90deg);
   margin: 0 7px;
-  transition: all ease 0.5s;
+  transition: transform ease 0.5s;
   height: 15px;
   width: 12px;
 }
