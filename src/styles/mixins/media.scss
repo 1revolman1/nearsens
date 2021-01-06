@@ -5,6 +5,11 @@
     @content;
   }
 }
+@mixin media-smaller-desktop {
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
+}
 @mixin media-forHEADER {
   @media screen and (max-width: 1023px) {
     @content;
