@@ -15,14 +15,20 @@
     @include hblock('h3', $font-size: 32px, $weight: normal, $line: 35px) {
       letter-spacing: 0px;
       color: #333333;
+      @include media-tablet {
+        font: normal normal bold 25px/25px Mulish;
+      }
       span {
-        font: italic normal 300 28px/35px Muli;
+        font: italic normal 300 28px/35px Mulish;
         letter-spacing: 0px;
         color: #333333;
+        @include media-tablet {
+          font: italic normal 300 20px/35px Mulish;
+        }
       }
     }
     p {
-      font: normal normal 300 18px/23px Muli;
+      font: normal normal 300 18px/23px Mulish;
       letter-spacing: 0px;
       color: #28373b;
       opacity: 1;
@@ -34,6 +40,23 @@
       padding-bottom: 15px;
       margin-bottom: 20px;
       border-bottom: 1px solid #707070;
+    }
+    .woocomerse__btncontainer {
+      margin-top: 40px;
+      display: flex;
+      justify-content: flex-end;
+      .woocomerse__savebtn {
+        cursor: pointer;
+        user-select: none;
+        background: #2ec9ad 0% 0% no-repeat padding-box;
+        border-radius: 40px;
+        opacity: 1;
+        padding: 14px 28px;
+        font: normal normal bold 18px/22px Mulish;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+      }
     }
   }
 }
