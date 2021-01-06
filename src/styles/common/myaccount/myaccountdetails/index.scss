@@ -1,0 +1,31 @@
+@import '../../../mixins/media';
+@import '../../../mixins/text';
+.woocomerse__myaccountdetails {
+  .woocomerse__inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    gap: 20px 40px;
+    margin-bottom: 10px;
+    .one {
+      grid-column: 1/-1;
+    }
+  }
+  .woocomerse__text {
+    margin-bottom: 40px;
+    @include hblock('h3', $font-size: 32px, $weight: normal, $line: 35px) {
+      letter-spacing: 0px;
+      color: #333333;
+      span {
+        font: italic normal 300 28px/35px Muli;
+        letter-spacing: 0px;
+        color: #333333;
+      }
+    }
+    p {
+      font: normal normal 300 18px/23px Muli;
+      letter-spacing: 0px;
+      color: #28373b;
+      opacity: 1;
+    }
+  }
+}
