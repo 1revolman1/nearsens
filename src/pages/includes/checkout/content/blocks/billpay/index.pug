@@ -6,6 +6,16 @@ section.checkout_page__content__contact
             span.text Same as shipping address
             input(type='checkbox')
             span.checkmark
+    .checkout_page__content__contact__order-notes
+        label(
+            class='checkout_page__content__contact__order-notes__textareaLabel'
+            for='checkout_page__content__contact__order-notes__textarea'
+        ) Order notes (optional)
+        textarea(
+            class='checkout_page__content__contact__order-notes__textarea'
+            id='checkout_page__content__contact__order-notes__textarea'
+            placeholder='Notes about your order, e.g. special notes for delivery.'
+        )
 section.checkout_page__content__contact
     .checkout_page__content__contact__head
         h3 Payment method
