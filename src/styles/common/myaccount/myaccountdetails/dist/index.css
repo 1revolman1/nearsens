@@ -88,3 +88,11 @@
   color: #28373b;
   opacity: 1;
 }
+.woocomerse__myaccountdetails .woocomerse__passchange {
+  margin-top: 50px;
+}
+.woocomerse__myaccountdetails .woocomerse__passchange .woocomerse__text {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #707070;
+}

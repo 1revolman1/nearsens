@@ -16,7 +16,7 @@ nav.woocommerce-navigationpanel .accordion {
   text-align: left;
   outline: none;
   transition: all ease 0.3s;
-  background: #f2f2f2 0% 0% no-repeat padding-box;
+  background: #fff 0% 0% no-repeat padding-box;
   border-radius: 100px;
   opacity: 1;
   font: normal normal 300 16px/20px Mulish;
@@ -320,6 +320,109 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
     width: 100%;
   }
 }
+.woocomerse__myaccountdetails .woocomerse__inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  gap: 20px 40px;
+  margin-bottom: 10px;
+}
+.woocomerse__myaccountdetails .woocomerse__inputs .one {
+  grid-column: 1/-1;
+}
+.woocomerse__myaccountdetails .woocomerse__text {
+  margin-bottom: 40px;
+}
+.woocomerse__myaccountdetails .woocomerse__text h6 {
+  font: normal normal normal 26px/35px Mulish;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text h6 span {
+  font: italic normal 300 28px/35px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text h5 {
+  font: normal normal normal 28px/35px Mulish;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text h5 span {
+  font: italic normal 300 28px/35px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text h4 {
+  font: normal normal normal 30px/35px Mulish;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text h4 span {
+  font: italic normal 300 28px/35px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text h3 {
+  font: normal normal normal 32px/35px Mulish;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text h3 span {
+  font: italic normal 300 28px/35px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text h2 {
+  font: normal normal normal 34px/35px Mulish;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text h2 span {
+  font: italic normal 300 28px/35px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text h1 {
+  font: normal normal normal 36px/35px Mulish;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text h1 span {
+  font: italic normal 300 28px/35px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.woocomerse__myaccountdetails .woocomerse__text p {
+  font: normal normal 300 18px/23px Muli;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+}
+.woocomerse__myaccountdetails .woocomerse__passchange {
+  margin-top: 50px;
+}
+.woocomerse__myaccountdetails .woocomerse__passchange .woocomerse__text {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #707070;
+}
+
+.graybg {
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+}
+
 .woocommerce-myaccountpage {
   padding: 80px 0;
   min-height: calc(100vh - 85px - 64px);

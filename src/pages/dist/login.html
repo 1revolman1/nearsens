@@ -138,63 +138,31 @@
         </div>
       </div>
     </nav>
-    <script>var typePage = "my_account";</script>
+    <script>var typePage = "login_page";</script>
     <main class="graybg">
-      <section class="loginpage__sticky woocommerce__page">
-        <div class="loginpage__sticky__wrap main woocommerce__page__wrap">
-          <h2>My account</h2>
-          <p>DASHBOARD</p>
+      <section class="loginpage__sticky">
+        <div class="loginpage__sticky__wrap main">
+          <h2>Login</h2>
         </div>
       </section>
-      <div class="woocommerce-myaccountpage main">
-        <nav class="woocommerce-navigationpanel">
-          <button class="accordion"> <i class="fas fa-chevron-up"></i>Menu</button>
-          <div class="panel">
-            <div class="woocommerce-account">
-              <div class="woocommerce-account__avatar"><img src="img/avatarblack.svg" alt="avatar"/></div>
-              <div class="woocommerce-account__text">
-                <h3>Welcome {DisplayName}</h3>
-                <p>Client number : #1687894</p>
-              </div>
+      <section class="main">
+        <section class="loginpage__container">
+          <h2>SIGN IN</h2>
+          <form class="loginpage__container__block">
+            <h3>Already member</h3>
+            <div class="loginpage__container__block__manipulator">
+              <input type="email" placeholder="EMAIL"/>
+              <input type="password" placeholder="PASSWORD"/><a href="">Forgot your password ?</a>
             </div>
-            <ul class="woocommerce-navigation">
-              <li class="woocommerce-navigation__block is-active"><a href="http://nearsens.urich.work/my-account/"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-              <li class="woocommerce-navigation__block"><a href="http://nearsens.urich.work/my-account/orders/"> <i class="fas fa-shopping-basket"></i><span>Orders</span></a></li>
-              <li class="woocommerce-navigation__block"><a href="http://nearsens.urich.work/my-account/downloads/"> <i class="fas fa-file-archive"></i><span>Downloads</span></a></li>
-              <li class="woocommerce-navigation__block"><a href="http://nearsens.urich.work/my-account/edit-address/"> <i class="fas fa-home"></i><span>Addresses</span></a></li>
-              <li class="woocommerce-navigation__block"><a href="http://nearsens.urich.work/my-account/payment-methods/"> <i class="fas fa-credit-card"></i><span>Payment methods</span></a></li>
-              <li class="woocommerce-navigation__block"><a href="http://nearsens.urich.work/my-account/edit-account/"> <i class="fas fa-user"></i><span>Account details</span></a></li>
-              <li class="woocommerce-navigation__block"><a href="http://nearsens.urich.work/my-account/customer-logout/?_wpnonce=486ce8a82f"> <i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="woocommerce-MyAccount-content woocommerce-Dashboard">
-          <div class="woocomerse__myaccountdetails">
-            <div class="checkout_page__input woocomerse__inputs">
-              <input class="two" type="text" placeholder="Fist name"/>
-              <input class="two" type="text" placeholder="Last name*"/>
-              <input class="one" type="text" placeholder="Last name*"/>
+            <div class="loginpage__container__block__email">
+              <button type="submit">SIGN IN</button>
             </div>
-            <div class="woocomerse__text">
-              <p>This will be how your name will be displayed in the account section and in reviews</p>
+            <div class="loginpage__container__block__createaccount">
+              <p>New customer ?</p><a href="">CREATE AN ACCOUNT</a>
             </div>
-            <div class="checkout_page__input woocomerse__inputs">
-              <input class="one" type="text" placeholder="Email address*"/>
-            </div>
-            <div class="woocomerse__passchange">
-              <div class="woocomerse__text">
-                <h3>
-                   Password change <span>(leave blank to leave unchanged)</span></h3>
-              </div>
-              <div class="checkout_page__input woocomerse__inputs">
-                <input class="one" type="text" placeholder="Current password"/>
-                <input class="one" type="text" placeholder="New password"/>
-                <input class="one" type="text" placeholder="Last name*"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          </form>
+        </section>
+      </section>
     </main>
     <footer class="globalfooter">
       <div class="globalfooter__wrapper">
