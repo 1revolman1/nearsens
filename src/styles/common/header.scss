@@ -286,6 +286,7 @@ header.header {
       justify-content: flex-end;
 
       @include media-forHEADER {
+        align-items: center;
         padding-right: 40px;
         height: 38px;
         @include media-tablet {
@@ -535,6 +536,7 @@ header.header {
 
         @include media-forHEADER {
           display: block;
+          margin-bottom: 4px;
         }
         .shop-cart-logo {
           align-items: flex-end;
