@@ -2,20 +2,30 @@
     .flex-table.header(role='rowgroup')
         .flex-row.first(role='columnheader') Order number
         .flex-row(role='columnheader') Date
-        .flex-row(role='columnheader') STATE
-        .flex-row(role='columnheader') TOTAL
-        .flex-row.first(role='columnheader') 
+        .flex-row(role='columnheader') State
+        .flex-row(role='columnheader') Total
+        .flex-row.first.toolbar-header(role='columnheader') 
             i.fas.fa-tools
     each val in [1,2,3]
         .flex-table.row(role='rowgroup')
-            .flex-row.first(role='cell')
+            .flex-row.first.order-number-cell(role='cell')
+                p.flex-row-description Order number:
                 a.link.flag-icon.flag-icon-gb #35478
-            .flex-row(role='cell') 01/01/2020
-            .flex-row(role='cell') Shipping
-            .flex-row(role='cell') 49€99 - 4 items
-            .flex-row.first(role='cell')
-                i.fas.fa-eye
-                i.fas.fa-file-invoice-dollar
+            .flex-row.date-cell(role='cell') 
+                p.flex-row-description Date:
+                p 01/01/<span class='decade'>20</span>20
+            .flex-row.state-cell(role='cell') 
+                p.flex-row-description State:
+                p Shipping
+            .flex-row.total-cell(role='cell') 
+                p.flex-row-description Total:
+                p 49<sup>€99</sup> - 4 items
+            .flex-row.first.toolbar-cell(role='cell')
+                p.flex-row-description Actions:
+                a.toolbar-icon-wrapper
+                    i.fas.fa-eye
+                a.toolbar-icon-wrapper
+                    i.fas.fa-file-invoice-dollar
     //- .flex-table.row(role='rowgroup')
     //-     .flex-row.rowspan.first
     //-         span.flag-icon.flag-icon-us
