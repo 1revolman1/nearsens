@@ -29,10 +29,10 @@ header.header
             p.second Click to call
             p.first Monday to Friday - 9 am to 7 pm         
     .second-block-in-menu
-      .looking-input
-        input(type="checkbox" id="btnControl")
-        input(type="text" class="text-input" placeholder="What are you looking for ?" )
-        label(class="checker-label" for="btnControl"): img(src="img/magnifying-glass.svg", alt="btn" id="btnLeft")
+      //- .looking-input
+      //-   input(type="checkbox" id="btnControl")
+      //-   input(type="text" class="text-input" placeholder="What are you looking for ?" )
+      //-   label(class="checker-label" for="btnControl"): img(src="img/magnifying-glass.svg", alt="btn" id="btnLeft")
       ul.change-language-input
         li.dropup.dropup-language
           button.dropbtn 
@@ -45,12 +45,12 @@ header.header
                 include header/svg-down
                 span FR
       //- Это блок для авторизированного пользователя
-      a(href="").sign-in-user-profile
-        .user-profile-avatar
-          img(src="img/user_logo.svg", alt="user logo")
-        .user-profile-data
-          p Bonjour Mathiew
-          h3 My account
+      //- a(href="").sign-in-user-profile
+      //-   .user-profile-avatar
+      //-     img(src="img/user_logo.svg", alt="user logo")
+      //-   .user-profile-data
+      //-     p Bonjour Mathiew
+      //-     h3 My account
       a(href="").cart-block.dropup
         .shop-cart-logo
           img(src="img/noun_bag_95443.svg", alt="Shoping cart")
@@ -59,10 +59,10 @@ header.header
           div.dropdown.show-info
             h3 1 product added to your cart
       //- Это блок для авторизации
-      //- .sign-in-link
-      //-   a(href="/login")
-      //-      i(class="fas fa-user-circle")
-      //-      |Sign In
+      .sign-in-link
+        a(href="/login")
+           i(class="fas fa-user-circle")
+           span Sign In
 // holiday-header - добавить класс в nav во время холидей
 nav.nav
     .second-menu

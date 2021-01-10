@@ -81,7 +81,9 @@ export const useCasesList = function main() {
 
     _flatSingle: (arr) => [].concat(...arr),
     _placeAmmountOfFilter: function (length) {
-      this._ammountOfFilters.head.textContent = `${length} Filters`;
+      this._ammountOfFilters.head.textContent = length
+        ? `${length} Filters`
+        : 'No filters';
       this._ammountOfFilters.doc.textContent =
         length > 0 ? ` - ${length} filter(s) selected` : '';
     },
@@ -173,12 +175,13 @@ export const useCasesList = function main() {
       this._placeAmmountOfFilter(0);
       $('.use_case__filter__selectedoptions__element').remove();
       $('.custom-options .selected').removeClass('selected');
+      $('.filtered-parent').removeClass('filtered-parent');
       $('.filtered').removeClass('filtered');
       $('.choosen').removeClass('choosen');
     },
     init: function () {
       const currentFilter = this;
-      this._ammountOfFilters.textContent = '0 Filters';
+      this._ammountOfFilters.textContent = 'No filters';
       document
         .querySelectorAll('.custom-select-wrapper')
         .forEach((dropdown) => {
