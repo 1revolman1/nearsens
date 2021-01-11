@@ -1,0 +1,16 @@
+span.select2-container {
+  .select2-selection {
+    padding: 14px 20px;
+    height: auto;
+    border-radius: 8px;
+    .select2-selection__rendered {
+      color: #333333c9;
+      font: normal normal 300 18px/23px Mulish;
+      padding: 0;
+    }
+    .select2-selection__arrow {
+      top: 50%;
+      transform: translate(0%, -50%);
+    }
+  }
+}

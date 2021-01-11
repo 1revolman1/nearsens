@@ -4,6 +4,13 @@
 
 .checkout_page {
   position: relative;
+  margin: 0;
+  @include media-forTABLET {
+    margin: 0;
+    @include media-tablet {
+      margin: 0;
+    }
+  }
   @include media-tablet {
     margin: 0;
   }
