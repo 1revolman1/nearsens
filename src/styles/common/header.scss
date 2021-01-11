@@ -1226,9 +1226,11 @@ nav.nav {
               }
             }
           }
-          &:hover {
-            a {
-              color: #2ec9ad;
+          @media screen and (min-width: 1023px) {
+            &:hover {
+              a {
+                color: #2ec9ad;
+              }
             }
           }
           a {
