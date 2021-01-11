@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Title your site</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+    <link rel="stylesheet" href="css/style.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  </head>
+  <body>
+    <script>var holiday_event=false</script>
+    <input class="oppen_nav" id="menu__toggle__header" type="checkbox" name=""/>
+    <!-- holiday-header - добавить класс в лейбл во время холидей-->
+    <label class="menu__btn__header" for="menu__toggle__header"><span></span></label>
+    <!-- holiday-header - добавить класс в хедер во время холидей-->
+    <header class="header">
+      <section class="first-menu">
+        <div class="first-block-in-menu"><a href="/"><img class="logo-img" src="img/Nearsens - Logotype - Seul.svg" alt="logo"/></a>
+          <div class="phone-information"><a class="logo-phone" href="tel:+33930088008"><i class="fas fa-phone-alt"></i></a>
+            <div class="text-content">
+              <div class="phone-content"><a href="tel:+33930088008">+339 3008 8008</a></div><a class="text-content" href="tel:+33930088008">
+                <p class="second">Click to call</p>
+                <p class="first">Monday to Friday - 9 am to 7 pm         </p></a>
+            </div>
+          </div>
+        </div>
+        <div class="second-block-in-menu">
+          <div class="looking-input">
+            <input type="checkbox" id="btnControl"/>
+            <input class="text-input" type="text" placeholder="What are you looking for ?"/>
+            <label class="checker-label" for="btnControl"><img src="img/magnifying-glass.svg" alt="btn" id="btnLeft"/></label>
+          </div>
+          <ul class="change-language-input">
+            <li class="dropup dropup-language">
+              <button class="dropbtn"> <i class="fas fa-globe-europe globe"> </i>EN <i class="fas fa-angle-right"></i></button>
+              <div class="droupup-block">
+                <div class="dropup-content unshow"><a href=""> <i class="fas fa-angle-right"></i><span>FR</span></a></div>
+              </div>
+            </li>
+          </ul><a class="sign-in-user-profile" href="">
+            <div class="user-profile-avatar"><img src="img/user_logo.svg" alt="user logo"/></div>
+            <div class="user-profile-data">
+              <p>Bonjour Mathiew</p>
+              <h3>My account</h3>
+            </div></a><a class="cart-block dropup" href="">
+            <div class="shop-cart-logo"><img src="img/noun_bag_95443.svg" alt="Shoping cart"/>
+              <div class="counter">3</div>
+            </div>
+            <div class="droupup-block-info unshow">
+              <div class="dropdown show-info">
+                <h3>1 product added to your cart</h3>
+              </div>
+            </div></a>
+        </div>
+      </section>
+    </header>
+    <!-- holiday-header - добавить класс в nav во время холидей-->
+    <nav class="nav">
+      <div class="second-menu">
+        <div class="search-menu">
+          <input class="text-input" type="text" placeholder="What are you looking for ?"/>
+          <label class="checker-label" for="btnControlInNav"><img src="img/magnifying-glass.svg" alt="btn" id="btnLeft"/></label>
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li><a class="active-link in-viewport" href="/"><span>Home</span></a></li>
+            <li><a href="/solution">Solution</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/use cases">Use cases</a></li>
+            <li class="dropup">
+              <button class="dropbtn active-link">About<i class="fas fa-angle-right"></i></button>
+              <div class="droupup-block">
+                <div class="dropup-content unshow"><a class="active-link" href=""><i class="fas fa-angle-right"></i><span>How shipping works</span></a><a href=""><i class="fas fa-angle-right"></i><span>Inside Nearsens</span></a><a href=""> <i class="fas fa-angle-right"></i><span>Our values</span></a><a href=""> <i class="fas fa-angle-right"></i><span>The Nearsens APP</span></a><a href=""><i class="fas fa-angle-right"></i><span>Installation guide</span></a><a href=""> <i class="fas fa-angle-right"></i><span>About Nearsens</span></a></div>
+              </div>
+            </li>
+            <li class="dropup">
+              <button class="dropbtn">Support <i class="fas fa-angle-right"></i></button>
+              <div class="droupup-block">
+                <div class="dropup-content unshow"><a href=""> <i class="fas fa-angle-right"></i><span>FAQ</span></a><a href=""> <i class="fas fa-angle-right"></i><span>Contact us</span></a><a href=""> <i class="fas fa-angle-right"></i><span>Support request</span></a></div>
+              </div>
+            </li>
+            <li class="dropup dropup-language">
+              <button class="dropbtn"> <i class="fas fa-globe-europe globe"> </i>EN <i class="fas fa-angle-right"></i></button>
+              <div class="droupup-block">
+                <div class="dropup-content unshow"><a href=""> <i class="fas fa-angle-right"></i><span>FR</span></a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="shop-menu">
+          <div class="build-your-solution"><a href=""> <img src="img/wrench.svg" alt="Shoping cart"/><span>Build your solution</span></a></div>
+          <div class="phone-number"><a href="tel:+33930088008"> <img class="logo-phone" src="img/call-white-all.svg" alt="logo"/><span>+339 3008 8008</span></a>
+            <div class="text-content">
+              <p>(Monday to Friday - 9 am to 7 pm)   </p>
+            </div>
+          </div>
+          <div class="shop-cart dropup">
+            <div class="shop-cart-logo"><img src="img/noun_bag_95443.svg" alt="Shoping cart"/><sup class="counter">3 </sup>
+              <p class="ammount-items">3 items</p>
+            </div>
+            <div class="droupup-block-info unshow">
+              <div class="dropdown show-info">
+                <h3>1 product added to your cart</h3>
+              </div>
+            </div>
+            <div class="droupup-block">
+              <div class="dropdown">
+                <h3>LAST PRODUCTS ADDED</h3>
+                <div class="shop-container">
+                  <div class="shop-content-item">
+                    <div class="shop-content-item-img"><img src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg" alt=""/></div>
+                    <div class="shop-content-item-text">
+                      <p>Keypad - white</p><span>112<sup class="small">€90</sup></span>
+                    </div>
+                  </div>
+                  <div class="shop-content-item">
+                    <div class="shop-content-item-img"><img src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg" alt=""/></div>
+                    <div class="shop-content-item-text">
+                      <p>Keypad - white and blue with plug and dirt and dirt and dirt ith plug and dirt and dirt and dirt</p><span>112<sup class="small">€90</sup></span>
+                    </div>
+                  </div>
+                  <div class="shop-content-item">
+                    <div class="shop-content-item-img"><img src="https://d2uqfpnktc64mn.cloudfront.net/uploads/post/image/000/001/774/default_Image-Andy-Morffe-Bird-Bees-and-Banana-Flower-Ecuador.jpg" alt=""/></div>
+                    <div class="shop-content-item-text">
+                      <p>Keypad - white</p><span>112<sup class="small">€90</sup></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop-content-summarise">
+                  <h3>Total :<span>68<sup class="small">€90</sup></span></h3>
+                  <p>In stock. Can be shipped tomorrow.</p><a href="">GO TO CART <i class="fas fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script>var typePage = "login_page";</script>
+    <main class="graybg">
+      <section class="loginpage__sticky">
+        <div class="loginpage__sticky__wrap main">
+          <h2>Login</h2>
+        </div>
+      </section>
+      <section class="main">
+        <section class="loginpage__container">
+          <h2>SIGN IN</h2>
+          <form class="loginpage__container__block">
+            <h3>Already member</h3>
+            <div class="loginpage__container__block__manipulator">
+              <input type="email" placeholder="EMAIL"/>
+              <input type="password" placeholder="PASSWORD"/><a href="">Forgot your password ?</a>
+            </div>
+            <div class="loginpage__container__block__email">
+              <button type="submit">SIGN IN</button>
+            </div>
+            <div class="loginpage__container__block__createaccount">
+              <p>New customer ?</p><a href="">CREATE AN ACCOUNT</a>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+    <footer class="globalfooter">
+      <div class="globalfooter__wrapper">
+        <div class="globalfooter__wrapper__content">
+          <ul>
+            <li><a href="/"><img class="logo-img" src="img/Logotype.png" alt="logo"/></a></li>
+          </ul>
+          <ul>
+            <li class="header big"><a href="">Home</a></li>
+            <li class="header big"><a href="">The solution</a></li>
+            <li class="header big"><a href="">Our products</a></li>
+          </ul>
+          <ul>
+            <li class="header big-head"><a href="">About Nearsens</a></li>
+            <li class="header inside"><a href="">Inside Nearsens</a></li>
+            <li class="header inside"><a href="">Our values</a></li>
+            <li class="header inside"><a href="">How shipping works</a></li>
+            <li class="header inside"><a href="">Installation Guide</a></li>
+          </ul>
+          <ul>
+            <li class="header big"><a href="">Build your own solution</a></li>
+            <li class="header big"><a href="">Nearsens app</a></li>
+          </ul>
+          <ul>
+            <li class="header big-head"><a href="">Contact</a></li>
+            <li class="header inside"><a href="">FAQ</a></li>
+            <li class="header inside"><a href="">Contact us</a></li>
+            <li class="header inside"><a href="">Support request</a></li>
+          </ul>
+        </div>
+        <div class="globalfooter__wrapper__additional">
+          <div class="globalfooter__wrapper__additional__text">
+            <ul>
+              <li>Copyright © 2020 Nearsens</li>
+              <li><a href="">Terms of Use</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Legal</a></li>
+              <li class="img"> <a href=""><img src="img/France.png" alt="language picker"/></a><a href=""><img src="img/England.png" alt="language picker"/></a></li>
+            </ul>
+          </div>
+          <div class="globalfooter__wrapper__additional__logos"><a href=""><i class="fab fa-linkedin-in"></i></a><a href=""><i class="fab fa-youtube"></i></a><a href=""><i class="fab fa-instagram"></i></a><a href=""><i class="fab fa-pinterest"></i></a><a href=""><i class="fab fa-facebook-f"></i></a><a href=""><i class="fab fa-twitter"></i></a></div>
+        </div>
+        <div class="globalfooter__wrapper__download"><a href=""><img src="img/GooglePlay.png" alt=""/></a><a href=""><img src="img/AppleStore.png" alt=""/></a></div>
+      </div>
+    </footer><script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+<script defer src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426" ></script>
+<script defer src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+    <script src="js/main.min.js" defer="defer"></script>
+  </body>
+</html>

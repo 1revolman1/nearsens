@@ -35,7 +35,10 @@ var useCheckoutPage = function useCheckoutPage() {
 
   openOne('.checkout_page__content__contact__manip__payMethod__elm input', true); //Bill checkc
 
-  openOne('.checkout_page__content__contact__manip__chekedboxAccept input', true);
+  openOne('.checkout_page__content__contact__manip__chekedboxAccept input', true); // $('.ui.dropdown').dropdown({
+  //   clearable: true,
+  // });
+
   document.querySelectorAll('.accordion').forEach(function (accordion) {
     accordion.addEventListener('click', function () {
       this.classList.toggle('active');

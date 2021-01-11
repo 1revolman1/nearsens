@@ -2,7 +2,9 @@
   display: flex;
   margin-bottom: 18px;
 }
-.checkout_page__input input {
+.checkout_page__input input,
+.checkout_page__input .styled-input.styled-input,
+.checkout_page__input .search {
   border: 1px solid #bbbbbb;
   border-radius: 6px;
   opacity: 1;
@@ -13,4 +15,14 @@
   opacity: 1;
   padding: 14px 20px;
   background: white;
+}
+.checkout_page__input input.ui.active,
+.checkout_page__input .styled-input.styled-input.ui.active,
+.checkout_page__input .search.ui.active {
+  height: 53px;
+}
+.checkout_page__input input::placeholder,
+.checkout_page__input .styled-input.styled-input::placeholder,
+.checkout_page__input .search::placeholder {
+  font: normal normal 300 18px/23px Mulish;
 }

@@ -206,10 +206,21 @@ section.productlist__pageheader {
           display: flex;
           flex-flow: row wrap;
           justify-content: flex-end;
-
-          // gap: 20px;
           @media screen and (min-width: 769px) {
-            gap: 20px;
+            // gap: 20px;
+            --fgp-gap-container: calc(
+              var(--fgp-gap-parent, 0px) - 20px
+            ) !important;
+            --fgp-gap: var(--fgp-gap-container);
+            margin-top: var(--fgp-gap);
+            margin-right: var(--fgp-gap);
+            > * {
+              --fgp-gap-parent: 20px !important;
+              --fgp-gap-item: 20px !important;
+              --fgp-gap: var(--fgp-gap-item) !important;
+              margin-top: var(--fgp-gap);
+              margin-right: var(--fgp-gap);
+            }
           }
           @include media-tablet {
             display: flex;

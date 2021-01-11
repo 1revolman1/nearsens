@@ -271,6 +271,7 @@ header.header .first-menu .second-block-in-menu {
 }
 @media screen and (max-width: 1023px) {
   header.header .first-menu .second-block-in-menu {
+    align-items: center;
     padding-right: 40px;
     height: 38px;
   }
@@ -309,7 +310,7 @@ header.header .first-menu .second-block-in-menu .looking-input input {
   letter-spacing: 0px;
   color: #ffffff;
   background: transparent;
-  padding: 11px 60px 11px 20px;
+  padding: 9px 60px 11px 20px;
   width: 100%;
 }
 @media screen and (max-width: 1023px) {
@@ -382,6 +383,7 @@ header.header .first-menu .second-block-in-menu .change-language-input .dropup .
   cursor: pointer;
 }
 header.header .first-menu .second-block-in-menu .change-language-input .dropup .dropbtn .fas.globe {
+  font-size: 24px;
   margin-right: 10px;
 }
 @media screen and (max-width: 1023px) {
@@ -502,12 +504,14 @@ header.header .first-menu .second-block-in-menu .change-language-input .dropup .
   }
 }
 header.header .first-menu .second-block-in-menu .cart-block {
+  order: 1;
   display: none;
   position: relative;
 }
 @media screen and (max-width: 1023px) {
   header.header .first-menu .second-block-in-menu .cart-block {
     display: block;
+    margin-bottom: 4px;
   }
 }
 header.header .first-menu .second-block-in-menu .cart-block .shop-cart-logo {
@@ -725,33 +729,53 @@ header.header .first-menu .second-block-in-menu .sign-in-user-profile .user-prof
   opacity: 1;
 }
 header.header .first-menu .second-block-in-menu .sign-in-link {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1023px) {
-  header.header .first-menu .second-block-in-menu .sign-in-link {
-    display: none;
-  }
-}
 header.header .first-menu .second-block-in-menu .sign-in-link a {
+  display: flex;
+  align-items: center;
   font: normal normal bold 16px/20px Mulish;
   letter-spacing: 0px;
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 7px 15px;
   border: 1px solid #ffffff;
   border-radius: 40px;
   opacity: 1;
   box-shadow: inset 0 0 0 0 #004475;
   transition: all ease 0.5s;
 }
+@media screen and (max-width: 1023px) {
+  header.header .first-menu .second-block-in-menu .sign-in-link a {
+    padding: 0;
+    margin-right: 15px;
+    border: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  header.header .first-menu .second-block-in-menu .sign-in-link a span {
+    display: none;
+  }
+}
 header.header .first-menu .second-block-in-menu .sign-in-link a .fas.fa-user-circle {
+  font-size: 24px;
   margin-right: 10px;
 }
+@media screen and (max-width: 1023px) {
+  header.header .first-menu .second-block-in-menu .sign-in-link a .fas.fa-user-circle {
+    margin-right: 0;
+  }
+}
 header.header .first-menu .second-block-in-menu .sign-in-link a:hover {
-  box-shadow: inset 100px 0 0 0 white;
+  box-shadow: inset 130px 0 0 0 white;
   color: #005b9d;
+}
+@media screen and (max-width: 1023px) {
+  header.header .first-menu .second-block-in-menu .sign-in-link a:hover {
+    color: white;
+    box-shadow: inherit;
+  }
 }
 
 nav.nav {
@@ -974,10 +998,14 @@ nav.nav .second-menu .nav-menu ul li.dropup.dropup-language .dropbtn {
   justify-content: flex-start;
 }
 nav.nav .second-menu .nav-menu ul li.dropup.dropup-language .dropbtn .fas.globe {
+  font-size: 24px;
   margin-right: 10px;
 }
 nav.nav .second-menu .nav-menu ul li.dropup.dropup-language .dropbtn .fas.fa-angle-right {
   margin-left: auto;
+}
+nav.nav .second-menu .nav-menu ul li.dropup:hover .dropbtn {
+  color: #2ec9ad;
 }
 nav.nav .second-menu .nav-menu ul li.dropup:hover .dropbtn i:not(.globe) {
   transform: rotate(-90deg);
@@ -1027,7 +1055,7 @@ nav.nav .second-menu .nav-menu ul li.dropup .dropbtn > svg,
 nav.nav .second-menu .nav-menu ul li.dropup .dropbtn > i:not(.globe) {
   transform: rotate(90deg);
   margin: 0 7px;
-  transition: all ease 0.5s;
+  transition: transform ease 0.5s;
   height: 15px;
   width: 12px;
 }

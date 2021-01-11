@@ -16,7 +16,8 @@ nav.woocommerce-navigationpanel .accordion {
   text-align: left;
   outline: none;
   transition: all ease 0.3s;
-  background: #f2f2f2 0% 0% no-repeat padding-box;
+  background: #fff 0% 0% no-repeat padding-box;
+  border: 2px solid transparent;
   border-radius: 100px;
   opacity: 1;
   font: normal normal 300 16px/20px Mulish;
@@ -44,7 +45,7 @@ nav.woocommerce-navigationpanel .accordion .fas.fa-chevron-up {
   color: #005b9d;
 }
 nav.woocommerce-navigationpanel .accordion:hover {
-  background-color: #ccc;
+  border: 2px solid #005b9d;
 }
 nav.woocommerce-navigationpanel .active .fas.fa-chevron-up {
   transform: scale(1);
