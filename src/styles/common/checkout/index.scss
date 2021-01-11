@@ -5,7 +5,7 @@
 .checkout_page {
   position: relative;
   margin: 0;
-  @include media-forTABLET {
+  @include media-forHEADER {
     margin: 0;
     @include media-tablet {
       margin: 0;

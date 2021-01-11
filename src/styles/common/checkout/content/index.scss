@@ -1,11 +1,8 @@
 @import './blocks/contacts.scss';
 @import './component/input.scss';
-<<<<<<< HEAD
-@import './dropup/index.scss';
-=======
 @import './component/textarea.scss';
+@import './dropup/index.scss';
 @import './component/payment-method-grid.scss';
->>>>>>> Alex
 @import '../../../mixins/media.scss';
 
 section.checkout_page__content {

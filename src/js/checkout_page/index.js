@@ -4,7 +4,7 @@ export const useCheckoutPage = () => {
       elm.addEventListener('change', function (e) {
         this.parentNode.classList.toggle('checked');
         document.querySelectorAll(cls).forEach((other) => {
-          if (this !== other && other.checked) {
+          if (this !== other) {
             other.checked = false;
             if (remove) other.closest('label').classList.remove('checked');
           }
@@ -52,4 +52,13 @@ export const useCheckoutPage = () => {
       // }
     });
   });
+
+  //new custom payment methods
+  document
+    .querySelectorAll(
+      '.checkout_page__content__contact__manip__payMethod .input-radio'
+    )
+    .forEach(function (elm) {
+      if (elm.checked) elm.parentNode.classList.add('checked');
+    });
 };

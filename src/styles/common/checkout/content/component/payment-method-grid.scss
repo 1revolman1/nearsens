@@ -1,50 +1,96 @@
+// .checkout_page {
+//     .checkout_page__container {
+//         .checkout_page__content {
+//             .woocommerce-checkout {
+//                 .checkout_page__content__contact {
+//                     .checkout_page__content__contact__manip {
+//                         .checkout_page__content__contact__manip__payMethod {
+//                             display: grid;
+//                             grid-template-columns: repeat(auto-fill,minmax(165px,1fr));
+//                             grid-template-rows: auto;
+//                             grid-column-gap: 20px;
+//                             grid-row-gap: 20px;
+//                             .wc_payment_method {
+//                                 position: relative;
+//                                 min-height: 150px;
+//                                 &:hover {
+//                                     .payment_box {
+//                                         display: block;
+//                                         position: absolute;
+//                                         top: 145px;
+//                                         left: 0;
+//                                         width: 150%;
+//                                     }
+//                                 }
+//                                 label {
+//                                     display: flex;
+//                                     flex-direction: column;
+//                                     align-items: center;
+//                                     width: 100%;
+//                                     text-align: center;
+//                                     img {
+//                                         margin-right: 0;
+//                                     }
+//                                 }
+//                                 .payment_box {
+//                                     display: none;
+//                                 }
+//                                 .checkmark {
+//                                     position: absolute;
+//                                     top: 0;
+//                                     right: 0;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
 .checkout_page {
-    .checkout_page__container {
-        .checkout_page__content {
-            .woocommerce-checkout {
-                .checkout_page__content__contact {
-                    .checkout_page__content__contact__manip {
-                        .checkout_page__content__contact__manip__payMethod {
-                            display: grid;
-                            grid-template-columns: repeat(auto-fill,minmax(165px,1fr));
-                            grid-template-rows: auto;
-                            grid-column-gap: 20px;
-                            grid-row-gap: 20px;
-                            .wc_payment_method {
-                                position: relative;
-                                min-height: 150px;
-                                &:hover {
-                                    .payment_box {
-                                        display: block;
-                                        position: absolute;
-                                        top: 145px;
-                                        left: 0;
-                                        width: 150%;
-                                    }
-                                }
-                                label {
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    width: 100%;
-                                    text-align: center;
-                                    img {
-                                        margin-right: 0;
-                                    }
-                                }
-                                .payment_box {
-                                    display: none;
-                                }
-                                .checkmark {
-                                    position: absolute;
-                                    top: 0;
-                                    right: 0;
-                                }
-                            }
-                        }
-                    }
+  .checkout_page__container {
+    .checkout_page__content {
+      .woocommerce-checkout {
+        .checkout_page__content__contact {
+          .checkout_page__content__contact__manip {
+            margin-top: 8px;
+            .checkout_page__content__contact__manip__payMethod {
+              display: flex;
+              flex-direction: column;
+              .wc_payment_method {
+                position: relative;
+                // min-height: 150px;
+                &:hover {
+                  .payment_box {
+                    // display: block !important;
+
+                    // position: absolute;
+                    // top: 145px;
+                    // left: 0;
+                    // width: 150%;
+                  }
                 }
+                // label {
+                //   display: flex;
+                //   flex-direction: column;
+                //   align-items: center;
+                //   width: 100%;
+                //   text-align: center;
+                //   img {
+                //     margin-right: 0;
+                //   }
+                // }
+
+                // .payment_box {
+                //   display: none !important;
+                // }
+              }
             }
+          }
         }
+      }
     }
+  }
 }
