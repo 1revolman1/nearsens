@@ -55,7 +55,7 @@
       .woocommerce-checkout {
         .checkout_page__content__contact {
           .checkout_page__content__contact__manip {
-            margin-top: 8px;
+            // margin-top: 8px;
             .checkout_page__content__contact__manip__payMethod {
               display: flex;
               flex-direction: column;
@@ -83,9 +83,10 @@
                 //   }
                 // }
 
-                // .payment_box {
-                //   display: none !important;
-                // }
+                .payment_box {
+                  margin: 1em 0 0;
+                  //   display: none !important;
+                }
               }
             }
           }

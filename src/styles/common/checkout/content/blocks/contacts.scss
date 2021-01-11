@@ -363,6 +363,7 @@ section.checkout_page__content__contact {
         // cursor: pointer;
 
         label {
+          font: normal normal bold 18px/23px Mulish;
           position: relative;
           // margin: 11px 0;
           padding: 11px;
@@ -379,6 +380,9 @@ section.checkout_page__content__contact {
           // gap: 15px;
           a {
             line-height: inherit !important;
+            &:active {
+              color: inherit !important;
+            }
           }
           img {
             display: none;
