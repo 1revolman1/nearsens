@@ -103,16 +103,20 @@ section.index__createsolution {
       align-items: flex-start;
       justify-content: center;
       flex-direction: row;
-      //   gap: 40px;
       margin-bottom: 40px;
+      // row-gap: 15px;
+      // column-gap: 40px;
       @include media-tablet {
         margin-bottom: 30px;
         flex-direction: column;
         align-items: center;
       }
       .index__createsolution__wrap__btncontainer__btn {
+        width: auto;
         cursor: pointer;
         padding: 13px 30px;
+        // margin-top: 15px;
+        // margin-bottom: 15px;
         margin: 15px 20px;
         background: #2ec9ad 0% 0% no-repeat padding-box;
         border-radius: 40px;
