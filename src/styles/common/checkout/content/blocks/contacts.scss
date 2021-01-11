@@ -453,11 +453,11 @@ section.checkout_page__content__contact {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    .checkout_page__content__contact__order-notes__textareaLabel {
+    .order_comments-label {
       font: 18px Mulish;
       margin-bottom: 15px;
     }
-    .checkout_page__content__contact__order-notes__textarea {
+    .input-text  {
       height: 230px;
       padding: 14px 30px;
       font-size: 18px;
@@ -465,11 +465,6 @@ section.checkout_page__content__contact {
       background: #ffffff 0% 0% no-repeat padding-box;
       border: 1px solid #bbbbbb;
       border-radius: 6px;
-      &:focus {
-        outline: none;
-        border: 2px solid #003f6d;
-        padding: 13px 29px;
-      }
     }
   }
 }
