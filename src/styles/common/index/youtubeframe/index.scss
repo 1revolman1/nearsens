@@ -126,9 +126,23 @@ section.index__youtubeframe {
         margin: 0 13px;
         &:first-of-type {
           margin-left: 0;
+
+          // svg,
+          // img {
+          //   width: 135px;
+          // }
         }
         &:last-of-type {
           margin-right: 0;
+          // svg,
+          // img {
+          //   width: 126px;
+          // }
+        }
+        svg,
+        img {
+          width: 135px;
+          height: 40px;
         }
         img {
           object-fit: cover;

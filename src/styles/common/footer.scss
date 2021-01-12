@@ -237,6 +237,10 @@ footer.globalfooter {
       a {
         display: flex;
         &:first-of-type {
+          // svg,
+          // img {
+          //   width: 135px;
+          // }
         }
         &:last-of-type {
           // @include media-forHEADER {
@@ -246,6 +250,15 @@ footer.globalfooter {
           //   img {
           //     width: 100%;
           //   }
+          // svg,
+          // img {
+          //   width: 126px;
+          // }
+        }
+        img,
+        svg {
+          width: 135px;
+          height: 40px;
         }
       }
     }
