@@ -63,11 +63,20 @@ export const useCheckoutPage = () => {
     });
 
   //new product page layout concept
-  const container = document.querySelector('.checkout_page__products .panel');
-  container.setAttribute(
-    'data-biglist',
-    document.querySelectorAll(
-      '.checkout_page__products .checkout_page__products__element'
-    ).length > 5
-  );
+  (function accoridon(isMobile) {
+    console.log(isMobile);
+    const accordContainer = document.querySelector('.checkout_page__products');
+    const panel = accordContainer.querySelector('.panel');
+    const accordBtn = accordContainer.querySelector('.accordion');
+    panel.setAttribute(
+      'data-biglist',
+      document.querySelectorAll(
+        '.checkout_page__products .checkout_page__products__element'
+      ).length > 5
+    );
+    if (!isMobile) {
+      panel.classList.add('active');
+      accordBtn.classList.add('active');
+    }
+  })(window.innerWidth <= 768);
 };
