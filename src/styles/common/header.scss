@@ -1128,7 +1128,9 @@ nav.nav {
             .dropup-content {
               display: none;
               position: absolute;
-              right: -20px;
+              // right: -20px;
+              left: 0px;
+              // left: -30px;
               top: calc(100% + 16px);
               padding: 17px 20px;
               min-width: 250px;
@@ -1164,7 +1166,8 @@ nav.nav {
                 }
 
                 bottom: 100%;
-                right: 25px;
+                left: 43px;
+                // right: 25px;
                 border: solid transparent;
                 content: '';
                 height: 0;

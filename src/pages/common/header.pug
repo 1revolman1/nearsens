@@ -77,8 +77,9 @@ nav.nav
           each val, index in [ 'Solution', 'Products', 'Use cases']
             li: a(href="/"+val.toLowerCase())=val
           li.dropup
-            button.dropbtn.active-link About
+            button.dropbtn.active-link
               include header/svg-down
+              |About
             .droupup-block
               .dropup-content.unshow
                 a(href="" class="active-link")
@@ -100,8 +101,9 @@ nav.nav
                   include header/svg-down
                   span About Nearsens
           li.dropup
-            button.dropbtn Support 
+            button.dropbtn
               include header/svg-down
+              |Support
             .droupup-block
               .dropup-content.unshow
                 a(href="") 
