@@ -61,4 +61,13 @@ export const useCheckoutPage = () => {
     .forEach(function (elm) {
       if (elm.checked) elm.parentNode.classList.add('checked');
     });
+
+  //new product page layout concept
+  const container = document.querySelector('.checkout_page__products .panel');
+  container.setAttribute(
+    'data-biglist',
+    document.querySelectorAll(
+      '.checkout_page__products .checkout_page__products__element'
+    ).length > 5
+  );
 };
