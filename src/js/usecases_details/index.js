@@ -51,7 +51,19 @@ export const useCasesDetails = function main() {
     const curerentBlocks = $(
       '.usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator'
     );
+    const totalPrice = container
+      .find(
+        '.usecase_details__blockwithbuyabbility-wrap__manipulator__block .usecase_details__blockwithbuyabbility-wrap__manipulator__block__text p'
+      )
+      .text();
     curerentBlocks.attr('data-ammount', 1);
+    infoSuccessHeader
+      .find('h3')
+      .text(
+        +totalPrice === 1
+          ? `${totalPrice} product added to your cart`
+          : `${totalPrice} products added to your cart`
+      );
     // const counters = curerentBlocks.find('.counter');
     // const mimusBtn = curerentBlocks.find('.minus');
     // curerentBlocks.find('.minus').attr('disabled', true);

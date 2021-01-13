@@ -29,7 +29,7 @@ function cartHeaderAnim() {
   infoSuccessHeader
     .find('h3')
     .text(
-      value === 1
+      +value === 1
         ? `${value} product added to your cart`
         : `${value} products added to your cart`
     );

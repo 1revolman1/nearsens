@@ -21,7 +21,7 @@ function cartHeaderAnim() {
   infoSuccessHeader
     .find('h3')
     .text(
-      totalPrice === 1
+      +totalPrice === 1
         ? `${totalPrice} product added to your cart`
         : `${totalPrice} products added to your cart`
     );
@@ -97,12 +97,16 @@ function cartAnimInStickyHeader() {
     .parents('.productpage__pageheader_sticky-wrap-manipulator-data')
     .addClass('show-success');
   const totalPrice = textContainer.text();
-  console.log(totalPrice);
+  console.log(
+    +totalPrice === 1
+      ? `${totalPrice} product added to your cart`
+      : `${totalPrice} products added to your cart`
+  );
   infoSuccessHeader.removeClass('unshow');
   infoSuccessHeader
     .find('h3')
     .text(
-      totalPrice === 1
+      +totalPrice === 1
         ? `${totalPrice} product added to your cart`
         : `${totalPrice} products added to your cart`
     );

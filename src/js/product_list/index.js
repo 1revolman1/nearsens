@@ -39,7 +39,7 @@ function cartAnim() {
   infoSuccessHeader
     .find('h3')
     .text(
-      totalPrice === 1
+      +totalPrice === 1
         ? `${totalPrice} product added to your cart`
         : `${totalPrice} products added to your cart`
     );

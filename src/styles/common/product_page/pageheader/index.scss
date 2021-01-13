@@ -3,6 +3,7 @@
 section.productpage__pageheader {
   background: #f2f2f2;
   .productpage__pageheader__container {
+    overflow: hidden;
     position: relative;
     // overflow: hidden;
     max-height: 450px;

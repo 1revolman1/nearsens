@@ -24,10 +24,11 @@ function cartAnim() {
     .text();
   container.addClass('show-success');
   infoSuccessHeader.removeClass('unshow');
+
   infoSuccessHeader
     .find('h3')
     .text(
-      totalPrice === 1
+      +totalPrice === 1
         ? `${totalPrice} product added to your cart`
         : `${totalPrice} products added to your cart`
     );
