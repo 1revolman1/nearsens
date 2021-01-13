@@ -29,7 +29,7 @@ section.page_garbit__bluelinkcards {
       @include media-tablet {
         width: 100%;
       }
-      @include hblock('h3', 45px, 300, 56px) {
+      @include hblock('h2', 45px, 300, 56px) {
         color: #ffffff;
         margin-bottom: 50px;
         @include media-tablet {

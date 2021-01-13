@@ -22,7 +22,7 @@ section.page_garbit__blockacconts {
     @include media-tablet {
       margin-bottom: 20px;
     }
-    @include hblock('h3', 45px, 300, 56px) {
+    @include hblock('h2', 45px, 300, 56px) {
       color: #333333;
       @include media-tablet {
         font: normal normal normal 22px/28px Mulish;

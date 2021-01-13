@@ -22,14 +22,14 @@ section.page_garbit__textblockwithlogo {
     }
   }
   .page_garbit__textblockwithlogo__text {
-    @include hblock('h3', 45px, 300, 56px) {
+    @include hblock('h2', 45px, 300, 56px) {
       color: #333333;
       margin-bottom: 9px;
       @include media-tablet {
         font: normal normal normal 22px/28px Mulish;
       }
     }
-    // h3 {
+    // h2 {
     //   font: normal normal 300 45px/56px Mulish;
     //   letter-spacing: 0px;
     //   color: #333333;
@@ -87,13 +87,6 @@ section.page_garbit__textblockwithlogo {
       }
       .page_garbit__textblockwithlogo__logos__element__text {
         @include hblock('h3', 16px, bold, 20px) {
-          color: #28373b;
-          @include media-tablet {
-            font: normal normal bold 14px/18px Mulish;
-          }
-        }
-        p {
-          font: normal normal bold 16px/20px Mulish;
           letter-spacing: 0px;
           color: #28373b;
           opacity: 1;
@@ -101,6 +94,15 @@ section.page_garbit__textblockwithlogo {
             font: normal normal bold 14px/18px Mulish;
           }
         }
+        // h3 {
+        //   font: normal normal bold 16px/20px Mulish;
+        //   letter-spacing: 0px;
+        //   color: #28373b;
+        //   opacity: 1;
+        //   @include media-tablet {
+        //     font: normal normal bold 14px/18px Mulish;
+        //   }
+        // }
       }
     }
   }

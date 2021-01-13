@@ -23,7 +23,7 @@ section.page_garbit__textblockwithplus {
     @include media-tablet {
       width: 100%;
     }
-    @include hblock('h3', 45px, 300, 56px) {
+    @include hblock('h2', 45px, 300, 56px) {
       color: #333333;
       margin-bottom: 46px;
       @include media-tablet {

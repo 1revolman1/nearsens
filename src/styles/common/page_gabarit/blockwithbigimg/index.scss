@@ -11,7 +11,7 @@ section.page_gabarit__blockwithbigimg {
     // grid-row-gap: 40px;
     grid-row-gap: 40px;
     padding: 20px 0 40px;
-    // padding-bottom: 40px;
+    // padding-bottom: 40px;s
   }
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
@@ -25,7 +25,7 @@ section.page_gabarit__blockwithbigimg {
         color: white !important;
       }
       .productpage__textblockvariations-textimgheader__text {
-        @include hblock('h3', 26px, normal, 33px) {
+        @include hblock('h2', 26px, normal, 33px) {
           color: white;
         }
         p {
@@ -93,7 +93,7 @@ section.page_gabarit__blockwithbigimg {
           margin: 0 !important;
         }
       }
-      @include hblock('h3', 40px, normal, 50px) {
+      @include hblock('h2', 40px, normal, 50px) {
         margin-bottom: 30px;
         @include media-tablet {
           font: normal normal normal 22px/28px Mulish;

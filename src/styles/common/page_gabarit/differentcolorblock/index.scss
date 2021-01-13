@@ -17,7 +17,7 @@ section.page_garbarit__differentcolorblock {
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
     .page_garbarit__differentcolorblock-wrap {
-      @include hblock('h3', 45px, 300, 56px) {
+      @include hblock('h2', 45px, 300, 56px) {
         color: #ffffff;
         @include media-tablet {
           font: normal normal normal 22px/28px Mulish;
@@ -30,7 +30,7 @@ section.page_garbarit__differentcolorblock {
   }
   &.gray {
     .page_garbarit__differentcolorblock-wrap {
-      @include hblock('h3', 45px, 300, 56px) {
+      @include hblock('h2', 45px, 300, 56px) {
         color: #333333;
         @include media-tablet {
           font: normal normal normal 22px/28px Mulish;
@@ -46,7 +46,7 @@ section.page_garbarit__differentcolorblock {
       width: 90%;
       margin: 0 auto;
     }
-    @include hblock('h3', 45px, 300, 56px) {
+    @include hblock('h2', 45px, 300, 56px) {
       color: #333333;
       margin-bottom: 10px;
       @include media-tablet {

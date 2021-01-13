@@ -163,7 +163,7 @@ section.page_gabarit__blockwithimg {
       width: 90%;
       margin: 0 auto 40px;
     }
-    @include hblock('h3', 40px, normal, 50px) {
+    @include hblock('h2', 40px, normal, 50px) {
       margin-bottom: 30px;
       @include media-tablet {
         font: normal normal normal 22px/28px Mulish;
@@ -304,7 +304,9 @@ section.page_gabarit__blockwithimg {
           flex-direction: column;
           @include hblock('h3', 22px, bold, 28px) {
             color: #28373b;
+            margin-bottom: 13px;
             @include media-tablet {
+              margin-bottom: 5px;
               font: normal normal normal 16px/18px Mulish;
             }
           }

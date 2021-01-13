@@ -4,7 +4,7 @@
 section.page_gabarit__twobigblockperline {
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
-    @include hblock('h3', 40px, normal, 50px) {
+    @include hblock('h2', 40px, normal, 50px) {
       color: white;
       opacity: 1;
       margin-bottom: 30px;
@@ -32,7 +32,7 @@ section.page_gabarit__twobigblockperline {
     flex-direction: column;
     margin: 0 auto;
   }
-  @include hblock('h3', 40px, normal, 50px) {
+  @include hblock('h2', 40px, normal, 50px) {
     color: #28373b;
     opacity: 1;
     margin-bottom: 30px;

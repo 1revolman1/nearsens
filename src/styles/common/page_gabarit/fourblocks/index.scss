@@ -26,7 +26,7 @@ section.page_gabarit__fourblocks {
       padding-bottom: 20px;
       padding-top: 15px;
     }
-    @include hblock('h3', 40px, normal, 50px) {
+    @include hblock('h2', 40px, normal, 50px) {
       color: white;
       margin-bottom: 30px;
       @include media-tablet {
@@ -45,7 +45,7 @@ section.page_gabarit__fourblocks {
     @include media-tablet {
       width: 100%;
     }
-    @include hblock('h3', 40px, normal, 50px) {
+    @include hblock('h2', 40px, normal, 50px) {
       margin-bottom: 30px;
       @include media-tablet {
         // margin-bottom: 15px;

@@ -15,19 +15,19 @@ section.page_gabarit__pageheader {
     .page_gabarit__pageheader-wrap {
       .page_gabarit__pageheader__text {
         .page_gabarit__pageheader__text__head {
-          @include hblock('h3', 32px) {
+          @include hblock('h1', 32px) {
             color: black;
             @include media-tablet {
               font: normal normal normal 22px/28px Mulish;
             }
           }
-          // h3 {
+          // h1 {
           //   color: black;
           // }
         }
         .page_gabarit__pageheader__text__info {
           .page_gabarit__pageheader__text__info__text-block-text {
-            @include hblock('h3', 32px) {
+            @include hblock('h1', 32px) {
               color: black;
               @include media-tablet {
                 font: normal normal normal 22px/28px Mulish;
@@ -53,21 +53,22 @@ section.page_gabarit__pageheader {
       flex-direction: column;
       justify-content: center;
       .page_gabarit__pageheader__text__head {
-        @include hblock('h3', 32px) {
+        @include hblock('h1', 32px) {
           color: #ffffff;
-          margin-bottom: 4px;
+          margin-bottom: 20.5px;
           @include media-tablet {
+            margin-bottom: 10.5px;
             font: normal normal normal 22px/28px Mulish;
           }
         }
 
-        // h3 {
+        // h1 {
         //   color: #ffffff;
         // }
       }
       .page_gabarit__pageheader__text__info {
         .page_gabarit__pageheader__text__info__text-block-text {
-          @include hblock('h3', 32px) {
+          @include hblock('h1', 32px) {
             color: #ffffff;
             margin-bottom: 4px;
           }
