@@ -73,7 +73,7 @@ export const useCasesList = function main() {
       head: document.querySelector(
         '.use_case__scrollheader .use_case__scrollheader-content-container__picker h3'
       ),
-      doc: document.querySelector('.use_case__usecases h3 span'),
+      doc: document.querySelector('.use_case__usecases h2 span'),
     },
     _placeForFilter: document.querySelector(
       '.use_case__filter__selectedoptions'
