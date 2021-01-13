@@ -57,6 +57,12 @@ footer.globalfooter {
             justify-content: flex-start;
             text-decoration: none;
             color: #ffffff;
+            &.logo-img {
+              svg {
+                width: 150px;
+                height: 29px;
+              }
+            }
           }
           &.header {
             text-align: left;

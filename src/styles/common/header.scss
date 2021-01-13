@@ -173,11 +173,14 @@ header.header {
           // top: 49px;
           // top: 25px;
           top: 22px;
-          img {
+          img,
+          svg {
             max-width: 89px;
           }
         }
-        img {
+        img,
+        svg {
+          width: 100%;
           max-width: 160px;
           height: auto;
           object-fit: contain;
@@ -185,7 +188,8 @@ header.header {
         }
       }
 
-      img {
+      img,
+      svg {
         max-width: 160px;
         height: auto;
         object-fit: contain;
@@ -1042,6 +1046,9 @@ nav.nav {
               }
               .dropbtn {
                 justify-content: flex-start;
+                @include media-forHEADER {
+                  flex-direction: row;
+                }
                 .fas.globe {
                   font-size: 24px;
                   margin-right: 10px;
@@ -1080,7 +1087,9 @@ nav.nav {
               border: none;
               outline: none;
               cursor: pointer;
-
+              @include media-forHEADER {
+                flex-direction: row-reverse;
+              }
               &.unshow {
                 > svg,
                 > i:not(.globe) {
@@ -1129,8 +1138,8 @@ nav.nav {
               display: none;
               position: absolute;
               // right: -20px;
-              left: 0px;
-              // left: -30px;
+              // left: 0px;
+              left: -29px;
               top: calc(100% + 16px);
               padding: 17px 20px;
               min-width: 250px;

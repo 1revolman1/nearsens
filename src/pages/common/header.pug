@@ -15,7 +15,8 @@ header.header
   section.first-menu
     .first-block-in-menu
       a(href="/")
-        img(class="logo-img" src="img/Nearsens - Logotype - Seul.svg", alt="logo")
+        include header/svg_header
+        //- img(class="logo-img" src="img/Nearsens - Logotype - Seul.svg", alt="logo")
       .phone-information
         a(href="tel:+33930088008").logo-phone
           //- include header/svg-call
@@ -74,7 +75,31 @@ nav.nav
           li: a(href="/" class="active-link in-viewport")
             //- img(class="logo-img" src="img/Nearsens - Logotype - Seul.svg", alt="logo")
             span Home
-          each val, index in [ 'Solution', 'Products', 'Use cases']
+          li.dropup
+            button.dropbtn.active-link
+              include header/svg-down
+              |Solution
+            .droupup-block
+              .dropup-content.unshow
+                a(href="" class="active-link")
+                  include header/svg-down
+                  span How shipping works
+                a(href="")
+                  include header/svg-down
+                  span Inside Nearsens
+                a(href="") 
+                  include header/svg-down
+                  span Our values
+                a(href="") 
+                  include header/svg-down
+                  span The Nearsens APP
+                a(href="")
+                  include header/svg-down
+                  span Installation guide
+                a(href="") 
+                  include header/svg-down
+                  span About Nearsens
+          each val, index in [ 'Products', 'Use cases']
             li: a(href="/"+val.toLowerCase())=val
           li.dropup
             button.dropbtn.active-link

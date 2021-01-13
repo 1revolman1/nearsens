@@ -4,7 +4,10 @@ footer.globalfooter
         //-     a(href="/"): img(class="logo-img" src="img/Logotype.png", alt="logo")
         .globalfooter__wrapper__content
             ul
-                li: a(href="/"): img(class="logo-img" src="img/Logotype.png", alt="logo")
+                li
+                    a.logo-img(href="/")
+                        include header/svg_header
+                        //- img(class="logo-img" src="img/Logotype.png", alt="logo")
             ul
                 li.header.big: a(href="") Home
                 li.header.big: a(href="") The solution
