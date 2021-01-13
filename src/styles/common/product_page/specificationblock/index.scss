@@ -20,7 +20,7 @@ section.productpage__specificationblock {
       padding: 30px 0;
       width: 90%;
     }
-    h3 {
+    h2 {
       text-align: center;
       font: normal normal normal 30px/38px Mulish;
       letter-spacing: 0px;
@@ -70,7 +70,7 @@ section.productpage__specificationblock {
           &:nth-child(odd) {
             @include media-tablet {
               align-items: flex-start;
-              h4,
+              h3,
               p {
                 text-align: left;
               }
@@ -79,7 +79,7 @@ section.productpage__specificationblock {
           &:nth-child(even) {
             @include media-tablet {
               align-items: flex-end;
-              h4,
+              h3,
               p {
                 text-align: right;
               }
@@ -102,7 +102,7 @@ section.productpage__specificationblock {
               }
             }
           }
-          h4 {
+          h3 {
             font: normal normal bold 22px/28px Mulish;
             letter-spacing: 0px;
             color: #ffffff;
@@ -131,7 +131,7 @@ section.productpage__specificationblock {
             &:nth-child(odd) {
               @include media-tablet {
                 align-items: flex-start;
-                h4,
+                h3,
                 p {
                   text-align: left;
                 }
@@ -140,13 +140,13 @@ section.productpage__specificationblock {
             &:nth-child(even) {
               @include media-tablet {
                 align-items: flex-end;
-                h4,
+                h3,
                 p {
                   text-align: right;
                 }
               }
             }
-            h4,
+            h3,
             p {
               text-align: right;
             }
@@ -173,7 +173,7 @@ section.productpage__specificationblock {
     }
     .productpage__specificationblock-wrap__container__specification {
       width: 100%;
-      h3 {
+      h2 {
         font: normal normal normal 24px/30px Mulish;
         letter-spacing: 0px;
         color: #ffffff;

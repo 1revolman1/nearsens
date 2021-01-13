@@ -47,7 +47,7 @@ section.productpage__textblockimgheader {
       font-weight: bold;
       color: #005b9d;
     }
-    @include hblock('h3', 26px, normal, 33px) {
+    @include hblock('h2', 26px, normal, 33px) {
       color: #28373b;
       margin-bottom: 21px;
       @include media-tablet {
