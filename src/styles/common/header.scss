@@ -1495,6 +1495,9 @@ nav.nav {
                 grid-template-columns: fit-content(100%) 1fr;
                 grid-column-gap: 10px;
                 .shop-content-item-img {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
                   position: relative;
                   width: 60px;
                   height: 60px;

@@ -320,8 +320,11 @@ export const useProductList = function main() {
       prevButton: '.prev',
       nextButton: '.next',
       responsive: {
-        769: {
+        1921: {
           items: slidesToShow,
+        },
+        1024: {
+          items: 9,
         },
         426: {
           items: 5,
@@ -335,31 +338,39 @@ export const useProductList = function main() {
   function destroySlider(sliderElm) {
     sliderElm.destroy();
     document.querySelector('.active-slider').classList.remove('active-slider');
+    slider = undefined;
   }
   let isMobile = window.innerWidth <= 425,
-    isTablet = window.innerWidth > 425 && window.innerWidth <= 768,
-    isDesktop = window.innerWidth > 768;
+    isTablet = window.innerWidth > 425 && window.innerWidth <= 1023,
+    isDesktop = window.innerWidth > 1023 && window.innerWidth <= 1919,
+    isWider = window.innerWidth > 1919;
   let slider;
   if (
     (len > 4 && isMobile) ||
     (len > 5 && isTablet) ||
-    (len >= 9 && isDesktop)
+    (len >= 9 && isDesktop) ||
+    (len >= 15 && isWider)
   ) {
     slider = tns(settingsSlick(len));
   }
   window.addEventListener(
     'resize',
     debounce(function () {
-      console.log('resize');
-      destroySlider(slider);
+      console.log('resize', slider, len);
+      if (slider) {
+        destroySlider(slider);
+      }
       isMobile = window.innerWidth <= 425;
-      isTablet = window.innerWidth > 425 && window.innerWidth <= 768;
-      isDesktop = window.innerWidth > 768;
+      isTablet = window.innerWidth > 425 && window.innerWidth <= 1023;
+      isDesktop = window.innerWidth > 1023 && window.innerWidth <= 1919;
+      isWider = window.innerWidth > 1919;
       if (
         (len > 4 && isMobile) ||
         (len > 5 && isTablet) ||
-        (len >= 9 && isDesktop)
+        (len >= 9 && isDesktop) ||
+        (len >= 15 && isWider)
       ) {
+        // console.log('могу пересоздать');
         slider = tns(settingsSlick(len));
       }
     }, 250)
