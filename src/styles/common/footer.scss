@@ -18,8 +18,15 @@ footer.globalfooter {
     }
     .globalfooter__wrapper__content {
       margin-bottom: 60px;
-      display: flex;
-      flex-flow: row wrap;
+      // display: flex;
+      // flex-flow: row wrap;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 16px;
+      @include media-forHEADER {
+        display: flex;
+        grid-gap: inherit;
+      }
       ul {
         margin: 0 0 20px;
         flex: 1 1 calc(15% + 30px);

@@ -226,28 +226,31 @@ section.productpage__specificationblock {
               grid-template-rows: repeat(2, 1fr);
               margin-bottom: 15px;
             }
+            h3 {
+              font: normal normal normal 14px/18px Mulish;
+              letter-spacing: 0px;
+              color: #ffffff;
+              text-transform: uppercase;
+              opacity: 0.7;
+              @include media-tablet {
+                margin-bottom: 5px;
+                text-align: start;
+              }
+            }
             span {
-              &:first-of-type {
+              font: normal normal normal 16px/20px Mulish;
+              letter-spacing: 0px;
+              color: #ffffff;
+              opacity: 1;
+              @include media-tablet {
                 font: normal normal normal 14px/18px Mulish;
-                letter-spacing: 0px;
-                color: #ffffff;
-                text-transform: uppercase;
-                opacity: 0.7;
-                @include media-tablet {
-                  margin-bottom: 5px;
-                  text-align: start;
-                }
+                text-align: end;
               }
-              &:last-of-type {
-                font: normal normal normal 16px/20px Mulish;
-                letter-spacing: 0px;
-                color: #ffffff;
-                opacity: 1;
-                @include media-tablet {
-                  font: normal normal normal 14px/18px Mulish;
-                  text-align: end;
-                }
-              }
+              // &:first-of-type {
+              // }
+              // &:last-of-type {
+
+              // }
             }
           }
         }
