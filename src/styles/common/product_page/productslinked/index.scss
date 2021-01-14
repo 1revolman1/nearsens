@@ -18,7 +18,7 @@ section.productpage__productslinked {
       color: white;
       @include media-tablet {
         margin-bottom: 24.5px;
-        font: normal normal normal 22px/28px Mulish;
+        font: normal normal normal 22px/28px 'Mulish', sans-serif;
       }
     }
     .productlist__products-container {

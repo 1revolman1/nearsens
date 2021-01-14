@@ -12,13 +12,13 @@
     opacity: 1;
     width: 100%;
     border-radius: 8px;
-    font: normal normal 300 18px/23px Mulish;
+    font: normal normal 300 18px/23px 'Mulish', sans-serif;
     color: #333333;
     opacity: 1;
     padding: 14px 20px;
     background: white;
     &::placeholder {
-      font: normal normal 300 18px/23px Mulish;
+      font: normal normal 300 18px/23px 'Mulish', sans-serif;
     }
   }
 }

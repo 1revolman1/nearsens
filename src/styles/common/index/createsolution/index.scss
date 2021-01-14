@@ -67,14 +67,14 @@ section.index__createsolution {
     padding: 20px 0;
     h2 {
       text-align: center;
-      font: normal normal 800 30px/38px Mulish;
+      font: normal normal 800 30px/38px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #333333;
       text-shadow: 0px 0px 25px #ffffff;
       opacity: 1;
       margin-bottom: 15px;
       @include media-tablet {
-        font: normal normal 800 22px/28px Mulish;
+        font: normal normal 800 22px/28px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #333333;
         text-shadow: 0px 0px 25px #ffffff;
@@ -83,7 +83,7 @@ section.index__createsolution {
     }
     p {
       text-align: center;
-      font: normal normal 300 22px/28px Mulish;
+      font: normal normal 300 22px/28px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #333333;
       text-shadow: 0px 0px 25px #ffffff;
@@ -91,7 +91,7 @@ section.index__createsolution {
       margin-bottom: 5px;
       margin-bottom: 15px;
       @include media-tablet {
-        font: normal normal 300 18px/23px Mulish;
+        font: normal normal 300 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #333333;
         text-shadow: 0px 0px 25px #ffffff;
@@ -121,13 +121,13 @@ section.index__createsolution {
         background: #2ec9ad 0% 0% no-repeat padding-box;
         border-radius: 40px;
         opacity: 1;
-        font: normal normal bold 18px/23px Mulish;
+        font: normal normal bold 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #ffffff;
         opacity: 1;
         @include media-tablet {
           margin: 10px 20px;
-          font: normal normal bold 18px/23px Mulish;
+          font: normal normal bold 18px/23px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;
@@ -145,14 +145,14 @@ section.index__createsolution {
       cursor: pointer;
       p {
         text-align: center;
-        font: italic normal 300 26px/33px Mulish;
+        font: italic normal 300 26px/33px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #333333;
         text-shadow: 0px 0px 25px #ffffff;
         opacity: 1;
         margin-bottom: 6.5px;
         @include media-tablet {
-          font: italic normal 300 16px/20px Mulish;
+          font: italic normal 300 16px/20px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #333333;
           text-shadow: 0px 0px 25px #ffffff;

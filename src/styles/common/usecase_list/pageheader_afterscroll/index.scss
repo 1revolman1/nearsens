@@ -41,7 +41,7 @@ section.use_case__scrollheader {
       flex: 1;
     }
     h1 {
-      font: normal normal normal 32px/40px Mulish;
+      font: normal normal normal 32px/40px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
@@ -50,7 +50,7 @@ section.use_case__scrollheader {
       white-space: nowrap;
       display: block;
       @include media-tablet {
-        font: normal normal normal 18px/23px Mulish;
+        font: normal normal normal 18px/23px 'Mulish', sans-serif;
       }
     }
     // @include media-tablet {
@@ -66,12 +66,12 @@ section.use_case__scrollheader {
     cursor: pointer;
 
     h3 {
-      font: italic normal normal 25px/18px Mulish;
+      font: italic normal normal 25px/18px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
       @include media-tablet {
-        font: italic normal normal 14px/18px Mulish;
+        font: italic normal normal 14px/18px 'Mulish', sans-serif;
       }
     }
     i {

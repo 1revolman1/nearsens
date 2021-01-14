@@ -21,14 +21,14 @@ section.index__morewithless {
   //     }
   //     p {
   //       text-align: center;
-  //       font: normal normal normal 18px/23px Mulish;
+  //       font: normal normal normal 18px/23px 'Mulish',sans-serif;
   //       letter-spacing: 0px;
   //       color: #333333;
   //       text-transform: uppercase;
   //       opacity: 1;
   //       margin-bottom: 9px;
   //       @include media-tablet {
-  //         font: normal normal normal 16px/20px Mulish;
+  //         font: normal normal normal 16px/20px 'Mulish',sans-serif;
   //         letter-spacing: 0px;
   //         color: #333333;
   //         text-transform: uppercase;
@@ -37,12 +37,12 @@ section.index__morewithless {
   //     }
   //     h3 {
   //       text-align: center;
-  //       font: normal normal 800 30px/38px Mulish;
+  //       font: normal normal 800 30px/38px 'Mulish',sans-serif;
   //       letter-spacing: 0px;
   //       color: #333333;
   //       opacity: 1;
   //       @include media-tablet {
-  //         font: normal normal 800 22px/28px Mulish;
+  //         font: normal normal 800 22px/28px 'Mulish',sans-serif;
   //         letter-spacing: 0px;
   //         color: #333333;
   //         opacity: 1;
@@ -74,7 +74,7 @@ section.index__morewithless {
       border-radius: 40px;
       text-align: center;
       opacity: 1;
-      font: normal normal bold 18px/23px Mulish;
+      font: normal normal bold 18px/23px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #2ec9ad;
       opacity: 1;
@@ -88,7 +88,7 @@ section.index__morewithless {
         // flex: 1;
         // margin: 9.5px;
         padding: 7px 30px;
-        font: normal normal bold 14px/18px Mulish;
+        font: normal normal bold 14px/18px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #2ec9ad;
         opacity: 1;
@@ -127,26 +127,26 @@ section.index__morewithless {
         }
       }
       h2 {
-        font: normal normal 800 30px/38px Mulish;
+        font: normal normal 800 30px/38px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
         margin-bottom: 5px;
         @include media-tablet {
-          font: normal normal 800 22px/28px Mulish;
+          font: normal normal 800 22px/28px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
         }
       }
       p {
-        font: normal normal 300 22px/28px Mulish;
+        font: normal normal 300 22px/28px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
         margin-bottom: 20px;
         @include media-tablet {
-          font: normal normal 300 18px/23px Mulish;
+          font: normal normal 300 18px/23px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
@@ -326,13 +326,13 @@ section.index__morewithless {
             transform: translate(0, -50%);
             // transform: translate(0, 35%);
             transition: all 0.3s ease;
-            font: normal normal 300 22px/28px Mulish;
+            font: normal normal 300 22px/28px 'Mulish', sans-serif;
             letter-spacing: 0px;
             color: #324044;
             opacity: 1;
             @include media-forHEADER {
               color: #ffffff;
-              // font: normal normal normal 16px/20px Mulish;
+              // font: normal normal normal 16px/20px 'Mulish',sans-serif;
               letter-spacing: 0px;
               // color: #324044;
               opacity: 1;
@@ -340,12 +340,12 @@ section.index__morewithless {
               top: 0;
               transform: translate(0, 0%);
               @include media-tablet {
-                font: normal normal normal 16px/20px Mulish;
+                font: normal normal normal 16px/20px 'Mulish', sans-serif;
               }
             }
           }
           p {
-            font: normal normal 300 16px/20px Mulish;
+            font: normal normal 300 16px/20px 'Mulish', sans-serif;
             letter-spacing: 0px;
             color: #ffffff;
             opacity: 0;
@@ -355,7 +355,7 @@ section.index__morewithless {
               letter-spacing: 0px;
               opacity: 1;
               @include media-forHEADER {
-                font: normal normal 300 13px/16px Mulish;
+                font: normal normal 300 13px/16px 'Mulish', sans-serif;
               }
             }
           }

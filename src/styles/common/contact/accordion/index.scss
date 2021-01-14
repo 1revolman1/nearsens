@@ -20,7 +20,7 @@ section.contact__accordion {
     background: #f2f2f2 0% 0% no-repeat padding-box;
     border-radius: 100px;
     opacity: 1;
-    font: normal normal 300 16px/20px Mulish;
+    font: normal normal 300 16px/20px 'Mulish', sans-serif;
     letter-spacing: 0px;
     color: #28373b;
     opacity: 1;
@@ -29,7 +29,7 @@ section.contact__accordion {
       padding: 10px 20px;
       display: flex;
       align-items: center;
-      font: normal normal 300 14px/18px Mulish;
+      font: normal normal 300 14px/18px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #28373b;
       opacity: 1;
@@ -57,12 +57,12 @@ section.contact__accordion {
     overflow: hidden;
     transition: max-height 0.3s ease;
     p {
-      font: normal normal 300 16px/20px Mulish;
+      font: normal normal 300 16px/20px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #333333;
       opacity: 1;
       @include media-tablet {
-        font: normal normal 300 14px/18px Mulish;
+        font: normal normal 300 14px/18px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;

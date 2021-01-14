@@ -1,5 +1,5 @@
 @import 'common/global';
-
+@import './utils/fonts';
 @import 'common/header';
 
 @import 'common/footer';
@@ -47,7 +47,7 @@ blockquote {
   color: white;
 }
 * {
-  font-family: 'Mulish';
+  font-family: 'Mulish', sans-serif;
 }
 h1 {
   margin: 0;

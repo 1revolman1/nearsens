@@ -17,7 +17,7 @@ $row-bg: #f4f2f1;
     transition: 0.5s;
     &:first-of-type .flex-row {
       display: flex;
-      font: normal normal bold 18px/23px Mulish;
+      font: normal normal bold 18px/23px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #9f9f9f;
       text-transform: uppercase;
@@ -67,7 +67,7 @@ $row-bg: #f4f2f1;
         display: none;
         @include media-tablet {
           display: block;
-          font: normal normal bold 18px/23px Mulish;
+          font: normal normal bold 18px/23px 'Mulish', sans-serif;
           color: #9f9f9f;
           margin-right: 0.5em;
           text-transform: uppercase;
@@ -204,7 +204,7 @@ $row-bg: #f4f2f1;
 .flex-row {
   width: calc(100% / 5);
   text-align: left;
-  font-family: Mulish;
+  font-family: 'Mulish', sans-serif;
 }
 
 .rowspan {

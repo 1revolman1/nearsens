@@ -162,24 +162,24 @@ section.productlist__pageheader {
         // margin: 10px 0;
         h1 {
           text-align: left;
-          font: normal normal normal 32px/40px Mulish;
+          font: normal normal normal 32px/40px 'Mulish',sans-serif;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;
           margin-bottom: 20.5px;
           margin-top: 0;
           @include media-tablet {
-            font: normal normal normal 22px/28px Mulish;
+            font: normal normal normal 22px/28px 'Mulish',sans-serif;
             margin-bottom: 22px;
           }
         }
         p {
-          font: normal normal normal 18px/23px Mulish;
+          font: normal normal normal 18px/23px 'Mulish',sans-serif;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;
           @include media-tablet {
-            font: normal normal normal 14px/18px Mulish;
+            font: normal normal normal 14px/18px 'Mulish',sans-serif;
           }
         }
       }
@@ -191,7 +191,7 @@ section.productlist__pageheader {
         // margin: 10px 0;
         h3 {
           text-align: right;
-          font: italic normal normal 22px/28px Mulish;
+          font: italic normal normal 22px/28px 'Mulish',sans-serif;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;
@@ -200,7 +200,7 @@ section.productlist__pageheader {
           @include media-tablet {
             text-align: left;
             margin-bottom: 5px;
-            font: italic normal normal 20px/25px Mulish;
+            font: italic normal normal 20px/25px 'Mulish',sans-serif;
           }
         }
         .productlist__pageheader-wrapper__text-container__picker-filters {
@@ -244,8 +244,8 @@ section.productlist__pageheader {
             background: transparent;
             border-radius: 10px;
             opacity: 1;
-            font: normal normal bold 16px/20px Mulish;
-            // font: normal normal bold 16px/20px Mulish;
+            font: normal normal bold 16px/20px 'Mulish',sans-serif;
+            // font: normal normal bold 16px/20px 'Mulish',sans-serif;
             letter-spacing: 0px;
             color: #ffffff;
             opacity: 1;
@@ -265,7 +265,7 @@ section.productlist__pageheader {
             }
             @include media-tablet {
               padding: 8px 15px;
-              font: normal normal bold 14px/18px Mulish;
+              font: normal normal bold 14px/18px 'Mulish',sans-serif;
             }
           }
         }

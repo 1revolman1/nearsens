@@ -17,7 +17,7 @@ section.signuppage__container {
             padding: 14px 20px;
             span {
               text-transform: none;
-              font: normal normal 300 18px/23px Mulish;
+              font: normal normal 300 18px/23px 'Mulish', sans-serif;
               letter-spacing: 0px;
               color: #333333;
               opacity: 1;
@@ -32,7 +32,7 @@ section.signuppage__container {
         padding: 0 7%;
       }
       .container {
-        font: normal normal 300 18px/23px Mulish;
+        font: normal normal 300 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #28373b;
         opacity: 1;
@@ -43,7 +43,7 @@ section.signuppage__container {
         cursor: pointer;
         user-select: none;
         @include media-tablet {
-          font: normal normal 300 14px/18px Mulish;
+          font: normal normal 300 14px/18px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #28373b;
           opacity: 1;

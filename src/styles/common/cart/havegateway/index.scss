@@ -41,12 +41,12 @@ section.cart__havegateway {
       flex: 1;
       h3 {
         margin-bottom: 5px;
-        font: normal normal normal 18px/23px Mulish;
+        font: normal normal normal 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #ffffff;
         opacity: 1;
         @include media-tablet {
-          font: normal normal normal 16px/20px Mulish;
+          font: normal normal normal 16px/20px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;
@@ -54,22 +54,22 @@ section.cart__havegateway {
       }
       p {
         text-align: left;
-        font: normal normal 300 16px/20px Mulish;
+        font: normal normal 300 16px/20px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #ffffff;
         @include media-tablet {
-          font: normal normal 300 14px/18px Mulish;
+          font: normal normal 300 14px/18px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #ffffff;
         }
         a {
           text-decoration: none;
           text-align: left;
-          font: normal normal bold 16px/20px Mulish;
+          font: normal normal bold 16px/20px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #ffffff;
           @include media-tablet {
-            font: normal normal bold 14px/18px Mulish;
+            font: normal normal bold 14px/18px 'Mulish', sans-serif;
             letter-spacing: 0px;
             color: #ffffff;
           }
@@ -119,7 +119,7 @@ section.cart__havegateway {
     .cart__havegateway__information__btn {
       //   padding: 16px 30px;
       padding: 14px 30px 13px;
-      font: normal normal bold 18px/23px Mulish;
+      font: normal normal bold 18px/23px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       opacity: 1;
@@ -194,7 +194,7 @@ section.cart__havegateway {
     }
     .got_one_text {
       //   margin: 0 10px;
-      font: normal normal bold 18px/23px Mulish;
+      font: normal normal bold 18px/23px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       i {
@@ -207,7 +207,7 @@ section.cart__havegateway {
       border: none;
       outline: none;
       background: none;
-      font: italic normal bold 18px/23px Mulish;
+      font: italic normal bold 18px/23px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #ffffff;
       color: #2ec9ad;

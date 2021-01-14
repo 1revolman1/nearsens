@@ -15,12 +15,12 @@ section.productpage__posibletodowithdevice {
       margin-bottom: 21.5px;
     }
     h2 {
-      font: normal normal normal 32px/40px Mulish;
+      font: normal normal normal 32px/40px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #28373b;
       opacity: 1;
       @include media-tablet {
-        font: normal normal normal 26px/33px Mulish;
+        font: normal normal normal 26px/33px 'Mulish', sans-serif;
       }
     }
     &.productpage__posibletodowithdevice__bottom {
@@ -34,7 +34,7 @@ section.productpage__posibletodowithdevice {
         margin: 0;
         @include media-tablet {
           display: flex;
-          font: normal normal bold 16px/23px Mulish;
+          font: normal normal bold 16px/23px 'Mulish', sans-serif;
         }
       }
     }
@@ -48,7 +48,7 @@ section.productpage__posibletodowithdevice {
       border-radius: 40px;
       opacity: 1;
       padding: 5px 12px;
-      font: normal normal bold 18px/23px Mulish;
+      font: normal normal bold 18px/23px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #2ec9ad;
       opacity: 1;
@@ -56,7 +56,7 @@ section.productpage__posibletodowithdevice {
       background: transparent;
       @include media-tablet {
         display: none;
-        font: normal normal bold 16px/23px Mulish;
+        font: normal normal bold 16px/23px 'Mulish', sans-serif;
       }
       &:hover {
         color: white;
@@ -144,13 +144,13 @@ section.productpage__posibletodowithdevice {
           padding: 0 0 0 15px;
         }
         p {
-          font: italic normal normal 16px/20px Mulish;
+          font: italic normal normal 16px/20px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #6d7476;
           opacity: 1;
           margin-bottom: 5px;
           @include media-tablet {
-            font: italic normal normal 14px/18px Mulish;
+            font: italic normal normal 14px/18px 'Mulish', sans-serif;
           }
         }
         span {
@@ -158,20 +158,20 @@ section.productpage__posibletodowithdevice {
           @include media-tablet {
             margin-top: auto;
             display: block;
-            font: normal normal bold 12px/15px Mulish;
+            font: normal normal bold 12px/15px 'Mulish', sans-serif;
             letter-spacing: 0px;
             color: #6d7476;
             opacity: 1;
           }
         }
         h3 {
-          font: normal normal normal 26px/33px Mulish;
+          font: normal normal normal 26px/33px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #28373b;
           opacity: 1;
           @include media-tablet {
             margin-bottom: 10px;
-            font: normal normal normal 14px/18px Mulish;
+            font: normal normal normal 14px/18px 'Mulish', sans-serif;
           }
         }
       }

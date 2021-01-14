@@ -74,13 +74,13 @@ section.page_gabarit__blockwithbigimg {
       padding-left: 20px;
       li {
         list-style: inherit;
-        font: normal normal 300 18px/23px Mulish;
+        font: normal normal 300 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0;
         color: #333;
         opacity: 1;
         margin-bottom: 2px;
         @include media-tablet {
-          font: normal normal 300 14px/18px Mulish;
+          font: normal normal 300 14px/18px 'Mulish', sans-serif;
         }
       }
     }
@@ -96,7 +96,7 @@ section.page_gabarit__blockwithbigimg {
       @include hblock('h2', 40px, normal, 50px) {
         margin-bottom: 30px;
         @include media-tablet {
-          font: normal normal normal 22px/28px Mulish;
+          font: normal normal normal 22px/28px 'Mulish', sans-serif;
           margin-bottom: 15px;
         }
       }

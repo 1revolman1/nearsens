@@ -17,12 +17,13 @@
   }
   @for $i from 1 through 6 {
     h#{7 - $i} {
-      font: normal normal $weight #{($i * 2) + $variable} / #{$line} Mulish;
+      font: normal normal $weight #{($i * 2) + $variable} / #{$line} 'Mulish',
+        sans-serif;
       letter-spacing: 0px;
       opacity: 1;
       @content;
       //   @include media-tablet {
-      //     font: normal normal normal 22px/28px Mulish;
+      //     font: normal normal normal 22px/28px 'Mulish',sans-serif;
       //   }
     }
   }

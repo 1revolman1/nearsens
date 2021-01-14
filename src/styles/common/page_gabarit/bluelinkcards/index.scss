@@ -34,29 +34,29 @@ section.page_garbit__bluelinkcards {
         margin-bottom: 50px;
         @include media-tablet {
           margin-bottom: 20px;
-          font: normal normal normal 22px/28px Mulish;
+          font: normal normal normal 22px/28px 'Mulish', sans-serif;
         }
       }
       // h3 {
-      //   font: normal normal 300 45px/56px Mulish;
+      //   font: normal normal 300 45px/56px 'Mulish',sans-serif;
       //   letter-spacing: 0px;
       //   color: #ffffff;
       //   opacity: 1;
       //   margin-bottom: 50px;
       //   @include media-tablet {
       //     margin-bottom: 20px;
-      //     font: normal normal normal 22px/28px Mulish;
+      //     font: normal normal normal 22px/28px 'Mulish',sans-serif;
       //   }
       // }
       p {
-        font: normal normal 300 18px/23px Mulish;
+        font: normal normal 300 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #ffffff;
         opacity: 1;
         margin-bottom: 30px;
         @include media-tablet {
           margin-bottom: 15px;
-          font: normal normal normal 14px/18px Mulish;
+          font: normal normal normal 14px/18px 'Mulish', sans-serif;
         }
       }
     }
@@ -102,26 +102,26 @@ section.page_garbit__bluelinkcards {
             color: #ffffff;
             margin-bottom: 5px;
             @include media-tablet {
-              font: normal normal bold 18px/23px Mulish;
+              font: normal normal bold 18px/23px 'Mulish', sans-serif;
             }
           }
           // h3 {
-          //   font: normal normal bold 22px/28px Mulish;
+          //   font: normal normal bold 22px/28px 'Mulish',sans-serif;
           //   letter-spacing: 0px;
           //   color: #ffffff;
           //   opacity: 1;
           //   margin-bottom: 5px;
           //   @include media-tablet {
-          //     font: normal normal bold 18px/23px Mulish;
+          //     font: normal normal bold 18px/23px 'Mulish',sans-serif;
           //   }
           // }
           p {
-            font: normal normal 300 16px/20px Mulish;
+            font: normal normal 300 16px/20px 'Mulish', sans-serif;
             letter-spacing: 0px;
             color: #ffffff;
             opacity: 1;
             @include media-tablet {
-              font: normal normal normal 14px/18px Mulish;
+              font: normal normal normal 14px/18px 'Mulish', sans-serif;
             }
           }
         }
@@ -131,7 +131,7 @@ section.page_garbit__bluelinkcards {
       margin: 44px 0 0;
       .page_garbit__bluelinkcards__wrap__manipulatorcontainer__btn {
         padding: 9px 30px;
-        font: normal normal bold 18px/23px Mulish;
+        font: normal normal bold 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #ffffff;
         opacity: 1;
@@ -142,7 +142,7 @@ section.page_garbit__bluelinkcards {
         cursor: pointer;
         @include media-tablet {
           padding: 9px 20px;
-          font: normal normal bold 18px/20px Mulish;
+          font: normal normal bold 18px/20px 'Mulish', sans-serif;
         }
         &:hover {
           color: white;

@@ -18,7 +18,7 @@ section.page_gabarit__pageheader {
           @include hblock('h1', 32px) {
             color: black;
             @include media-tablet {
-              font: normal normal normal 22px/28px Mulish;
+              font: normal normal normal 22px/28px 'Mulish', sans-serif;
             }
           }
           // h1 {
@@ -30,7 +30,7 @@ section.page_gabarit__pageheader {
             @include hblock('h1', 32px) {
               color: black;
               @include media-tablet {
-                font: normal normal normal 22px/28px Mulish;
+                font: normal normal normal 22px/28px 'Mulish', sans-serif;
               }
             }
             p {
@@ -58,7 +58,7 @@ section.page_gabarit__pageheader {
           margin-bottom: 20.5px;
           @include media-tablet {
             margin-bottom: 10.5px;
-            font: normal normal normal 22px/28px Mulish;
+            font: normal normal normal 22px/28px 'Mulish', sans-serif;
           }
         }
 

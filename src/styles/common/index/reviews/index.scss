@@ -14,13 +14,13 @@ section.index__reviews {
     margin-bottom: 60.5px;
     h3 {
       text-align: center;
-      font: normal normal 300 18px/23px Mulish;
+      font: normal normal 300 18px/23px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #333333;
       opacity: 1;
       padding-bottom: 60.5px;
       @include media-tablet {
-        font: normal normal 300 16px/20px Mulish;
+        font: normal normal 300 16px/20px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
@@ -51,13 +51,13 @@ section.index__reviews {
       }
       h2 {
         text-align: center;
-        font: normal normal 800 26px/33px Mulish;
+        font: normal normal 800 26px/33px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
         margin-bottom: 10px;
         @include media-tablet {
-          font: normal normal 800 22px/28px Mulish;
+          font: normal normal 800 22px/28px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
@@ -83,7 +83,7 @@ section.index__reviews {
         p {
           position: relative;
           text-align: center;
-          font: normal normal bold 20px/25px Mulish;
+          font: normal normal bold 20px/25px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
@@ -120,7 +120,7 @@ section.index__reviews {
             // }
           }
           @include media-tablet {
-            font: normal normal bold 16px/20px Mulish;
+            font: normal normal bold 16px/20px 'Mulish', sans-serif;
             letter-spacing: 0px;
             color: #333333;
             opacity: 1;
@@ -130,12 +130,12 @@ section.index__reviews {
         span {
           text-align: center;
           margin: 0;
-          font: normal normal 300 16px/20px Mulish;
+          font: normal normal 300 16px/20px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
           @include media-tablet {
-            font: normal normal 300 14px/18px Mulish;
+            font: normal normal 300 14px/18px 'Mulish', sans-serif;
             letter-spacing: 0px;
             color: #333333;
             opacity: 1;

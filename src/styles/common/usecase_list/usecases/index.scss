@@ -8,21 +8,21 @@ section.use_case__usecases {
     margin: 10px auto 40.5px;
   }
   h2 {
-    font: normal normal normal 32px/40px Mulish;
+    font: normal normal normal 32px/40px 'Mulish', sans-serif;
     letter-spacing: 0px;
     color: #28373b;
     opacity: 1;
     margin-bottom: 20.5px;
     span {
-      font: italic normal normal 22px/28px Mulish;
+      font: italic normal normal 22px/28px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #28373b;
       @include media-tablet {
-        font: normal normal normal 14px/33px Mulish;
+        font: normal normal normal 14px/33px 'Mulish', sans-serif;
       }
     }
     @include media-tablet {
-      font: normal normal normal 26px/33px Mulish;
+      font: normal normal normal 26px/33px 'Mulish', sans-serif;
     }
   }
   .use_case__usecases__wrap {
@@ -112,22 +112,22 @@ section.use_case__usecases {
           p {
             color: white;
             margin-bottom: 5px;
-            font: italic normal normal 16px/20px Mulish;
+            font: italic normal normal 16px/20px 'Mulish', sans-serif;
             letter-spacing: 0px;
             opacity: 1;
             @include media-tablet {
-              font: italic normal normal 14px/18px Mulish;
+              font: italic normal normal 14px/18px 'Mulish', sans-serif;
             }
           }
           h3 {
             text-align: left;
-            font: normal normal normal 26px/33px Mulish;
+            font: normal normal normal 26px/33px 'Mulish', sans-serif;
             letter-spacing: 0px;
             color: white;
             opacity: 1;
 
             @include media-tablet {
-              font: normal normal normal 14px/18px Mulish;
+              font: normal normal normal 14px/18px 'Mulish', sans-serif;
             }
           }
         }
@@ -206,19 +206,19 @@ section.use_case__usecases {
           }
           p {
             margin-bottom: 5px;
-            font: italic normal normal 16px/20px Mulish;
+            font: italic normal normal 16px/20px 'Mulish', sans-serif;
             letter-spacing: 0px;
             color: #6d7476;
             opacity: 1;
 
             @include media-tablet {
-              font: italic normal normal 14px/18px Mulish;
+              font: italic normal normal 14px/18px 'Mulish', sans-serif;
             }
           }
 
           h3 {
             text-align: left;
-            font: normal normal normal 26px/33px Mulish;
+            font: normal normal normal 26px/33px 'Mulish', sans-serif;
             letter-spacing: 0px;
             color: #28373b;
             opacity: 1;
@@ -228,7 +228,7 @@ section.use_case__usecases {
               &:last-of-type {
                 margin-bottom: 0;
               }
-              font: normal normal normal 14px/18px Mulish;
+              font: normal normal normal 14px/18px 'Mulish', sans-serif;
             }
           }
         }

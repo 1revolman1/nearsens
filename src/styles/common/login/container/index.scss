@@ -9,13 +9,13 @@ section.loginpage__container {
   }
   h2 {
     text-align: center;
-    font: italic normal 300 18px/23px Mulish;
+    font: italic normal 300 18px/23px 'Mulish', sans-serif;
     letter-spacing: 0px;
     color: #333333;
     opacity: 1;
     margin-bottom: 32px;
     @include media-tablet {
-      font: italic normal 300 16px/20px Mulish;
+      font: italic normal 300 16px/20px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #333333;
       opacity: 1;
@@ -37,13 +37,13 @@ section.loginpage__container {
     }
     h3 {
       text-align: center;
-      font: normal normal normal 26px/33px Mulish;
+      font: normal normal normal 26px/33px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #333333;
       opacity: 1;
       margin-bottom: 31px;
       @include media-tablet {
-        font: normal normal normal 22px/28px Mulish;
+        font: normal normal normal 22px/28px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
@@ -62,7 +62,7 @@ section.loginpage__container {
       }
       input {
         width: 100%;
-        font: normal normal 300 18px/23px Mulish;
+        font: normal normal 300 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
@@ -76,7 +76,7 @@ section.loginpage__container {
       a {
         margin-left: auto;
         text-align: right;
-        font: italic normal normal 16px/20px Mulish;
+        font: italic normal normal 16px/20px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #004c83;
         opacity: 1;
@@ -95,7 +95,7 @@ section.loginpage__container {
         background: #2ec9ad 0% 0% no-repeat padding-box;
         border-radius: 40px;
         padding: 14px 30px;
-        font: normal normal bold 18px/23px Mulish;
+        font: normal normal bold 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #ffffff;
         opacity: 1;
@@ -116,13 +116,13 @@ section.loginpage__container {
       }
       h3 {
         align-self: center;
-        font: normal normal normal 26px/33px Mulish;
+        font: normal normal normal 26px/33px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
         margin-bottom: 10px;
         @include media-tablet {
-          font: normal normal normal 22px/28px Mulish;
+          font: normal normal normal 22px/28px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
@@ -135,7 +135,7 @@ section.loginpage__container {
         background: #2ec9ad 0% 0% no-repeat padding-box;
         border-radius: 40px;
         opacity: 1;
-        font: normal normal bold 18px/23px Mulish;
+        font: normal normal bold 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #ffffff;
         opacity: 1;
