@@ -48,10 +48,10 @@ section.checkout_page__stickycont {
           display: grid;
           grid-template-columns: 1fr fit-content(100%);
           grid-gap: 20px;
-          @media screen and (max-width: 375px) {
-            display: flex;
-            flex-flow: row wrap;
-          }
+          // @media screen and (max-width: 375px) {
+          //   display: flex;
+          //   flex-flow: row wrap;
+          // }
         }
         // @media screen and (max-width: 430px) {
         //   display: flex;
@@ -82,7 +82,8 @@ section.checkout_page__stickycont {
               width: inherit;
               @media screen and (max-width: 375px) {
                 flex: 1;
-                width: 62%;
+                width: 100%;
+                // width: 62%;
                 margin: 0;
               }
             }
@@ -113,7 +114,8 @@ section.checkout_page__stickycont {
               width: inherit;
               @media screen and (max-width: 375px) {
                 flex: none;
-                width: 35%;
+                width: 100%;
+                // width: 35%;
                 margin: 0;
               }
             }

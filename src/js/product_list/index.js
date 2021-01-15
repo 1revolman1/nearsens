@@ -435,17 +435,17 @@ export const useProductList = function main() {
 
   const target = document.querySelector('.productlist__pageheader');
   if (target) observer.observe(target);
-  $(document).tooltip({
-    track: true,
-    classes: {
-      'ui-tooltip': 'ui-corner-all ui-widget-shadow slider-tooltip',
-    },
-    delay: 0,
-    duration: 0,
-    hide: {
-      effect: 'none',
-    },
-    show: { effect: 'none' },
-    position: { my: 'top+40px', at: 'right center' },
-  });
+  // $(document).tooltip({
+  //   track: true,
+  //   classes: {
+  //     'ui-tooltip': 'ui-corner-all ui-widget-shadow slider-tooltip',
+  //   },
+  //   delay: 0,
+  //   duration: 0,
+  //   hide: {
+  //     effect: 'none',
+  //   },
+  //   show: { effect: 'none' },
+  //   position: { my: 'top+40px', at: 'right center' },
+  // });
 };
