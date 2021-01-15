@@ -24,7 +24,8 @@ section.productlist__pageheader
         .productlist__pageheader-wrapper__slider-container__slider
             each val,index in [1,2,3,4,5,6,7,8,9,10,11,1,2,3,4,5,6,7,8,8,10]
                 .productlist__pageheader-wrapper__slider-container__slider-element
-                    img(src="img/product"+val+".png", alt="slider")
+                    img(title="Tooltip"+val+" text" src="img/product"+val+".png", alt="slider")
+                    //- span.tooltiptext Tooltip text
             //- each val,index in [1,2,3,4]
             //-     .productlist__pageheader-wrapper__slider-container__slider-element.non-filter
             //-         img(src="img/product"+val+".png", alt="slider")

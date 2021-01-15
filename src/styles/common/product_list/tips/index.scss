@@ -21,12 +21,13 @@ section.productlist__additionaltips {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    grid-column-gap: 10px;
+    grid-column-gap: 40px;
     grid-row-gap: 20px;
     @include media-forHEADER {
       width: 100%;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 10px;
       @include media-tablet {
         // width: 100%;
       }

@@ -353,6 +353,7 @@ section.productlist__products {
         @include media-tablet {
           // flex: inherit;
           width: 100%;
+          height: auto;
           margin-left: 10px;
           display: flex;
           flex-direction: column;

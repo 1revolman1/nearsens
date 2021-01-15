@@ -108,6 +108,7 @@ section.productlist__pageheader {
       //   width: 80%;
       // }
       .productlist__pageheader-wrapper__slider-container__slider-element {
+        position: relative;
         display: flex;
         user-select: none;
         align-items: center;
@@ -124,6 +125,25 @@ section.productlist__pageheader {
             cursor: auto;
           }
         }
+
+        // &:hover .tooltiptext {
+        //   visibility: visible;
+        // }
+        // .tooltiptext {
+        //   visibility: hidden;
+        //   width: 120px;
+        //   background-color: black;
+        //   color: #fff;
+        //   text-align: center;
+        //   border-radius: 6px;
+        //   padding: 5px 0;
+        //   /* Position the tooltip */
+        //   position: absolute;
+        //   z-index: 1;
+        //   top: 100%;
+        //   left: 50%;
+        //   margin-left: -60px;
+        // }
         img {
           cursor: pointer;
           object-fit: cover;
@@ -162,24 +182,24 @@ section.productlist__pageheader {
         // margin: 10px 0;
         h1 {
           text-align: left;
-          font: normal normal normal 32px/40px 'Mulish',sans-serif;
+          font: normal normal normal 32px/40px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;
           margin-bottom: 20.5px;
           margin-top: 0;
           @include media-tablet {
-            font: normal normal normal 22px/28px 'Mulish',sans-serif;
+            font: normal normal normal 22px/28px 'Mulish', sans-serif;
             margin-bottom: 22px;
           }
         }
         p {
-          font: normal normal normal 18px/23px 'Mulish',sans-serif;
+          font: normal normal normal 18px/23px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;
           @include media-tablet {
-            font: normal normal normal 14px/18px 'Mulish',sans-serif;
+            font: normal normal normal 14px/18px 'Mulish', sans-serif;
           }
         }
       }
@@ -191,7 +211,7 @@ section.productlist__pageheader {
         // margin: 10px 0;
         h3 {
           text-align: right;
-          font: italic normal normal 22px/28px 'Mulish',sans-serif;
+          font: italic normal normal 22px/28px 'Mulish', sans-serif;
           letter-spacing: 0px;
           color: #ffffff;
           opacity: 1;
@@ -200,7 +220,7 @@ section.productlist__pageheader {
           @include media-tablet {
             text-align: left;
             margin-bottom: 5px;
-            font: italic normal normal 20px/25px 'Mulish',sans-serif;
+            font: italic normal normal 20px/25px 'Mulish', sans-serif;
           }
         }
         .productlist__pageheader-wrapper__text-container__picker-filters {
@@ -244,7 +264,7 @@ section.productlist__pageheader {
             background: transparent;
             border-radius: 10px;
             opacity: 1;
-            font: normal normal bold 16px/20px 'Mulish',sans-serif;
+            font: normal normal bold 16px/20px 'Mulish', sans-serif;
             // font: normal normal bold 16px/20px 'Mulish',sans-serif;
             letter-spacing: 0px;
             color: #ffffff;
@@ -265,11 +285,33 @@ section.productlist__pageheader {
             }
             @include media-tablet {
               padding: 8px 15px;
-              font: normal normal bold 14px/18px 'Mulish',sans-serif;
+              font: normal normal bold 14px/18px 'Mulish', sans-serif;
             }
           }
         }
       }
     }
+  }
+}
+.slider-tooltip {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  font: normal normal bold 16px/31px Mulish, sans-serif;
+  color: #005b9d;
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: 100%; /* At the top of the tooltip */
+    left: 50%;
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #fff;
+    border-width: 16px;
+    margin-left: -16px;
   }
 }

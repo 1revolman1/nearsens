@@ -6,7 +6,8 @@ section.productpage__textblockheader {
   flex-flow: row wrap;
   margin-bottom: 70px;
   justify-content: center;
-  gap: 15px;
+  column-gap: 40px;
+  row-gap: 15px;
   @include media-tablet {
     margin-bottom: 40.5px;
     justify-content: center;
