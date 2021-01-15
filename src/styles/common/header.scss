@@ -1062,6 +1062,7 @@ nav.nav {
               .dropbtn {
                 color: #2ec9ad;
                 i:not(.globe) {
+                  color: #2ec9ad;
                   transform: rotate(-90deg);
 
                   @include media-forHEADER {
@@ -1072,6 +1073,7 @@ nav.nav {
 
               .dropup-content {
                 display: block;
+                z-index: 9;
               }
             }
 
@@ -1087,9 +1089,7 @@ nav.nav {
               border: none;
               outline: none;
               cursor: pointer;
-              @include media-forHEADER {
-                // flex-direction: row-reverse;
-              }
+
               &.unshow {
                 > svg,
                 > i:not(.globe) {
@@ -1114,9 +1114,9 @@ nav.nav {
                   }
                 }
               }
-
               > svg,
               > i:not(.globe) {
+                transform-origin: center;
                 transform: rotate(90deg);
                 margin: 0 7px;
                 transition: transform ease 0.5s;
@@ -1126,21 +1126,28 @@ nav.nav {
             }
 
             .droupup-block {
+              position: absolute;
+              top: 100%;
               width: 100%;
-              height: 100%;
-              overflow: hidden;
+              height: 20px;
+
               @include media-forHEADER {
+                position: relative;
+                top: initial;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
                 padding-left: 15px;
               }
+              // overflow: hidden;
             }
 
             .dropup-content {
               display: none;
               position: absolute;
-              // right: -20px;
-              left: 0px;
-              // left: -29px;
-              top: calc(100% + 16px);
+
+              left: 0;
+              top: 20px;
               padding: 17px 20px;
               min-width: 250px;
               max-height: 300px;
@@ -1218,23 +1225,6 @@ nav.nav {
                     color: #33709c;
                   }
                 }
-
-                // svg {
-                //   height: 14px;
-                //   width: 9px;
-                //   margin-right: 9px;
-                //   transform: rotate(-90deg);
-
-                //   path {
-                //     fill: #005B9D;
-                //   }
-
-                //   @include media-forHEADER {
-                //     path {
-                //       fill: #33709c;
-                //     }
-                //   }
-                // }
               }
             }
           }

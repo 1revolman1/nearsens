@@ -75,21 +75,11 @@ nav.nav
           li: a(href="/" class="active-link in-viewport")
             //- img(class="logo-img" src="img/Nearsens - Logotype - Seul.svg", alt="logo")
             span Home
-          
-          //- li.dropup.dropup-language
-          //-   button.dropbtn 
-          //-     i(class="fas fa-globe-europe globe") 
-          //-     |EN 
-          //-     include header/svg-down
-          //-   .droupup-block
-          //-     .dropup-content.unshow
-          //-       a(href="") 
-          //-         include header/svg-down
-          //-         span FR
           li.dropup
             button.dropbtn.active-link
               |Solution
-              include header/svg-down          
+              include header/svg-down
+              
             .droupup-block
               .dropup-content.unshow
                 a(href="" class="active-link")
