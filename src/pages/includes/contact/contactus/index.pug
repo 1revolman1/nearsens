@@ -1,15 +1,31 @@
 section.contact__container
-    .contact__container__texthead
-        h2 Contact us by phone
-        p We welcome you by phone at the following times: Monday to Friday 9 a.m. to 6 p.m.
-        
-    .contact__container__phonecontainer
-        //- .phone-container
-        a(href="tel:+33930088008").phone-container
+    .contact__container__texthead.head
+        h2 Nearsens is at your service to answer any question
+        p 
+            |Before contacting Nearsens, you can go over the 
+            a Frequently Asked Questions 
+            |to try to find the answer to your question or contact us using any of the following means.
+    .contact__container__texthead.contact__container__phonecontainer
+        h3
             i.fas.fa-phone-alt
+            |Contact us by phone
+        p We welcome you by phone at the following times: Monday to Friday 9 a.m. to 6 p.m.
+        a(href="tel:+33930088008").phone-container
+            //- i.fas.fa-phone-alt
             .phone-container__text
                 span.number +339 8008 3008
-                span.text (number not surcharged)
+    //- .contact__container__phonecontainer
+        //- a(href="tel:+33930088008").phone-container
+        //-     //- i.fas.fa-phone-alt
+        //-     .phone-container__text
+        //-         span.number +339 8008 3008
     .contact__container__texthead
-        h2 Email
-        p In the hope that you can resolve your concern / your request as soon as possible, maybe one of these frequently asked questions will help you?
+        h3 
+            include svg/chat
+            |Contact us by chat
+        p You can also contact us using the live chat bubble at bottom right side of your screen during business hours.
+    .contact__container__texthead
+        h3 
+            include svg/email
+            |Contact us by email
+        p You can also send us an email using the contact form below at anytime. We will answer you within maximum delay of 48 hours.

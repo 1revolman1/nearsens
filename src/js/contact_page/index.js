@@ -14,19 +14,19 @@ export const useContactPage = function () {
       }
     });
   });
-  const hidden = document.querySelector(
-    '.contact__findanswer__wrap__secondinit'
-  );
-  const btnContainer = document.querySelector(
-    '.contact__findanswer__wrap__firstinit'
-  );
-  document
-    .querySelector('.contact__findanswer__wrap__btn')
-    .addEventListener('click', function (elm) {
-      // console.log(elm)
-      btnContainer.classList.add('unshow');
-      hidden.classList.add('show');
-    });
+  // const hidden = document.querySelector(
+  //   '.contact__findanswer__wrap__secondinit'
+  // );
+  // const btnContainer = document.querySelector(
+  //   '.contact__findanswer__wrap__firstinit'
+  // );
+  // document
+  //   .querySelector('.contact__findanswer__wrap__btn')
+  //   .addEventListener('click', function (elm) {
+  //     // console.log(elm)
+  //     btnContainer.classList.add('unshow');
+  //     hidden.classList.add('show');
+  //   });
   // header.addEventListener("header",function({detail:{inViewPort}}){
   //   // console.log("FUNC",inViewPort);
   //   if(!inViewPort){

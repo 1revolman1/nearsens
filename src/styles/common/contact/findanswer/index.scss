@@ -60,7 +60,8 @@ section.contact__findanswer {
     }
     .contact__findanswer__wrap__secondinit {
       transition: all ease 0.3s;
-      display: none;
+      // display: none;
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
