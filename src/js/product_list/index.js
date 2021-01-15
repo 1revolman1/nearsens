@@ -320,7 +320,7 @@ export const useProductList = function main() {
       prevButton: '.prev',
       nextButton: '.next',
       responsive: {
-        1921: {
+        1920: {
           items: slidesToShow,
         },
         1024: {
@@ -348,8 +348,8 @@ export const useProductList = function main() {
   if (
     (len > 4 && isMobile) ||
     (len > 5 && isTablet) ||
-    (len >= 9 && isDesktop) ||
-    (len >= 15 && isWider)
+    (len > 9 && isDesktop) ||
+    (len > 15 && isWider)
   ) {
     slider = tns(settingsSlick(len));
   }
@@ -367,8 +367,8 @@ export const useProductList = function main() {
       if (
         (len > 4 && isMobile) ||
         (len > 5 && isTablet) ||
-        (len >= 9 && isDesktop) ||
-        (len >= 15 && isWider)
+        (len > 9 && isDesktop) ||
+        (len > 15 && isWider)
       ) {
         // console.log('могу пересоздать');
         slider = tns(settingsSlick(len));
