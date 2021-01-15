@@ -144,5 +144,18 @@ section.use_case__subscribe {
         }
       }
     }
+    #mce-error-response,
+    #mce-success-response {
+      margin-top: 10px;
+      font: normal normal normal 16px/20px Mulish, sans-serif;
+      letter-spacing: 0;
+      color: #fff;
+      opacity: 1;
+      a {
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
   }
 }
