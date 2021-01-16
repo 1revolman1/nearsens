@@ -14,7 +14,8 @@ section.productpage__posibletodowithdevice {
     @include media-tablet {
       margin-bottom: 21.5px;
     }
-    h2 {
+    h2,
+    h3 {
       font: normal normal normal 32px/40px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #28373b;

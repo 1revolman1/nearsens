@@ -178,13 +178,18 @@ section.usecase_details__pageheader {
     }
     .usecase_details__pageheader__img {
       flex: 0 1 46%;
+      display: flex;
+      align-items: flex-start;
       // flex:1;
       img {
+        width: 100%;
         border-radius: 10px;
         display: flex;
-        position: sticky;
-        top: 121px;
+        max-height: 350px;
+        // position: sticky;
+        // top: 121px;
         @include media-tablet {
+          max-height: initial;
           border-radius: 0;
         }
       }

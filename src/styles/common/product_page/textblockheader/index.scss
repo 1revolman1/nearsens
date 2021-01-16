@@ -2,12 +2,19 @@
 @import '../../../utils/variables.scss';
 
 section.productpage__textblockheader {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 70px;
-  justify-content: center;
-  column-gap: 40px;
-  row-gap: 15px;
+  @include media-forHEADER {
+    display: flex;
+    flex-flow: row wrap;
+    grid-gap: initial;
+    justify-content: center;
+    column-gap: 35px;
+    row-gap: 30px;
+  }
+
   @include media-tablet {
     margin-bottom: 40.5px;
     justify-content: center;
@@ -17,8 +24,8 @@ section.productpage__textblockheader {
     // margin: 15px;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    flex: 1 1 calc(28% + 30px);
+    justify-content: flex-sart;
+    flex: 1 1 calc(28% + 60px);
     @include media-tablet {
       flex: 0 1 calc(31% + 30px);
     }
