@@ -1238,6 +1238,9 @@ nav.nav {
 
                 &.active-link {
                   color: #2ec9ad;
+                  i {
+                    color: #2ec9ad;
+                  }
                 }
 
                 &:hover {
