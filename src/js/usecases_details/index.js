@@ -142,50 +142,50 @@ export const useCasesDetails = function main() {
     }
   }
 
-  document
-    .querySelectorAll(
-      '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons .counter'
-    )
-    .forEach(function (elm, index) {
-      totalPrice = totalPrice + Number(elm.textContent);
-      document
-        .querySelectorAll(
-          '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator'
-        )
-        [index].setAttribute('data-ammount', Number(elm.textContent));
-    });
-  if (totalPricePlace) totalPricePlace.textContent = `${totalPrice} items`;
+  // document
+  //   .querySelectorAll(
+  //     '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons .counter'
+  //   )
+  //   .forEach(function (elm, index) {
+  //     totalPrice = totalPrice + Number(elm.textContent);
+  //     document
+  //       .querySelectorAll(
+  //         '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator'
+  //       )
+  //       [index].setAttribute('data-ammount', Number(elm.textContent));
+  //   });
+  // if (totalPricePlace) totalPricePlace.textContent = `${totalPrice} items`;
   $(
     '.usecase_details__blockwithbuyabbility-wrap__manipulator__block .shop-cart'
   ).on('click', cartAnim);
-  $(
-    '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons .minus'
-  ).on('click', function () {
-    const container = $(this).parents(
-      '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons'
-    );
-    const counter = container.find('.counter');
-    let value = Number(counter.text());
-    value -= 1;
-    if (value === 1) {
-      $(this).attr('disabled', true);
-    }
-    counter.text(value);
-  });
-  $(
-    '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons .plus'
-  ).on('click', function () {
-    const container = $(this).parents(
-      '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons'
-    );
-    const counter = container.find('.counter');
-    let value = Number(counter.text());
-    value += 1;
-    if (value >= 2) {
-      container.find('.minus').attr('disabled', false);
-    }
-    counter.text(value);
-  });
+  // $(
+  //   '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons .minus'
+  // ).on('click', function () {
+  //   const container = $(this).parents(
+  //     '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons'
+  //   );
+  //   const counter = container.find('.counter');
+  //   let value = Number(counter.text());
+  //   value -= 1;
+  //   if (value === 1) {
+  //     $(this).attr('disabled', true);
+  //   }
+  //   counter.text(value);
+  // });
+  // $(
+  //   '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons .plus'
+  // ).on('click', function () {
+  //   const container = $(this).parents(
+  //     '.usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-buttons'
+  //   );
+  //   const counter = container.find('.counter');
+  //   let value = Number(counter.text());
+  //   value += 1;
+  //   if (value >= 2) {
+  //     container.find('.minus').attr('disabled', false);
+  //   }
+  //   counter.text(value);
+  // });
   const observer = new IntersectionObserver(onScrollChange, options);
   const target = document.querySelector('.usecase_details__pageheader');
   if (target) observer.observe(target);
