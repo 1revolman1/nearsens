@@ -20,12 +20,12 @@ section.usecase_details__pageheaderafterscroll {
     top: -15px;
   }
   @include media-forHEADER {
-    top: $additionalNavMenuToTopBIGMENU; // padding: 13px 0 15px;
-    padding: 17px 0 18px;
-    box-shadow: 0px 3px 5px #00000029;
+    top: $additionalNavMenuToTopBIGMENU;
     @include media-tablet {
       box-shadow: 0px 3px 5px #00000029;
       top: $additionalNavMenuToTopRESP;
+      // padding: 13px 0 15px;
+      padding: 17px 0 18px;
     }
   }
 
@@ -35,7 +35,7 @@ section.usecase_details__pageheaderafterscroll {
     display: flex;
     justify-content: space-between;
     position: relative;
-    @include media-forHEADER {
+    @include media-tablet {
       width: 90%;
     }
     .usecase_details__pageheaderafterscroll-wrap__text {
@@ -44,7 +44,7 @@ section.usecase_details__pageheaderafterscroll {
       flex-direction: column;
       max-width: 55%;
       // flex: 1;
-      @include media-forHEADER {
+      @include media-tablet {
         justify-content: flex-start;
         max-width: 75%;
       }
@@ -61,7 +61,7 @@ section.usecase_details__pageheaderafterscroll {
         margin-bottom: 4px;
         @include media-forHEADER {
           margin-bottom: 0;
-          @include media-forHEADER {
+          @include media-tablet {
             max-width: 100%;
             font: normal normal normal 20px/25px 'Mulish', sans-serif;
           }
@@ -72,7 +72,7 @@ section.usecase_details__pageheaderafterscroll {
         letter-spacing: 0px;
         color: #6d7476;
         opacity: 1;
-        @include media-forHEADER {
+        @include media-tablet {
           display: none;
         }
       }
@@ -90,7 +90,7 @@ section.usecase_details__pageheaderafterscroll {
         // flex:0 1 30%;
         padding-left: 40px;
         opacity: 0.65;
-        @include media-forHEADER {
+        @include media-tablet {
           display: contents;
           padding-left: 0;
         }
@@ -114,7 +114,7 @@ section.usecase_details__pageheaderafterscroll {
           path {
             fill: #28373b;
           }
-          @include media-forHEADER {
+          @include media-tablet {
             width: 11px;
           }
         }
@@ -123,7 +123,7 @@ section.usecase_details__pageheaderafterscroll {
           letter-spacing: 0px;
           color: #28373b;
           opacity: 1;
-          @include media-forHEADER {
+          @include media-tablet {
             display: none;
           }
         }

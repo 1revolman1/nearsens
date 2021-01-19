@@ -1,0 +1,141 @@
+section.usecase_details__pageheaderafterscroll {
+  position: fixed;
+  z-index: 1;
+  top: 63px;
+  width: 100%;
+  padding: 18px 0;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  transition: visibility 0.2s, opacity 0.5s linear, top ease 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+section.usecase_details__pageheaderafterscroll.out-viewport {
+  visibility: visible;
+  opacity: 1;
+}
+section.usecase_details__pageheaderafterscroll.scroll-to-bottom {
+  top: -15px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.usecase_details__pageheaderafterscroll {
+    top: 64px;
+    padding: 17px 0 18px;
+    box-shadow: 0px 3px 5px #00000029;
+  }
+}
+@media screen and (max-width: 1023.5px) and (max-width: 768px) {
+  section.usecase_details__pageheaderafterscroll {
+    box-shadow: 0px 3px 5px #00000029;
+    top: 55px;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+@media screen and (max-width: 1023.5px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap {
+    width: 90%;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 55%;
+}
+@media screen and (max-width: 1023.5px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text {
+    justify-content: flex-start;
+    max-width: 75%;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text h1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text h1 {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1023.5px) and (max-width: 1023.5px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text h1 {
+    max-width: 100%;
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text p {
+  font: italic normal normal 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #6d7476;
+  opacity: 1;
+}
+@media screen and (max-width: 1023.5px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__text p {
+    display: none;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  justify-content: flex-end;
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+  padding-left: 40px;
+  opacity: 0.65;
+}
+@media screen and (max-width: 1023.5px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem {
+    display: contents;
+    padding-left: 0;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem.active {
+  opacity: 1;
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem.active img path,
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem.active svg path {
+  fill: #005b9d;
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem img,
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem svg {
+  margin-right: 10px;
+  width: 20px;
+  object-fit: cover;
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem img path,
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem svg path {
+  fill: #28373b;
+}
+@media screen and (max-width: 1023.5px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem img,
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem svg {
+    width: 11px;
+  }
+}
+section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem p {
+  font: normal normal normal 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+}
+@media screen and (max-width: 1023.5px) {
+  section.usecase_details__pageheaderafterscroll .usecase_details__pageheaderafterscroll-wrap .usecase_details__pageheaderafterscroll-wrap__logos .usecase_details__pageheaderafterscroll-wrap__logos__elem p {
+    display: none;
+  }
+}
