@@ -7,6 +7,8 @@
             margin-top: 6px;
             .woocommerce-additional-fields__field-wrapper {
               #order_comments_field {
+                display: flex;
+                flex-direction: column;
                 > label {
                   font: normal normal 300 18px/23px 'Mulish', sans-serif;
                   letter-spacing: 0;
@@ -15,6 +17,7 @@
                 }
                 .woocommerce-input-wrapper {
                   #order_comments.input-text {
+                    width: 100%;
                     height: 230px;
                     padding: 14px 30px;
                     font-size: 18px;

@@ -15,3 +15,11 @@
 //     obj.dispatchEvent(event);
 //   }, 2000);
 // };
+
+export const isTouchDevice = function isTouchDevice() {
+  return (
+    'ontouchstart' in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
+};

@@ -1,3 +1,10 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.isTouchDevice = void 0;
+
 // export const carBuyEvent = function () {
 //   // .buy-button
 //   const event = new CustomEvent('cat', {
@@ -15,4 +22,8 @@
 //     obj.dispatchEvent(event);
 //   }, 2000);
 // };
-"use strict";
+var isTouchDevice = function isTouchDevice() {
+  return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+};
+
+exports.isTouchDevice = isTouchDevice;

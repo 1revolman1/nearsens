@@ -171,5 +171,24 @@ section.checkout_page__stickycont {
         }
       }
     }
+    .checkout_page__content__contact__manip__btncont {
+      margin: 20px 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      .checkout_page__content__contact__manip__btn {
+        font: normal normal bold 18px/23px 'Mulish', sans-serif;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+        background: #2ec9ad 0% 0% no-repeat padding-box;
+        border: 1px solid #2ec9ad;
+        border-radius: 40px;
+        opacity: 1;
+        padding: 14px 30px;
+        outline: none;
+        text-transform: uppercase;
+      }
+    }
   }
 }

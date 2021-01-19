@@ -1,0 +1,23 @@
+.checkout_page .checkout_page__container .checkout_page__content .woocommerce-checkout #customer_details .woocommerce-additional-fields {
+  margin-top: 6px;
+}
+.checkout_page .checkout_page__container .checkout_page__content .woocommerce-checkout #customer_details .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper #order_comments_field {
+  display: flex;
+  flex-direction: column;
+}
+.checkout_page .checkout_page__container .checkout_page__content .woocommerce-checkout #customer_details .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper #order_comments_field > label {
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0;
+  color: #28373b;
+  margin-bottom: 15px;
+}
+.checkout_page .checkout_page__container .checkout_page__content .woocommerce-checkout #customer_details .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper #order_comments_field .woocommerce-input-wrapper #order_comments.input-text {
+  width: 100%;
+  height: 230px;
+  padding: 14px 30px;
+  font-size: 18px;
+  resize: none;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+}

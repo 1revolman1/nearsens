@@ -1,4 +1,5 @@
 import { tns } from '../../local_modules/tiny-slider/src/tiny-slider';
+import { isTouchDevice } from '../additionfunctional/cartbuy';
 function debounce(func, wait, immediate) {
   var timeout;
   return function () {
@@ -106,6 +107,14 @@ function cartAnim() {
 
 export const useProductList = function main() {
   console.log(`PRODUCT LIST PAGE`);
+  const len = document.querySelectorAll(
+    '.productlist__pageheader-wrapper__slider-container__slider-element'
+  ).length;
+  let isMobile = window.innerWidth <= 425,
+    isTablet = window.innerWidth > 425 && window.innerWidth <= 1023,
+    isDesktop = window.innerWidth > 1023 && window.innerWidth <= 1919,
+    isWider = window.innerWidth > 1919;
+  let slider;
   // (function mobileHeaderLogic() {
   //   const textContainer = document.querySelector(
   //     '.productlist__scrollheader-wrapper__text-container__picker h3'
@@ -291,9 +300,6 @@ export const useProductList = function main() {
   //     ],
   //   };
   // }
-  const len = document.querySelectorAll(
-    '.productlist__pageheader-wrapper__slider-container__slider-element'
-  ).length;
   function settingsSlick(length) {
     let slidesToShow;
     // length < 15 ? length : 15
@@ -340,11 +346,21 @@ export const useProductList = function main() {
     document.querySelector('.active-slider').classList.remove('active-slider');
     slider = undefined;
   }
-  let isMobile = window.innerWidth <= 425,
-    isTablet = window.innerWidth > 425 && window.innerWidth <= 1023,
-    isDesktop = window.innerWidth > 1023 && window.innerWidth <= 1919,
-    isWider = window.innerWidth > 1919;
-  let slider;
+  if ((isDesktop || isWider) && !isTouchDevice())
+    $(document).tooltip({
+      track: true,
+      classes: {
+        'ui-tooltip': 'ui-corner-all ui-widget-shadow slider-tooltip',
+      },
+      delay: 0,
+      duration: 0,
+      hide: {
+        effect: 'none',
+      },
+      show: { effect: 'none' },
+      position: { my: 'top+40px', at: 'right center' },
+    });
+
   if (
     (len > 4 && isMobile) ||
     (len > 5 && isTablet) ||
@@ -372,6 +388,34 @@ export const useProductList = function main() {
       ) {
         // console.log('могу пересоздать');
         slider = tns(settingsSlick(len));
+      }
+      if ((isWider || isDesktop) && !isTouchDevice()) {
+        console.log('Enable');
+        $('[title]').each(function () {
+          let $this = $(this);
+          $.attr(this, 'title', $this.attr('title1'));
+          $this.removeAttr('title1');
+        });
+        $(document).tooltip({
+          track: true,
+          classes: {
+            'ui-tooltip': 'ui-corner-all ui-widget-shadow slider-tooltip',
+          },
+          delay: 0,
+          duration: 0,
+          hide: {
+            effect: 'none',
+          },
+          show: { effect: 'none' },
+          position: { my: 'top+40px', at: 'right center' },
+        });
+      } else {
+        console.log('Destroy');
+        $('[title]').each(function () {
+          let $this = $(this);
+          $.attr(this, 'title1', $this.attr('title'));
+          $this.removeAttr('title');
+        });
       }
     }, 250)
   );
@@ -435,17 +479,4 @@ export const useProductList = function main() {
 
   const target = document.querySelector('.productlist__pageheader');
   if (target) observer.observe(target);
-  $(document).tooltip({
-    track: true,
-    classes: {
-      'ui-tooltip': 'ui-corner-all ui-widget-shadow slider-tooltip',
-    },
-    delay: 0,
-    duration: 0,
-    hide: {
-      effect: 'none',
-    },
-    show: { effect: 'none' },
-    position: { my: 'top+40px', at: 'right center' },
-  });
 };
