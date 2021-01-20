@@ -21,3 +21,6 @@
   border: 1px solid #bbbbbb;
   border-radius: 6px;
 }
+.checkout_page .edit-address .woocommerce-input-wrapper {
+  width: 100%;
+}

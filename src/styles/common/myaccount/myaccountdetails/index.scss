@@ -3,11 +3,16 @@
 .woocomerse__myaccountdetails {
   .woocomerse__inputs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
     gap: 20px 40px;
     margin-bottom: 10px;
-    .one {
+    .one,
+    .password-input {
       grid-column: 1/-1;
+      .show-password-input {
+        right: 0.7em;
+        top: 20px;
+      }
     }
   }
   .woocomerse__text {

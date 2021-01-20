@@ -1,0 +1,137 @@
+.woocommerce-container p {
+  font: normal normal normal 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title {
+  position: relative;
+  display: flex;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #707070;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h6 {
+  font: normal normal normal 26px/35px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h6 {
+    font: normal normal bold 20px/25px "Mulish", sans-serif;
+  }
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h5 {
+  font: normal normal normal 28px/35px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h5 {
+    font: normal normal bold 20px/25px "Mulish", sans-serif;
+  }
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h4 {
+  font: normal normal normal 30px/35px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h4 {
+    font: normal normal bold 20px/25px "Mulish", sans-serif;
+  }
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h3 {
+  font: normal normal normal 32px/35px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h3 {
+    font: normal normal bold 20px/25px "Mulish", sans-serif;
+  }
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h2 {
+  font: normal normal normal 34px/35px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h2 {
+    font: normal normal bold 20px/25px "Mulish", sans-serif;
+  }
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h1 {
+  font: normal normal normal 36px/35px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title h1 {
+    font: normal normal bold 20px/25px "Mulish", sans-serif;
+  }
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title .edit {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #005b9d 0 0 no-repeat padding-box;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  opacity: 1;
+  font: normal normal bold 18px/22px Mulish, sans-serif;
+  letter-spacing: 0;
+  color: #fff;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address header.woocommerce-Address-title .edit {
+    margin-bottom: 15px;
+    padding: 5px 12px;
+  }
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address address .woocommerce-addresselem {
+  display: flex;
+  padding: 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address address .woocommerce-addresselem {
+    justify-content: center;
+  }
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address address .woocommerce-addresselem p {
+  font: normal normal normal 16px/23px "Mulish", sans-serif;
+}
+.woocommerce-container .woocommerce-addresslist.woocommerce-Addresses .woocommerce-address address .woocommerce-addresselem p.woocommerce-addresselemhead {
+  font: normal normal bold 18px/23px "Mulish", sans-serif;
+  color: #9f9f9f;
+  margin-right: 0.5em;
+  text-transform: uppercase;
+}

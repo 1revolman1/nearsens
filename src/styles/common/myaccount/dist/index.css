@@ -17,9 +17,10 @@ nav.woocommerce-navigationpanel .accordion {
   outline: none;
   transition: all ease 0.3s;
   background: #fff 0% 0% no-repeat padding-box;
+  border: 2px solid transparent;
   border-radius: 100px;
   opacity: 1;
-  font: normal normal 300 16px/20px Mulish;
+  font: normal normal 300 16px/20px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #28373b;
   opacity: 1;
@@ -30,7 +31,7 @@ nav.woocommerce-navigationpanel .accordion {
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    font: normal normal 300 14px/18px Mulish;
+    font: normal normal 300 14px/18px "Mulish", sans-serif;
     letter-spacing: 0px;
     color: #28373b;
     opacity: 1;
@@ -44,7 +45,7 @@ nav.woocommerce-navigationpanel .accordion .fas.fa-chevron-up {
   color: #005b9d;
 }
 nav.woocommerce-navigationpanel .accordion:hover {
-  background-color: #ccc;
+  border: 2px solid #005b9d;
 }
 nav.woocommerce-navigationpanel .active .fas.fa-chevron-up {
   transform: scale(1);
@@ -85,14 +86,14 @@ nav.woocommerce-navigationpanel .woocommerce-account .woocommerce-account__text 
 }
 nav.woocommerce-navigationpanel .woocommerce-account .woocommerce-account__text h3 {
   text-align: left;
-  font: normal normal bold 18px/23px Mulish;
+  font: normal normal bold 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
 }
 nav.woocommerce-navigationpanel .woocommerce-account .woocommerce-account__text p {
   text-align: left;
-  font: italic normal 300 12px/15px Mulish;
+  font: italic normal 300 12px/15px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
@@ -112,7 +113,7 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   border-right: 8px solid #333333;
 }
 nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigation__block.is-active a {
-  font: italic normal bold 18px/23px Mulish;
+  font: italic normal bold 18px/23px "Mulish", sans-serif;
 }
 nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigation__block * {
   user-select: none;
@@ -125,7 +126,7 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   padding: 14.5px 0 15.5px;
   width: 100%;
   height: 100%;
-  font: normal normal normal 18px/23px Mulish;
+  font: normal normal normal 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
@@ -138,19 +139,19 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   grid-gap: 40px;
 }
 .woocommerce-container .woocommerce-container__text p {
-  font: normal normal 300 18px/23px Mulish;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #28373b;
 }
 .woocommerce-container .woocommerce-container__text p a {
   text-align: left;
   text-decoration: underline;
-  font: normal normal 600 18px/23px Mulish;
+  font: normal normal 600 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #005b9d;
 }
 .woocommerce-container .woocommerce-container__dashboard h3 {
-  font: normal normal normal 32px/40px Mulish;
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
@@ -180,7 +181,7 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   grid-gap: 15px;
   width: 100%;
   padding: 20px;
-  font: normal normal normal 18px/23px Mulish;
+  font: normal normal normal 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #005b9d;
   opacity: 1;
@@ -190,7 +191,7 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   background: #005b9d 0% 0% no-repeat padding-box;
   border-radius: 5px;
   opacity: 1;
-  font: normal normal bold 18px/22px Mulish;
+  font: normal normal bold 18px/22px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
@@ -213,24 +214,238 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   flex-flow: row wrap;
   transition: 0.5s;
 }
-.table-container .flex-table:first-of-type {
-  border: none;
-}
 .table-container .flex-table:first-of-type .flex-row {
   display: flex;
-  font: normal normal bold 18px/23px Mulish;
+  font: normal normal bold 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #9f9f9f;
   text-transform: uppercase;
   opacity: 1;
   border: none;
 }
-.table-container .flex-table.row:nth-child(odd) .flex-row {
-  background: #f4f2f1;
+.table-container .flex-table.header {
+  border-bottom: 1px solid rgba(40, 55, 59, 0.2);
+  margin-bottom: 12.5px;
 }
-.table-container .flex-table:hover {
-  background: #f5f5f5;
-  transition: 500ms;
+@media screen and (max-width: 768px) {
+  .table-container .flex-table.header {
+    display: none;
+  }
+}
+.table-container .flex-table.header .flex-row {
+  padding: 0 0.75em 20.5px 0;
+}
+@media screen and (max-width: 1280px) {
+  .table-container .flex-table.header .flex-row {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  .table-container .flex-table.header .flex-row {
+    font-size: 15px;
+  }
+}
+.table-container .flex-table.header .toolbar-header {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 1023.5px) {
+  .table-container .flex-table.header .toolbar-header {
+    justify-content: center;
+  }
+}
+.table-container .flex-table.header .toolbar-header i {
+  margin-right: 20%;
+  font-size: 18px;
+}
+@media screen and (max-width: 1280px) {
+  .table-container .flex-table.header .toolbar-header i {
+    margin-right: 18%;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  .table-container .flex-table.header .toolbar-header i {
+    margin-right: 0;
+  }
+}
+.table-container .flex-table.row .flex-row {
+  display: flex;
+}
+.table-container .flex-table.row .flex-row .flex-row-description {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .table-container .flex-table.row .flex-row .flex-row-description {
+    display: block;
+    font: normal normal bold 18px/23px "Mulish", sans-serif;
+    color: #9f9f9f;
+    margin-right: 0.5em;
+    text-transform: uppercase;
+  }
+}
+.table-container .flex-table.row .order-number-cell {
+  padding: 16px 0;
+}
+.table-container .flex-table.row .order-number-cell a {
+  font-size: 22px;
+  color: #005b9d;
+  text-decoration: underline;
+}
+@media screen and (max-width: 1280px) {
+  .table-container .flex-table.row .order-number-cell a {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  .table-container .flex-table.row .order-number-cell a {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table-container .flex-table.row .order-number-cell a {
+    font-size: 22px;
+  }
+}
+.table-container .flex-table.row .date-cell {
+  padding: 20px 0;
+}
+@media screen and (max-width: 1280px) {
+  .table-container .flex-table.row .date-cell {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table-container .flex-table.row .date-cell {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  .table-container .flex-table.row .date-cell .decade {
+    display: none;
+  }
+}
+.table-container .flex-table.row .state-cell {
+  padding: 20px 0;
+}
+@media screen and (max-width: 1280px) {
+  .table-container .flex-table.row .state-cell {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table-container .flex-table.row .state-cell {
+    font-size: 16px;
+  }
+}
+.table-container .flex-table.row .total-cell {
+  display: flex;
+  padding: 16px 0;
+  font-size: 22px;
+}
+@media screen and (max-width: 1280px) {
+  .table-container .flex-table.row .total-cell {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  .table-container .flex-table.row .total-cell {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table-container .flex-table.row .total-cell {
+    font-size: 22px;
+  }
+}
+.table-container .flex-table.row .total-cell sup {
+  font-size: 16px;
+}
+@media screen and (max-width: 1280px) {
+  .table-container .flex-table.row .total-cell sup {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table-container .flex-table.row .total-cell sup {
+    font-size: 16px;
+  }
+}
+.table-container .flex-table.row .toolbar-cell {
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+@media screen and (max-width: 1280px) {
+  .table-container .flex-table.row .toolbar-cell {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  .table-container .flex-table.row .toolbar-cell {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table-container .flex-table.row .toolbar-cell {
+    flex-direction: row;
+  }
+}
+.table-container .flex-table.row .toolbar-cell .toolbar-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 40px;
+  padding: 8px 15px;
+  border-radius: 40px;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+}
+@media screen and (max-width: 1280px) {
+  .table-container .flex-table.row .toolbar-cell .toolbar-icon-wrapper {
+    width: 47px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table-container .flex-table.row .toolbar-cell .toolbar-icon-wrapper {
+    width: 57px;
+    height: 40px;
+  }
+}
+.table-container .flex-table.row .toolbar-cell .toolbar-icon-wrapper i {
+  font-size: 24px;
+  color: #ffffff;
+}
+@media screen and (max-width: 1280px) {
+  .table-container .flex-table.row .toolbar-cell .toolbar-icon-wrapper i {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table-container .flex-table.row .toolbar-cell .toolbar-icon-wrapper i {
+    font-size: 24px;
+  }
+}
+.table-container .flex-table.row .toolbar-cell .toolbar-icon-wrapper:last-child {
+  margin-left: 20px;
+}
+@media screen and (max-width: 1280px) {
+  .table-container .flex-table.row .toolbar-cell .toolbar-icon-wrapper:last-child {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  .table-container .flex-table.row .toolbar-cell .toolbar-icon-wrapper:last-child {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table-container .flex-table.row .toolbar-cell .toolbar-icon-wrapper:last-child {
+    margin-top: 0;
+    margin-left: 10px;
+  }
 }
 
 .flag-icon {
@@ -239,10 +454,8 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
 
 .flex-row {
   width: calc(100% / 5);
-  text-align: center;
-  padding: 0.5em 0.5em;
-  border-right: solid 1px #d9d9d9;
-  border-bottom: solid 1px #d9d9d9;
+  text-align: left;
+  font-family: "Mulish", sans-serif;
 }
 
 .rowspan {
@@ -266,10 +479,6 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   border: 0;
   border-bottom: solid 1px #d9d9d9;
 }
-.column .flex-row:hover {
-  background: #f5f5f5;
-  transition: 500ms;
-}
 
 .flex-cell {
   width: calc(100% / 4);
@@ -277,21 +486,17 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   padding: 0.5em 0.5em;
   border-right: solid 1px #d9d9d9;
 }
-@media screen and (max-width: 1023px) {
-  .flex-row {
-    width: calc(100% / 3);
-  }
-  .flex-row.first {
-    width: 100%;
-  }
-
+@media screen and (max-width: 1023.5px) {
   .column {
     width: 100%;
   }
 }
-@media screen and (max-width: 1023px) and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) and (max-width: 768px) {
   .flex-table .flex-row {
     border-bottom: 0;
+  }
+  .flex-table .flex-row:first-of-type {
+    border-top: solid 1px #d9d9d9;
   }
   .flex-table .flex-row:last-of-type {
     border-bottom: solid 1px #d9d9d9;
@@ -302,11 +507,10 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   }
 
   .flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-  }
-  .flex-row.first {
-    width: 100%;
-    border-bottom: solid 1px #d9d9d9;
   }
 
   .column {
@@ -326,86 +530,152 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   gap: 20px 40px;
   margin-bottom: 10px;
 }
-.woocomerse__myaccountdetails .woocomerse__inputs .one {
+.woocomerse__myaccountdetails .woocomerse__inputs .one,
+.woocomerse__myaccountdetails .woocomerse__inputs .password-input {
   grid-column: 1/-1;
+}
+.woocomerse__myaccountdetails .woocomerse__inputs .one .show-password-input,
+.woocomerse__myaccountdetails .woocomerse__inputs .password-input .show-password-input {
+  right: 0.7em;
+  top: 20px;
 }
 .woocomerse__myaccountdetails .woocomerse__text {
   margin-bottom: 40px;
 }
 .woocomerse__myaccountdetails .woocomerse__text h6 {
-  font: normal normal normal 26px/35px Mulish;
+  font: normal normal normal 26px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h6 {
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
+  }
 }
 .woocomerse__myaccountdetails .woocomerse__text h6 span {
-  font: italic normal 300 28px/35px Muli;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h6 span {
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
+  }
 }
 .woocomerse__myaccountdetails .woocomerse__text h5 {
-  font: normal normal normal 28px/35px Mulish;
+  font: normal normal normal 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h5 {
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
+  }
 }
 .woocomerse__myaccountdetails .woocomerse__text h5 span {
-  font: italic normal 300 28px/35px Muli;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h5 span {
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
+  }
 }
 .woocomerse__myaccountdetails .woocomerse__text h4 {
-  font: normal normal normal 30px/35px Mulish;
+  font: normal normal normal 30px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h4 {
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
+  }
 }
 .woocomerse__myaccountdetails .woocomerse__text h4 span {
-  font: italic normal 300 28px/35px Muli;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h4 span {
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
+  }
 }
 .woocomerse__myaccountdetails .woocomerse__text h3 {
-  font: normal normal normal 32px/35px Mulish;
+  font: normal normal normal 32px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h3 {
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
+  }
 }
 .woocomerse__myaccountdetails .woocomerse__text h3 span {
-  font: italic normal 300 28px/35px Muli;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h3 span {
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
+  }
 }
 .woocomerse__myaccountdetails .woocomerse__text h2 {
-  font: normal normal normal 34px/35px Mulish;
+  font: normal normal normal 34px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h2 {
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
+  }
 }
 .woocomerse__myaccountdetails .woocomerse__text h2 span {
-  font: italic normal 300 28px/35px Muli;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
 }
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h2 span {
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
+  }
+}
 .woocomerse__myaccountdetails .woocomerse__text h1 {
-  font: normal normal normal 36px/35px Mulish;
+  font: normal normal normal 36px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
   color: #333333;
 }
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h1 {
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
+  }
+}
 .woocomerse__myaccountdetails .woocomerse__text h1 span {
-  font: italic normal 300 28px/35px Muli;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
 }
+@media screen and (max-width: 768px) {
+  .woocomerse__myaccountdetails .woocomerse__text h1 span {
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
+  }
+}
 .woocomerse__myaccountdetails .woocomerse__text p {
-  font: normal normal 300 18px/23px Muli;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #28373b;
   opacity: 1;
@@ -417,6 +687,23 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   padding-bottom: 15px;
   margin-bottom: 20px;
   border-bottom: 1px solid #707070;
+}
+.woocomerse__myaccountdetails .woocomerse__passchange .woocomerse__btncontainer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.woocomerse__myaccountdetails .woocomerse__passchange .woocomerse__btncontainer .woocomerse__savebtn {
+  cursor: pointer;
+  user-select: none;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  opacity: 1;
+  padding: 14px 28px;
+  font: normal normal bold 18px/22px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
 }
 
 .graybg {
@@ -431,7 +718,7 @@ nav.woocommerce-navigationpanel .woocommerce-navigation li.woocommerce-navigatio
   grid-template-rows: auto;
   grid-gap: 40px;
 }
-@media screen and (max-width: 1023px) and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) and (max-width: 768px) {
   .woocommerce-myaccountpage {
     grid-template-columns: 1fr;
     width: 94%;

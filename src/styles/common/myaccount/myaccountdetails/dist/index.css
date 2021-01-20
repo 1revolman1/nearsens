@@ -1,17 +1,23 @@
 .woocomerse__myaccountdetails .woocomerse__inputs {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
   gap: 20px 40px;
   margin-bottom: 10px;
 }
-.woocomerse__myaccountdetails .woocomerse__inputs .one {
+.woocomerse__myaccountdetails .woocomerse__inputs .one,
+.woocomerse__myaccountdetails .woocomerse__inputs .password-input {
   grid-column: 1/-1;
+}
+.woocomerse__myaccountdetails .woocomerse__inputs .one .show-password-input,
+.woocomerse__myaccountdetails .woocomerse__inputs .password-input .show-password-input {
+  right: 0.7em;
+  top: 20px;
 }
 .woocomerse__myaccountdetails .woocomerse__text {
   margin-bottom: 40px;
 }
 .woocomerse__myaccountdetails .woocomerse__text h6 {
-  font: normal normal normal 26px/35px Mulish;
+  font: normal normal normal 26px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
@@ -19,21 +25,21 @@
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h6 {
-    font: normal normal bold 25px/25px Mulish;
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text h6 span {
-  font: italic normal 300 28px/35px Mulish;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h6 span {
-    font: italic normal 300 20px/35px Mulish;
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text h5 {
-  font: normal normal normal 28px/35px Mulish;
+  font: normal normal normal 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
@@ -41,21 +47,21 @@
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h5 {
-    font: normal normal bold 25px/25px Mulish;
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text h5 span {
-  font: italic normal 300 28px/35px Mulish;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h5 span {
-    font: italic normal 300 20px/35px Mulish;
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text h4 {
-  font: normal normal normal 30px/35px Mulish;
+  font: normal normal normal 30px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
@@ -63,21 +69,21 @@
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h4 {
-    font: normal normal bold 25px/25px Mulish;
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text h4 span {
-  font: italic normal 300 28px/35px Mulish;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h4 span {
-    font: italic normal 300 20px/35px Mulish;
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text h3 {
-  font: normal normal normal 32px/35px Mulish;
+  font: normal normal normal 32px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
@@ -85,21 +91,21 @@
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h3 {
-    font: normal normal bold 25px/25px Mulish;
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text h3 span {
-  font: italic normal 300 28px/35px Mulish;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h3 span {
-    font: italic normal 300 20px/35px Mulish;
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text h2 {
-  font: normal normal normal 34px/35px Mulish;
+  font: normal normal normal 34px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
@@ -107,21 +113,21 @@
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h2 {
-    font: normal normal bold 25px/25px Mulish;
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text h2 span {
-  font: italic normal 300 28px/35px Mulish;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h2 span {
-    font: italic normal 300 20px/35px Mulish;
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text h1 {
-  font: normal normal normal 36px/35px Mulish;
+  font: normal normal normal 36px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   letter-spacing: 0px;
@@ -129,21 +135,21 @@
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h1 {
-    font: normal normal bold 25px/25px Mulish;
+    font: normal normal bold 25px/25px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text h1 span {
-  font: italic normal 300 28px/35px Mulish;
+  font: italic normal 300 28px/35px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
 }
 @media screen and (max-width: 768px) {
   .woocomerse__myaccountdetails .woocomerse__text h1 span {
-    font: italic normal 300 20px/35px Mulish;
+    font: italic normal 300 20px/35px "Mulish", sans-serif;
   }
 }
 .woocomerse__myaccountdetails .woocomerse__text p {
-  font: normal normal 300 18px/23px Mulish;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #28373b;
   opacity: 1;
@@ -168,7 +174,7 @@
   border-radius: 40px;
   opacity: 1;
   padding: 14px 28px;
-  font: normal normal bold 18px/22px Mulish;
+  font: normal normal bold 18px/22px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
