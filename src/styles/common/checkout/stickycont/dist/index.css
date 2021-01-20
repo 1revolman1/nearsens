@@ -1,0 +1,173 @@
+section.checkout_page__stickycont {
+  position: relative;
+  padding: 82px 0 0 40px;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+}
+@media screen and (max-width: 1023.5px) {
+  section.checkout_page__stickycont {
+    padding: 82px 0 40px;
+  }
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block {
+  position: sticky;
+  width: 100%;
+  top: 82px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.checkout_page__stickycont .checkout_page__stickycont__block {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block h3 {
+  font: normal normal normal 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 21px;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .head {
+  padding-bottom: 36.5px;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 36.5px;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont {
+  display: grid;
+  grid-template-columns: 1fr fit-content(100%);
+  grid-gap: 20px;
+}
+@media screen and (max-width: 941px) {
+  section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont {
+    display: grid;
+    grid-template-columns: 1fr fit-content(100%);
+    grid-gap: 20px;
+  }
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont input {
+  padding: 14px 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  opacity: 1;
+  font: italic normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+@media screen and (max-width: 1023.5px) {
+  section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont input {
+    width: inherit;
+  }
+}
+@media screen and (max-width: 1023.5px) and (max-width: 375px) {
+  section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont input {
+    flex: 1;
+    width: 100%;
+    margin: 0;
+  }
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont button {
+  padding: 14px 29px;
+  font: normal normal bold 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  background: #005b9d 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+}
+@media screen and (max-width: 941px) {
+  section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont button {
+    flex: none;
+    width: 35%;
+    margin: 0;
+    padding: 12px 18px;
+    font: normal normal bold 15px/20px "Mulish", sans-serif;
+    letter-spacing: 0;
+    color: #fff;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 941px) and (max-width: 1023.5px) {
+  section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont button {
+    width: inherit;
+  }
+}
+@media screen and (max-width: 941px) and (max-width: 1023.5px) and (max-width: 375px) {
+  section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont button {
+    flex: none;
+    width: 100%;
+    margin: 0;
+  }
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay {
+  padding-bottom: 14px;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 75px;
+  grid-row-gap: 0px;
+  margin: 36px 0;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price:first-of-type {
+  margin-top: 0;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price:last-of-type {
+  margin-bottom: 0;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__text span {
+  font: normal normal normal 22px/28px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__ammount {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__ammount span {
+  font: normal normal 300 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__ammount span span {
+  font: normal normal 300 33px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price .checkout_page__stickycont__block__finalprice__price__ammount span sup {
+  font-size: 59%;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__content__contact__manip__btncont {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__content__contact__manip__btncont .checkout_page__content__contact__manip__btn {
+  font: normal normal bold 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
+  border-radius: 40px;
+  opacity: 1;
+  padding: 14px 30px;
+  outline: none;
+  text-transform: uppercase;
+}

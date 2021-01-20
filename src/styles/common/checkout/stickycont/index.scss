@@ -4,7 +4,7 @@ section.checkout_page__stickycont {
   position: relative;
   padding: 82px 0 0 40px;
   background: #f2f2f2 0% 0% no-repeat padding-box;
-  @include media-tablet {
+  @include media-forHEADER {
     padding: 82px 0 40px;
   }
   .checkout_page__stickycont__block {
@@ -12,7 +12,7 @@ section.checkout_page__stickycont {
     // background: red;
     width: 100%;
     top: 82px;
-    @include media-tablet {
+    @include media-forHEADER {
       width: 90%;
       margin: 0 auto;
     }
@@ -44,7 +44,7 @@ section.checkout_page__stickycont {
           display: flex;
           flex-flow: row wrap;
         }
-        @include media-tablet {
+        @include media-forHEADER {
           display: grid;
           grid-template-columns: 1fr fit-content(100%);
           grid-gap: 20px;
@@ -69,23 +69,13 @@ section.checkout_page__stickycont {
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
-          @media screen and (max-width: 941px) {
-            flex: 1;
-            width: 62%;
-            margin: 0;
-            padding: 12px 15px;
-            font: italic normal 300 15px/20px 'Mulish', sans-serif;
-            letter-spacing: 0;
-            color: #333;
-            opacity: 1;
-            @include media-tablet {
-              width: inherit;
-              @media screen and (max-width: 375px) {
-                flex: 1;
-                width: 100%;
-                // width: 62%;
-                margin: 0;
-              }
+          @include media-forHEADER {
+            width: inherit;
+            @media screen and (max-width: 375px) {
+              flex: 1;
+              width: 100%;
+              // width: 62%;
+              margin: 0;
             }
           }
         }
@@ -110,7 +100,7 @@ section.checkout_page__stickycont {
             letter-spacing: 0;
             color: #fff;
             opacity: 1;
-            @include media-tablet {
+            @include media-forHEADER {
               width: inherit;
               @media screen and (max-width: 375px) {
                 flex: none;

@@ -98,7 +98,7 @@ export const useCheckoutPage = () => {
         // }
       });
     });
-  })(window.innerWidth <= 768);
+  })(window.innerWidth < 1024);
 
   //new custom payment methods
   document
