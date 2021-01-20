@@ -95,7 +95,7 @@ var useCartPage = function useCartPage() {
   });
   $('.cart__productcontainer__container__element__remove i').on('click', function () {
     var container = $(this).parents('.cart__productcontainer__container__element');
-    container.hide('slide', function () {
+    container.hide('slide', 500, function () {
       if (!container.hasClass('gateway')) {
         container.remove();
       }

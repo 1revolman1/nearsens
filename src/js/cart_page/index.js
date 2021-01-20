@@ -96,7 +96,7 @@ export const useCartPage = function () {
       const container = $(this).parents(
         '.cart__productcontainer__container__element'
       );
-      container.hide('slide', function () {
+      container.hide('slide', 500, function () {
         if (!container.hasClass('gateway')) {
           container.remove();
         }
