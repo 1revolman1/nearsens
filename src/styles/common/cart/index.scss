@@ -1,6 +1,13 @@
-@import "cart_header/index";
-@import "cart_headersticky/index";
-@import "productcontainer/index";
-@import "havegateway/index";
-@import "vaucher/index";
-@import "disqount/index";
+@import 'cart_header/index';
+@import 'cart_headersticky/index';
+@import 'productcontainer/index';
+@import 'havegateway/index';
+@import 'vaucher/index';
+@import 'disqount/index';
+
+.disable-cart-btn {
+  user-select: none;
+  opacity: 0.5 !important;
+  cursor: not-allowed;
+  pointer-events: none;
+}

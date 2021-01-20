@@ -47,6 +47,23 @@ var useCartPage = function useCartPage() {
   var observer = new IntersectionObserver(onScrollChange, options);
   var target = document.querySelector('section.cart__header');
   if (target) observer.observe(target);
+
+  (function disableCheckout() {
+    if (document.querySelectorAll(".cart__productcontainer__container__element:not([style=\"display:none;\"]):not([style=\"display: none;\"])").length === 0 && Number(document.querySelector('.price.total').textContent.replace('€', '.')) === 0) {
+      document.querySelectorAll('.cart__header__wrap__second__containerbutton__btn,.cart__disqount__btn').forEach(function (elm) {
+        elm.classList.add('disable-cart-btn');
+      });
+    }
+
+    document.querySelector('.cart__havegateway__information__btn.addtocart').addEventListener('click', function () {
+      document.querySelectorAll('.cart__header__wrap__second__containerbutton__btn,.cart__disqount__btn').forEach(function (elm) {
+        elm.classList.remove('disable-cart-btn');
+      });
+    }); // document.querySelectorAll(
+    //   `.cart__productcontainer__container__element:not([style="display: none;"])`
+    // )
+  })();
+
   document.querySelectorAll('.cart__productcontainer__container__element__quantity').forEach(function (elm) {
     var value = elm.querySelector('span').textContent;
 
@@ -98,6 +115,12 @@ var useCartPage = function useCartPage() {
     container.hide('slide', 500, function () {
       if (!container.hasClass('gateway')) {
         container.remove();
+      }
+
+      if (document.querySelectorAll(".cart__productcontainer__container__element:not([style=\"display:none;\"]):not([style=\"display: none;\"])").length === 0 && Number(document.querySelector('.price.total').textContent.replace('€', '.')) === 0) {
+        document.querySelectorAll('.cart__header__wrap__second__containerbutton__btn,.cart__disqount__btn').forEach(function (elm) {
+          elm.classList.add('disable-cart-btn');
+        });
       }
     });
   }); // Show checked
