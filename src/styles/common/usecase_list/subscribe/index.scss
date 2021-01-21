@@ -15,22 +15,27 @@ section.use_case__subscribe {
   border-radius: 10px;
   opacity: 1;
   padding: 60px 30px;
-  @include media-tablet {
-    width: 90%;
-    margin: 0 auto 60px;
+  @include media-forHEADER {
+    margin: 0;
     flex-direction: column;
-    padding: 20.5px 20px 40px;
+    @include media-tablet {
+      width: 90%;
+      margin: 0 auto 60px;
+
+      padding: 20.5px 20px 40px;
+    }
   }
+
   .use_case__subscribe {
     display: flex;
-    @include media-tablet {
+    @include media-forHEADER {
       flex-direction: column;
     }
   }
   .use_case__subscribe-block-text {
     margin: 0 30px;
     flex: 1;
-    @include media-tablet {
+    @include media-forHEADER {
       margin: 0;
     }
     h2 {
@@ -59,8 +64,13 @@ section.use_case__subscribe {
   .use_case__subscribe-block-email {
     margin: 0 30px;
     flex: 2;
-    @include media-tablet {
+    @include media-forHEADER {
       margin: 0;
+    }
+    &.success-subscribe {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     p {
       text-align: left;
@@ -77,7 +87,7 @@ section.use_case__subscribe {
     }
     .use_case__subscribe-block-email__email {
       padding-right: 40px;
-      @include media-tablet {
+      @include media-forHEADER {
         padding-right: 0;
       }
       h4 {
@@ -100,7 +110,7 @@ section.use_case__subscribe {
         @include media-forHEADER {
           grid-template-columns: fit-content(100%) 1fr;
         }
-        @include media-tablet {
+        @include media-forHEADER {
           grid-row-gap: 30px;
           grid-template-columns: fit-content(100%) 1fr;
         }
@@ -126,7 +136,7 @@ section.use_case__subscribe {
           @include media-forHEADER {
             grid-column: 1 / -1;
           }
-          @include media-tablet {
+          @include media-forHEADER {
             grid-column: 1 / -1;
 
             // margin-right: 0;
@@ -163,14 +173,43 @@ section.use_case__subscribe {
           background: #c93332 !important;
           padding: 6px 20px !important;
           font: normal italic bold 18px/23px 'Mulish', sans-serif;
+
           @include media-forHEADER {
             grid-column: initial;
-            font: normal italic bold 16px/23px 'Mulish', sans-serif;
-          }
-          @include media-tablet {
             margin-bottom: 0 !important;
             align-self: center;
           }
+          @include media-tablet {
+            font: normal italic bold 16px/23px 'Mulish', sans-serif;
+          }
+        }
+      }
+    }
+    .use_case__subscribe-block-email__subscribe {
+      padding-right: 55px;
+      @include media-forHEADER {
+        padding-right: 0;
+      }
+      h3 {
+        text-align: right;
+        font: italic normal normal 22px/28px 'Mulish', sans-serif;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+        margin-bottom: 4.5px;
+        @include media-tablet {
+          font: italic normal normal 18px/23px 'Mulish', sans-serif;
+        }
+      }
+      p {
+        margin: 0;
+        text-align: right;
+        font: italic 300 normal 18px/23px 'Mulish', sans-serif;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+        @include media-tablet {
+          font: italic 300 normal 14px/18px 'Mulish', sans-serif;
         }
       }
     }
