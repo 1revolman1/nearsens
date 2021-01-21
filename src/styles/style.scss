@@ -53,3 +53,24 @@ blockquote {
 h1 {
   margin: 0;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  margin-top: auto;
+}
+.woocommerce .col2-set {
+  &::after,
+  &::before {
+    content: none;
+  }
+}
+
+.woocommerce-page .col2-set {
+  &::after,
+  &::before {
+    content: none;
+  }
+}
