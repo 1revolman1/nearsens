@@ -20,7 +20,7 @@ section.productpage__posibletodowithdevice {
       letter-spacing: 0px;
       color: #28373b;
       opacity: 1;
-      @include media-forHEADER {
+      @include media-tablet {
         font: normal normal normal 26px/33px 'Mulish', sans-serif;
       }
     }
@@ -35,7 +35,9 @@ section.productpage__posibletodowithdevice {
         margin: 0;
         @include media-forHEADER {
           display: flex;
-          font: normal normal bold 16px/23px 'Mulish', sans-serif;
+          @include media-tablet {
+            font: normal normal bold 16px/23px 'Mulish', sans-serif;
+          }
         }
       }
     }
@@ -57,7 +59,10 @@ section.productpage__posibletodowithdevice {
       background: transparent;
       @include media-forHEADER {
         display: none;
-        font: normal normal bold 16px/23px 'Mulish', sans-serif;
+
+        @include media-tablet {
+          font: normal normal bold 16px/23px 'Mulish', sans-serif;
+        }
       }
       &:hover {
         color: white;
@@ -152,7 +157,7 @@ section.productpage__posibletodowithdevice {
           color: #6d7476;
           opacity: 1;
           margin-bottom: 5px;
-          @include media-forHEADER {
+          @include media-tablet {
             font: italic normal normal 14px/18px 'Mulish', sans-serif;
           }
         }
@@ -161,10 +166,12 @@ section.productpage__posibletodowithdevice {
           @include media-forHEADER {
             margin-top: auto;
             display: block;
-            font: normal normal bold 12px/15px 'Mulish', sans-serif;
-            letter-spacing: 0px;
-            color: #6d7476;
-            opacity: 1;
+            @include media-tablet {
+              font: normal normal bold 12px/15px 'Mulish', sans-serif;
+              letter-spacing: 0px;
+              color: #6d7476;
+              opacity: 1;
+            }
           }
         }
         h3 {
@@ -172,7 +179,7 @@ section.productpage__posibletodowithdevice {
           letter-spacing: 0px;
           color: #28373b;
           opacity: 1;
-          @include media-forHEADER {
+          @include media-tablet {
             margin-bottom: 10px;
             font: normal normal normal 14px/18px 'Mulish', sans-serif;
           }
