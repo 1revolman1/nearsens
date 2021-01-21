@@ -1,0 +1,212 @@
+section.use_case__subscribe {
+  width: 100%;
+  margin: 15px auto 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #005b9d 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 10px #0000001a;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 60px 30px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe {
+    width: 90%;
+    margin: 0 auto 60px;
+    flex-direction: column;
+    padding: 20.5px 20px 40px;
+  }
+}
+section.use_case__subscribe .use_case__subscribe {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe {
+    flex-direction: column;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-text {
+  margin: 0 30px;
+  flex: 1;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-text {
+    margin: 0;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-text h2 {
+  text-align: left;
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-text h2 {
+    margin-bottom: 11px;
+    font: normal normal normal 26px/33px "Mulish", sans-serif;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-text p {
+  font: normal normal normal 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-text p {
+    font: italic normal normal 14px/18px "Mulish", sans-serif;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email {
+  margin: 0 30px;
+  flex: 2;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email {
+    margin: 0;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email p {
+  text-align: left;
+  font: italic normal normal 14px/18px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email p {
+    margin-top: 30px;
+    margin-bottom: 24px;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email {
+  padding-right: 40px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email {
+    padding-right: 0;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email h4 {
+  font: normal normal normal 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email h4 {
+    display: none;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block {
+  display: grid;
+  grid-template-columns: 1fr fit-content(100%);
+  width: 100%;
+  grid-column-gap: 30px;
+  align-items: flex-start;
+  grid-row-gap: 15px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block {
+    grid-template-columns: fit-content(100%) 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block {
+    grid-row-gap: 30px;
+    grid-template-columns: fit-content(100%) 1fr;
+  }
+}
+@media screen and (max-width: 375px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block {
+    grid-template-columns: 1fr;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block input {
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 6px;
+  opacity: 1;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  padding: 14px 30px;
+  flex: 2;
+}
+@media screen and (max-width: 1023.5px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block input {
+    grid-column: 1/-1;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block input {
+    grid-column: 1/-1;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block input::placeholder {
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 0.5;
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block button {
+  flex: 1;
+  max-width: 160px;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  opacity: 1;
+  cursor: pointer;
+  font: normal normal bold 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  padding: 14px 27px;
+}
+@media screen and (max-width: 375px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block button {
+    justify-self: center;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block .mce_inline_error[for=mce-EMAIL] {
+  border-radius: 6px;
+  grid-column: 1/-1;
+  background: #c93332 !important;
+  padding: 6px 20px !important;
+  font: normal italic bold 18px/23px "Mulish", sans-serif;
+}
+@media screen and (max-width: 1023.5px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block .mce_inline_error[for=mce-EMAIL] {
+    grid-column: initial;
+    font: normal italic bold 16px/23px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block .mce_inline_error[for=mce-EMAIL] {
+    margin-bottom: 0 !important;
+    align-self: center;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email #mce-error-response,
+section.use_case__subscribe .use_case__subscribe-block-email #mce-success-response {
+  margin-top: 10px;
+  font: normal normal normal 16px/20px Mulish, sans-serif;
+  letter-spacing: 0;
+  color: #fff;
+  opacity: 1;
+}
+section.use_case__subscribe .use_case__subscribe-block-email #mce-error-response a,
+section.use_case__subscribe .use_case__subscribe-block-email #mce-success-response a {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}

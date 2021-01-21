@@ -160,8 +160,12 @@ section.use_case__subscribe {
         .mce_inline_error[for='mce-EMAIL'] {
           border-radius: 6px;
           grid-column: 1 / -1;
+          background: #c93332 !important;
+          padding: 6px 20px !important;
+          font: normal italic bold 18px/23px 'Mulish', sans-serif;
           @include media-forHEADER {
             grid-column: initial;
+            font: normal italic bold 16px/23px 'Mulish', sans-serif;
           }
           @include media-tablet {
             margin-bottom: 0 !important;
