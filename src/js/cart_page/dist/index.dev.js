@@ -62,54 +62,61 @@ var useCartPage = function useCartPage() {
     }); // document.querySelectorAll(
     //   `.cart__productcontainer__container__element:not([style="display: none;"])`
     // )
-  })();
+  })(); // document
+  //   .querySelectorAll('.cart__productcontainer__container__element__quantity')
+  //   .forEach(function (elm) {
+  //     const value = elm.querySelector('span').textContent;
+  //     if (+value <= 1) {
+  //       elm.querySelectorAll('.minus').forEach((e) => {
+  //         e.setAttribute('disabled', 'disabled');
+  //       });
+  //     } else {
+  //       elm.querySelectorAll('button').forEach((e) => {
+  //         e.removeAttribute('disabled');
+  //       });
+  //     }
+  //     // if (+value >= 1) {
+  //     //   elm.querySelectorAll("button").forEach((e) => {
+  //     //     e.removeAttribute("disabled");
+  //     //   });
+  //     // } else {
+  //     //   elm.querySelectorAll(".minus").forEach((e) => {
+  //     //     e.setAttribute("disabled", "disabled");
+  //     //   });
+  //     // }
+  //   });
+  // $('.cart__productcontainer__container__element__quantity .minus').on(
+  //   'click',
+  //   function () {
+  //     const container = $(this).parents(
+  //       '.cart__productcontainer__container__element__quantity'
+  //     );
+  //     const counter = container.find('span');
+  //     let value = Number(counter.text());
+  //     value -= 1;
+  //     if (value === 1) {
+  //       $(this).attr('disabled', true);
+  //     }
+  //     counter.text(value);
+  //   }
+  // );
+  // $('.cart__productcontainer__container__element__quantity .plus').on(
+  //   'click',
+  //   function () {
+  //     const container = $(this).parents(
+  //       '.cart__productcontainer__container__element__quantity'
+  //     );
+  //     const counter = container.find('span');
+  //     let value = Number(counter.text());
+  //     value += 1;
+  //     if (value >= 2) {
+  //       container.find('.minus').attr('disabled', false);
+  //     }
+  //     counter.text(value);
+  //   }
+  // );
 
-  document.querySelectorAll('.cart__productcontainer__container__element__quantity').forEach(function (elm) {
-    var value = elm.querySelector('span').textContent;
 
-    if (+value <= 1) {
-      elm.querySelectorAll('.minus').forEach(function (e) {
-        e.setAttribute('disabled', 'disabled');
-      });
-    } else {
-      elm.querySelectorAll('button').forEach(function (e) {
-        e.removeAttribute('disabled');
-      });
-    } // if (+value >= 1) {
-    //   elm.querySelectorAll("button").forEach((e) => {
-    //     e.removeAttribute("disabled");
-    //   });
-    // } else {
-    //   elm.querySelectorAll(".minus").forEach((e) => {
-    //     e.setAttribute("disabled", "disabled");
-    //   });
-    // }
-
-  });
-  $('.cart__productcontainer__container__element__quantity .minus').on('click', function () {
-    var container = $(this).parents('.cart__productcontainer__container__element__quantity');
-    var counter = container.find('span');
-    var value = Number(counter.text());
-    value -= 1;
-
-    if (value === 1) {
-      $(this).attr('disabled', true);
-    }
-
-    counter.text(value);
-  });
-  $('.cart__productcontainer__container__element__quantity .plus').on('click', function () {
-    var container = $(this).parents('.cart__productcontainer__container__element__quantity');
-    var counter = container.find('span');
-    var value = Number(counter.text());
-    value += 1;
-
-    if (value >= 2) {
-      container.find('.minus').attr('disabled', false);
-    }
-
-    counter.text(value);
-  });
   $('.cart__productcontainer__container__element__remove i').on('click', function () {
     var container = $(this).parents('.cart__productcontainer__container__element');
     container.hide('slide', 500, function () {
