@@ -3,17 +3,10 @@
 section.page_garbit__bluelinkcards {
   background: #005b9d 0% 0% no-repeat padding-box;
   opacity: 1;
-  padding: 75px 0 100px;
-  // margin-top: 50px;
-  // margin-bottom: 48px;
-  &.add-padding {
-    padding: 126px 0 148px;
-    @include media-tablet {
-      padding: 40px 0 40px;
-    }
-  }
+  padding: 60px 0 60px;
   @include media-tablet {
-    padding: 25px 0 60px;
+    padding: 30px 0 30px;
+    // margin-bottom: 40px;
   }
   .page_garbit__bluelinkcards__wrap {
     display: flex;

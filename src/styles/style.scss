@@ -57,6 +57,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  &.wp-admin {
+    min-height: initial;
+  }
+  #wpwrap {
+    min-height: initial;
+    max-height: initial;
+  }
 }
 footer {
   margin-top: auto;

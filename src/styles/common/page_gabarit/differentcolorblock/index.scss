@@ -1,12 +1,26 @@
 @import '../../../mixins/media';
 @import '../../../mixins/text';
 section.page_garbarit__differentcolorblock {
-  padding: 75px 0;
-  // margin-bottom: 74px;
-  // margin-top: 48px;
+  padding: 60px 0;
+  // margin-bottom: 80px;
   @include media-tablet {
-    padding: 50px 0 50px;
+    padding: 30px 0;
     // margin-bottom: 40px;
+  }
+  & {
+    &.gray + section {
+      &:not(.page_garbarit__differentcolorblock) {
+        padding-top: 80px - 60px;
+        @include media-tablet {
+          padding-top: 40px - 30px;
+        }
+      }
+    }
+    &:not(.gray) + section {
+      &:not(.page_garbarit__differentcolorblock) {
+        padding-top: 80px;
+      }
+    }
   }
   &.add-padding {
     padding: 120px 0 123px;

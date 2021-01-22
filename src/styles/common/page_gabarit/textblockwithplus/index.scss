@@ -2,15 +2,14 @@
 @import '../../../mixins/text';
 
 section.page_garbit__textblockwithplus {
-  // margin-bottom: 100px;
-  // margin-top: 98px;
-  padding-top: 38px;
-  padding-bottom: 50px;
+  // padding-top: 38px;
+  // padding-bottom: 50px;
+  margin-bottom: 80px;
   @include media-tablet {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 40px;
 
-    padding: 40px 0 40px;
+    // padding: 40px 0 40px;
   }
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;

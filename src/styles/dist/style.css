@@ -11041,18 +11041,23 @@ section.use_case__subscribe {
   opacity: 1;
   padding: 60px 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) {
+  section.use_case__subscribe {
+    margin: 0;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1023.5px) and (max-width: 768px) {
   section.use_case__subscribe {
     width: 90%;
     margin: 0 auto 60px;
-    flex-direction: column;
     padding: 20.5px 20px 40px;
   }
 }
 section.use_case__subscribe .use_case__subscribe {
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) {
   section.use_case__subscribe .use_case__subscribe {
     flex-direction: column;
   }
@@ -11061,7 +11066,7 @@ section.use_case__subscribe .use_case__subscribe-block-text {
   margin: 0 30px;
   flex: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) {
   section.use_case__subscribe .use_case__subscribe-block-text {
     margin: 0;
   }
@@ -11095,10 +11100,15 @@ section.use_case__subscribe .use_case__subscribe-block-email {
   margin: 0 30px;
   flex: 2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) {
   section.use_case__subscribe .use_case__subscribe-block-email {
     margin: 0;
   }
+}
+section.use_case__subscribe .use_case__subscribe-block-email.success-subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 section.use_case__subscribe .use_case__subscribe-block-email p {
   text-align: left;
@@ -11118,7 +11128,7 @@ section.use_case__subscribe .use_case__subscribe-block-email p {
 section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email {
   padding-right: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) {
   section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email {
     padding-right: 0;
   }
@@ -11148,7 +11158,7 @@ section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscrib
     grid-template-columns: fit-content(100%) 1fr;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) {
   section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block {
     grid-row-gap: 30px;
     grid-template-columns: fit-content(100%) 1fr;
@@ -11176,7 +11186,7 @@ section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscrib
     grid-column: 1/-1;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) {
   section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block input {
     grid-column: 1/-1;
   }
@@ -11210,16 +11220,54 @@ section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscrib
 section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block .mce_inline_error[for=mce-EMAIL] {
   border-radius: 6px;
   grid-column: 1/-1;
+  background: #c93332 !important;
+  padding: 6px 20px !important;
+  font: normal italic bold 18px/23px "Mulish", sans-serif;
 }
 @media screen and (max-width: 1023.5px) {
   section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block .mce_inline_error[for=mce-EMAIL] {
     grid-column: initial;
+    margin-bottom: 0 !important;
+    align-self: center;
   }
 }
 @media screen and (max-width: 768px) {
   section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__email .use_case__subscribe-block-email__email-block .mce_inline_error[for=mce-EMAIL] {
-    margin-bottom: 0 !important;
-    align-self: center;
+    font: normal italic bold 16px/23px "Mulish", sans-serif;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__subscribe {
+  padding-right: 55px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__subscribe {
+    padding-right: 0;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__subscribe h3 {
+  text-align: right;
+  font: italic normal normal 22px/28px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 4.5px;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__subscribe h3 {
+    font: italic normal normal 18px/23px "Mulish", sans-serif;
+  }
+}
+section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__subscribe p {
+  margin: 0;
+  text-align: right;
+  font: italic 300 normal 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.use_case__subscribe .use_case__subscribe-block-email .use_case__subscribe-block-email__subscribe p {
+    font: italic 300 normal 14px/18px "Mulish", sans-serif;
   }
 }
 section.use_case__subscribe .use_case__subscribe-block-email #mce-error-response,
@@ -12993,8 +13041,6 @@ section.productpage__specificationblock .accordion.active i {
 section.productpage__specificationblock .accordion i {
   transition: all ease 0.5s;
   transform: rotate(180deg);
-  position: absolute;
-  right: 18px;
 }
 section.productpage__specificationblock .active,
 section.productpage__specificationblock .accordion:hover {
@@ -13269,29 +13315,28 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
 }
 @media screen and (max-width: 1023.5px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .accordion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     border-radius: 15px;
-    padding: 15px 36px 15px 18px;
     height: auto;
     margin: 10px 0;
-    background: #ccc;
-    color: #444;
     max-height: inherit;
   }
 }
 @media screen and (max-width: 1023.5px) and (max-width: 768px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .accordion {
-    padding: 10px 35px 10px 15px;
     font: normal normal normal 22px/28px "Mulish", sans-serif;
   }
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .accordion.active i {
-  transform: translate(0, -50%) rotate(0deg);
+  transform: rotate(0deg);
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .accordion i {
+  position: relative;
+  left: 20px;
   display: none;
-  top: 50%;
-  transform: translate(0, -50%) rotate(180deg);
 }
 @media screen and (max-width: 1023.5px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .accordion i {
@@ -13308,7 +13353,6 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
 }
 @media screen and (max-width: 1023.5px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .panel {
-    padding: 0 18px 0;
     max-height: 0;
   }
 }
@@ -13655,7 +13699,7 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
   color: #28373b;
   opacity: 1;
 }
-@media screen and (max-width: 1023.5px) {
+@media screen and (max-width: 768px) {
   section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header h2,
 section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header h3 {
     font: normal normal normal 26px/33px "Mulish", sans-serif;
@@ -13677,6 +13721,10 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
 @media screen and (max-width: 1023.5px) {
   section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header.productpage__posibletodowithdevice__bottom .productpage__posibletodowithdevice__header-btn {
     display: flex;
+  }
+}
+@media screen and (max-width: 1023.5px) and (max-width: 768px) {
+  section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header.productpage__posibletodowithdevice__bottom .productpage__posibletodowithdevice__header-btn {
     font: normal normal bold 16px/23px "Mulish", sans-serif;
   }
 }
@@ -13699,6 +13747,10 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
 @media screen and (max-width: 1023.5px) {
   section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header .productpage__posibletodowithdevice__header-btn {
     display: none;
+  }
+}
+@media screen and (max-width: 1023.5px) and (max-width: 768px) {
+  section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__header .productpage__posibletodowithdevice__header-btn {
     font: normal normal bold 16px/23px "Mulish", sans-serif;
   }
 }
@@ -13799,7 +13851,7 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
   opacity: 1;
   margin-bottom: 5px;
 }
-@media screen and (max-width: 1023.5px) {
+@media screen and (max-width: 768px) {
   section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element .productpage__posibletodowithdevice__content-element-text p {
     font: italic normal normal 14px/18px "Mulish", sans-serif;
   }
@@ -13811,6 +13863,10 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
   section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element .productpage__posibletodowithdevice__content-element-text span {
     margin-top: auto;
     display: block;
+  }
+}
+@media screen and (max-width: 1023.5px) and (max-width: 768px) {
+  section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element .productpage__posibletodowithdevice__content-element-text span {
     font: normal normal bold 12px/15px "Mulish", sans-serif;
     letter-spacing: 0px;
     color: #6d7476;
@@ -13823,7 +13879,7 @@ section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__
   color: #28373b;
   opacity: 1;
 }
-@media screen and (max-width: 1023.5px) {
+@media screen and (max-width: 768px) {
   section.productpage__posibletodowithdevice .productpage__posibletodowithdevice__content .productpage__posibletodowithdevice__content-element .productpage__posibletodowithdevice__content-element-text h3 {
     margin-bottom: 10px;
     font: normal normal normal 14px/18px "Mulish", sans-serif;
@@ -21591,6 +21647,7 @@ section.cart__productcontainer .cart__productcontainer__head .div4 {
 }
 section.cart__productcontainer .cart__productcontainer__container {
   overflow: hidden;
+  position: relative;
 }
 section.cart__productcontainer .cart__productcontainer__container .cart__productcontainer__container__element {
   display: grid;
@@ -24077,6 +24134,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+body.wp-admin {
+  min-height: initial;
+}
+body #wpwrap {
+  min-height: initial;
+  max-height: initial;
 }
 
 footer {

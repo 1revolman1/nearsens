@@ -4,12 +4,14 @@
 section.page_garbit__blockacconts {
   // margin-bottom: 50px;
   // margin-top: 100px;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  // padding-bottom: 50px;
+  // padding-top: 50px;
+  margin-bottom: 80px;
   @include media-tablet {
     width: 90%;
-    margin: 0 auto;
-    padding: 0 0 40px;
+    margin: 0 auto 40px;
+    // margin: 0 auto;
+    // padding: 0 0 40px;
   }
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
