@@ -31,6 +31,11 @@ section.page_garbarit__differentcolorblock {
   }
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
+    padding-top: 60px;
+    @include media-tablet {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
     .page_garbarit__differentcolorblock-wrap {
       @include hblock('h2', 45px, 300, 56px) {
         color: #ffffff;

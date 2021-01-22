@@ -34,10 +34,10 @@ section.page_gabarit__fourblocks {
   }
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
-    padding-bottom: 40px;
+    padding-top: 60px;
     @include media-tablet {
-      padding-bottom: 20px;
-      padding-top: 15px;
+      padding-bottom: 30px;
+      padding-top: 30px;
     }
     @include hblock('h2', 40px, normal, 50px) {
       color: white;
