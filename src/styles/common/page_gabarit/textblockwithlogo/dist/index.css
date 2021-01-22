@@ -1,17 +1,53 @@
 section.page_garbit__textblockwithlogo {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__textblockwithlogo {
-    width: 90%;
-    margin: 0 auto 40px;
+    padding-bottom: 40px;
+  }
+}
+section.page_garbit__textblockwithlogo.blue + section:not(.page_garbit__textblockwithlogo) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo.blue + section:not(.page_garbit__textblockwithlogo) {
+    padding-top: 40px;
+  }
+}
+section.page_garbit__textblockwithlogo.blue + section.blue:not(.page_garbit__textblockwithlogo) {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo.blue + section.blue:not(.page_garbit__textblockwithlogo) {
+    padding-top: 10px;
+  }
+}
+section.page_garbit__textblockwithlogo + section.blue:not(.page_garbit__textblockwithlogo) {
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo + section.blue:not(.page_garbit__textblockwithlogo) {
+    padding-top: 30px;
   }
 }
 section.page_garbit__textblockwithlogo.blue {
   background: #005b9d 0% 0% no-repeat padding-box;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 section.page_garbit__textblockwithlogo.blue * {
   color: white !important;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo.blue {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbarit__textblockwithlogo-wrap {
+    width: 90%;
+  }
 }
 section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h6 {
   font: normal normal 300 37px/56px "Mulish", sans-serif;

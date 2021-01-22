@@ -1,11 +1,49 @@
 section.page_garbit__bluelinkcards {
   background: #005b9d 0% 0% no-repeat padding-box;
   opacity: 1;
-  padding: 60px 0 60px;
+  padding-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__bluelinkcards {
-    padding: 30px 0 30px;
+    padding-bottom: 40px;
+  }
+}
+section.page_garbit__bluelinkcards.blue + section:not(.page_garbit__bluelinkcards) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards.blue + section:not(.page_garbit__bluelinkcards) {
+    padding-top: 40px;
+  }
+}
+section.page_garbit__bluelinkcards.blue + section.blue:not(.page_garbit__bluelinkcards) {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards.blue + section.blue:not(.page_garbit__bluelinkcards) {
+    padding-top: 10px;
+  }
+}
+section.page_garbit__bluelinkcards + section.blue:not(.page_garbit__bluelinkcards) {
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards + section.blue:not(.page_garbit__bluelinkcards) {
+    padding-top: 30px;
+  }
+}
+section.page_garbit__bluelinkcards.blue {
+  background: #005b9d 0% 0% no-repeat padding-box;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+section.page_garbit__bluelinkcards.blue * {
+  color: white !important;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__bluelinkcards.blue {
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 }
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap {

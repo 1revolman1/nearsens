@@ -2,21 +2,34 @@
 @import '../../../mixins/text';
 
 section.page_gabarit__fourblocks {
-  // margin-bottom: 86px;
-  padding-bottom: 43px;
-  // margin-top: 87px;
-  padding-top: 43px;
-  background: white;
+  padding-top: 0;
+  padding-bottom: 80px;
+  background: #ffffff;
   @include media-tablet {
-    width: 100%;
-    padding-bottom: 20px;
-    // margin-top: 40px;
-    padding-top: 15px;
+    padding-bottom: 40px;
   }
-  &.add-padding {
-    padding-bottom: 86px;
-    @include media-tablet {
-      padding-bottom: 40px;
+  & {
+    &.blue + section {
+      &:not(.page_gabarit__fourblocks) {
+        padding-top: 80px;
+        @include media-tablet {
+          padding-top: 40px;
+        }
+      }
+      &.blue:not(.page_gabarit__fourblocks) {
+        padding-top: 20px;
+        @include media-tablet {
+          padding-top: 10px;
+        }
+      }
+    }
+    & + section {
+      &.blue:not(.page_gabarit__fourblocks) {
+        padding-top: 60px;
+        @include media-tablet {
+          padding-top: 30px;
+        }
+      }
     }
   }
   &.blue {

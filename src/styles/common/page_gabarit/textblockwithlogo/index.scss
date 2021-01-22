@@ -2,21 +2,49 @@
 @import '../../../mixins/text';
 
 section.page_garbit__textblockwithlogo {
-  // padding-bottom: 38px;
-  // padding-top: 80px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   @include media-tablet {
-    width: 90%;
-    // margin: 0 auto;
-    margin: 0 auto 40px;
+    padding-bottom: 40px;
   }
-  // &.add-padding {
-  //   padding-top: 80px;
-  // }
+  & {
+    &.blue + section {
+      &:not(.page_garbit__textblockwithlogo) {
+        padding-top: 80px;
+        @include media-tablet {
+          padding-top: 40px;
+        }
+      }
+      &.blue:not(.page_garbit__textblockwithlogo) {
+        padding-top: 20px;
+        @include media-tablet {
+          padding-top: 10px;
+        }
+      }
+    }
+    & + section {
+      &.blue:not(.page_garbit__textblockwithlogo) {
+        padding-top: 60px;
+        @include media-tablet {
+          padding-top: 30px;
+        }
+      }
+    }
+  }
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
     * {
       color: white !important;
+    }
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @include media-tablet {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+  }
+  .page_garbarit__textblockwithlogo-wrap {
+    @include media-tablet {
+      width: 90%;
     }
   }
   .page_garbit__textblockwithlogo__text {

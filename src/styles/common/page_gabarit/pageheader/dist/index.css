@@ -1,16 +1,27 @@
 section.page_gabarit__pageheader {
   margin-bottom: 0;
   padding: 50px 0;
-  margin-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__pageheader {
     padding: 0;
-    margin-bottom: 40px;
   }
 }
-section.page_gabarit__pageheader.add-padding {
-  padding: 80px 0 80px;
+section.page_gabarit__pageheader + section:not(.page_gabarit__pageheader) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader + section:not(.page_gabarit__pageheader) {
+    padding-top: 40px;
+  }
+}
+section.page_gabarit__pageheader + section.blue:not(.page_gabarit__pageheader) {
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader + section.blue:not(.page_gabarit__pageheader) {
+    padding-top: 30px;
+  }
 }
 section.page_gabarit__pageheader.gray {
   background: #f2f2f2 0% 0% no-repeat padding-box;
@@ -237,6 +248,11 @@ section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__p
   section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h1 {
     margin-bottom: 10.5px;
     font: normal normal normal 22px/28px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text:last-of-type {
+    margin-bottom: 0;
   }
 }
 section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h6 {

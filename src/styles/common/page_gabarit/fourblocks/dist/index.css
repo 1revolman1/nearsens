@@ -1,21 +1,35 @@
 section.page_gabarit__fourblocks {
-  padding-bottom: 43px;
-  padding-top: 43px;
-  background: white;
+  padding-top: 0;
+  padding-bottom: 80px;
+  background: #ffffff;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks {
-    width: 100%;
-    padding-bottom: 20px;
-    padding-top: 15px;
+    padding-bottom: 40px;
   }
 }
-section.page_gabarit__fourblocks.add-padding {
-  padding-bottom: 86px;
+section.page_gabarit__fourblocks.blue + section:not(.page_gabarit__fourblocks) {
+  padding-top: 80px;
 }
 @media screen and (max-width: 768px) {
-  section.page_gabarit__fourblocks.add-padding {
-    padding-bottom: 40px;
+  section.page_gabarit__fourblocks.blue + section:not(.page_gabarit__fourblocks) {
+    padding-top: 40px;
+  }
+}
+section.page_gabarit__fourblocks.blue + section.blue:not(.page_gabarit__fourblocks) {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__fourblocks.blue + section.blue:not(.page_gabarit__fourblocks) {
+    padding-top: 10px;
+  }
+}
+section.page_gabarit__fourblocks + section.blue:not(.page_gabarit__fourblocks) {
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__fourblocks + section.blue:not(.page_gabarit__fourblocks) {
+    padding-top: 30px;
   }
 }
 section.page_gabarit__fourblocks.blue {
@@ -29,7 +43,7 @@ section.page_gabarit__fourblocks.blue {
   }
 }
 section.page_gabarit__fourblocks.blue h6 {
-  font: normal normal normal 34px/50px Mulish;
+  font: normal normal normal 32px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
@@ -41,7 +55,7 @@ section.page_gabarit__fourblocks.blue h6 {
   }
 }
 section.page_gabarit__fourblocks.blue h5 {
-  font: normal normal normal 36px/50px Mulish;
+  font: normal normal normal 34px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
@@ -53,7 +67,7 @@ section.page_gabarit__fourblocks.blue h5 {
   }
 }
 section.page_gabarit__fourblocks.blue h4 {
-  font: normal normal normal 38px/50px Mulish;
+  font: normal normal normal 36px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
@@ -65,7 +79,7 @@ section.page_gabarit__fourblocks.blue h4 {
   }
 }
 section.page_gabarit__fourblocks.blue h3 {
-  font: normal normal normal 40px/50px Mulish;
+  font: normal normal normal 38px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
@@ -77,7 +91,7 @@ section.page_gabarit__fourblocks.blue h3 {
   }
 }
 section.page_gabarit__fourblocks.blue h2 {
-  font: normal normal normal 42px/50px Mulish;
+  font: normal normal normal 40px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
@@ -89,7 +103,7 @@ section.page_gabarit__fourblocks.blue h2 {
   }
 }
 section.page_gabarit__fourblocks.blue h1 {
-  font: normal normal normal 44px/50px Mulish;
+  font: normal normal normal 42px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
@@ -113,69 +127,69 @@ section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap {
   }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h6 {
-  font: normal normal normal 34px/50px Mulish;
+  font: normal normal normal 32px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h6 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
   }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h5 {
-  font: normal normal normal 36px/50px Mulish;
+  font: normal normal normal 34px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h5 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
   }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h4 {
-  font: normal normal normal 38px/50px Mulish;
+  font: normal normal normal 36px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h4 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
   }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h3 {
-  font: normal normal normal 40px/50px Mulish;
+  font: normal normal normal 38px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h3 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
   }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h2 {
-  font: normal normal normal 42px/50px Mulish;
+  font: normal normal normal 40px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h2 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
   }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h1 {
-  font: normal normal normal 44px/50px Mulish;
+  font: normal normal normal 42px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap h1 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
   }
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {

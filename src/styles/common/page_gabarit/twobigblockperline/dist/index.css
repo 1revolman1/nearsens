@@ -1,0 +1,333 @@
+section.page_gabarit__twobigblockperline {
+  padding-bottom: 80px;
+}
+section.page_gabarit__twobigblockperline.blue {
+  background: #005b9d 0% 0% no-repeat padding-box;
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline.blue {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+section.page_gabarit__twobigblockperline.blue h6 {
+  font: normal normal normal 32px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue h5 {
+  font: normal normal normal 34px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue h4 {
+  font: normal normal normal 36px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue h3 {
+  font: normal normal normal 38px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue h2 {
+  font: normal normal normal 40px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue h1 {
+  font: normal normal normal 42px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+section.page_gabarit__twobigblockperline.blue .page_gabarit__twobigblockperline__wrap * {
+  color: white !important;
+}
+section.page_gabarit__twobigblockperline.blue .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h6 {
+  font: normal normal normal 34px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+}
+section.page_gabarit__twobigblockperline.blue .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h5 {
+  font: normal normal normal 36px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+}
+section.page_gabarit__twobigblockperline.blue .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h4 {
+  font: normal normal normal 38px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+}
+section.page_gabarit__twobigblockperline.blue .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h3 {
+  font: normal normal normal 40px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+}
+section.page_gabarit__twobigblockperline.blue .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h2 {
+  font: normal normal normal 42px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+}
+section.page_gabarit__twobigblockperline.blue .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h1 {
+  font: normal normal normal 44px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: white;
+}
+section.page_gabarit__twobigblockperline.blue .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text p {
+  color: white;
+}
+section.page_gabarit__twobigblockperline.blue + section:not(.page_gabarit__twobigblockperline) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline.blue + section:not(.page_gabarit__twobigblockperline) {
+    padding-top: 40px;
+  }
+}
+section.page_gabarit__twobigblockperline.blue + section.blue:not(.page_gabarit__twobigblockperline) {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline.blue + section.blue:not(.page_gabarit__twobigblockperline) {
+    padding-top: 10px;
+  }
+}
+section.page_gabarit__twobigblockperline + section.blue:not(.page_gabarit__twobigblockperline) {
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline + section.blue:not(.page_gabarit__twobigblockperline) {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline {
+    padding-bottom: 40px;
+    flex-direction: column;
+  }
+}
+section.page_gabarit__twobigblockperline h6 {
+  font: normal normal normal 32px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h6 {
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline h5 {
+  font: normal normal normal 34px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h5 {
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline h4 {
+  font: normal normal normal 36px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h4 {
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline h3 {
+  font: normal normal normal 38px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h3 {
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline h2 {
+  font: normal normal normal 40px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h2 {
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline h1 {
+  font: normal normal normal 42px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h1 {
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  grid-column-gap: 41px;
+  grid-row-gap: 41px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element {
+  display: flex;
+  flex-flow: column wrap;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element {
+    width: 100%;
+    margin: 0;
+  }
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__img {
+  margin-bottom: 31px;
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__img img {
+  border-radius: 10px;
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h6 {
+  font: normal normal normal 34px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h6 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h5 {
+  font: normal normal normal 36px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h5 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h4 {
+  font: normal normal normal 38px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h4 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h3 {
+  font: normal normal normal 40px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h3 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h2 {
+  font: normal normal normal 42px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h2 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h1 {
+  font: normal normal normal 44px/50px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text h1 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text :last-child {
+  margin: 0;
+}
+section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text p {
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap .page_gabarit__twobigblockperline__wrap__element .page_gabarit__twobigblockperline__wrap__element__text p {
+    font: normal normal 300 14px/18px "Mulish", sans-serif;
+  }
+}

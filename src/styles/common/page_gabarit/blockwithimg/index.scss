@@ -4,7 +4,11 @@
 section.page_gabarit__blockwithimg {
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
-    padding-bottom: 60px;
+    padding-top: 60px;
+    @include media-tablet {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
     .page_gabarit__blockwithimg__wrap {
       * {
         color: white !important;
@@ -32,6 +36,23 @@ section.page_gabarit__blockwithimg {
     &.blue + section {
       &:not(.page_gabarit__blockwithimg) {
         padding-top: 80px;
+        @include media-tablet {
+          padding-top: 40px;
+        }
+      }
+      &.blue:not(.page_gabarit__blockwithimg) {
+        padding-top: 20px;
+        @include media-tablet {
+          padding-top: 10px;
+        }
+      }
+    }
+    & + section {
+      &.blue:not(.page_gabarit__blockwithimg) {
+        padding-top: 60px;
+        @include media-tablet {
+          padding-top: 30px;
+        }
       }
     }
   }

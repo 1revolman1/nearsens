@@ -2,21 +2,49 @@
 @import '../../../mixins/text';
 
 section.page_garbit__blockacconts {
-  // margin-bottom: 50px;
-  // margin-top: 100px;
-  // padding-bottom: 50px;
-  // padding-top: 50px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   @include media-tablet {
-    width: 90%;
-    margin: 0 auto 40px;
-    // margin: 0 auto;
-    // padding: 0 0 40px;
+    padding-bottom: 40px;
+  }
+  & {
+    &.blue + section {
+      &:not(.page_garbit__blockacconts) {
+        padding-top: 80px;
+        @include media-tablet {
+          padding-top: 40px;
+        }
+      }
+      &.blue:not(.page_garbit__blockacconts) {
+        padding-top: 20px;
+        @include media-tablet {
+          padding-top: 10px;
+        }
+      }
+    }
+    & + section {
+      &.blue:not(.page_garbit__blockacconts) {
+        padding-top: 60px;
+        @include media-tablet {
+          padding-top: 30px;
+        }
+      }
+    }
   }
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
     * {
       color: white !important;
+    }
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @include media-tablet {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+  }
+  .page_garbarit__blockacconts__wrap {
+    @include media-tablet {
+      width: 90%;
     }
   }
   .page_garbit__blockacconts__text {

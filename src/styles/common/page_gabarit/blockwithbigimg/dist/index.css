@@ -3,16 +3,52 @@ section.page_gabarit__blockwithbigimg {
   grid-column-gap: 1fr;
   margin-bottom: 0;
   grid-row-gap: 80px;
-  padding: 40px 0 80px;
+  padding-bottom: 80px;
 }
-@media screen and (max-width: 1023px) {
+section.page_gabarit__blockwithbigimg.blue + section:not(.page_gabarit__blockwithbigimg) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithbigimg.blue + section:not(.page_gabarit__blockwithbigimg) {
+    padding-top: 40px;
+  }
+}
+section.page_gabarit__blockwithbigimg.blue + section.blue:not(.page_gabarit__blockwithbigimg) {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithbigimg.blue + section.blue:not(.page_gabarit__blockwithbigimg) {
+    padding-top: 10px;
+  }
+}
+section.page_gabarit__blockwithbigimg + section.blue:not(.page_gabarit__blockwithbigimg) {
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithbigimg + section.blue:not(.page_gabarit__blockwithbigimg) {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 1023.5px) {
   section.page_gabarit__blockwithbigimg {
     grid-row-gap: 40px;
-    padding: 20px 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithbigimg {
+    width: 100%;
+    padding-bottom: 40px;
   }
 }
 section.page_gabarit__blockwithbigimg.blue {
   background: #005b9d 0% 0% no-repeat padding-box;
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithbigimg.blue {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
 }
 section.page_gabarit__blockwithbigimg.blue .page_gabarit__blockwithbigimg__wrap ul li {
   color: white;
@@ -21,37 +57,37 @@ section.page_gabarit__blockwithbigimg.blue .page_gabarit__blockwithbigimg__wrap 
   color: white !important;
 }
 section.page_gabarit__blockwithbigimg.blue .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h6 {
-  font: normal normal normal 20px/33px Mulish;
+  font: normal normal normal 18px/33px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
 }
 section.page_gabarit__blockwithbigimg.blue .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h5 {
-  font: normal normal normal 22px/33px Mulish;
+  font: normal normal normal 20px/33px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
 }
 section.page_gabarit__blockwithbigimg.blue .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h4 {
-  font: normal normal normal 24px/33px Mulish;
+  font: normal normal normal 22px/33px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
 }
 section.page_gabarit__blockwithbigimg.blue .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h3 {
-  font: normal normal normal 26px/33px Mulish;
+  font: normal normal normal 24px/33px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
 }
 section.page_gabarit__blockwithbigimg.blue .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h2 {
-  font: normal normal normal 28px/33px Mulish;
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
 }
 section.page_gabarit__blockwithbigimg.blue .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h1 {
-  font: normal normal normal 30px/33px Mulish;
+  font: normal normal normal 28px/33px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   color: white;
@@ -66,7 +102,12 @@ section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap {
   grid-row-gap: 30px;
   margin-bottom: 0;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
+  section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1023.5px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap.img-right {
     grid-template-columns: 1fr;
   }
@@ -74,12 +115,12 @@ section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap {
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap.img-right .productpage__textblockvariations-textimgheader__text {
   padding-right: 15.399%;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap.img-right .productpage__textblockvariations-textimgheader__text {
     padding-right: 0;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap.img-left {
     grid-template-columns: 1fr;
   }
@@ -87,7 +128,7 @@ section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap.img-r
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap.img-left .productpage__textblockvariations-textimgheader__text {
   padding-left: 15.399%;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap.img-left .productpage__textblockvariations-textimgheader__text {
     padding-left: 0;
   }
@@ -97,7 +138,7 @@ section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap ul {
 }
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap ul li {
   list-style: inherit;
-  font: normal normal 300 18px/23px Mulish;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
   letter-spacing: 0;
   color: #333;
   opacity: 1;
@@ -105,7 +146,7 @@ section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap ul li
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap ul li {
-    font: normal normal 300 14px/18px Mulish;
+    font: normal normal 300 14px/18px "Mulish", sans-serif;
   }
 }
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text {
@@ -118,74 +159,74 @@ section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .prod
   }
 }
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h6 {
-  font: normal normal normal 34px/50px Mulish;
+  font: normal normal normal 32px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h6 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
     margin-bottom: 15px;
   }
 }
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h5 {
-  font: normal normal normal 36px/50px Mulish;
+  font: normal normal normal 34px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h5 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
     margin-bottom: 15px;
   }
 }
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h4 {
-  font: normal normal normal 38px/50px Mulish;
+  font: normal normal normal 36px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h4 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
     margin-bottom: 15px;
   }
 }
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h3 {
-  font: normal normal normal 40px/50px Mulish;
+  font: normal normal normal 38px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h3 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
     margin-bottom: 15px;
   }
 }
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h2 {
-  font: normal normal normal 42px/50px Mulish;
+  font: normal normal normal 40px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h2 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
     margin-bottom: 15px;
   }
 }
 section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h1 {
-  font: normal normal normal 44px/50px Mulish;
+  font: normal normal normal 42px/50px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__text h1 {
-    font: normal normal normal 22px/28px Mulish;
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
     margin-bottom: 15px;
   }
 }
@@ -198,7 +239,7 @@ section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .prod
   padding: 0;
   flex: none;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__img {
     grid-area: 1;
   }
@@ -209,7 +250,7 @@ section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .prod
   height: 458px;
   max-width: 650px;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   section.page_gabarit__blockwithbigimg .page_gabarit__blockwithbigimg__wrap .productpage__textblockvariations-textimgheader__img img {
     max-width: 100%;
     max-height: 325px;

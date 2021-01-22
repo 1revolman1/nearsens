@@ -1,28 +1,33 @@
 section.page_garbarit__differentcolorblock {
-  padding: 60px 0;
+  padding-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbarit__differentcolorblock {
-    padding: 30px 0;
+    padding-bottom: 40px;
   }
 }
-section.page_garbarit__differentcolorblock.gray + section:not(.page_garbarit__differentcolorblock) {
+section.page_garbarit__differentcolorblock.blue + section:not(.page_garbarit__differentcolorblock) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__differentcolorblock.blue + section:not(.page_garbarit__differentcolorblock) {
+    padding-top: 40px;
+  }
+}
+section.page_garbarit__differentcolorblock.blue + section.blue:not(.page_garbarit__differentcolorblock) {
   padding-top: 20px;
 }
 @media screen and (max-width: 768px) {
-  section.page_garbarit__differentcolorblock.gray + section:not(.page_garbarit__differentcolorblock) {
+  section.page_garbarit__differentcolorblock.blue + section.blue:not(.page_garbarit__differentcolorblock) {
     padding-top: 10px;
   }
 }
-section.page_garbarit__differentcolorblock:not(.gray) + section:not(.page_garbarit__differentcolorblock) {
-  padding-top: 80px;
-}
-section.page_garbarit__differentcolorblock.add-padding {
-  padding: 120px 0 123px;
+section.page_garbarit__differentcolorblock + section.blue:not(.page_garbarit__differentcolorblock) {
+  padding-top: 60px;
 }
 @media screen and (max-width: 768px) {
-  section.page_garbarit__differentcolorblock.add-padding {
-    padding: 90px 0 90px;
+  section.page_garbarit__differentcolorblock + section.blue:not(.page_garbarit__differentcolorblock) {
+    padding-top: 30px;
   }
 }
 section.page_garbarit__differentcolorblock.blue {
