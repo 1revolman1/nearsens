@@ -294,9 +294,10 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
   margin-bottom: 22.5px;
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .accordion {
+  display: flex;
   width: auto;
   padding: 0;
-  margin: 0 0 22.5px;
+  margin: 0 auto 22.5px;
   background: transparent;
   font: normal normal normal 24px/30px "Mulish", sans-serif;
   letter-spacing: 0px;
@@ -320,25 +321,28 @@ section.productpage__specificationblock .productpage__specificationblock-wrap .p
     font: normal normal normal 22px/28px "Mulish", sans-serif;
   }
 }
+section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .accordion.active {
+  margin: 0 auto 0;
+}
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .accordion.active i {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .accordion i {
   position: relative;
   left: 20px;
-  display: none;
+  transform: rotate(0deg);
 }
-@media screen and (max-width: 1023.5px) {
+@media screen and (max-width: 768px) {
   section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .accordion i {
-    display: block;
+    left: 10px;
   }
 }
 section.productpage__specificationblock .productpage__specificationblock-wrap .productpage__specificationblock-wrap__container__specification .panel {
+  max-height: 0;
   display: block;
   background: initial;
   grid-template-columns: initial;
   grid-row-gap: initial;
-  max-height: initial;
   padding: 0;
 }
 @media screen and (max-width: 1023.5px) {
