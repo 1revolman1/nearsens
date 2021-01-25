@@ -115,6 +115,20 @@ $(document).ready(() => {
   }
   headerJS();
   footerJS();
+  // const pageObj = {
+  //   usecase_list: useCasesList(),
+  //   product_list_page: useProductList(),
+  //   product_page: useProductPage(),
+  //   home_page: useHomePage(),
+  //   contact_page: useContactPage(),
+  //   usecase_details: useCasesDetails(),
+  //   signup_page: useSignUpPage(),
+  //   cart_page: useCartPage(),
+  //   checkout_page: useCheckoutPage(),
+  //   my_account: useMyAccountPage(),
+  // };
+  // if (typeof typePage != undefined)
+  //   pageObj[typePage] ? pageObj[typePage]() : console.log(`ELSE PAGE`);
   switch (typeof typePage != undefined) {
     case typePage === 'usecase_list':
       useCasesList();
@@ -126,11 +140,9 @@ $(document).ready(() => {
       useProductPage();
       break;
     case typePage === 'home_page':
-      // console.log(`HOME PAGE`);
       useHomePage();
       break;
     case typePage === 'contact_page':
-      // console.log(`HOME PAGE`);
       useContactPage();
       break;
     case typePage === 'usecase_details':
@@ -138,6 +150,7 @@ $(document).ready(() => {
       break;
     case typePage === 'signup_page':
       useSignUpPage();
+      break;
     case typePage === 'cart_page':
       useCartPage();
       break;
@@ -151,46 +164,4 @@ $(document).ready(() => {
       console.log(`ELSE PAGE`);
       break;
   }
-  // const page=document.querySelector("body").classList;
-  // switch (true) {
-  //   case page.contains("about_page"):
-  //     console.log(`ABOUT PAGE`);
-  //     break;
-  //   case page.contains("usecase_list"):
-  //     useCasesList()
-  //     break;
-  //   case page.contains("product_list_page"):
-  //     useProductList()
-  //     break;
-  //   case page.contains("product_page"):
-  //     useProductPage()
-  //     break;
-  //   case page.contains("home_page"):
-  //     console.log(`HOME PAGE`);
-  //     break;
-  //   default:
-  //     console.log(`ELSE PAGE`);
-  //     break;
-  // }
-  // const _url = window.location.pathname;
-  // switch (true) {
-  //   case /about/.test(_url):
-  //     console.log(`ABOUT PAGE`);
-  //     break;
-  //   case /usecase_list/.test(_url):
-  //     useCasesList()
-  //     break;
-  //   case /product_list/.test(_url):
-  //     useProductList()
-  //     break;
-  //   case /product_page/.test(_url):
-  //     useProductPage()
-  //     break;
-  //   case /\//.test(_url):
-  //     console.log(`HOME PAGE`);
-  //     break;
-  //   default:
-  //     console.log(`ELSE PAGE`);
-  //     break;
-  // }
 });

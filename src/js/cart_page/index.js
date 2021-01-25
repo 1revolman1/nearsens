@@ -1,4 +1,5 @@
 export const useCartPage = function () {
+  console.log('CART PAGE ');
   const scrollable = document.querySelector('section.cart__headersticky');
   function onScrollChange(changes, observer) {
     changes.forEach((change) => {
@@ -37,14 +38,13 @@ export const useCartPage = function () {
   const observer = new IntersectionObserver(onScrollChange, options);
   const target = document.querySelector('section.cart__header');
   if (target) observer.observe(target);
-
   (function disableCheckout() {
     if (
       document.querySelectorAll(
         `.cart__productcontainer__container__element:not([style="display:none;"]):not([style="display: none;"])`
       ).length === 0 &&
       Number(
-        document.querySelector('.price.total').textContent.replace('€', '.')
+        document.querySelector('.price.total')?.textContent?.replace('€', '.')
       ) === 0
     ) {
       document
@@ -56,19 +56,18 @@ export const useCartPage = function () {
         });
     }
     document
-      .querySelector('.cart__havegateway__information__btn.addtocart')
-      .addEventListener('click', function () {
-        document
-          .querySelectorAll(
-            '.cart__header__wrap__second__containerbutton__btn,.cart__disqount__btn'
-          )
-          .forEach(function (elm) {
-            elm.classList.remove('disable-cart-btn');
-          });
+      .querySelectorAll('.cart__havegateway__information__btn.addtocart')
+      .forEach((elm) => {
+        elm.addEventListener('click', function () {
+          document
+            .querySelectorAll(
+              '.cart__header__wrap__second__containerbutton__btn,.cart__disqount__btn'
+            )
+            .forEach(function (elm) {
+              elm.classList.remove('disable-cart-btn');
+            });
+        });
       });
-    // document.querySelectorAll(
-    //   `.cart__productcontainer__container__element:not([style="display: none;"])`
-    // )
   })();
 
   // document
