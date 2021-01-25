@@ -58,7 +58,7 @@ section.signuppage__container {
             ~ {
               .checkmark {
                 background-color: #eee;
-                &:after {
+                .fa-check {
                   display: block;
                 }
               }
@@ -96,10 +96,13 @@ section.signuppage__container {
         height: 32px;
         width: 32px;
         background-color: #eee;
-        &:after {
-          content: '';
-          position: absolute;
+        .fa-check {
           display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #005b9d;
         }
       }
     }
