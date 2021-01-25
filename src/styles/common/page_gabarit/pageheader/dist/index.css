@@ -26,140 +26,8 @@ section.page_gabarit__pageheader + section.blue:not(.page_gabarit__pageheader) {
 section.page_gabarit__pageheader.gray {
   background: #f2f2f2 0% 0% no-repeat padding-box;
 }
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h6 {
-  font: normal normal normal 22px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h6 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h5 {
-  font: normal normal normal 24px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h5 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h4 {
-  font: normal normal normal 26px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h4 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h3 {
-  font: normal normal normal 28px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h3 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h2 {
-  font: normal normal normal 30px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h2 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h1 {
-  font: normal normal normal 32px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h1 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h6 {
-  font: normal normal normal 22px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h6 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h5 {
-  font: normal normal normal 24px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h5 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h4 {
-  font: normal normal normal 26px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h4 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h3 {
-  font: normal normal normal 28px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h3 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h2 {
-  font: normal normal normal 30px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h2 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h1 {
-  font: normal normal normal 32px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: black;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h1 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader.gray .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text p {
-  color: black;
+section.page_gabarit__pageheader.gray * {
+  color: #28373b !important;
 }
 section.page_gabarit__pageheader.blue {
   background: #005b9d 0% 0% no-repeat padding-box;
@@ -172,82 +40,111 @@ section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__p
   flex-direction: column;
   justify-content: center;
 }
-section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h6 {
-  font: normal normal normal 22px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #ffffff;
-  margin-bottom: 20.5px;
-}
 @media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h6 {
-    margin-bottom: 10.5px;
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h5 {
-  font: normal normal normal 24px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #ffffff;
-  margin-bottom: 20.5px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h5 {
-    margin-bottom: 10.5px;
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h4 {
-  font: normal normal normal 26px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #ffffff;
-  margin-bottom: 20.5px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h4 {
-    margin-bottom: 10.5px;
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h3 {
-  font: normal normal normal 28px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #ffffff;
-  margin-bottom: 20.5px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h3 {
-    margin-bottom: 10.5px;
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h2 {
-  font: normal normal normal 30px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #ffffff;
-  margin-bottom: 20.5px;
-}
-@media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h2 {
-    margin-bottom: 10.5px;
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head {
+    margin-bottom: 20px;
   }
 }
 section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h1 {
   font: normal normal normal 32px/40px "Mulish", sans-serif;
   letter-spacing: 0px;
+  color: #333333;
   opacity: 1;
-  color: #ffffff;
   margin-bottom: 20.5px;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h1 {
+    font: normal normal normal 26px/33px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h1 {
     margin-bottom: 10.5px;
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h2 {
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20.5px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h2 {
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h2 {
+    margin-bottom: 10.5px;
+  }
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h3 {
+  font: normal normal bold 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20.5px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h3 {
+    font: normal normal bold 18px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h3 {
+    margin-bottom: 10.5px;
+  }
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h4 {
+  font: normal normal normal 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20.5px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h4 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h4 {
+    margin-bottom: 10.5px;
+  }
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h5 {
+  font: normal normal bold 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20.5px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h5 {
+    font: normal normal bold 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h5 {
+    margin-bottom: 10.5px;
+  }
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h6 {
+  font: normal normal normal 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20.5px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h6 {
+    font: normal normal normal 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__head h6 {
+    margin-bottom: 10.5px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -255,49 +152,83 @@ section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__p
     margin-bottom: 0;
   }
 }
-section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h6 {
-  font: normal normal normal 22px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #ffffff;
-  margin-bottom: 4px;
-}
-section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h5 {
-  font: normal normal normal 24px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #ffffff;
-  margin-bottom: 4px;
-}
-section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h4 {
-  font: normal normal normal 26px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #ffffff;
-  margin-bottom: 4px;
-}
-section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h3 {
-  font: normal normal normal 28px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #ffffff;
-  margin-bottom: 4px;
-}
-section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h2 {
-  font: normal normal normal 30px/40px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #ffffff;
-  margin-bottom: 4px;
-}
 section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h1 {
   font: normal normal normal 32px/40px "Mulish", sans-serif;
   letter-spacing: 0px;
+  color: #333333;
   opacity: 1;
-  color: #ffffff;
   margin-bottom: 4px;
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h1 {
+    font: normal normal normal 26px/33px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h2 {
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h2 {
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h3 {
+  font: normal normal bold 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h3 {
+    font: normal normal bold 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h4 {
+  font: normal normal normal 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h4 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h5 {
+  font: normal normal bold 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h5 {
+    font: normal normal bold 14px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h6 {
+  font: normal normal normal 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text h6 {
+    font: normal normal normal 14px/25px "Mulish", sans-serif;
+  }
+}
 section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text p {
+  font: normal normal normal 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
   color: #ffffff;
 }
 section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .usecase_details__pageheader__img img {

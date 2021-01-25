@@ -9,10 +9,13 @@
 @import 'twobigblockperline/index';
 @import 'fourblocks/index';
 @import 'bigblueblock/index';
-
+@import 'blockaccordion/index';
+@import '../../mixins/text';
 @import '../../utils/variables.scss';
 
 .custom-block {
+  @include hblockPAGEGABARIT() {
+  }
   a {
     text-decoration: none;
     color: #005b9d;

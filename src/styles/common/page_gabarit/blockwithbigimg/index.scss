@@ -44,23 +44,8 @@ section.page_gabarit__blockwithbigimg {
       padding-bottom: 30px;
       padding-top: 30px;
     }
-    .page_gabarit__blockwithbigimg__wrap {
-      ul {
-        li {
-          color: white;
-        }
-      }
-      * {
-        color: white !important;
-      }
-      .productpage__textblockvariations-textimgheader__text {
-        @include hblock('h2', 26px, normal, 33px) {
-          color: white;
-        }
-        p {
-          color: white;
-        }
-      }
+    * {
+      color: white !important;
     }
   }
   .page_gabarit__blockwithbigimg__wrap {
@@ -120,16 +105,21 @@ section.page_gabarit__blockwithbigimg {
           margin: 0 !important;
         }
       }
-      @include hblock('h2', 40px, normal, 50px) {
+      @include hblockPAGEGABARIT() {
+        color: #28373b;
         margin-bottom: 30px;
         @include media-tablet {
-          font: normal normal normal 22px/28px 'Mulish', sans-serif;
           margin-bottom: 15px;
         }
       }
       p {
+        font: normal normal 300 18px/23px 'Mulish', sans-serif;
+        letter-spacing: 0px;
+        color: #28373b;
+        opacity: 1;
         @include media-tablet {
           margin-bottom: 15px;
+          font: normal normal normal 14px/18px 'Mulish', sans-serif;
         }
       }
     }
@@ -140,7 +130,6 @@ section.page_gabarit__blockwithbigimg {
       @include media-forHEADER {
         grid-area: 1;
       }
-
       img {
         width: 100%;
         max-height: 458px;
@@ -154,36 +143,5 @@ section.page_gabarit__blockwithbigimg {
         }
       }
     }
-    // &:last-of-type {
-    //   margin-bottom: 0;
-    // }
-    // &.img-left {
-    //   .productpage__textblockvariations-textimgheader__img {
-    //     padding: 0 25px 0 0px;
-    //     // padding: 40px 40px 40px 0;
-    //     flex: 1 1 7%;
-    //     @include media-tablet {
-    //       margin-bottom: 24.5px;
-    //       padding: 0;
-    //       flex: 1;
-    //     }
-    //   }
-    //   .productpage__textblockvariations-textimgheader__text {
-    //     padding: 0 0 0 25px;
-    //     @include media-tablet {
-    //       padding: 0;
-    //     }
-    //   }
-    // }
-    // &.img-right {
-    //   .productpage__textblockvariations-textimgheader__img {
-    //     // padding: 40px 0 40px 40px;
-    //     flex: 1 1 7%;
-    //     @include media-tablet {
-    //       padding: 0;
-    //       flex: 1;
-    //     }
-    //   }
-    // }
   }
 }

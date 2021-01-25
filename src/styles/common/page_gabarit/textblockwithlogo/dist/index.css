@@ -49,76 +49,106 @@ section.page_garbit__textblockwithlogo.blue * {
     width: 90%;
   }
 }
-section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h6 {
-  font: normal normal 300 37px/56px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #333333;
-  margin-bottom: 9px;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h6 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h5 {
-  font: normal normal 300 39px/56px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #333333;
-  margin-bottom: 9px;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h5 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h4 {
-  font: normal normal 300 41px/56px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #333333;
-  margin-bottom: 9px;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h4 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h3 {
-  font: normal normal 300 43px/56px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #333333;
-  margin-bottom: 9px;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h3 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
-section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h2 {
-  font: normal normal 300 45px/56px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #333333;
-  margin-bottom: 9px;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h2 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
-  }
-}
 section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h1 {
-  font: normal normal 300 47px/56px "Mulish", sans-serif;
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
   letter-spacing: 0px;
-  opacity: 1;
   color: #333333;
-  margin-bottom: 9px;
+  opacity: 1;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h1 {
-    font: normal normal normal 22px/28px "Mulish", sans-serif;
+    font: normal normal normal 26px/33px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h1 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h2 {
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h2 {
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h2 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h3 {
+  font: normal normal bold 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h3 {
+    font: normal normal bold 18px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h3 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h4 {
+  font: normal normal normal 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h4 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h4 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h5 {
+  font: normal normal bold 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h5 {
+    font: normal normal bold 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h5 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h6 {
+  font: normal normal normal 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h6 {
+    font: normal normal normal 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text h6 {
+    margin-bottom: 10px;
   }
 }
 section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text p {
@@ -126,19 +156,25 @@ section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text p {
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__text p {
-    font: normal normal normal 14px/18px "Mulish", sans-serif;
+    font: normal normal 300 14px/18px "Mulish", sans-serif;
+    margin-bottom: 25px;
   }
 }
 section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: auto;
-  grid-column-gap: 3.9%;
+  grid-column-gap: 56px;
   grid-row-gap: 20px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos {
+    grid-column-gap: 3.9%;
+  }
 }
 section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element {
   display: flex;
@@ -167,81 +203,79 @@ section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .p
     width: 50px;
   }
 }
-section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h6 {
-  font: normal normal bold 10px/20px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  letter-spacing: 0px;
-  color: #28373b;
-  opacity: 1;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h6 {
-    font: normal normal bold 14px/18px "Mulish", sans-serif;
-  }
-}
-section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h5 {
-  font: normal normal bold 12px/20px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  letter-spacing: 0px;
-  color: #28373b;
-  opacity: 1;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h5 {
-    font: normal normal bold 14px/18px "Mulish", sans-serif;
-  }
-}
-section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h4 {
-  font: normal normal bold 14px/20px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  letter-spacing: 0px;
-  color: #28373b;
-  opacity: 1;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h4 {
-    font: normal normal bold 14px/18px "Mulish", sans-serif;
-  }
-}
-section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h3 {
-  font: normal normal bold 16px/20px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  letter-spacing: 0px;
-  color: #28373b;
-  opacity: 1;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h3 {
-    font: normal normal bold 14px/18px "Mulish", sans-serif;
-  }
-}
-section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h2 {
-  font: normal normal bold 18px/20px "Mulish", sans-serif;
-  letter-spacing: 0px;
-  opacity: 1;
-  letter-spacing: 0px;
-  color: #28373b;
-  opacity: 1;
-}
-@media screen and (max-width: 768px) {
-  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h2 {
-    font: normal normal bold 14px/18px "Mulish", sans-serif;
-  }
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text {
+  display: flex;
+  align-items: center;
 }
 section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h1 {
-  font: normal normal bold 20px/20px "Mulish", sans-serif;
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
   letter-spacing: 0px;
+  color: #333333;
   opacity: 1;
-  letter-spacing: 0px;
-  color: #28373b;
-  opacity: 1;
+  margin-bottom: 9px;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h1 {
-    font: normal normal bold 14px/18px "Mulish", sans-serif;
+    font: normal normal normal 26px/33px "Mulish", sans-serif;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h2 {
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h2 {
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h3 {
+  font: normal normal bold 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h3 {
+    font: normal normal bold 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h4 {
+  font: normal normal normal 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h4 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h5 {
+  font: normal normal bold 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h5 {
+    font: normal normal bold 14px/25px "Mulish", sans-serif;
+  }
+}
+section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h6 {
+  font: normal normal normal 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbit__textblockwithlogo .page_garbit__textblockwithlogo__logos .page_garbit__textblockwithlogo__logos__element .page_garbit__textblockwithlogo__logos__element__text h6 {
+    font: normal normal normal 14px/25px "Mulish", sans-serif;
   }
 }

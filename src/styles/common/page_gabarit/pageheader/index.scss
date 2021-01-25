@@ -4,7 +4,6 @@
 section.page_gabarit__pageheader {
   margin-bottom: 0;
   padding: 50px 0;
-  // margin-bottom: 80px;
   @include media-tablet {
     padding: 0;
     // margin-bottom: 40px;
@@ -28,33 +27,8 @@ section.page_gabarit__pageheader {
   }
   &.gray {
     background: #f2f2f2 0% 0% no-repeat padding-box;
-    .page_gabarit__pageheader-wrap {
-      .page_gabarit__pageheader__text {
-        .page_gabarit__pageheader__text__head {
-          @include hblock('h1', 32px) {
-            color: black;
-            @include media-tablet {
-              font: normal normal normal 22px/28px 'Mulish', sans-serif;
-            }
-          }
-          // h1 {
-          //   color: black;
-          // }
-        }
-        .page_gabarit__pageheader__text__info {
-          .page_gabarit__pageheader__text__info__text-block-text {
-            @include hblock('h1', 32px) {
-              color: black;
-              @include media-tablet {
-                font: normal normal normal 22px/28px 'Mulish', sans-serif;
-              }
-            }
-            p {
-              color: black;
-            }
-          }
-        }
-      }
+    * {
+      color: #28373b !important;
     }
   }
   &.blue {
@@ -69,17 +43,22 @@ section.page_gabarit__pageheader {
       flex-direction: column;
       justify-content: center;
       .page_gabarit__pageheader__text__head {
-        @include hblock('h1', 32px) {
-          color: #ffffff;
+        @include media-tablet {
+          margin-bottom: 20px;
+        }
+        @include hblockPAGEGABARIT() {
           margin-bottom: 20.5px;
           @include media-tablet {
             margin-bottom: 10.5px;
-            font: normal normal normal 22px/28px 'Mulish', sans-serif;
           }
         }
-
-        // h1 {
+        // @include hblock('h1', 32px) {
         //   color: #ffffff;
+        //   margin-bottom: 20.5px;
+        // @include media-tablet {
+        //   margin-bottom: 10.5px;
+        //   font: normal normal normal 22px/28px 'Mulish', sans-serif;
+        // }
         // }
       }
       .page_gabarit__pageheader__text__info {
@@ -89,11 +68,14 @@ section.page_gabarit__pageheader {
               margin-bottom: 0;
             }
           }
-          @include hblock('h1', 32px) {
-            color: #ffffff;
+          @include hblockPAGEGABARIT() {
             margin-bottom: 4px;
           }
           p {
+            font: normal normal normal 18px/23px 'Mulish', sans-serif;
+            letter-spacing: 0px;
+            color: #28373b;
+            opacity: 1;
             color: #ffffff;
           }
         }
