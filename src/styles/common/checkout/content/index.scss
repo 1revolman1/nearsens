@@ -7,6 +7,10 @@
 
 section.checkout_page__content {
   padding: 82px 0 155px;
+  @include media-forHEADER {
+    width: 94%;
+    margin: 0 auto;
+  }
   @include media-tablet {
     width: 90%;
     padding: 60px 0 55px;

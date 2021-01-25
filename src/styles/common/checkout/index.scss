@@ -7,6 +7,9 @@
   margin: 0;
   .main {
     overflow: initial;
+    @include media-forHEADER {
+      width: 100%;
+    }
   }
   @include media-forHEADER {
     margin: 0;

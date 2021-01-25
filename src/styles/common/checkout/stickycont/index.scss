@@ -70,7 +70,7 @@ section.checkout_page__stickycont {
           color: #333333;
           opacity: 1;
           @include media-forHEADER {
-            width: inherit;
+            width: 100%;
             @media screen and (max-width: 375px) {
               flex: 1;
               width: 100%;
