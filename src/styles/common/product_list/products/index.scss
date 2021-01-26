@@ -414,6 +414,7 @@ section.productlist__products {
           align-items: flex-end;
           @include media-tablet {
             align-items: center;
+            justify-content: flex-end;
           }
           .productlist__products-container-element-controllers-price {
             margin-right: auto;
@@ -492,6 +493,30 @@ section.productlist__products {
                 width: max-content;
                 // width:fit-content;
                 width: intrinsic;
+              }
+            }
+            p.outstock {
+              display: flex;
+              align-items: center;
+              height: 55px;
+              font: italic normal normal 16px/22px 'Mulish', sans-serif;
+              letter-spacing: 0px;
+              color: #c92e2e;
+              opacity: 1;
+              &.mobile {
+                display: none;
+                @include media-tablet {
+                  display: flex !important;
+                }
+              }
+              &.desktop {
+                display: flex;
+                @include media-tablet {
+                  display: none !important;
+                }
+              }
+              @include media-tablet {
+                font: italic normal normal 12px/18px 'Mulish', sans-serif;
               }
             }
             .productlist__products-container-element-controllers-counter {
