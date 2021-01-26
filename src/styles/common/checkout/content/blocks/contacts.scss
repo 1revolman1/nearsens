@@ -105,6 +105,7 @@ section.checkout_page__content__contact {
           border-radius: 10px;
         }
         &.checked {
+          pointer-events: none;
           box-shadow: inset 0 0 0 1px #005b9d;
           border: 1px solid #005b9d;
         }
@@ -254,6 +255,7 @@ section.checkout_page__content__contact {
           }
         }
         &.checked {
+          pointer-events: none;
           background: #005b9d 0% 0% no-repeat padding-box;
           .logo {
             background: white;
@@ -474,6 +476,7 @@ section.checkout_page__content__contact {
           border-radius: 6px;
         }
         &.checked {
+          pointer-events: none;
           // background: #005b9d 0% 0% no-repeat padding-box;
           label {
             border: 1px solid #005b9d;

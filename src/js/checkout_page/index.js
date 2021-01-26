@@ -1,8 +1,14 @@
 export const useCheckoutPage = () => {
-  function openOne(cls, remove = false) {
+  function openOne(cls, remove = false, toggler = false) {
     document.querySelectorAll(cls).forEach(function (elm) {
       elm.addEventListener('change', function (e) {
         this.parentNode.classList.toggle('checked');
+        if (toggler && !this.parentNode.classList.contains('checked')) {
+          e.preventDefault();
+          this.checked = true;
+          this.parentNode.classList.add('checked');
+          return null;
+        }
         document.querySelectorAll(cls).forEach((other) => {
           if (this !== other) {
             other.checked = false;
@@ -12,22 +18,19 @@ export const useCheckoutPage = () => {
       });
     });
   }
-  // document.querySelectorAll('label').forEach((elm) => {
-  //   elm.addEventListener('change', function (e) {
-  //     this.classList.toggle('checked');
-  //   });
-  // });
 
   //Contact page
-  openOne('.checkout_page__checkbox input', true);
+  openOne('.checkout_page__checkbox input', true, true);
   //Main service
   openOne(
     '.checkout_page__content__contact__manip__chekedbox__box input',
+    true,
     true
   );
   //Pament methods
   openOne(
     '.checkout_page__content__contact__manip__payMethod__elm input',
+    true,
     true
   );
   //Bill checkc

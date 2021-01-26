@@ -116,6 +116,9 @@ $(document).ready(() => {
   }
   headerJS();
   footerJS();
+  if (document.querySelectorAll('.custom-block').length > 0) {
+    typePage = 'page_gabarit';
+  }
   const pageObj = {
     usecase_list: useCasesList,
     product_list_page: useProductList,
