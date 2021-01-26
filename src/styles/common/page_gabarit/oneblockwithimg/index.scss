@@ -1,0 +1,87 @@
+@import '../../../mixins/media';
+@import '../../../mixins/text';
+section.page_gabarit__oneblockwithimg {
+  padding-top: 0;
+  padding-bottom: 80px;
+  background: #ffffff;
+  @include media-tablet {
+    padding-bottom: 40px;
+  }
+  & {
+    &.blue + section {
+      &:not(.page_gabarit__oneblockwithimg) {
+        padding-top: 80px;
+        @include media-tablet {
+          padding-top: 40px;
+        }
+      }
+      &.blue:not(.page_gabarit__oneblockwithimg) {
+        padding-top: 20px;
+        @include media-tablet {
+          padding-top: 10px;
+        }
+      }
+    }
+    & + section {
+      &.blue:not(.page_gabarit__oneblockwithimg) {
+        padding-top: 60px;
+        @include media-tablet {
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+  &.blue {
+    background: #005b9d 0% 0% no-repeat padding-box;
+    padding-top: 60px;
+    @include media-tablet {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+    * {
+      color: white !important;
+    }
+  }
+  @include hblockPAGEGABARIT() {
+    margin-bottom: 15px;
+  }
+  .page_gabarit_oneblockwithimg-wrap {
+    @include media-tablet {
+      width: 90%;
+    }
+    .page_gabarit_oneblockwithimg-block {
+      display: grid;
+      grid-template-columns: 325px 1fr;
+      grid-gap: 40px;
+      @include media-tablet {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+      }
+      img {
+        border-radius: 10px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .page_gabarit_oneblockwithimg-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          font: normal normal 300 18px/23px 'Mulish', sans-serif;
+          letter-spacing: 0px;
+          color: #28373b;
+          opacity: 1;
+          margin-bottom: 20px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          @include media-tablet {
+            font: normal normal normal 14px/18px 'Mulish', sans-serif;
+          }
+        }
+      }
+    }
+  }
+}

@@ -60,6 +60,7 @@ section.checkout_page__stickycont {
         input {
           // margin: var(--gap) 0 0 var(--gap);
           // flex: 1 0 100px;
+          width: 100%;
           padding: 14px 20px;
           background: #ffffff 0% 0% no-repeat padding-box;
           border: 1px solid #bbbbbb;
@@ -70,11 +71,8 @@ section.checkout_page__stickycont {
           color: #333333;
           opacity: 1;
           @include media-forHEADER {
-            width: 100%;
             @media screen and (max-width: 375px) {
               flex: 1;
-              width: 100%;
-              // width: 62%;
               margin: 0;
             }
           }
