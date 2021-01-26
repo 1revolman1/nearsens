@@ -43,6 +43,85 @@ section.page_gabarit__fourblocks {
       color: white !important;
     }
   }
+  &.block-1 {
+    .page_gabarit__fourblocks__wrap {
+      .page_gabarit__fourblocks__wrap__container {
+        justify-content: center;
+        grid-template-columns: 334px;
+        @include media-tablet {
+          grid-template-columns: 280px;
+        }
+      }
+    }
+  }
+  &.block-2 {
+    .page_gabarit__fourblocks__wrap {
+      .page_gabarit__fourblocks__wrap__container {
+        grid-template-columns: repeat(2, minmax(20%, 334px));
+        justify-content: center;
+        gap: 20px 90px;
+        @include media-forHEADER {
+          gap: 20px 5%;
+        }
+        @include media-tablet {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+  &.block-3 {
+    .page_gabarit__fourblocks__wrap {
+      .page_gabarit__fourblocks__wrap__container {
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+        gap: 20px 90px;
+        @include media-forHEADER {
+          gap: 20px 5%;
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .page_gabarit__fourblocks__wrap__elemenet {
+          &:last-of-type {
+            @include media-forHEADER {
+              grid-column: 1/-1;
+              max-width: 50% - (5%-2%);
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.block-4 {
+    .page_gabarit__fourblocks__wrap {
+      .page_gabarit__fourblocks__wrap__container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px 60px;
+        @include media-tablet {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+  &.block-5 {
+    .page_gabarit__fourblocks__wrap {
+      .page_gabarit__fourblocks__wrap__container {
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+        gap: 20px 50px;
+        @include media-forHEADER {
+          gap: 20px 5%;
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .page_gabarit__fourblocks__wrap__elemenet {
+          &:last-of-type {
+            @include media-forHEADER {
+              grid-column: 1/-1;
+              max-width: 50% - (5%-2%);
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
   .page_gabarit__fourblocks__wrap {
     display: flex;
     flex-flow: row wrap;
@@ -64,6 +143,7 @@ section.page_gabarit__fourblocks {
     }
     .page_gabarit__fourblocks__wrap__container {
       width: 100%;
+      grid-template-rows: auto;
       .page_gabarit__fourblocks__wrap__elemenet {
         .page_gabarit__fourblocks__wrap__elemenet__img {
           img {
