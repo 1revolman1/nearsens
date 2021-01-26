@@ -11,6 +11,7 @@ import { useCartPage } from './cart_page';
 import { useHolidayFunc } from './holdayfunctionality';
 import { useCheckoutPage } from './checkout_page';
 import { useMyAccountPage } from './myaccount_page';
+import { usePageGabarit } from './page_gabarit';
 
 function getBodyScrollTop() {
   return (
@@ -115,53 +116,54 @@ $(document).ready(() => {
   }
   headerJS();
   footerJS();
-  // const pageObj = {
-  //   usecase_list: useCasesList(),
-  //   product_list_page: useProductList(),
-  //   product_page: useProductPage(),
-  //   home_page: useHomePage(),
-  //   contact_page: useContactPage(),
-  //   usecase_details: useCasesDetails(),
-  //   signup_page: useSignUpPage(),
-  //   cart_page: useCartPage(),
-  //   checkout_page: useCheckoutPage(),
-  //   my_account: useMyAccountPage(),
-  // };
-  // if (typeof typePage != undefined)
-  //   pageObj[typePage] ? pageObj[typePage]() : console.log(`ELSE PAGE`);
-  switch (typeof typePage != undefined) {
-    case typePage === 'usecase_list':
-      useCasesList();
-      break;
-    case typePage === 'product_list_page':
-      useProductList();
-      break;
-    case typePage === 'product_page':
-      useProductPage();
-      break;
-    case typePage === 'home_page':
-      useHomePage();
-      break;
-    case typePage === 'contact_page':
-      useContactPage();
-      break;
-    case typePage === 'usecase_details':
-      useCasesDetails();
-      break;
-    case typePage === 'signup_page':
-      useSignUpPage();
-      break;
-    case typePage === 'cart_page':
-      useCartPage();
-      break;
-    case typePage === 'checkout_page':
-      useCheckoutPage();
-      break;
-    case typePage === 'my_account':
-      useMyAccountPage();
-      break;
-    default:
-      console.log(`ELSE PAGE`);
-      break;
-  }
+  const pageObj = {
+    usecase_list: useCasesList,
+    product_list_page: useProductList,
+    product_page: useProductPage,
+    home_page: useHomePage,
+    contact_page: useContactPage,
+    usecase_details: useCasesDetails,
+    signup_page: useSignUpPage,
+    cart_page: useCartPage,
+    checkout_page: useCheckoutPage,
+    my_account: useMyAccountPage,
+    page_gabarit: usePageGabarit,
+  };
+  if (typeof typePage != undefined)
+    pageObj[typePage] ? pageObj[typePage]() : console.log(`ELSE PAGE`);
+  // switch (typeof typePage != undefined) {
+  //   case typePage === 'usecase_list':
+  //     useCasesList();
+  //     break;
+  //   case typePage === 'product_list_page':
+  //     useProductList();
+  //     break;
+  //   case typePage === 'product_page':
+  //     useProductPage();
+  //     break;
+  //   case typePage === 'home_page':
+  //     useHomePage();
+  //     break;
+  //   case typePage === 'contact_page':
+  //     useContactPage();
+  //     break;
+  //   case typePage === 'usecase_details':
+  //     useCasesDetails();
+  //     break;
+  //   case typePage === 'signup_page':
+  //     useSignUpPage();
+  //     break;
+  //   case typePage === 'cart_page':
+  //     useCartPage();
+  //     break;
+  //   case typePage === 'checkout_page':
+  //     useCheckoutPage();
+  //     break;
+  //   case typePage === 'my_account':
+  //     useMyAccountPage();
+  //     break;
+  //   default:
+  //     console.log(`ELSE PAGE`);
+  //     break;
+  // }
 });

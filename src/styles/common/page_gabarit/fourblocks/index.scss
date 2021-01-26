@@ -43,7 +43,7 @@ section.page_gabarit__fourblocks {
       color: white !important;
     }
   }
-  &.block-1 {
+  &[data-ammount='1'] {
     .page_gabarit__fourblocks__wrap {
       .page_gabarit__fourblocks__wrap__container {
         justify-content: center;
@@ -54,7 +54,7 @@ section.page_gabarit__fourblocks {
       }
     }
   }
-  &.block-2 {
+  &[data-ammount='2'] {
     .page_gabarit__fourblocks__wrap {
       .page_gabarit__fourblocks__wrap__container {
         grid-template-columns: repeat(2, minmax(20%, 334px));
@@ -69,7 +69,7 @@ section.page_gabarit__fourblocks {
       }
     }
   }
-  &.block-3 {
+  &[data-ammount='3'] {
     .page_gabarit__fourblocks__wrap {
       .page_gabarit__fourblocks__wrap__container {
         grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
@@ -90,7 +90,7 @@ section.page_gabarit__fourblocks {
       }
     }
   }
-  &.block-4 {
+  &[data-ammount='4'] {
     .page_gabarit__fourblocks__wrap {
       .page_gabarit__fourblocks__wrap__container {
         grid-template-columns: repeat(4, 1fr);
@@ -101,7 +101,7 @@ section.page_gabarit__fourblocks {
       }
     }
   }
-  &.block-5 {
+  &[data-ammount='5'] {
     .page_gabarit__fourblocks__wrap {
       .page_gabarit__fourblocks__wrap__container {
         grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
