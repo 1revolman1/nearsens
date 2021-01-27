@@ -29,7 +29,7 @@ export const useCheckoutPage = () => {
   );
   //Pament methods
   openOne(
-    '.checkout_page__content__contact__manip__payMethod__elm input',
+    '.checkout_page__content__contact__manip__payMethod__elm input.input-radio',
     true,
     true
   );

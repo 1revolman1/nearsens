@@ -289,29 +289,56 @@ section.productlist__products {
           }
         }
       }
+      .productlist__products-container-element-disqount {
+        display: block;
+        width: fit-content;
+        width: intrinsic;
+        position: absolute;
+        top: 22px;
+        left: 22px;
+        // right: 22px;
+        z-index: 0;
+        padding: 5px 10px;
+        font: normal normal 300 24px/30px 'Mulish', sans-serif;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+        background: #ffa10a 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        @include media-tablet {
+          font: normal normal 300 16px/20px 'Mulish', sans-serif;
+          left: 5px;
+          top: 5px;
+          right: inherit;
+        }
+      }
       &.with-disqount {
         position: relative;
+      }
+      &.product-out {
+        position: relative;
         .productlist__products-container-element-disqount {
-          display: block;
-          width: fit-content;
-          width: intrinsic;
-          position: absolute;
-          top: 22px;
-          left: 22px;
-          // right: 22px;
-          z-index: 0;
-          padding: 5px 10px;
-          font: normal normal 300 24px/30px 'Mulish', sans-serif;
-          letter-spacing: 0px;
-          color: #ffffff;
-          opacity: 1;
-          background: #ffa10a 0% 0% no-repeat padding-box;
-          border-radius: 10px;
+          background: #c92e2e;
+          display: none;
           @include media-tablet {
-            font: normal normal 300 16px/20px 'Mulish', sans-serif;
-            left: 5px;
-            top: 5px;
-            right: inherit;
+            display: inline;
+          }
+        }
+        .productlist__products-container-element-controller {
+          .productlist__products-container-element-controllers {
+            .productlist__products-container-element-controllers-manipulator {
+              .productlist__products-container-element-controllers-counter {
+                display: none;
+              }
+              .productlist__products-container-element-controllers-shop,
+              .productlist__products-container-element-controllers-successbuying {
+                display: none;
+                @include media-tablet {
+                  display: flex;
+                  visibility: hidden;
+                }
+              }
+            }
           }
         }
       }
@@ -350,7 +377,6 @@ section.productlist__products {
         position: relative;
         max-width: none;
         margin-bottom: 21px;
-        // width: 333px;
         height: 250px;
         @media screen and (max-width: 1180px) {
           max-height: inherit;

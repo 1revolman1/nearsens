@@ -478,7 +478,7 @@ section.checkout_page__content__contact {
         &.checked {
           pointer-events: none;
           // background: #005b9d 0% 0% no-repeat padding-box;
-          label {
+          > label {
             border: 1px solid #005b9d;
             color: white;
             a {

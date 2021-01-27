@@ -59,35 +59,49 @@
             .checkout_page__content__contact__manip__payMethod {
               display: flex;
               flex-direction: column;
-              .wc_payment_method {
-                position: relative;
-                // min-height: 150px;
-                &:hover {
+              &__elm {
+                &.checked {
                   .payment_box {
-                    // display: block !important;
-
-                    // position: absolute;
-                    // top: 145px;
-                    // left: 0;
-                    // width: 150%;
+                    display: block !important;
                   }
                 }
-                // label {
-                //   display: flex;
-                //   flex-direction: column;
-                //   align-items: center;
-                //   width: 100%;
-                //   text-align: center;
-                //   img {
-                //     margin-right: 0;
-                //   }
-                // }
-
-                .payment_box {
-                  margin: 1em 0 0;
-                  //   display: none !important;
-                }
               }
+
+              .payment_box {
+                display: none !important;
+              }
+              // .wc_payment_method {
+              //   position: relative;
+              //   .payment_box {
+              //     display: none;
+              //   }
+              //   // min-height: 150px;
+              //   // &:hover {
+              //   //   .payment_box {
+              //   //     // display: block !important;
+
+              //   //     // position: absolute;
+              //   //     // top: 145px;
+              //   //     // left: 0;
+              //   //     // width: 150%;
+              //   //   }
+              //   // }
+              //   // label {
+              //   //   display: flex;
+              //   //   flex-direction: column;
+              //   //   align-items: center;
+              //   //   width: 100%;
+              //   //   text-align: center;
+              //   //   img {
+              //   //     margin-right: 0;
+              //   //   }
+              //   // }
+
+              //   .payment_box {
+              //     margin: 1em 0 0;
+              //     //   display: none !important;
+              //   }
+              // }
             }
           }
         }
