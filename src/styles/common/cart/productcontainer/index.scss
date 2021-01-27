@@ -243,6 +243,9 @@ section.cart__productcontainer {
         justify-content: center;
         align-items: center;
         grid-area: 1 / 5 / 2 / 6;
+        &.disabled {
+          opacity: 0.6;
+        }
         i {
           cursor: pointer;
           text-stroke: 2px white;

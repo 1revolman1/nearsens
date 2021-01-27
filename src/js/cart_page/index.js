@@ -126,30 +126,37 @@ export const useCartPage = function () {
   $('.cart__productcontainer__container__element__remove i').on(
     'click',
     function () {
-      const container = $(this).parents(
-        '.cart__productcontainer__container__element'
-      );
-      container.hide('slide', 500, function () {
-        if (!container.hasClass('gateway')) {
-          container.remove();
-        }
-        if (
-          document.querySelectorAll(
-            `.cart__productcontainer__container__element:not([style="display:none;"]):not([style="display: none;"])`
-          ).length === 0 &&
-          Number(
-            document.querySelector('.price.total').textContent.replace('€', '.')
-          ) === 0
-        ) {
-          document
-            .querySelectorAll(
-              '.cart__header__wrap__second__containerbutton__btn,.cart__disqount__btn'
-            )
-            .forEach(function (elm) {
-              elm.classList.add('disable-cart-btn');
-            });
-        }
-      });
+      const parent = this.parentElement;
+      if (!parent.classList.contains('disabled')) {
+        const container = $(this).parents(
+          '.cart__productcontainer__container__element'
+        );
+        container.hide('slide', 500, function () {
+          if (!container.hasClass('gateway')) {
+            container.remove();
+          }
+          if (
+            document.querySelectorAll(
+              `.cart__productcontainer__container__element:not([style="display:none;"]):not([style="display: none;"])`
+            ).length === 0 &&
+            Number(
+              document
+                .querySelector('.price.total')
+                .textContent.replace('€', '.')
+            ) === 0
+          ) {
+            document
+              .querySelectorAll(
+                '.cart__header__wrap__second__containerbutton__btn,.cart__disqount__btn'
+              )
+              .forEach(function (elm) {
+                elm.classList.add('disable-cart-btn');
+              });
+          }
+        });
+      } else {
+        console.log('DISABLED');
+      }
     }
   );
   // Show checked
