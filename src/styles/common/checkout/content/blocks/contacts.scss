@@ -362,7 +362,7 @@ section.checkout_page__content__contact {
         // opacity: 1;
         // cursor: pointer;
 
-        label {
+        > label {
           font: normal normal bold 18px/23px 'Mulish', sans-serif;
           position: relative;
           // margin: 11px 0;
@@ -428,7 +428,7 @@ section.checkout_page__content__contact {
         }
         &:hover {
           // border: 1px solid #005b9d;
-          label {
+          > label {
             border: 1px solid #005b9d;
             box-shadow: inset 0 0 0 1px #005b9d;
           }
@@ -480,7 +480,7 @@ section.checkout_page__content__contact {
           border-radius: 6px;
         }
         &.checked {
-          pointer-events: none;
+          // pointer-events: none;
           // background: #005b9d 0% 0% no-repeat padding-box;
           > label {
             border: 1px solid #005b9d;
