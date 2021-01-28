@@ -2,6 +2,31 @@
 @import '../../../utils/variables.scss';
 section.productpage__pageheader {
   background: #f2f2f2;
+  &.product-out {
+    .productpage__pageheader__container {
+      .productpage__pageheader-wrapimgoverlay {
+        .productpage__pageheader-wrap {
+          .productpage__pageheader-wrap-container {
+            .productpage__pageheader-wrap-manipulator {
+              display: grid;
+              grid-template-columns: repeat(2, fit-content(100%));
+              grid-gap: 20px 70px;
+              @include media-tablet {
+                display: flex;
+                grid-template-columns: unset;
+                grid-gap: unset;
+              }
+              p.outstock {
+                @include media-tablet {
+                  align-self: flex-end;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .productpage__pageheader__container {
     overflow: hidden;
     position: relative;
@@ -318,24 +343,32 @@ section.productpage__pageheader {
                 }
               }
             }
-
+            p.outstock {
+              display: flex;
+              align-items: center;
+              height: 55px;
+              font: italic normal normal 18px/22px 'Mulish', sans-serif;
+              letter-spacing: 0px;
+              color: #c92e2e;
+              opacity: 1;
+              @include media-tablet {
+                font: italic normal normal 16px/18px 'Mulish', sans-serif;
+              }
+            }
             .productpage__pageheader-wrap-manipulator-container {
               overflow: hidden;
               position: relative;
-              // max-width:369px;
               width: auto;
               align-items: center;
-              // overflow:auto;
               display: flex;
-              margin-left: auto;
+              // margin-left: auto;
+              margin-left: 70px;
               background: rgba(255, 255, 255, 0.4);
-              // background: #ffffff 0% 0% no-repeat padding-box;
               border-radius: 100px;
               justify-content: space-between;
-              // align-items:flex-start;
-              // width: 100%;
               @include media-forHEADER {
                 @include media-tablet {
+                  margin-left: auto;
                   width: 100%;
                   align-items: center;
                   background: transparent;

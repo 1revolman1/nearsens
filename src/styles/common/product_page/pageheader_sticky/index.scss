@@ -21,6 +21,14 @@ section.productpage__pageheader_sticky {
   &.scroll-to-bottom {
     top: -15px !important;
   }
+  &.product-out {
+    .productpage__pageheader_sticky-wrap {
+      .productpage__pageheader_sticky-wrap-manipulator-container.main-btn,
+      .productpage__pageheader_sticky-wrap-manipulator-container.overlay {
+        display: none;
+      }
+    }
+  }
   @include media-forHEADER {
     top: $additionalNavMenuToTopBIGMENU;
     @include media-tablet {
@@ -44,6 +52,18 @@ section.productpage__pageheader_sticky {
       margin: 0 auto;
       width: 90%;
       overflow: visible;
+    }
+    p.outstock {
+      display: flex;
+      align-items: center;
+      height: 55px;
+      font: italic normal normal 16px/22px 'Mulish', sans-serif;
+      letter-spacing: 0px;
+      color: #c92e2e;
+      opacity: 1;
+      @include media-tablet {
+        font: italic normal normal 12px/18px 'Mulish', sans-serif;
+      }
     }
     .productpage__pageheader_sticky-wrap-containter {
       display: flex;
