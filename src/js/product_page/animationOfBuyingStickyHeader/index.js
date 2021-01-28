@@ -97,18 +97,19 @@ function cartAnimInStickyHeader() {
     .parents('.productpage__pageheader_sticky-wrap-manipulator-data')
     .addClass('show-success');
   const totalPrice = textContainer.text();
-  console.log(
-    +totalPrice === 1
-      ? `${totalPrice} product added to your cart`
-      : `${totalPrice} products added to your cart`
-  );
   infoSuccessHeader.removeClass('unshow');
   infoSuccessHeader
     .find('h3')
     .text(
       +totalPrice === 1
-        ? `${totalPrice} product added to your cart`
-        : `${totalPrice} products added to your cart`
+        ? infoSuccessHeader
+            .find('.template.one')
+            .text()
+            .replace('1 ;', String(totalPrice))
+        : infoSuccessHeader
+            .find('.template.many')
+            .text()
+            .replace('1 ;', String(totalPrice))
     );
   const imgtodrag = $('.productpage__pageheader_sticky-wrap-headblock > img');
   if (imgtodrag) {
@@ -148,11 +149,16 @@ function cartAnimInStickyHeader() {
         .find('.productpage__pageheader_sticky-wrap-manipulator-data .minus')
         .attr('disabled', true);
       setTimeout(() => {
+        const template = containerShown
+          .find(
+            '.productpage__pageheader_sticky-wrap-manipulator-successbuying .template'
+          )
+          .text();
         containerShown
           .find(
             '.productpage__pageheader_sticky-wrap-manipulator-successbuying span'
           )
-          .text('1 new added to cart');
+          .text(template.replace('1 ;', '1'));
       }, 500);
       infoSuccessHeader.addClass('unshow');
     }, 2000);
@@ -188,19 +194,6 @@ export const useBuyingAnimationStickyHeader = function main(element) {
           e.removeAttribute('disabled');
         });
       }
-      // if(+value>=1){
-      //   elm.querySelectorAll("button").forEach((e)=>{
-      //     e.removeAttribute("disabled");
-      //   })
-      //   elm.parentNode.querySelector(".productpage__pageheader_sticky-wrap-manipulator-withprice button").removeAttribute("disabled");
-
-      // }else{
-      //   elm.querySelectorAll(".minus").forEach((e)=>{
-      //     e.setAttribute("disabled","disabled");
-      //   })
-      //   elm.parentNode.querySelector(".productpage__pageheader_sticky-wrap-manipulator-withprice button").setAttribute("disabled","disabled");
-
-      // }
     });
   $(
     '.productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-data .minus'
@@ -213,21 +206,19 @@ export const useBuyingAnimationStickyHeader = function main(element) {
     value -= 1;
     if (value === 1) {
       $(this).attr('disabled', true);
-      //   $(this)
-      //     .parents(
-      //       '.productpage__pageheader_sticky-wrap-manipulator-container.overlay'
-      //     )
-      //     .find(
-      //       '.productpage__pageheader_sticky-wrap-manipulator-withprice button'
-      //     )
-      //     .attr('disabled', true);
     }
     const finalAdd = container
       .parents('.productpage__pageheader_sticky-wrap-manipulator-container')
       .find(
         '.productpage__pageheader_sticky-wrap-manipulator-successbuying p span'
       );
-    finalAdd.text(`${value} new added to cart`);
+    const template = container
+      .parents('.productpage__pageheader_sticky-wrap-manipulator-container')
+      .find(
+        '.productpage__pageheader_sticky-wrap-manipulator-successbuying .template'
+      )
+      .text();
+    finalAdd.text(template.replace('1 ;', String(value)));
     counter.text(value);
   });
   $(
@@ -255,7 +246,13 @@ export const useBuyingAnimationStickyHeader = function main(element) {
       .find(
         '.productpage__pageheader_sticky-wrap-manipulator-successbuying p span'
       );
-    finalAdd.text(`${value} new added to cart`);
+    const template = container
+      .parents('.productpage__pageheader_sticky-wrap-manipulator-container')
+      .find(
+        '.productpage__pageheader_sticky-wrap-manipulator-successbuying .template'
+      )
+      .text();
+    finalAdd.text(template.replace('1 ;', String(value)));
     counter.text(value);
   });
 };

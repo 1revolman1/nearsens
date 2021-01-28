@@ -29,8 +29,14 @@ function cartAnim() {
     .find('h3')
     .text(
       +totalPrice === 1
-        ? `${totalPrice} product added to your cart`
-        : `${totalPrice} products added to your cart`
+        ? infoSuccessHeader
+            .find('.template.one')
+            .text()
+            .replace('1 ;', String(totalPrice))
+        : infoSuccessHeader
+            .find('.template.many')
+            .text()
+            .replace('1 ;', String(totalPrice))
     );
   if (imgtodrag) {
     const imgclone = imgtodrag
@@ -72,11 +78,16 @@ function cartAnim() {
         )
         .attr('disabled', true);
       setTimeout(() => {
+        const template = containerShown
+          .find(
+            '.productlist__products-container-element-controllers-successbuying .template'
+          )
+          .text();
         containerShown
           .find(
             '.productlist__products-container-element-controllers-successbuying .desktop'
           )
-          .text('1 new added to cart');
+          .text(template.replace('1 ;', '1'));
       }, 500);
       infoSuccessHeader.addClass('unshow');
     }, 2000);
@@ -180,21 +191,19 @@ export const useProductPage = function main() {
       value -= 1;
       if (value === 1) {
         $(this).attr('disabled', true);
-        // $(this)
-        //   .parents(
-        //     '.productlist__products-container-element-controllers-manipulator'
-        //   )
-        //   .find(
-        //     '.productlist__products-container-element-controllers-shop button'
-        //   )
-        //   .attr('disabled', true);
       }
       const finalAdd = container
         .parents(
           '.productlist__products-container-element-controllers-manipulator'
         )
         .find('.desktop');
-      finalAdd.text(`${value} new added to cart`);
+      const template = container
+        .parents(
+          '.productlist__products-container-element-controllers-manipulator'
+        )
+        .find('.template')
+        .text();
+      finalAdd.text(template.replace('1 ;', String(value)));
       counter.text(value);
     }
   );
@@ -223,7 +232,13 @@ export const useProductPage = function main() {
           '.productlist__products-container-element-controllers-manipulator'
         )
         .find('.desktop');
-      finalAdd.text(`${value} new added to cart`);
+      const template = container
+        .parents(
+          '.productlist__products-container-element-controllers-manipulator'
+        )
+        .find('.template')
+        .text();
+      finalAdd.text(template.replace('1 ;', String(value)));
       counter.text(value);
     }
   );
@@ -265,45 +280,9 @@ export const useProductPage = function main() {
       popUp.classList.add('isOpen');
     });
   }
-  // popUp.querySelector(".productpage__pageheader_sticky-wrap-manipulator-withprice").addEventListener("click",cartAnimInStickyHeader)
   const observer = new IntersectionObserver(onScrollChange, options);
   const target = document.querySelector('section.productpage__pageheader');
   if (target) observer.observe(target);
-
-  //SLICk
-
-  // if (
-  //   window.innerWidth >= 768 &&
-  //   $(
-  //     '.productlist__products-container .productlist__products-container-element'
-  //   ).length > 3
-  // ) {
-  //   $('.productlist__products-container').slick({
-  //     slidesToShow: 3,
-  //     speed: 500,
-  //     dots: true,
-  //     cssEase: 'linear',
-  //     swipeToSlide: true,
-  //     responsive: [
-  //       {
-  //         breakpoint: 1200,
-  //         settings: {
-  //           slidesToShow: 2,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 850,
-  //         settings: {
-  //           slidesToShow: 1,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 769,
-  //         settings: 'unslick',
-  //       },
-  //     ],
-  //   });
-  // }
   document.querySelectorAll('.accordion').forEach((elm) => {
     elm.addEventListener('click', function () {
       this.classList.toggle('active');

@@ -17,10 +17,11 @@ function cartHeaderAnim() {
   );
   const value = Number(counter.text());
   const finalAdd = container.find(
-    '.productpage__pageheader-wrap-manipulator-successbuying p span'
+    '.productpage__pageheader-wrap-manipulator-successbuying'
   );
-  finalAdd.text(`${value} new added to cart`);
-
+  finalAdd
+    .find('p span')
+    .text(finalAdd.find('.template').text().replace('1 ;', String(value)));
   //SHOW SUCCESS BUYING ICON
   $(this)
     .parents('.productpage__pageheader-wrap-manipulator-container')
@@ -29,9 +30,15 @@ function cartHeaderAnim() {
   infoSuccessHeader
     .find('h3')
     .text(
-      +value === 1
-        ? `${value} product added to your cart`
-        : `${value} products added to your cart`
+      +totalPrice === 1
+        ? infoSuccessHeader
+            .find('.template.one')
+            .text()
+            .replace('1 ;', String(totalPrice))
+        : infoSuccessHeader
+            .find('.template.many')
+            .text()
+            .replace('1 ;', String(totalPrice))
     );
   const imgtodrag = $(this)
     .parents('.productpage__pageheader-wrap-container')
@@ -75,11 +82,16 @@ function cartHeaderAnim() {
         .find('.productpage__pageheader-wrap-manipulator-data .minus')
         .attr('disabled', true);
       setTimeout(() => {
+        const template = containerShown
+          .find(
+            '.productpage__pageheader_sticky-wrap-manipulator-successbuying .template'
+          )
+          .text();
         containerShown
           .find(
-            '.productlist__products-container-element-controllers-successbuying .desktop'
+            '.productpage__pageheader_sticky-wrap-manipulator-successbuying span'
           )
-          .text('1 new added to cart');
+          .text(template.replace('1 ;', '1'));
       }, 500);
       infoSuccessHeader.addClass('unshow');
     }, 2000);
@@ -153,13 +165,7 @@ export const useBuyingAnimationHeader = function main() {
     value -= 1;
     if (value === 1) {
       $(this).attr('disabled', true);
-      // $(this)
-      //   .parents('.productpage__pageheader-wrap-manipulator-container')
-      //   .find('.productpage__pageheader-wrap-manipulator-withprice button')
-      //   .attr('disabled', true);
     }
-    // const finalAdd=container.parents(".productpage__pageheader-wrap-manipulator-container").find(".productpage__pageheader-wrap-manipulator-successbuying").find("p span")
-    // finalAdd.text(`${value} new added to cart`)
     counter.text(value);
   });
   $(
@@ -178,9 +184,6 @@ export const useBuyingAnimationHeader = function main() {
         .find('.productpage__pageheader-wrap-manipulator-withprice button')
         .attr('disabled', false);
     }
-    // const finalAdd=container.parents(".productpage__pageheader-wrap-manipulator-container").find(".productpage__pageheader-wrap-manipulator-successbuying ").find("p span")
-    // console.log(finalAdd)
-    // finalAdd.text(`${value} new added to cart`)
     counter.text(value);
   });
 };

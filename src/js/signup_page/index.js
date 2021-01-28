@@ -1,9 +1,5 @@
 function selectorFunc() {
   for (const dropdown of document.querySelectorAll('.custom-select-wrapper')) {
-    // const widthDropdownBlock=dropdown?.querySelector(".custom-options")?.getBoundingClientRect()?.width
-    // dropdown.setAttribute("data-size",widthDropdownBlock);
-    // dropdown.style.width=`${dropdown.getBoundingClientRect().width}px`
-    // const initialWidth=dropdown.getBoundingClientRect()?.width
     dropdown.addEventListener('click', function () {
       const listOfAll = document.querySelectorAll(
         '.custom-select-wrapper.open'
@@ -11,10 +7,6 @@ function selectorFunc() {
       if (listOfAll.length > 0 && !dropdown.classList.contains('open'))
         listOfAll.forEach((opened) => opened.classList.toggle('open'));
       this.classList.toggle('open');
-      // if(dropdown.classList.contains("open"))
-      //     dropdown.style.width=`${this.dataset.size}px`;
-      // else dropdown.style.width=`${initialWidth}px`;
-      // this.querySelector('.custom-select').classList.toggle('open');
     });
   }
   window.addEventListener('click', function (e) {

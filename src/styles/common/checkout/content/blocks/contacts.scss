@@ -369,7 +369,7 @@ section.checkout_page__content__contact {
           padding: 11px;
           align-items: center;
           display: grid;
-          grid-template-columns: repeat(2, fit-content(100%));
+          grid-template-columns: repeat(3, fit-content(100%));
           grid-column-gap: 10px;
           align-items: flex-start;
           background: #ffffff 0% 0% no-repeat padding-box;
@@ -387,6 +387,10 @@ section.checkout_page__content__contact {
           img {
             display: none;
           }
+        }
+        i {
+          font-size: 26px;
+          margin-right: 20px;
         }
         img {
           width: 26px;

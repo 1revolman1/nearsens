@@ -22,14 +22,22 @@ section.checkout_page__content__contact
         h3 Payment method
     .checkout_page__content__contact__manip
         .checkout_page__content__contact__manip__payMethod
-            each val in [1,2,3]
-                label.checkout_page__content__contact__manip__payMethod__elm
-                    //- .logo
-                    img(src="https://thumbs.dreamstime.com/b/parcel-icon-trendy-logo-concept-white-background-delivery-logistics-collection-suitable-use-web-apps-mobile-print-131189753.jpg", alt="")
-                    p 48h shipping
-                    input(type='checkbox')
-                    span.checkmark
-                    span.border
+            label.checkout_page__content__contact__manip__payMethod__elm
+                //- .logo
+                i.fab.fa-cc-paypal
+                //- img(src="https://thumbs.dreamstime.com/b/parcel-icon-trendy-logo-concept-white-background-delivery-logistics-collection-suitable-use-web-apps-mobile-print-131189753.jpg", alt="")
+                p 48h shipping
+                input(type='checkbox')
+                span.checkmark
+                span.border
+            label.checkout_page__content__contact__manip__payMethod__elm
+                //- .logo
+                i.fab.fa-cc-stripe
+                //- img(src="https://thumbs.dreamstime.com/b/parcel-icon-trendy-logo-concept-white-background-delivery-logistics-collection-suitable-use-web-apps-mobile-print-131189753.jpg", alt="")
+                p 48h shipping
+                input(type='checkbox')
+                span.checkmark
+                span.border
         p Additional text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde magnam culpa dolorem porro aliquam. Nemo quae suscipit vitae, hic, nulla ad, explicabo cumque voluptates dicta veniam odio culpa voluptate magni.
         .checkout_page__content__contact__manip__btncont
                 a.checkout_page__content__contact__manip__btn PAY

@@ -61,8 +61,14 @@ export const useCasesDetails = function main() {
       .find('h3')
       .text(
         +totalPrice === 1
-          ? `${totalPrice} product added to your cart`
-          : `${totalPrice} products added to your cart`
+          ? infoSuccessHeader
+              .find('.template.one')
+              .text()
+              .replace('1 ;', String(totalPrice))
+          : infoSuccessHeader
+              .find('.template.many')
+              .text()
+              .replace('1 ;', String(totalPrice))
       );
     // const counters = curerentBlocks.find('.counter');
     // const mimusBtn = curerentBlocks.find('.minus');
@@ -102,22 +108,7 @@ export const useCasesDetails = function main() {
             height: 30,
           },
           1000,
-          'easeInOutExpo',
-          function () {
-            // const curerentBlocks = $(
-            //   '.usecase_details__blockwithbuyabbility-wrap__element .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator'
-            // );
-            // const counters = curerentBlocks.find('.counter');
-            // const mimusBtn = curerentBlocks.find('.minus');
-            // [...counters].forEach((elm, index) => {
-            //   if (elm.textContent <= 1) {
-            //     console.log(elm, mimusBtn, counters);
-            //     mimusBtn.eq(index).attr('disabled', true);
-            //   } else {
-            //     mimusBtn.eq(index).attr('disabled', false);
-            //   }
-            // });
-          }
+          'easeInOutExpo'
         );
       //SHAKE ANIM
 
