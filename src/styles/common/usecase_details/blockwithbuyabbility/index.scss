@@ -144,6 +144,19 @@ section.usecase_details__blockwithbuyabbility {
               padding-left: 46px;
               justify-content: flex-start;
             }
+            p.outstock {
+              display: flex;
+              align-items: center;
+              height: 55px;
+              font: italic normal bold 16px/22px 'Mulish', sans-serif;
+              letter-spacing: 0px;
+              color: white;
+              opacity: 1;
+              @include media-tablet {
+                height: auto;
+                font: italic normal bold 12px/18px 'Mulish', sans-serif;
+              }
+            }
             .usecase_details__blockwithbuyabbility-wrap__element-content-manipulator-price {
               flex: 1;
               display: flex;
