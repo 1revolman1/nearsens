@@ -65,11 +65,11 @@ section.productlist__products
                                     i(class="fas fa-check")
                                     span.desktop 1 new added to cart
                                 .template(style='display: none') 1 ; new added to cart
-        .productlist__products-container-element.product-out
+        .productlist__products-container-element.product-out.with-disqount
             .productlist__products-container-element-imgcontainer
                 picture
                     img(src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg", alt="")
-            span.productlist__products-container-element-disqount Out of stock
+            span.productlist__products-container-element-disqount -50%
             .productlist__products-container-element-controller
                 .productlist__products-container-element-text
                     h3 Product name on two lines for example Product name on two lines for example Product name on two lines for example Product name on two lines for example Product name on two lines for example Product name on two lines for example
@@ -81,21 +81,8 @@ section.productlist__products
                         span.price 89
                             sup €99
                     .productlist__products-container-element-controllers-manipulator
-                        p.outstock.desktop Temporarily out of stock.
-                        .productlist__products-container-element-controllers-counter
-                            button.button.minus(disabled): i(class="fas fa-minus")
-                            span 1
-                            button.button.plus: i(class="fas fa-plus")
-                        .productlist__products-container-element-controllers-shop
-                            button.buy-button 
-                                i(class="fas fa-shopping-basket")
-                        .productlist__products-container-element-controllers-successbuying
-                            p 
-                                span.mobile +1
-                                i(class="fas fa-check")
-                                span.desktop 2 new added to cart
-                            .template(style='display: none') 1 ; new added to cart
-        .productlist__products-container-element.product-out.big-block
+                        p.outstock En rupture de stock
+        .productlist__products-container-element.product-out.big-block.with-disqount
             .productlist__products-container-element-imgcontainer
                 picture
                     source(media='(max-width:735px)' srcset='http://nearsens.urich.work/wp-content/uploads/2020/12/Keypad_productimage_999.jpg')
@@ -104,7 +91,7 @@ section.productlist__products
                     .productlist__products-container-element-text
                         h3 Product name on two lines for example
                         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id lorem et risus cursus imperdiet. Etiam dapibus diam condimentum, sagittis est nec, convallis nulla. Nulla non rhoncus dolor, euismod imperdiet quam. Quisque sed massa ac est tristique accumsan quis ac nisi.
-            span.productlist__products-container-element-disqount Out of stock
+            span.productlist__products-container-element-disqount -50%
             .productlist__products-container-element-controller
                 .productlist__products-container-element-text
                     h3 Product name on two lines for example
@@ -116,17 +103,4 @@ section.productlist__products
                         span.price 89
                             sup €99
                     .productlist__products-container-element-controllers-manipulator
-                        p.outstock.desktop Temporarily out of stock.
-                        .productlist__products-container-element-controllers-counter
-                            button.button.minus(disabled): i(class="fas fa-minus")
-                            span 1
-                            button.button.plus: i(class="fas fa-plus")
-                        .productlist__products-container-element-controllers-shop
-                            button.buy-button 
-                                i(class="fas fa-shopping-basket")
-                        .productlist__products-container-element-controllers-successbuying
-                            p 
-                                span.mobile +1
-                                i(class="fas fa-check")
-                                span.desktop 2 new added to cart
-                            .template(style='display: none') 1 ; new added to cart
+                        p.outstock En rupture de stock
