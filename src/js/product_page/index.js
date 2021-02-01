@@ -135,11 +135,16 @@ export const useProductPage = function main() {
   useBuyingAnimationHeader();
 
   //Activate functionality of buying animation in sticky header
-  useBuyingAnimationStickyHeader(popUp);
+  if (
+    !document
+      .querySelector('.productpage__pageheader_sticky')
+      .classList.contains('product-out')
+  )
+    useBuyingAnimationStickyHeader(popUp);
 
   document
     .querySelectorAll(
-      '.productlist__products-container-element-controllers-manipulator'
+      '.productlist__products-container-element:not(.product-out) .productlist__products-container-element-controllers-manipulator'
     )
     .forEach(function (elm) {
       const value = elm.querySelector(
