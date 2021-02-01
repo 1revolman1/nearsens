@@ -46,8 +46,70 @@ function selectorFunc() {
     });
   }
 }
+function checkIfNotValid() {
+  const scrollToThis = document.querySelector('.signuppage__container h2');
+  const inputs = {
+    name: {
+      selector:
+        ".loginpage__container__block__manipulator input[name='username']",
+      func: function ValidateName(name) {
+        if (/^([\d\w]{2,})$/.test(name)) {
+          return true;
+        }
+        return false;
+      },
+    },
+    email: {
+      selector: ".loginpage__container__block__manipulator input[name='email']",
+      func: function ValidateEmail(mail) {
+        if (
+          /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/.test(
+            mail
+          )
+        ) {
+          return true;
+        }
+        return false;
+      },
+    },
+    password: {
+      selector:
+        ".loginpage__container__block__manipulator input[name='password']",
+      func: function ValidatePassword(password) {
+        return true;
+      },
+    },
+  };
+  let finalString = Object.keys(inputs)
+    .map(function (elm) {
+      return inputs[elm].selector;
+    })
+    .join(',');
+  let functionalArray = Object.keys(inputs).map(function (elm) {
+    return inputs[elm].func;
+  });
+  // let finalString = Object.values(inputs).join(',');
+  document
+    .querySelector(".signuppage__container__block__email button[type='submit']")
+    .addEventListener('click', function (event) {
+      event.preventDefault();
+      const isSomeElementEmpty = [
+        ...document.querySelectorAll(finalString),
+      ].some(
+        (elm, index) =>
+          elm.value.length === 0 || !functionalArray[index](String(elm.value))
+      );
+      if (isSomeElementEmpty) {
+        setTimeout(() => {
+          scrollToThis.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        }, 200);
+        // scrollToThis.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    });
+}
 
 export const useSignUpPage = function () {
   console.log('signup_page');
   selectorFunc();
+  checkIfNotValid();
 };
