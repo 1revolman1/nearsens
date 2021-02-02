@@ -111,8 +111,71 @@ section.checkout_page__stickycont {
         }
       }
     }
+
     .checkout_page__stickycont__block__delay {
       padding-bottom: 14px;
+      .checkout_page__stickycont__block__delay__chekedboxAccept {
+        position: relative;
+        display: grid;
+        grid-template-columns: 35px 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        position: relative;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font: normal normal 300 18px/23px 'Mulish', sans-serif;
+        letter-spacing: 0px;
+        color: #28373b;
+        opacity: 1;
+        .text {
+          display: inline-block;
+          align-items: center;
+          a {
+            color: #045d9e;
+            text-decoration: underline;
+          }
+        }
+        user-select: none;
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+          &:checked {
+            ~ {
+              .checkmark {
+                &:after {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        .checkmark {
+          position: relative;
+          width: 35px;
+          height: 35px;
+          grid-area: 1 / 1 / 2 / 2;
+          background: #eeeeee 0% 0% no-repeat padding-box;
+          border: 1px solid #bbbbbb;
+          border-radius: 6px;
+          opacity: 1;
+          &:after {
+            content: '';
+            position: absolute;
+            display: none;
+            left: 50%;
+            top: 50%;
+            width: 13px;
+            height: 20px;
+            border: solid #005b9d;
+            border-width: 0 4px 4px 0;
+            transform: translate(-50%, -65%) rotate(45deg);
+          }
+        }
+      }
     }
     .checkout_page__stickycont__block__finalprice {
       .checkout_page__stickycont__block__finalprice__price {
