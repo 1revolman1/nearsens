@@ -44,8 +44,7 @@ section.page_garbit__bluelinkcards {
     }
   }
   .page_garbit__bluelinkcards__wrap {
-    display: flex;
-    flex-flow: column wrap;
+    display: grid;
     @include media-tablet {
       width: 90%;
       margin: 0 auto;

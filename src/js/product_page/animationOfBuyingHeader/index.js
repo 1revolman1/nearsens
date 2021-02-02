@@ -30,15 +30,15 @@ function cartHeaderAnim() {
   infoSuccessHeader
     .find('h3')
     .text(
-      +totalPrice === 1
+      +value === 1
         ? infoSuccessHeader
             .find('.template.one')
             .text()
-            .replace('1 ;', String(totalPrice))
+            .replace('1 ;', String(value))
         : infoSuccessHeader
             .find('.template.many')
             .text()
-            .replace('1 ;', String(totalPrice))
+            .replace('1 ;', String(value))
     );
   const imgtodrag = $(this)
     .parents('.productpage__pageheader-wrap-container')
