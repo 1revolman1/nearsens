@@ -239,6 +239,10 @@ section.checkout_page__stickycont {
         padding: 14px 30px;
         outline: none;
         text-transform: uppercase;
+        &.disabled {
+          pointer-events: none;
+          opacity: 0.7;
+        }
       }
     }
   }

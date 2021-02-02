@@ -23,6 +23,7 @@
   }
   &__container {
     position: relative;
+    min-height: 100vh;
     display: grid;
     grid-auto-flow: row dense;
     grid-template-columns: repeat(auto-fit, minmax(312px, 1fr)) minmax(
