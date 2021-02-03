@@ -2,14 +2,29 @@
 @import '../../../mixins/text';
 
 section.page_gabarit__pageheader {
+  padding-top: 0;
+  padding-bottom: 80px;
   margin-bottom: 0;
-  padding: 50px 0;
   @include media-tablet {
-    padding: 0;
+    padding-bottom: 40px;
     // margin-bottom: 40px;
   }
   & {
-    & + section {
+    &.gray + section {
+      &:not(.page_gabarit__pageheader) {
+        padding-top: 80px;
+        @include media-tablet {
+          padding-top: 40px;
+        }
+      }
+      &.gray:not(.page_gabarit__pageheader) {
+        padding-top: 20px;
+        @include media-tablet {
+          padding-top: 10px;
+        }
+      }
+    }
+    &.blue + section {
       &:not(.page_gabarit__pageheader) {
         padding-top: 80px;
         @include media-tablet {
@@ -17,7 +32,14 @@ section.page_gabarit__pageheader {
         }
       }
       &.blue:not(.page_gabarit__pageheader) {
-        // padding-top: 80px - 20px;
+        padding-top: 20px;
+        @include media-tablet {
+          padding-top: 10px;
+        }
+      }
+    }
+    & + section {
+      &.blue:not(.page_gabarit__pageheader) {
         padding-top: 60px;
         @include media-tablet {
           padding-top: 30px;

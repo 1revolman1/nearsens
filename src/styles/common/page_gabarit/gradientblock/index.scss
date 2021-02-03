@@ -1,0 +1,118 @@
+section.page_gabarit__gradientblock {
+  padding-top: 0;
+  padding-bottom: 80px;
+  background: white;
+  @include media-tablet {
+    padding-bottom: 40px;
+  }
+  & {
+    &.gray + section {
+      &:not(.page_gabarit__gradientblock) {
+        padding-top: 80px;
+        @include media-tablet {
+          padding-top: 40px;
+        }
+      }
+      &.gray:not(.page_gabarit__gradientblock) {
+        padding-top: 20px;
+        @include media-tablet {
+          padding-top: 10px;
+        }
+      }
+    }
+    &.blue + section {
+      &:not(.page_gabarit__gradientblock) {
+        padding-top: 80px;
+        @include media-tablet {
+          padding-top: 40px;
+        }
+      }
+      &.blue:not(.page_gabarit__gradientblock) {
+        padding-top: 20px;
+        @include media-tablet {
+          padding-top: 10px;
+        }
+      }
+    }
+    & + section {
+      &.blue:not(.page_gabarit__gradientblock) {
+        padding-top: 60px;
+        @include media-tablet {
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+  &.blue {
+    background: #005b9d 0% 0% no-repeat padding-box;
+    padding-top: 60px;
+    @include media-tablet {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+    * {
+      color: white !important;
+    }
+    .productpage__pageheader__container {
+      margin: 0 auto;
+      &::before {
+        @media screen and (min-width: 1921px) {
+          background: transparent
+            linear-gradient(90deg, #005b9d 0%, #f0f0f000 100%) 0% 0% no-repeat
+            padding-box;
+        }
+      }
+      &::after {
+        @media screen and (min-width: 1921px) {
+          background: transparent
+            linear-gradient(90deg, #005b9d 0%, #f0f0f000 100%) 0% 0% no-repeat
+            padding-box;
+        }
+      }
+    }
+  }
+  &.gray {
+    background: #f2f2f2 0% 0% no-repeat padding-box;
+    padding-top: 60px;
+    @include media-tablet {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+    * {
+      color: #28373b !important;
+    }
+    .productpage__pageheader__container {
+      margin: 0 auto;
+      &::before {
+        @media screen and (min-width: 1921px) {
+          background: transparent
+            linear-gradient(90deg, #f2f2f2 0%, #f0f0f000 100%) 0% 0% no-repeat
+            padding-box;
+        }
+      }
+      &::after {
+        @media screen and (min-width: 1921px) {
+          background: transparent
+            linear-gradient(90deg, #f2f2f2 0%, #f0f0f000 100%) 0% 0% no-repeat
+            padding-box;
+        }
+      }
+    }
+  }
+
+  .productpage__pageheader__container {
+    margin: 0 auto;
+    &::before {
+      @media screen and (min-width: 1921px) {
+        background: transparent linear-gradient(90deg, white 0%, #f0f0f000 100%)
+          0% 0% no-repeat padding-box;
+      }
+    }
+    &::after {
+      @media screen and (min-width: 1921px) {
+        background: transparent linear-gradient(90deg, white 0%, #f0f0f000 100%)
+          0% 0% no-repeat padding-box;
+      }
+    }
+  }
+}
