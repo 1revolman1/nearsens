@@ -4,6 +4,9 @@ section.signuppage__container {
   padding-bottom: 120px;
   .loginpage__container__block {
     .loginpage__container__block__manipulator {
+      .error-input {
+        border: 1px solid red;
+      }
       .custom-select-wrapper {
         flex: none;
         width: 100%;

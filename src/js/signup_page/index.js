@@ -49,34 +49,26 @@ function selectorFunc() {
 function checkIfNotValid() {
   const scrollToThis = document.querySelector('.signuppage__container h2');
   const inputs = {
-    name: {
+    username: {
       selector:
         ".loginpage__container__block__manipulator input[name='username']",
       func: function ValidateName(name) {
-        if (/^([\d\w]{2,})$/.test(name)) {
-          return true;
-        }
-        return false;
+        return /^([\d\w]{2,})$/.test(name);
       },
     },
     email: {
       selector: ".loginpage__container__block__manipulator input[name='email']",
       func: function ValidateEmail(mail) {
-        if (
-          /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/.test(
-            mail
-          )
-        ) {
-          return true;
-        }
-        return false;
+        return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/.test(
+          mail
+        );
       },
     },
     password: {
       selector:
         ".loginpage__container__block__manipulator input[name='password']",
       func: function ValidatePassword(password) {
-        return true;
+        return /^([\d\w]{4,})$/.test(password);
       },
     },
   };
@@ -85,21 +77,38 @@ function checkIfNotValid() {
       return inputs[elm].selector;
     })
     .join(',');
-  let functionalArray = Object.keys(inputs).map(function (elm) {
-    return inputs[elm].func;
+  const ourInputs = [...document.querySelectorAll(finalString)];
+  let functionalArray = ourInputs.map(function (elm) {
+    return inputs[elm.getAttribute('name')].func;
   });
-  // let finalString = Object.values(inputs).join(',');
+  //Make blur event on input
+  ourInputs.forEach(function (elm, index) {
+    elm.addEventListener('blur', function () {
+      if (functionalArray[index](String(elm.value))) {
+        elm.classList.remove('error-input');
+      } else {
+        elm.classList.add('error-input');
+      }
+    });
+  });
+  //Make click event on btn
+
   document
     .querySelector(".signuppage__container__block__email button[type='submit']")
     .addEventListener('click', function (event) {
       event.preventDefault();
-      const isSomeElementEmpty = [
-        ...document.querySelectorAll(finalString),
-      ].some(
-        (elm, index) =>
-          elm.value.length === 0 || !functionalArray[index](String(elm.value))
+      const erroredElements = ourInputs.filter(
+        (elm, index) => !functionalArray[index](String(elm.value))
       );
-      if (isSomeElementEmpty) {
+      erroredElements.forEach(function (elm) {
+        elm.classList.add('error-input');
+        const listener = function () {
+          elm.classList.remove('error-input');
+          elm.oninput = null;
+        };
+        elm.oninput = listener;
+      });
+      if (erroredElements.length > 0) {
         setTimeout(() => {
           scrollToThis.scrollIntoView({ block: 'center', behavior: 'smooth' });
         }, 200);
