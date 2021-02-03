@@ -1,0 +1,7 @@
+@import '../../../mixins/media';
+@import '../../../mixins/text';
+.woocommerce__paymethod {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
