@@ -372,14 +372,14 @@ export const useProductList = function main() {
       counter.text(value);
     }
   );
-  // $('.productlist__products-container-element-controllers-shop button').on(
-  //   'buyingLogic',
-  //   cartAnim
-  // );
   $('.productlist__products-container-element-controllers-shop button').on(
-    'click',
+    'buyingLogic',
     cartAnim
   );
+  // $('.productlist__products-container-element-controllers-shop button').on(
+  //   'click',
+  //   cartAnim
+  // );
 
   function settingsSlick(length) {
     let slidesToShow;

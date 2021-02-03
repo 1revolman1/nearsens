@@ -159,31 +159,17 @@ export const useProductPage = function main() {
           e.removeAttribute('disabled');
         });
       }
-      // if (+value >= 1) {
-      //   elm.querySelectorAll('button').forEach((e) => {
-      //     e.removeAttribute('disabled');
-      //   });
-      //   elm
-      //     .querySelector(
-      //       '.productlist__products-container-element-controllers-shop button'
-      //     )
-      //     .removeAttribute('disabled');
-      // } else {
-      //   elm.querySelectorAll('.minus').forEach((e) => {
-      //     e.setAttribute('disabled', 'disabled');
-      //   });
-      //   elm
-      //     .querySelector(
-      //       '.productlist__products-container-element-controllers-shop button'
-      //     )
-      //     .setAttribute('disabled', 'disabled');
-      // }
     });
 
   $('.productlist__products-container-element-controllers-shop button').on(
-    'click',
+    'buyingLogic',
     cartAnim
   );
+
+  // $('.productlist__products-container-element-controllers-shop button').on(
+  //   'click',
+  //   cartAnim
+  // );
 
   $('.productlist__products-container-element-controllers-counter .minus').on(
     'click',
