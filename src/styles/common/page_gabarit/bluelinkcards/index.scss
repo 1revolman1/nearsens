@@ -1,7 +1,6 @@
 @import '../../../mixins/media';
 @import '../../../mixins/text';
 section.page_garbit__bluelinkcards {
-  background: #005b9d 0% 0% no-repeat padding-box;
   opacity: 1;
   padding-bottom: 80px;
   @include media-tablet {
@@ -38,6 +37,14 @@ section.page_garbit__bluelinkcards {
     }
     padding-bottom: 60px;
     padding-top: 60px;
+    .page_garbit__bluelinkcards__wrap {
+      .page_garbit__bluelinkcards__wrap__manipulatorcontainer {
+        .page_garbit__bluelinkcards__wrap__manipulatorcontainer__btn {
+          color: #ffffff;
+          border: 1px solid #ffffff;
+        }
+      }
+    }
     @include media-tablet {
       padding-bottom: 30px;
       padding-top: 30px;
@@ -58,7 +65,8 @@ section.page_garbit__bluelinkcards {
       p {
         font: normal normal 300 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
-        color: #ffffff;
+        color: #333;
+        // color: #ffffff;
         opacity: 1;
         margin-bottom: 30px;
         @include media-tablet {
@@ -104,7 +112,8 @@ section.page_garbit__bluelinkcards {
           p {
             font: normal normal 300 18px/23px 'Mulish', sans-serif;
             letter-spacing: 0px;
-            color: #ffffff;
+            color: #333;
+            // color: #ffffff;
             opacity: 1;
             @include media-tablet {
               font: normal normal normal 14px/18px 'Mulish', sans-serif;
@@ -119,12 +128,12 @@ section.page_garbit__bluelinkcards {
         padding: 9px 30px;
         font: normal normal bold 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
-        color: #ffffff;
         opacity: 1;
-        border: 1px solid #ffffff;
+        color: #2ec9ad;
+        background: transparent;
+        border: 1px solid #2ec9ad;
         border-radius: 40px;
         opacity: 1;
-        background: #005b9d;
         cursor: pointer;
         @include media-tablet {
           padding: 9px 20px;

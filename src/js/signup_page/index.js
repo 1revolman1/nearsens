@@ -48,19 +48,22 @@ function selectorFunc() {
 }
 function checkIfNotValid() {
   const scrollToThis = document.querySelector('.signuppage__container h2');
+  const createAccountBtn = document.querySelector(
+    '.signuppage__container__block__email button'
+  );
   const inputs = {
     username: {
       selector:
         ".loginpage__container__block__manipulator input[name='username']",
       func: function ValidateName(name) {
-        return /^([\d\w]{2,})$/.test(name);
+        return /^([\d\w]{2,})$/.test(String(name.value));
       },
     },
     email: {
       selector: ".loginpage__container__block__manipulator input[name='email']",
       func: function ValidateEmail(mail) {
         return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/.test(
-          mail
+          String(mail.value)
         );
       },
     },
@@ -68,7 +71,14 @@ function checkIfNotValid() {
       selector:
         ".loginpage__container__block__manipulator input[name='password']",
       func: function ValidatePassword(password) {
-        return /^([\d\w]{4,})$/.test(password);
+        return /^([\d\w]{4,})$/.test(String(password.value));
+      },
+    },
+    checkbox: {
+      selector:
+        ".signuppage__container__block__checkbox input[name='checkbox']",
+      func: function ValidateCheckbox(elm) {
+        return elm.checked;
       },
     },
   };
@@ -81,13 +91,17 @@ function checkIfNotValid() {
   let functionalArray = ourInputs.map(function (elm) {
     return inputs[elm.getAttribute('name')].func;
   });
+
   //Make blur event on input
   ourInputs.forEach(function (elm, index) {
     elm.addEventListener('blur', function () {
-      if (functionalArray[index](String(elm.value))) {
+      if (functionalArray[index](elm)) {
         elm.classList.remove('error-input');
+        if (document.querySelectorAll('.error-input').length === 0)
+          createAccountBtn.classList.remove('error-btn');
       } else {
         elm.classList.add('error-input');
+        createAccountBtn.classList.add('error-btn');
       }
     });
   });
@@ -98,7 +112,7 @@ function checkIfNotValid() {
     .addEventListener('click', function (event) {
       event.preventDefault();
       const erroredElements = ourInputs.filter(
-        (elm, index) => !functionalArray[index](String(elm.value))
+        (elm, index) => !functionalArray[index](elm)
       );
       erroredElements.forEach(function (elm) {
         elm.classList.add('error-input');

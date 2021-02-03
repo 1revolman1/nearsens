@@ -347,6 +347,7 @@ section.usecase_details__blockwithbuyabbility {
         }
         .shop-cart {
           display: flex;
+          justify-content: center;
           position: relative;
           background: #2ec9ad 0% 0% no-repeat padding-box;
           border: 1px solid #2ec9ad;
@@ -360,7 +361,36 @@ section.usecase_details__blockwithbuyabbility {
           text-transform: uppercase;
           padding: 12px 30px;
           overflow: hidden;
+          min-width: 220px;
+
+          @keyframes fullRotate {
+            from {
+              -ms-transform: rotate(0deg);
+              -moz-transform: rotate(0deg);
+              -webkit-transform: rotate(0deg);
+              -o-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+            to {
+              -ms-transform: rotate(360deg);
+              -moz-transform: rotate(360deg);
+              -webkit-transform: rotate(360deg);
+              -o-transform: rotate(360deg);
+              transform: rotate(360deg);
+            }
+          }
+          .rotating {
+            -webkit-animation: fullRotate 2s linear infinite;
+            -moz-animation: fullRotate 2s linear infinite;
+            -ms-animation: fullRotate 2s linear infinite;
+            -o-animation: fullRotate 2s linear infinite;
+            animation: fullRotate 2s linear infinite;
+          }
+          &.fr {
+            min-width: 265px;
+          }
           i {
+            transform-origin: center;
             margin-right: 10px;
           }
           .success_block {
