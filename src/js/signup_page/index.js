@@ -103,7 +103,6 @@ function checkIfNotValid() {
         setTimeout(() => {
           scrollToThis.scrollIntoView({ block: 'center', behavior: 'smooth' });
         }, 200);
-        // scrollToThis.scrollIntoView({ block: 'center', behavior: 'smooth' });
       }
     });
 }
