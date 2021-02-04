@@ -1,6 +1,7 @@
 section.page_gabarit__gradientblock {
-  padding-top: 0;
-  padding-bottom: 80px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  //   padding-bottom: 80px;
   background: white;
   @include media-tablet {
     padding-bottom: 40px;
@@ -14,7 +15,7 @@ section.page_gabarit__gradientblock {
         }
       }
       &.gray:not(.page_gabarit__gradientblock) {
-        padding-top: 20px;
+        padding-top: 80px;
         @include media-tablet {
           padding-top: 10px;
         }
@@ -28,7 +29,7 @@ section.page_gabarit__gradientblock {
         }
       }
       &.blue:not(.page_gabarit__gradientblock) {
-        padding-top: 20px;
+        padding-top: 80px;
         @include media-tablet {
           padding-top: 10px;
         }
@@ -45,7 +46,6 @@ section.page_gabarit__gradientblock {
   }
   &.blue {
     background: #005b9d 0% 0% no-repeat padding-box;
-    padding-top: 60px;
     @include media-tablet {
       padding-bottom: 30px;
       padding-top: 30px;
@@ -57,23 +57,41 @@ section.page_gabarit__gradientblock {
       margin: 0 auto;
       &::before {
         @media screen and (min-width: 1921px) {
+          max-width: 940px;
+          content: '';
+          width: 54%;
           background: transparent
-            linear-gradient(90deg, #005b9d 0%, #f0f0f000 100%) 0% 0% no-repeat
+            linear-gradient(90deg, #005b9d 0%, #bfbfbf00 100%) 0% 0% no-repeat
             padding-box;
         }
       }
       &::after {
         @media screen and (min-width: 1921px) {
+          content: '';
+          width: 25%;
+          max-width: 427px;
           background: transparent
-            linear-gradient(90deg, #005b9d 0%, #f0f0f000 100%) 0% 0% no-repeat
+            linear-gradient(90deg, #005b9d 0%, #bfbfbf00 100%) 0% 0% no-repeat
             padding-box;
+        }
+      }
+      .productpage__pageheader-wrapimgoverlay {
+        background: transparent
+          linear-gradient(90deg, #005b9d 0%, #bfbfbf00 100%) 0% 0% no-repeat
+          padding-box;
+        &::before {
+          @include media-forHEADER {
+            content: '';
+            background: transparent
+              linear-gradient(0deg, #005b9d 30px, #bfbfbf00 100%) 0% 0%
+              no-repeat padding-box;
+          }
         }
       }
     }
   }
   &.gray {
     background: #f2f2f2 0% 0% no-repeat padding-box;
-    padding-top: 60px;
     @include media-tablet {
       padding-bottom: 30px;
       padding-top: 30px;
@@ -85,6 +103,9 @@ section.page_gabarit__gradientblock {
       margin: 0 auto;
       &::before {
         @media screen and (min-width: 1921px) {
+          max-width: 940px;
+          content: '';
+          width: 54%;
           background: transparent
             linear-gradient(90deg, #f2f2f2 0%, #f0f0f000 100%) 0% 0% no-repeat
             padding-box;
@@ -92,26 +113,72 @@ section.page_gabarit__gradientblock {
       }
       &::after {
         @media screen and (min-width: 1921px) {
+          content: '';
+          width: 25%;
+          max-width: 427px;
           background: transparent
             linear-gradient(90deg, #f2f2f2 0%, #f0f0f000 100%) 0% 0% no-repeat
             padding-box;
         }
       }
-    }
-  }
-
-  .productpage__pageheader__container {
-    margin: 0 auto;
-    &::before {
-      @media screen and (min-width: 1921px) {
-        background: transparent linear-gradient(90deg, white 0%, #f0f0f000 100%)
-          0% 0% no-repeat padding-box;
+      .productpage__pageheader-wrapimgoverlay {
+        background: transparent
+          linear-gradient(90deg, #f2f2f2 0%, #bfbfbf00 100%) 0% 0% no-repeat
+          padding-box;
+        &::before {
+          @include media-forHEADER {
+            content: '';
+            background: transparent
+              linear-gradient(0deg, #f2f2f2 30px, #bfbfbf00 100%) 0% 0%
+              no-repeat padding-box;
+          }
+        }
       }
     }
-    &::after {
-      @media screen and (min-width: 1921px) {
-        background: transparent linear-gradient(90deg, white 0%, #f0f0f000 100%)
-          0% 0% no-repeat padding-box;
+  }
+  .productpage__pageheader__container {
+    margin: 0 auto;
+    .productpage__pageheader-wrapimgoverlay {
+      .productpage__pageheader-wrap {
+        .productpage__pageheader-wrap-container {
+          @include media-tablet {
+            padding: 0 0 30px;
+            width: 90%;
+            margin: 0 auto;
+          }
+          .productpage__pageheader-wrap-textblock {
+            @include hblockPAGEGABARIT() {
+              margin-bottom: 20px;
+              @include media-tablet {
+                margin-bottom: 20px;
+              }
+            }
+            a {
+              text-decoration: none;
+              font-style: inherit;
+              font-weight: bold;
+              line-height: inherit;
+              font-style: inherit;
+              letter-spacing: 0px;
+              @include media-forHEADER {
+                @include media-tablet {
+                  font-style: inherit;
+                  font-weight: bold;
+                  line-height: inherit;
+                  font-style: inherit;
+                }
+              }
+            }
+            p {
+              font: normal normal 300 18px/23px 'Mulish', sans-serif;
+              letter-spacing: 0px;
+              opacity: 1;
+              @include media-tablet {
+                font: normal normal normal 14px/18px 'Mulish', sans-serif;
+              }
+            }
+          }
+        }
       }
     }
   }

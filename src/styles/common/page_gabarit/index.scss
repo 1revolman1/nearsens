@@ -25,3 +25,11 @@
     background-color: transparent;
   }
 }
+main.custom-page {
+  & > :first-child {
+    padding-top: 50px;
+    @include media-tablet {
+      padding-top: 0;
+    }
+  }
+}

@@ -15,9 +15,3 @@
 // @import "pageheader_afterscroll/index";
 
 @import '../../utils/variables.scss';
-
-main.custom-page {
-  & > :first-child {
-    padding-top: 50px;
-  }
-}

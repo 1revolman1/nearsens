@@ -99,6 +99,9 @@ section.page_gabarit__pageheader {
             color: #28373b;
             opacity: 1;
             color: #ffffff;
+            @include media-tablet {
+              font: normal normal normal 14px/18px 'Mulish', sans-serif;
+            }
           }
         }
       }
