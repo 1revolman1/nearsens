@@ -45,6 +45,10 @@ section.page_gabarit__twobigblockperline {
   }
   @include hblockPAGEGABARIT() {
     margin-bottom: 30px;
+    @include media-tablet {
+      width: 90%;
+      margin: 0 auto 10.5px;
+    }
   }
 
   .page_gabarit__twobigblockperline__wrap {
@@ -57,6 +61,7 @@ section.page_gabarit__twobigblockperline {
       margin: 0 auto;
       grid-template-columns: 1fr;
     }
+
     .page_gabarit__twobigblockperline__wrap__element {
       display: flex;
       flex-flow: column wrap;

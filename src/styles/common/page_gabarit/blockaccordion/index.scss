@@ -52,6 +52,9 @@ section.page_garbarit__blockaccordion.page_garbarit__blockaccordion {
     * {
       color: #333333 !important;
     }
+    a {
+      color: #005b9d !important;
+    }
   }
   .panel {
     background: transparent !important;
@@ -68,6 +71,7 @@ section.page_garbarit__blockaccordion.page_garbarit__blockaccordion {
           margin-bottom: 10px;
         }
       }
+
       p {
         font: normal normal 300 18px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
@@ -83,6 +87,24 @@ section.page_garbarit__blockaccordion.page_garbarit__blockaccordion {
         margin-bottom: 20px;
         @include media-tablet {
           margin-bottom: 10px;
+        }
+      }
+      table {
+        width: 100%;
+      }
+
+      ul {
+        padding-left: 20px;
+        li {
+          list-style: inherit;
+          font: normal normal 300 18px/23px 'Mulish', sans-serif;
+          letter-spacing: 0;
+          color: #333;
+          opacity: 1;
+          margin-bottom: 2px;
+          @include media-tablet {
+            font: normal normal 300 14px/18px 'Mulish', sans-serif;
+          }
         }
       }
       p {
