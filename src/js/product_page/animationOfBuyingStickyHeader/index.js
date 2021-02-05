@@ -3,7 +3,7 @@ function cartAnimInStickyHeader() {
   const cart = isMobile
     ? $('.second-block-in-menu .cart-block')
     : $('.shop-cart');
-  const infoSuccessHeader = cart.find('.droupup-block-info');
+  // const infoSuccessHeader = cart.find('.droupup-block-info');
   const container = $(this).parents(
     '.productpage__pageheader_sticky-wrap-manipulator-container.overlay'
   );
@@ -14,21 +14,21 @@ function cartAnimInStickyHeader() {
   //SHOW SUCCESS BUYING ICON
 
   container.addClass('show-success');
-  const totalPrice = textContainer.text();
-  infoSuccessHeader
-    .find('h3')
-    .text(
-      +totalPrice === 1
-        ? infoSuccessHeader
-            .find('.template.one')
-            .text()
-            .replace('1 ;', String(totalPrice))
-        : infoSuccessHeader
-            .find('.template.many')
-            .text()
-            .replace('1 ;', String(totalPrice))
-    );
-  infoSuccessHeader.removeClass('unshow');
+  // const totalPrice = textContainer.text();
+  // infoSuccessHeader
+  //   .find('h3')
+  //   .text(
+  //     +totalPrice === 1
+  //       ? infoSuccessHeader
+  //           .find('.template.one')
+  //           .text()
+  //           .replace('1 ;', String(totalPrice))
+  //       : infoSuccessHeader
+  //           .find('.template.many')
+  //           .text()
+  //           .replace('1 ;', String(totalPrice))
+  //   );
+  // infoSuccessHeader.removeClass('unshow');
   const imgtodrag = $('.productpage__pageheader_sticky-wrap-headblock > img');
   if (imgtodrag) {
     const imgclone = imgtodrag
@@ -78,7 +78,7 @@ function cartAnimInStickyHeader() {
           )
           .text(template.replace('1 ;', '1'));
       }, 500);
-      infoSuccessHeader.addClass('unshow');
+      // infoSuccessHeader.addClass('unshow');
     }, 2000);
 
     imgclone.animate(

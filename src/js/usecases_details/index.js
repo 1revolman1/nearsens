@@ -68,7 +68,6 @@ function cartAnim() {
         'easeInOutExpo'
       );
     //SHAKE ANIM
-
     setTimeout(() => {
       $(this)
         .parents(
