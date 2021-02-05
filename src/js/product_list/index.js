@@ -152,9 +152,6 @@ export const useProductList = function main() {
     rootMargin: '-100px',
     threshold: 0,
   };
-  const preInitAddList = document.querySelectorAll(
-    '.productlist__products-container-element-controllers-successbuying .desktop'
-  );
   document
     .querySelectorAll(
       '.productlist__products-container-element-controllers-counter'
