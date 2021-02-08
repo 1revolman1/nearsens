@@ -1,0 +1,98 @@
+section.solutionpage__smartsolution .solutionpage__smartsolution__wrap {
+  position: relative;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__smartsolution .solutionpage__smartsolution__wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+section.solutionpage__smartsolution .layout img {
+  height: 661px;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+section.solutionpage__smartsolution .solutionpage__smartsolution__container {
+  padding: 0 62px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 662px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/Unique_house_desktop.jpg");
+  background-image: linear-gradient(180deg, #ffffff00 0, #ffffffcc 34%, #ffffffda 71%, #fff 93%, #fff 100%, #ffffffe6 100%), url("../img/Unique_house_desktop.jpg");
+}
+@media screen and (max-width: 1023px) {
+  section.solutionpage__smartsolution .solutionpage__smartsolution__container {
+    background-image: url("../img/Unique_house_tablet.jpg");
+    background-image: linear-gradient(180deg, #ffffff00 0, #ffffffcc 34%, #ffffffda 71%, #fff 93%, #fff 100%, #ffffffe6 100%), url("../img/Unique_house_tablet.jpg");
+  }
+}
+@media screen and (max-width: 600px) {
+  section.solutionpage__smartsolution .solutionpage__smartsolution__container {
+    background-image: url("../img/Unique_house_mobile.jpg");
+    background-image: linear-gradient(180deg, #ffffff00 0, #ffffffcc 34%, #ffffffda 71%, #fff 93%, #fff 100%, #ffffffe6 100%), url("../img/Unique_house_mobile.jpg");
+  }
+}
+section.solutionpage__smartsolution .solutionpage__smartsolution__container > h2 {
+  width: 62%;
+  margin: 0 auto;
+  text-align: center;
+  font: normal normal 800 30px/38px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+section.solutionpage__smartsolution .solutionpage__smartsolution__container > h2:last-of-type {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__smartsolution .solutionpage__smartsolution__container > h2 {
+    font: normal normal 800 28px/35px "Mulish", sans-serif;
+  }
+}
+section.solutionpage__smartsolution .solutionpage__smartsolution__container > p {
+  width: 62%;
+  margin: 0 auto;
+  text-align: center;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__smartsolution .solutionpage__smartsolution__container > p {
+    font: normal normal 300 18px/23px "Mulish", sans-serif;
+  }
+}
+section.solutionpage__smartsolution .solutionpage__smartsolution__blocks {
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: repeat(3, fit-content(100%));
+  gap: 100px;
+}
+section.solutionpage__smartsolution .solutionpage__smartsolution__block {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+}
+section.solutionpage__smartsolution .solutionpage__smartsolution__block img {
+  width: 100px;
+  height: 100px;
+}
+section.solutionpage__smartsolution .solutionpage__smartsolution__block h3 {
+  text-align: center;
+  font: normal normal bold 22px/28px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+}
+section.solutionpage__smartsolution .solutionpage__smartsolution__block h3:last-of-type {
+  margin-bottom: 10px;
+}
+section.solutionpage__smartsolution .solutionpage__smartsolution__block p {
+  text-align: center;
+  font: normal normal 300 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+}
