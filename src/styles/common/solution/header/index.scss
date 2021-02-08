@@ -1,0 +1,110 @@
+@import '../../../mixins/media';
+
+section.solutionpage__header {
+  padding-bottom: 60px;
+  background: transparent linear-gradient(180deg, #00345a 0%, #005b9d 100%) 0%
+    0% no-repeat padding-box;
+  @include media-forHEADER {
+    padding-bottom: 60px;
+  }
+  .solutionpage__header__wrap {
+    width: 48%;
+    @media screen and (max-width: 1203px) {
+      width: 75%;
+    }
+    @include media-forHEADER {
+      width: 90%;
+    }
+  }
+  img {
+    max-width: 500px;
+    margin: 0 auto 40px;
+    display: block;
+    user-select: none;
+    @include media-forHEADER {
+      width: 80%;
+      margin: 0 auto 24px;
+    }
+    @include media-phone {
+      width: 75%;
+    }
+  }
+  .solutionpage__header__txt {
+    h1 {
+      text-align: center;
+      font: normal normal 800 42px/53px 'Mulish', sans-serif;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
+      @include media-forHEADER {
+        &:last-of-type {
+          margin-bottom: 35px;
+        }
+        font: normal normal 800 36px/45px 'Mulish', sans-serif;
+      }
+      @include media-phone {
+        &:last-of-type {
+          margin-bottom: 40px;
+        }
+        font: normal normal 800 22px/28px 'Mulish', sans-serif;
+      }
+    }
+    h2 {
+      text-align: center;
+      font: normal normal normal 32px/40px 'Mulish', sans-serif;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+      margin-bottom: 26px;
+      &:last-of-type {
+        margin-bottom: 26px;
+      }
+      @include media-forHEADER {
+        font: normal normal normal 32px/40px 'Mulish', sans-serif;
+      }
+      @include media-phone {
+        font: normal normal normal 22px/28px 'Mulish', sans-serif;
+        &:last-of-type {
+          margin-bottom: 18px;
+        }
+      }
+    }
+    b {
+      font-weight: 800;
+    }
+    p {
+      text-align: center;
+      font: normal normal bold 32px/40px 'Mulish', sans-serif;
+      letter-spacing: 0px;
+      opacity: 1;
+      color: #80abca;
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
+      @include media-forHEADER {
+        &:last-of-type {
+          margin-bottom: 40px;
+        }
+        font: normal normal bold 32px/40px 'Mulish', sans-serif;
+      }
+      @include media-phone {
+        font: normal normal bold 20px/25px 'Mulish', sans-serif;
+      }
+      b {
+        color: #ffffff;
+      }
+    }
+    h3 {
+      text-align: center;
+      font: normal normal normal 32px/40px 'Mulish', sans-serif;
+      letter-spacing: 0px;
+      color: #ffffff;
+      @include media-phone {
+        font: normal normal normal 20px/25px 'Mulish', sans-serif;
+      }
+    }
+  }
+}

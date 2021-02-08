@@ -7,6 +7,11 @@
 
 @import '../../mixins/media';
 @import '../../utils/variables';
+main {
+  .graybg {
+    margin-top: 0;
+  }
+}
 .graybg {
   background: #f2f2f2 0% 0% no-repeat padding-box;
 }

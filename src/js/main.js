@@ -12,6 +12,7 @@ import { useHolidayFunc } from './holdayfunctionality';
 import { useCheckoutPage } from './checkout_page';
 import { useMyAccountPage } from './myaccount_page';
 import { usePageGabarit } from './page_gabarit';
+import { useSolutionPage } from './solution_page';
 
 function getBodyScrollTop() {
   return (
@@ -131,6 +132,7 @@ $(document).ready(() => {
     checkout_page: useCheckoutPage,
     my_account: useMyAccountPage,
     page_gabarit: usePageGabarit,
+    solution_page: useSolutionPage,
   };
   if (typeof typePage != undefined)
     pageObj[typePage] ? pageObj[typePage]() : console.log(`ELSE PAGE`);

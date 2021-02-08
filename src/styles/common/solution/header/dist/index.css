@@ -1,0 +1,129 @@
+section.solutionpage__header {
+  padding-bottom: 60px;
+  background: transparent linear-gradient(180deg, #00345a 0%, #005b9d 100%) 0% 0% no-repeat padding-box;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__header {
+    padding-bottom: 60px;
+  }
+}
+section.solutionpage__header .solutionpage__header__wrap {
+  width: 48%;
+}
+@media screen and (max-width: 1203px) {
+  section.solutionpage__header .solutionpage__header__wrap {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__header .solutionpage__header__wrap {
+    width: 90%;
+  }
+}
+section.solutionpage__header img {
+  max-width: 500px;
+  margin: 0 auto 40px;
+  display: block;
+  user-select: none;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__header img {
+    width: 80%;
+    margin: 0 auto 24px;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.solutionpage__header img {
+    width: 75%;
+  }
+}
+section.solutionpage__header .solutionpage__header__txt h1 {
+  text-align: center;
+  font: normal normal 800 42px/53px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+section.solutionpage__header .solutionpage__header__txt h1:last-of-type {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__header .solutionpage__header__txt h1 {
+    font: normal normal 800 36px/45px "Mulish", sans-serif;
+  }
+  section.solutionpage__header .solutionpage__header__txt h1:last-of-type {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.solutionpage__header .solutionpage__header__txt h1 {
+    font: normal normal 800 22px/28px "Mulish", sans-serif;
+  }
+  section.solutionpage__header .solutionpage__header__txt h1:last-of-type {
+    margin-bottom: 40px;
+  }
+}
+section.solutionpage__header .solutionpage__header__txt h2 {
+  text-align: center;
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 26px;
+}
+section.solutionpage__header .solutionpage__header__txt h2:last-of-type {
+  margin-bottom: 26px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__header .solutionpage__header__txt h2 {
+    font: normal normal normal 32px/40px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.solutionpage__header .solutionpage__header__txt h2 {
+    font: normal normal normal 22px/28px "Mulish", sans-serif;
+  }
+  section.solutionpage__header .solutionpage__header__txt h2:last-of-type {
+    margin-bottom: 18px;
+  }
+}
+section.solutionpage__header .solutionpage__header__txt b {
+  font-weight: 800;
+}
+section.solutionpage__header .solutionpage__header__txt p {
+  text-align: center;
+  font: normal normal bold 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #80abca;
+}
+section.solutionpage__header .solutionpage__header__txt p:last-of-type {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__header .solutionpage__header__txt p {
+    font: normal normal bold 32px/40px "Mulish", sans-serif;
+  }
+  section.solutionpage__header .solutionpage__header__txt p:last-of-type {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.solutionpage__header .solutionpage__header__txt p {
+    font: normal normal bold 20px/25px "Mulish", sans-serif;
+  }
+}
+section.solutionpage__header .solutionpage__header__txt p b {
+  color: #ffffff;
+}
+section.solutionpage__header .solutionpage__header__txt h3 {
+  text-align: center;
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+@media screen and (max-width: 420px) {
+  section.solutionpage__header .solutionpage__header__txt h3 {
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
