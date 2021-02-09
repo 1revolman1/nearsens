@@ -1,10 +1,19 @@
 @import '../../../mixins/media';
 section.solutionpage__smartsolution {
+  @include media-forHEADER {
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-bottom: 73px;
+  }
   .solutionpage__smartsolution__wrap {
     position: relative;
     @include media-forHEADER {
       width: 90%;
       margin: 0 auto;
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
     }
   }
   .layout {
@@ -16,6 +25,7 @@ section.solutionpage__smartsolution {
   }
 
   .solutionpage__smartsolution__container {
+    border-radius: 10px;
     padding: 0 62px 70px;
     display: flex;
     flex-direction: column;
@@ -23,6 +33,7 @@ section.solutionpage__smartsolution {
     min-height: 662px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-image: url('../img/Unique_house_desktop.jpg');
     background-image: linear-gradient(
         180deg,
@@ -34,7 +45,42 @@ section.solutionpage__smartsolution {
         #ffffffe6 100%
       ),
       url('../img/Unique_house_desktop.jpg');
+    &::after {
+      z-index: 1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      @media screen and (max-width: 1023px) {
+        background: linear-gradient(
+          180deg,
+          #ffffff00 0,
+          #ffffffe8 34%,
+          #ffffff 71%,
+          #fff 93%,
+          #fff 100%,
+          #ffffffe6 100%
+        );
+      }
+      @media screen and (max-width: 600px) {
+        height: 77%;
+        background: linear-gradient(
+          180deg,
+          #ffffff00 0,
+          #ffffffe8 40%,
+          #ffffff 71%,
+          #fff 93%,
+          #fff 100%,
+          #ffffffe6 100%
+        );
+      }
+    }
     @media screen and (max-width: 1023px) {
+      padding: 281px 0 0;
+      background-position: top;
+      background-size: 100% auto;
       background-image: url('../img/Unique_house_tablet.jpg');
       background-image: linear-gradient(
           180deg,
@@ -61,6 +107,8 @@ section.solutionpage__smartsolution {
         url('../img/Unique_house_mobile.jpg');
     }
     > h2 {
+      position: relative;
+      z-index: 2;
       width: 62%;
       margin: 0 auto;
       text-align: center;
@@ -70,12 +118,22 @@ section.solutionpage__smartsolution {
       opacity: 1;
       &:last-of-type {
         margin-bottom: 20px;
+        @media screen and (max-width: 600px) {
+          margin-bottom: 0px;
+        }
       }
       @include media-forHEADER {
+        width: 85%;
         font: normal normal 800 28px/35px 'Mulish', sans-serif;
+      }
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        font: normal normal 800 20px/25px 'Mulish', sans-serif;
       }
     }
     > p {
+      position: relative;
+      z-index: 2;
       width: 62%;
       margin: 0 auto;
       text-align: center;
@@ -84,23 +142,69 @@ section.solutionpage__smartsolution {
       color: #333333;
       opacity: 1;
       @include media-forHEADER {
+        width: 100%;
         font: normal normal 300 18px/23px 'Mulish', sans-serif;
+      }
+      @media screen and (max-width: 600px) {
+        display: none;
       }
     }
   }
   .solutionpage__smartsolution__blocks {
+    position: relative;
+    z-index: 2;
     margin-top: 65px;
     display: grid;
     grid-template-columns: repeat(3, fit-content(100%));
     gap: 100px;
+    @include media-forHEADER {
+      row-gap: 40px;
+      column-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 600px) {
+      width: 90%;
+      margin: 55px auto 0;
+      row-gap: 20px;
+      grid-template-columns: 1fr;
+    }
   }
   .solutionpage__smartsolution__block {
     display: inline-flex;
     align-items: center;
     flex-direction: column;
+    @include media-forHEADER {
+      flex: 1 1 30%;
+      &:last-of-type {
+        grid-column: 1/-1;
+        margin: 0 auto;
+        max-width: 49.332%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      align-items: flex-start;
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      grid-template-rows: repeat(2, fit-content(100%));
+      grid-template-areas:
+        'img head'
+        'img txt';
+      flex: none;
+      column-gap: 20px;
+      row-gap: 5px;
+      &:last-of-type {
+        grid-column: unset;
+        max-width: unset;
+      }
+    }
     img {
       width: 100px;
       height: 100px;
+      @media screen and (max-width: 600px) {
+        grid-area: img;
+        width: 50px;
+        height: 50px;
+      }
     }
     h3 {
       text-align: center;
@@ -109,6 +213,20 @@ section.solutionpage__smartsolution {
       color: #333333;
       &:last-of-type {
         margin-bottom: 10px;
+        @media screen and (max-width: 600px) {
+          margin: 0;
+        }
+      }
+      @include media-forHEADER {
+        font: normal normal 300 18px/23px 'Mulish', sans-serif;
+      }
+      @media screen and (max-width: 600px) {
+        grid-area: head;
+        text-align: left;
+        font: normal normal bold 18px/23px 'Mulish', sans-serif;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
       }
     }
     p {
@@ -116,6 +234,14 @@ section.solutionpage__smartsolution {
       font: normal normal 300 16px/20px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #333333;
+      @media screen and (max-width: 600px) {
+        grid-area: txt;
+        text-align: left;
+        font: normal normal 300 16px/20px 'Mulish', sans-serif;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+      }
     }
   }
 }
