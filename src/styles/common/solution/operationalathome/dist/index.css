@@ -58,12 +58,12 @@ section.solutionpage__operationalathome .solutionpage__operationalathome__contai
 @media screen and (max-width: 1023.5px) {
   section.solutionpage__operationalathome .solutionpage__operationalathome__container {
     margin: 65px auto 0;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 420px) {
   section.solutionpage__operationalathome .solutionpage__operationalathome__container {
     margin: 50px auto 0;
-    grid-template-columns: repeat(1, 1fr);
   }
 }
 section.solutionpage__operationalathome .solutionpage__operationalathome__block {
