@@ -1,11 +1,14 @@
+section.solutionpage__smartsolution {
+  padding-bottom: 80px;
+}
 @media screen and (max-width: 1023.5px) {
   section.solutionpage__smartsolution {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (max-width: 600px) {
   section.solutionpage__smartsolution {
-    margin-bottom: 73px;
+    padding-bottom: 73px;
   }
 }
 section.solutionpage__smartsolution .solutionpage__smartsolution__wrap {

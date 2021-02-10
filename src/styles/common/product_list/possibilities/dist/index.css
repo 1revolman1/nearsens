@@ -1,0 +1,200 @@
+section.productlist__posibilities {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities {
+    width: 90%;
+    margin: 0 auto 60px;
+  }
+}
+section.productlist__posibilities .productlist__posibilities-head {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 0 30px;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-head {
+    margin: 0 0 21px;
+  }
+}
+section.productlist__posibilities .productlist__posibilities-head h2 {
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-head h2 {
+    font: normal normal normal 26px/33px "Mulish", sans-serif;
+  }
+}
+section.productlist__posibilities .productlist__posibilities-head button.discover {
+  background: white;
+  padding: 9px 20px;
+  border: 1px solid #2ec9ad;
+  border-radius: 40px;
+  opacity: 1;
+  text-align: left;
+  font: normal normal bold 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #2ec9ad;
+  opacity: 1;
+  cursor: pointer;
+  outline: none;
+}
+section.productlist__posibilities .productlist__posibilities-head button.discover.red {
+  color: white;
+  background: red;
+}
+section.productlist__posibilities .productlist__posibilities-head button.discover:hover {
+  color: white;
+  background: #2ec9ad;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-head button.discover {
+    display: none;
+  }
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: 30px 0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  opacity: 1;
+  transition: all ease 0.5s;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element {
+    padding: 10px;
+    margin: 21px 0;
+  }
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:hover {
+    transform: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:visited .productlist__posibilities-prodcontainer__element-text {
+  color: inherit;
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:visited .productlist__posibilities-prodcontainer__element-text * {
+  color: inherit;
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:visited .productlist__posibilities-prodcontainer__element-text span {
+  color: #6d7476;
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:visited .productlist__posibilities-prodcontainer__element-text h3 {
+  color: #28373b;
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element:visited .productlist__posibilities-prodcontainer__element-text p {
+  color: #6d7476;
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-img {
+  margin-right: 30px;
+  max-width: 150px;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-img {
+    max-width: 100px;
+    margin-right: 16px;
+  }
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-img img {
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 150px;
+  min-height: 150px;
+  max-height: 150px;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-img img {
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+  }
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-text {
+  display: flex;
+  flex-direction: column;
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-text p {
+  font: italic normal normal 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #6d7476;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-text p {
+    margin-bottom: 5.5px;
+    font: italic normal normal 14px/18px "Mulish", sans-serif;
+  }
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-text h3 {
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 34px;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-text h3 {
+    margin-bottom: 7.5px;
+    font: normal normal normal 14px/18px "Mulish", sans-serif;
+  }
+}
+section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-text span {
+  margin-top: auto;
+  font: normal normal bold 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #6d7476;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-prodcontainer .productlist__posibilities-prodcontainer__element .productlist__posibilities-prodcontainer__element-text span {
+    font: normal normal bold 12px/15px "Mulish", sans-serif;
+  }
+}
+section.productlist__posibilities .productlist__posibilities-button {
+  display: none;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+section.productlist__posibilities .productlist__posibilities-button button.discover {
+  display: none;
+  background: white;
+  padding: 7.5px 20px;
+  border: 1px solid #2ec9ad;
+  border-radius: 40px;
+  opacity: 1;
+  text-align: left;
+  font: normal normal bold 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #2ec9ad;
+  opacity: 1;
+  outline: none;
+}
+section.productlist__posibilities .productlist__posibilities-button button.discover.red {
+  border: none;
+  color: white;
+  background: red;
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-button button.discover {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.productlist__posibilities .productlist__posibilities-button {
+    display: flex;
+  }
+}

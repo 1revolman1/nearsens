@@ -1,3 +1,13 @@
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__gatepromo {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.solutionpage__gatepromo {
+    margin-top: 100px;
+  }
+}
 section.solutionpage__gatepromo .solutionpage__gatepromo__bluecontainer {
   max-width: 1000px;
   margin: 0 auto 20px;

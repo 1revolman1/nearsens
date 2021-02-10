@@ -341,9 +341,7 @@ section.checkout_page__content__contact {
           height: 20px;
           border: solid #005b9d;
           border-width: 0 4px 4px 0;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+          transform: translate(-50%, 9%) rotate(45deg);
         }
       }
     }

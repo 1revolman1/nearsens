@@ -3,7 +3,7 @@ section.checkout_page__stickycont {
   padding: 82px 0 0 40px;
   background: #f2f2f2 0% 0% no-repeat padding-box;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) {
   section.checkout_page__stickycont {
     padding: 82px 0 40px;
   }
@@ -13,7 +13,7 @@ section.checkout_page__stickycont .checkout_page__stickycont__block {
   width: 100%;
   top: 82px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) {
   section.checkout_page__stickycont .checkout_page__stickycont__block {
     width: 90%;
     margin: 0 auto;
@@ -42,7 +42,7 @@ section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_pa
     flex-flow: row wrap;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023.5px) {
   section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont {
     display: grid;
     grid-template-columns: 1fr fit-content(100%);
@@ -50,6 +50,7 @@ section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_pa
   }
 }
 section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont input {
+  width: 100%;
   padding: 14px 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #bbbbbb;
@@ -60,27 +61,9 @@ section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_pa
   color: #333333;
   opacity: 1;
 }
-@media screen and (max-width: 941px) {
+@media screen and (max-width: 1023.5px) and (max-width: 375px) {
   section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont input {
     flex: 1;
-    width: 62%;
-    margin: 0;
-    padding: 12px 15px;
-    font: italic normal 300 15px/20px "Mulish", sans-serif;
-    letter-spacing: 0;
-    color: #333;
-    opacity: 1;
-  }
-}
-@media screen and (max-width: 941px) and (max-width: 768px) {
-  section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont input {
-    width: inherit;
-  }
-}
-@media screen and (max-width: 941px) and (max-width: 768px) and (max-width: 375px) {
-  section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont input {
-    flex: 1;
-    width: 100%;
     margin: 0;
   }
 }
@@ -106,12 +89,12 @@ section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_pa
     opacity: 1;
   }
 }
-@media screen and (max-width: 941px) and (max-width: 768px) {
+@media screen and (max-width: 941px) and (max-width: 1023.5px) {
   section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont button {
     width: inherit;
   }
 }
-@media screen and (max-width: 941px) and (max-width: 768px) and (max-width: 375px) {
+@media screen and (max-width: 941px) and (max-width: 1023.5px) and (max-width: 375px) {
   section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont button {
     flex: none;
     width: 100%;
@@ -120,6 +103,62 @@ section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_pa
 }
 section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay {
   padding-bottom: 14px;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept {
+  position: relative;
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  position: relative;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+  user-select: none;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept .text {
+  display: inline-block;
+  align-items: center;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept .text a {
+  color: #045d9e;
+  text-decoration: underline;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept input:checked ~ .checkmark:after {
+  display: block;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept .checkmark {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  grid-area: 1/1/2/2;
+  background: #eeeeee 0% 0% no-repeat padding-box;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  opacity: 1;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 50%;
+  top: 50%;
+  width: 13px;
+  height: 20px;
+  border: solid #005b9d;
+  border-width: 0 4px 4px 0;
+  transform: translate(-50%, -65%) rotate(45deg);
 }
 section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price {
   display: grid;
@@ -182,6 +221,10 @@ section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_pa
   padding: 14px 30px;
   outline: none;
   text-transform: uppercase;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__content__contact__manip__btncont .checkout_page__content__contact__manip__btn.disabled {
+  pointer-events: none;
+  opacity: 0.7;
 }
 
 section.checkout_page__content__contact {
@@ -286,6 +329,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   border-radius: 10px;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__check label.checkout_page__checkbox.checked {
+  pointer-events: none;
   box-shadow: inset 0 0 0 1px #005b9d;
   border: 1px solid #005b9d;
 }
@@ -328,7 +372,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border: 1px solid #bbbbbb;
   border-radius: 6px;
   opacity: 1;
@@ -348,10 +392,9 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   margin-bottom: 10px;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box h4 {
@@ -359,6 +402,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
+  text-align: center;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box p {
   font: normal normal 300 16px/20px "Mulish", sans-serif;
@@ -424,6 +468,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   transform: rotate(45deg);
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box.checked {
+  pointer-events: none;
   background: #005b9d 0% 0% no-repeat padding-box;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__chekedbox .checkout_page__content__contact__manip__chekedbox__box.checked .logo {
@@ -484,22 +529,20 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   height: 20px;
   border: solid #005b9d;
   border-width: 0 4px 4px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  transform: translate(-50%, 9%) rotate(45deg);
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm {
   overflow: hidden;
   position: relative;
   margin: 11px 0;
 }
-section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm label {
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm > label {
   font: normal normal bold 18px/23px "Mulish", sans-serif;
   position: relative;
   padding: 11px;
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(2, fit-content(100%));
+  grid-template-columns: repeat(3, fit-content(100%));
   grid-column-gap: 10px;
   align-items: flex-start;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -508,14 +551,18 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   opacity: 1;
   cursor: pointer;
 }
-section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm label a {
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm > label a {
   line-height: inherit !important;
 }
-section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm label a:active {
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm > label a:active {
   color: inherit !important;
 }
-section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm label img {
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm > label img {
   display: none;
+}
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm i {
+  font-size: 26px;
+  margin-right: 20px;
 }
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm img {
   width: 26px;
@@ -547,7 +594,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
 section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm input:checked ~ .border {
   border: 1px solid #005b9d;
 }
-section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm:hover label {
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm:hover > label {
   border: 1px solid #005b9d;
   box-shadow: inset 0 0 0 1px #005b9d;
 }
@@ -592,12 +639,12 @@ section.checkout_page__content__contact .checkout_page__content__contact__manip 
   height: 100%;
   border-radius: 6px;
 }
-section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm.checked label {
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm.checked > label {
   border: 1px solid #005b9d;
   color: white;
   background: #005b9d 0% 0% no-repeat padding-box;
 }
-section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm.checked label a {
+section.checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .checkout_page__content__contact__manip__payMethod__elm.checked > label a {
   color: white;
   font-weight: 800;
 }
@@ -661,7 +708,7 @@ section.checkout_page__content__contact .checkout_page__content__contact__order-
 }
 
 .checkout_page .checkout_page__container .checkout_page__content .woocommerce-checkout #customer_details .woocommerce-additional-fields {
-  margin-top: 6px;
+  margin-top: 20px;
 }
 .checkout_page .checkout_page__container .checkout_page__content .woocommerce-checkout #customer_details .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper #order_comments_field {
   display: flex;
@@ -683,18 +730,24 @@ section.checkout_page__content__contact .checkout_page__content__contact__order-
   border: 1px solid #bbbbbb;
   border-radius: 6px;
 }
+.checkout_page .edit-address .woocommerce-input-wrapper {
+  width: 100%;
+}
 
-.checkout_page span.select2-container .select2-selection {
+.checkout_page span.select2-container .select2-selection,
+.woocommerce-Dashboard .woocomerse__myaccountdetails span.select2-container .select2-selection {
   padding: 14px 20px;
   height: auto;
   border-radius: 8px;
 }
-.checkout_page span.select2-container .select2-selection .select2-selection__rendered {
+.checkout_page span.select2-container .select2-selection .select2-selection__rendered,
+.woocommerce-Dashboard .woocomerse__myaccountdetails span.select2-container .select2-selection .select2-selection__rendered {
   color: #333333c9;
   font: normal normal 300 18px/23px "Mulish", sans-serif;
   padding: 0;
 }
-.checkout_page span.select2-container .select2-selection .select2-selection__arrow {
+.checkout_page span.select2-container .select2-selection .select2-selection__arrow,
+.woocommerce-Dashboard .woocomerse__myaccountdetails span.select2-container .select2-selection .select2-selection__arrow {
   top: 50%;
   transform: translate(0%, -50%);
 }
@@ -703,15 +756,21 @@ section.checkout_page__content__contact .checkout_page__content__contact__order-
   display: flex;
   flex-direction: column;
 }
-.checkout_page .checkout_page__container .checkout_page__content .woocommerce-checkout .checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .wc_payment_method {
-  position: relative;
+.checkout_page .checkout_page__container .checkout_page__content .woocommerce-checkout .checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod__elm.checked .payment_box {
+  display: block !important;
 }
-.checkout_page .checkout_page__container .checkout_page__content .woocommerce-checkout .checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .wc_payment_method .payment_box {
-  margin: 1em 0 0;
+.checkout_page .checkout_page__container .checkout_page__content .woocommerce-checkout .checkout_page__content__contact .checkout_page__content__contact__manip .checkout_page__content__contact__manip__payMethod .payment_box {
+  display: none !important;
 }
 
 section.checkout_page__content {
   padding: 82px 0 155px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.checkout_page__content {
+    width: 94%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 768px) {
   section.checkout_page__content {
@@ -737,6 +796,11 @@ section.checkout_page__content > svg {
   overflow: initial;
 }
 @media screen and (max-width: 1023.5px) {
+  .checkout_page .main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1023.5px) {
   .checkout_page {
     margin: 0;
   }
@@ -747,11 +811,11 @@ section.checkout_page__content > svg {
   }
 }
 .checkout_page * {
-  user-select: none;
   outline: none;
 }
 .checkout_page__container {
   position: relative;
+  min-height: 100vh;
   display: grid;
   grid-auto-flow: row dense;
   grid-template-columns: repeat(auto-fit, minmax(312px, 1fr)) minmax(270px, 433px);

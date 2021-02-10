@@ -18,7 +18,9 @@ export const useCheckoutPage = () => {
       });
     });
   }
-
+  document
+    .querySelectorAll('main:not(.checkout_page)')
+    .forEach((elm) => (elm.style.marginTop = '0px'));
   //Contact page
   openOne('.checkout_page__checkbox input', true, true);
   //Main service

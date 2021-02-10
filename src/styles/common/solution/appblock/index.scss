@@ -5,9 +5,11 @@ section.solutionpage__appblock {
   padding-bottom: 100px;
   @include media-forHEADER {
     padding-top: 50px;
+    padding-bottom: 40px;
   }
   @include media-phone {
-    padding-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 60px;
   }
   img {
     pointer-events: none;

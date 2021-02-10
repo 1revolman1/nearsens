@@ -1,10 +1,11 @@
 @import '../../../mixins/media';
 section.solutionpage__smartsolution {
+  padding-bottom: 80px;
   @include media-forHEADER {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
   @media screen and (max-width: 600px) {
-    margin-bottom: 73px;
+    padding-bottom: 73px;
   }
   .solutionpage__smartsolution__wrap {
     position: relative;

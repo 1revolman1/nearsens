@@ -16,11 +16,20 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 var useCheckoutPage = function useCheckoutPage() {
   function openOne(cls) {
     var remove = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    var toggler = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
     document.querySelectorAll(cls).forEach(function (elm) {
       elm.addEventListener('change', function (e) {
         var _this = this;
 
         this.parentNode.classList.toggle('checked');
+
+        if (toggler && !this.parentNode.classList.contains('checked')) {
+          e.preventDefault();
+          this.checked = true;
+          this.parentNode.classList.add('checked');
+          return null;
+        }
+
         document.querySelectorAll(cls).forEach(function (other) {
           if (_this !== other) {
             other.checked = false;
@@ -29,19 +38,17 @@ var useCheckoutPage = function useCheckoutPage() {
         });
       });
     });
-  } // document.querySelectorAll('label').forEach((elm) => {
-  //   elm.addEventListener('change', function (e) {
-  //     this.classList.toggle('checked');
-  //   });
-  // });
-  //Contact page
+  }
 
+  document.querySelectorAll('main:not(.checkout_page)').forEach(function (elm) {
+    return elm.style.marginTop = '0px';
+  }); //Contact page
 
-  openOne('.checkout_page__checkbox input', true); //Main service
+  openOne('.checkout_page__checkbox input', true, true); //Main service
 
-  openOne('.checkout_page__content__contact__manip__chekedbox__box input', true); //Pament methods
+  openOne('.checkout_page__content__contact__manip__chekedbox__box input', true, true); //Pament methods
 
-  openOne('.checkout_page__content__contact__manip__payMethod__elm input', true); //Bill checkc
+  openOne('.checkout_page__content__contact__manip__payMethod__elm input.input-radio', true, true); //Bill checkc
 
   openOne('.checkout_page__content__contact__manip__chekedboxAccept input', true); // $('.ui.dropdown').dropdown({
   //   clearable: true,

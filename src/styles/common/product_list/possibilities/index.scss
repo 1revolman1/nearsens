@@ -80,6 +80,23 @@ section.productlist__posibilities {
           box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.1);
         }
       }
+      &:visited {
+        .productlist__posibilities-prodcontainer__element-text {
+          color: inherit;
+          * {
+            color: inherit;
+          }
+          span {
+            color: #6d7476;
+          }
+          h3 {
+            color: #28373b;
+          }
+          p {
+            color: #6d7476;
+          }
+        }
+      }
 
       .productlist__posibilities-prodcontainer__element-img {
         margin-right: 30px;
