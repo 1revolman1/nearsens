@@ -533,6 +533,16 @@ section.solutionpage__gatepromo .solutionpage__gatepromo__bigtextcontaienr p {
   }
 }
 
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__smartsolution {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.solutionpage__smartsolution {
+    margin-bottom: 73px;
+  }
+}
 section.solutionpage__smartsolution .solutionpage__smartsolution__wrap {
   position: relative;
 }
@@ -762,4 +772,211 @@ section.solutionpage__smartsolution .solutionpage__smartsolution__block p {
     color: #333333;
     opacity: 1;
   }
+}
+
+section.solutionpage__operationalathome {
+  background: #005b9d 0% 0% no-repeat padding-box;
+  padding: 60px 0;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome {
+    padding: 40px 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.solutionpage__operationalathome {
+    padding: 30px 0 60px;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__wrap {
+    width: 90%;
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__wrap > h3 {
+  text-align: center;
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__wrap > h3 {
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__wrap > h3 {
+    width: 90%;
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__wrap > p {
+  text-align: center;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__wrap > p {
+    font: normal normal normal 16px/20px "Mulish", sans-serif;
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 50px;
+  background: #4084b6;
+  flex-flow: row wrap;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__container {
+    margin: 65px auto 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 420px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__container {
+    margin: 50px auto 0;
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__block {
+  background: #005b9d;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: repeat(3, fit-content(100%));
+  column-gap: 30px;
+  grid-template-areas: "img span" "img head" "img txt";
+  padding: 27px 37px;
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__block:nth-child(3n+1) {
+  padding-left: 0;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block:nth-child(3n+1) {
+    padding: 20px 0;
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__block:nth-child(3n) {
+  padding-right: 0;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block:nth-child(3n) {
+    padding: 20px 0;
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__block:nth-child(-n+3) {
+  padding-top: 0;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block:nth-child(-n+3) {
+    padding: 20px 0;
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__block:nth-last-child(-n+3) {
+  padding-bottom: 0;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block:nth-last-child(-n+3) {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block {
+    padding: 20px 0;
+    column-gap: 20px;
+  }
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block:nth-child(1) {
+    padding-top: 0;
+  }
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block:nth-last-child(1) {
+    padding-bottom: 0;
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__block img {
+  grid-area: img;
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__block span {
+  grid-area: span;
+  font: normal normal bold 22px/28px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block span {
+    font: normal normal bold 20px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block span {
+    font: normal normal bold 18px/23px "Mulish", sans-serif;
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__block h4 {
+  grid-area: head;
+  font: normal normal bold 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block h4 {
+    font: normal normal bold 20px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block h4 {
+    font: normal normal bold 18px/23px "Mulish", sans-serif;
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__block p {
+  grid-area: txt;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block p {
+    font: normal normal 300 16px/20px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__block p {
+    font: normal normal 300 16px/20px "Mulish", sans-serif;
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__btncont {
+  display: grid;
+  margin: 60px auto 0;
+  grid-template-columns: repeat(2, fit-content(100%));
+  justify-content: center;
+  gap: 40px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__operationalathome .solutionpage__operationalathome__btncont {
+    gap: 20px;
+    margin: 40px auto 0;
+    grid-template-columns: repeat(1, fit-content(100%));
+  }
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__btn {
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  padding: 9px 30px;
+  text-align: center;
+  font: normal normal bold 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+section.solutionpage__operationalathome .solutionpage__operationalathome__btn:hover, section.solutionpage__operationalathome .solutionpage__operationalathome__btn:focus {
+  background: white;
+  border: 1px solid white;
+  color: #005b9d;
 }

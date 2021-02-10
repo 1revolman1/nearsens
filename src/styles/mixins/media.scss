@@ -27,7 +27,16 @@
     @content;
   }
 }
-
+@mixin detect-touch {
+  @media (hover: none) and (pointer: coarse) {
+    @content;
+  }
+}
+@mixin detect-notouch {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
 // @mixin media-tablet {
 
 //     @media (min-width: $mediaWidthTablet) {
