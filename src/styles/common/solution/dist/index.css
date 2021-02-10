@@ -32,7 +32,7 @@ section.solutionpage__header img {
     margin: 0 auto 24px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__header img {
     width: 75%;
   }
@@ -55,7 +55,7 @@ section.solutionpage__header .solutionpage__header__txt h1:last-of-type {
     margin-bottom: 35px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__header .solutionpage__header__txt h1 {
     font: normal normal 800 22px/28px "Mulish", sans-serif;
   }
@@ -79,7 +79,7 @@ section.solutionpage__header .solutionpage__header__txt h2:last-of-type {
     font: normal normal normal 32px/40px "Mulish", sans-serif;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__header .solutionpage__header__txt h2 {
     font: normal normal normal 22px/28px "Mulish", sans-serif;
   }
@@ -108,7 +108,7 @@ section.solutionpage__header .solutionpage__header__txt p:last-of-type {
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__header .solutionpage__header__txt p {
     font: normal normal bold 20px/25px "Mulish", sans-serif;
   }
@@ -122,7 +122,7 @@ section.solutionpage__header .solutionpage__header__txt h3 {
   letter-spacing: 0px;
   color: #ffffff;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__header .solutionpage__header__txt h3 {
     font: normal normal normal 20px/25px "Mulish", sans-serif;
   }
@@ -136,7 +136,7 @@ section.solutionpage__deviceswithsolution {
     padding-top: 40px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__deviceswithsolution {
     padding-top: 60px;
   }
@@ -178,7 +178,7 @@ section.solutionpage__deviceswithsolution h2 {
 section.solutionpage__deviceswithsolution h2:last-of-type {
   margin-bottom: 10px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__deviceswithsolution h2 {
     font: normal normal normal 20px/25px "Mulish", sans-serif;
   }
@@ -196,7 +196,7 @@ section.solutionpage__deviceswithsolution p {
 section.solutionpage__deviceswithsolution p:last-of-type {
   margin-bottom: 20px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__deviceswithsolution p {
     font: normal normal 300 18px/23px "Mulish", sans-serif;
   }
@@ -214,7 +214,7 @@ section.solutionpage__deviceswithsolution h3 {
 section.solutionpage__deviceswithsolution h3:last-of-type {
   margin-bottom: 12px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__deviceswithsolution h3 {
     font: normal normal normal 20px/25px "Mulish", sans-serif;
   }
@@ -248,7 +248,7 @@ section.solutionpage__appblock {
     padding-top: 50px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__appblock {
     padding-top: 150px;
   }
@@ -273,7 +273,7 @@ section.solutionpage__appblock .solutionpage__appblock__wrap {
     row-gap: 50px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__appblock .solutionpage__appblock__wrap {
     grid-template-areas: "smartpone smartpone" "first first" "second second";
     column-gap: 40px;
@@ -292,7 +292,7 @@ section.solutionpage__appblock .solutionpage__appblock__container {
     grid-template-rows: repeat(1, 1fr);
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__appblock .solutionpage__appblock__container {
     gap: 21px;
     grid-template-columns: repeat(2, 1fr);
@@ -310,7 +310,7 @@ section.solutionpage__appblock .solutionpage__appblock__container[data-type=seco
     text-align: end;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__appblock .solutionpage__appblock__container[data-type=second] .solutionpage__appblock__block {
     text-align: left;
   }
@@ -334,12 +334,12 @@ section.solutionpage__appblock .solutionpage__appblock__block h3 {
   opacity: 1;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__appblock .solutionpage__appblock__block h3 {
     font: normal normal bold 18px/23px "Mulish", sans-serif;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__appblock .solutionpage__appblock__block h3 {
     margin-bottom: 5px;
   }
@@ -350,7 +350,7 @@ section.solutionpage__appblock .solutionpage__appblock__block p {
   color: #333333;
   opacity: 1;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__appblock .solutionpage__appblock__block p {
     font: normal normal 300 14px/18px "Mulish", sans-serif;
   }
@@ -360,7 +360,7 @@ section.solutionpage__appblock .solutionpage__appblock__block img {
   height: 100px;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__appblock .solutionpage__appblock__block img {
     width: 50px;
     height: 50px;
@@ -783,7 +783,7 @@ section.solutionpage__operationalathome {
     padding: 40px 0;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__operationalathome {
     padding: 30px 0 60px;
   }
@@ -806,7 +806,7 @@ section.solutionpage__operationalathome .solutionpage__operationalathome__wrap >
     font: normal normal normal 20px/25px "Mulish", sans-serif;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__operationalathome .solutionpage__operationalathome__wrap > h3 {
     width: 90%;
   }
@@ -837,7 +837,7 @@ section.solutionpage__operationalathome .solutionpage__operationalathome__contai
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__operationalathome .solutionpage__operationalathome__container {
     margin: 50px auto 0;
   }
@@ -910,7 +910,7 @@ section.solutionpage__operationalathome .solutionpage__operationalathome__block 
     font: normal normal bold 20px/25px "Mulish", sans-serif;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__operationalathome .solutionpage__operationalathome__block span {
     font: normal normal bold 18px/23px "Mulish", sans-serif;
   }
@@ -928,7 +928,7 @@ section.solutionpage__operationalathome .solutionpage__operationalathome__block 
     font: normal normal bold 20px/25px "Mulish", sans-serif;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__operationalathome .solutionpage__operationalathome__block h4 {
     font: normal normal bold 18px/23px "Mulish", sans-serif;
   }
@@ -945,7 +945,7 @@ section.solutionpage__operationalathome .solutionpage__operationalathome__block 
     font: normal normal 300 16px/20px "Mulish", sans-serif;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__operationalathome .solutionpage__operationalathome__block p {
     font: normal normal 300 16px/20px "Mulish", sans-serif;
   }
@@ -979,4 +979,196 @@ section.solutionpage__operationalathome .solutionpage__operationalathome__btn:ho
   background: white;
   border: 1px solid white;
   color: #005b9d;
+}
+
+section.solutionpage__imggrid {
+  padding-top: 95px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid {
+    padding-top: 60px;
+  }
+}
+section.solutionpage__imggrid .solutionpage__imggrid__wrap > h2 {
+  text-align: center;
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 21px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__wrap > h2 {
+    margin-bottom: 7px;
+  }
+}
+@media screen and (max-width: 425px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__wrap > h2 {
+    margin-bottom: 20px;
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+section.solutionpage__imggrid .solutionpage__imggrid__wrap > p {
+  text-align: center;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+section.solutionpage__imggrid .solutionpage__imggrid__grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid {
+    padding-top: 5px;
+  }
+}
+@media screen and (max-width: 425px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid {
+    padding-top: 20px;
+  }
+}
+section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 22px;
+}
+section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column:nth-child(1) {
+  padding-left: 0;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column:nth-child(1) {
+    padding: 0 22px;
+  }
+}
+@media screen and (max-width: 425px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column:nth-child(1) {
+    padding: 0 10px;
+  }
+}
+section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column:nth-last-child(1) {
+  padding-right: 0;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column:nth-last-child(1) {
+    padding: 0 22px;
+  }
+}
+@media screen and (max-width: 425px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column:nth-last-child(1) {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column:nth-child(4) {
+    transform: translate(0, -52px);
+  }
+}
+@media screen and (max-width: 425px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column:nth-child(4) {
+    transform: translate(0, -25px);
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column:nth-child(2n+1) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column:nth-child(2n+2) {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 425px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 10px;
+  }
+}
+section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column .solutionpage__imggrid__grid__img {
+  position: relative;
+  vertical-align: middle;
+  margin-top: 44px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column .solutionpage__imggrid__grid__img {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 425px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column .solutionpage__imggrid__grid__img {
+    margin-top: 20px;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column .solutionpage__imggrid__grid__img:hover {
+    box-shadow: 0px 0px 10px #0000001a;
+  }
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column .solutionpage__imggrid__grid__img:hover::before {
+    opacity: 1;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column .solutionpage__imggrid__grid__img.active {
+    box-shadow: 0px 0px 10px #0000001a;
+  }
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column .solutionpage__imggrid__grid__img.active::before {
+    opacity: 1;
+  }
+}
+section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column .solutionpage__imggrid__grid__img::before {
+  box-shadow: 0px 0px 10px #0000001a;
+  padding: 28px;
+  user-select: none;
+  pointer-events: none;
+  text-align: center;
+  border-radius: 10px;
+  font: italic normal 800 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  background: #333333;
+  content: attr(data-txt);
+  color: white;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 425px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column .solutionpage__imggrid__grid__img::before {
+    padding: 13px;
+    font: italic normal bold 16px/20px "Mulish", sans-serif;
+  }
+}
+section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column img {
+  user-select: none;
+  pointer-events: none;
+  border-radius: 10px;
+  width: 100%;
+}
+@media screen and (max-width: 1023.5px) {
+  section.solutionpage__imggrid .solutionpage__imggrid__grid .solutionpage__imggrid__grid__column img {
+    display: flex;
+  }
 }
