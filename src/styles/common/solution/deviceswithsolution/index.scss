@@ -89,11 +89,21 @@ section.solutionpage__deviceswithsolution {
     letter-spacing: 0px;
     color: #2ec9ad;
     opacity: 1;
+    transition: all 0.3s ease;
+    &:hover {
+      background: #2ec9ad;
+      color: white;
+    }
   }
   .solutionpage__deviceswithsolution__logos {
     display: grid;
-    grid-template-columns: 126.16px 134.64px;
+    grid-template-columns: 136px 136px;
     gap: 27px;
     justify-content: center;
+    cursor: pointer;
+    svg {
+      width: 136px;
+      height: 40px;
+    }
   }
 }
