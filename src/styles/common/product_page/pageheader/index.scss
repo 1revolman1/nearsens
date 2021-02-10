@@ -339,6 +339,7 @@ section.productpage__pageheader {
               justify-content: space-between;
               @include media-forHEADER {
                 @include media-tablet {
+                  border-radius: 0%;
                   margin-left: auto;
                   width: 100%;
                   align-items: center;

@@ -1,4 +1,5 @@
-section.productpage__pageheader.product-out
+section.productpage__pageheader
+    //- .product-out
     .productpage__pageheader__container
         <picture>
             <source media="(max-width:450px)" srcset="img/SmalmgProductPage.png">
@@ -25,20 +26,20 @@ section.productpage__pageheader.product-out
                             span.counter-price 49
                                 sup €99
                             span.productpage__pageheader-wrap-headblock-disqount -50%
-                        p.outstock En rupture de stock
-                        //- .productpage__pageheader-wrap-manipulator-container
-                        //-     .productpage__pageheader-wrap-manipulator-data
-                        //-             button( class="minus"): i(class="fas fa-minus")
-                        //-             span.text 1
-                        //-             button.plus: i(class="fas fa-plus")
-                        //-     .productpage__pageheader-wrap-manipulator-withprice
-                        //-         button.buy-button 
-                        //-             i(class="fas fa-shopping-basket")
-                        //-             |ADD TO CART
-                        //-     .productpage__pageheader-wrap-manipulator-successbuying
-                        //-         p 
-                        //-             i(class="fas fa-check") 
-                        //-             span 2 new added to cart
-                        //-         .template(style='display: none') 1 ; new added to cart
+                        //- p.outstock En rupture de stock
+                        .productpage__pageheader-wrap-manipulator-container
+                            .productpage__pageheader-wrap-manipulator-data
+                                    button( class="minus"): i(class="fas fa-minus")
+                                    span.text 1
+                                    button.plus: i(class="fas fa-plus")
+                            .productpage__pageheader-wrap-manipulator-withprice
+                                button.buy-button 
+                                    i(class="fas fa-shopping-basket")
+                                    |ADD TO CART
+                            .productpage__pageheader-wrap-manipulator-successbuying
+                                p 
+                                    i(class="fas fa-check") 
+                                    span 2 new added to cart
+                                .template(style='display: none') 1 ; new added to cart
 
 

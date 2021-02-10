@@ -32,12 +32,14 @@ section.solutionpage__header img {
     margin: 0 auto 24px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__header img {
     width: 75%;
   }
 }
 section.solutionpage__header .solutionpage__header__txt h1 {
+  white-space: pre;
+  overflow-wrap: break-word;
   text-align: center;
   font: normal normal 800 42px/53px "Mulish", sans-serif;
   letter-spacing: 0px;
@@ -55,7 +57,7 @@ section.solutionpage__header .solutionpage__header__txt h1:last-of-type {
     margin-bottom: 35px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__header .solutionpage__header__txt h1 {
     font: normal normal 800 22px/28px "Mulish", sans-serif;
   }
@@ -79,7 +81,7 @@ section.solutionpage__header .solutionpage__header__txt h2:last-of-type {
     font: normal normal normal 32px/40px "Mulish", sans-serif;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__header .solutionpage__header__txt h2 {
     font: normal normal normal 22px/28px "Mulish", sans-serif;
   }
@@ -91,6 +93,7 @@ section.solutionpage__header .solutionpage__header__txt b {
   font-weight: 800;
 }
 section.solutionpage__header .solutionpage__header__txt p {
+  white-space: pre;
   text-align: center;
   font: normal normal bold 32px/40px "Mulish", sans-serif;
   letter-spacing: 0px;
@@ -108,7 +111,7 @@ section.solutionpage__header .solutionpage__header__txt p:last-of-type {
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__header .solutionpage__header__txt p {
     font: normal normal bold 20px/25px "Mulish", sans-serif;
   }
@@ -122,7 +125,7 @@ section.solutionpage__header .solutionpage__header__txt h3 {
   letter-spacing: 0px;
   color: #ffffff;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   section.solutionpage__header .solutionpage__header__txt h3 {
     font: normal normal normal 20px/25px "Mulish", sans-serif;
   }
