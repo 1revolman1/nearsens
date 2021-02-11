@@ -160,26 +160,16 @@ header.header {
         }
         &.after-scroll {
           top: 22px;
-          img,
           svg {
-            max-width: 89px;
+            width: 89px;
           }
         }
-        img,
         svg {
-          width: 100%;
-          max-width: 160px;
+          width: 160px;
           height: auto;
           object-fit: contain;
-          transition: max-width 0.2s ease;
+          transition: width 0.2s ease;
         }
-      }
-
-      img,
-      svg {
-        max-width: 160px;
-        height: auto;
-        object-fit: contain;
       }
 
       .phone-information {
@@ -843,6 +833,7 @@ nav.nav {
   top: 0;
   z-index: 8;
   background: #004c83 0% 0% no-repeat padding-box;
+  // overflow: unset;
   // box-shadow: inset -15px 91px 305px 0 rgba(0, 0, 0, 0.22);
   box-shadow: inset 0px 5px 305px -177px rgba(0, 0, 0, 0.75);
   @include detect-ios {
@@ -854,10 +845,11 @@ nav.nav {
     transition: all ease 0.5s;
     transform: translate(0, -100%);
     position: fixed;
-    top: $additionalNavMenuToTopBIGMENU;
+    top: 0;
+    // top: $additionalNavMenuToTopBIGMENU;
     min-height: calc(100vh - 64px);
     max-height: calc(100vh - 64px);
-    overflow: auto;
+    // overflow: scroll;
     @include media-tablet {
       min-height: calc(100vh - 55px);
       max-height: calc(100vh - 55px);
@@ -875,16 +867,14 @@ nav.nav {
     grid-template-rows: auto;
     grid-column-gap: 0px;
     padding: 20px 0;
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
-    // justify-content: space-between;
     max-width: $mediaMAXWIDTH;
     width: 94%;
     margin: 0 auto;
-
+    overflow: inherit;
     @include media-forHEADER {
       width: 100%;
+      height: 100%;
+      overflow: scroll;
       display: flex;
       align-items: center;
       justify-content: space-between;

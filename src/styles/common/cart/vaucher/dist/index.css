@@ -32,6 +32,16 @@ section.cart__vaucher .cart__vaucher__manipulator {
   grid-template-columns: 1fr fit-content(100%);
   grid-column-gap: 20px;
 }
+section.cart__vaucher .cart__vaucher__manipulator.disabled .cart__vaucher__manipulator__btn {
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.4;
+}
+section.cart__vaucher .cart__vaucher__manipulator.disabled .cart__vaucher__manipulator__input {
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.4;
+}
 @media screen and (max-width: 768px) {
   section.cart__vaucher .cart__vaucher__manipulator {
     grid-row-gap: 0px;

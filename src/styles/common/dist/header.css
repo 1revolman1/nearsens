@@ -177,23 +177,14 @@ header.header .first-menu .first-block-in-menu > a {
 header.header .first-menu .first-block-in-menu > a.after-scroll {
   top: 22px;
 }
-header.header .first-menu .first-block-in-menu > a.after-scroll img,
 header.header .first-menu .first-block-in-menu > a.after-scroll svg {
-  max-width: 89px;
+  width: 89px;
 }
-header.header .first-menu .first-block-in-menu > a img,
 header.header .first-menu .first-block-in-menu > a svg {
-  width: 100%;
-  max-width: 160px;
+  width: 160px;
   height: auto;
   object-fit: contain;
-  transition: max-width 0.2s ease;
-}
-header.header .first-menu .first-block-in-menu img,
-header.header .first-menu .first-block-in-menu svg {
-  max-width: 160px;
-  height: auto;
-  object-fit: contain;
+  transition: width 0.2s ease;
 }
 header.header .first-menu .first-block-in-menu .phone-information {
   margin-left: calc(7% + 159px);
@@ -826,10 +817,9 @@ nav.nav {
     transition: all ease 0.5s;
     transform: translate(0, -100%);
     position: fixed;
-    top: 64px;
+    top: 0;
     min-height: calc(100vh - 64px);
     max-height: calc(100vh - 64px);
-    overflow: auto;
   }
 }
 @media screen and (max-width: 1023.5px) and (max-width: 768px) {
@@ -853,10 +843,13 @@ nav.nav .second-menu {
   max-width: 1300px;
   width: 94%;
   margin: 0 auto;
+  overflow: inherit;
 }
 @media screen and (max-width: 1023.5px) {
   nav.nav .second-menu {
     width: 100%;
+    height: 100%;
+    overflow: scroll;
     display: flex;
     align-items: center;
     justify-content: space-between;

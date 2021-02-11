@@ -26,25 +26,24 @@ section.cart__vaucher {
     }
   }
   .cart__vaucher__manipulator {
-    // display: flex;
-    // flex-flow: row wrap;
     display: grid;
     grid-template-columns: 1fr fit-content(100%);
     grid-column-gap: 20px;
+    &.disabled {
+      .cart__vaucher__manipulator__btn {
+        user-select: none;
+        pointer-events: none;
+        opacity: 0.4;
+      }
+      .cart__vaucher__manipulator__input {
+        user-select: none;
+        pointer-events: none;
+        opacity: 0.4;
+      }
+    }
     @include media-tablet {
       grid-row-gap: 0px;
-      // display: flex;
-      // flex-flow: row wrap;
-      // gap: 20px;
-
-      // row-gap: 10px;
-      // column-gap: 20px;
       width: 100%;
-      // justify-content: space-between;
-      @media screen and (max-width: 375px) {
-        // display: flex;
-        // flex-flow: row wrap;
-      }
     }
     .cart__vaucher__manipulator__btn {
       // margin: 0 10px;
