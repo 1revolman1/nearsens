@@ -97,15 +97,10 @@ header.header {
   width: 100%;
   z-index: 9;
   background: #004c83 0% 0% no-repeat padding-box;
-  // box-shadow: inset -15px 91px 305px 0 rgba(0, 0, 0, 0.22);
   box-shadow: inset -15px 91px 305px -177px rgba(0, 0, 0, 0.75);
   @include detect-ios {
     box-shadow: none;
   }
-  //   @supports (-webkit-touch-callout: none) {
-  //     /* CSS specific to iOS devices */
-  //     box-shadow: none;
-  //  }
   @include media-forHEADER {
     display: flex;
     position: fixed;
@@ -128,17 +123,13 @@ header.header {
   }
   .first-menu {
     border-bottom: 1px solid #33709c;
-    // border-bottom: 1px solid #FFFFFF;
-    // padding: 23px 0;
     padding: 21px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: $mediaMAXWIDTH;
     width: 94%;
-    // width: 100%;
     margin: 0 auto;
-
     @include media-forHEADER {
       border-bottom: none;
       padding: 13px 0;
@@ -148,17 +139,14 @@ header.header {
         width: 100%;
       }
     }
-
     .first-block-in-menu {
       flex: 1;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-
       @include media-forHEADER {
         margin-left: 45px;
       }
-
       > a {
         position: fixed;
         top: 29px;
@@ -171,8 +159,6 @@ header.header {
           position: initial;
         }
         &.after-scroll {
-          // top: 49px;
-          // top: 25px;
           top: 22px;
           img,
           svg {
@@ -197,9 +183,7 @@ header.header {
       }
 
       .phone-information {
-        // margin-left: 7%;
         margin-left: calc(7% + 159px);
-        // margin-left: 58px;
         margin-bottom: -8px;
         display: flex;
         align-items: center;
@@ -207,7 +191,6 @@ header.header {
 
         .logo-phone {
           margin-top: -6px;
-          // margin-right: 5px;
           margin-right: 10px;
           i {
             font-size: 25px;
@@ -305,9 +288,6 @@ header.header {
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-        // margin-right: 40px;
-        // margin-right: 6%;
-
         @include media-forHEADER {
           display: flex;
           margin-right: 20px;
@@ -327,7 +307,6 @@ header.header {
           color: #ffffff;
           background: transparent;
           padding: 9px 60px 11px 20px;
-          // padding: 11px 60px 11px 20px;
           width: 100%;
           @include media-forHEADER {
             padding: 9px 60px 9px 20px;
@@ -347,9 +326,7 @@ header.header {
 
           &:checked ~ label {
             transform: translate(-50px, 0);
-            // margin-left: 10px;
           }
-
           &:checked ~ input {
             opacity: 1;
             visibility: visible;
@@ -372,22 +349,42 @@ header.header {
           position: relative;
           display: inline-block;
 
-          &:hover {
-            .dropbtn {
-              color: #2ec9ad;
-              i:not(.globe) {
+          @include detect-notouch {
+            &:hover {
+              .dropbtn {
                 color: #2ec9ad;
-                transform: rotate(-90deg);
+                i:not(.globe) {
+                  color: #2ec9ad;
+                  transform: rotate(-90deg);
 
-                @include media-forHEADER {
-                  transform: rotate(90deg);
+                  @include media-forHEADER {
+                    transform: rotate(90deg);
+                  }
                 }
               }
+              .dropup-content {
+                display: block;
+                z-index: 9;
+              }
             }
+          }
+          @include detect-touch {
+            &.activeOpen {
+              .dropbtn {
+                color: #2ec9ad;
+                i:not(.globe) {
+                  color: #2ec9ad;
+                  transform: rotate(-90deg);
 
-            .dropup-content {
-              display: block;
-              z-index: 9;
+                  @include media-forHEADER {
+                    transform: rotate(90deg);
+                  }
+                }
+              }
+              .dropup-content {
+                display: block;
+                z-index: 9;
+              }
             }
           }
 
@@ -1060,26 +1057,53 @@ nav.nav {
                 }
               }
             }
-            &:hover {
-              .dropbtn {
-                color: #2ec9ad;
-                i:not(.globe) {
+            @include detect-notouch {
+              &:hover {
+                .dropbtn {
                   color: #2ec9ad;
-                  transform: rotate(-90deg);
+                  i:not(.globe) {
+                    color: #2ec9ad;
+                    transform: rotate(-90deg);
 
-                  @include media-forHEADER {
-                    transform: rotate(90deg);
+                    @include media-forHEADER {
+                      transform: rotate(90deg);
+                    }
+                  }
+                }
+
+                .dropup-content {
+                  display: block;
+                  z-index: 9;
+                }
+                .droupup-block {
+                  &::after {
+                    display: block;
                   }
                 }
               }
+            }
+            @include detect-touch {
+              &.activeOpen {
+                .dropbtn {
+                  color: #2ec9ad;
+                  i:not(.globe) {
+                    color: #2ec9ad;
+                    transform: rotate(-90deg);
 
-              .dropup-content {
-                display: block;
-                z-index: 9;
-              }
-              .droupup-block {
-                &::after {
+                    @include media-forHEADER {
+                      transform: rotate(90deg);
+                    }
+                  }
+                }
+
+                .dropup-content {
                   display: block;
+                  z-index: 9;
+                }
+                .droupup-block {
+                  &::after {
+                    display: block;
+                  }
                 }
               }
             }
@@ -1628,30 +1652,36 @@ nav.nav {
           align-items: center;
           display: flex;
         }
-
-        // .shop-cart-logo:hover ~.dropdown.show-info,
-        // .droupup-block:focus .dropdown.show-info,
-        // .droupup-block:hover .dropdown.show-info,
-        // .dropdown.show-info:hover,
-        // .dropdown.show-info:focus{
-        //   visibility: hidden;
-        //   opacity: 0;
-        //   // display: none;
-        // }
-
-        .shop-cart-logo:hover ~ .droupup-block .dropdown,
-        .droupup-block:focus .dropdown,
-        .droupup-block:hover .dropdown,
-        .dropdown:hover,
-        .dropdown:focus {
-          visibility: visible;
-          opacity: 1;
-          display: flex;
-          flex-direction: column;
-          @include media-forHEADER {
-            visibility: hidden;
-            opacity: 0;
-            display: none;
+        @include detect-notouch {
+          .shop-cart-logo:hover ~ .droupup-block .dropdown,
+          .droupup-block:focus .dropdown,
+          .droupup-block:hover .dropdown,
+          .dropdown:hover,
+          .dropdown:focus {
+            visibility: visible;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+            @include media-forHEADER {
+              visibility: hidden;
+              opacity: 0;
+              display: none;
+            }
+          }
+        }
+        @include detect-touch {
+          &.activeOpen {
+            .dropdown {
+              visibility: visible;
+              opacity: 1;
+              display: flex;
+              flex-direction: column;
+              @include media-forHEADER {
+                visibility: hidden;
+                opacity: 0;
+                display: none;
+              }
+            }
           }
         }
 
@@ -1676,6 +1706,7 @@ nav.nav {
           opacity: 1;
         }
         .ammount-items {
+          user-select: none;
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;

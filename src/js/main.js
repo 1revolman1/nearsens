@@ -91,6 +91,17 @@ $(document).ready(() => {
     const observer = new IntersectionObserver(onScrollChange, options);
     if (target) observer.observe(target);
     document
+      .querySelectorAll('ul li.dropup, .shop-cart.dropup')
+      .forEach(function (dropup, index, elements) {
+        dropup.addEventListener('click', function (event) {
+          elements.forEach((elem) => {
+            if (elem.matches('.activeOpen') && !elem.isEqualNode(dropup))
+              elem.classList.remove('activeOpen');
+          });
+          dropup.classList.toggle('activeOpen');
+        });
+      });
+    document
       .querySelectorAll('ul li.dropup .dropbtn')
       .forEach((button, index, buttons) => {
         button.addEventListener('click', () => {
@@ -136,39 +147,4 @@ $(document).ready(() => {
   };
   if (typeof typePage != undefined)
     pageObj[typePage] ? pageObj[typePage]() : console.log(`ELSE PAGE`);
-  // switch (typeof typePage != undefined) {
-  //   case typePage === 'usecase_list':
-  //     useCasesList();
-  //     break;
-  //   case typePage === 'product_list_page':
-  //     useProductList();
-  //     break;
-  //   case typePage === 'product_page':
-  //     useProductPage();
-  //     break;
-  //   case typePage === 'home_page':
-  //     useHomePage();
-  //     break;
-  //   case typePage === 'contact_page':
-  //     useContactPage();
-  //     break;
-  //   case typePage === 'usecase_details':
-  //     useCasesDetails();
-  //     break;
-  //   case typePage === 'signup_page':
-  //     useSignUpPage();
-  //     break;
-  //   case typePage === 'cart_page':
-  //     useCartPage();
-  //     break;
-  //   case typePage === 'checkout_page':
-  //     useCheckoutPage();
-  //     break;
-  //   case typePage === 'my_account':
-  //     useMyAccountPage();
-  //     break;
-  //   default:
-  //     console.log(`ELSE PAGE`);
-  //     break;
-  // }
 });
