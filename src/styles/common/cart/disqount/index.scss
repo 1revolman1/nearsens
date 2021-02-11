@@ -11,31 +11,31 @@ section.cart__disqount {
   ul.cart__disqount__main-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr) max-content;
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    // grid-template-rows: repeat(2, 1fr);
+    gap: 5px 75px;
     margin-bottom: 37px;
     @include media-tablet {
+      gap: 5px 32px;
       margin-bottom: 20px;
     }
-    .titel-container {
-      grid-area: 1 / 1 / 3 / 2;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
-    }
-    .price-container {
-      grid-area: 1 / 2 / 3 / 3;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
-    }
+    // .titel-container {
+    //   // grid-area: 1 / 1 / 3 / 2;
+    //   display: grid;
+    //   grid-template-columns: repeat(1, 1fr) max-content;
+    //   // grid-template-rows: repeat(3, 1fr);
+    //   grid-column-gap: 5px;
+    //   grid-row-gap: 5px;
+    // }
+    // .price-container {
+    //   // grid-area: 1 / 2 / 3 / 3;
+    //   display: grid;
+    //   grid-template-columns: repeat(1, 1fr) max-content;
+    //   // grid-template-rows: repeat(3, 1fr);
+    //   grid-column-gap: 5px;
+    //   grid-row-gap: 5px;
+    // }
     .title {
-      margin-right: 32px;
+      // margin-right: 32px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -63,11 +63,11 @@ section.cart__disqount {
       sup {
         font: normal normal 300 20px/0px 'Mulish', sans-serif;
         @include media-tablet {
-          font: normal normal normal 17px/0px 'Mulish', sans-serif;
+          font: normal normal 300 17px/0px 'Mulish', sans-serif;
         }
       }
       @include media-tablet {
-        font: normal normal normal 26px/33px 'Mulish', sans-serif;
+        font: normal normal 300 26px/33px 'Mulish', sans-serif;
         letter-spacing: 0px;
         color: #28373b;
         opacity: 1;

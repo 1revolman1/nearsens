@@ -6,7 +6,11 @@ section.loginpage__container.signuppage__container
             input(type="email" name="email" placeholder="EMAIL")
             input(type="text" name="username" placeholder="NAME")
             input(type="password" name="password" placeholder="PASSWORD")
-            p.error-message Error message Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo, rem reprehenderit provident ut beatae quas, eum sint in ducimus at quia odit. Ullam qui deserunt perferendis, consequuntur dolorem quos!
+            p.error-message 
+                |Error message Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo, rem reprehenderit provident ut beatae quas, eum sint in ducimus at quia odit. Ullam qui deserunt perferendis, consequuntur dolorem quos!
+                span.hidden.email Your email is to weak!
+                span.hidden.username Your username is to short! 
+                span.hidden.password Your password isn't strong!
         h3 Your personals informations
         .loginpage__container__block__manipulator
             input(type="text" placeholder="First name")

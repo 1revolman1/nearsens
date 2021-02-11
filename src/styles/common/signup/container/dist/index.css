@@ -1,6 +1,12 @@
 section.signuppage__container {
   padding-bottom: 120px;
 }
+section.signuppage__container .loginpage__container__block .loginpage__container__block__manipulator .error-input {
+  border: 1px solid red;
+}
+section.signuppage__container .loginpage__container__block .loginpage__container__block__manipulator .hidden {
+  display: none;
+}
 section.signuppage__container .loginpage__container__block .loginpage__container__block__manipulator .custom-select-wrapper {
   flex: none;
   width: 100%;
@@ -15,10 +21,20 @@ section.signuppage__container .loginpage__container__block .loginpage__container
 }
 section.signuppage__container .loginpage__container__block .loginpage__container__block__manipulator .custom-select-wrapper .custom-select .custom-select__trigger span {
   text-transform: none;
-  font: normal normal 300 18px/23px Mulish;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
+}
+section.signuppage__container .loginpage__container__block .loginpage__container__block__manipulator .error-message {
+  white-space: pre-line;
+  color: red;
+  font: italic normal bold 14px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+section.signuppage__container .loginpage__container__block .loginpage__container__block__manipulator .error-message span {
+  display: block;
 }
 section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox {
   padding: 0 125px;
@@ -28,8 +44,11 @@ section.signuppage__container .loginpage__container__block .signuppage__containe
     padding: 0 7%;
   }
 }
+section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox .error-input + .checkmark {
+  border: 1px solid red;
+}
 section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox .container {
-  font: normal normal 300 18px/23px Mulish;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #28373b;
   opacity: 1;
@@ -42,7 +61,7 @@ section.signuppage__container .loginpage__container__block .signuppage__containe
 }
 @media screen and (max-width: 768px) {
   section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox .container {
-    font: normal normal 300 14px/18px Mulish;
+    font: normal normal 300 14px/18px "Mulish", sans-serif;
     letter-spacing: 0px;
     color: #28373b;
     opacity: 1;
@@ -55,10 +74,10 @@ section.signuppage__container .loginpage__container__block .signuppage__containe
   height: 0;
   width: 0;
 }
-section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox .container input:checked ~ .checkmark {
+section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox .container input:checked + .checkmark {
   background-color: #eee;
 }
-section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox .container input:checked ~ .checkmark:after {
+section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox .container input:checked + .checkmark .fa-check {
   display: block;
 }
 section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox .container:hover input ~ .checkmark {
@@ -84,11 +103,18 @@ section.signuppage__container .loginpage__container__block .signuppage__containe
   width: 32px;
   background-color: #eee;
 }
-section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox .checkmark:after {
-  content: "";
-  position: absolute;
+section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox .checkmark .fa-check {
   display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #005b9d;
 }
 section.signuppage__container .loginpage__container__block .signuppage__container__block__email {
   padding: 0 7%;
+}
+section.signuppage__container .loginpage__container__block .signuppage__container__block__email .error-btn {
+  opacity: 0.5;
+  pointer-events: none;
 }

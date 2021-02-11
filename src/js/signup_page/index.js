@@ -94,12 +94,18 @@ function checkIfNotValid() {
 
   //Make blur event on input
   ourInputs.forEach(function (elm, index) {
+    const nameField = elm.getAttribute('name');
+    const foundedErrorElement = document.querySelector(
+      `.loginpage__container__block__manipulator .hidden.${nameField}`
+    );
     elm.addEventListener('blur', function () {
       if (functionalArray[index](elm)) {
+        foundedErrorElement.classList.add('hidden');
         elm.classList.remove('error-input');
         if (document.querySelectorAll('.error-input').length === 0)
           createAccountBtn.classList.remove('error-btn');
       } else {
+        foundedErrorElement.classList.remove('hidden');
         elm.classList.add('error-input');
         createAccountBtn.classList.add('error-btn');
       }

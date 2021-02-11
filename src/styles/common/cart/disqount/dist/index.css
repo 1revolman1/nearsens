@@ -1,0 +1,84 @@
+section.cart__disqount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.cart__disqount {
+    width: 90%;
+    margin: 0 auto 80px;
+  }
+}
+section.cart__disqount ul.cart__disqount__main-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr) max-content;
+  gap: 5px 75px;
+  margin-bottom: 37px;
+}
+@media screen and (max-width: 768px) {
+  section.cart__disqount ul.cart__disqount__main-list {
+    gap: 5px 32px;
+    margin-bottom: 20px;
+  }
+}
+section.cart__disqount ul.cart__disqount__main-list .title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  font: normal normal normal 22px/28px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.cart__disqount ul.cart__disqount__main-list .title {
+    font: normal normal normal 18px/23px "Mulish", sans-serif;
+    letter-spacing: 0px;
+    color: #28373b;
+    opacity: 1;
+  }
+}
+section.cart__disqount ul.cart__disqount__main-list .price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  font: normal normal 300 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+section.cart__disqount ul.cart__disqount__main-list .price sup {
+  font: normal normal 300 20px/0px "Mulish", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  section.cart__disqount ul.cart__disqount__main-list .price sup {
+    font: normal normal 300 17px/0px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.cart__disqount ul.cart__disqount__main-list .price {
+    font: normal normal 300 26px/33px "Mulish", sans-serif;
+    letter-spacing: 0px;
+    color: #28373b;
+    opacity: 1;
+  }
+}
+section.cart__disqount .cart__disqount__btn {
+  padding: 14px 30px;
+  background: #2ec9ad 0% 0% no-repeat padding-box;
+  border: 1px solid #2ec9ad;
+  border-radius: 40px;
+  opacity: 1;
+  font: normal normal bold 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.cart__disqount .cart__disqount__btn {
+    align-self: center;
+  }
+}
