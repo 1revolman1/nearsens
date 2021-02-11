@@ -27,14 +27,11 @@ section.signuppage__container .loginpage__container__block .loginpage__container
   opacity: 1;
 }
 section.signuppage__container .loginpage__container__block .loginpage__container__block__manipulator .error-message {
-  white-space: pre-line;
+  display: grid;
   color: red;
   font: italic normal bold 14px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   opacity: 1;
-}
-section.signuppage__container .loginpage__container__block .loginpage__container__block__manipulator .error-message span {
-  display: block;
 }
 section.signuppage__container .loginpage__container__block .signuppage__container__block__checkbox {
   padding: 0 125px;

@@ -32,14 +32,11 @@ section.signuppage__container {
         }
       }
       .error-message {
-        white-space: pre-line;
+        display: grid;
         color: red;
         font: italic normal bold 14px/23px 'Mulish', sans-serif;
         letter-spacing: 0px;
         opacity: 1;
-        span {
-          display: block;
-        }
       }
     }
     .signuppage__container__block__checkbox {
