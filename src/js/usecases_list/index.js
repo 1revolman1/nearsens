@@ -203,6 +203,13 @@ export const useCasesList = function main() {
               select.classList.remove('open');
             }
           });
+        document
+          .querySelectorAll('.use_case__filter__filtermanipul button')
+          .forEach((removeBtn) => {
+            if (!removeBtn.contains(e.target)) {
+              removeBtn.classList.remove('active-remove');
+            }
+          });
       });
       const filterKeys = Object.keys(currentFilter._filters);
       currentFilter._blocks.forEach((elm) => {
@@ -261,8 +268,9 @@ export const useCasesList = function main() {
       });
       document
         .querySelectorAll('.use_case__filter__filtermanipul button')
-        .forEach((e) => {
-          e.addEventListener('click', function () {
+        .forEach((removeBtn) => {
+          removeBtn.addEventListener('click', function () {
+            removeBtn.classList.toggle('active-remove');
             currentFilter._removeAllFilter();
           });
         });
