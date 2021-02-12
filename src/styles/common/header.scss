@@ -162,6 +162,9 @@ header.header {
           top: 22px;
           svg {
             width: 89px;
+            @include media-forHEADER {
+              width: 160px;
+            }
           }
         }
         svg {
@@ -828,28 +831,25 @@ header.header {
 
 nav.nav {
   height: 64px;
+  width: 100%;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 8;
   background: #004c83 0% 0% no-repeat padding-box;
-  // overflow: unset;
   // box-shadow: inset -15px 91px 305px 0 rgba(0, 0, 0, 0.22);
   box-shadow: inset 0px 5px 305px -177px rgba(0, 0, 0, 0.75);
   @include detect-ios {
     box-shadow: none;
   }
-  width: 100%;
 
   @include media-forHEADER {
-    transition: all ease 0.5s;
+    transition: transform ease 0.5s;
     transform: translate(0, -100%);
     position: fixed;
-    top: 0;
-    // top: $additionalNavMenuToTopBIGMENU;
+    top: $additionalNavMenuToTopBIGMENU;
     min-height: calc(100vh - 64px);
     max-height: calc(100vh - 64px);
-    // overflow: scroll;
     @include media-tablet {
       min-height: calc(100vh - 55px);
       max-height: calc(100vh - 55px);
@@ -858,7 +858,6 @@ nav.nav {
     &.holiday-header {
       transform: translate(0, calc(-100% - 44px));
     }
-    // background: #004C83 0% 0% no-repeat padding-box;
   }
 
   .second-menu {
@@ -870,17 +869,21 @@ nav.nav {
     max-width: $mediaMAXWIDTH;
     width: 94%;
     margin: 0 auto;
-    overflow: inherit;
+    overflow-y: inherit;
+    // overflow: inherit;
     @include media-forHEADER {
       width: 100%;
       height: 100%;
-      overflow: scroll;
+      overflow-y: auto;
+      // overflow: scroll;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-direction: column;
       padding: 0;
-      min-height: calc(100vh - 57px);
+      @include media-tablet {
+        height: 100%;
+      }
     }
 
     .search-menu {

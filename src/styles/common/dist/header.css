@@ -180,6 +180,11 @@ header.header .first-menu .first-block-in-menu > a.after-scroll {
 header.header .first-menu .first-block-in-menu > a.after-scroll svg {
   width: 89px;
 }
+@media screen and (max-width: 1023.5px) {
+  header.header .first-menu .first-block-in-menu > a.after-scroll svg {
+    width: 160px;
+  }
+}
 header.header .first-menu .first-block-in-menu > a svg {
   width: 160px;
   height: auto;
@@ -799,13 +804,13 @@ header.header .first-menu .second-block-in-menu .sign-in-link a:hover {
 
 nav.nav {
   height: 64px;
+  width: 100%;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 8;
   background: #004c83 0% 0% no-repeat padding-box;
   box-shadow: inset 0px 5px 305px -177px rgba(0, 0, 0, 0.75);
-  width: 100%;
 }
 @supports (-webkit-touch-callout: none) and (-webkit-text-size-adjust: none) and (not (-ms-ime-align: auto)) and (not (-moz-appearance: none)) {
   nav.nav {
@@ -814,10 +819,10 @@ nav.nav {
 }
 @media screen and (max-width: 1023.5px) {
   nav.nav {
-    transition: all ease 0.5s;
+    transition: transform ease 0.5s;
     transform: translate(0, -100%);
     position: fixed;
-    top: 0;
+    top: 64px;
     min-height: calc(100vh - 64px);
     max-height: calc(100vh - 64px);
   }
@@ -843,19 +848,23 @@ nav.nav .second-menu {
   max-width: 1300px;
   width: 94%;
   margin: 0 auto;
-  overflow: inherit;
+  overflow-y: inherit;
 }
 @media screen and (max-width: 1023.5px) {
   nav.nav .second-menu {
     width: 100%;
     height: 100%;
-    overflow: scroll;
+    overflow-y: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     padding: 0;
-    min-height: calc(100vh - 57px);
+  }
+}
+@media screen and (max-width: 1023.5px) and (max-width: 768px) {
+  nav.nav .second-menu {
+    height: 100%;
   }
 }
 nav.nav .second-menu .search-menu {
