@@ -222,6 +222,7 @@ header.header .first-menu .first-block-in-menu .phone-information .text-content 
   opacity: 1;
 }
 header.header .first-menu .first-block-in-menu .phone-information .text-content .text-content {
+  position: relative;
   overflow: hidden;
 }
 header.header .first-menu .first-block-in-menu .phone-information .text-content .text-content p.first {

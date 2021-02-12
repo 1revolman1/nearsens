@@ -210,8 +210,8 @@ header.header {
           }
 
           .text-content {
+            position: relative;
             overflow: hidden;
-
             p.first {
               transition: all ease 0.2s;
               transform: translate(0, -100%);

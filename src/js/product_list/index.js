@@ -123,6 +123,8 @@ function cartAnim(interval) {
 export const useProductList = function main() {
   console.log(`PRODUCT LIST PAGE`);
   let intervalAnim;
+  let cachedWidth = window.innerWidth;
+
   const len = document.querySelectorAll(
     '.productlist__pageheader-wrapper__slider-container__slider-element'
   ).length;
@@ -309,53 +311,58 @@ export const useProductList = function main() {
   ) {
     slider = tns(settingsSlick(len));
   }
+
   window.addEventListener(
     'resize',
     debounce(function () {
-      console.log('resize', slider, len);
-      if (slider) {
-        destroySlider(slider);
-      }
-      isMobile = window.innerWidth <= 425;
-      isTablet = window.innerWidth > 425 && window.innerWidth <= 1023;
-      isDesktop = window.innerWidth > 1023 && window.innerWidth <= 1919;
-      isWider = window.innerWidth > 1919;
-      if (
-        (len > 4 && isMobile) ||
-        (len > 5 && isTablet) ||
-        (len > 9 && isDesktop) ||
-        (len > 15 && isWider)
-      ) {
-        // console.log('могу пересоздать');
-        slider = tns(settingsSlick(len));
-      }
-      if ((isWider || isDesktop) && !isTouchDevice()) {
-        console.log('Enable');
-        $('[title]').each(function () {
-          let $this = $(this);
-          $.attr(this, 'title', $this.attr('title1'));
-          $this.removeAttr('title1');
-        });
-        $(document).tooltip({
-          track: true,
-          classes: {
-            'ui-tooltip': 'ui-corner-all ui-widget-shadow slider-tooltip',
-          },
-          delay: 0,
-          duration: 0,
-          hide: {
-            effect: 'none',
-          },
-          show: { effect: 'none' },
-          position: { my: 'top+40px', at: 'right center' },
-        });
-      } else {
-        console.log('Destroy');
-        $('[title]').each(function () {
-          let $this = $(this);
-          $.attr(this, 'title1', $this.attr('title'));
-          $this.removeAttr('title');
-        });
+      let newWidth = window.innerWidth;
+      if (newWidth !== cachedWidth) {
+        console.log('resize with new value', slider, len);
+        if (slider) {
+          destroySlider(slider);
+        }
+        isMobile = window.innerWidth <= 425;
+        isTablet = window.innerWidth > 425 && window.innerWidth <= 1023;
+        isDesktop = window.innerWidth > 1023 && window.innerWidth <= 1919;
+        isWider = window.innerWidth > 1919;
+        if (
+          (len > 4 && isMobile) ||
+          (len > 5 && isTablet) ||
+          (len > 9 && isDesktop) ||
+          (len > 15 && isWider)
+        ) {
+          // console.log('могу пересоздать');
+          slider = tns(settingsSlick(len));
+        }
+        if ((isWider || isDesktop) && !isTouchDevice()) {
+          console.log('Enable');
+          $('[title]').each(function () {
+            let $this = $(this);
+            $.attr(this, 'title', $this.attr('title1'));
+            $this.removeAttr('title1');
+          });
+          $(document).tooltip({
+            track: true,
+            classes: {
+              'ui-tooltip': 'ui-corner-all ui-widget-shadow slider-tooltip',
+            },
+            delay: 0,
+            duration: 0,
+            hide: {
+              effect: 'none',
+            },
+            show: { effect: 'none' },
+            position: { my: 'top+40px', at: 'right center' },
+          });
+        } else {
+          console.log('Destroy');
+          $('[title]').each(function () {
+            let $this = $(this);
+            $.attr(this, 'title1', $this.attr('title'));
+            $this.removeAttr('title');
+          });
+        }
+        cachedWidth = newWidth;
       }
     }, 250)
   );
