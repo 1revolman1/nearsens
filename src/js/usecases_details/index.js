@@ -1,3 +1,4 @@
+// import { cartAnim } from '../additionfunctional/cartbuy';
 function cartAnim() {
   const isMobile = window.innerWidth <= 1023;
   const container = $(this).parents(
@@ -118,9 +119,6 @@ export const useCasesDetails = function main() {
   $(
     '.usecase_details__blockwithbuyabbility-wrap__manipulator__block .shop-cart'
   ).on('buyInUseCase', cartAnim);
-  // $(
-  //   '.usecase_details__blockwithbuyabbility-wrap__manipulator__block .shop-cart'
-  // ).on('click', cartAnim);
   const observer = new IntersectionObserver(onScrollChange, options);
   const target = document.querySelector('.usecase_details__pageheader');
   if (target) observer.observe(target);

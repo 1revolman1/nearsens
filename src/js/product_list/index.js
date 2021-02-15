@@ -3,6 +3,8 @@ import {
   isTouchDevice,
   debounce,
   cartAnim,
+  minusProduct,
+  plusProduct,
 } from '../additionfunctional/cartbuy';
 
 export const useProductList = function main() {
@@ -55,69 +57,14 @@ export const useProductList = function main() {
         });
       }
     });
-  console.log(cartAnim);
 
   $('.productlist__products-container-element-controllers-counter .minus').on(
     'click',
-    function () {
-      const container = $(this).parents(
-        '.productlist__products-container-element-controllers-counter'
-      );
-      const counter = container.find('span');
-      let value = Number(counter.text());
-      value -= 1;
-      if (value === 1) {
-        $(this).attr('disabled', true);
-      }
-      const finalAdd = container
-        .parents(
-          '.productlist__products-container-element-controllers-manipulator'
-        )
-        .find('.desktop');
-      const template = container
-        .parents(
-          '.productlist__products-container-element-controllers-manipulator'
-        )
-        .find('.template')
-        .text();
-      finalAdd.text(template.replace('1 ;', String(value)));
-      counter.text(value);
-    }
+    minusProduct
   );
   $('.productlist__products-container-element-controllers-counter .plus').on(
     'click',
-    function () {
-      const container = $(this).parents(
-        '.productlist__products-container-element-controllers-counter'
-      );
-      const counter = container.find('span');
-      let value = Number(counter.text());
-      value += 1;
-      if (value >= 2) {
-        container.find('.minus').attr('disabled', false);
-        $(this)
-          .parents(
-            '.productlist__products-container-element-controllers-manipulator'
-          )
-          .find(
-            '.productlist__products-container-element-controllers-shop button'
-          )
-          .attr('disabled', false);
-      }
-      const finalAdd = container
-        .parents(
-          '.productlist__products-container-element-controllers-manipulator'
-        )
-        .find('.desktop');
-      const template = container
-        .parents(
-          '.productlist__products-container-element-controllers-manipulator'
-        )
-        .find('.template')
-        .text();
-      finalAdd.text(template.replace('1 ;', String(value)));
-      counter.text(value);
-    }
+    plusProduct
   );
   $('.productlist__products-container-element-controllers-shop button').on(
     'buyingLogic',

@@ -93,7 +93,8 @@ section.contact__findanswer {
           grid-row-gap: 20px;
         }
         span {
-          display: contents;
+          display: grid;
+          width: 100%;
         }
         .textinput {
           width: 100%;
@@ -180,7 +181,7 @@ section.contact__findanswer {
             // flex-direction: column;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: auto;
+            grid-template-rows: repeat(3, fit-content(100%));
             grid-column-gap: 40px;
             grid-row-gap: 40px;
             @include media-tablet {
@@ -206,23 +207,26 @@ section.contact__findanswer {
               font: normal normal 300 18px/23px 'Mulish', sans-serif;
               letter-spacing: 0px;
               color: #333333;
-              &::-webkit-input-placeholder {
-                /* WebKit browsers */
-                padding: 14px 30px;
-              }
-              &:-moz-placeholder {
-                /* Mozilla Firefox 4 to 18 */
-                padding: 14px 30px;
-              }
-              &::-moz-placeholder {
-                /* Mozilla Firefox 19+ */
-                padding: 14px 30px;
-              }
-              &:-ms-input-placeholder {
-                /* Internet Explorer 10+ */
-                padding: 14px 30px;
-              }
+              padding: 14px 30px;
+              // margin-bottom: -28px;
+              // &::-webkit-input-placeholder {
+              //   /* WebKit browsers */
+              //   padding: 14px 30px;
+              // }
+              // &:-moz-placeholder {
+              //   /* Mozilla Firefox 4 to 18 */
+              //   padding: 14px 30px;
+              // }
+              // &::-moz-placeholder {
+              //   /* Mozilla Firefox 19+ */
+              //   padding: 14px 30px;
+              // }
+              // &:-ms-input-placeholder {
+              //   /* Internet Explorer 10+ */
+              //   padding: 14px 30px;
+              // }
               @include media-tablet {
+                margin-bottom: 0;
                 font: normal normal 300 18px/23px 'Mulish', sans-serif;
                 letter-spacing: 0px;
                 color: #333333;
@@ -387,5 +391,8 @@ section.contact__findanswer {
         }
       }
     }
+  }
+  .wpcf7-form-control-wrap {
+    display: grid;
   }
 }

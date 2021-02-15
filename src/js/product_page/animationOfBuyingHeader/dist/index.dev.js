@@ -21,32 +21,12 @@ var useBuyingAnimationHeader = function main() {
       });
     }
   });
-  $('.productpage__pageheader .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator-withprice').on('click', (0, _cartbuy.cartAnim)());
-  $('.productpage__pageheader .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator-data .minus').on('click', function () {
-    var container = $(this).parents('.productpage__pageheader-wrap-manipulator-data');
-    var counter = container.find('span');
-    var value = Number(counter.text());
-    value -= 1;
-
-    if (value === 1) {
-      $(this).attr('disabled', true);
-    }
-
-    counter.text(value);
-  });
-  $('.productpage__pageheader .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator-data .plus').on('click', function () {
-    var container = $(this).parents('.productpage__pageheader-wrap-manipulator-data');
-    var counter = container.find('span');
-    var value = Number(counter.text());
-    value += 1;
-
-    if (value >= 2) {
-      container.find('.minus').attr('disabled', false);
-      $(this).parents('.productpage__pageheader-wrap-manipulator-container').find('.productpage__pageheader-wrap-manipulator-withprice button').attr('disabled', false);
-    }
-
-    counter.text(value);
-  });
+  $('.productpage__pageheader .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator-withprice').on('click', (0, _cartbuy.cartAnim)(0, {
+    width: '70px',
+    height: '70px'
+  }));
+  $('.productpage__pageheader .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator-data .minus').on('click', _cartbuy.minusProduct);
+  $('.productpage__pageheader .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator-data .plus').on('click', _cartbuy.plusProduct);
 };
 
 exports.useBuyingAnimationHeader = useBuyingAnimationHeader;

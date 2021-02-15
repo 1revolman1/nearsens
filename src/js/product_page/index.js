@@ -1,6 +1,10 @@
 import { useBuyingAnimationHeader } from './animationOfBuyingHeader';
 import { useBuyingAnimationStickyHeader } from './animationOfBuyingStickyHeader';
-import { cartAnim } from '../additionfunctional/cartbuy';
+import {
+  cartAnim,
+  minusProduct,
+  plusProduct,
+} from '../additionfunctional/cartbuy';
 
 const options = {
   root: null, //root
@@ -25,7 +29,6 @@ export const useProductPage = function main() {
 
   //Activate functionality of buying animation in header
   useBuyingAnimationHeader();
-  console.log(cartAnim);
   //Activate functionality of buying animation in sticky header
   if (
     !document
@@ -55,70 +58,16 @@ export const useProductPage = function main() {
 
   $('.productlist__products-container-element-controllers-shop button').on(
     'buyingLogic',
-    cartAnim()
+    cartAnim(0, { width: '70px', height: '70px' })
   );
 
   $('.productlist__products-container-element-controllers-counter .minus').on(
     'click',
-    function () {
-      const container = $(this).parents(
-        '.productlist__products-container-element-controllers-counter'
-      );
-      const counter = container.find('span');
-      let value = Number(counter.text());
-      value -= 1;
-      if (value === 1) {
-        $(this).attr('disabled', true);
-      }
-      const finalAdd = container
-        .parents(
-          '.productlist__products-container-element-controllers-manipulator'
-        )
-        .find('.desktop');
-      const template = container
-        .parents(
-          '.productlist__products-container-element-controllers-manipulator'
-        )
-        .find('.template')
-        .text();
-      finalAdd.text(template.replace('1 ;', String(value)));
-      counter.text(value);
-    }
+    minusProduct
   );
   $('.productlist__products-container-element-controllers-counter .plus').on(
     'click',
-    function () {
-      const container = $(this).parents(
-        '.productlist__products-container-element-controllers-counter'
-      );
-      const counter = container.find('span');
-      let value = Number(counter.text());
-      value += 1;
-      if (value >= 2) {
-        container.find('.minus').attr('disabled', false);
-        $(this)
-          .parents(
-            '.productlist__products-container-element-controllers-manipulator'
-          )
-          .find(
-            '.productlist__products-container-element-controllers-shop button'
-          )
-          .attr('disabled', false);
-      }
-      const finalAdd = container
-        .parents(
-          '.productlist__products-container-element-controllers-manipulator'
-        )
-        .find('.desktop');
-      const template = container
-        .parents(
-          '.productlist__products-container-element-controllers-manipulator'
-        )
-        .find('.template')
-        .text();
-      finalAdd.text(template.replace('1 ;', String(value)));
-      counter.text(value);
-    }
+    plusProduct
   );
 
   function onScrollChange(changes, observer) {

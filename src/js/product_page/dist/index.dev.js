@@ -26,8 +26,7 @@ var useProductPage = function main() {
   var buttonToOpenBuy = document.querySelector('.productpage__pageheader_sticky-wrap-manipulator-container.main-btn');
   var scrollable = document.querySelector('section.productpage__pageheader_sticky'); //Activate functionality of buying animation in header
 
-  (0, _animationOfBuyingHeader.useBuyingAnimationHeader)();
-  console.log(_cartbuy.cartAnim); //Activate functionality of buying animation in sticky header
+  (0, _animationOfBuyingHeader.useBuyingAnimationHeader)(); //Activate functionality of buying animation in sticky header
 
   if (!document.querySelector('.productpage__pageheader_sticky').classList.contains('product-out')) (0, _animationOfBuyingStickyHeader.useBuyingAnimationStickyHeader)(popUp);
   document.querySelectorAll('.productlist__products-container-element:not(.product-out) .productlist__products-container-element-controllers-manipulator').forEach(function (elm) {
@@ -43,38 +42,12 @@ var useProductPage = function main() {
       });
     }
   });
-  $('.productlist__products-container-element-controllers-shop button').on('buyingLogic', (0, _cartbuy.cartAnim)());
-  $('.productlist__products-container-element-controllers-counter .minus').on('click', function () {
-    var container = $(this).parents('.productlist__products-container-element-controllers-counter');
-    var counter = container.find('span');
-    var value = Number(counter.text());
-    value -= 1;
-
-    if (value === 1) {
-      $(this).attr('disabled', true);
-    }
-
-    var finalAdd = container.parents('.productlist__products-container-element-controllers-manipulator').find('.desktop');
-    var template = container.parents('.productlist__products-container-element-controllers-manipulator').find('.template').text();
-    finalAdd.text(template.replace('1 ;', String(value)));
-    counter.text(value);
-  });
-  $('.productlist__products-container-element-controllers-counter .plus').on('click', function () {
-    var container = $(this).parents('.productlist__products-container-element-controllers-counter');
-    var counter = container.find('span');
-    var value = Number(counter.text());
-    value += 1;
-
-    if (value >= 2) {
-      container.find('.minus').attr('disabled', false);
-      $(this).parents('.productlist__products-container-element-controllers-manipulator').find('.productlist__products-container-element-controllers-shop button').attr('disabled', false);
-    }
-
-    var finalAdd = container.parents('.productlist__products-container-element-controllers-manipulator').find('.desktop');
-    var template = container.parents('.productlist__products-container-element-controllers-manipulator').find('.template').text();
-    finalAdd.text(template.replace('1 ;', String(value)));
-    counter.text(value);
-  });
+  $('.productlist__products-container-element-controllers-shop button').on('buyingLogic', (0, _cartbuy.cartAnim)(0, {
+    width: '70px',
+    height: '70px'
+  }));
+  $('.productlist__products-container-element-controllers-counter .minus').on('click', _cartbuy.minusProduct);
+  $('.productlist__products-container-element-controllers-counter .plus').on('click', _cartbuy.plusProduct);
 
   function onScrollChange(changes, observer) {
     changes.forEach(function (change) {

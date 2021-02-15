@@ -56,38 +56,8 @@ var useProductList = function main() {
       });
     }
   });
-  console.log(_cartbuy.cartAnim);
-  $('.productlist__products-container-element-controllers-counter .minus').on('click', function () {
-    var container = $(this).parents('.productlist__products-container-element-controllers-counter');
-    var counter = container.find('span');
-    var value = Number(counter.text());
-    value -= 1;
-
-    if (value === 1) {
-      $(this).attr('disabled', true);
-    }
-
-    var finalAdd = container.parents('.productlist__products-container-element-controllers-manipulator').find('.desktop');
-    var template = container.parents('.productlist__products-container-element-controllers-manipulator').find('.template').text();
-    finalAdd.text(template.replace('1 ;', String(value)));
-    counter.text(value);
-  });
-  $('.productlist__products-container-element-controllers-counter .plus').on('click', function () {
-    var container = $(this).parents('.productlist__products-container-element-controllers-counter');
-    var counter = container.find('span');
-    var value = Number(counter.text());
-    value += 1;
-
-    if (value >= 2) {
-      container.find('.minus').attr('disabled', false);
-      $(this).parents('.productlist__products-container-element-controllers-manipulator').find('.productlist__products-container-element-controllers-shop button').attr('disabled', false);
-    }
-
-    var finalAdd = container.parents('.productlist__products-container-element-controllers-manipulator').find('.desktop');
-    var template = container.parents('.productlist__products-container-element-controllers-manipulator').find('.template').text();
-    finalAdd.text(template.replace('1 ;', String(value)));
-    counter.text(value);
-  });
+  $('.productlist__products-container-element-controllers-counter .minus').on('click', _cartbuy.minusProduct);
+  $('.productlist__products-container-element-controllers-counter .plus').on('click', _cartbuy.plusProduct);
   $('.productlist__products-container-element-controllers-shop button').on('buyingLogic', (0, _cartbuy.cartAnim)(intervalAnim));
 
   function settingsSlick(length) {

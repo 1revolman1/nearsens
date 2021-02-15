@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.isMobile = isMobile;
 exports.cartAnim = cartAnim;
+exports.minusProduct = minusProduct;
+exports.plusProduct = plusProduct;
 exports.debounce = exports.isTouchDevice = void 0;
 
 var isTouchDevice = function isTouchDevice() {
@@ -12,10 +14,6 @@ var isTouchDevice = function isTouchDevice() {
 };
 
 exports.isTouchDevice = isTouchDevice;
-
-function isMobile() {
-  return window.innerWidth <= 1023;
-}
 
 var debounce = function debounce(func, wait, immediate) {
   var timeout;
@@ -37,16 +35,57 @@ var debounce = function debounce(func, wait, immediate) {
 
 exports.debounce = debounce;
 
+function isMobile() {
+  return window.innerWidth <= 1023;
+}
+
+function minusProduct() {
+  var container = $(this).parents('.manipulator-container');
+  var counter = container.find('.price-container');
+  var value = Number(counter.text());
+  value -= 1;
+
+  if (value === 1) {
+    $(this).attr('disabled', true);
+  }
+
+  var finalAdd = container.find('.desktop');
+  var template = container.find('.template').text();
+  finalAdd.text(template.replace('1 ;', String(value)));
+  counter.text(value);
+}
+
+function plusProduct() {
+  var container = $(this).parents('.manipulator-container');
+  var counter = container.find('.price-container');
+  var value = Number(counter.text());
+  value += 1;
+
+  if (value >= 2) {
+    container.find('.minus').attr('disabled', false);
+    container.find('.buy-button').attr('disabled', false);
+  }
+
+  var finalAdd = container.find('.desktop');
+  var template = container.find('.template').text();
+  finalAdd.text(template.replace('1 ;', String(value)));
+  counter.text(value);
+}
+
 function cartAnim() {
   var intervalAnim = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-  var cartSelectors = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+  var scaledIMG = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+    width: '150px',
+    height: '150px'
+  };
+  var cartSelectors = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {
     mobile: '.second-block-in-menu .cart-block',
     desktop: '.shop-cart'
   };
-  var mainBlockContainer = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '.animation-container';
-  var imgDraggable = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : '.img-draggable';
-  var manipulatorContainer = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : '.manipulator-container';
-  var priceContainer = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : '.price-container';
+  var mainBlockContainer = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : '.animation-container';
+  var imgDraggable = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : '.img-draggable';
+  var manipulatorContainer = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : '.manipulator-container';
+  var priceContainer = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : '.price-container';
   return function () {
     var ourMainBlock = $(this).parents(mainBlockContainer);
     var cart = isMobile() ? $(cartSelectors.mobile) : $(cartSelectors.desktop);
@@ -66,8 +105,8 @@ function cartAnim() {
       }).css({
         opacity: '0.5',
         position: 'absolute',
-        height: '150px',
-        width: '150px',
+        height: scaledIMG.height,
+        width: scaledIMG.width,
         'border-radius': '10px',
         'z-index': '100'
       }).appendTo($('body')).animate({

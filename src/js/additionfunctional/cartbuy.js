@@ -5,9 +5,6 @@ export const isTouchDevice = function isTouchDevice() {
     navigator.msMaxTouchPoints > 0
   );
 };
-function isMobile() {
-  return window.innerWidth <= 1023;
-}
 export const debounce = function debounce(func, wait, immediate) {
   var timeout;
   return function () {
@@ -23,9 +20,43 @@ export const debounce = function debounce(func, wait, immediate) {
     if (callNow) func.apply(context, args);
   };
 };
+function isMobile() {
+  return window.innerWidth <= 1023;
+}
 
+function minusProduct() {
+  const container = $(this).parents('.manipulator-container');
+  const counter = container.find('.price-container');
+  let value = Number(counter.text());
+  value -= 1;
+  if (value === 1) {
+    $(this).attr('disabled', true);
+  }
+  const finalAdd = container.find('.desktop');
+  const template = container.find('.template').text();
+  finalAdd.text(template.replace('1 ;', String(value)));
+  counter.text(value);
+}
+function plusProduct() {
+  const container = $(this).parents('.manipulator-container');
+  const counter = container.find('.price-container');
+  let value = Number(counter.text());
+  value += 1;
+  if (value >= 2) {
+    container.find('.minus').attr('disabled', false);
+    container.find('.buy-button').attr('disabled', false);
+  }
+  const finalAdd = container.find('.desktop');
+  const template = container.find('.template').text();
+  finalAdd.text(template.replace('1 ;', String(value)));
+  counter.text(value);
+}
 function cartAnim(
   intervalAnim = 0,
+  scaledIMG = {
+    width: '150px',
+    height: '150px',
+  },
   cartSelectors = {
     mobile: '.second-block-in-menu .cart-block',
     desktop: '.shop-cart',
@@ -72,8 +103,8 @@ function cartAnim(
         .css({
           opacity: '0.5',
           position: 'absolute',
-          height: '150px',
-          width: '150px',
+          height: scaledIMG.height,
+          width: scaledIMG.width,
           'border-radius': '10px',
           'z-index': '100',
         })
@@ -117,4 +148,4 @@ function cartAnim(
     }
   };
 }
-export { isMobile, cartAnim };
+export { isMobile, cartAnim, minusProduct, plusProduct };
