@@ -16,6 +16,10 @@ section.productpage__pageheader_sticky.out-viewport {
 section.productpage__pageheader_sticky.scroll-to-bottom {
   top: -15px !important;
 }
+section.productpage__pageheader_sticky.product-out .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container.main-btn,
+section.productpage__pageheader_sticky.product-out .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container.overlay {
+  display: none;
+}
 @media screen and (max-width: 1023.5px) {
   section.productpage__pageheader_sticky {
     top: 64px;
@@ -41,6 +45,20 @@ section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap {
     margin: 0 auto;
     width: 90%;
     overflow: visible;
+  }
+}
+section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap p.outstock {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  font: italic normal normal 16px/22px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #c92e2e;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap p.outstock {
+    font: italic normal normal 12px/18px "Mulish", sans-serif;
   }
 }
 section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-containter {
@@ -281,6 +299,8 @@ section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .pro
   cursor: not-allowed;
 }
 section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .productpage__pageheader_sticky-wrap-manipulator-container .productpage__pageheader_sticky-wrap-manipulator-data span.text {
+  display: inline-flex;
+  align-items: center;
   margin: 0 22px;
   font: normal normal normal 22px/28px "Mulish", sans-serif;
   letter-spacing: 0px;
@@ -342,6 +362,8 @@ section.productpage__pageheader_sticky .productpage__pageheader_sticky-wrap .pro
   display: flex;
   align-items: center;
   visibility: hidden;
+  overflow: hidden;
+  white-space: nowrap;
   opacity: 0;
   width: 60%;
   transition: visibility 0.5s linear, opacity 0.5s linear, width 0.5s linear;

@@ -3,9 +3,9 @@ section.productpage__productslinked.productlist__products
         h2 The products
         .productlist__products-container
             each val,index in [1,2,3]
-                .productlist__products-container-element
+                .productlist__products-container-element.animation-container
                     .productlist__products-container-element-imgcontainer
-                        img(src="https://wallpapercave.com/wp/wp3850825.jpg", alt="")
+                        img.img-draggable(src="https://wallpapercave.com/wp/wp3850825.jpg", alt="")
                     .productlist__products-container-element-controller
                         .productlist__products-container-element-text
                             h3 Product name on two lines
@@ -16,10 +16,10 @@ section.productpage__productslinked.productlist__products
                                     sup €99
                                 span.price 89
                                     sup €99
-                            .productlist__products-container-element-controllers-manipulator
+                            .productlist__products-container-element-controllers-manipulator.manipulator-container
                                 .productlist__products-container-element-controllers-counter
                                     button(class="minus" disabled="disabled"): i(class="fas fa-minus")
-                                    span 1
+                                    span.price-container 1
                                     button.plus: i(class="fas fa-plus")
                                 .productlist__products-container-element-controllers-shop
                                     button.buy-button 
@@ -30,9 +30,9 @@ section.productpage__productslinked.productlist__products
                                         i(class="fas fa-check")
                                         span.desktop 1 new added to cart
                                     .template(style='display: none') 1 ; new added to cart
-                .productlist__products-container-element.with-disqount
+                .productlist__products-container-element.animation-container.with-disqount
                     .productlist__products-container-element-imgcontainer
-                        img(src="https://wallpapercave.com/wp/wp3850825.jpg", alt="")
+                        img.img-draggable(src="https://wallpapercave.com/wp/wp3850825.jpg", alt="")
                     span.productlist__products-container-element-disqount -50%
                     .productlist__products-container-element-controller
                         .productlist__products-container-element-text
@@ -42,10 +42,10 @@ section.productpage__productslinked.productlist__products
                             .productlist__products-container-element-controllers-price
                                 span.price 89
                                     sup €99
-                            .productlist__products-container-element-controllers-manipulator
+                            .productlist__products-container-element-controllers-manipulator.manipulator-container
                                 .productlist__products-container-element-controllers-counter
                                     button(class="minus" disabled="disabled"): i(class="fas fa-minus")
-                                    span 5
+                                    span.price-container 5
                                     button.plus: i(class="fas fa-plus")
                                 .productlist__products-container-element-controllers-shop
                                     button.buy-button 

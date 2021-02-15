@@ -1,6 +1,6 @@
 section.productpage__pageheader
     //- .product-out
-    .productpage__pageheader__container
+    .productpage__pageheader__container.animation-container
         <picture>
             <source media="(max-width:450px)" srcset="img/SmalmgProductPage.png">
             source(media="(max-width:1023px)", srcset="img/siren_banner_325x650.png")
@@ -12,7 +12,7 @@ section.productpage__pageheader
             .productpage__pageheader-wrap.main
                 .productpage__pageheader-wrap-container
                     .productpage__pageheader-wrap-headblock
-                        img(src="img/detector.png", alt="alt")
+                        img.img-draggable(src="img/detector.png", alt="alt")
                         h1 Water Leak Detector
                         span.productpage__pageheader-wrap-headblock-disqount -50%
                     .productpage__pageheader-wrap-textblock
@@ -27,10 +27,10 @@ section.productpage__pageheader
                                 sup €99
                             span.productpage__pageheader-wrap-headblock-disqount -50%
                         //- p.outstock En rupture de stock
-                        .productpage__pageheader-wrap-manipulator-container
+                        .productpage__pageheader-wrap-manipulator-container.manipulator-container
                             .productpage__pageheader-wrap-manipulator-data
                                     button( class="minus"): i(class="fas fa-minus")
-                                    span.text 1
+                                    span.text.price-container 1
                                     button.plus: i(class="fas fa-plus")
                             .productpage__pageheader-wrap-manipulator-withprice
                                 button.buy-button 

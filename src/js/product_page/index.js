@@ -1,115 +1,7 @@
 import { useBuyingAnimationHeader } from './animationOfBuyingHeader';
 import { useBuyingAnimationStickyHeader } from './animationOfBuyingStickyHeader';
+import { cartAnim } from '../additionfunctional/cartbuy';
 
-function cartAnim() {
-  const isMobile = window.innerWidth <= 1023;
-  const cart = isMobile
-    ? $('.second-block-in-menu .cart-block')
-    : $('.shop-cart');
-  const imgtodrag = $(this)
-    .parents('.productlist__products-container-element')
-    .find('img')
-    .eq(0);
-  const infoSuccessHeader = cart.find('.droupup-block-info');
-  const container = $(this).parents(
-    '.productlist__products-container-element-controllers-manipulator'
-  );
-  const textContainer = container.find(
-    '.productlist__products-container-element-controllers-counter span'
-  );
-  if (Number(textContainer.text()) <= 0) return null;
-  //SHOW SUCCESS BUYING ICON
-  const totalPrice = container
-    .find('.productlist__products-container-element-controllers-counter span')
-    .text();
-  container.addClass('show-success');
-  infoSuccessHeader.removeClass('unshow');
-
-  infoSuccessHeader
-    .find('h3')
-    .text(
-      +totalPrice === 1
-        ? infoSuccessHeader
-            .find('.template.one')
-            .text()
-            .replace('1 ;', String(totalPrice))
-        : infoSuccessHeader
-            .find('.template.many')
-            .text()
-            .replace('1 ;', String(totalPrice))
-    );
-  if (imgtodrag) {
-    const imgclone = imgtodrag
-      .clone()
-      .offset({
-        top: imgtodrag.offset().top,
-        left: imgtodrag.offset().left,
-      })
-      .css({
-        opacity: '0.5',
-        position: 'absolute',
-        height: '150px',
-        width: '150px',
-        'border-radius': '10px',
-        'z-index': '100',
-      })
-      .appendTo($('body'))
-      .animate(
-        {
-          top: cart.offset().top + 10,
-          left: cart.offset().left + 10,
-          width: 30,
-          height: 30,
-        },
-        1000,
-        'easeInOutExpo'
-      );
-    //SHAKE ANIM
-
-    setTimeout(() => {
-      const containerShown = $(this).parents(
-        '.productlist__products-container-element-controllers-manipulator'
-      );
-      containerShown.removeClass('show-success');
-      textContainer.text('1');
-      containerShown
-        .find(
-          '.productlist__products-container-element-controllers-counter .minus'
-        )
-        .attr('disabled', true);
-      setTimeout(() => {
-        const template = containerShown
-          .find(
-            '.productlist__products-container-element-controllers-successbuying .template'
-          )
-          .text();
-        containerShown
-          .find(
-            '.productlist__products-container-element-controllers-successbuying .desktop'
-          )
-          .text(template.replace('1 ;', '1'));
-      }, 500);
-      infoSuccessHeader.addClass('unshow');
-    }, 2000);
-
-    // if(!isMobile)
-    //     setTimeout(function () {
-    //         cart.effect("shake", {
-    //             times: 2
-    //         }, 200);
-    //     }, 1500);
-
-    imgclone.animate(
-      {
-        width: 0,
-        height: 0,
-      },
-      function () {
-        $(this).detach();
-      }
-    );
-  }
-}
 const options = {
   root: null, //root
   rootMargin: '-100px',
@@ -133,7 +25,7 @@ export const useProductPage = function main() {
 
   //Activate functionality of buying animation in header
   useBuyingAnimationHeader();
-
+  console.log(cartAnim);
   //Activate functionality of buying animation in sticky header
   if (
     !document
@@ -163,13 +55,8 @@ export const useProductPage = function main() {
 
   $('.productlist__products-container-element-controllers-shop button').on(
     'buyingLogic',
-    cartAnim
+    cartAnim()
   );
-
-  // $('.productlist__products-container-element-controllers-shop button').on(
-  //   'click',
-  //   cartAnim
-  // );
 
   $('.productlist__products-container-element-controllers-counter .minus').on(
     'click',

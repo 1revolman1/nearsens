@@ -358,7 +358,7 @@ section.productpage__pageheader .productpage__pageheader__container .productpage
 }
 section.productpage__pageheader .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator .productpage__pageheader-wrap-manipulator-container .productpage__pageheader-wrap-manipulator-data {
   display: flex;
-  padding: 9px 20px;
+  padding: 8px 20px;
 }
 @media screen and (max-width: 1023.5px) and (max-width: 768px) {
   section.productpage__pageheader .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator .productpage__pageheader-wrap-manipulator-container .productpage__pageheader-wrap-manipulator-data {
@@ -379,6 +379,8 @@ section.productpage__pageheader .productpage__pageheader__container .productpage
   cursor: not-allowed;
 }
 section.productpage__pageheader .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator .productpage__pageheader-wrap-manipulator-container .productpage__pageheader-wrap-manipulator-data span.text {
+  display: inline-flex;
+  align-items: center;
   margin: 0 22px;
   font: normal normal normal 22px/28px "Mulish", sans-serif;
   letter-spacing: 0px;
@@ -432,8 +434,10 @@ section.productpage__pageheader .productpage__pageheader__container .productpage
   border: 1px solid #2ec9ad;
   border-radius: 40px;
   padding: 10px 20px;
+  overflow: hidden;
 }
 section.productpage__pageheader .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-manipulator .productpage__pageheader-wrap-manipulator-container .productpage__pageheader-wrap-manipulator-successbuying p {
+  white-space: nowrap;
   font: italic normal bold 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;

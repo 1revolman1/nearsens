@@ -1,9 +1,9 @@
 section.productpage__pageheader_sticky
     //- .product-out
-    .productpage__pageheader_sticky-wrap.main
+    .productpage__pageheader_sticky-wrap.main.animation-container
         .productpage__pageheader_sticky-wrap-containter
             .productpage__pageheader_sticky-wrap-headblock
-                img(src="img/detector.png", alt="alt")
+                img.img-draggable(src="img/detector.png", alt="alt")
                 h1 Water Leak Detector
                 span.productpage__pageheader_sticky-headblock-disqount -50%
             .productpage__pageheader_sticky-wrap-manipulator 
@@ -15,10 +15,10 @@ section.productpage__pageheader_sticky
         .productpage__pageheader_sticky-wrap-manipulator-container.main-btn
             .productpage__pageheader_sticky-wrap-manipulator-withprice
                 button BUY
-        .productpage__pageheader_sticky-wrap-manipulator-container.overlay
+        .productpage__pageheader_sticky-wrap-manipulator-container.manipulator-container.overlay
             .productpage__pageheader_sticky-wrap-manipulator-data
                     button( class="minus"): i(class="fas fa-minus")
-                    span.text 2
+                    span.text.price-container 2
                     button.plus: i(class="fas fa-plus")
             .productpage__pageheader_sticky-wrap-manipulator-withprice
                 button.buy-button 

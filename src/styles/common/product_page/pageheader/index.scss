@@ -355,7 +355,7 @@ section.productpage__pageheader {
               }
               .productpage__pageheader-wrap-manipulator-data {
                 display: flex;
-                padding: 9px 20px;
+                padding: 8px 20px;
                 @include media-forHEADER {
                   @include media-tablet {
                     padding: 0;
@@ -375,6 +375,8 @@ section.productpage__pageheader {
                   }
                 }
                 span.text {
+                  display: inline-flex;
+                  align-items: center;
                   margin: 0 22px;
                   font: normal normal normal 22px/28px 'Mulish', sans-serif;
                   letter-spacing: 0px;
@@ -430,7 +432,9 @@ section.productpage__pageheader {
                 border: 1px solid #2ec9ad;
                 border-radius: 40px;
                 padding: 10px 20px;
+                overflow: hidden;
                 p {
+                  white-space: nowrap;
                   font: italic normal bold 18px/23px 'Mulish', sans-serif;
                   letter-spacing: 0px;
                   color: #ffffff;

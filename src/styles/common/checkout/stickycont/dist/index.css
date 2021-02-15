@@ -26,6 +26,9 @@ section.checkout_page__stickycont .checkout_page__stickycont__block h3 {
   opacity: 1;
   margin-bottom: 21px;
 }
+section.checkout_page__stickycont .checkout_page__stickycont__block h3 span {
+  font-weight: bold;
+}
 section.checkout_page__stickycont .checkout_page__stickycont__block .head {
   padding-bottom: 36.5px;
   border-bottom: 1px solid #707070;
@@ -50,6 +53,7 @@ section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_pa
   }
 }
 section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont input {
+  width: 100%;
   padding: 14px 20px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #bbbbbb;
@@ -60,15 +64,9 @@ section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_pa
   color: #333333;
   opacity: 1;
 }
-@media screen and (max-width: 1023.5px) {
-  section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont input {
-    width: inherit;
-  }
-}
 @media screen and (max-width: 1023.5px) and (max-width: 375px) {
   section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__vaucher .checkout_page__stickycont__block__vaucher__btncont input {
     flex: 1;
-    width: 100%;
     margin: 0;
   }
 }
@@ -108,6 +106,62 @@ section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_pa
 }
 section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay {
   padding-bottom: 14px;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept {
+  position: relative;
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  position: relative;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+  user-select: none;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept .text {
+  display: inline-block;
+  align-items: center;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept .text a {
+  color: #045d9e;
+  text-decoration: underline;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept input:checked ~ .checkmark:after {
+  display: block;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept .checkmark {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  grid-area: 1/1/2/2;
+  background: #eeeeee 0% 0% no-repeat padding-box;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  opacity: 1;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__delay .checkout_page__stickycont__block__delay__chekedboxAccept .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 50%;
+  top: 50%;
+  width: 13px;
+  height: 20px;
+  border: solid #005b9d;
+  border-width: 0 4px 4px 0;
+  transform: translate(-50%, -65%) rotate(45deg);
 }
 section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__stickycont__block__finalprice .checkout_page__stickycont__block__finalprice__price {
   display: grid;
@@ -170,4 +224,8 @@ section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_pa
   padding: 14px 30px;
   outline: none;
   text-transform: uppercase;
+}
+section.checkout_page__stickycont .checkout_page__stickycont__block .checkout_page__content__contact__manip__btncont .checkout_page__content__contact__manip__btn.disabled {
+  pointer-events: none;
+  opacity: 0.7;
 }

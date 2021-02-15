@@ -9,83 +9,6 @@ var _tinySlider = require("../../local_modules/tiny-slider/src/tiny-slider");
 
 var _cartbuy = require("../additionfunctional/cartbuy");
 
-function debounce(func, wait, immediate) {
-  var timeout;
-  return function () {
-    var context = this,
-        args = arguments;
-
-    var later = function later() {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-}
-
-function cartAnim(interval) {
-  return function () {
-    var _this = this;
-
-    var isMobile = window.innerWidth <= 1023;
-    var cart = isMobile ? $('.second-block-in-menu .cart-block') : $('.shop-cart');
-    var imgtodrag = $(this).parents('.productlist__products-container-element').find('img').eq(0);
-    var infoSuccessHeader = cart.find('.droupup-block-info');
-    var container = $(this).parents('.productlist__products-container-element-controllers-manipulator');
-    var textContainer = container.find('.productlist__products-container-element-controllers-counter span');
-    if (Number(textContainer.text()) <= 0) return null;
-    var totalPrice = container.find('.productlist__products-container-element-controllers-counter span').text();
-    container.addClass('show-success');
-    infoSuccessHeader.removeClass('unshow');
-    infoSuccessHeader.find('h3').text(+totalPrice === 1 ? infoSuccessHeader.find('.template.one').text().replace('1 ;', String(totalPrice)) : infoSuccessHeader.find('.template.many').text().replace('1 ;', String(totalPrice)));
-
-    if (imgtodrag) {
-      var imgclone = imgtodrag.clone().offset({
-        top: imgtodrag.offset().top,
-        left: imgtodrag.offset().left
-      }).css({
-        opacity: '0.5',
-        position: 'absolute',
-        height: '150px',
-        width: '150px',
-        'border-radius': '10px',
-        'z-index': '100'
-      }).appendTo($('body')).animate({
-        top: cart.offset().top + 10,
-        left: cart.offset().left + 10,
-        width: 30,
-        height: 30
-      }, 1000, 'easeInOutExpo', function () {
-        imgclone.animate({
-          width: 0,
-          height: 0
-        }, function () {
-          $(this).detach();
-        });
-      }); //SHAKE ANIM
-
-      setTimeout(function () {
-        var containerShown = $(_this).parents('.productlist__products-container-element-controllers-manipulator');
-        containerShown.removeClass('show-success');
-        textContainer.text('1');
-        containerShown.find('.productlist__products-container-element-controllers-counter .minus').attr('disabled', true);
-        setTimeout(function () {
-          var template = containerShown.find('.productlist__products-container-element-controllers-successbuying .template').text();
-          containerShown.find('.productlist__products-container-element-controllers-successbuying .desktop').text(template.replace('1 ;', '1'));
-        }, 500);
-      }, 2000);
-      clearTimeout(interval);
-      interval = setTimeout(function () {
-        infoSuccessHeader.addClass('unshow');
-      }, 2000);
-    }
-  };
-}
-
 var useProductList = function main() {
   console.log("PRODUCT LIST PAGE");
   var intervalAnim;
@@ -133,6 +56,7 @@ var useProductList = function main() {
       });
     }
   });
+  console.log(_cartbuy.cartAnim);
   $('.productlist__products-container-element-controllers-counter .minus').on('click', function () {
     var container = $(this).parents('.productlist__products-container-element-controllers-counter');
     var counter = container.find('span');
@@ -164,10 +88,7 @@ var useProductList = function main() {
     finalAdd.text(template.replace('1 ;', String(value)));
     counter.text(value);
   });
-  $('.productlist__products-container-element-controllers-shop button').on('buyingLogic', cartAnim(intervalAnim)); // $('.productlist__products-container-element-controllers-shop button').on(
-  //   'click',
-  //   cartAnim
-  // );
+  $('.productlist__products-container-element-controllers-shop button').on('buyingLogic', (0, _cartbuy.cartAnim)(intervalAnim));
 
   function settingsSlick(length) {
     var slidesToShow; // length < 15 ? length : 15
@@ -240,7 +161,7 @@ var useProductList = function main() {
     slider = (0, _tinySlider.tns)(settingsSlick(len));
   }
 
-  window.addEventListener('resize', debounce(function () {
+  window.addEventListener('resize', (0, _cartbuy.debounce)(function () {
     var newWidth = window.innerWidth;
 
     if (newWidth !== cachedWidth) {

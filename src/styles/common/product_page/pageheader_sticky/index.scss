@@ -270,6 +270,8 @@ section.productpage__pageheader_sticky {
           }
         }
         span.text {
+          display: inline-flex;
+          align-items: center;
           margin: 0 22px;
           font: normal normal normal 22px/28px 'Mulish', sans-serif;
           letter-spacing: 0px;
