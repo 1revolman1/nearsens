@@ -228,21 +228,6 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
     font: normal normal 300 18px/23px "Mulish", sans-serif;
     letter-spacing: 0px;
     color: #333333;
-  }
-  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea::-webkit-input-placeholder {
-    /* WebKit browsers */
-    padding: 11px 20px;
-  }
-  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    padding: 11px 20px;
-  }
-  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    padding: 11px 20px;
-  }
-  section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .contact__findanswer__wrap__secondinit__container__second .contact__findanswer__wrap__secondinit__container__second__textarea textarea:-ms-input-placeholder {
-    /* Internet Explorer 10+ */
     padding: 11px 20px;
   }
 }

@@ -2,7 +2,7 @@ footer.globalfooter {
   padding: 50px 0 86px;
   background: #003f6d 0% 0% no-repeat padding-box;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter {
     padding: 30px 40px 40px;
   }
@@ -12,26 +12,33 @@ footer.globalfooter .globalfooter__wrapper {
   margin: 0 auto;
   width: 94%;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper {
     width: 100%;
   }
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content {
   margin-bottom: 60px;
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+}
+@media screen and (max-width: 1023.5px) {
+  footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content {
+    display: flex;
+    grid-gap: inherit;
+  }
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul {
   margin: 0 0 20px;
   flex: 1 1 calc(15% + 30px);
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul:first-of-type {
     display: none;
   }
 }
-@media screen and (max-width: 1023px) and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul:first-of-type {
     display: inherit;
   }
@@ -45,7 +52,7 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li
   cursor: pointer;
   list-style: none;
   text-align: left;
-  font: normal normal normal 16px/30px Mulish;
+  font: normal normal normal 16px/30px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;
   transition: all ease 0.5s;
@@ -54,52 +61,63 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li
   margin-top: 15px;
   margin-right: 10px;
 }
+footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.big, footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.inside {
+  cursor: not-allowed;
+}
+footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.big a[href=""], footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.big a[href="#"], footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.inside a[href=""], footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.inside a[href="#"] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li a {
   display: flex;
   justify-content: flex-start;
   text-decoration: none;
   color: #ffffff;
 }
+footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li a.logo-img svg {
+  width: 150px;
+  height: 29px;
+}
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header {
   text-align: left;
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header.big {
-  font: normal normal bold 16px/40px Mulish;
+  font: normal normal bold 16px/40px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header.big:first-of-type {
-  font: normal normal bold 16px/30px Mulish;
+  font: normal normal bold 16px/30px "Mulish", sans-serif;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header.big:first-of-type {
-    font: normal normal bold 16px/40px Mulish;
+    font: normal normal bold 16px/40px "Mulish", sans-serif;
   }
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header.big-head {
-  font: normal normal bold 16px/30px Mulish;
+  font: normal normal bold 16px/30px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header.inside {
-  font: normal normal normal 16px/30px Mulish;
+  font: normal normal normal 16px/30px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul li.header.inside {
     padding-left: 10px;
     border-left: 1px solid white;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content ul {
     margin: 0;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__content {
     flex-direction: column;
   }
@@ -121,13 +139,13 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional::b
   height: 1px;
   background: #33709c;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional::before {
     left: 50%;
     transform: translate(-50%, 0%);
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional {
     width: 100%;
     padding-top: 20px !important;
@@ -141,7 +159,7 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .g
   display: flex;
   flex-flow: row wrap;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .globalfooter__wrapper__additional__text ul {
     --fgp-gap-container: calc(
       var(--fgp-gap-parent, 0px) - 10px
@@ -161,7 +179,7 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .g
   }
 }
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .globalfooter__wrapper__additional__text ul li {
-  font: normal normal normal 16px/20px Mulish;
+  font: normal normal normal 16px/20px "Mulish", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
@@ -183,7 +201,7 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .g
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .globalfooter__wrapper__additional__text ul li.img a {
   display: flex;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .globalfooter__wrapper__additional__text ul li.img::before {
     content: "";
   }
@@ -195,7 +213,7 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .g
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .globalfooter__wrapper__additional__text ul li a img {
   margin-right: 15px;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__additional .globalfooter__wrapper__additional__logos {
     display: flex;
     justify-content: center;
@@ -220,7 +238,7 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__download {
   justify-content: flex-end;
   gap: 26.9px;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__download {
     justify-content: center;
   }
@@ -228,7 +246,12 @@ footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__download {
 footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__download a {
   display: flex;
 }
-@media screen and (max-width: 1023px) {
+footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__download a img,
+footer.globalfooter .globalfooter__wrapper .globalfooter__wrapper__download a svg {
+  width: 136px;
+  height: 40px;
+}
+@media screen and (max-width: 1023.5px) {
   footer.globalfooter .globalfooter__wrapper {
     width: 100%;
     justify-content: center;

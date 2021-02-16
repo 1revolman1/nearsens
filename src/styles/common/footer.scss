@@ -8,6 +8,7 @@ footer.globalfooter {
     // padding: 30px 30px 40px;
     padding: 30px 40px 40px;
   }
+
   .globalfooter__wrapper {
     max-width: $mediaMAXWIDTH;
     margin: 0 auto;
@@ -59,11 +60,23 @@ footer.globalfooter {
               margin-right: 10px;
             }
           }
+          &.big,
+          &.inside {
+            cursor: not-allowed;
+            a {
+              &[href=''],
+              &[href='#'] {
+                cursor: not-allowed;
+                pointer-events: none;
+              }
+            }
+          }
           a {
             display: flex;
             justify-content: flex-start;
             text-decoration: none;
             color: #ffffff;
+
             &.logo-img {
               svg {
                 width: 150px;
@@ -274,9 +287,6 @@ footer.globalfooter {
           height: 40px;
         }
       }
-    }
-    img {
-      // margin-left: 26px;
     }
     @include media-forHEADER {
       width: 100%;
