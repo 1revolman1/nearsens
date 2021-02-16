@@ -38,6 +38,7 @@ function minusProduct() {
   counter.text(value);
 }
 function plusProduct() {
+  console.log('TESAT');
   const container = $(this).parents('.manipulator-container');
   const counter = container.find('.price-container');
   let value = Number(counter.text());

@@ -1,18 +1,43 @@
 section.page_gabarit__pageheader {
+  padding-top: 0;
+  padding-bottom: 80px;
   margin-bottom: 0;
-  padding: 50px 0;
 }
 @media screen and (max-width: 768px) {
   section.page_gabarit__pageheader {
-    padding: 0;
+    padding-bottom: 40px;
   }
 }
-section.page_gabarit__pageheader + section:not(.page_gabarit__pageheader) {
+section.page_gabarit__pageheader.gray + section:not(.page_gabarit__pageheader) {
   padding-top: 80px;
 }
 @media screen and (max-width: 768px) {
-  section.page_gabarit__pageheader + section:not(.page_gabarit__pageheader) {
+  section.page_gabarit__pageheader.gray + section:not(.page_gabarit__pageheader) {
     padding-top: 40px;
+  }
+}
+section.page_gabarit__pageheader.gray + section.gray:not(.page_gabarit__pageheader) {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader.gray + section.gray:not(.page_gabarit__pageheader) {
+    padding-top: 10px;
+  }
+}
+section.page_gabarit__pageheader.blue + section:not(.page_gabarit__pageheader) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader.blue + section:not(.page_gabarit__pageheader) {
+    padding-top: 40px;
+  }
+}
+section.page_gabarit__pageheader.blue + section.blue:not(.page_gabarit__pageheader) {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader.blue + section.blue:not(.page_gabarit__pageheader) {
+    padding-top: 10px;
   }
 }
 section.page_gabarit__pageheader + section.blue:not(.page_gabarit__pageheader) {
@@ -28,6 +53,9 @@ section.page_gabarit__pageheader.gray {
 }
 section.page_gabarit__pageheader.gray * {
   color: #28373b !important;
+}
+section.page_gabarit__pageheader.gray a {
+  color: #005b9d !important;
 }
 section.page_gabarit__pageheader.blue {
   background: #005b9d 0% 0% no-repeat padding-box;
@@ -230,6 +258,11 @@ section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__p
   color: #28373b;
   opacity: 1;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .page_gabarit__pageheader__text .page_gabarit__pageheader__text__info .page_gabarit__pageheader__text__info__text-block-text p {
+    font: normal normal normal 14px/18px "Mulish", sans-serif;
+  }
 }
 section.page_gabarit__pageheader .page_gabarit__pageheader-wrap .usecase_details__pageheader__img img {
   width: 100%;
@@ -1125,7 +1158,6 @@ section.page_garbit__blockacconts .page_garbit__blockacconts__blocks .page_garbi
 }
 
 section.page_garbit__bluelinkcards {
-  background: #005b9d 0% 0% no-repeat padding-box;
   opacity: 1;
   padding-bottom: 80px;
 }
@@ -1166,6 +1198,10 @@ section.page_garbit__bluelinkcards.blue {
 section.page_garbit__bluelinkcards.blue * {
   color: white !important;
 }
+section.page_garbit__bluelinkcards.blue .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__manipulatorcontainer .page_garbit__bluelinkcards__wrap__manipulatorcontainer__btn {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
 @media screen and (max-width: 768px) {
   section.page_garbit__bluelinkcards.blue {
     padding-bottom: 30px;
@@ -1173,8 +1209,7 @@ section.page_garbit__bluelinkcards.blue * {
   }
 }
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap {
-  display: flex;
-  flex-flow: column wrap;
+  display: grid;
 }
 @media screen and (max-width: 768px) {
   section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap {
@@ -1261,7 +1296,7 @@ section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbi
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__textcontainer p {
   font: normal normal 300 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
-  color: #ffffff;
+  color: #333;
   opacity: 1;
   margin-bottom: 30px;
 }
@@ -1381,7 +1416,7 @@ section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbi
 section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbit__bluelinkcards__wrap__blockcontainer .page_garbit__bluelinkcards__wrap__blockcontainer__element .page_garbit__bluelinkcards__wrap__blockcontainer__element__text p {
   font: normal normal 300 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
-  color: #ffffff;
+  color: #333;
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -1396,12 +1431,12 @@ section.page_garbit__bluelinkcards .page_garbit__bluelinkcards__wrap .page_garbi
   padding: 9px 30px;
   font: normal normal bold 18px/23px "Mulish", sans-serif;
   letter-spacing: 0px;
-  color: #ffffff;
   opacity: 1;
-  border: 1px solid #ffffff;
+  color: #2ec9ad;
+  background: transparent;
+  border: 1px solid #2ec9ad;
   border-radius: 40px;
   opacity: 1;
-  background: #005b9d;
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -1466,6 +1501,9 @@ section.page_garbarit__differentcolorblock.blue * {
 }
 section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap * {
   color: #333333 !important;
+}
+section.page_garbarit__differentcolorblock.gray .page_garbarit__differentcolorblock-wrap a {
+  color: #005b9d !important;
 }
 @media screen and (max-width: 768px) {
   section.page_garbarit__differentcolorblock .page_garbarit__differentcolorblock-wrap {
@@ -2417,6 +2455,12 @@ section.page_gabarit__twobigblockperline h1 {
     font: normal normal normal 26px/33px "Mulish", sans-serif;
   }
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h1 {
+    width: 90%;
+    margin: 0 auto 10.5px;
+  }
+}
 section.page_gabarit__twobigblockperline h2 {
   font: normal normal normal 26px/33px "Mulish", sans-serif;
   letter-spacing: 0px;
@@ -2427,6 +2471,12 @@ section.page_gabarit__twobigblockperline h2 {
 @media screen and (max-width: 768px) {
   section.page_gabarit__twobigblockperline h2 {
     font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h2 {
+    width: 90%;
+    margin: 0 auto 10.5px;
   }
 }
 section.page_gabarit__twobigblockperline h3 {
@@ -2441,6 +2491,12 @@ section.page_gabarit__twobigblockperline h3 {
     font: normal normal bold 18px/25px "Mulish", sans-serif;
   }
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h3 {
+    width: 90%;
+    margin: 0 auto 10.5px;
+  }
+}
 section.page_gabarit__twobigblockperline h4 {
   font: normal normal normal 20px/25px "Mulish", sans-serif;
   letter-spacing: 0px;
@@ -2451,6 +2507,12 @@ section.page_gabarit__twobigblockperline h4 {
 @media screen and (max-width: 768px) {
   section.page_gabarit__twobigblockperline h4 {
     font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h4 {
+    width: 90%;
+    margin: 0 auto 10.5px;
   }
 }
 section.page_gabarit__twobigblockperline h5 {
@@ -2465,6 +2527,12 @@ section.page_gabarit__twobigblockperline h5 {
     font: normal normal bold 14px/25px "Mulish", sans-serif;
   }
 }
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h5 {
+    width: 90%;
+    margin: 0 auto 10.5px;
+  }
+}
 section.page_gabarit__twobigblockperline h6 {
   font: normal normal normal 16px/20px "Mulish", sans-serif;
   letter-spacing: 0px;
@@ -2475,6 +2543,12 @@ section.page_gabarit__twobigblockperline h6 {
 @media screen and (max-width: 768px) {
   section.page_gabarit__twobigblockperline h6 {
     font: normal normal normal 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__twobigblockperline h6 {
+    width: 90%;
+    margin: 0 auto 10.5px;
   }
 }
 section.page_gabarit__twobigblockperline .page_gabarit__twobigblockperline__wrap {
@@ -2641,6 +2715,73 @@ section.page_gabarit__fourblocks.blue {
 section.page_gabarit__fourblocks.blue * {
   color: white !important;
 }
+section.page_gabarit__fourblocks[data-ammount="1"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+  justify-content: center;
+  grid-template-columns: 334px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__fourblocks[data-ammount="1"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+    grid-template-columns: 280px;
+  }
+}
+section.page_gabarit__fourblocks[data-ammount="2"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+  grid-template-columns: repeat(2, minmax(20%, 334px));
+  justify-content: center;
+  gap: 20px 90px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.page_gabarit__fourblocks[data-ammount="2"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+    gap: 20px 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__fourblocks[data-ammount="2"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+section.page_gabarit__fourblocks[data-ammount="3"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 20px 90px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.page_gabarit__fourblocks[data-ammount="3"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+    gap: 20px 5%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  section.page_gabarit__fourblocks[data-ammount="3"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet:last-of-type {
+    grid-column: 1/-1;
+    max-width: 47%;
+    margin: 0 auto;
+  }
+}
+section.page_gabarit__fourblocks[data-ammount="4"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__fourblocks[data-ammount="4"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+section.page_gabarit__fourblocks[data-ammount="5"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 20px 50px;
+}
+@media screen and (max-width: 1023.5px) {
+  section.page_gabarit__fourblocks[data-ammount="5"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
+    gap: 20px 5%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1023.5px) {
+  section.page_gabarit__fourblocks[data-ammount="5"] .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet:last-of-type {
+    grid-column: 1/-1;
+    max-width: 47%;
+    margin: 0 auto;
+  }
+}
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap {
   display: flex;
   flex-flow: row wrap;
@@ -2736,6 +2877,7 @@ section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap p {
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container {
   width: 100%;
+  grid-template-rows: auto;
 }
 section.page_gabarit__fourblocks .page_gabarit__fourblocks__wrap .page_gabarit__fourblocks__wrap__container .page_gabarit__fourblocks__wrap__elemenet .page_gabarit__fourblocks__wrap__elemenet__img img {
   object-fit: contain;
@@ -2830,6 +2972,840 @@ section.bigblueblock__container {
   background: #005b9d 0 0 no-repeat padding-box;
 }
 
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion {
+  width: 100%;
+  padding-bottom: 80px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion {
+    padding-bottom: 40px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion.blue + section:not(.page_garbarit__differentcolorblock) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion.blue + section:not(.page_garbarit__differentcolorblock) {
+    padding-top: 40px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion.blue + section.blue:not(.page_garbarit__differentcolorblock) {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion.blue + section.blue:not(.page_garbarit__differentcolorblock) {
+    padding-top: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion + section.blue:not(.page_garbarit__differentcolorblock) {
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion + section.blue:not(.page_garbarit__differentcolorblock) {
+    padding-top: 30px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion.blue {
+  background: #005b9d 0% 0% no-repeat padding-box;
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion.blue {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion.blue .accordion {
+  color: #333333 !important;
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion.blue .accordion i {
+  color: #333333 !important;
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion.blue * {
+  color: white !important;
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion.gray * {
+  color: #333333 !important;
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion.gray a {
+  color: #005b9d !important;
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .panel {
+  background: transparent !important;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h1 {
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h1 {
+    font: normal normal normal 26px/33px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h1 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h2 {
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h2 {
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h2 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h3 {
+  font: normal normal bold 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h3 {
+    font: normal normal bold 18px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h3 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h4 {
+  font: normal normal normal 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h4 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h4 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h5 {
+  font: normal normal bold 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h5 {
+    font: normal normal bold 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h5 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h6 {
+  font: normal normal normal 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h6 {
+    font: normal normal normal 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text h6 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text p {
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__text p {
+    font: normal normal normal 14px/18px "Mulish", sans-serif;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h1 {
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h1 {
+    font: normal normal normal 26px/33px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h1 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h2 {
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h2 {
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h2 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h3 {
+  font: normal normal bold 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h3 {
+    font: normal normal bold 18px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h3 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h4 {
+  font: normal normal normal 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h4 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h4 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h5 {
+  font: normal normal bold 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h5 {
+    font: normal normal bold 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h5 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h6 {
+  font: normal normal normal 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h6 {
+    font: normal normal normal 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion h6 {
+    margin-bottom: 10px;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion table {
+  width: 100%;
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion ul {
+  padding-left: 20px;
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion ul li {
+  list-style: inherit;
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0;
+  color: #333;
+  opacity: 1;
+  margin-bottom: 2px;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion ul li {
+    font: normal normal 300 14px/18px "Mulish", sans-serif;
+  }
+}
+section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion p {
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.page_garbarit__blockaccordion.page_garbarit__blockaccordion .page_garbarit__blockaccordion-wrap .page_garbarit__blockaccordion-wrap__accordion p {
+    font: normal normal normal 14px/18px "Mulish", sans-serif;
+  }
+}
+
+section.page_gabarit__oneblockwithimg {
+  padding-top: 0;
+  padding-bottom: 80px;
+  background: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg {
+    padding-bottom: 40px;
+  }
+}
+section.page_gabarit__oneblockwithimg.blue + section:not(.page_gabarit__oneblockwithimg) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg.blue + section:not(.page_gabarit__oneblockwithimg) {
+    padding-top: 40px;
+  }
+}
+section.page_gabarit__oneblockwithimg.blue + section.blue:not(.page_gabarit__oneblockwithimg) {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg.blue + section.blue:not(.page_gabarit__oneblockwithimg) {
+    padding-top: 10px;
+  }
+}
+section.page_gabarit__oneblockwithimg + section.blue:not(.page_gabarit__oneblockwithimg) {
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg + section.blue:not(.page_gabarit__oneblockwithimg) {
+    padding-top: 30px;
+  }
+}
+section.page_gabarit__oneblockwithimg.blue {
+  background: #005b9d 0% 0% no-repeat padding-box;
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg.blue {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+section.page_gabarit__oneblockwithimg.blue * {
+  color: white !important;
+}
+section.page_gabarit__oneblockwithimg h1 {
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg h1 {
+    font: normal normal normal 26px/33px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__oneblockwithimg h2 {
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg h2 {
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__oneblockwithimg h3 {
+  font: normal normal bold 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg h3 {
+    font: normal normal bold 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__oneblockwithimg h4 {
+  font: normal normal normal 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg h4 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__oneblockwithimg h5 {
+  font: normal normal bold 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg h5 {
+    font: normal normal bold 14px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__oneblockwithimg h6 {
+  font: normal normal normal 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg h6 {
+    font: normal normal normal 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg .page_gabarit_oneblockwithimg-wrap {
+    width: 90%;
+  }
+}
+section.page_gabarit__oneblockwithimg .page_gabarit_oneblockwithimg-wrap .page_gabarit_oneblockwithimg-block {
+  display: grid;
+  grid-template-columns: 325px 1fr;
+  grid-gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg .page_gabarit_oneblockwithimg-wrap .page_gabarit_oneblockwithimg-block {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+section.page_gabarit__oneblockwithimg .page_gabarit_oneblockwithimg-wrap .page_gabarit_oneblockwithimg-block img {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+section.page_gabarit__oneblockwithimg .page_gabarit_oneblockwithimg-wrap .page_gabarit_oneblockwithimg-block .page_gabarit_oneblockwithimg-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.page_gabarit__oneblockwithimg .page_gabarit_oneblockwithimg-wrap .page_gabarit_oneblockwithimg-block .page_gabarit_oneblockwithimg-text p {
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #28373b;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+section.page_gabarit__oneblockwithimg .page_gabarit_oneblockwithimg-wrap .page_gabarit_oneblockwithimg-block .page_gabarit_oneblockwithimg-text p:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__oneblockwithimg .page_gabarit_oneblockwithimg-wrap .page_gabarit_oneblockwithimg-block .page_gabarit_oneblockwithimg-text p {
+    font: normal normal normal 14px/18px "Mulish", sans-serif;
+  }
+}
+
+section.page_gabarit__gradientblock {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  background: white;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock {
+    padding-bottom: 40px;
+  }
+}
+section.page_gabarit__gradientblock.gray + section:not(.page_gabarit__gradientblock) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock.gray + section:not(.page_gabarit__gradientblock) {
+    padding-top: 40px;
+  }
+}
+section.page_gabarit__gradientblock.gray + section.gray:not(.page_gabarit__gradientblock) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock.gray + section.gray:not(.page_gabarit__gradientblock) {
+    padding-top: 10px;
+  }
+}
+section.page_gabarit__gradientblock.blue + section:not(.page_gabarit__gradientblock) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock.blue + section:not(.page_gabarit__gradientblock) {
+    padding-top: 40px;
+  }
+}
+section.page_gabarit__gradientblock.blue + section.blue:not(.page_gabarit__gradientblock) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock.blue + section.blue:not(.page_gabarit__gradientblock) {
+    padding-top: 10px;
+  }
+}
+section.page_gabarit__gradientblock + section.blue:not(.page_gabarit__gradientblock) {
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock + section.blue:not(.page_gabarit__gradientblock) {
+    padding-top: 30px;
+  }
+}
+section.page_gabarit__gradientblock.blue {
+  background: #005b9d 0% 0% no-repeat padding-box;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock.blue {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+section.page_gabarit__gradientblock.blue * {
+  color: white !important;
+}
+section.page_gabarit__gradientblock.blue .productpage__pageheader__container {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1921px) {
+  section.page_gabarit__gradientblock.blue .productpage__pageheader__container::before {
+    max-width: 940px;
+    content: "";
+    width: 54%;
+    background: transparent linear-gradient(90deg, #005b9d 0%, #bfbfbf00 100%) 0% 0% no-repeat padding-box;
+  }
+}
+@media screen and (min-width: 1921px) {
+  section.page_gabarit__gradientblock.blue .productpage__pageheader__container::after {
+    content: "";
+    width: 25%;
+    max-width: 427px;
+    background: transparent linear-gradient(90deg, #005b9d 0%, #bfbfbf00 100%) 0% 0% no-repeat padding-box;
+  }
+}
+section.page_gabarit__gradientblock.blue .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay {
+  background: transparent linear-gradient(90deg, #005b9d 0%, #bfbfbf00 100%) 0% 0% no-repeat padding-box;
+}
+@media screen and (max-width: 1023.5px) {
+  section.page_gabarit__gradientblock.blue .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay::before {
+    content: "";
+    background: transparent linear-gradient(0deg, #005b9d 30px, #bfbfbf00 100%) 0% 0% no-repeat padding-box;
+  }
+}
+section.page_gabarit__gradientblock.gray {
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock.gray {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+section.page_gabarit__gradientblock.gray * {
+  color: #28373b !important;
+}
+section.page_gabarit__gradientblock.gray a {
+  color: #005b9d !important;
+}
+section.page_gabarit__gradientblock.gray .productpage__pageheader__container {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1921px) {
+  section.page_gabarit__gradientblock.gray .productpage__pageheader__container::before {
+    max-width: 940px;
+    content: "";
+    width: 54%;
+    background: transparent linear-gradient(90deg, #f2f2f2 0%, #f0f0f000 100%) 0% 0% no-repeat padding-box;
+  }
+}
+@media screen and (min-width: 1921px) {
+  section.page_gabarit__gradientblock.gray .productpage__pageheader__container::after {
+    content: "";
+    width: 25%;
+    max-width: 427px;
+    background: transparent linear-gradient(90deg, #f2f2f2 0%, #f0f0f000 100%) 0% 0% no-repeat padding-box;
+  }
+}
+section.page_gabarit__gradientblock.gray .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay {
+  background: transparent linear-gradient(90deg, #f2f2f2 0%, #bfbfbf00 100%) 0% 0% no-repeat padding-box;
+  background-size: 75% 100%;
+}
+@media screen and (max-width: 1023.5px) {
+  section.page_gabarit__gradientblock.gray .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay::before {
+    content: "";
+    background: transparent linear-gradient(0deg, #f2f2f2 30px, #bfbfbf00 100%) 0% 0% no-repeat padding-box;
+  }
+}
+section.page_gabarit__gradientblock .productpage__pageheader__container {
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container {
+    padding: 0 0 30px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h1 {
+  font: normal normal normal 32px/40px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h1 {
+    font: normal normal normal 26px/33px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h1 {
+    margin-bottom: 20px;
+  }
+}
+section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h2 {
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h2 {
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h2 {
+    margin-bottom: 20px;
+  }
+}
+section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h3 {
+  font: normal normal bold 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h3 {
+    font: normal normal bold 18px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h3 {
+    margin-bottom: 20px;
+  }
+}
+section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h4 {
+  font: normal normal normal 20px/25px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h4 {
+    font: normal normal normal 18px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h4 {
+    margin-bottom: 20px;
+  }
+}
+section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h5 {
+  font: normal normal bold 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h5 {
+    font: normal normal bold 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h5 {
+    margin-bottom: 20px;
+  }
+}
+section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h6 {
+  font: normal normal normal 16px/20px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h6 {
+    font: normal normal normal 14px/25px "Mulish", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock h6 {
+    margin-bottom: 20px;
+  }
+}
+section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock a {
+  text-decoration: none;
+  font-style: inherit;
+  font-weight: bold;
+  line-height: inherit;
+  font-style: inherit;
+  letter-spacing: 0px;
+}
+@media screen and (max-width: 1023.5px) and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock a {
+    font-style: inherit;
+    font-weight: bold;
+    line-height: inherit;
+    font-style: inherit;
+  }
+}
+section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock p {
+  font: normal normal 300 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__gradientblock .productpage__pageheader__container .productpage__pageheader-wrapimgoverlay .productpage__pageheader-wrap .productpage__pageheader-wrap-container .productpage__pageheader-wrap-textblock p {
+    font: normal normal normal 14px/18px "Mulish", sans-serif;
+  }
+}
+
+section.page_gabarit__helpsec.solutionpage__helpsec {
+  padding-top: 0;
+  padding-bottom: 80px;
+  background: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec {
+    padding-bottom: 40px;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue + section:not(.page_gabarit__helpsec) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec.blue + section:not(.page_gabarit__helpsec) {
+    padding-top: 40px;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue + section.blue:not(.page_gabarit__helpsec) {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec.blue + section.blue:not(.page_gabarit__helpsec) {
+    padding-top: 10px;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec + section.blue:not(.page_gabarit__helpsec) {
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec + section.blue:not(.page_gabarit__helpsec) {
+    padding-top: 30px;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue {
+  background: #005b9d 0% 0% no-repeat padding-box;
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec.blue {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue > * {
+  color: white !important;
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue .solutionpage__helpsec__wrap > * {
+  color: white !important;
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue .solutionpage__helpsec__infos .solutionpage__helpsec__info {
+  background: white;
+  box-shadow: 0 0 10px #ffffff1a;
+}
+section.page_gabarit__helpsec.solutionpage__helpsec .solutionpage__helpsec__wrap > h2 {
+  text-align: center;
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 425px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec .solutionpage__helpsec__wrap > h2 {
+    margin-bottom: 10px;
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec .solutionpage__helpsec__wrap > p {
+  text-align: center;
+  font: normal normal normal 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 425px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec .solutionpage__helpsec__wrap > p {
+    font: normal normal 300 16px/23px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec .solutionpage__helpsec__infos {
+  padding: 20px 0 0;
+}
+
 .custom-block h1 {
   font: normal normal normal 32px/40px "Mulish", sans-serif;
   letter-spacing: 0px;
@@ -2901,4 +3877,13 @@ section.bigblueblock__container {
   color: #005b9d;
   font-weight: bold;
   background-color: transparent;
+}
+
+main.custom-page > :first-child {
+  padding-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  main.custom-page > :first-child {
+    padding-top: 0;
+  }
 }

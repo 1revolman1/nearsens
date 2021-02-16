@@ -1,0 +1,84 @@
+section.page_gabarit__helpsec.solutionpage__helpsec {
+  padding-top: 0;
+  padding-bottom: 80px;
+  background: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec {
+    padding-bottom: 40px;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue + section:not(.page_gabarit__helpsec) {
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec.blue + section:not(.page_gabarit__helpsec) {
+    padding-top: 40px;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue + section.blue:not(.page_gabarit__helpsec) {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec.blue + section.blue:not(.page_gabarit__helpsec) {
+    padding-top: 10px;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec + section.blue:not(.page_gabarit__helpsec) {
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec + section.blue:not(.page_gabarit__helpsec) {
+    padding-top: 30px;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue {
+  background: #005b9d 0% 0% no-repeat padding-box;
+  padding-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec.blue {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue > * {
+  color: white !important;
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue .solutionpage__helpsec__wrap > * {
+  color: white !important;
+}
+section.page_gabarit__helpsec.solutionpage__helpsec.blue .solutionpage__helpsec__infos .solutionpage__helpsec__info {
+  background: white;
+  box-shadow: 0 0 10px #ffffff1a;
+}
+section.page_gabarit__helpsec.solutionpage__helpsec .solutionpage__helpsec__wrap > h2 {
+  text-align: center;
+  font: normal normal normal 26px/33px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 425px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec .solutionpage__helpsec__wrap > h2 {
+    margin-bottom: 10px;
+    font: normal normal normal 20px/25px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec .solutionpage__helpsec__wrap > p {
+  text-align: center;
+  font: normal normal normal 18px/23px "Mulish", sans-serif;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 425px) {
+  section.page_gabarit__helpsec.solutionpage__helpsec .solutionpage__helpsec__wrap > p {
+    font: normal normal 300 16px/23px "Mulish", sans-serif;
+  }
+}
+section.page_gabarit__helpsec.solutionpage__helpsec .solutionpage__helpsec__infos {
+  padding: 20px 0 0;
+}
