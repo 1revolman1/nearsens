@@ -1,7 +1,7 @@
 section.productlist__products
     h2 The products
     .productlist__products-container
-        .productlist__products-container-element.animation-container.with-disqount.big-block
+        #bigbl.productlist__products-container-element.animation-container.with-disqount.big-block
             .productlist__products-container-element-imgcontainer
                 picture
                     source(media='(max-width:735px)' srcset='http://nearsens.urich.work/wp-content/uploads/2020/12/Keypad_productimage_999.jpg')
@@ -35,7 +35,8 @@ section.productlist__products
                                 span.mobile +1
                                 i(class="fas fa-check")
                                 span.desktop 2 new added to cart
-                            .template(style='display: none') 1 ; new added to cart
+                            .template.one(style='display: none')  1 new added to cart
+                            .template.many(style='display: none') 1 ; many added to cart
         each val,index in [1,2,3,4,5]
             .productlist__products-container-element.animation-container.with-disqount(id="product-" + val)
                 .productlist__products-container-element-imgcontainer

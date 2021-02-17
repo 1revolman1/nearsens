@@ -6,18 +6,32 @@ export const isTouchDevice = function isTouchDevice() {
   );
 };
 export const debounce = function debounce(func, wait, immediate) {
-  var timeout;
+  let timeout;
+  let cachedWidth = window.innerWidth;
+
   return function () {
-    var context = this,
+    let context = this,
       args = arguments;
-    var later = function () {
+    let later = function () {
       timeout = null;
-      if (!immediate) func.apply(context, args);
+      if (!immediate) {
+        let newWidth = window.innerWidth;
+        if (newWidth !== cachedWidth) {
+          func.apply(context, args);
+          cachedWidth = newWidth;
+        }
+      }
     };
-    var callNow = immediate && !timeout;
+    let callNow = immediate && !timeout;
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
+    if (callNow) {
+      let newWidth = window.innerWidth;
+      if (newWidth !== cachedWidth) {
+        func.apply(context, args);
+        cachedWidth = newWidth;
+      }
+    }
   };
 };
 function isMobile() {
@@ -27,13 +41,17 @@ function isMobile() {
 function minusProduct() {
   const container = $(this).parents('.manipulator-container');
   const counter = container.find('.price-container');
+  let template = null;
   let value = Number(counter.text());
   value -= 1;
   if (value === 1) {
     $(this).attr('disabled', true);
+    template = container.find('.template.one').text();
+  } else {
+    template = container.find('.template.many').text();
   }
   const finalAdd = container.find('.desktop');
-  const template = container.find('.template').text();
+  // const template = container.find('.template').text();
   finalAdd.text(template.replace('1 ;', String(value)));
   counter.text(value);
 }
@@ -41,14 +59,18 @@ function plusProduct() {
   console.log('TESAT');
   const container = $(this).parents('.manipulator-container');
   const counter = container.find('.price-container');
+  let template = null;
+
   let value = Number(counter.text());
   value += 1;
   if (value >= 2) {
     container.find('.minus').attr('disabled', false);
     container.find('.buy-button').attr('disabled', false);
+    template = container.find('.template.many').text();
+  } else {
+    template = container.find('.template.one').text();
   }
   const finalAdd = container.find('.desktop');
-  const template = container.find('.template').text();
   finalAdd.text(template.replace('1 ;', String(value)));
   counter.text(value);
 }
@@ -77,22 +99,22 @@ function cartAnim(
     const imgtodrag = ourMainBlock.find(imgDraggable);
     const totalPrice = ourMainBlock.find(priceContainer);
     const manipulatorBlock = ourMainBlock.find(manipulatorContainer);
-
-    if (Number(totalPrice.text()) <= 0) return null;
+    const cachedPriceValue = totalPrice.text();
+    if (+cachedPriceValue <= 0) return null;
     manipulatorBlock.addClass('show-success');
     infoSuccessHeader.removeClass('unshow');
     infoSuccessHeader
       .find('h3')
       .text(
-        +totalPrice.text() === 1
+        +cachedPriceValue === 1
           ? infoSuccessHeader
               .find('.template.one')
               .text()
-              .replace('1 ;', String(totalPrice.text()))
+              .replace('1 ;', String(cachedPriceValue))
           : infoSuccessHeader
               .find('.template.many')
               .text()
-              .replace('1 ;', String(totalPrice.text()))
+              .replace('1 ;', String(cachedPriceValue))
       );
     if (imgtodrag) {
       const imgclone = imgtodrag
@@ -137,7 +159,7 @@ function cartAnim(
         totalPrice.text('1');
         manipulatorBlock.find('.minus').attr('disabled', true);
         setTimeout(() => {
-          const template = manipulatorBlock.find('.template').text();
+          const template = manipulatorBlock.find('.template.one').text();
           manipulatorBlock.find('.desktop').text(template.replace('1 ;', '1'));
         }, 500);
       }, 2000);

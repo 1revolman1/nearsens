@@ -17,19 +17,36 @@ exports.isTouchDevice = isTouchDevice;
 
 var debounce = function debounce(func, wait, immediate) {
   var timeout;
+  var cachedWidth = window.innerWidth;
   return function () {
     var context = this,
         args = arguments;
 
     var later = function later() {
       timeout = null;
-      if (!immediate) func.apply(context, args);
+
+      if (!immediate) {
+        var newWidth = window.innerWidth;
+
+        if (newWidth !== cachedWidth) {
+          func.apply(context, args);
+          cachedWidth = newWidth;
+        }
+      }
     };
 
     var callNow = immediate && !timeout;
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
+
+    if (callNow) {
+      var newWidth = window.innerWidth;
+
+      if (newWidth !== cachedWidth) {
+        func.apply(context, args);
+        cachedWidth = newWidth;
+      }
+    }
   };
 };
 
@@ -42,15 +59,19 @@ function isMobile() {
 function minusProduct() {
   var container = $(this).parents('.manipulator-container');
   var counter = container.find('.price-container');
+  var template = null;
   var value = Number(counter.text());
   value -= 1;
 
   if (value === 1) {
     $(this).attr('disabled', true);
+    template = container.find('.template.one').text();
+  } else {
+    template = container.find('.template.many').text();
   }
 
-  var finalAdd = container.find('.desktop');
-  var template = container.find('.template').text();
+  var finalAdd = container.find('.desktop'); // const template = container.find('.template').text();
+
   finalAdd.text(template.replace('1 ;', String(value)));
   counter.text(value);
 }
@@ -59,16 +80,19 @@ function plusProduct() {
   console.log('TESAT');
   var container = $(this).parents('.manipulator-container');
   var counter = container.find('.price-container');
+  var template = null;
   var value = Number(counter.text());
   value += 1;
 
   if (value >= 2) {
     container.find('.minus').attr('disabled', false);
     container.find('.buy-button').attr('disabled', false);
+    template = container.find('.template.many').text();
+  } else {
+    template = container.find('.template.one').text();
   }
 
   var finalAdd = container.find('.desktop');
-  var template = container.find('.template').text();
   finalAdd.text(template.replace('1 ;', String(value)));
   counter.text(value);
 }
@@ -94,10 +118,11 @@ function cartAnim() {
     var imgtodrag = ourMainBlock.find(imgDraggable);
     var totalPrice = ourMainBlock.find(priceContainer);
     var manipulatorBlock = ourMainBlock.find(manipulatorContainer);
-    if (Number(totalPrice.text()) <= 0) return null;
+    var cachedPriceValue = totalPrice.text();
+    if (+cachedPriceValue <= 0) return null;
     manipulatorBlock.addClass('show-success');
     infoSuccessHeader.removeClass('unshow');
-    infoSuccessHeader.find('h3').text(+totalPrice.text() === 1 ? infoSuccessHeader.find('.template.one').text().replace('1 ;', String(totalPrice.text())) : infoSuccessHeader.find('.template.many').text().replace('1 ;', String(totalPrice.text())));
+    infoSuccessHeader.find('h3').text(+cachedPriceValue === 1 ? infoSuccessHeader.find('.template.one').text().replace('1 ;', String(cachedPriceValue)) : infoSuccessHeader.find('.template.many').text().replace('1 ;', String(cachedPriceValue)));
 
     if (imgtodrag) {
       var imgclone = imgtodrag.clone().offset({
@@ -129,7 +154,7 @@ function cartAnim() {
         totalPrice.text('1');
         manipulatorBlock.find('.minus').attr('disabled', true);
         setTimeout(function () {
-          var template = manipulatorBlock.find('.template').text();
+          var template = manipulatorBlock.find('.template.one').text();
           manipulatorBlock.find('.desktop').text(template.replace('1 ;', '1'));
         }, 500);
       }, 2000); //-------------------------------------------
