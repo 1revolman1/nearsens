@@ -1,5 +1,16 @@
-import { debounce } from '../additionfunctional/cartbuy';
-
+import { debounce, cartAnim } from '../additionfunctional/cartbuy';
+function scrollToTargetAdjusted(element) {
+  // const offset = 268.5;
+  const offset = 74;
+  const bodyRect = document.body.getBoundingClientRect().top;
+  const elementRect = element.getBoundingClientRect().top;
+  const elementPosition = elementRect - bodyRect;
+  const offsetPosition = elementPosition - offset;
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth',
+  });
+}
 function headermoreover() {
   document
     .querySelectorAll('.page_gabarit__headermoreover')
@@ -39,6 +50,8 @@ function headermoreover() {
 
 export const usePageGabarit = function main() {
   console.log('PAGE GABARIT');
+  let intervalAnim;
+
   if (document.querySelectorAll('.custom-block').length > 0)
     document.querySelector('main').classList.add('custom-page');
   document
@@ -59,4 +72,25 @@ export const usePageGabarit = function main() {
       headermoreover();
     }, 200)
   );
+
+  $('.page_gabarit__buyblock__btn button').on(
+    'buyingLogic',
+    cartAnim(intervalAnim)
+  );
+
+  document
+    .querySelectorAll('.page_gabarit__recomendbl')
+    .forEach((scrollerContainer) => {
+      const scroller = scrollerContainer.querySelector(
+        '.page_gabarit__recomendbl__scroll i'
+      );
+      const scrollTo = scrollerContainer.querySelector(
+        '.page_gabarit__recomendbl__container'
+      );
+      console.log(scroller);
+      if (scrollTo && scroller)
+        scroller.addEventListener('click', () =>
+          scrollToTargetAdjusted(scrollTo)
+        );
+    });
 };

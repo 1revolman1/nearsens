@@ -15,6 +15,19 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
+function scrollToTargetAdjusted(element) {
+  // const offset = 268.5;
+  var offset = 74;
+  var bodyRect = document.body.getBoundingClientRect().top;
+  var elementRect = element.getBoundingClientRect().top;
+  var elementPosition = elementRect - bodyRect;
+  var offsetPosition = elementPosition - offset;
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth'
+  });
+}
+
 function headermoreover() {
   document.querySelectorAll('.page_gabarit__headermoreover').forEach(function (elem) {
     var selected = elem.querySelector('.page_gabarit__headermoreover__elem.selected');
@@ -46,6 +59,7 @@ function headermoreover() {
 
 var usePageGabarit = function main() {
   console.log('PAGE GABARIT');
+  var intervalAnim;
   if (document.querySelectorAll('.custom-block').length > 0) document.querySelector('main').classList.add('custom-page');
   document.querySelectorAll('section.page_gabarit__fourblocks').forEach(function (container) {
     container.setAttribute('data-ammount', container.querySelectorAll('.page_gabarit__fourblocks__wrap__elemenet').length);
@@ -55,6 +69,15 @@ var usePageGabarit = function main() {
     console.log('RESIZE');
     headermoreover();
   }, 200));
+  $('.page_gabarit__buyblock__btn button').on('buyingLogic', (0, _cartbuy.cartAnim)(intervalAnim));
+  document.querySelectorAll('.page_gabarit__recomendbl').forEach(function (scrollerContainer) {
+    var scroller = scrollerContainer.querySelector('.page_gabarit__recomendbl__scroll i');
+    var scrollTo = scrollerContainer.querySelector('.page_gabarit__recomendbl__container');
+    console.log(scroller);
+    if (scrollTo && scroller) scroller.addEventListener('click', function () {
+      return scrollToTargetAdjusted(scrollTo);
+    });
+  });
 };
 
 exports.usePageGabarit = usePageGabarit;

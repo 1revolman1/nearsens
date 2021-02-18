@@ -124,7 +124,7 @@ function cartAnim() {
     infoSuccessHeader.removeClass('unshow');
     infoSuccessHeader.find('h3').text(+cachedPriceValue === 1 ? infoSuccessHeader.find('.template.one').text().replace('1 ;', String(cachedPriceValue)) : infoSuccessHeader.find('.template.many').text().replace('1 ;', String(cachedPriceValue)));
 
-    if (imgtodrag) {
+    if (imgtodrag.length) {
       var imgclone = imgtodrag.clone().offset({
         top: imgtodrag.offset().top,
         left: imgtodrag.offset().left
@@ -148,21 +148,21 @@ function cartAnim() {
           $(this).detach();
         });
       }); //-----------------SHAKE ANIM--------------------------------------
-
-      setTimeout(function () {
-        manipulatorBlock.removeClass('show-success');
-        totalPrice.text('1');
-        manipulatorBlock.find('.minus').attr('disabled', true);
-        setTimeout(function () {
-          var template = manipulatorBlock.find('.template.one').text();
-          manipulatorBlock.find('.desktop').text(template.replace('1 ;', '1'));
-        }, 500);
-      }, 2000); //-------------------------------------------
-
-      clearTimeout(intervalAnim);
-      intervalAnim = setTimeout(function () {
-        infoSuccessHeader.addClass('unshow');
-      }, 2000);
     }
+
+    setTimeout(function () {
+      manipulatorBlock.removeClass('show-success');
+      totalPrice.text('1');
+      manipulatorBlock.find('.minus').attr('disabled', true);
+      setTimeout(function () {
+        var template = manipulatorBlock.find('.template.one').text();
+        manipulatorBlock.find('.desktop').text(template.replace('1 ;', '1'));
+      }, 500);
+    }, 2000); //-------------------------------------------
+
+    clearTimeout(intervalAnim);
+    intervalAnim = setTimeout(function () {
+      infoSuccessHeader.addClass('unshow');
+    }, 2000);
   };
 }

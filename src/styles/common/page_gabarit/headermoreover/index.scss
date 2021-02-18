@@ -53,10 +53,11 @@ section.page_gabarit__headermoreover {
     i {
       display: none;
     }
-    &:last-of-type {
+    &:last-of-type:not(.selected) {
       border-bottom: 2px solid transparent;
     }
     &.selected {
+      cursor: none;
       background: #32c9ad 0% 0% no-repeat padding-box;
       border-radius: 10px;
       user-select: none;

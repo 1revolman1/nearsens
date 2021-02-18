@@ -116,7 +116,7 @@ function cartAnim(
               .text()
               .replace('1 ;', String(cachedPriceValue))
       );
-    if (imgtodrag) {
+    if (imgtodrag.length) {
       const imgclone = imgtodrag
         .clone()
         .offset({
@@ -154,21 +154,21 @@ function cartAnim(
           }
         );
       //-----------------SHAKE ANIM--------------------------------------
-      setTimeout(() => {
-        manipulatorBlock.removeClass('show-success');
-        totalPrice.text('1');
-        manipulatorBlock.find('.minus').attr('disabled', true);
-        setTimeout(() => {
-          const template = manipulatorBlock.find('.template.one').text();
-          manipulatorBlock.find('.desktop').text(template.replace('1 ;', '1'));
-        }, 500);
-      }, 2000);
-      //-------------------------------------------
-      clearTimeout(intervalAnim);
-      intervalAnim = setTimeout(() => {
-        infoSuccessHeader.addClass('unshow');
-      }, 2000);
     }
+    setTimeout(() => {
+      manipulatorBlock.removeClass('show-success');
+      totalPrice.text('1');
+      manipulatorBlock.find('.minus').attr('disabled', true);
+      setTimeout(() => {
+        const template = manipulatorBlock.find('.template.one').text();
+        manipulatorBlock.find('.desktop').text(template.replace('1 ;', '1'));
+      }, 500);
+    }, 2000);
+    //-------------------------------------------
+    clearTimeout(intervalAnim);
+    intervalAnim = setTimeout(() => {
+      infoSuccessHeader.addClass('unshow');
+    }, 2000);
   };
 }
 export { isMobile, cartAnim, minusProduct, plusProduct };

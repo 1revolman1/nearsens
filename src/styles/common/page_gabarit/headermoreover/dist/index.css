@@ -59,10 +59,11 @@ section.page_gabarit__headermoreover .page_gabarit__headermoreover__elem {
 section.page_gabarit__headermoreover .page_gabarit__headermoreover__elem i {
   display: none;
 }
-section.page_gabarit__headermoreover .page_gabarit__headermoreover__elem:last-of-type {
+section.page_gabarit__headermoreover .page_gabarit__headermoreover__elem:last-of-type:not(.selected) {
   border-bottom: 2px solid transparent;
 }
 section.page_gabarit__headermoreover .page_gabarit__headermoreover__elem.selected {
+  cursor: none;
   background: #32c9ad 0% 0% no-repeat padding-box;
   border-radius: 10px;
   user-select: none;
