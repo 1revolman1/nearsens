@@ -53,6 +53,43 @@ section.page_gabarit__gradientblock {
     * {
       color: white !important;
     }
+    &.right {
+      .productpage__pageheader__container {
+        &::before {
+          @media screen and (min-width: 1921px) {
+            max-width: 940px;
+            content: '';
+            width: 54%;
+            background: transparent
+              linear-gradient(90deg, #005b9d 0%, #bfbfbf00 100%) 0% 0% no-repeat
+              padding-box;
+          }
+        }
+        &::after {
+          @media screen and (min-width: 1921px) {
+            content: '';
+            width: 25%;
+            max-width: 427px;
+            background: transparent
+              linear-gradient(90deg, #005b9d 0%, #bfbfbf00 100%) 0% 0% no-repeat
+              padding-box;
+          }
+        }
+        .productpage__pageheader-wrapimgoverlay {
+          background: transparent
+            linear-gradient(270deg, #005b9d 0%, #bfbfbf00 100%) 0% 0% no-repeat
+            padding-box;
+          &::before {
+            @include media-forHEADER {
+              content: '';
+              background: transparent
+                linear-gradient(0deg, #005b9d 30px, #bfbfbf00 100%) 0% 0%
+                no-repeat padding-box;
+            }
+          }
+        }
+      }
+    }
     .productpage__pageheader__container {
       margin: 0 auto;
       &::before {
@@ -147,16 +184,6 @@ section.page_gabarit__gradientblock {
     }
     .productpage__pageheader__container {
       margin: 0 auto;
-      &::before {
-        @media screen and (min-width: 1921px) {
-          display: none;
-        }
-      }
-      &::after {
-        @media screen and (min-width: 1921px) {
-          display: none;
-        }
-      }
       .productpage__pageheader-wrapimgoverlay {
         background: none;
         &::before {
@@ -190,10 +217,78 @@ section.page_gabarit__gradientblock {
       }
     }
   }
+  &.right {
+    @include media-tablet {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+    .productpage__pageheader__container {
+      margin: 0 auto;
+      &::after {
+        @media screen and (min-width: 1921px) {
+          max-width: 940px;
+          content: '';
+          width: 54%;
+          background: transparent
+            linear-gradient(90deg, #f2f2f2 0%, #f0f0f000 100%) 0% 0% no-repeat
+            padding-box;
+        }
+      }
+      &::before {
+        @media screen and (min-width: 1921px) {
+          content: '';
+          width: 25%;
+          max-width: 427px;
+          background: transparent
+            linear-gradient(90deg, #f2f2f2 0%, #f0f0f000 100%) 0% 0% no-repeat
+            padding-box;
+        }
+      }
+      .productpage__pageheader-wrapimgoverlay {
+        background: transparent
+          linear-gradient(270deg, #f2f2f2 0%, #bfbfbf00 100%) 0% 0% no-repeat
+          padding-box;
+        background-size: 75% 100%;
+        background-position: right;
+        &::before {
+          @include media-forHEADER {
+            content: '';
+            background: transparent
+              linear-gradient(0deg, #f2f2f2 30px, #bfbfbf00 100%) 0% 0%
+              no-repeat padding-box;
+          }
+        }
+        .productpage__pageheader-wrap {
+          align-items: center;
+          justify-content: flex-end;
+          max-height: initial;
+          overflow: initial;
+          .productpage__pageheader-wrap-container {
+            @include media-forHEADER {
+              padding: 30px 0;
+            }
+            @include media-tablet {
+              padding: 30px 0;
+            }
+            .productpage__pageheader-wrap-textblock {
+              margin: 0;
+              @include hblockPAGEGABARIT() {
+                text-align: end;
+              }
+              p {
+                text-align: end;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .productpage__pageheader__container {
     margin: 0 auto;
     .productpage__pageheader-wrapimgoverlay {
       .productpage__pageheader-wrap {
+        z-index: 2;
         .productpage__pageheader-wrap-container {
           @include media-tablet {
             padding: 0 0 30px;
