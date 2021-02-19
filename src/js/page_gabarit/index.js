@@ -87,7 +87,6 @@ export const usePageGabarit = function main() {
       const scrollTo = scrollerContainer.querySelector(
         '.page_gabarit__recomendbl__container'
       );
-      console.log(scroller);
       if (scrollTo && scroller)
         scroller.addEventListener('click', () =>
           scrollToTargetAdjusted(scrollTo)

@@ -962,6 +962,9 @@ nav.nav {
             grid-column-gap: 3.9%;
           }
           padding-left: calc(3.9% + 89px);
+          @include media-forHEADER {
+            padding-left: 0;
+          }
           li {
             &:nth-child(2) {
               // margin-left: 3.9%;

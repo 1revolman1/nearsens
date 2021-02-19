@@ -116,6 +116,7 @@ section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wra
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
+  max-height: 53px;
 }
 @media screen and (max-width: 768px) {
   section.contact__findanswer .contact__findanswer__wrap .contact__findanswer__wrap__secondinit .contact__findanswer__wrap__secondinit__container .textinput {

@@ -73,7 +73,6 @@ var usePageGabarit = function main() {
   document.querySelectorAll('.page_gabarit__recomendbl').forEach(function (scrollerContainer) {
     var scroller = scrollerContainer.querySelector('.page_gabarit__recomendbl__scroll i');
     var scrollTo = scrollerContainer.querySelector('.page_gabarit__recomendbl__container');
-    console.log(scroller);
     if (scrollTo && scroller) scroller.addEventListener('click', function () {
       return scrollToTargetAdjusted(scrollTo);
     });

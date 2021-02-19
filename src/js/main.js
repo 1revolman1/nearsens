@@ -14,14 +14,6 @@ import { useMyAccountPage } from './myaccount_page';
 import { usePageGabarit } from './page_gabarit';
 import { useSolutionPage } from './solution_page';
 
-function getBodyScrollTop() {
-  return (
-    self.pageYOffset ||
-    (document.documentElement && document.documentElement.scrollTop) ||
-    (document.body && document.body.scrollTop)
-  );
-}
-
 $(document).ready(() => {
   function footerJS() {
     if (window.innerWidth <= 768) {
@@ -128,6 +120,7 @@ $(document).ready(() => {
   }
   headerJS();
   footerJS();
+
   if (document.querySelectorAll('.custom-block').length > 0) {
     typePage = 'page_gabarit';
   }

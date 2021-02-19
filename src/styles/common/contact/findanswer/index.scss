@@ -107,6 +107,7 @@ section.contact__findanswer {
           letter-spacing: 0px;
           color: #333333;
           opacity: 1;
+          max-height: 53px;
           @include media-tablet {
             padding: 11px 20px;
             font: normal normal 300 18px/23px 'Mulish', sans-serif;
