@@ -1,7 +1,7 @@
 import { debounce, cartAnim } from '../additionfunctional/cartbuy';
 function scrollToTargetAdjusted(element) {
   // const offset = 268.5;
-  const offset = 74;
+  const offset = 158;
   const bodyRect = document.body.getBoundingClientRect().top;
   const elementRect = element.getBoundingClientRect().top;
   const elementPosition = elementRect - bodyRect;

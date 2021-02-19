@@ -17,7 +17,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 function scrollToTargetAdjusted(element) {
   // const offset = 268.5;
-  var offset = 74;
+  var offset = 158;
   var bodyRect = document.body.getBoundingClientRect().top;
   var elementRect = element.getBoundingClientRect().top;
   var elementPosition = elementRect - bodyRect;
