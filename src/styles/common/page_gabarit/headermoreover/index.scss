@@ -68,7 +68,7 @@ section.page_gabarit__headermoreover {
       border-bottom: 2px solid transparent;
     }
     &.selected {
-      cursor: none;
+      cursor: auto;
       background: #32c9ad 0% 0% no-repeat padding-box;
       border-radius: 10px;
       user-select: none;
@@ -97,6 +97,7 @@ section.page_gabarit__headermoreover {
         }
       }
       h2 {
+        font: normal normal bold 16px/20px 'Mulish', sans-serif;
         color: #ffffff;
       }
       .page_gabarit__headermoreover__img {
@@ -109,7 +110,7 @@ section.page_gabarit__headermoreover {
       }
       &:after {
         z-index: 1;
-        bottom: -31px;
+        bottom: -26px;
         right: 50%;
         transform: translate(50%, 0) rotate(180deg);
         border: solid transparent;
@@ -120,8 +121,8 @@ section.page_gabarit__headermoreover {
         // pointer-events: none;
         border-color: rgba(136, 183, 213, 0);
         border-bottom-color: #32c9ad;
-        border-width: 16px;
-        margin-left: -16px;
+        border-width: 13px;
+        margin-left: -13px;
         @include media-forHEADER {
           display: none;
         }
@@ -133,7 +134,7 @@ section.page_gabarit__headermoreover {
     }
     h2 {
       text-align: left;
-      font: normal normal bold 16px/20px 'Mulish', sans-serif;
+      font: normal normal normal 16px/20px 'Mulish', sans-serif;
       letter-spacing: 0px;
       color: #28373b;
       opacity: 1;

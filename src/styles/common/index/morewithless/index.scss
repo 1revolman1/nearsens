@@ -8,59 +8,7 @@ section.index__morewithless {
     width: 90%;
     margin: 0 auto;
   }
-  //   .index__morewithless__head {
-  //     position: relative;
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     align-items: center;
-  //     margin-bottom: 70px;
-  //     // margin-bottom: 140px;
-  //     @include media-tablet {
-  //       margin-bottom: 30px;
-  //     }
-  //     p {
-  //       text-align: center;
-  //       font: normal normal normal 18px/23px 'Mulish',sans-serif;
-  //       letter-spacing: 0px;
-  //       color: #333333;
-  //       text-transform: uppercase;
-  //       opacity: 1;
-  //       margin-bottom: 9px;
-  //       @include media-tablet {
-  //         font: normal normal normal 16px/20px 'Mulish',sans-serif;
-  //         letter-spacing: 0px;
-  //         color: #333333;
-  //         text-transform: uppercase;
-  //         opacity: 1;
-  //       }
-  //     }
-  //     h3 {
-  //       text-align: center;
-  //       font: normal normal 800 30px/38px 'Mulish',sans-serif;
-  //       letter-spacing: 0px;
-  //       color: #333333;
-  //       opacity: 1;
-  //       @include media-tablet {
-  //         font: normal normal 800 22px/28px 'Mulish',sans-serif;
-  //         letter-spacing: 0px;
-  //         color: #333333;
-  //         opacity: 1;
-  //         margin-bottom: 30px;
-  //       }
-  //     }
-  //     hr {
-  //       display: none;
-  //       @include media-tablet {
-  //         display: block;
-  //         width: 50%;
-  //         position: absolute;
-  //         bottom: 0;
-  //         left: 50%;
-  //         transform: translate(-50%, 0);
-  //       }
-  //     }
-  //   }
+
   .index__morewithless__wrap {
     width: 100%;
     display: flex;
@@ -210,27 +158,9 @@ section.index__morewithless {
             .index__morewithless__blockwithhover__element__img {
               background: #ffffff 0% 0% no-repeat padding-box;
               transform: scale(0.9);
-              .invert-collor {
-                // transform: scale(0.80);
+              .changecolor {
                 path {
                   fill: #005b9d;
-                }
-              }
-              .fire {
-                // transform: scale(0.70);
-                // left: -14px;
-              }
-              .spec {
-                // transform: scale(0.90);
-                .color {
-                  fill: #005b9d;
-                }
-              }
-              .lock {
-                // transform: scale(0.70);
-                // right: -14px;
-                path {
-                  transition: all 0.3s ease;
                 }
               }
             }
@@ -269,48 +199,23 @@ section.index__morewithless {
           border-radius: 50%;
           margin-right: 25px;
           transition: all 0.3s ease;
+          transform: scale(1);
           @include media-forHEADER {
             padding: 10px;
             background: #ffffff 0% 0% no-repeat padding-box;
             transform: scale(0.9);
           }
-          .invert-collor {
-            transition: all 0.3s ease;
+          .changecolor {
             path {
-              transition: all 0.3s ease;
+              fill: white;
               @include media-forHEADER {
                 fill: #005b9d;
-              }
-            }
-          }
-          .spec {
-            transition: all 0.3s ease;
-            .color {
-              transition: all 0.3s ease;
-              @include media-forHEADER {
-                fill: #005b9d;
-              }
-            }
-          }
-          .fire {
-            transition: all 0.3s ease;
-            position: absolute;
-            top: 22px;
-            left: -19px;
-          }
-          .lock {
-            transition: all 0.3s ease;
-            position: absolute;
-            top: 22px;
-            right: -17px;
-            @include media-forHEADER {
-              path {
-                transition: all 0.3s ease;
               }
             }
           }
           svg {
-            width: 100%;
+            width: 45px;
+            height: 45px;
           }
         }
         .index__morewithless__blockwithhover__element__text {
