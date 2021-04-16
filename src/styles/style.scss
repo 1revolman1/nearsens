@@ -1,10 +1,4 @@
 @import 'common/global';
-@import './utils/fonts';
-@import './utils/jqueryUI';
-// @import './utils/select2';
-@import 'common/header';
-
-@import 'common/footer';
 
 @import 'common/usecase_list/index';
 @import 'common/product_list/index';
@@ -21,6 +15,7 @@
 @import 'common/checkout/index';
 @import 'common/myaccount/index';
 @import 'common/solution/index';
+
 .wp-admin .wp-block {
   max-width: inherit !important;
 }
