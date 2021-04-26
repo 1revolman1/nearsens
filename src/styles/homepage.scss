@@ -1,17 +1,7 @@
-@import 'common/global';
 @import 'common/general/index.scss';
+@import 'common/global';
 
-@import 'common/usecase_list/index';
-@import 'common/usecase_details/index';
-
-@import 'common/product_list/index';
-@import 'common/product_page/index';
-
-@import 'common/contact/index';
-@import 'common/cart/index';
-
-@import 'common/login/index';
-@import 'common/signup/index';
+@import 'common/index/index';
 
 .wp-admin .wp-block {
   max-width: inherit !important;

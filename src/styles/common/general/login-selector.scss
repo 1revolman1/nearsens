@@ -1,0 +1,36 @@
+.loginpage__container__block__manipulator {
+  .error-input {
+    border: 1px solid red;
+  }
+  .hidden {
+    display: none;
+  }
+  .custom-select-wrapper {
+    flex: none;
+    width: 100%;
+    margin: 15px 0;
+    background: #eeeeee 0% 0% no-repeat padding-box;
+    border: 1px solid #bbbbbb;
+    border-radius: 6px;
+    opacity: 1;
+    .custom-select {
+      .custom-select__trigger {
+        padding: 14px 20px;
+        span {
+          text-transform: none;
+          font: normal normal 300 18px/23px 'Mulish', sans-serif;
+          letter-spacing: 0px;
+          color: #333333;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .error-message {
+    display: grid;
+    color: red;
+    font: italic normal bold 14px/23px 'Mulish', sans-serif;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+}

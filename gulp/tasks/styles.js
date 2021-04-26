@@ -11,43 +11,82 @@ const postcss = require('gulp-postcss');
 const flexGapPolyfill = require('flex-gap-polyfill');
 module.exports = function styles() {
   var plugins = [flexGapPolyfill()];
-  return gulp
-    .src('src/styles/*.scss')
-    .pipe(plumber())
-    .pipe(
-      gulpStylelint({
-        failAfterError: false,
-        reporters: [
-          {
-            formatter: 'string',
-            console: true,
-          },
-        ],
-      })
-    )
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(postcss(plugins))
-    .pipe(autoprefixer({ grid: 'autoplace' }))
-    .pipe(shorthand())
-    .pipe(
-      cleanCSS(
-        {
-          debug: true,
-          compatibility: '*',
-        },
-        (details) => {
-          console.log(
-            `${details.name}: Original size:${details.stats.originalSize} - Minified size: ${details.stats.minifiedSize}`
-          );
-        }
+  if (process.env.NODE_ENV === 'production')
+    return gulp
+      .src('src/styles/*.scss')
+      .pipe(plumber())
+      .pipe(
+        gulpStylelint({
+          failAfterError: false,
+          reporters: [
+            {
+              formatter: 'string',
+              console: true,
+            },
+          ],
+        })
       )
-    )
-    .pipe(sourcemaps.write())
-    .pipe(
-      rename({
-        suffix: '.min',
-      })
-    )
-    .pipe(gulp.dest('build/css'));
+      .pipe(sass())
+      .pipe(postcss(plugins))
+      .pipe(autoprefixer({ grid: 'autoplace' }))
+      .pipe(shorthand())
+      .pipe(
+        cleanCSS(
+          {
+            debug: true,
+            compatibility: '*',
+          },
+          (details) => {
+            console.log(
+              `${details.name}: Original size:${details.stats.originalSize} - Minified size: ${details.stats.minifiedSize}`
+            );
+          }
+        )
+      )
+      .pipe(
+        rename({
+          suffix: '.min',
+        })
+      )
+      .pipe(gulp.dest('build/css'));
+  else
+    return gulp
+      .src('src/styles/*.scss')
+      .pipe(plumber())
+      .pipe(
+        gulpStylelint({
+          failAfterError: false,
+          reporters: [
+            {
+              formatter: 'string',
+              console: true,
+            },
+          ],
+        })
+      )
+      .pipe(sourcemaps.init())
+      .pipe(sass())
+      .pipe(postcss(plugins))
+      .pipe(autoprefixer({ grid: 'autoplace' }))
+      .pipe(shorthand())
+      .pipe(
+        cleanCSS(
+          {
+            debug: true,
+            compatibility: '*',
+          },
+          (details) => {
+            console.log(
+              `${details.name}: Original size:${details.stats.originalSize} - Minified size: ${details.stats.minifiedSize}`
+            );
+          }
+        )
+      )
+      .pipe(sourcemaps.write())
+      .pipe(
+        rename({
+          suffix: '.min',
+        })
+      )
+      .pipe(gulp.dest('build/css'));
 };
