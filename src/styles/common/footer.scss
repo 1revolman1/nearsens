@@ -8,6 +8,23 @@ footer.globalfooter {
     // padding: 30px 30px 40px;
     padding: 30px 40px 40px;
   }
+  .country-changer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    img {
+      border: 1px solid white;
+      border-radius: 3px;
+      height: 20px !important;
+    }
+    @include media-forHEADER {
+      margin-right: 10px;
+      @include media-tablet {
+        margin-right: 5px;
+      }
+    }
+  }
 
   .globalfooter__wrapper {
     max-width: $mediaMAXWIDTH;

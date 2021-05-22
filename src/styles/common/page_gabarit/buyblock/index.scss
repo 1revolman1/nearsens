@@ -198,6 +198,9 @@ section.page_gabarit__buyblock {
         width: max-content;
         // width:fit-content;
         width: intrinsic;
+        @include media-tablet {
+          width: 100%;
+        }
       }
     }
     .page_gabarit__buyblock__btn {
