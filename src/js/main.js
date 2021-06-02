@@ -14,6 +14,13 @@ import { useMyAccountPage } from './myaccount_page';
 import { usePageGabarit } from './page_gabarit';
 import { useSolutionPage } from './solution_page';
 
+function getBodyScrollTop() {
+  return (
+    self.pageYOffset ||
+    (document.documentElement && document.documentElement.scrollTop) ||
+    (document.body && document.body.scrollTop)
+  );
+}
 $(document).ready(() => {
   function footerJS() {
     if (window.innerWidth <= 768) {
@@ -45,7 +52,10 @@ $(document).ready(() => {
       'header.header .first-block-in-menu > a'
     );
     const target = document.querySelector('header.header');
-    if (typeof holiday_event != undefined) useHolidayFunc();
+
+    if (typeof holiday_event !== undefined && holiday_event)
+      useHolidayFunc(logo, menuList, getBodyScrollTop);
+
     function onScrollChange(changes, observer) {
       changes.forEach((change) => {
         if (Math.floor(change.intersectionRatio) === 0) {

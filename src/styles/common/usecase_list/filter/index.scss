@@ -44,6 +44,11 @@
       @include media-tablet {
         padding: 10px;
       }
+      .text-input {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
       span {
         // width: max-content;
         font: normal normal 600 18px/23px 'Mulish', sans-serif;

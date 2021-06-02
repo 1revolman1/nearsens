@@ -112,7 +112,10 @@ header.header {
     }
   }
   &.holiday-header {
-    top: 44px;
+    top: 0px;
+    @include media-forHEADER {
+      top: 44px;
+    }
     .first-menu {
       .first-block-in-menu {
         > a {
